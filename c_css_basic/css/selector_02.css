@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* selector_01.css */
+
+a{color:inherit;}
+
+.an_01{color:#0af;}
+/* 
+우선순위 : type < class < id < parent < important(사용하지 않음) 
+우선순위를 사용할 때 복합으로 섞이게 되면 언급 여부에 따라 순위는 조금 변동 될 수 있다
+*/
+
+/* pseudo code: 의사전달코드 */
+span{background-color:#ddd;}
+span:hover{background-color:#f00;}
+/*= a:hover > span{background-color:#f00;}*/
+span:active{background-color:#00f;}
+/*= a:active > span{background-color:#00f;}*/
+/*focus 처리되는 기능은 : a, button, input, select, textarea*/
+a:focus > span{background-color:#000;}
+/*a:focus > span{outline:5px solid #000;}*/
+a:visited > span{color:#fff;}
+
+
+p{margin:100px auto; width:500px; heihgt:100px;
+  text-align: center; line-height:100px;
+  border-width:3px; border-style:solid; border-color:#777;}
+
+p:before{content:"어떻게 될까요?"; color:#f00; font-weight:bold;}
+p:after{content:"어디에 있을까요?"; color:#00f; font-weight:bold;}
