@@ -1,0 +1,51 @@
+@charset "UTF-8" ;
+/* website.css */
+
+/* reset ===== */
+html, body, 
+h1, h2, h3, h4, h5, h6, hr,
+ul, ol, li, dl, dt, dd {margin: 0; padding: 0; border: 0;}
+hr{border-top:1px solid #333}
+ul,ol,li{list-style:none;}
+
+/* common */
+.clearfix:after,
+.clearfix::after{content: " "; display:block; width: 0; height: 0; clear: both;}
+
+#web{width: 1900px; height: 3560px; background-color: #aaa;}
+
+#headBox{width:100%; height: 120px; }
+.home{width: 100%; height: 40px; background-color: #aaa;}
+.nav{width:1662px; height: 80px; background-color: #fff; float: left;}
+.aside{width:238px; height: 80px; background-color: #aaa; float: left;}
+
+#viewBox{width:100%; height: 860px; background-color: #fff;}
+.view_title{width: 690px; height: 58px;}
+.view_title > li:nth-child(1){width: 690px; height: 58px; color: #fff;}
+.view_title > li:nth-child(2){width: 330px; height: 93px; color: #fff;}
+
+.view_nav{width: 1662px; height: 80px; background-color: #000; color: #fff;}
+.view_nav > li:nth-child(1){width: 84px; height: 35px; background-color: #fa0; float: left;}
+.view_nav > li:nth-child(2){width: 84px; height: 35px; float: left;}
+.view_nav > li:nth-child(3){width: 84px; height: 35px; float: left;}
+.view_nav > li:nth-child(4){width: 84px; height: 35px; float: left;}
+.view_nav > li:nth-child(5){width: 84px; height: 35px; float: left;}
+.view_nav > li:nth-child(6){width: 84px; height: 35px; float: left;}
+
+.side_nav{width:30px; height: 235px; float: right;}
+
+#contBox{width: 100%; height: 900px; background-color: #aff;}
+.con_title{width:300px; height: 93px;}
+.con_box{width: 1030px; height: 700px;}
+.con_box > li:nth-child(1){width: 510px; height: 340px; float: left; margin-right:10px;}
+.con_box > li:nth-child(2){width: 250px; height: 340px; float: left; background-color: #fff; margin-right:10px;}
+.con_box > li:nth-child(3){width: 250px; height: 340px; float: left; background-color: #fff;}
+.con_box > li:nth-child(4){width: 250px; height: 340px; float: left; background-color: #0af; margin-right:10px; margin-top:20px;}
+.con_box > li:nth-child(5){width: 250px; height: 340px; float: left; background-color: #00f; margin-right:10px; margin-top:20px;}
+.con_box > li:nth-child(6){width: 250px; height: 340px; float: left; background-color: #fff; margin-right:10px; margin-top:20px;}
+.con_box > li:nth-child(7){width: 250px; height: 340px; float: left; background-color: #fff; margin-top:20px;}
+#movBox{width: 100%; height: 850px; background-color: #fff;}
+
+#numBox{width: 100%; height: 710px; background-color: #333;}
+
+#footBox{width: 100%; height: 130px; background-color: #fff;}

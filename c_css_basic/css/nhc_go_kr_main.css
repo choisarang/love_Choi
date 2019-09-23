@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* nhc_go_kr_mail.css */
+
+/* position 사용시 가운데 배치하는 방법
+    1. margin:auto; top:0; bottom:0; 위,아래 가운데
+       margin:auto; left:0; right:0; 좌,  우 가운데  
+    2. (높이값이 정해져 있을경우) top:50%; margin-top:-높이값의 절반크기; 위,아래 가운데
+       (가로값이 정해져 있을경우) left:50%; margin-left:-가로값의 절반크기; 좌,우 가운데  
+    3. (최신브라우저일경우) top:50%; transform:translateY(-50%); 위,아래 가운데
+       (최신브라우저일경우) left:50%; transform:translateX(-50%); 좌, 우 가운데
+*/  
+
+/* layout */
+
+@import url("./nhc/nhc_01_wrap.css");
+@import url("./nhc/nhc_02_header.css");
+@import url("./nhc/nhc_main_content.css");
+@import url("./nhc/nhc_03_footer.css");

@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* selector_01.css */
+
+/* 속성값이 ingerit이라면 부모의 속성을 따르겠다는 의미*/
+
+h1 {background-color:#777; color:#ff0;} 
+h2 {background-color:#0af; color:#fff;}
+
+div.wrap {background-color:#ff0; color:#00f;}
+.con {border-width:3px; border-style:solid; border-color:#00f;}
+/* border-style : solid || dotted || dashed;*/
+
+#list {border-width:3px; border-style:dotted; border-color:#faf;}
+
+ .red > a {color:#f33;}
+ .yellow {color:#ff0;}
+ .blue > a {color:#07f;}
+ .green > a {color:#0a0;}
+/* 기본적으로 a요소는 자체 색이 별도로 존재해서 전체적용X */
+
+.box {background-color:#ddf}
+.box li>a{color:#f70;}
+
+.bg1 {background-color: #ff0}
+.bg2 {background-color: #00c}
+.bg3 {background-color: #a00}
+
+
+/*div.box>ol>li>a{color:orange;}
+div.box>ol>li>ul>li.bg1{background-color:yellow;}
+div.box>ol>li>ul>li.bg2{background-color:blue;}
+div.box>ol>li>ul>li.bg3{background-color:red;} */
+
+/*
+	전체 선택자 : *을 이용하여 선택하면 모든 요소를 선택한다 라는 의미
+	ex) *{color:#a00;}
+	단, *로 선택하는 것은 사용하지 않는 부분까지 지정하게되므로, 시스템 성능저하가 일어날 수 있다. 권장하지 않는다.
+	type 선택자 : html문서의 요소를 직접 선택하는 것
+		ex) body{}
+				html{}
+				p{}
+				h1{}
+				div{}
+
+  id/class 선택자 : id=># class=>. 을 이용하여 해당 속성의 이름을 선택하여 사용하는 것
+
+  자손(find)선택자 : 띄어쓰기로 구분하여 자손을 선택
+  자식(children)선택자 : >를 이용하여 부모, 자식을 구분 선택
+	*/
