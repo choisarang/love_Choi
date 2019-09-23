@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* site_prototype_03.css */
+
+/* common */
+.clearfix:after,
+.clearfix::after{content:" "; display: block; clear: both; width: 0; height: 0; }
+
+.hidden{display: block; overflow: hidden; position: absolute; width: 0; height: 0; }
+
+/* layout */
+#wrap{width: 100%; height: 1750px; background-color: #0af;}
+.content{left: 0; right: 0; margin: auto; width: 940px;}
+
+/* headBox +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#headBox{position: relative; padding: 35px 0; box-sizing: border-box; font-size: 1rem; font-size: 16px; text-align: center; line-height: 20px; width: 100%; height: 100px; background-color: #fff;}
+  h1{float: left; width: 140px; height: 30px;}
+  h1 > a{display: block; width: 100%; height: 100%;}
+  
+  .nav{position: absolute; left: 0; right: 0; margin: auto;  width: 780px; height: 30px;}
+  .nav > ul{width: 100%; height: 100%;}
+  .nav > ul > li{float: left; width: 140px; height: 100%; margin-right: 20px;  text-align: center; line-height: 30px;}
+  .nav > ul > li:last-child{margin-right: 0; }
+  .nav > ul > li > a{display:block; width: 100%; height: 100%;}
+  
+  .membership{float: right; width: 120px; height: 30px;}
+  .member{float: left; width: 60px; height: 100%; text-align: center; line-height: 30px;}
+  
+  
+/* conBox ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#conBox{width:100%; height: 1390px; background-color: #fff;  padding: 50px 0 100px; box-sizing: border-box;}
+  
+#conBox h3{width: 940px; height: 150px; top: 0; bottom: 0; margin: auto; font-size: 32px; font-size: 2rem; text-align: left; line-height: 150px; color:#333; text-decoration: underline; text-decoration-color: #f3cf1d;}
+  
+  
+/* content ======================================================= */
+#conBox .content{position: relative; padding-top: 50px; box-sizing: border-box; height: 1040px;}
+
+#conBox .content > .title_01{width: 100%; height: 20px;}
+#conBox .content > .title_01 > li{float: left; width: 80px; height: 100%; margin-right: 63px; text-align: center; font-size: 16px; font-size: 1rem; }
+#conBox .content > .title_01 > li:first-child{text-decoration: underline; font-weight: bold; color: #222;}
+#conBox .content > .title_01 > li:last-child{margin-right: 0;}
+
+#conBox .content > .title_02{width: 800px; height: 20px; top: 0; bottom: 0; margin: auto;}
+#conBox .content > .title_02 > li{float: left; margin-top: 15px; height: 100%; font-size: 16px; font-size: 1rem; text-align: center; }
+#conBox .content > .title_02 > li:nth-child(1){text-decoration: underline; font-weight: bold; color: #222; width: 40px; margin-right: 100px;}
+#conBox .content > .title_02 > li:nth-child(2){width: 65px; margin-right: 100px;}
+#conBox .content > .title_02 > li:nth-child(3){width: 110px; margin-right: 80px;}
+#conBox .content > .title_02 > li:nth-child(4){width: 85px; margin-right: 90px;}
+  #conBox .content > .title_02 > li:nth-child(5){width: 125px;}
+  
+  #conBox .content .pic{float: left; width: 220px; height: 350px; text-align: center; margin: 70px 20px 0 0; background-color: #fff;}
+  
+  #conBox .content .picture{width: 220px; height: 220px; background-color: #ffd;}
+  #conBox .content .picture > a{display: block; width: 100%; height: 100%;}
+  
+  #conBox .content .pic_04{margin-right: 0;}
+  #conBox .content .pic_08{margin-right: 0;}
+  
+  #conBox .content .pic > a{display: block; padding-top: 20px; box-sizing: border-box;}
+  #conBox .content .pic > a > .big {display: block; padding-bottom: 10px; box-sizing: border-box;}
+  #conBox .content .pic_03 > a > .big {display: block; padding-bottom: 0; box-sizing: border-box;}
+  #conBox .content .pic_04 > a > .big {display: block; padding-bottom: 0; box-sizing: border-box;}
+  #conBox .content .pic_06 > a > .big {display: block; padding-bottom: 0; box-sizing: border-box;}
+  #conBox .content .pic_07 > a > .big {display: block; padding-bottom: 0; box-sizing: border-box;}
+  #conBox .content .big{font-weight: bold; font-size: 16px; font-size: 1rem;}
+  #conBox .content .small{text-decoration: line-through; font-size: 12px; font-size: 0.8rem;}
+  
+  
+  
+  .con_btn{position: absolute; z-index: 300; right: 0; left: 0; margin: auto; bottom: 50px; width: 160px; height: 15px;}
+  .con_btn .btn{float: left; width: 10px; margin-right: 15px;}
+  .con_btn .page_btn_next{margin-right: 0;}
+  .con_btn button{font-size: 16px; font-size: 1rem; text-align: center; color: rgba(0,0,0,0.2); background-color: transparent;}
+  .con_btn button:focus{color: #333;}
+  
+  /* sidebar ====================================================== */
+  .sidebar{position: fixed; top: 0; bottom: 0; margin: auto; right: 20px; z-index: 500; width: 40px; height: 130px;}
+  
+  .sidebar > ul{width: 100%; height: 100%; padding: 10px 0px; box-sizing: border-box;}
+  
+  .sidebar > ul > li{width: 100%; height: 30px; margin-bottom:10px; box-sizing: border-box;}
+    .sidebar > ul > li:last-child{margin-bottom: 0;}
+    
+    .sidebar > ul > li > a{display: block; width: 100%; height: 100%; font-size: 32px; font-size: 1.5rem; text-align: center; line-height: 32px;}
+    
+  /* footBox ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  #footBox{width: 100%; height: 350px;}
+  .info_area{width: 100%; height: 240px; background-color: #eee; padding: 50px 0; box-sizing: border-box;}
+    .info_area > .content{height: 150px;}
+    .info_area > .content > .call{float: left; width: 160px; height: 100%;}
+    .info_area > .content > .call > dl{width: 100%; height: 100%;}
+    .info_area > .content > .call > dl > dt{width: 100%; height: 40px; line-height: 40px; font-size: 14.5px; font-size: 0.9rem;}
+    .info_area > .content > .call > dl > dd{width: 100%; height: 100px; border-top: 2px solid #ccc; padding-top: 8px; box-sizing: border-box; font-size: 12px; font-size: 0.8rem;}
+    .info_area > .content > .call > dl > dd > span{font-size: 24px; font-size: 1.5rem;}
+
+    .info_area > .content > .info{float: right; width: 720px; height: 100%;}
+    .info_area > .content > .info > dl{width: 100%; height: 100%;}
+
+    .info_area > .content > .info > dl > dt{float: left; width: 100%; height: 40px; margin-right: 15px; line-height: 40px; font-size: 14.5px; font-size: 0.9rem;}
+    .info_area > .content > .info > dl > dt:nth-child(1){width: 60px;}
+    .info_area > .content > .info > dl > dt:nth-child(2){width: 120px;}
+    .info_area > .content > .info > dl > dt:nth-child(3){width: 60px;}
+    .info_area > .content > .info > dl > dt:nth-child(4){width: 60px;}
+    .info_area > .content > .info > dl > dt:nth-child(5){width: 40px;}
+    .info_area > .content > .info > dl > dt:nth-child(6){width: 60px;}
+    .info_area > .content > .info > dl > dt:nth-child(7){width: 40px; margin-right: 20px;}
+    .info_area > .content > .info > dl > dt:nth-child(8){width: 170px; margin-right: 0;}
+    
+    .info_area > .content > .info > dl > dd{float: left; width: 350px; height: 100px; border-top: 2px solid #ccc; box-sizing: border-box; padding-top: 8px; box-sizing: border-box; font-size: 12px; font-size: 0.8rem; line-height: 23px;}
+
+    
+  .icon_area{width: 100%; height: 110px; background-color: #bdbcbc; margin-top: 40px; padding: 40px 0; box-sizing: border-box;}
+    .icon_area > .content{height: 30px;}
+    .icon_area > .content > .logo{float: left; width: 250px; height: 100%; text-align: center; line-height: 30px;}
+    .icon_area > .content > .logo > .casamia{float: left; width: 120px; height: 100%; margin-right: 10px; box-sizing: border-box;}
+    .icon_area > .content > .logo > .C_LAB{float: right; width: 120px; height: 100%;}
+
+    .icon_area > .content > .sns{float: right; width: 140px; height: 100%;}
+    
+    .icon_area > .content > .sns > .insta{float: left; width: 40px; height: 100%;margin-right: 10px; box-sizing: border-box;}
+    .icon_area > .content > .sns > .youtube{float: left; width: 40px; height: 100%;margin-right: 10px; box-sizing: border-box;}
+    .icon_area > .content > .sns > .facebook{float: left; width: 40px; height: 100%;}
+
+    .icon_area > .content > .sns a{display: block; width: 100%; height: 100%; font-size: 1.5rem; text-align: center; line-height: 32px; color: #222; }
