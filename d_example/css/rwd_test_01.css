@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* rwd_test_01.css */
+
+html,body{width: 100%; height: 100%;}
+
+
+#wrap{width: 100%; height: 100%; background-color: #ccc; color: #000; }
+div,header,main,footer,h1{border: 1px solid #333; box-sizing: border-box;}
+
+/* 480========================================================== */
+
+@media screen and (max-width:480px) {
+  #wrap{width: 100%; height:81.25rem;}
+  #headBox{width: 100%; height: 6.25rem;}
+  h1{float: left; padding: 1.5625rem; box-sizing: border-box; width: 100%; height: 6.25rem; background-color: #af5;}
+  .icon{float: right; width: 2.8125rem; height: 2.8125rem; background-color: #fff;}
+
+  #contentBox{width: 100%; height: 68.75rem; background-color: #eaf;}
+
+  #contentBox > .conBox{float: left; width: 100%; height: 25rem; background-color: #c0f;}
+  #contentBox > .con{float: left; width: 50%; height: 12.5rem;}
+  #contentBox > .conBox_01{background-color: #0c5;}
+  #contentBox > .conBox_02{background-color: #0ae;}
+  #contentBox > .conBox_03{background-color: #0c5;}
+  #contentBox > .conBox_04{background-color: #0ae;}
+  #contentBox > .conBox_05{float: left; width: 100%; height: 6.25rem; background-color: #fa0;}
+  #contentBox > .conBox_06{float: left; width: 100%; height: 12.5rem; background-color: #f30;}
+
+  #footBox{width: 100%; height: 6.25rem; background-color: #f50;}
+
+  #footBox > .logo{right: 0; left: 0; margin: auto; width: 50%; height: 100%; background-color: #0af;}
+  
+}
+
+/* 768========================================================== */
+
+@media screen and (min-width:481px) and (max-width:768px){
+  #wrap{width: 100%; height:78.125rem;}
+  #headBox{width: 100%; height: 9.375rem; background-color: #fa0;}
+  h1{float: left; width: 6.25rem; height: 100%; background-color: #af5;}
+
+  #contentBox{width: 100%; height: 62.5rem; background-color: #eaf;}
+
+  #contentBox > .conBox{float: left; width: 100%; height: 18.75rem; background-color: #c0f;}
+  #contentBox > .con{float: left; width: 25%; height: 25rem;}
+  #contentBox > .conBox_01{background-color: #0c5;}
+  #contentBox > .conBox_02{background-color: #0ae;}
+  #contentBox > .conBox_03{background-color: #0c5;}
+  #contentBox > .conBox_04{background-color: #0ae;}
+  #contentBox > .conBox_05{float: left; width: 100%; height: 6.25rem; background-color: #fa0;}
+  #contentBox > .conBox_06{float: left; width: 100%; height: 12.5rem; background-color: #f30;}
+
+  #footBox{width: 100%; height: 6.25rem; background-color: #f50;}
+
+  #footBox > .logo{width: 6.25rem; height: 100%; background-color: #0af;}
+}
+
+/* 960========================================================== */
+
+@media screen and (min-width:769px) and (max-width:960px){
+  #wrap{width: 100%; height: 81.25rem;}
+  #headBox{width: 100%; height: 9.375rem; background-color: #fa0;}
+  h1{float: left; width: 6.25rem; height: 100%; background-color: #af5;}
+
+  #contentBox{width: 100%; height: 65.625rem; background-color: #eaf;}
+
+  #contentBox > .conBox{float: left; width: 100%; height: 28.125rem; background-color: #c0f;}
+  #contentBox > .con{float: left; width: 25%; height: 37.5rem; }
+  #contentBox > .conBox_01{background-color: #0c5;}
+  #contentBox > .conBox_02{background-color: #0ae;}
+  #contentBox > .conBox_03{background-color: #0c5;}
+  #contentBox > .conBox_04{background-color: #0ae;}
+
+  #footBox{width: 100%; height: 6.25rem; background-color: #f50;}
+  #footBox > .logo{width: 6.25rem; height: 100%; background-color: #0af;}
+}
