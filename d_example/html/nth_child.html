@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- nth_child -->
+<html lang="ko-KR">
+
+<head>
+  <noscript>
+    <p></p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다.<br />
+    자바스크립트의 기능을 활성화 해주세요.</p>
+    <p><a target="_blank" href="http://enable-jabascript.com/ko/">자바스크립트 활성화 처리하기</a></p>
+  </noscript>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="웹페이지 실습에 따른 목차 구성">
+  <meta name="keyword" content="html, css, js, web, design">
+  <meta name="author" content="최사랑">
+  <meta name="generator" content="illustrator, photoshop, sublimetext, vscode">
+
+  <link rel="stylesheet" href="../fonts/gyeonggi/stylesheet.css">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  
+  <!--[if IE]>
+       <script src="./ie/html5shiv/dist/html5shiv.min.js"></script>
+       <script src="./ie/PIE/PIE.js"></script>
+       <script src="./ie/respond/dest/respond.min.js"></script>
+  <![endif]-->
+
+
+  <link rel="shortcut icon" type="lmage/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <title>문서제목</title>
+  <style>
+    .n_child{padding: 1rem; background-color: #acc;}
+    .n_child > ul{border: 1px solid #333;}
+    .n_child > ul > li{margin: 0.2rem; border: 1px solid #333; background-color: #fff;}
+    .n_child > ul > li:nth-child(4n){background-color: #fa0
+    ;}
+    .n_child > ul > li:nth-child(4n-2){background-color: #af0;}
+    .n_child > ul > li:nth-child(4n-1){text-indent: 3rem;}
+    .n_child > ul > li:nth-child(4n+3){font-size: 2rem;}
+
+    .n_child > ul > li:nth-of-type(4n){border-left: 3px solid #f00;}
+    .n_child{display: none;}
+
+
+    /* 
+    nth-child   처음부터 연속되어진 동일한 성격(type,class)일 경우 사용
+    nth-of-type 형제 중 중간에 다른 요소가 섞여잇어도 동일한 요소일때는                 순서로 인지하여 사용
+    */
+
+    .n_type{padding: 1rem; background-color: #ca7;}
+    .n_type > *{border: 1px solid #777; margin: 0.3rem;}
+    p:nth-of-type(3n){background-color: #fff;}
+
+    /* 
+        :nth-child(){}
+        :first-child(){}
+        :last-child(){}
+        :nth-last-child(){} 뒤에서부터 역순
+
+        :nth-of-type(){}
+        :first-of-type(){}
+        :last-of-type(){}
+        :nth-last-of-type(){}
+    */
+    /* 
+    선택자 
+     * {}
+     din,a,p{}                타입선택자
+     .box{}                   class선택자
+     #box{}                   id선택자
+     ul a{}                   자손선택자
+     ul > li{}                자식선택자
+     dt + dd{}                인접형제선택자
+     dt ~ dd{}                모든형제선택자
+     a[href="*"]{}            속성선택자
+     li:nth-child(){}         nth선택자
+     p:nth-of-type(){}        nth선택자
+     슈도코드(의사전달)
+     a:hover{}
+     a:focus{}
+     a:active{}
+     a:visited{}
+     a::before{content:" ";}
+     a::after{content:" ";}
+
+    */
+
+
+  </style>
+</head>
+
+<body>
+  <!-- layout -->
+  <header>
+    <h1><a href="./content.html">웹기초</a></h1>
+  </header>
+  <main>
+    <h2>부제</h2>
+    <div class="n_child">
+      <ul>
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+        <li>06</li>
+        <li>07</li>
+        <li>08</li>
+        <li>09</li>
+        <li>010</li>
+        <li>011</li>
+        <li>012</li>
+        <li>013</li>
+        <li>014</li>
+        <li>015</li>
+        <li>016</li>
+        <li>017</li>
+        <li>018</li>
+        <li>019</li>
+        <li>020</li>
+      </ul>
+    </div>
+
+    <h2>nth_of_type</h2>
+    <div class="n_type">
+      <h3 class="nth">제목 중간에 하나</h3>
+      <p class="nth">p요소의 성격의 동일한 class를 가진 p_01</p>
+      <p class="nth">p요소의 성격의 동일한 class를 가진 p_02</p>
+      <p class="nth">p요소의 성격의 동일한 class를 가진 p_03</p>
+      <div class="nth">div 하나</div>
+      <p class="nth">p요소의 성격의 동일한 class를 가진 p_04</p>
+      <p class="nth">p요소의 성격의 동일한 class를 가진 p_05</p>
+      <p class="nth">p요소의 성격의 동일한 class를 가진 p_06</p>
+      <pre class="nth">pre요소 하나</pre>
+      <p class="nth">p요소의 성격의 동일한 class를 가진 p_07</p>
+      <p class="nth">p요소의 성격의 동일한 class를 가진 p_08</p>
+      <button class="nth">button 삽입</button>
+      <p class="nth">p요소의 성격의 동일한 class를 가진 p_09</p>
+      <p class="nth">p요소의 성격의 동일한 class를 가진 p_10</p>
+    </div>
+  </main>
+  <!-- script -->
+  <script>
+  </script>
+</body>
+</html>
