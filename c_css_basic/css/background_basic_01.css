@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* background_basic_01.css */
+
+/** background
+  * 이미지를 배경에 처리해서 사용하는 기능
+  * 기준경로는 css문서를 작성하고 있는 곳
+  * 불러오는 이미지는 무조건 반복패턴으로 처리
+  * 기본 불러오는 이미지의 좌표는 부모의 x축 0 y축 0
+  * 단 position-attatchment:fixed; 에서 좌표의 기준은 절대좌표(브라우저기준)
+
+  * background-color:;
+  * background-image:;       이미지를 불러오는 방법, 그라데이션처리
+  * background-repeat:;      repeat(반복) || repeat-x(x축반복) || repeat-y(y축 반복) || no-repeat(반복하지않음)
+  * background-position:;    좌표 입력. 10px 40px. || 10% 40% (가로 세로)
+                             %는 이미지 위치와 박스 위치가 동일(박스10% 위치에 이미지10% 위치 넣기)
+                             px,rem은 이미지위치는 처음, 박스위치는 설정위치
+  * background-size:;        cover(꽉차게) || contain(이미지 전체보이게) || 100% auto
+  * background-attatchment:; fixed || scrollde 
+
+**/
+
+#wrap{width: 100%; min-width: 75rem; height: auto; min-height: 37.5rem; background-color: #ccc;} 
+
+  #headBox{width: 100%; height: auto; border-bottom: 0.1875rem solid #333; margin-bottom: 1rem;}
+
+  #contentBox{width: 100%; height: auto; padding: 1rem; box-sizing: border-box; background-color: #acf;}
+  .before_img{width: 25rem; height: 12.5rem; border:0.125rem solid #fff;}
+  .img_01{position: relative; z-index: 100; width: 100%; height: 100%; background-color: #0cf;  overflow: hidden;}
+  figcaption{font-size: 2rem; font-weight: bold; color: #fff;}
+  img{position: absolute; top: -50px; left: 0; z-index: -100; width: 100%; height: auto;}
+  .css_img{width: 25rem; height: 18.75rem; border: 0.125rem solid #357; background-image: url("../img/ninja.png"); background-size: 40% auto; background-repeat: no-repeat; background-position: 50% 50%; background-color: #fff;}
+  .css_img2{width: 50rem; height: 40rem; background-color: #ddd; background-image: url("../img/dog.png"), url("../img/pet_03.jpg"), url("../img/dog.png"); background-size: auto 10%, 100% auto, auto 10%; background-repeat: repeat-x, no-repeat, repeat-x; background-position: 0 0, 0 50%, 0 100%; 
+  }
+  .css_img2 p{width: 0; height: 0; overflow: hidden;}
+
+  ul{width: 100%; height: 200px;}
+  li{float: left; width: 110px; height: 110px; background-color: #fff; margin: 1rem; border-radius: 0.5rem;}
+  li > a{display: block; width: 100%; height: 100%;}
+  .hidden_wrap a > span{display: block; position: absolute; width: 0; height: 0; overflow: hidden;}
+
+  .css_img3 li > a{background-image: url(../img/icons_01.png);
+  background-repeat: no-repeat; background-position: 0 0;}
+
+  .css_img3 li:nth-child(1) > a{background-position: 0.3125rem 0.625rem;}
+  .css_img3 li:nth-child(2) > a{background-position: -14.875rem -12.5rem;}
+  .css_img3 li:nth-child(3) > a{background-position: -30.625rem -24.875rem;}
+  .css_img3 li:nth-child(4) > a{background-position: -61.875rem -37.5rem;}
+  .css_img3 li:nth-child(5) > a{background-position: -30.5rem -49.8125rem;}
+  .css_img3 li:nth-child(6) > a{background-position: -15rem -24.8125rem;}
+  
+
+  .css_img3 li:nth-child(1) > a{transition: all 300ms ease;}
+  .css_img3 li:nth-child(2) > a{transition: all 1000ms ease;}
+  .css_img3 li:nth-child(1) > a:hover{background-position: -14.875rem -12.5rem;}
+  .css_img3 li:nth-child(2) > a:hover{background-position: -30.625rem -24.875rem;}
+  .css_img3 li:nth-child(3) > a:hover{background-position: -61.875rem -37.5rem;}
+  .css_img3 li:nth-child(4) > a:hover{background-position: -30.5rem -49.8125rem;}
+  .css_img3 li:nth-child(5) > a:hover{background-position: -15rem -24.8125rem;}
+  
+  /**
+    * IR(Image Replace)기법 : 이미지가 나오지 않을 때 사용하는 대체 텍스트
+      1. w:0 h:0  
+      2. text-indent : 들여쓰기. +값을 주면 줄바꿈처리되기 때문에 -rem을 줘서 박스밖으로 설정
+    * IS()기법 : 이미지 한장에 여러가지 이미지를 넣고 사이즈로 조절하는 방법
+  **/
