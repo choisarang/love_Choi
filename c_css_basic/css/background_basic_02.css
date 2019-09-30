@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* background_basic_02.css */
+
+#contentBox{width: 800px; height: auto;  margin: auto; border: 2px solid #333; box-sizing: border-box;}
+#contentBox > div{width: 100%; height: 500px; background-repeat: no-repeat; background-position: 50% 50%;}
+
+.box_01{background-image: url("../img/pet_03.jpg");
+      background-attachment: local;}
+.box_02{background-image: url("../img/pet_02.jpg");
+      background-attachment: fixed;}
+.box_03{background-image: url("../img/pet_04.jpg");
+      background-attachment: scroll;}
+
+#contentBox > div{overflow: hidden; overflow-y: auto;}
+#contentBox > div > h3{width: 100%; height: 70px; background-color: rgba(255,100,0,0.3);}
+#contentBox > div > ul{width: 100%; padding-left: 1rem; box-sizing: border-box;}
+#contentBox > div > ul > li{list-style: decimal; height: 50px; margin-bottom: 20px; background-color: rgba(255,255,255,0.3);}
+
+
+/* 
+background-attachment : 배경이미지 고정 처리 유무 판단
+                       local(기본형) || fixed(고정) || scroll(요소내부 스크롤시 고정)
+
+* 주의사항 : fixed 처리시 background-position의 위치값이 브라우저 기준으로 처리.
+*/
+
+#gradientBox{width: 800px; height: auto; margin: auto; margin-top: 2rem; border: 3px solid #333;}
+#gradientBox > div{width: 100%; height: 500px; margin-bottom: 1rem;}
+#gradientBox > div:last-of-type{margin-bottom: 0;}
+.gr_01{background-color: #34f; background-image:linear-gradient(#fa0, #0af);}
+.gr_02{background-color: #f4f; background-image:linear-gradient(-45deg,#fa0, #faf);}
+.gr_03{background-color: #3af; background-image:linear-gradient(30deg, #0af 30%, #fac 40%);}
+.gr_04{background-color: #f14; background-image:linear-gradient(-45deg, #fac 30%, #86f 30% 80%, #171717 80%);}
+
+.gr_05{position: relative; z-index: 0; background-image:linear-gradient(-45deg, #fac, #acf);}
+.gr_05:after{content: " "; display: block; position: absolute; top: 0; left: 0; z-index:-1; width: 100%; height: 100%; opacity: 0; transition: all 300ms ease;background-image:linear-gradient(-45deg, #0ac, #a0f);}
+.gr_05:hover:after{opacity: 1;}
