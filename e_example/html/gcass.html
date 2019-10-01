@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<!-- 문서.html -->
+<!-- gcass.html -->
 <html lang="ko-KR">
 
 <head>
   <noscript>
     <p></p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다.<br />
     자바스크립트의 기능을 활성화 해주세요.</p>
-    <p><a target="_blank" href="http://enable-jabascript.com/ko/">자바스크립트 활성화 처리하기</a></p>
+    <p><a target="_blank" href="http://enable-jabascript.com/ko/">자바스크립트 
+활성화 처리하기</a></p>
   </noscript>
 
   <meta charset="UTF-8">
@@ -18,9 +19,9 @@
   <meta name="generator" content="illustrator, photoshop, sublimetext, vscode">
 
   <link rel="stylesheet" href="../fonts/gyeonggi/stylesheet.css">
-  <link rel="stylesheet" href="../css/reset_test.css">
+  <link rel="stylesheet" href="../css/base/reset.css">
   <link rel="stylesheet" href="../css/base/common.css">
-  <link rel="stylesheet" href="../css/문서.html.css" />
+  <link rel="stylesheet" href="../css/gcass.css">
 
   <!--[if IE]>
        <script src="./ie/html5shiv/dist/html5shiv.min.js"></script>
@@ -32,45 +33,52 @@
   <link rel="shortcut icon" type="lmage/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
 
-  <title>문서제목</title>
+  <title>document</title>
 </head>
 
 <body>
   <!-- layout -->
-  <div id="wrap">
-    <header id="headBox">
-      <h1><a href=""></a></h1>
-    </header>
-  
-    <main id="contentBox">
-      <h2>부제</h2>
-      <ul>
-        <li><a href="./rwd_test_01.html">반응형 웹 테스트1</a></li>
-      </ul>
-      <ul>
-        <li><a href="./rwd_test_01_result.html">반응형 웹 테스트1_result</a></li>
-      </ul>
-      <ul>
-        <li><a href="./nth_child.html">nth_child</a></li>
-      </ul>
-      <ul>
-        <li><a href="./rwd_test_02.html">반응형 웹 테스트2</a></li>
-      </ul>
-      <ul>
-        <li><a href="./rwd_test_02_result.html">반응형 웹 테스트2_result</a></li>
-      </ul>
-      <ul>
-        <li><a href="./gcass.html">gcass</a></li>
-      </ul>
-      <ul>
-          <li><a href="./gcass_result.html">gcass_result</a></li>
+    <div id="wrap">
+      <aside id="subBox">
+        <ul>
+          <li><a href="">home</a></li>
+          <li><a href="">study</a></li>
+          <li><a href="">education</a></li>
         </ul>
-    </main>
-  
-    <footer id="footBox">
-      <h2>정보</h2>
-    </footer>
+      </aside>
 
+      <header id="headBox">
+        <h1><a href="#"></a></h1>
+        <nav class="nav_area">
+          <ul>
+            <li>ABOUT</li>
+            <li>STUDY</li>
+            <li>PHOTO</li>
+            <li>BLOG</li>
+            <li>PRESS</li>
+          </ul>
+        </nav>
+        <aside class="qna"></aside>
+      </header>
+
+      <main id="contentBox">
+        <div class="text_area"></div>
+        <div class="com_area"></div>
+      </main>     
+
+      <footer id="footBox">
+        <div class="family_area">
+          <dl>
+            <dt>webpage</dt>
+            <dd>www.greenart.co.kr</dd>
+          </dl>
+          <dl>
+              <dt>website</dt>
+              <dd>xidoweb.com</dd>
+          </dl>
+        </div>
+      </footer>
+    </div>
   <!-- script -->
   <script>
   </script>
