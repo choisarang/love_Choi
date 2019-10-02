@@ -20,16 +20,16 @@
   6. 이미지처리, 애니메이션, 제어 등의 기능을 처리
 */
 /* 공통영역 ========================================= */
-#wrap{width: 100%; min-width: 320px; height: auto; min-height: 500px; padding-top: 60px;}
+#wrap{padding-top: 60px; width: 100%; min-width: 480px; height: auto; padding-top: 60px;}
 
-  #headBox{position: fixed; top:0; left:0; z-index: 1000; width: 100%; min-width: 320px; height: 60px; background-color: #555;}
+  #headBox{position: fixed; top:0; left:0; z-index: 1000; width: 100%; height: 60px; background-color: #555;}
     .area_wrap{margin: auto; width: 100%; max-width: 960px; height: 40px; background-color: #fff;}
-  #contentBox{width: 100%; height: auto;}
+  #contentBox{width: 100%; height: auto; padding-top: 60px;}
     .view_area{width: 100%; height: 720px; background-color: #0cf;}
     .tip_area{margin: auto; width: 100%; max-width: 960px; height: 720px; background-color: #0b4;}
     .info_area{margin: auto; width: 100%; max-width: 960px; height: 720px; background-color: #0ad;}
 
-  #footBox{width: 100%; height: 60px; background-color: #a43;}
+  #footBox{width: 100%; height: 60px; background-color: #333;}
 
 /* design 기준 : 480px ============================== */
 @media screen and (max-width:479px){
@@ -41,6 +41,10 @@
 }
 /* -design 기준 : 768px ============================== */
 @media screen and (min-width:768px) and (max-width:959px){
+    .view_area{height: 450px;}
+    .tip_area{height: 210px;}
+    .info_area{height: 540px;}
+    
     #footBox{height: 120px;}
 } 
 /* -design 기준 : 960px ============================== */
