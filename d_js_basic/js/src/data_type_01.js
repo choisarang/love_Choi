@@ -19,5 +19,5 @@ console.log(멍댕이);
 * 값이 not defined라면, 변수를 생성조차 하지 않은 것
 */
 
-var rel ="10:01";
+var rel = "10:01";
 console.log(rel);
