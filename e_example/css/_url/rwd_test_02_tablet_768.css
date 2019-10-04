@@ -1,0 +1,14 @@
+@media screen and (min-width:768px) and (max-width:959px){
+  h1{width: 174px;}
+
+  .view_area{height: 450px;}
+
+  .tip_area{height: 210px;}
+  
+  .info_area:after,
+  .info_area::after{content: " "; display: block; width: 0; height: 0; clear: both;}
+  .info_area > div{width: 50%; float: left; height: 540px;}
+  .info_02{display: block;}
+
+  #footBox{height: 120px;}
+} 
