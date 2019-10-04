@@ -1,0 +1,14 @@
+// sample.scss
+/* sample.css */
+
+@import "var";
+
+h1{width: $full; height: $full; background-color: rgba($bg1, 0.5);
+color:lighten($bg1, 60%);
+border:2px solid nth($color, -2);
+}
+
+$myp : (0, 10px, 40px, 100px, 10px);
+@for $i from 1 to length($myp)+1{
+  .list_0#{$i}{background-position: 0 nth($myp, $i);}
+}

@@ -1,0 +1,22 @@
+/* sample.css */
+h1 {
+  width: 80%;
+  height: 80%;
+  background-color: rgba(17, 17, 17, 0.5);
+  color: #aaaaaa;
+  border: 2px solid #555; }
+
+.list_01 {
+  background-position: 0 0; }
+
+.list_02 {
+  background-position: 0 10px; }
+
+.list_03 {
+  background-position: 0 40px; }
+
+.list_04 {
+  background-position: 0 100px; }
+
+.list_05 {
+  background-position: 0 10px; }
