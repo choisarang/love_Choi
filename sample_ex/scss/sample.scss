@@ -12,3 +12,9 @@ $myp : (0, 10px, 40px, 100px, 10px);
 @for $i from 1 to length($myp)+1{
   .list_0#{$i}{background-position: 0 nth($myp, $i);}
 }
+$url : "../../img/myi/content/product/";
+$myp : ('food.jpg','nat.jpg','cup.jpg''phone.jpg','usb.jpg');
+
+@for $i from 1 to length($myp)+1 {
+  .myp-#{$i}{background-image: url($url + nth($myp, $i));}
+}

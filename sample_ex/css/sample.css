@@ -20,3 +20,15 @@ h1 {
 
 .list_05 {
   background-position: 0 10px; }
+
+.myp-1 {
+  background-image: url("../../img/myi/content/product/food.jpg"); }
+
+.myp-2 {
+  background-image: url("../../img/myi/content/product/nat.jpg"); }
+
+.myp-3 {
+  background-image: url('../../img/myi/content/product/"cup.jpg" "phone.jpg"'); }
+
+.myp-4 {
+  background-image: url("../../img/myi/content/product/usb.jpg"); }
