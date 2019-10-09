@@ -1,34 +1,20 @@
 /* sample.css */
-h1 {
-  width: 80%;
-  height: 80%;
-  background-color: rgba(17, 17, 17, 0.5);
-  color: #aaaaaa;
-  border: 2px solid #555; }
+h1 { width: 80%; height: 80%; background-color: rgba(17, 17, 17, 0.5); color: #aaaaaa; border: 2px solid #555; }
 
-.list_01 {
-  background-position: 0 0; }
+.list_01 { background-position: 0 0; }
 
-.list_02 {
-  background-position: 0 10px; }
+.list_02 { background-position: 0 10px; }
 
-.list_03 {
-  background-position: 0 40px; }
+.list_03 { background-position: 0 40px; }
 
-.list_04 {
-  background-position: 0 100px; }
+.list_04 { background-position: 0 100px; }
 
-.list_05 {
-  background-position: 0 10px; }
+.list_05 { background-position: 0 10px; }
 
-.myp-1 {
-  background-image: url("../../img/myi/content/product/food.jpg"); }
+.myp-1 { background-image: url("../../img/myi/content/product/food.jpg"); }
 
-.myp-2 {
-  background-image: url("../../img/myi/content/product/nat.jpg"); }
+.myp-2 { background-image: url("../../img/myi/content/product/nat.jpg"); }
 
-.myp-3 {
-  background-image: url('../../img/myi/content/product/"cup.jpg" "phone.jpg"'); }
+.myp-3 { background-image: url('../../img/myi/content/product/"cup.jpg" "phone.jpg"'); }
 
-.myp-4 {
-  background-image: url("../../img/myi/content/product/usb.jpg"); }
+.myp-4 { background-image: url("../../img/myi/content/product/usb.jpg"); }

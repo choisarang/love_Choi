@@ -1,0 +1,92 @@
+/* yogurt_01_all.css */
+
+
+#wrap{width: 100%; height: 100%; background-color: #a0f;}
+
+#headBox{position: fixed; width: 100%; border-bottom: 1px solid rgba(200, 200, 200, 0.5); box-sizing: border-box;}
+
+h1{float: left; background-image: url("../../img/logo_01.png"); background-position: 0 0; background-repeat: no-repeat; background-size: contain;}
+
+h1 > a{display: block; width: 100%; height: 100%;}
+
+.gnb{box-sizing: border-box;}
+.gnb > i{display: none;}
+.gnb > ul{width: 100%; height: 100%; text-transform: capitalize;}
+.gnb > ul > li{float: left;  height: 100%; text-align: center; color: #333; }
+.gnb > ul > li:last-child{margin-right: 0;}
+
+.fran{float: right; box-sizing: border-box; border-radius: 100%; background-color: #1b398f; color: #fff; text-align: center;}
+
+
+#contentBox{width: 100%;
+}
+.con{width: 100%;box-sizing: border-box;}
+
+.view_area{width: 100%; background-image: url("../../img/view_box.jpg");  background-repeat: no-repeat;}
+
+.scroll{position: absolute; left: 0; right: 0; margin: auto; bottom: 80px; height: 10px; background-color: rgba(200, 200, 200, 0.5);}
+
+.scroll > ul{width: 100%; height: 100%;}
+
+.scroll > ul > li{float: left; height: 100%;}
+
+.scroll > ul > li > a{display: block; width: 100%; height: 100%;}
+
+.scroll > ul > li:focus{background-color: #fff;}
+
+.sidebar{position: fixed; z-index: 500; width: 40px;}
+
+.sidebar > ul{width: 100%; height: 100%; padding: 15px 10px; box-sizing: border-box;}
+
+.sidebar > ul > li{margin-bottom: 22px; border-radius: 100%; background-color: #aaa;}
+.sidebar > ul > li:last-child{margin-bottom: 0;}
+
+.sidebar > ul > li > a{position: relative; display: block; width: 100%; height: 100%;} 
+
+.sidebar > ul > li > a > span{position: absolute; display: block; width:0; height: 100%; top:0; right: 40px; overflow: hidden; background-color: #0cf; text-align: right; padding: 5px; transition: all 300ms ease; opacity: 0; white-space: nowrap;}
+
+ /* .sidebar > ul > li > a:focus > li{border: 1px solid #1B398F; background-color: rgb(255, 255, 255); opacity: 1;} */
+
+ .sidebar > ul > li > a:focus > span{display: block; width: 100px; height: 100%; font-size: 17px; text-align: center; color:#1B398F; background-color: #fff; border-radius: 8px; opacity: 1;}
+
+
+.brand_area{background-color: #f7f7f7;}
+
+.brand_area > ul > li{float: left; background-repeat: no-repeat;} 
+
+.brand_area > ul > li:nth-child(1){background-image: url("../../img/brand_brand.jpg");}
+
+.brand_area > ul > li:nth-child(2){background-image: url("../../img/brand_yogurt.jpg");}
+
+.brand_area > ul > li:nth-child(3){background-image: url("../../img/brand_store.png");}
+
+.brand_area > ul > li > div{background-repeat: no-repeat; border-radius: 100%;}
+
+.brand_area > ul > li > div > a{display: block; width: 100%; height: 100%;}
+
+.menu_area{box-sizing: border-box; background-image: url("../../img/menu_box.jpg");}
+
+.best_area > div{background-repeat: no-repeat; border-radius: 100%;  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5); background-color: #fff;}
+
+.best_area > div > a{display: block; width: 100%; height: 100%;}
+
+.best{background-repeat: no-repeat; background-image: url("../../img/1.png");}
+
+.menu_btn{position: absolute; background-color: #1B398F;}
+
+.menu_btn > a{display: block; width: 100%; height: 100%; text-align: center; color: #fff;}
+
+
+.sns_area{background-image: url("../../img/sns_box_02.jpg"); background-repeat: no-repeat;}
+
+.sns_pic > ul > li{float: left; background-repeat: no-repeat; background-image: url("../../img/sns.png");}
+
+#footBox{width: 100%; background-color: #fff; box-sizing: border-box;}
+
+#footBox > h2{background-image: url("../../img/logo_01.png"); background-size: contain; background-repeat: no-repeat;}
+
+.info{width: 100%;}
+
+.info > p{display: block; width: 100%; height: 100%; color: #333;}
+
+.sns_logo{background-image: url("../../img/sns_logo.png"); background-repeat: no-repeat;}
