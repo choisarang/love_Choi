@@ -12,7 +12,7 @@ h1{width: 110px; height: 65px;}
 .gnb > ul > li{width: 166px; font-size: 25px; line-height: 40px; margin-right: 35px;}
 
 
-.fran{float: right; width: 60px; height: 60px; padding-top: 10px; font-size: 15px; }
+.fran{width: 60px; height: 60px; padding-top: 10px; font-size: 15px; }
 
 
 #contentBox{height: 3200px;}
@@ -27,17 +27,15 @@ h1{width: 110px; height: 65px;}
 .scroll > ul > li{width: 200px;}
 
 
-.sidebar{height: 234px; top: 35%; transform: translateY(-50%); right: 20px; margin: auto;}
+.sidebar{height: 234px; top: 35%; transform: translateY(-50%); right: 50px; margin: auto;}
 
-   
-      .sidebar > ul > li{width: 24px; height: 24px;}
-  
+.sidebar > ul > li{width: 24px; height: 24px;}  
 
 .brand_area > ul{width: 1080px; height: 430px; margin-top: 55px;}
 
 .brand_area > ul > li{width: 360px; height: 100%; background-color: #777;}
 
-.brand_area > ul > li:nth-child(1){background-size: 775px 430px; background-position: -87px 0;}
+
 .brand_area > ul > li:nth-child(2){background-size: 640px 430px; background-position: -136px 0;}
 .brand_area > ul > li:nth-child(3){background-size: 834px 430px; background-position: -210px 0;}
 
@@ -88,14 +86,14 @@ h1{width: 110px; height: 65px;}
 .sns_pic > ul > li:nth-child(9){display: none;}
 .sns_pic > ul > li > a{display: block; width: 100%; height: 100%;}
 
-#footBox{height: 260px; padding: 26px 0;}
+#footBox{height: 260px; padding: 40px 0 26px;}
 
 #footBox > h2{width: 106px; height: 60px;}
 
-.info{height: 84px;}
+#footBox > .info{height: auto;}
 
-.info > p{font-size: 15px;}
+.info > p{font-size: 15px; margin-top: 10px;}
 
-.sns_logo{width: 138px; height: 45px; background-size: 300px 150px;}
+.sns_logo{width: 138px; height: 45px; background-size: 150px 75px; background-position: -10px -10px;}
 
 }

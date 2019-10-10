@@ -12,44 +12,51 @@ h1{width: 110px; height: 65px;}
 .gnb > ul > li{width: 166px; font-size: 25px; line-height: 40px; margin-right: 35px;}
 
 
-.fran{float: right; width: 60px; height: 60px; padding-top: 10px; font-size: 15px; }
+.fran{width: 60px; height: 60px; padding-top: 10px;}
+.fran > a{display: block; font-size: 15px;}
 
 
-#contentBox{height: 3200px;}
 
-.con{height: 800px;  padding: 80px 100px 120px;}
+#contentBox{height: 3600px;}
 
+.con{height: 900px;  padding: 80px 330px 120px;}
 
-.view_area{height: 800px; background-size: 1773px 1183px;background-position: -157px -382px;}
+/* view_area ============================ */
+.view_area{height: 900px;}
 
 .scroll{width: 600px;}
 
 .scroll > ul > li{width: 200px;}
 
 
-.sidebar{height: 234px; top: 35%; transform: translateY(-50%); right: 20px; margin: auto;}
+.sidebar{height: 234px; top: 35%; transform: translateY(-50%); right: 100px; margin: auto;}
 
-   
-      .sidebar > ul > li{width: 24px; height: 24px;}
+.sidebar > ul > li{width: 24px; height: 24px;}
   
 
-.brand_area > ul{width: 1080px; height: 430px; margin-top: 55px;}
+/* brand_area ============================ */
+.brand_area > ul{width: 1260px; height: 502px; padding-top: 60px; box-sizing: border-box; margin: auto;}
 
-.brand_area > ul > li{width: 360px; height: 100%; background-color: #777;}
+.brand_area > ul > li{width: 420px; height: 100%;}
 
-.brand_area > ul > li:nth-child(1){background-size: 775px 430px; background-position: -87px 0;}
-.brand_area > ul > li:nth-child(2){background-size: 640px 430px; background-position: -136px 0;}
-.brand_area > ul > li:nth-child(3){background-size: 834px 430px; background-position: -210px 0;}
+.brand_area > ul > li:after{content:" "; display:block;width: 100%; height: 100%; background-color:rgba(119,119,119,0.6); transition: all 300ms ease;}
+.brand_area > ul > li:nth-child(1):hover:after{background-color: #1B398F;}
+.brand_area > ul > li:nth-child(2):hover:after{background-color: #697F24;}
+.brand_area > ul > li:nth-child(3):hover:after{background-color: #8CB1C8;}
+
 
 .brand_area > ul > li > div{width: 100px; height: 100px; margin: auto;}
 
-.brand_area > ul > li > .icon_01{background-color: #1B398F; background-image: url("../../img/neck_w.png"); background-position: 16px 10px; background-size: 67px 85px; }
-.brand_area > ul > li > .icon_02{background-color: #697F24; background-image: url("../../img/spoon_w.png"); background-position: 18px 14px; background-size: 64px 70px;}
-.brand_area > ul > li > .icon_03{background-color: #8CB1C8; background-image: url("../../img/store.png"); background-position: 10px 18px; background-size: 78px 63px;}
+.brand_area > ul > li > .icon_01{background-color: #1B398F; background-image: url("../../img/neck_w.png");background-size: auto 100%; background-position: 50% 50%;}
+.brand_area > ul > li:hover > .icon_01{background-color: #A7CEF7; background-image: url("../../img/favicon.png"); background-size: auto 100%; background-position: 50% 50%;}
 
+.brand_area > ul > li > .icon_02{background-color: #697F24; background-image: url("../../img/spoon_w.png"); background-size: auto 100%; background-position: 50% 50%;}
+.brand_area > ul > li:hover > .icon_02{background-color: #CADD90; background-image: url("../../img/spoon.png"); background-size: auto 100%; background-position: 50% 50%;}
 
-.menu_area{background-size: 1290px 1744px; background-position: 0 -537px;}
+.brand_area > ul > li > .icon_03{background-color: #8CB1C8; background-image: url("../../img/store.png"); background-size: auto 100%; background-position: 50% 50%;}
+.brand_area > ul > li:hover > .icon_03{background-color: #294B6F; background-image: url("../../img/store_w.png"); background-size: auto 100%; background-position: 50% 50%;}
 
+/* menu_area ============================ */
 
 .best_area{width: 100%; height: 377px; margin-top: 40px;}
 
@@ -69,7 +76,7 @@ h1{width: 110px; height: 65px;}
 .menu_btn > a{font-size: 20px; line-height: 46px; }
 
 
-.sns_area{background-size: 1360px 1020px; background-position: -40px 0;}
+/* sns_area ============================ */
 
 .sns_pic{margin-top: 40px; width: 1086px; height: 506px;}
 
@@ -88,7 +95,7 @@ h1{width: 110px; height: 65px;}
 .sns_pic > ul > li:nth-child(9){display: none;}
 .sns_pic > ul > li > a{display: block; width: 100%; height: 100%;}
 
-#footBox{height: 260px; padding: 26px 0;}
+#footBox{height: 300px; padding: 26px 0;}
 
 #footBox > h2{width: 106px; height: 60px;}
 
