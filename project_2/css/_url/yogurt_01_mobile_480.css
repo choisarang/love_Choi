@@ -12,7 +12,7 @@
     
     .gnb{float: right; width: 60px; height: 60px;}
 
-    .gnb > i {display: block; width: 100%; height: 100%; font-size: 40px; text-align: center; color: rgba(27,57,143,0.5);}
+    .gnb > i {display: block; width: 100%; height: 100%; font-size: 40px; text-align: center; color: #1b398f;}
 
     .gnb > ul{display: none;}
   
@@ -23,7 +23,8 @@
     
     .con{height: 900px;  padding: 150px 20px 130px;}
   
-    .view_area{height: 900px; background-size: 1344px 900px; background-position: -380px 0;}
+    /* view_area ============================ */
+    .view_area{height: 900px; background-size: auto 100%;}
 
     .scroll{width: 300px;}
 
@@ -36,42 +37,48 @@
       
       .sidebar > ul > li{width: 20px; height: 20px;}
   
-
+      /* brand_area ============================ */
       .brand_area > ul {margin-top: 60px; width: auto; height: 450px;}
 
       .brand_area > ul > li{width: 100%; height: 150px; background-position: 0 -20px; background-color: #333;}
 
-      .brand_area > ul > li:nth-child(1){background-size: 440px 244px;}
-      .brand_area > ul > li:nth-child(2){background-position: 0 -28px; background-size: 450px 360px;}
-      .brand_area > ul > li:nth-child(3){background-size: 442px 228px;}
+      .brand_area > ul > li:after{content:" "; display:block; width: 100%; height: 100%; background-color:rgba(51,51,51,0.6); transition: all 300ms ease;}
+
+      .brand_area > ul > li:nth-child(1){background-size: 100% auto;}
+      .brand_area > ul > li:nth-child(2){background-size: 100% auto;}
+      .brand_area > ul > li:nth-child(3){background-size: 100% auto;}
   
   
   
       .brand_area > ul > li > div{width: 84px; height: 84px;}
   
       
-      .brand_area > ul > li > .icon_01{background-color: #A7CEF7; background-image: url("../../img/favicon.png"); background-position: 50% 50%; background-size: 79px 82px;}
-      .brand_area > ul > li > .icon_02{background-color: #CADD90; background-image: url("../../img/spoon.png"); background-position: 50% 50%; background-size: 50px 54px;}
-      .brand_area > ul > li > .icon_03{background-color: #294B6F; background-image: url("../../img/store_w.png"); background-position: 50% 50%; background-size: 51px 42px;}
+      .brand_area > ul > li > .icon_01{background-color: #A7CEF7; background-image: url("../../img/favicon.png"); background-position: 50% 50%; background-size: 100% auto;}
+      .brand_area > ul > li > .icon_02{background-color: #CADD90; background-image: url("../../img/spoon.png"); background-position: 50% 50%; background-size: 90% auto;}
+      .brand_area > ul > li > .icon_03{background-color: #294B6F; background-image: url("../../img/store_w.png"); background-position: 50% 50%; background-size: 90% auto;}
   
-  
-    .menu_area{position: relative; padding: 160px 0 150px; background-size: 670px 906px; background-position: -95px 0;}
+
+    /* menu_area ============================ */
+    .menu_area{padding: 160px 0 150px;  background-size: auto 100%;}
       
       .best_area{width: 100%; height: 350px; margin: 80px 0 50px;}
+      
         /* .side{width: 290px; height: 290px; border-radius: 100%; background-color: #fff;}
         .before_best{transform: translateX(-90%);}
         .after_best{transform: translateX(150%);} 
       */
-        .best{width: 330px; height: 330px; left: 0; right: 0; margin: auto; background-size: 152px 231px; background-position: 50% 50%; }
+        .best{width: 300px; height: 300px; margin: auto; background-size: 152px 231px; background-position: 50% 50%; }
   
 
       .menu_btn{width: 144px; height: 40px; left: 0; right: 0; margin: auto;}
 
-      .menu_btn > a{line-height: 37px; font-size: 18px;}
+      .menu_btn > a{line-height: 40px; font-size: 18px;}
   
-    .sns_area{background-position: 0 0; background-size: 480px 946px;}
+
+    /* sns_area ============================ */
+    .sns_area{background-size: auto 100%;}
   
-    .sns_pic{width: auto; height: 430px; margin-top: 80px;}
+    .sns_pic{width: 420px; height: 430px; margin-top: 80px;}
   
     .sns_pic > ul{width: 100%; height: 100%;}
 
