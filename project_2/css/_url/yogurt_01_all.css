@@ -3,13 +3,13 @@
 
 #wrap{width: 100%; height: 100%; background-color: #a0f;}
 
-#headBox{position: fixed; width: 100%; border-bottom: 1px solid rgba(200, 200, 200, 0.5); box-sizing: border-box;}
+#headBox{position: fixed; z-index: 500; width: 100%; border-bottom: 1px solid rgba(200, 200, 200, 0.5); box-sizing: border-box; }
 
 h1{float: left; background-image: url("../../img/logo_01.png"); background-position: 0 0; background-repeat: no-repeat; background-size: contain;}
 
 h1 > a{display: block; width: 100%; height: 100%;}
 
-.gnb{box-sizing: border-box;}
+.gnb{position: absolute; left: 0; right: 0; margin: auto; box-sizing: border-box;}
 .gnb > i{display: none;}
 .gnb > ul{width: 100%; height: 100%; text-transform: capitalize;}
 .gnb > ul > li{float: left;  height: 100%; text-align: center; color: #333; }
@@ -22,9 +22,10 @@ h1 > a{display: block; width: 100%; height: 100%;}
 }
 .con{width: 100%;box-sizing: border-box;}
 
-.view_area{width: 100%; background-image: url("../../img/view_box.jpg");  background-repeat: no-repeat;}
+/* view_area ============================ */
+.view_area{position: relative; width: 100%; background-image: url("../../img/view_box.jpg");  background-repeat: no-repeat;}
 
-.scroll{position: absolute; left: 0; right: 0; margin: auto; bottom: 80px; height: 10px; background-color: rgba(200, 200, 200, 0.5);}
+.scroll{position: absolute; left: 0; right: 0; margin: auto; bottom: 160px; height: 10px; background-color: rgba(200, 200, 200, 0.5);}
 
 .scroll > ul{width: 100%; height: 100%;}
 
@@ -32,9 +33,10 @@ h1 > a{display: block; width: 100%; height: 100%;}
 
 .scroll > ul > li > a{display: block; width: 100%; height: 100%;}
 
-.scroll > ul > li:focus{background-color: #fff;}
+.scroll > ul > li > a:hover{outline: none; background-color: #fff;}
+.scroll > ul > li > a:focus{outline: none; background-color: #1B398F;}
 
-.sidebar{position: fixed; z-index: 500; width: 40px;}
+.sidebar{position: fixed; z-index: 500; top: 0; bottom: 0; margin: auto; width: 40px;}
 
 .sidebar > ul{width: 100%; height: 100%; padding: 15px 10px; box-sizing: border-box;}
 
@@ -50,9 +52,10 @@ h1 > a{display: block; width: 100%; height: 100%;}
  .sidebar > ul > li > a:focus > span{display: block; width: 100px; height: 100%; font-size: 17px; text-align: center; color:#1B398F; background-color: #fff; border-radius: 8px; opacity: 1;}
 
 
+/* brand_area ============================ */
 .brand_area{background-color: #f7f7f7;}
 
-.brand_area > ul > li{float: left; background-repeat: no-repeat;} 
+.brand_area > ul > li{position: relative; float: left; background-repeat: no-repeat;} 
 
 .brand_area > ul > li:nth-child(1){background-image: url("../../img/brand_brand.jpg");}
 
@@ -60,13 +63,15 @@ h1 > a{display: block; width: 100%; height: 100%;}
 
 .brand_area > ul > li:nth-child(3){background-image: url("../../img/brand_store.png");}
 
-.brand_area > ul > li > div{background-repeat: no-repeat; border-radius: 100%;}
+.brand_area > ul > li > div{position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; background-repeat: no-repeat; border-radius: 100%;}
 
 .brand_area > ul > li > div > a{display: block; width: 100%; height: 100%;}
 
+
+/* menu_area ============================ */
 .menu_area{box-sizing: border-box; background-image: url("../../img/menu_box.jpg");}
 
-.best_area > div{background-repeat: no-repeat; border-radius: 100%;  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5); background-color: #fff;}
+.best_area > div{background-repeat: no-repeat; border-radius: 100%; box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5); background-color: #fff;}
 
 .best_area > div > a{display: block; width: 100%; height: 100%;}
 
@@ -77,12 +82,15 @@ h1 > a{display: block; width: 100%; height: 100%;}
 .menu_btn > a{display: block; width: 100%; height: 100%; text-align: center; color: #fff;}
 
 
+/* sns_area ============================ */
 .sns_area{background-image: url("../../img/sns_box_02.jpg"); background-repeat: no-repeat;}
 
 .sns_pic > ul > li{float: left; background-repeat: no-repeat; background-image: url("../../img/sns.png");}
 
 #footBox{width: 100%; background-color: #fff; box-sizing: border-box;}
 
+
+/* footBox ============================ */
 #footBox > h2{background-image: url("../../img/logo_01.png"); background-size: contain; background-repeat: no-repeat;}
 
 .info{width: 100%;}

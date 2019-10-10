@@ -54,20 +54,22 @@ h1{width: 110px; height: 65px;}
 .menu_area{background-size: 1290px 1744px; background-position: 0 -537px;}
 
 
-.best_area{width: 1076px; height: 377px; margin-top: 40px;}
+.best_area{width: 100%; height: 377px; margin-top: 40px;}
 
 
-.side{float: left; width: 256px; height: 256px; background-repeat: no-repeat;}
+.side{background-repeat: no-repeat; transform: scale(0.7);}
 
-.best{float: left; width: 376px; height: 376px; margin: 0 90px;   background-size: 165px 252px; background-position: 104px 60px;}
+.best_area > div{float: left; width: 360px; height: 360px;}
 
-.before_best{background-image: url("../../img/3.png"); background-size: 110px 146px; background-position: 72px 56px;}
-.after_best{background-image: url("../../img/4.png"); background-size: 110px 150px; background-position: 74px 56px;}
+.best{background-size: 165px 252px; background-position: 96px 60px;}
+
+.before_best{background-image: url("../../img/3.png"); background-size: 156px 209px; background-position: 94px 90px;}
+.after_best{background-image: url("../../img/4.png"); background-size: 135px 200px; background-position: 108px 90px;}
 
 
-.menu_btn{width: 256px; height: 69px;}
+.menu_btn{width: 180px; height: 46px;}
 
-.menu_btn > a{font-size: 30px; line-height: 70px; }
+.menu_btn > a{font-size: 20px; line-height: 46px; }
 
 
 .sns_area{background-size: 1360px 1020px; background-position: -40px 0;}
