@@ -67,16 +67,22 @@ var myMenu = function(){
     break;  
       }
 
-    console.log(text);
+    // console.log(text);
     
+    let myP = document.getElementsByTagName('p')[0];
+    myP.innerHTML = text;
+
     };
 
+    
+
   var myBtn = document.getElementById('coffeeMenu');
+
   myBtn.addEventListener('click', function(){
     myMenu();
   });
-
-
+  
+ 
 
 
 

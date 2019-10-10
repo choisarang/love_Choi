@@ -92,6 +92,6 @@
   
   .info > p{line-height: 20px; font-size: 14px;}
 
-  .sns_logo{width: 84px; height: 27px; background-size: 100px; background-position: -10px -10px;}
+  .sns_logo{width: 84px; height: 27px; margin-top: 10px; background-size: 100px; background-position: -10px -10px;}
 
 }

@@ -84,12 +84,12 @@
   
   #footBox{height: 150px; padding: 12px 0;}
   
-  #footBox > h2{width: 56px; height: 35px; margin: auto;}
+  #footBox > h2{width: 56px; height: 35px;}
 
   .info{height: 55px;}
  
   .info > p{line-height: 20px; font-size: 12px;}
 
-  .sns_logo{width: 84px; height: 27px; margin: auto; margin-top: 10px; background-size: 100px; background-position: -10px -10px;}
+  .sns_logo{width: 84px; height: 27px; margin-top: 10px; background-size: 100px; background-position: -10px -10px;}
 
 }
