@@ -2,14 +2,11 @@
 
 @media screen and (min-width:769px) and (max-width:1280px) {
 
-  h2{width: 100%; height: 60px; font-size: 45px; color: #1B398F;}
-  p{width: 100%; height: 50px; font-size: 30px; color: #1B398F;}
-
 #headBox{height: 110px; padding: 25px 100px; box-sizing: border-box;}
 
 h1{width: 110px; height: 65px;}
 
-.gnb{float: left; width: 769px; height: 40px; margin-top: 10px;}
+.gnb{position: absolute; left: 0; right: 0; margin: auto; width: 769px; height: 40px; margin-top: 10px;}
 
 
 .gnb > ul > li{width: 166px; font-size: 25px; line-height: 40px; margin-right: 35px;}
@@ -59,12 +56,12 @@ h1{width: 110px; height: 65px;}
 
 .side{background-repeat: no-repeat; transform: scale(0.7);}
 
-.best_area > div{float: left; width: 360px; height: 360px;}
+.best_area > div{float: left; width: 355px; height: 355px;}
 
-.best{background-size: 165px 252px; background-position: 96px 60px;}
+.best{background-size: 165px 252px; background-position: 96px 50px;}
 
-.before_best{background-image: url("../../img/3.png"); background-size: 156px 209px; background-position: 94px 90px;}
-.after_best{background-image: url("../../img/4.png"); background-size: 135px 200px; background-position: 108px 90px;}
+.before_best{background-image: url("../../img/3.png"); background-size: 156px 209px; background-position: 96px 80px;}
+.after_best{background-image: url("../../img/4.png"); background-size: 140px 206px; background-position: 108px 80px;}
 
 
 .menu_btn{width: 180px; height: 46px;}

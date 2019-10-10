@@ -52,3 +52,8 @@ animation: rotateball 3000ms infinite paused;
     (pauser,running)
   * animation-fill-mode : 애니메이션 전/후에 처리할 값
   */
+
+
+
+
+  .myani{width: 20px; height: 20px; border-radius: 100%; background-color: #333; animation: rotateball 500ms infinite alternate-reverse;}

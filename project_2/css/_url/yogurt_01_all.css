@@ -9,7 +9,7 @@ h1{float: left; background-image: url("../../img/logo_01.png"); background-posit
 
 h1 > a{display: block; width: 100%; height: 100%;}
 
-.gnb{position: absolute; left: 0; right: 0; margin: auto; box-sizing: border-box;}
+.gnb{box-sizing: border-box;}
 .gnb > i{display: none;}
 .gnb > ul{width: 100%; height: 100%; text-transform: capitalize;}
 .gnb > ul > li{float: left;  height: 100%; text-align: center; color: #333; }
@@ -20,7 +20,11 @@ h1 > a{display: block; width: 100%; height: 100%;}
 
 #contentBox{width: 100%;
 }
-.con{width: 100%;box-sizing: border-box;}
+.con{width: 100%; box-sizing: border-box;}
+
+h2{width: 100%; height: 50px; font-size: 45px; color: #1B398F; text-transform: uppercase;}
+p{width: 100%; height: 35px; font-size: 30px; color: #1B398F;}
+
 
 /* view_area ============================ */
 .view_area{position: relative; width: 100%; background-image: url("../../img/view_box.jpg");  background-repeat: no-repeat;}
@@ -69,7 +73,7 @@ h1 > a{display: block; width: 100%; height: 100%;}
 
 
 /* menu_area ============================ */
-.menu_area{box-sizing: border-box; background-image: url("../../img/menu_box.jpg");}
+.menu_area{box-sizing: border-box; background-image: url("../../img/menu_box.jpg"); background-repeat: no-repeat;}
 
 .best_area > div{background-repeat: no-repeat; border-radius: 100%; box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5); background-color: #fff;}
 

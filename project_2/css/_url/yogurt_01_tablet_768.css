@@ -1,15 +1,15 @@
 /* yogurt_01_tablet_768.css */
 @media screen and (min-width:481px) and (max-width:768px) {
 
-  h2{width: 100%; height: 50px; font-size: 45px; text-align: center; text-transform: uppercase; color:#1B398F;}
-  p{width: 100%; height: 35px; font-size: 30px; text-align: center; color:#1B398F;}
+  h2{text-align: center;}
+  p{text-align: center;}
   
   
   #headBox{height: 80px; padding: 15px 20px; box-sizing: border-box;}
 
     h1{width: 70px; height: 50px; margin-top: 5px;}
     
-    .gnb{float: left; margin-left: 55px; padding: 10px; width: 480px; height: 40px;}
+    .gnb{position: absolute; left: 0; right: 0; margin: auto; margin-left: 55px; padding: 10px; width: 480px; height: 40px;}
    
 
     .gnb > ul > li{width: 100px; margin-right: 20px; font-size: 20px; line-height: 30px;}
