@@ -38,7 +38,7 @@
       /* brand_area ============================ */
       .brand_area > ul {margin-top: 60px; width: auto; height: 639px;}
 
-      .brand_area > ul > li{width: 100%; height: 213px; background-position: 0 -20px; background-color: #333;}
+      .brand_area > ul > li{display: block; width: 100%; height: 213px; background-position: 0 -20px; background-color: #333;}
 
       .brand_area > ul > li:after{content:" "; display:block; width: 100%; height: 100%; background-color:rgba(51,51,51,0.6); transition: all 300ms ease;}
 
@@ -48,7 +48,7 @@
   
   
   
-      .brand_area > ul > li > div{width: 120px; height: 120px;}
+      .brand_area > ul > li div{width: 120px; height: 120px;}
   
       .brand_area > ul > li > .icon_01{background-color: #A7CEF7; background-image: url("../../img/favicon.png"); background-position: 50% 50%; background-size: 100% auto;}
       .brand_area > ul > li > .icon_02{background-color: #CADD90; background-image: url("../../img/spoon.png"); background-position: 50% 50%; background-size: 90% auto;}

@@ -21,7 +21,7 @@
 
   #contentBox{height: 3600px;}
     
-    .con{height: 900px;  padding: 150px 20px 130px;}
+    .con{height: 900px;  padding: 150px 25px 130px;}
   
     /* view_area ============================ */
     .view_area{height: 900px; background-size: auto 100%;}
@@ -50,7 +50,11 @@
       .brand_area > ul > li > a:after{content:" "; display:block; width: 100%; height: 100%; background-color:rgba(51,51,51,0.6); transition: all 300ms ease;}
   
 
-      .brand_area > ul > li .inner > div{width: 84px; height: 84px;}
+      .brand_area > ul > li .inner > div{width: 84px; height: 84px; margin: auto;  transform: translateY(40%);}
+
+      .brand_area > ul > li .inner dl{display: block; width: 100%; height: 100%;}
+      .brand_area > ul > li .inner dt{float: left;}
+      .brand_area > ul > li .inner dd{float: right;}
   
       
       .brand_area > ul > li .icon_01{background-color: #A7CEF7; background-image: url("../../img/favicon.png"); background-position: 50% 50%; background-size: 100% auto;}
@@ -75,16 +79,16 @@
     /* sns_area ============================ */
     .sns_area{background-size: auto 100%;}
   
-    .sns_pic{width: 420px; height: 430px; margin-top: 80px;}
+    .sns_pic{width: auto; height: 430px; margin-top: 80px;}
   
-    .sns_pic > ul{width: 100%; height: 100%;}
+    .sns_pic > ul{width: auto; height: 100%; margin: auto;}
 
     .sns_pic > ul > li{display: none; width: 200px; height: 200px; background-size: 1600px 1028px;}
   
     .sns_pic > ul > li:nth-child(1){display: block; margin-bottom: 30px; background-position: -190px -230px;}
-    .sns_pic > ul > li:nth-child(2){display: block; margin-left: 20px; margin-bottom: 30px; background-position: -410px -230px;}
+    .sns_pic > ul > li:nth-child(2){display: block; margin-left: 30px; margin-bottom: 30px; background-position: -410px -230px;}
     .sns_pic > ul > li:nth-child(3){display: block; background-position: -630px -230px;}
-    .sns_pic > ul > li:nth-child(4){display: block; margin-left: 20px; background-position: -850px -230px;}
+    .sns_pic > ul > li:nth-child(4){display: block; margin-left: 30px; background-position: -850px -230px;}
   
   #footBox{height: 150px; padding: 12px 0;}
   

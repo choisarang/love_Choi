@@ -1,7 +1,7 @@
 /* yogurt_01_all.css */
 
 
-#wrap{width: 100%; height: 100%; background-color: #a0f;}
+#wrap{width: 100%; min-width:480px; height: 100%; background-color: #a0f;}
 
 #headBox{position: fixed; z-index: 500; width: 100%; box-sizing: border-box; background-color: rgba(250, 250, 250, 0.5);}
 
@@ -64,7 +64,7 @@ h1 > a{display: block; width: 100%; height: 100%;}
 /* brand_area ============================ */
 .brand_area{background-color: #f7f7f7;}
 
-.brand_area > ul > li{position: relative; float: left;} 
+.brand_area > ul > li{position: relative;} 
 
 .brand_area > ul > li:nth-child(1) > a{background-image: url("../../img/brand_brand.jpg"); background-position: 50% 50%; background-repeat: no-repeat;}
 
@@ -72,23 +72,24 @@ h1 > a{display: block; width: 100%; height: 100%;}
 
 .brand_area > ul > li:nth-child(3) > a{background-image: url("../../img/brand_store.png"); background-position: 50% 50%; background-repeat: no-repeat;}
 
-.brand_area > ul > li .inner{position: absolute;}
+.brand_area > ul > li > a {position: relative; display: block; width: 100%; height: 100%;}
 
-.brand_area > ul > li .inner > div{background-repeat: no-repeat; border-radius: 100%;}
+.brand_area > ul > li .inner{width: 100%; height: 100%;}
 
-.brand_area > ul > li > a {position: relative;
-  display: block; width: 100%; height: 100%;}
+.brand_area > ul > li .inner > div{position: absolute; background-repeat: no-repeat; border-radius: 100%;}
+
 
 .brand_area > ul > li .inner dl{display: none;}
 
-.brand_area > ul > li:hover dl{display: block;}
 
-.brand_area > ul > li .inner dt{font-size: 25px; color: #fff; text-decoration-line: underline; text-align: center;}
+.brand_area > ul > li .inner dt{font-size: 20px; color: #fff; text-decoration-line: underline; text-align: center;}
 
-.brand_area > ul > li .inner dd{font-size: 20px; color: #fff; text-align: center;}
+.brand_area > ul > li .inner dd{font-size: 15px; color: #fff; text-align: center;}
 
 /* menu_area ============================ */
 .menu_area{box-sizing: border-box; background-image: url("../../img/menu_box.jpg"); background-repeat: no-repeat; background-position: 50% 50%;}
+.menu_area:after{}
+
 
 .best_area > div{background-repeat: no-repeat; border-radius: 100%; box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5); background-color: #fff;}
 
