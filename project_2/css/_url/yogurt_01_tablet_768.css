@@ -63,7 +63,7 @@
         .before_best{float: left; border-radius: 0 80px 80px 0;}
         .after_best{float: right;} 
       */
-        .best{width: 330px; height: 330px; margin: auto; background-size: 152px 231px; background-position: 50% 50%; }
+        .best{margin: auto; width: 330px; height: 330px;}
   
 
       .menu_btn{width: 230px; height: 65px; left: 0; right: 0; margin: auto;}

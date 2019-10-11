@@ -67,7 +67,7 @@
         .before_best{transform: translateX(-90%);}
         .after_best{transform: translateX(150%);} 
       */
-        .best{width: 300px; height: 300px; margin: auto; background-size: 152px 231px; background-position: 50% 50%; }
+        .best{width: 300px; height: 300px; margin: auto;}
   
 
       .menu_btn{width: 144px; height: 40px; left: 0; right: 0; margin: auto;}
