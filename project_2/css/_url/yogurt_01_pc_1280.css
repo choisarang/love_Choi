@@ -19,7 +19,7 @@ h1{width: 110px; height: 65px;}
 
 .con{height: 800px;  padding: 80px 100px 120px;}
 
-
+/* view_area =================================== */
 .view_area{height: 800px; background-size: cover;}
 
 .scroll{width: 600px;}
@@ -31,6 +31,8 @@ h1{width: 110px; height: 65px;}
 
 .sidebar > ul > li{width: 24px; height: 24px;}  
 
+
+/* brand_area ===================================  */
 .brand_area > ul{width: 1080px; height: 430px; margin-top: 55px;}
 
 .brand_area > ul > li{width: 360px; height: 100%; background-color: #777;}
@@ -43,26 +45,25 @@ h1{width: 110px; height: 65px;}
 .brand_area > ul > li > a:after{content:" "; display:block;width: 100%; height: 100%; background-color:rgba(119,119,119,0.6); transition: all 300ms ease;}
 
 
-.brand_area > ul > li:nth-child(1) > a:hover:after{background-color: #1B398F;}
+.brand_area > ul > li:nth-child(1) > a:hover:after,
+.brand_area > ul > li:nth-child(1) > a:focus:after{background-color: #1B398F;}
 .brand_area > ul > li:nth-child(2) > a:hover:after,
 .brand_area > ul > li:nth-child(2) > a:focus:after{background-color: #697F24;}
 .brand_area > ul > li:nth-child(3) > a:hover:after,
 .brand_area > ul > li:nth-child(3) > a:focus:after{background-color: #8CB1C8;}
+
+.brand_area > ul > li .inner{top: 0; bottom: 0; left: 0; right: 0; margin: auto;}
 
 .brand_area > ul > li div{width: 100px; height: 100px; margin: auto;}
 
 .brand_area > ul > li .icon_01{background-color: #1B398F; background-image: url("../../img/neck_w.png"); background-size: 100% auto; background-position: 50% 50%;}
 .brand_area > ul > li:hover .icon_01{background-color: #A7CEF7; background-image: url("../../img/favicon.png"); background-size: auto 100%; background-position: 50% 50%;}
 
-.brand_area > ul > li .icon_02{background-color: #697F24; background-image: url("../../img/spoon_w.png"); background-position: 50% 50%; background-size: 90% auto;}
+.brand_area > ul > li .icon_02{background-color: #697F24; background-image: url("../../img/spoon_w.png"); background-size: 90% auto; background-position: 50% 50%;}
 .brand_area > ul > li:hover .icon_02{background-color: #CADD90; background-image: url("../../img/spoon.png"); background-size: auto 90%; background-position: 50% 50%;}
 
-.brand_area > ul > li .icon_03{background-color: #8CB1C8; background-image: url("../../img/store.png"); background-position: 50% 50%; background-size: 90% auto;}
+.brand_area > ul > li .icon_03{background-color: #8CB1C8; background-image: url("../../img/store.png"); background-size: 90% auto; background-position: 50% 50%;}
 .brand_area > ul > li:hover .icon_03{background-color: #294B6F; background-image: url("../../img/store_w.png"); background-size: auto 90%; background-position: 50% 50%;}
-
-.brand_area > ul > li > a > dl{}
-.brand_area > ul > li > a > dl > dt{}
-.brand_area > ul > li > a > dl > dd{}
 
 
 /* menu_area ===================================== */
