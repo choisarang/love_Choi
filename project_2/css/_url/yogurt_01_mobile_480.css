@@ -24,7 +24,14 @@
     .con{height: 900px;  padding: 150px 25px 130px;}
   
     /* view_area ============================ */
-    .view_area{height: 900px; background-size: auto 100%;}
+    .view_area{height: 900px; background-size: auto 100%; padding: 300px 0; box-sizing: border-box;}
+
+      .text_box{width: 480px; height: 250px; text-transform: uppercase; font-weight: bold; text-align: center;}
+          .text_box > p{width: 100%; height: 50px; font-size: 35px; padding-left: 10px; box-sizing: border-box; color: #132760; text-shadow: 2px 2px 1px #fff;}
+          .text_box > h2{width: 100%; height: 150px; font-size: 55px; color: #1B398F; 
+          text-shadow: 2px 2px 1px #fff;}
+          .text_box > span{width: 100%; height: 50px; font-size: 22px; color: #555; text-shadow: 2px 2px 1px #fff;}
+          .text_box i{font-size: 36px; color: #d45443; text-shadow: none;}
 
     .scroll{width: 300px;}
 
@@ -72,9 +79,9 @@
         .best{width: 300px; height: 300px; margin: auto;}
   
 
-      .menu_btn{width: 144px; height: 40px; left: 0; right: 0; margin: auto;}
+        .menu_btn{width: 144px; height: 40px; left: 0; right: 0; margin: auto;}
 
-      .menu_btn > a{line-height: 40px; font-size: 18px;}
+        .menu_btn > a{line-height: 40px; font-size: 18px;}
   
 
     /* sns_area ============================ */

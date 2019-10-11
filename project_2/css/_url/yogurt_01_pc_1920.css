@@ -4,6 +4,7 @@
 
 #headBox{height: 110px; padding: 25px 100px; box-sizing: border-box;}
 
+
 h1{width: 110px; height: 65px;}
 
 .gnb{position: absolute; left: 0; right: 0; margin: auto; width: 769px; height: 40px; margin-top: 10px;}
@@ -19,10 +20,18 @@ h1{width: 110px; height: 65px;}
 
 #contentBox{height: 3600px;}
 
-.con{height: 900px;  padding: 100px 330px 100px;}
+.con{height: 900px;  padding: 100px 330px;}
 
 /* view_area ============================ */
-.view_area{height: 900px; background-size: cover;}
+.view_area{height: 900px; background-size: cover; padding: 300px 330px; box-sizing: border-box;}
+
+  .text_box{width: 700px; height: 250px; text-transform: uppercase; font-weight: bold;}
+  .text_box > p{width: 100%; height: 50px; font-size: 40px; padding-left: 10px; box-sizing: border-box; color: #132760; text-shadow: 2px 2px 1px #fff;}
+  .text_box > h2{width: 100%; height: 150px; font-size: 90px; color: #1B398F; 
+  text-shadow: 2px 2px 1px #fff;}
+  .text_box > span{width: 100%; height: 50px; font-size: 25px; padding-left: 10px; box-sizing: border-box; color: #555; text-shadow: 2px 2px 1px #fff;}
+  .text_box i{font-size: 40px; color: #d45443; text-shadow: none;}
+
 
 .scroll{width: 600px;}
 
@@ -35,7 +44,9 @@ h1{width: 110px; height: 65px;}
   
 
 /* brand_area ============================ */
-.brand_area > ul{width: 1260px; height: 502px; padding-top: 60px; box-sizing: border-box; margin: auto;}
+
+
+.brand_area > ul{width: 1260px; height: 502px; margin: auto; margin-top: 60px;}
 
 .brand_area > ul > li{float: left; width: 33.3333334%; height: 100%;}
 
@@ -59,7 +70,7 @@ h1{width: 110px; height: 65px;}
 
 .brand_area > ul > li div{width: 100px; height: 100px; margin: auto;}
 
-.brand_area > ul > li .inner dl{width: 100%; height: 130px; margin: auto; transform: translateY(220%);}
+.brand_area > ul > li .inner dl{width: 100%; height: 130px; margin: auto; transform: translateY(250%);}
  .brand_area > ul > li .inner dt{position: relative; width: 100%; height: 50px;}
  .brand_area > ul > li .inner dd{position: relative; width: 100%; height: 80px;}
  .brand_area > ul > li .inner span{position: absolute;
@@ -78,7 +89,7 @@ h1{width: 110px; height: 65px;}
 /* menu_area ============================ */
 .menu_area{background-size: 100% auto;}
 
-.best_area{width: 100%; height: 377px; margin-top: 40px;}
+.best_area{width: 1260px; height: 377px; margin-top: 40px; margin: auto ;}
 
 
 .side{transform: scale(0.7); background-size: auto 50%; background-position: 50% 50%;}
@@ -87,6 +98,7 @@ h1{width: 110px; height: 65px;}
 
 .best_area > div{float: left; width: 360px; height: 360px;}
 
+.best{background-color: #fff;}
 
 .before_best{background-image: url("../../img/3.png");}
 .after_best{background-image: url("../../img/4.png");}
@@ -126,6 +138,6 @@ h1{width: 110px; height: 65px;}
 
 .info > p{font-size: 15px;}
 
-.sns_logo{width: 138px; height: 45px; background-size: 100px;}
+.sns_logo{width: 138px; height: 45px; background-size: 100% auto;}
 
 }
