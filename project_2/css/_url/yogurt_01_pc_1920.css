@@ -19,7 +19,7 @@ h1{width: 110px; height: 65px;}
 
 #contentBox{height: 3600px;}
 
-.con{height: 900px;  padding: 80px 330px 120px;}
+.con{height: 900px;  padding: 100px 330px 100px;}
 
 /* view_area ============================ */
 .view_area{height: 900px; background-size: cover;}
@@ -37,15 +37,16 @@ h1{width: 110px; height: 65px;}
 /* brand_area ============================ */
 .brand_area > ul{width: 1260px; height: 502px; padding-top: 60px; box-sizing: border-box; margin: auto;}
 
-.brand_area > ul > li{width: 420px; height: 100%;}
+.brand_area > ul > li{float: left; width: 33.3333334%; height: 100%;}
 
-.brand_area > ul > li:hover dl{display: block;}
+
+.brand_area > ul > li a:hover dl{display: block;}
 
 .brand_area > ul > li:nth-child(1) > a{background-size: auto 100%;}
 .brand_area > ul > li:nth-child(2) > a{background-size: auto 100%;}
 .brand_area > ul > li:nth-child(3) > a{background-size: auto 100%;}
 
-.brand_area > ul > li > a:after{content:" "; display:block;width: 100%; height: 100%; background-color:rgba(119,119,119,0.6); transition: all 300ms ease;}
+.brand_area > ul > li > a:after{background-color:rgba(119,119,119,0.6); transition: all 300ms ease;}
 
 .brand_area > ul > li:nth-child(1) > a:hover:after,
 .brand_area > ul > li:nth-child(1) > a:focus:after{background-color: #1B398F;}
@@ -56,15 +57,21 @@ h1{width: 110px; height: 65px;}
 
 .brand_area > ul > li .inner{top: 0; bottom: 0; left: 0; right: 0; margin: auto;}
 
-.brand_area > ul > li > div{width: 100px; height: 100px; margin: auto;}
+.brand_area > ul > li div{width: 100px; height: 100px; margin: auto;}
 
-.brand_area > ul > li .icon_01{background-color: #1B398F; background-image: url("../../img/neck_w.png");background-size: auto 100%; background-position: 50% 50%;}
+.brand_area > ul > li .inner dl{width: 100%; height: 130px; margin: auto; transform: translateY(220%);}
+ .brand_area > ul > li .inner dt{position: relative; width: 100%; height: 50px;}
+ .brand_area > ul > li .inner dd{position: relative; width: 100%; height: 80px;}
+ .brand_area > ul > li .inner span{position: absolute;
+ width: 100%; height:100%;}
+
+.brand_area > ul > li .icon_01{background-color: #1B398F; background-image: url("../../img/neck_w.png");}
 .brand_area > ul > li:hover .icon_01{background-color: #A7CEF7; background-image: url("../../img/favicon.png"); background-size: auto 100%; background-position: 50% 50%;}
 
-.brand_area > ul > li .icon_02{background-color: #697F24; background-image: url("../../img/spoon_w.png"); background-size: auto 90%; background-position: 50% 50%;}
+.brand_area > ul > li .icon_02{background-color: #697F24; background-image: url("../../img/spoon_w.png");}
 .brand_area > ul > li:hover .icon_02{background-color: #CADD90; background-image: url("../../img/spoon.png"); background-size: auto 90%; background-position: 50% 50%;}
 
-.brand_area > ul > li .icon_03{background-color: #8CB1C8; background-image: url("../../img/store.png"); background-size: auto 90%; background-position: 50% 50%;}
+.brand_area > ul > li .icon_03{background-color: #8CB1C8; background-image: url("../../img/store.png");}
 .brand_area > ul > li:hover .icon_03{background-color: #294B6F; background-image: url("../../img/store_w.png"); background-size: auto 90%; background-position: 50% 50%;}
 
 
@@ -74,15 +81,15 @@ h1{width: 110px; height: 65px;}
 .best_area{width: 100%; height: 377px; margin-top: 40px;}
 
 
-.side{transform: scale(0.7);}
+.side{transform: scale(0.7); background-size: auto 50%; background-position: 50% 50%;}
 
 .side:after{content: " "; display: block; width: 100%; height: 100%; border-radius: 100%; background-color: rgba(200, 200, 200, 0.5);}
 
 .best_area > div{float: left; width: 360px; height: 360px;}
 
 
-.before_best{background-image: url("../../img/3.png"); background-size: 156px 209px; background-position: 96px 80px;}
-.after_best{background-image: url("../../img/4.png"); background-size: 140px 206px; background-position: 108px 80px;}
+.before_best{background-image: url("../../img/3.png");}
+.after_best{background-image: url("../../img/4.png");}
 
 
 .menu_btn{width: 180px; height: 46px;}

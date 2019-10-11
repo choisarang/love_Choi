@@ -64,31 +64,40 @@ h1 > a{display: block; width: 100%; height: 100%;}
 /* brand_area ============================ */
 .brand_area{background-color: #f7f7f7;}
 
-.brand_area > ul > li{position: relative;} 
+.brand_area > ul > li{position: relative; } 
 
-.brand_area > ul > li:nth-child(1) > a{background-image: url("../../img/brand_brand.jpg"); background-position: 50% 50%; background-repeat: no-repeat;}
+.brand_area > ul > li .icon_01{background-size: 100% auto; background-position: 50% 50%;}
+.brand_area > ul > li .icon_02{background-size: 100% auto; background-position: 50% 50%;}
+.brand_area > ul > li .icon_03{background-size: 100% auto; background-position: 50% 50%;}
 
-.brand_area > ul > li:nth-child(2) > a{background-image: url("../../img/brand_yogurt.jpg"); background-position: 50% 50%; background-repeat: no-repeat;}
+.brand_area > ul > li > a{background-position: 50% 50%; background-repeat: no-repeat;}
 
-.brand_area > ul > li:nth-child(3) > a{background-image: url("../../img/brand_store.png"); background-position: 50% 50%; background-repeat: no-repeat;}
+.brand_area > ul > li:nth-child(1) > a{background-image: url("../../img/brand_brand.jpg");}
 
-.brand_area > ul > li > a {position: relative; display: block; width: 100%; height: 100%;}
+.brand_area > ul > li:nth-child(2) > a{background-image: url("../../img/brand_yogurt.jpg");}
 
-.brand_area > ul > li .inner{width: 100%; height: 100%;}
+.brand_area > ul > li:nth-child(3) > a{background-image: url("../../img/brand_store.png");}
 
-.brand_area > ul > li .inner > div{position: absolute; background-repeat: no-repeat; border-radius: 100%;}
+.brand_area > ul > li > a {position: relative; z-index: 100; display: block; width: 100%; height: 100%;}
+
+.brand_area > ul > li > a:after{content: " "; display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -100;}
+
+
+.brand_area > ul > li .inner{position: relative; width: 100%; height: 100%;}
+
+.brand_area > ul > li .inner > div{position: absolute;  top: 0; bottom: 0; left: 0; right: 0; margin: auto; background-repeat: no-repeat; border-radius: 100%;}
 
 
 .brand_area > ul > li .inner dl{display: none;}
 
 
-.brand_area > ul > li .inner dt{font-size: 20px; color: #fff; text-decoration-line: underline; text-align: center;}
+.brand_area > ul > li .inner dt > span{font-size: 20px; color: #fff; text-decoration-line: underline; text-align: center;}
 
-.brand_area > ul > li .inner dd{font-size: 15px; color: #fff; text-align: center;}
+.brand_area > ul > li .inner dd > span{font-size: 15px; color: #fff; text-align: center;}
 
 /* menu_area ============================ */
-.menu_area{box-sizing: border-box; background-image: url("../../img/menu_box.jpg"); background-repeat: no-repeat; background-position: 50% 50%;}
-.menu_area:after{}
+.menu_area{position: relative; box-sizing: border-box; background-image: url("../../img/menu_box.jpg"); background-repeat: no-repeat; background-position: 50% 50%;}
+
 
 
 .best_area > div{background-repeat: no-repeat; border-radius: 100%; box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5); background-color: #fff;}
