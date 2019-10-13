@@ -1,6 +1,6 @@
 
 @font-face {
-    font-family: 'GyeonggiTitle';
+    font-family: 'GyeonggiTitle01';
     src: url('hinted-GyeonggiTitleM.eot');
     src: url('hinted-GyeonggiTitleM.eot?#iefix') format('embedded-opentype'),
         url('hinted-GyeonggiTitleM.woff2') format('woff2'),
@@ -12,7 +12,7 @@
 }
 
 @font-face {
-    font-family: 'GyeonggiTitle';
+    font-family: 'GyeonggiTitle02';
     src: url('hinted-GyeonggiTitleB.eot');
     src: url('hinted-GyeonggiTitleB.eot?#iefix') format('embedded-opentype'),
         url('hinted-GyeonggiTitleB.woff2') format('woff2'),
@@ -24,7 +24,7 @@
 }
 
 @font-face {
-    font-family: 'GyeonggiTitle';
+    font-family: 'GyeonggiTitle03';
     src: url('hinted-GyeonggiTitleL.eot');
     src: url('hinted-GyeonggiTitleL.eot?#iefix') format('embedded-opentype'),
         url('hinted-GyeonggiTitleL.woff2') format('woff2'),
