@@ -1,0 +1,123 @@
+/* yogurt_01_mobile_480.css */
+
+@media screen and (max-width:480px){
+
+  h2{text-align: center;}
+  p{text-align: center;}
+  
+  
+  #headBox{height: 80px; height: 5rem; padding: 20px 4vw; padding: 1.25rem 4vw; box-sizing: border-box;}
+
+    h1{width: 70px; height: 50px;}
+    
+    .gnb{float: right; width: 60px; height: 60px;}
+
+    .gnb > i {display: block; width: 100%; height: 100%; font-size: 40px; text-align: center; color: #1b398f;}
+
+    .gnb > ul{display: none;}
+  
+    .fran{display: none;}
+
+/* contentBox ================================== */
+    
+    .con{padding: 15vh 4vw;}
+  
+    .con > h2{font-size: 34px; font-size: 2.125rem;}
+    .con > p{margin-top: 25px; margin-top: 1.5625rem; font-size: 30px; font-size: 1.875rem;}
+
+    /* view_area ============================ */
+    .view_area{background-size: auto 100%; padding: 30vh 4vw; box-sizing: border-box;}
+
+      .text_box{width: 480px; height: 250px; text-align: center;}
+
+        .text_box{width: 100%; height: 250px; height: 15.625rem; text-align: center;}
+        .text_box > p{height: 25px; height: 1.5625rem; font-size: 30px; font-size: 1.875rem; margin-bottom: 10px; margin-bottom: 0.625rem;}
+        .text_box > h2{height: 100px; height: 6.25rem; font-size: 66px; font-size: 4.125rem; margin-bottom: 36px; margin-bottom: 2.25rem;}
+        .text_box > span{height: 25px; height: 1.5625rem; font-size: 26px; font-size: 1.625rem;}
+        .text_box i{font-size: 38px; font-size: 2.375rem;}
+
+    .scroll{width: 300px;}
+
+  
+    .scroll > ul > li{width: 100px;}
+   
+     
+    
+    .sidebar{height: 234px; height: 14.625rem; top: 35%; transform: translateY(-50%); right: 5.2vw; margin: auto;}
+
+      
+    .sidebar > ul > li{width: 24px; width: 1.5rem; height: 24px; height: 1.5rem;}
+  
+  
+      /* brand_area ============================ */
+      .brand_area > ul {margin-top: 8vh; width: 94.7vw; height: 83.2vw;}
+
+      .brand_area > ul > li{width: 100%; height: 150px;}
+
+      .brand_area > ul > li{width: 100%; height: 33.3333334%; }
+
+      .brand_area > ul > li > a{background-size: 100% auto;}
+      
+      .brand_area > ul > li > a:after{background-color:rgba(51,51,51,0.6); transition: all 300ms ease;}
+  
+
+      .brand_area > ul > li .inner > div{width: 15.6vw; height: 15.6vw;}
+
+      .brand_area > ul > li .inner dl{display: block;
+       width: 68.7vw; height: 13vw; margin: auto; transform: translateY(60%);}
+      .brand_area > ul > li .inner dt{position: relative; float: left; width: 120px; height: 100%;}
+      .brand_area > ul > li .inner dd{position: relative; float: right; width: 120px; height: 100%;}
+      .brand_area > ul > li .inner span{display: block; position: absolute; left: 0; top: 50%;
+      width: 100%; height:auto; transform:translateY(-50%);}
+
+
+      .brand_area > ul > li .inner dt > span{font-size: 16px; font-weight: bold; color: #fff; text-align: center;}
+      .brand_area > ul > li .inner dd > span{font-size: 12px; color: #fff; text-align: center;}
+
+  
+      .brand_area > ul > li .icon_01{background-color: #A7CEF7; background-image: url("../../img/favicon.png"); background-position: 50% 50%; background-size: 100% auto;}
+      .brand_area > ul > li .icon_02{background-color: #CADD90; background-image: url("../../img/spoon.png"); background-position: 50% 50%; background-size: 90% auto;}
+      .brand_area > ul > li .icon_03{background-color: #294B6F; background-image: url("../../img/store_w.png"); background-position: 50% 50%; background-size: 90% auto;}
+  
+
+    /* menu_area ============================ */
+    .menu_area{background-size: auto 100%;}
+      
+      .best_area{width: 100%; height: 45.5vw; margin: 15vh 0;}
+       
+
+        .best{width: 43vw; height: 43vw; margin: auto; box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5); box-shadow: 0 0 1.25rem 0.125rem rgba(0, 0, 0, 0.5);  }
+
+        .menu_btn{width: 120px; width: 7.5rem; height: 30px; height: 1.875rem; left: 0; right: 0; margin: auto;}
+
+        .menu_btn > a{font-size: 16px; font-size: 1rem; line-height: 30px; line-height: 1.875rem;}
+  
+
+    /* sns_area ============================ */
+    .sns_area{background-size: auto 100%;}
+    
+    .sns_pic{width: 100%; height: 86vw; margin-top: 15vh;}
+  
+    .sns_pic > ul{width: 100%; height: 100%;}
+
+    .sns_pic > ul > li{width: 28vw; height: 27.3vw; margin-bottom: 2vw; margin-left: 4vw; background-size: contain;}
+  
+    .sns_pic > ul > li:nth-child(1){margin-left: 0;}
+    .sns_pic > ul > li:nth-child(4){ margin-left: 0;}
+    .sns_pic > ul > li:nth-child(7){ margin-left: 0; margin-bottom: 0;}
+    .sns_pic > ul > li:nth-child(8){ margin-bottom: 0;}
+    .sns_pic > ul > li:nth-child(9){ margin-bottom: 0;}
+  
+    /* footBox ==================================== */
+  
+  #footBox{height: 150px; padding: 12px 0;}
+  
+  #footBox > h2{width: 56px; height: 35px;}
+
+  .info{height: 55px;}
+ 
+  .info > p{line-height: 20px; font-size: 12px;}
+
+  .sns_logo{width: 84px; height: 27px; margin-top: 10px; background-size: 100px; background-position: -10px -10px;}
+
+}

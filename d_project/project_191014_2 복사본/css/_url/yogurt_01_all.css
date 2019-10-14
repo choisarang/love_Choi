@@ -1,0 +1,165 @@
+/* yogurt_01_all.css */
+
+
+#wrap{width: 100%; height: 100%; background-color: #fff;}
+a:hover, a:focus{outline: none;}
+p:hover, p:focus{outline: none;}
+
+#headBox{position: fixed; z-index: 500; width: 100%; box-sizing: border-box; background-color: rgba(250, 250, 250, 0.5);}
+
+h1{float: left; background-image: url("../../img/logo_01.png"); background-position: 0 0; background-repeat: no-repeat; background-size: contain;}
+
+h1 > a{display: block; width: 100%; height: 100%;}
+
+.gnb{box-sizing: border-box;}
+.gnb > i{display: none;}
+.gnb > ul{width: 100%; height: 100%; text-transform: capitalize;}
+.gnb > ul > li{float: left;  height: 100%;}
+.gnb > ul > li:last-child{margin-right: 0;}
+.gnb > ul > li > a{text-align: center; color: #333; font-weight: bold;}
+
+.fran{float: right; box-sizing: border-box; border-radius: 100%; background-color: #1b398f;}
+
+.fran > a{display: block; color: #fff; text-align: center;}
+
+
+#contentBox{width: 100vw; height: auto;}
+
+.con{width: 100vw; height: 100vh; box-sizing: border-box;}
+
+.con > h2{width: 100%; height: 2.6vw; color: #1B398F; text-transform: uppercase;}
+.con > p{width: 100%; height: 1.8vw; color: #1B398F;}
+
+/* view_area ============================ */
+.view_area{height: 100vh; position: relative; width: 100vw; background-image: url("../../img/view_box.jpg");  background-repeat: no-repeat; background-position: 50% 50%;}
+
+.text_box{text-transform: uppercase; font-weight: bold;}
+  .text_box > p{width: 100%; padding-left: 0.5vw; box-sizing: border-box; color: #132760; text-shadow: 2px 2px 1px #fff;}
+  .text_box > h2{width: 100%; color: #1B398F; 
+  text-shadow: 2px 2px 1px #fff;}
+  .text_box > span{width: 100%; color: #555; text-shadow: 2px 2px 1px #fff;}
+  .text_box i{color: #d45443; text-shadow: none;}
+
+.scroll{position: absolute; left: 0; right: 0; margin: auto; bottom: 15vh; height: 10px; height: 0.625rem; background-color: rgba(200, 200, 200, 0.5);}
+
+.scroll > ul{width: 100%; height: 100%;}
+
+.scroll > ul > li{float: left; height: 100%;}
+
+.scroll > ul > li > a{display: block; width: 100%; height: 100%;}
+
+.scroll > ul > li > a:hover{background-color: #fff;}
+.scroll > ul > li > a:focus{background-color: #1B398F;}
+
+.sidebar{position: fixed; z-index: 500; top: 0; bottom: 0; margin: auto; width: 40px; width: 2.5rem;}
+
+.sidebar > ul{width: 100%; height: 100%; padding: 15px 10px; padding: 0.9375rem 0.625rem; box-sizing: border-box;}
+
+.sidebar > ul > li{margin-bottom: 22px; margin-bottom: 1.375rem;}
+.sidebar > ul > li:last-child{margin-bottom: 0;}
+
+.sidebar > ul > li > a{position: relative; display: block; width: 100%; height: 100%; background-color: #aaa; border-radius: 100%;} 
+
+.sidebar > ul > li > a:focus{background-color:#fff; box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5); opacity: 1;}
+
+.sidebar > ul > li > a > span{position: absolute; display: block; width:0; height: 100%; top:-4px; top:-0.25rem; right: 40px; right: 2.5rem; overflow: hidden; text-align: right; padding: 5px; padding: 0.3125rem; transition: all 300ms ease; opacity: 0; white-space: nowrap;}
+
+.sidebar > ul > li > a:hover > span,
+.sidebar > ul > li > a:focus > span{display: block; width: 120px; width: 7.5rem; height: 100%; font-size: 18px; font-size: 1.125rem; text-align: center; color:#fff; font-weight: bold; text-transform: uppercase; line-height: 26px; line-height: 1.625rem; background-color: #1B398F; border-radius: 8px; border-radius: 0.5rem; opacity: 1;}
+
+
+/* brand_area ============================ */
+.brand_area{background-color: #f7f7f7; width: 100%;}
+
+.brand_area > ul > li{position: relative;} 
+
+.brand_area > ul > li .icon_01{background-size: 100% auto; background-position: 50% 50%;}
+.brand_area > ul > li .icon_02{background-size: 100% auto; background-position: 50% 50%;}
+.brand_area > ul > li .icon_03{background-size: 100% auto; background-position: 50% 50%;}
+
+.brand_area > ul > li > a{background-position: 50% 50%; background-repeat: no-repeat;}
+
+.brand_area > ul > li:nth-child(1) > a{background-image: url("../../img/brand_brand.jpg");}
+
+.brand_area > ul > li:nth-child(2) > a{background-image: url("../../img/brand_yogurt.jpg");}
+
+.brand_area > ul > li:nth-child(3) > a{background-image: url("../../img/brand_store.png");}
+
+.brand_area > ul > li > a {position: relative; z-index: 100; display: block; width: 100%; height: 100%;}
+
+.brand_area > ul > li > a:after{content: " "; display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -100;}
+
+
+.brand_area > ul > li .inner{position: relative; width: 100%; height: 100%;}
+
+.brand_area > ul > li .inner > div{position: absolute;  top: 0; bottom: 0; left: 0; right: 0; margin: auto; background-repeat: no-repeat; border-radius: 100%;}
+
+
+.brand_area > ul > li .inner dl{display: none;}
+
+
+/* menu_area ============================ */
+.menu_area{position: relative; box-sizing: border-box; background-image: url("../../img/menu_box.jpg"); background-repeat: no-repeat; background-position: 50% 50%; margin: auto;}
+
+
+
+.best_area > div{background-repeat: no-repeat; border-radius: 100%; background-color: #fff;}
+
+
+.side{background-repeat: no-repeat;}
+
+.best{background-repeat: no-repeat; background-image: url("../../img/1.png"); background-size: auto 80%; background-position: 50% 50%;}
+
+.best > a{display: block; width: 100%; height: 100%;}
+
+.menu_btn{position: absolute; border-radius: 0.3rem; border: 2px solid #1B398F;}
+
+.menu_btn > a{display: block; width: 100%; height: 100%; text-align: center; color: #1B398F; font-weight: bold; transition: all 500ms ease;}
+.menu_btn > a:hover{background-color: #1B398F; text-align: center; color: #fff; font-weight: bold;}
+
+
+/* sns_area ============================ */
+.sns_area{background-image: url("../../img/sns_box.jpg"); background-repeat: no-repeat; background-position: 50% 50%;}
+
+.sns_pic > ul > li{float: left; background-repeat: no-repeat; background-position: 50% 50%;}
+
+.sns_pic > ul > li:nth-child(1){background-image: url("../../img/sns_01.jpg");}
+.sns_pic > ul > li:nth-child(2){background-image: url("../../img/sns_02.jpg");}
+.sns_pic > ul > li:nth-child(3){background-image: url("../../img/sns_03.jpg");}
+.sns_pic > ul > li:nth-child(4){background-image: url("../../img/sns_04.jpg");}
+.sns_pic > ul > li:nth-child(5){background-image: url("../../img/sns_05.jpg");}
+.sns_pic > ul > li:nth-child(6){background-image: url("../../img/sns_06.jpg");}
+.sns_pic > ul > li:nth-child(7){background-image: url("../../img/sns_07.jpg");}
+.sns_pic > ul > li:nth-child(8){background-image: url("../../img/sns_08.jpg");}
+.sns_pic > ul > li:nth-child(9){background-image: url("../../img/sns_09.jpg");}
+
+.sns_pic > ul > li > a{display: block; width: 100%; height: 100%;}
+
+.sns_pic > ul > li span{display: none;}
+
+.sns_pic > ul > li > a:hover,
+.sns_pic > ul > li > a:focus{background-image: url("../../img/insta_bg.jpg"); background-size: cover; background-repeat: no-repeat; background-position: 0 0;}
+
+.sns_pic > ul > li > a:hover span,
+.sns_pic > ul > li > a:focus span{display: block; color: #fff; font-size: 12px; font-size: 0.75rem; text-align: center; transform: translateY(50%);}
+
+.sns_pic > ul > li > a:hover p,
+.sns_pic > ul > li > a:focus p{padding-top: 2vw; box-sizing: border-box; text-transform: uppercase; color: #fff; font-size: 12px; font-size: 0.75rem; font-weight: bold; text-align: center; transform: translateY(30%);}
+
+.sns_pic > ul > li > a:hover i,
+.sns_pic > ul > li > a:focus i{margin-left: 10px;}
+/* footBox ============================ */
+#footBox{width: 100%; background-color: #fff; box-sizing: border-box;}
+
+#footBox > h2{background-image: url("../../img/logo_01.png"); background-size: contain; background-repeat: no-repeat; margin: auto;}
+
+.info{width: 100%;}
+
+.info > p{display: block; width: 100%; height: auto; color: #333; text-align: center;}
+
+.sns_logo{width: 100px; width: 6.25rem; height: 40px; height: 2.5rem; margin: auto;}
+  .sns{float: left; width: 33.3333334%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;}
+  .sns > a{display: block; width: 100%; height: 100%;}
+  .insta{background-image: url("../../img/insta.png");}
+  .face{background-image: url("../../img/facebook.png");}
+  .youtube{background-image: url("../../img/youtube.png");}
