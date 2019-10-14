@@ -19,15 +19,15 @@
 
 /* contentBox ================================== */
     
-  #contentBox{height: auto;}
+
     
     .con{padding: 10vh 3vw;}
 
-    .con > h2{width: 100%; height: 2.6vw; font-size: 34px; font-size: 2.125rem; color: #1B398F; text-transform: uppercase;}
-    .con > p{width: 100%; height: 1.8vw; margin-top: 14px; margin-top: 0.875rem; font-size: 30px; font-size: 1.875rem; color: #1B398F;}
+    .con > h2{font-size: 34px; font-size: 2.125rem;}
+    .con > p{margin-top: 14px; margin-top: 0.875rem; font-size: 30px; font-size: 1.875rem;}
   
     /* view_area ============================ */
-    .view_area{height: 100vh; background-size: auto 100%; padding: 30vh 4vw; box-sizing: border-box;}
+    .view_area{background-size: auto 100%; padding: 30vh 4vw; box-sizing: border-box;}
 
 
       .text_box{width: 100%; height: 250px; height: 15.625rem; text-align: center;}

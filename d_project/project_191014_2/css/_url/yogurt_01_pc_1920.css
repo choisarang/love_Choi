@@ -21,15 +21,14 @@ h1{width: 110px; width: 6.875rem; height: 65px; height: 4.0625rem;}
 
 /* contentBox ================================== */
 
-#contentBox{height: auto;}
 
 .con{padding: 20vh 17vw;}
 
-.con > h2{width: 100%; height: 2.6vw; font-size: 2.6vw; color: #1B398F; text-transform: uppercase;}
-.con > p{width: 100%; height: 1.8vw; font-size: 2.3vw; color: #1B398F;}
+.con > h2{font-size: 2.6vw;}
+.con > p{font-size: 2.3vw;}
 
 /* view_area ============================ */
-.view_area{height: 100vh; background-size: cover; padding:25vh 17vw; box-sizing: border-box;}
+.view_area{background-size: cover; padding:25vh 17vw; box-sizing: border-box;}
 
   .text_box{width: 40vw; height: 13vw;}
     .text_box > p{height: 2.6vw; font-size: 2.4vw;}
