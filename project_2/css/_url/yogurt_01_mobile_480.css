@@ -22,10 +22,10 @@
 
   #contentBox{height: auto;}
     
-    .con{padding: 20vh 4vw;}
+    .con{padding: 15vh 4vw;}
   
     .con > h2{width: 100%; height: 2.6vw; font-size: 34px; font-size: 2.125rem; color: #1B398F; text-transform: uppercase;}
-    .con > p{width: 100%; height: 1.8vw; margin-top: 14px; margin-top: 0.875rem; font-size: 30px; font-size: 1.875rem; color: #1B398F;}
+    .con > p{width: 100%; height: 1.8vw; margin-top: 25px; margin-top: 1.5625rem; font-size: 30px; font-size: 1.875rem; color: #1B398F;}
 
     /* view_area ============================ */
     .view_area{height: 100vh; background-size: auto 100%; padding: 30vh 4vw; box-sizing: border-box;}
@@ -52,7 +52,7 @@
   
   
       /* brand_area ============================ */
-      .brand_area > ul {margin-top: 5vh; width: 94.7vw; height: 83.2vw;}
+      .brand_area > ul {margin-top: 8vh; width: 94.7vw; height: 83.2vw;}
 
       .brand_area > ul > li{width: 100%; height: 150px;}
 
@@ -83,12 +83,12 @@
   
 
     /* menu_area ============================ */
-    .menu_area{background-size: 100% auto;}
+    .menu_area{background-size: auto 100%;}
       
-      .best_area{width: 100%; height: 45.5vw; margin: 10vh 0;}
+      .best_area{width: 100%; height: 45.5vw; margin: 15vh 0;}
        
 
-        .best{width: 43vw; height: 43vw; margin: auto;}
+        .best{width: 43vw; height: 43vw; margin: auto; box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5); box-shadow: 0 0 1.25rem 0.125rem rgba(0, 0, 0, 0.5);  }
 
         .menu_btn{width: 120px; width: 7.5rem; height: 30px; height: 1.875rem; left: 0; right: 0; margin: auto;}
 
@@ -98,11 +98,11 @@
     /* sns_area ============================ */
     .sns_area{background-size: auto 100%;}
     
-    .sns_pic{width: 100%; height: 86vw; margin-top: 11.7vw;}
+    .sns_pic{width: 100%; height: 86vw; margin-top: 15vh;}
   
     .sns_pic > ul{width: 100%; height: 100%;}
 
-    .sns_pic > ul > li{width: 28vw; height: 27.3vw; margin-bottom: 2vw; margin-left: 2.6vw; background-size: contain;}
+    .sns_pic > ul > li{width: 28vw; height: 27.3vw; margin-bottom: 2vw; margin-left: 4vw; background-size: contain;}
   
     .sns_pic > ul > li:nth-child(1){margin-left: 0;}
     .sns_pic > ul > li:nth-child(4){ margin-left: 0;}

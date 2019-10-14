@@ -97,13 +97,13 @@
   .best_area{width: 100%; height: 200px; margin-top: 10vh;}
   
   
-  .side{transform: scale(0.7); background-size: auto 50%; background-position: 50% 50%;}
+  .side{transform: scale(0.7); background-size: auto 50%; background-position: 50% 50%; box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5); box-shadow: 0 0 1.25rem 0.125rem rgba(0, 0, 0, 0.5);  }
   
   .side:after{content: " "; display: block; width: 100%; height: 100%; border-radius: 100%; background-color: rgba(200, 200, 200, 0.5);}
   
   .best_area > div{float: left; width: 21.8vw; height: 21.8vw;}
   
-  .best{background-color: #fff;}
+  .best{background-color: #fff; box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5); box-shadow: 0 0 1.25rem 0.125rem rgba(0, 0, 0, 0.5);  }
   
   
   .before_best{background-image: url("../../img/3.png");}
@@ -116,7 +116,7 @@
   
   
   /* sns_area ============================ */
-  .sns_area{background-size: auto 100%;}
+  .sns_area{background-size: cover;}
   
   .sns_pic{margin-top: 10vw; width: 64.5vw; height: 30vw;}
   

@@ -21,7 +21,7 @@
     
   #contentBox{height: auto;}
     
-    .con{padding: 20vh 4vw;}
+    .con{padding: 10vh 3vw;}
 
     .con > h2{width: 100%; height: 2.6vw; font-size: 34px; font-size: 2.125rem; color: #1B398F; text-transform: uppercase;}
     .con > p{width: 100%; height: 1.8vw; margin-top: 14px; margin-top: 0.875rem; font-size: 30px; font-size: 1.875rem; color: #1B398F;}
@@ -47,7 +47,7 @@
     .sidebar > ul > li{width: 24px; width: 1.5rem; height: 24px; height: 1.5rem;}
   
       /* brand_area ============================ */
-      .brand_area > ul {margin-top: 5vh; width: 94.7vw; height: 83.2vw;}
+      .brand_area > ul {margin-top: 10vh; width: 94.7vw; height: 83.2vw;}
 
       .brand_area > ul > li{width: 100%; height: 33.3333334%; }
 
@@ -82,7 +82,7 @@
       .best_area{width: 100%; height: 45.5vw; margin: 10vh 0;}
        
 
-        .best{width: 43vw; height: 43vw; margin: auto;}
+        .best{width: 43vw; height: 43vw; margin: auto; box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5); box-shadow: 0 0 1.25rem 0.125rem rgba(0, 0, 0, 0.5);  } 
 
         .menu_btn{width: 120px; width: 7.5rem; height: 30px; height: 1.875rem; left: 0; right: 0; margin: auto;}
 
@@ -92,7 +92,7 @@
       /* sns_area ============================ */
     .sns_area{background-size: auto 100%;}
     
-    .sns_pic{width: 100%; height: 86vw; margin-top: 11.7vw;}
+    .sns_pic{width: 100%; height: 86vw; margin: 11.7vh 0 0 2vw;}
   
     .sns_pic > ul{width: 100%; height: 100%;}
 
