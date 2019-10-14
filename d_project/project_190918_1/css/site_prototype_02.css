@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* site_prototype_02.css */
+
+/* common */
+.clearfix:after,
+.clearfix::after{content:" "; display: block; clear: both; width: 0; height: 0; }
+
+.hidden{display: block; overflow: hidden; position: absolute; width: 0; height: 0; }
+
+/* layout */
+#wrap{width: 100%; height: 1340px; background-color: #0af;}
+.content{left: 0; right: 0; margin: auto; width: 940px;}
+
+/* headBox +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#headBox{position: relative; padding: 35px 0; box-sizing: border-box; font-size: 1rem; font-size: 16px; text-align: center; line-height: 20px; width: 100%; height: 100px; background-color: #fff;}
+  h1{float: left; width: 140px; height: 30px;}
+  h1 > a{display: block; width: 100%; height: 100%;}
+
+  .nav{position: absolute; left: 0; right: 0; margin: auto;  width: 780px; height: 30px;}
+    .nav > ul{width: 100%; height: 100%;}
+    .nav > ul > li{float: left; width: 140px; height: 100%; margin-right: 20px;  text-align: center; line-height: 30px;}
+    .nav > ul > li:last-child{margin-right: 0; }
+    .nav > ul > li > a{display:block; width: 100%; height: 100%;}
+
+  .membership{float: right;width: 120px; height: 30px;;}
+    .member{float: left; width: 60px; height: 100%; text-align: center; line-height: 30px;}
+  
+
+/* conBox ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#conBox{width:100%; height: 1240px; padding: 50px 0 100px; box-sizing: border-box; background-color: #fff;}
+
+#conBox h3{width: 940px; height: 150px; top: 0; bottom: 0; margin: auto; font-size: 32px; font-size: 2rem; text-align: left; line-height: 150px; color:#333; text-decoration: underline; text-decoration-color: #f3cf1d;}
+
+/* sidebar ====================================================== */
+.sidebar{position: fixed; top: 0; bottom: 0; margin: auto; right: 20px; z-index: 500; width: 40px; height: 130px;}
+
+.sidebar > ul{width: 100%; height: 100%; padding: 10px 0px; box-sizing: border-box;}
+
+.sidebar > ul > li{width: 100%; height: 30px; margin-bottom:10px; box-sizing: border-box;}
+.sidebar > ul > li:last-child{margin-bottom: 0;}
+
+.sidebar > ul > li > a{display: block; width: 100%; height: 100%; font-size: 32px; font-size: 1.5rem; text-align: center; line-height: 32px;}
+
+/* content ======================================================= */
+
+ #conBox .content{padding-top: 50px; box-sizing: border-box; height: 830px;}   
+  
+ #conBox .content dl > dt{width: 100%; height: 45px; text-align: left; font-size: 20px; font-size: 1.3rem; font-weight: bold; color: #333;}
+ #conBox .content dl > .pic{float: left; width: 300px; height: 300px; background-color: #ffd; margin: 25px 20px 0 0; box-sizing: border-box;}
+ #conBox .content dl > .pic_03{margin-right: 0;}
+ #conBox .content dl > .text{width: 100%; height: 380px; margin-top: 400px; box-sizing: border-box; color: #333; font-size: 16px; font-size: 1rem;}
+ #conBox .content dl > .text > span{font-weight: bold; font-size: 16px; font-size: 1rem;}
+
+/* footBox ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#footBox{width: 100%; height: 350px;}
+  .info_area{width: 100%; height: 240px; background-color: #eee; padding: 50px 0; box-sizing: border-box;}
+    .info_area > .content{height: 150px;}
+    .info_area > .content > .call{float: left; width: 160px; height: 100%;}
+    .info_area > .content > .call > dl{width: 100%; height: 100%;}
+    .info_area > .content > .call > dl > dt{width: 100%; height: 40px; line-height: 40px; font-size: 14.5px; font-size: 0.9rem;}
+    .info_area > .content > .call > dl > dd{width: 100%; height: 100px; border-top: 2px solid #ccc; padding-top: 8px; box-sizing: border-box; font-size: 12px; font-size: 0.8rem;}
+    .info_area > .content > .call > dl > dd > span{font-size: 24px; font-size: 1.5rem;}
+
+    .info_area > .content > .info{float: right; width: 720px; height: 100%;}
+    .info_area > .content > .info > dl{width: 100%; height: 100%;}
+
+    .info_area > .content > .info > dl > dt{float: left; width: 100%; height: 40px; margin-right: 15px; line-height: 40px; font-size: 14.5px; font-size: 0.9rem;}
+    .info_area > .content > .info > dl > dt:nth-child(1){width: 60px;}
+    .info_area > .content > .info > dl > dt:nth-child(2){width: 120px;}
+    .info_area > .content > .info > dl > dt:nth-child(3){width: 60px;}
+    .info_area > .content > .info > dl > dt:nth-child(4){width: 60px;}
+    .info_area > .content > .info > dl > dt:nth-child(5){width: 40px;}
+    .info_area > .content > .info > dl > dt:nth-child(6){width: 60px;}
+    .info_area > .content > .info > dl > dt:nth-child(7){width: 40px; margin-right: 20px;}
+    .info_area > .content > .info > dl > dt:nth-child(8){width: 170px; margin-right: 0;}
+    
+    .info_area > .content > .info > dl > dd{float: left; width: 350px; height: 100px; border-top: 2px solid #ccc; box-sizing: border-box; padding-top: 8px; box-sizing: border-box; font-size: 12px; font-size: 0.8rem; line-height: 23px;}
+
+    
+  .icon_area{width: 100%; height: 110px; background-color: #bdbcbc; margin-top: 40px; padding: 40px 0; box-sizing: border-box;}
+    .icon_area > .content{height: 30px;}
+    .icon_area > .content > .logo{float: left; width: 250px; height: 100%; text-align: center; line-height: 30px;}
+    .icon_area > .content > .logo > .casamia{float: left; width: 120px; height: 100%; margin-right: 10px; box-sizing: border-box;}
+    .icon_area > .content > .logo > .C_LAB{float: right; width: 120px; height: 100%;}
+
+    .icon_area > .content > .sns{float: right; width: 140px; height: 100%;}
+    
+    .icon_area > .content > .sns > .insta{float: left; width: 40px; height: 100%;margin-right: 10px; box-sizing: border-box;}
+    .icon_area > .content > .sns > .youtube{float: left; width: 40px; height: 100%;margin-right: 10px; box-sizing: border-box;}
+    .icon_area > .content > .sns > .facebook{float: left; width: 40px; height: 100%;}
+
+    .icon_area > .content > .sns a{display: block; width: 100%; height: 100%; font-size: 1.5rem; text-align: center; line-height: 32px; color: #222; }
