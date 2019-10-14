@@ -1,7 +1,7 @@
 /* yogurt_01_all.css */
 
 
-#wrap{width: 100%; height: 100%; background-color: #fff;}
+#wrap{width: 100%; min-width: 375px; height: 100%; background-color: #fff;}
 a:hover, a:focus{outline: none;}
 p:hover, p:focus{outline: none;}
 
@@ -140,14 +140,7 @@ h1 > a{display: block; width: 100%; height: 100%;}
 .sns_pic > ul > li > a:hover,
 .sns_pic > ul > li > a:focus{background-image: url("../../img/insta_bg.jpg"); background-size: cover; background-repeat: no-repeat; background-position: 0 0;}
 
-.sns_pic > ul > li > a:hover span,
-.sns_pic > ul > li > a:focus span{display: block; color: #fff; font-size: 12px; font-size: 0.75rem; text-align: center; transform: translateY(50%);}
 
-.sns_pic > ul > li > a:hover p,
-.sns_pic > ul > li > a:focus p{padding-top: 2vw; box-sizing: border-box; text-transform: uppercase; color: #fff; font-size: 12px; font-size: 0.75rem; font-weight: bold; text-align: center; transform: translateY(30%);}
-
-.sns_pic > ul > li > a:hover i,
-.sns_pic > ul > li > a:focus i{margin-left: 10px;}
 /* footBox ============================ */
 #footBox{width: 100%; background-color: #fff; box-sizing: border-box;}
 

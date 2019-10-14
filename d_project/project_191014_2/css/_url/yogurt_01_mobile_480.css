@@ -20,7 +20,7 @@
 
 /* contentBox ================================== */
     
-    .con{padding: 15vh 4vw;}
+    .con{padding: 15vh 3vw;}
   
     .con > h2{font-size: 34px; font-size: 2.125rem;}
     .con > p{margin-top: 25px; margin-top: 1.5625rem; font-size: 30px; font-size: 1.875rem;}
@@ -28,24 +28,16 @@
     /* view_area ============================ */
     .view_area{background-size: auto 100%; padding: 30vh 4vw; box-sizing: border-box;}
 
-      .text_box{width: 480px; height: 250px; text-align: center;}
+      .text_box{width: 100%; height: 250px; height: 15.625rem; text-align: center;}
+      .text_box > p{height: 25px; height: 1.5625rem; font-size: 30px; font-size: 1.875rem; margin-bottom: 10px; margin-bottom: 0.625rem;}
+      .text_box > h2{height: 100px; height: 6.25rem; font-size: 66px; font-size: 4.125rem; margin-bottom: 36px; margin-bottom: 2.25rem;}
+      .text_box > span{height: 25px; height: 1.5625rem; font-size: 26px; font-size: 1.625rem;}
+      .text_box i{font-size: 38px; font-size: 2.375rem;}
 
-        .text_box{width: 100%; height: 250px; height: 15.625rem; text-align: center;}
-        .text_box > p{height: 25px; height: 1.5625rem; font-size: 30px; font-size: 1.875rem; margin-bottom: 10px; margin-bottom: 0.625rem;}
-        .text_box > h2{height: 100px; height: 6.25rem; font-size: 66px; font-size: 4.125rem; margin-bottom: 36px; margin-bottom: 2.25rem;}
-        .text_box > span{height: 25px; height: 1.5625rem; font-size: 26px; font-size: 1.625rem;}
-        .text_box i{font-size: 38px; font-size: 2.375rem;}
-
-    .scroll{width: 300px;}
-
-  
-    .scroll > ul > li{width: 100px;}
+    .scroll{width: 300px; width: 18.75rem;}
+    .scroll > ul > li{width: 100px; width: 6.25rem;}
    
-     
-    
-    .sidebar{height: 234px; height: 14.625rem; top: 35%; transform: translateY(-50%); right: 5.2vw; margin: auto;}
-
-      
+    .sidebar{height: 234px; height: 14.625rem; top: 35%; transform: translateY(-50%); right: 5.2vw; margin: auto;}   
     .sidebar > ul > li{width: 24px; width: 1.5rem; height: 24px; height: 1.5rem;}
   
   
@@ -107,6 +99,15 @@
     .sns_pic > ul > li:nth-child(7){ margin-left: 0; margin-bottom: 0;}
     .sns_pic > ul > li:nth-child(8){ margin-bottom: 0;}
     .sns_pic > ul > li:nth-child(9){ margin-bottom: 0;}
+
+    .sns_pic > ul > li > a:hover span,
+    .sns_pic > ul > li > a:focus span{display: block; color: #fff; font-size: 12px; font-size: 0.75rem; text-align: center; padding-top: 7.2vw; box-sizing: border-box;}
+
+    .sns_pic > ul > li > a:hover p,
+    .sns_pic > ul > li > a:focus p{padding-top: 2vw; box-sizing: border-box; text-transform: uppercase; color: #fff; font-size: 12px; font-size: 0.75rem; font-weight: bold; text-align: center; transform: translateY(30%);}
+
+    .sns_pic > ul > li > a:hover i,
+    .sns_pic > ul > li > a:focus i{margin-left: 10px;}
   
     /* footBox ==================================== */
   
