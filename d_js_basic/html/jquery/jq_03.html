@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- jq_02.html -->
+<!-- jq_03.html -->
 <html lang="ko-KR">
 
 <head>
@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="../../fonts/gyeonggi/stylesheet.css">
   <link rel="stylesheet" href="../../css/base/reset.css">
   <link rel="stylesheet" href="../../css/base/common.css">
-  <!-- <link rel="stylesheet" href="../css/jq_02.css"> -->
+  <!-- <link rel="stylesheet" href="../css/jq_03.css"> -->
 
   <!--[if IE]>
        <script src="./ie/html5shiv/dist/html5shiv.min.js"></script>
@@ -29,10 +29,12 @@
   <link rel="apple-touch-icon" href="favicon.png">
 
   <title>jQuery 기초 이해하기</title>
+  <style>
+    #resultBox{width: 300px; height: 300px; background-color: #0aa; padding: 2rem; margin: 3rem;/* box-sizing: border-box;*/ border: 0.625rem solid #051;}
+  </style>
 </head>
 
 <body>
-  <!-- noscript : jabascript를 지원하지 않는 브라우저 설정 -->
 <noscript>
     <p></p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다.<br />
     자바스크립트의 기능을 활성화 해주세요.</p>
@@ -43,52 +45,17 @@
   <!-- layout -->
     <div id="wrap">
       <header id="headBox">
-        <h1><a href="../content.html">jabascript 기초 이해하기</a></h1>
+        <h1><a href="../content.html">jQuery 기초 이해하기</a></h1>
       </header>
       <main id="contentBox">
-        <h2>jQuery 기본 이해하기</h2>
-        <h3>선택자</h3>
-
-        <div class="box">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellendus aliquid expedita doloremque hic necessitatibus corrupti officiis, dolorem optio sit at enim saepe veniam eveniet, minus exercitationem, similique et deleniti.</p>
-
-          <ul>
-            <li>list_1</li>
-            <li>list_2</li>
-            <li>list_3</li>
-            <li>list_4</li>
-          </ul>
-
-          <dl>
-            <dt>title</dt>
-            <dd>Lorem ipsum dolor sit amet.</dd>
-            <dd>Lorem ipsum dolor sit amet.</dd>
-            <dd>Lorem ipsum dolor sit amet.</dd>
-          </dl>
-<hr />
-          <h3>부모 선택자</h3>
-          <div id="first">
-            <div class="sub2">
-              <div class="area">
-                <ul>
-                  <li>list</li>
-                  <li>list</li>
-                  <li>
-                    <a href="#">
-                      <strong>list</strong>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h2>jQuery 기초</h2>
+        <div id="myBox"></div>
+        <div id="resultBox"></div>
       </main>
     </div>
   <!-- script -->
   <script src="../../js/base/jquery-3.4.1.min.js"></script>
   <script src="../../js/base/jquery-ui.min.js"></script>
-  <script src="../../js/src/jquery/jq_02.js"></script>
-
+  <script src="../../js/src/jquery/jq_03.js"></script>
 </body>
 </html>
