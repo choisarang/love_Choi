@@ -9,11 +9,26 @@
 
 
 const wrap = $("#wrap");
-wrap.prepend('<div class = "head_wrap">');
+wrap.prepend('<div class = "head_wrap"></div>');
 const headWrap = $('.head_wrap');
+wrap.append('<div class = "foot_wrap"></div>');
+const footWrap = $('.foot_wrap');
 
-headWrap.load('./temp/header.html');
+
+headWrap.load('./temp/header.html', function(data){
+  console.log(data);
+  const headBox = $('#headBox');
+  headBox.css({'backgroundColor':'#3ff'});
+});
+
+footWrap.load('./temp/footer.html', function(data){
+  console.log(data);
+});
 
 
+$.getJSON('../../../data/test.json', function(data){
+  console.log(data);
+  
+});
 
 })(jQuery);
