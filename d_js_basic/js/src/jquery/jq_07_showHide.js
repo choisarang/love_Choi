@@ -47,12 +47,15 @@ slid.eq(2).on('click', function(){
 
 // addClass, removeClass, toggleClass
 class_control.eq(0).on('click', function(){
+  viewBox.removeAttr('style');
   viewBox.addClass('act');
 });
 class_control.eq(1).on('click', function(){
+  viewBox.removeAttr('style');
   viewBox.removeClass('act');
 });
 class_control.eq(2).on('click', function(){
+  viewBox.removeAttr('style');
   viewBox.toggleClass('act');
 });
 // =================================================
