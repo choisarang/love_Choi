@@ -37,11 +37,11 @@ closeGnbBtn.on('click', function(e){
 // #gnb에 마우스 올렸을 때 dd 나오게 만들기
 
 const addAction = function(){
-  $(this).find(gnbTitleLink).addClass('action');
+  $(this).parents('li').find(gnbTitleLink).addClass('action');
   gnbDd.stop().slideDown();
 }
 const removeAction = function(){
-  $(this).find(gnbTitleLink).removeClass('action');
+  $(this).parents('li').find(gnbTitleLink).removeClass('action');
   gnbDd.stop().slideUp();
 }
 
@@ -52,9 +52,7 @@ gnbDl.on('mouseleave', removeAction);
 
 // a, button, form(input, textarea, select) 
 
-gnbTitleLink.on('focus', function(){
-  gnbDd.stop().slideDown(); 
-});
+gnbTitleLink.on('focus', addAction);
 
 gnbListLink.eq(-1).on('blur', function(){
   gnbDd.stop().slideUp();

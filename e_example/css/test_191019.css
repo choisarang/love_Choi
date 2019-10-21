@@ -1,0 +1,49 @@
+/* test_191019.css */
+@charset "UTF-8";
+
+#wrap{width: 100%; height: 100%; background-color: #aaa;}
+#headBox{position: fixed; width: 100%; height: 110px;}
+h1{float: left; width: 10%; height: 100%; background-color: #a0f;}
+h1 > a{display: block; width: 100%; height: 100%; color: #333;}
+
+#gnb{float: left; width: 80%; height: 100%;}
+.list > ul{position: relative; width: 100%; height: auto; background-color: #fff;}
+
+#gnb > ul:before,
+#gnb > ul::before{content: " "; display: block; position: absolute; z-index: -1; left: 50%; margin-left: -50vw; width: 100vw; height: 100%; background-color: inherit;}
+
+.list > ul:after,
+.list > ul::after{content: " "; display: block; width: 0; height: 0; clear: both;}
+
+.list > ul > li{float: left; width: 25%; height: auto;}
+
+.list > ul > li > dl{width: 100%; height: auto;}
+
+.list > ul > li > dl > dt{width: 100%; height: 110px; padding: 0 5px; box-sizing: border-box;}
+.list > ul > li > dl > dt > a{position: relative; display: block; width: 100%; height: 100%; font-size: 30px; text-align: center; line-height: 100px;}
+
+#gnb > ul > li > dl > dt >a:after,
+#gnb > ul > li > dl > dt >a::after{content: " "; display: block; position: absolute; z-index: 500; left: 0; bottom: -1px; width: 0; height: 0; border-bottom: 4px solid #f70; transition: width 300ms ease;}
+
+#gnb dt > .action:after,
+#gnb dt > .action::after{width: 100%;}
+
+
+#gnb > ul > li > dl > dd{display: none;}
+.list > ul > li > dl > dd{width: 100%; height: auto; background-color: #fff;}
+.list > ul > li > dl > dd > a{display: block; width: 100%; height: auto; font-size: 25px; color: #333; line-height: 100px; text-align: center;}
+
+.list > ul > li > dl > dd > a:hover{color: #f70; text-decoration: underline;}
+
+
+.side_bar{float: left; width: 10%; height: 100%; background-color: #a0f;}
+.side_bar > button{width: 100%; height: 100%; font-size: 40px; background-color: transparent;}
+
+
+
+
+.side_gnb{display: none;}
+.side_gnb{position: fixed; top: 0; left: 0; width: 100%; height: 100%; padding: 200px 50px; background-color: rgba(255, 94, 1, 0.8);}
+  .close_btn{width: 50px; height: 50px; margin: auto; background-color: #fff;}
+
+  .gnb_area{width: 760px; height: auto; margin: auto; background-color: inherit;}
