@@ -8,27 +8,35 @@
   const gnbDd = gnb.find('dd');
 
   const viewBox = $('#viewBox');
+  const back = $('.back');
 
-  
+  let time = 1000;
+
+
   gnbUl.on('mouseenter', function(){
     gnbDd.stop().slideDown();
-    viewBox.css({'backgroundColor':'rgba(51, 119, 170, 0.5'});
+    viewBox.addClass('back');
   });
 
   gnbUl.on('mouseleave', function(){
     gnbDd.stop().slideUp();
-    viewBox.css({'backgroundColor':'rgb(51, 119, 170'});
+    viewBox.removeClass('back');
   });
 
   gnbUl.find('a').on('focus', function(){
     gnbDd.stop().slideDown();
-    viewBox.css({'backgroundColor':'rgba(51, 119, 170, 0.5'});
+    viewBox.addClass('back');
   });
 
   gnbUl.find('a').eq(-1).on('blur', function(){
     gnbDd.stop().slideUp();
-    viewBox.css({'backgroundColor':'rgb(51, 119, 170'});
+    viewBox.removeClass('back');
   });
+
+
+
+  
+
 
 
 
