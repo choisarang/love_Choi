@@ -1,4 +1,5 @@
-/* spigen_test_result.css */
+
+/* spigen_header.css */
 
 #wrap{width: 100%; min-width: 1366px; height: 100%; min-height: 700px; background-color: #ccf;}
 
@@ -32,8 +33,18 @@ h1{position: relative; float: left; width: 200px; height: 44px; background-color
 .web_navigation > ul > li{float: left; width: 25%; height: auto; padding: 0 5px; box-sizing: border-box; text-align: center;}
 .web_navigation dl{width: 100%; height: auto;}
 
-.web_navigation dt{width: 100%; height: 100px;}
-.web_navigation dt > a{display: block; position: relative; z-index: 100; width: 100%; height: 100%; box-sizing: border-box; padding-top: 30px; color: #171717; font-size: 1.2rem; text-transform: capitalize;}
+.web_navigation dt{position: relative; width: 100%; height: 100px;}
+
+.web_navigation dt:before,
+.web_navigation dt::before{content: " "; display: block; position: absolute; right: -1px; top: 0; bottom: 10px; margin: auto; width: 0; height: 20px; border-right: 1px solid #aaa;}
+
+.web_navigation li:last-child dt:before,
+.web_navigation li:last-child dt::before{display: none;}
+
+
+.web_navigation dt > a{display: block; position: relative; z-index: 100; width: 100%; height: 100%; box-sizing: border-box; padding-top: 30px; color: #171717; font-size: 1.2rem; text-transform: capitalize; outline: 0ch;}
+
+
 
 #gnb dt > a:after,
 #gnb dt > a::after{content: " "; display: block; position: absolute; z-index: 500; left: 0; bottom: -1px; width: 0; height: 0; border-bottom: 4px solid #f70; transition: width 300ms ease;}
@@ -43,7 +54,10 @@ h1{position: relative; float: left; width: 200px; height: 44px; background-color
 
 .web_navigation dd{width: 100%; height: auto; padding-top: 1rem;}
 #gnb dd{display: none;}
-.web_navigation dd > a{display: block; width: 100%; height: auto; padding: 5px 0; margin-bottom: 5px; color: #333; text-transform: capitalize;}
+.web_navigation dd > a{display: block; width: 100%; height: auto; padding: 5px 0; margin-bottom: 5px; color: #333; text-transform: capitalize; transition: all 300ms ease; text-decoration-color: rgba(255, 119, 0, 0);}
+
+.web_navigation dd > a:hover,
+.web_navigation dd > a:focus{outline: 0; text-decoration: underline; color: #f70; text-decoration-color: rgba(255, 119, 0, 1);}
 
 
 .gnb_btn{position: relative; z-index: 200; float: right; width: 44px; height: 44px;}
@@ -64,15 +78,3 @@ h1{position: relative; float: left; width: 200px; height: 44px; background-color
 .side_gnb_area ul{background-color: transparent;}
 .side_gnb_area dl a{color: #fff;}
 .side_gnb_area dt > a{font-size: 1.5rem; font-weight: bold;}
-
-
-/* viewBox ========================================================================= */
-#viewBox{width: 100%; height: 100%; padding-top: 100px; box-sizing: border-box; background-color: #0af;}
-
-/* conBox ========================================================================= */
-#conBox{width: 100%; height: 100%; padding-top: 100px; box-sizing: border-box; background-color: #ddd;}
-
-  .media_blog{width: 100%; height: 50%; background-color: inherit;}
-  .about_company{width: 100%; height: 50%; background-color: #aff;}
-/* footBox ========================================================================= */
-#footBox{width: 100%; height: 500px; background-color: #333;}

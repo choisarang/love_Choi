@@ -8,6 +8,16 @@ const gnbLi = gnb.find('li');
 const gnbDt = gnb.find('dt');
 const gnbDd = gnb.find('dd');
 
+
+// ============
+
+const gnbArea = $('.gnb_area');
+
+let gnbContents = gnb.contents().clone();
+gnbArea.append(gnbContents);
+
+// ============
+
 gnbLi.on('mouseenter', function(){
   $(this).find('a').addClass('action');
   gnbDd.stop().slideDown();
