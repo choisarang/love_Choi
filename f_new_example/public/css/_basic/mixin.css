@@ -1,0 +1,2 @@
+@charset "UTF-8";
+/*  @include horizontal_slide_banner('.my_banner',4){ $url:'../img/mybanner/'; $imgName:'mybanner_'; $count : 4; @include  horizon_banner_img($count, $imgName, $url:$url, $file:'png'); // 기타 div 및 하위  내용을 삽입 }  */

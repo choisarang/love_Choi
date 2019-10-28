@@ -1,6 +1,7 @@
 // spigen_test_result.js
 (function($){
 
+
 // 1. #gnb 내부에 있는 ul의 내용을 side_gnb_area에 복사해서 붙여넣기
 // clone 메서드 사용
 
@@ -10,11 +11,13 @@ const sideGnbArea = $('.side_gnb_area');
 let gnbContents = gnb.contents().clone();
 sideGnbArea.append(gnbContents);
 
-// -----------------------------------------------------
-// 버튼 클릭시 side_gnb 나타나게 만들기
+
+
 const openGnbBtn = $('.gnb_btn > button');
 const closeGnbBtn = $('.close_gnb_btn > button');
 const sideGnb = $('.side_gnb');
+const gnbUl = gnb.find('ul');
+const gnbLi = gnb.find('li');
 const gnbDl = gnb.find('dl');
 const gnbDd = gnb.find('dd');
 const gnbDt = gnb.find('dt');
@@ -22,6 +25,19 @@ const gnbTitleLink = gnbDt.children('a');
 const gnbListLink = gnbDd.children('a');
 
 let time = 600;
+
+// 목록 만들기 ---------------------------------------------
+
+const headerList = [
+                    {title:'about', sub:['who we are', 'what we do', 'our locations']},
+                    {title:'careers', sub:['careers', 'hr blog', 'apply']},
+                    {title:'media', sub:'media'},
+                    {title:'ir', sub:['inverstors', 'ir archive', 'ir meeting']}
+                   ];
+
+
+// -----------------------------------------------------
+// 버튼 클릭시 side_gnb 나타나게 만들기
   
 openGnbBtn.on('click', function(e){
   e.preventDefault();
