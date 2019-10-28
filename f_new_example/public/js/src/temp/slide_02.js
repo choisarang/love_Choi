@@ -32,5 +32,16 @@
     });
   });
 
+  // 변수 i는 외부에서 공용으로 사용할 수 있도록 전역변수로 처리
+  // 인디케이터, 광고배너 이동 후 처리하는 부분등의 내용은 별도 함수로 처리
+
+  let go;
+  const Goslide = function(){
+    go = setInterval(function(){/* 기능 */}, timed*5);
+  };
+  const stopSlide = clearInterval(go);
+  viewBox2.on('mouseenter', stopSlide);
+  viewBox2.on('mouseleave', goSlide);
+
 
 })(jQuery);
