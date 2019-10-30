@@ -138,16 +138,13 @@
       if(num >= imglen-1){
         slideGuide.css({'left':'100%'});
         num = 0;}
-        slideGuide.stop().animate({'left':-100 * num + '%'},600);
-     }else{
-      num--;
+     }else{ num--; }
       slideGuide.stop().animate({'left':-100 * num + '%'},600, function(){
         if(num <= -1){
           num = imglen-2;
           slideGuide.css({'left':-100 * num + '%'},600);}
         });
-    }
-  });
+    });
 
 
 
