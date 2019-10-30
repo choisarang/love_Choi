@@ -12,22 +12,53 @@
   const indiLink  = indiLi.children('a');
   const slideForm = viewBox.find('.slide_form');
   const guideBox  = viewBox.find('.guide');
+  const guideDiv  = guideBox.children('div');
+
+  let timed = 500;
+  let myn = 0, maxn = guideDiv.length;
 
   slideForm.css({'overflow':'hidden'});
   indicator.css({'zIndex': 500});  
   guideBox.css({'position':'relative','top':0,'left':0});
 
+
+
+
+  const MoveSlide = function(n){
+    indiLink.removeClass('action');
+    indiLi.eq(n).children('a').addClass('action');
+    
+    guideBox.animate({'marginLeft':(-100 * n)+'%'},
+    )};
+
+
+    let go;
+    const GoSlide = function(){
+      go = setInterval(function(){
+        myn++;
+        if(myn >= maxn){myn = 0;}
+        MoveSlide(myn);
+      }, timed *4);
+      };
+  
+    const StopSlide = function(){
+      clearInterval(go);
+    };
+  GoSlide();
+
+  viewBox.on('mouseenter', StopSlide);
+  viewBox.on('mouseleave', GoSlide);
+
+
+
   indiLink.on('click focus', function(evt){
     evt.preventDefault();
     // let parLi = $(this).parent('li');
     let i = $(this).parent('li').index();
-    console.log(i);
-
-    indiLink.removeClass('action');
-    $(this).addClass('action');
-    guideBox.stop().animate({'left':-100 * i + '%'});
-
+    myn = i;
+    StopSlide();
+    MoveSlide(myn);
+ 
   });
-
 
 })(jQuery);

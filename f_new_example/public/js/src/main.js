@@ -15,11 +15,21 @@
     JsLink('slide_01');
   });
 // ======================================================
-// 광고영역2 생성
+// 광고 영역 2 생성
 wrap.append('<section id="viewBox_02"></section>');
 const vB2 = $('#viewBox_02');
 vB2.load('./temp/slide_02.html',() => {
   JsLink('slide_02');
+});
+//  - 자동 슬라이드 내용에서 중첩기능 수정요망
+
+
+//  ============================================================
+// 광고 영역 3 생성
+wrap.append('<section id="viewBox_03"></section>');
+const vB3 = $('#viewBox_03');
+vB3.load('./temp/slide_03.html',() => {
+  JsLink('slide_03');
 });
 
 })(jQuery);

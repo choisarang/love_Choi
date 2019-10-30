@@ -32,5 +32,11 @@ $indiH : 20px; //indicator 노ㅠ이 설정
       } //li
     } //indicator
   } //btn_area
-  .view_btn{display: none; float: right; width: auto; height: 100%;}
-}
+  .view_btn{float: right; position: static; width: auto; height: 100%;
+    > button{display: none;}
+    .play_btn{width: auto; height: $indiH;}
+    .play_btn > button{float: left; width: $indiH; height: $indiH; background-color: $blueGreen;
+        & > span{@include hidden;}
+      }
+  }
+}//#viewBox2
