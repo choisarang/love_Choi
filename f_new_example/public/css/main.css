@@ -107,7 +107,7 @@
 
 .slide_03_btn > button.next { float: right; }
 
-.slide_03_form { width: 100%; height: 100%; }
+.slide_03_form { width: 100%; height: 100%; overflow: hidden; }
 
 .slide_03_form > ul { position: relative; width: 600%; height: 100%; margin-left: -100%; }
 

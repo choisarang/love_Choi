@@ -21,7 +21,6 @@ const vB2 = $('#viewBox_02');
 vB2.load('./temp/slide_02.html',() => {
   JsLink('slide_02');
 });
-//  - 자동 슬라이드 내용에서 중첩기능 수정요망
 
 
 //  ============================================================
@@ -30,6 +29,14 @@ wrap.append('<section id="viewBox_03"></section>');
 const vB3 = $('#viewBox_03');
 vB3.load('./temp/slide_03.html',() => {
   JsLink('slide_03');
+});
+
+//  ============================================================
+// 광고 영역 4 생성
+wrap.append('<section id="viewBox_04"></section>');
+const vB4 = $('#viewBox_04');
+vB4.load('./temp/slide_04.html',() => {
+  JsLink('slide_04');
 });
 
 })(jQuery);

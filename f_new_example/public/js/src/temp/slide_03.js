@@ -5,7 +5,6 @@
   const slideGuide = slideForm.children('ul');
   let slideLi = slideGuide.find('li');
 
-  slideForm.css({'overflow':'hidden'});
 // =====================================================
 // li에 이름을 부여 (.slide_03_con_0$)
 for(let i=0; i < slideLi.length; i++){
@@ -41,18 +40,25 @@ for(let i=0; i < slideLi.length; i++){
   const bannerLen = slideLi.length;
   console.log(bannerLen);
   
-  nextBtn.on('click', function(e){
-    e.preventDefault();
-    myn++;
-    if(myn >= bannerLen-1){myn = 0;}
-    slideGuide.stop().animate({'left':-100 * myn + '%'});
+  nextBtn.on('click', function(e){                    // nextBtn 을 클릭하면 아래내용 실행
+    e.preventDefault();                               // event 제거
+    myn++;                                            // myn을 1씩 더해라(1, 2, 3, 4)
+    if(myn >= bannerLen-1){                           // 만약 myn이 bannerlen-1(5)보다 크거나 같으면
+      slideGuide.css({'left' : '100%'});              // slideGuide를 왼쪽 기준 100%(오른쪽으로 이동. 왼쪽 이미지) 띄워 복사한 앞 이미지로 티 안나게 이동
+      myn = 0;}                                       // 복사한 앞 이미지에서 0(첫번째 이미지)로 이동
+    let per = -100 * myn + '%';                       // 
+    slideGuide.stop().animate({'left' : per},1000);   // -100(왼쪽으로 이동. 오른쪽 이미지)씩 애니메이션 효과주면서 1초씩 이동
   });
 
   prevBtn.on('click', function(e){
     e.preventDefault();
     myn--;
-    if(myn <= 0){myn = bannerLen-2;}
-    slideGuide.stop().animate({'left':-100 * myn + '%'});
+    let per = -100 * myn + '%';                                 // per는 -100 * myn(현재위치) = ?%            
+    slideGuide.stop().animate({'left' : per},1000, function(){  // slideGuide를 왼쪽 기준 ?%만큼 이동해라
+      if(myn <= -1){myn = bannerLen-2;}                         // myn이 -1보다 작거나 같으면 myn은 4
+      per = -100 * myn + '%';                                   // per는 -100 * 4 = -400%
+      slideGuide.css({'left' : per});                           // 왼쪽 기준 -400% 이동
+    });
   });
 
 })(jQuery);
