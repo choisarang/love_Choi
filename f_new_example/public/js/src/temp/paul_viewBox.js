@@ -23,6 +23,21 @@
   };
   textEm(textN);
 
+// --------------------------------------------------------------------
+// 버튼클릭
+  indiBtn.on('click', function(e){
+    e.preventDefault();
+    if($(this).index()==0){ //next버튼
+      textN++;
+      if(textN >= liLen){textN = 0;}
+      textEm(textN)
+    }else{ //prev버튼
+      textN--;
+      if(textN < 0){ textN = liLen-1}
+      textEm(textN);
+    }
+  })
+
 
 
 })(jQuery);
