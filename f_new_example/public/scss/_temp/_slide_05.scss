@@ -1,0 +1,33 @@
+// _slide_05.scss
+#viewBox_05{position: relative; width: 100%; height: 100%;}
+
+.btn_area{position: absolute; top: 50%; right: 3%; margin: auto; width: auto; height: 50px;
+  > button{width: 50px; height: 50px; background-color: transparent;
+    &.next{float: right;}
+    &.prev{float: left;}
+    > span{display: none;}
+    > i{display: block; width: 100%; height: 100%; font-size: 1.5rem; color: #fff;}
+  }//button
+}//btn_area
+
+
+
+.slide_form{$count:4;
+  width: 100%; height: 100%;
+  > ul{width: 100% * $count; height: 100%; background-color: #aaf;
+    > li{float: right; width: 100% / $count; height: 100%; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;
+      > dl{width: 100%; height: auto; padding: 14rem 10rem;
+        > dt{width: 700px; height: auto; font-size: 5rem; font-weight: bold; text-transform: capitalize; color: #322;}
+        > .con{width: auto; height: auto; margin-top: 3rem; font-size: 1rem; color: #322}
+        > .link{width: 100px; height: auto; padding-top: 3rem; font-size: 1rem; text-transform: uppercase;
+            > a{display: block; width: 100%; height: 100%; padding-bottom: 0.3rem; border-bottom: 2px solid #322; font-weight: bold; color: #322;}
+            }//link
+          }//dl
+        }//li
+      }//ul
+    }//slide_form
+
+
+.slide_form > ul > .slide_03 dt{text-transform: uppercase; color: #fff;}
+.slide_form > ul > .slide_03 .con{width: 300px; color: #fff; background-color: rgba(0, 0, 0, 0.5);}
+.slide_form > ul > .slide_03 .link a{border-bottom: 2px solid #fff; color: #fff;}

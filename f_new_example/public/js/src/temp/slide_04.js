@@ -9,32 +9,24 @@
                 bgimg:'mySlideImage_01.jpg'};
 
 
-  const imgList = [{title:'slide title _01',
-                    content:'slide content .......',
-                    linkText:'바로가기1',
-                    link:'http://naver.com',
-                    bgimg:'mySlideImage_01.jpg'},
-                   {title:'slide title _02',
-                    content:'slide content .......',
-                    linkText:'바로가기2',
-                    link:'http://daum.net',
-                    bgimg:'mySlideImage_02.jpg'},
-                   {title:'slide title _03',
-                    content:'slide content .......',
-                    linkText:'바로가기3',
-                    link:'http://google.com',
-                    bgimg:'mySlideImage_03.jpg'},
-                   {title:'slide title _04',
-                    content:'slide content .......',
-                    linkText:'바로가기4',
-                    link:'http://xidoweb.com',
-                    bgimg:'mySlideImage_04.jpg'},
-                   {title:'slide title _05',
-                    content:'slide content .......',
-                    linkText:'바로가기5',
-                    link:'http://w3c.org',
-                    bgimg:'mySlideImage_05.jpg'}
-                  ];
+  let imgList;
+
+  $.ajax({
+    async:false,
+    type:'GET',
+    url:'../data/slide_04.json',
+    dataType:'json',
+    error:function(){console.log('data error');},
+    success:function(data){
+      imgList = data;
+      return imgList;
+    }
+  });
+
+  console.log(imgList);
+  
+
+  
 
   // ===========================================================
   // 기본 선택자 및 내용(기본틀) 생성

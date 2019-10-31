@@ -12,7 +12,7 @@
    > ul{position: relative; width: 100% * $count; height: 100%; margin-left: -100%;
     > li{float: left; width: 100% / $count; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;}
     @for $i from 1 to $count { //to 미만, through는 이하
-       > li.slide_03_con#{$i}{background-image: url('../../img/slide_01/mySlideImage_0'+ $i +'.jpg');}
+       > li.slide_03_con#{$i}{background-image: url('../img/slide_01/mySlideImage_0'+ $i +'.jpg');}
     }
   }//ul
 }//slide_03_form

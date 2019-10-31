@@ -39,4 +39,13 @@ vB4.load('./temp/slide_04.html',() => {
   JsLink('slide_04');
 });
 
+//  ============================================================
+// 광고 영역 5 생성(폴바셋)
+wrap.append('<section id="viewBox_05"></section>');
+const vB5 = $('#viewBox_05');
+vB5.load('./temp/slide_05.html',() => {
+  JsLink('slide_05');
+});
+
+
 })(jQuery);
