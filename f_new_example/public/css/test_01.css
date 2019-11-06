@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* test_01.css */
+#wrap{width: 100%; height: 100%; }
+
+main{width: 100%; height: auto;}
+
+#miniProduct{position: relative; width: 100%; height: 800px;}
+.indicator{position: absolute; bottom: 3%; left: 0; right: 0; margin: auto; width: 130px; height: 50px;}
+.indicator > li{float: left; width: 30px; height: 30px; border-radius: 30px; margin-right: 10px; background-color: #aaa;}
+
+.indicator > li:last-child{margin-right: 0;}
+
+.indicator > li > a{display: block; width: 100%; height: 100%;}
+.indicator > li > a > span{display: block; width: 0; height: 0; overflow: hidden;}
+
+.product{width: 100%; height: 700px; background-image: url("../img/test_01/wood.jpg");}
+.product > ul{position: relative; width: 300%; height: 100%;}
+.product > ul > li{float: left; width: 33.3333334%; height: 100%; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
+.product > ul > li > a{display: block; width: 100%; height: 100%;}
+.product > ul > li > a > span{display: block; width: 0; height: 0; overflow: hidden;}
+
+
+/* miniProduct2 ===================================================================================*/
+
+#miniProduct2{position: relative; width: 450px; height: 300px; margin: auto; background-color: #dfdfdf; border: 1px solid #333;}
+#miniProduct2 > .btn{position: absolute; bottom: 0; right: 0; margin: auto; width: 120px; height: 50px;}
+#miniProduct2 > .btn > button{width: 50px; height: 50px; background-color: transparent;}
+#miniProduct2 > .btn > .next{float: right; margin-left: 20px;}
+#miniProduct2 > .btn > .prev{float: left;}
+#miniProduct2 > .btn > button > i{font-size: 1.5rem; color: #aaa;}
+#miniProduct2 > .btn > button > span{display: block; width: 0; height: 0; overflow: hidden;}
+#miniProduct2 > .btn > button > i.active{color:#00f;}
+
+.product2{width: 100%; height: 250px; overflow: hidden; background-image: url("../img/test_01/wood.jpg");}
+.product2 > ul{width: 400%; height: 100%;}
+.product2 > ul > li{float: left; width: 25%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;}
+.product2 > ul > li > a{display: block; width: 100%; height: 100%;}
+.product2 > ul span{display: block; width: 0; height: 0; overflow: hidden;}
+
+
+/* miniProduct3 ===================================================================================*/
+
+#miniProduct3{position: relative; width: 450px; height: 300px; margin: auto; background-color: #dfdfdf; border: 1px solid #333;}
+#miniProduct3 > .btn{position: absolute; bottom: 0; right: 0; margin: auto; width: 120px; height: 50px;}
+#miniProduct3 > .btn > button{width: 50px; height: 50px; background-color: transparent;}
+#miniProduct3 > .btn > .next{float: right; margin-left: 20px;}
+#miniProduct3 > .btn > .prev{float: left;}
+#miniProduct3 > .btn > button > i{font-size: 1.5rem; color: #aaa;}
+#miniProduct3 > .btn > button > span{display: block; width: 0; height: 0; overflow: hidden;}
+#miniProduct3 > .btn > button > i.active{color:#00f;}
+
+.product3{width: 100%; height: 250px; overflow: hidden; background-image: url("../img/test_01/wood.jpg");}
+.product3 > ul{width: 300%; height: 100%;}
+.product3 > ul > li{float: left; width: 33.333334%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;}
+.product3 > ul > li > a{display: block; width: 100%; height: 100%;}
+.product3 > ul span{display: block; width: 0; height: 0; overflow: hidden;}
+
+
+/* miniProduct4 ===================================================================================*/
+
+#miniProduct4{position: relative; width: 450px; height: 300px; margin: auto; background-color: #dfdfdf; border: 1px solid #333;}
+#miniProduct4 > .btn{position: absolute; bottom: 0; right: 0; margin: auto; width: 120px; height: 50px;}
+#miniProduct4 > .btn > button{width: 50px; height: 50px; background-color: transparent;}
+#miniProduct4 > .btn > .next{float: right; margin-left: 20px;}
+#miniProduct4 > .btn > .prev{float: left;}
+#miniProduct4 > .btn > button > i{font-size: 1.5rem; color: #aaa;}
+#miniProduct4 > .btn > button > span{display: block; width: 0; height: 0; overflow: hidden;}
+#miniProduct4 > .btn > button > i.active{color:#00f;}
+
+.product4{width: 100%; height: 250px; overflow: hidden; background-image: url("../img/test_01/wood.jpg");}
+.product4 > ul{width: 100%; height: auto;}
+.product4 > ul > li{width: 100%; height: 250px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;}
+.product4 > ul > li > a{display: block; width: 100%; height: 100%;}
+.product4 > ul span{display: block; width: 0; height: 0; overflow: hidden;}
