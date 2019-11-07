@@ -80,6 +80,24 @@ btn.on('click', function(e){
 // verticalSlide();
 
 // ===============================================================
-product.css({overflow:'hidden'});
+// 화면만 바뀌는 기능
+const BasicSlide = function(){
+let productLen = productLi.length;
+let i = 0;
+btn.on('click',function(){
+  let btnL = $(this).hasClass('next');
+  if(btnL){
+    i++;
+    if(i >= productLen){i = 0}
+  }else{
+    i--;
+    if(i <= -1){i = productLen-1}
+  }
+  productUl.css({marginLeft:-100 * i + '%'});
+})
+};// BasicSlide()
+// BasicSlide();
+// ===============================================================
+// product.css({overflow:'hidden'});
 
 })(jQuery);
