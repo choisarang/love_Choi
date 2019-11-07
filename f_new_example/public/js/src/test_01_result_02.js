@@ -43,6 +43,8 @@ btn.on('click', function(e){
 
 // ====================================================================
 // 세로형 슬라이드
+const verticalSlide = function(){
+
 productLi.eq(-1).clone().prependTo(productUl);
 productLi = productUl.find('li');
 let productH = product.outerHeight(); //padding, margin 값을 못가져와서 p를 가져오려면 innerHeight, m을 가져오려면 outerHeight
@@ -73,5 +75,11 @@ btn.on('click', function(e){
     });
   }
 });
+}//VerticalSlide()
+
+// verticalSlide();
+
+// ===============================================================
+product.css({overflow:'hidden'});
 
 })(jQuery);
