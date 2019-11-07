@@ -1,0 +1,41 @@
+#wrap { width: 100%; height: 100%; padding: 100px 50px; box-sizing: border-box; background-color: #fff; }
+
+#miniProduct { position: relative; width: 700px; height: 400px; margin: auto; padding: 20px; border: 1px solid #aaa; box-sizing: border-box; }
+
+#miniProduct > .btn { position: absolute; z-index: 100; top: 40%; left: 0; right: 0; margin: auto; width: 100%; height: 0; }
+
+#miniProduct > .btn > button { width: 100px; height: 100px; border-radius: 100px; background-color: #333; }
+
+#miniProduct > .btn > button.next { float: right; }
+
+#miniProduct > .btn > button.next > i { transform: translateX(20%); }
+
+#miniProduct > .btn > button.prev { float: left; }
+
+#miniProduct > .btn > button.prev > i { transform: translateX(-20%); }
+
+#miniProduct > .btn > button > i { font-size: 6rem; }
+
+#miniProduct > .btn > button > i > span { display: block; width: 0; height: 0; overflow: hidden; }
+
+#miniProduct > .btn > button:hover, #miniProduct > .btn button:focus { background-color: rgba(51, 51, 51, 0.8); }
+
+#miniProduct > .indicator { position: absolute; bottom: 20px; right: 0; left: 0; margin: auto; padding: 3px; box-sizing: border-box; width: 368px; height: auto; border-radius: 30px; background-color: #777; }
+
+#miniProduct > .indicator > li { float: left; width: 26px; height: 26px; border-radius: 26px; margin-right: 16px; background-color: #fff; }
+
+#miniProduct > .indicator > li > a { display: block; width: 100%; height: 100%; }
+
+#miniProduct > .indicator > li > span { display: block; width: 0; height: 0; overflow: hidden; }
+
+#miniProduct > .indicator > li > a.active { background-color: #ea0; border-radius: 26px; }
+
+#miniProduct > .indicator > li:last-child { margin-right: 0; }
+
+#miniProduct > .product_wrap { width: 400px; height: 300px; margin: auto; background-color: #fff; overflow: hidden; }
+
+#miniProduct > .product_wrap > .product { position: relative; width: 1000%; height: 100%; left: -100%; }
+
+#miniProduct > .product_wrap > .product > li { float: left; width: 10%; height: 100%; }
+
+#miniProduct > .product_wrap > .product > li > span { display: block; width: 0; height: 0; overflow: hidden; }

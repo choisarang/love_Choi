@@ -1,0 +1,35 @@
+// test_02.scss
+#wrap{width: 100%; height: 100%; padding: 100px 50px; box-sizing: border-box; background-color: #fff;}
+
+#miniProduct{position: relative; width: 700px; height: 400px; margin: auto; padding: 20px; border: 1px solid #aaa; box-sizing: border-box; 
+  >.btn{position: absolute; z-index: 100; top: 40%; margin: auto; width: 100%; height: 0;
+    >button{width: 100px; height: 100px; border-radius: 100px; background-color: #333;
+    &.next{float: right;
+      >i{transform: translateX(20%);}  
+        }// next  
+    &.prev{float: left;
+      >i{transform: translateX(-20%);}
+        }// .prev
+      >i{font-size: 6rem;
+        >span{display: block; width: 0; height: 0; overflow: hidden;}
+      }// button>i
+    }// button
+    >button:hover,button:focus{background-color:rgba(51,51,51,0.8);}
+  }// btn
+  >.indicator{position: absolute; bottom: 20px; right: 0; left: 0; margin: auto; padding: 3px; box-sizing: border-box; width: 368px; height: auto; border-radius: 30px; background-color: #777;
+    > li{float: left; width: 26px; height: 26px; border-radius: 26px; margin-right: 16px; background-color: #fff;
+      >a{display: block; width: 100%; height: 100%;}
+      >span{display: block; width: 0; height: 0; overflow: hidden;}
+      >a.active{background-color: #ea0; border-radius: 26px;}
+      }// li
+    > li:last-child{margin-right: 0;}
+  }// .indicator
+  >.product_wrap{width: 400px; height: 300px; margin: auto; background-color: #fff; overflow: hidden;
+    >.product{$count:10;
+        position: relative; width: 100% * $count; height: 100%; left:-100%;
+      >li{float: left; width: 100% / $count; height: 100%;
+        >span{display: block; width: 0; height: 0; overflow: hidden;}
+        }
+    }// product
+  }// .product_wrap
+}// miniProduct

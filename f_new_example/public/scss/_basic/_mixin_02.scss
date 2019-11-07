@@ -1,0 +1,31 @@
+// mixin_02.scss
+
+@mixin fullBox($w:100%, $h:100%, $bg:$sub3) {
+  width: $w; height: $h; margin: auto; background-color: $bg;
+}
+
+
+$rootUnit :16;
+
+@function unit($u){
+  @return $u / $rootUnit;
+}
+
+@mixin conUnit($pro, $u){
+  #{$pro}:$u + px;
+  #{$pro}:unit($u) + rem;
+}
+
+@mixin hidden{
+  display: block; width: 0; height: 0; overflow: hidden;
+}
+
+@mixin image($i, $w:100%, $h:100%, $r:no-repeat, $p:0 0, $s:contain){
+  //display: block; 
+  width: $w; height: $h;
+  background-image: url($url+$i);
+  background-repeat: $r;
+  background-position: $p;
+  background-size: $s;
+  @content;
+}
