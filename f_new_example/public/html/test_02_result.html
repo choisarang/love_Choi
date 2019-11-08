@@ -44,10 +44,43 @@
   <div id="wrap">
     <h1>slide_indi_and_btn(test_02)</h1>
     <div id="slide_01"></div>
+    <div id="slide_02"></div>
   </div>
   <!-- script -->
 <script src="../js/base/jquery-3.4.1.min.js"></script>
 <script src="../js/base/jquery-ui.min.js"></script>
 <script src="../js/src/jquery/test_02_result.js"></script>
+<script>
+  (function($){
+    let data = '../data/test_02_result.json';
+    let img = '../img/test_02/';
+    $('#slide_01').myIndiSlide(data, img);
+    $('#slide_02').myIndiSlide(data, img);
+  })(jQuery);
+</script>
+<script>
+  let ww = $(window).outerWidth();
+  // 브라우저 크기에 따른 기능
+  const viewBrowser = function(ww){
+    if(ww <= 480){
+
+    }else if(ww > 480 && ww <= 1280){
+
+    }else if(ww > 1280 && ww <= 1600){
+
+    }else{
+
+    }
+  };
+  viewBrowser(ww);
+  // 사이즈 변경시 새로고침
+  $(window).on('resize',function(){
+    let nw = $(window).outerWidth();
+    if(ww !== nw){
+      location.reload();
+      viewBrowser(ww);
+    }
+  })
+</script>
 </body>
 </html>

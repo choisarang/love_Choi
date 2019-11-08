@@ -1,8 +1,10 @@
 // test_02_result.js
 (function($){
+
+$.fn.myIndiSlide = function(jsonList, imgList){
 //1.data 불러오기
-let url = '../data/test_02_result.json';
-let imgUrl = '../img/test_02/';
+let url = jsonList; //'../data/test_02_result.json';
+let imgUrl = imgList; //'../img/test_02/';
 let rel = null;
 
 $.ajax({
@@ -12,7 +14,7 @@ $.ajax({
   success : function(data){ return rel = data; }
 });
 // -----------------------------------------------------------
-const slide = $('#slide_01');
+const slide = this;
 
 // slide 영역
 slide.append('<div class="slide_wrap"><ul></ul></div>');
@@ -59,7 +61,8 @@ btn.eq(0).css({float:'right'});
 btn.eq(1).css({float:'left'});
 
 // slide 영역 디자인
-slideWrap.css({width:'100%', height:'100%'});
+let thisH = slide.outerHeight();
+slideWrap.css({width:'100%', height:(thisH - 50)+'px'});
 const slideUl = slideWrap.children('ul');
 
 // -----------------------------------------------------------
@@ -67,24 +70,62 @@ const slideUl = slideWrap.children('ul');
 slideUl.children('li').eq(-1).clone().prependTo(slideUl);
 // -----------------------------------------------------------
 slideLen++;
-slideUl.css({width: 100 * slideLen + '%', height:'300px', marginLeft:'-100%', position:'relative', left:0});
+
+slideUl.css({width: 100 * slideLen + '%', height:'100%', marginLeft:'-100%', position:'relative', left:0});
 slideUl.children('li').css({width:100 / slideLen + '%', height:'100%', float:'left'});
 
 
 let n = 0;
-let indiIndex = indicator.children('li').eq(0);
+let indiLi = indicator.children('li')
+let indiIndex = indiLi.eq(0);
 indiIndex.addClass('action');
 
-/*
+
 let indiDefault = indiIndex.css('backgroundColor');
 
-if(indiIndex.hasClass('action')){
-  indiIndex.children('a').css({backgroundColor:'#f07'})
-}else{
-  indiIndex.siblings().css({backgroundColor:indiDefault})
-}
-*/
+// if(indiIndex.hasClass('action')){
+//   indiIndex.children('a').css({backgroundColor:'#f07'})
+// }else{
+//   indiIndex.siblings().css({backgroundColor:indiDefault})
+// }
+
 
 $('head').append('<style class="myStyle"></style>');
-$('head').find('.myStyle').append('.indicator li.action > a{background-color:#f06')
+$('head').find('.myStyle').append('.indicator li.action > a{background-color:#f06 !important}')
+
+// -----------------------------------------------------------
+// indicator 클릭/focus
+indiLi.children('a').on('focus', function(e){
+  e.preventDefault();
+  let n = $(this).parent().index();
+  indiLi.eq(n).addClass('action');
+  indiLi.eq(n).siblings().removeClass('action');
+
+  slideUl.animate({left:-100 * n + '%'})
+});
+
+// btn클릭
+btn.on('click',function(e){
+  e.preventDefault();
+  let btnL = $(this).hasClass('next');
+  if(btnL){//next
+    n++;
+    if(n >= slideLen-1){
+      slideUl.css({left:'100%'});
+      n = 0;
+    }
+  }else{//prev
+    n--;
+  }
+  slideUl.animate({left:-100 * n +'%'},function(){
+    if(n < 0){
+      n = slideLen-2;
+      slideUl.css({left:-100 * n + '%'});
+    }
+  });
+  indiLi.eq(n).addClass('action');
+  indiLi.eq(n).siblings().removeClass('action');
+})
+
+}// $.fn.myIndiSlide
 })(jQuery);
