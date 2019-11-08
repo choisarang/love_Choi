@@ -1,11 +1,17 @@
 (function($){
 
+const slide = $('#miniProduct');
 const product = $('.product');
 const productUl = product.find('ul');
 let productLi = productUl.find('li');
 
-const btn = $('.btn').find('button');
+// ====================================================================
+// 버튼 생성
+let btnIn = '<div class="btn"><button type="button" class="next"><i class="fas fa-angle-right"></i><span>다음내용보기</span></button><button type="button" class="prev"><i class="fas fa-angle-left"></i><span>이전내용보기</span></button></div>'
+slide.prepend(btnIn);
 
+const btn = $('.btn').find('button');
+// ====================================================================
 // 가로형 슬라이드 
 const HorizonSlide = function(){
 productLi.eq(-1).clone().prependTo(productUl);
@@ -43,7 +49,7 @@ btn.on('click', function(e){
 
 // ====================================================================
 // 세로형 슬라이드
-const verticalSlide = function(){
+const VerticalSlide = function(){
 
 productLi.eq(-1).clone().prependTo(productUl);
 productLi = productUl.find('li');
@@ -77,7 +83,7 @@ btn.on('click', function(e){
 });
 }//VerticalSlide()
 
-// verticalSlide();
+// VerticalSlide();
 
 // ===============================================================
 // 화면만 바뀌는 기능
@@ -98,6 +104,42 @@ btn.on('click',function(){
 };// BasicSlide()
 // BasicSlide();
 // ===============================================================
+// z-index 기능을 통해 fadeIn 처리되는 기능
+const ZIndexSlide = function(){
+productUl.css({'position':'relative', width:'100%'})
+productLi.css({'position':'absolute', width:'100%'})
+productLi.eq(0).nextAll().hide();
+
+let productLen = productLi.length;
+let i = 0;
+
+btn.on('click', function(e){
+  e.preventDefault();
+  let btnL = $(this).hasClass('next');
+  if(btnL){//next
+    i++;
+    if(i >= productLen){i = 0;}
+  }else{//prev
+    i--;
+    if(i < 0){i = productLen-1}
+  }
+    productLi.eq(i).css({'zIndex':100});
+    productLi.eq(i).fadeIn(function(){
+      productLi.css({zIndex:0});
+    });
+    productLi.eq(i).siblings().fadeOut();
+})
+};
+// ZIndexSlide();
+// ===============================================================
 // product.css({overflow:'hidden'});
+
+const slideList = {
+  basic : BasicSlide,
+  fade : ZIndexSlide,
+  horizon : HorizonSlide,
+  vertical : VerticalSlide
+};
+// slideList.vertical();
 
 })(jQuery);
