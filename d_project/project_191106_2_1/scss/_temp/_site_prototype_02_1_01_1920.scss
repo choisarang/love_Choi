@@ -1,0 +1,85 @@
+// _site_prototype_02_1_01.scss
+
+
+@media screen and (min-width:1281px) {
+  
+@import"../_temp/_head_foot.scss";
+// viewBox ============================================
+#viewBox{position: relative; width: 100vw; height: 100%;
+  >.scroll_bar{position: absolute; left: 0; right: 0; bottom: 160px; margin: auto; width: 600px; height: 10px; background-color: $green;
+    >li{float: left; width: 200px; height: 100%; background-color: #c8c8c8;
+      >a{display: block; width: 100%; height: 100%;}
+      >a.action{background-color: #fff;}
+    }// li
+  }// .scroll_bar
+  >.product{$count:4;
+      width: 100% * $count; height: 100%;
+    >li{float: left; width: 100% / $count; height: 100%; padding: 360px 17vw; box-sizing: border-box;
+    }// li
+  }// .product
+  >.side_bar{position: fixed; z-index: 500; top: 0; bottom: 0; right: 8.6vw; margin: auto; width: 40px; height: 300px;
+    >li{width: 35px; height: 35px; border-radius: 35px; margin-bottom: 45px; background-color: #ccc;
+      >a{position: relative; display: block; width: 100%; height: 100%; border-radius: 35px;
+        >span{position: absolute; display: block; right: 50px; width: 0; height: 40px; border-radius: 10px; font-size: 1.25rem; color: #fff; text-transform: uppercase; font-weight: bold; text-align: center;  line-height: 40px; background-color: $main; overflow: hidden; transition: all 300ms ease;}
+      }// a
+      >a.action{background-color: #fff; box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+        >span{display: block; width: 150px;}
+      }// a.action
+    }// li
+    >li:last-child{margin-bottom:0;}
+  }// .side_bar
+}// #viewBox
+
+// conBox ============================================
+#conBox{width: 100vw; height: auto;
+  >article{width: 100vw; height: 100vh; padding: 20vh 17vw; box-sizing: border-box;
+    >.title{width: auto; height: auto; margin-bottom: 70px;
+      >p{font-size: 2.8125rem; color: $main; font-weight: bold; text-transform: uppercase;}
+      >span{font-size: 1.875rem; color: $main;}
+    }// .title
+  }// article
+  >#brandBox{background-color: $bg;
+    >ul{width: 65.4vw; height: 26vw; background-color: $sample2;
+      >li{position: relative; float: left; width: 21.8vw; height: 26vw; background-color: $sample;
+        >a{display: block; width: 100%; height: 100%;
+          >.inner{position: absolute; width: 200px; height: 270px; top: 33%; left: 0; right: 0; margin: auto;
+            >.icon{width: 7.8vw; height: 7.8vw; border-radius: 100%; margin: auto; background-color: #fff; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
+            >.icon_01{background-color: $main; background-image: url("../../img/neck_w.png");}
+            >.icon_02{background-color: #697F24; background-image: url("../../img/spoon_w.png");}
+            >.icon_03{background-color: #8CB1C8; background-image: url("../../img/store_w.png");}
+            >dl{width: 100%; height: 100px; margin-top: 1.3rem;
+              >dt{width: 100%; height: auto; margin-bottom: 10px; font-size: 1.5625rem; color: #fff; text-transform: uppercase; text-decoration: underline; text-align: center;}
+              >dd{font-size: 1.25rem; color: #fff; text-align: center;}
+            }// dl
+          }// .inner
+        }
+      }
+    }// ul
+  }// #brandBox
+  >#menuBox{background-color: $bg;
+    >.menu_con{position: relative; left: 0; right: 0; margin: auto; width: 150%; height: 28.6vw;
+      >.btn{position: absolute; z-index: 500; left: 0; right: 0; top: 30%; margin: auto; width: 40vw; height: 0;
+        >button{width: 25px; height: 65px; background-size: contain; background-position: 50% 50%; background-repeat: no-repeat; background-color: transparent;
+        }// button
+        >.next{float: right; background-image: url("../../img/arrow_next.png");}
+        >.prev{float: left; background-image: url("../../img/arrow_prev.png");}
+      }// .btn
+      >ul{position: absolute; width: 100%; height: 16.6vw; background-color: $sample;
+        >li{float: left; width: 19.5vw; height: 18.7vw; border: 1px solid #888; box-sizing: border-box; background-color: #fff;}
+      }// ul
+      >.menu{position: absolute; bottom: 0; width: 9.8vw; height: 3.1vw; border-radius: 10px; border: 3px solid $main; box-sizing: border-box; color: $main; font-size: 1.3vw; text-align: center; background-color: transparent;}
+      >.menu:hover,
+      >.menu:focus{color: #fff; background-color: $main;}
+    }// .menu_con  
+  }// #menuBox
+  >#snsBox{background-color: #fa0;
+    >ul{width: auto; height: auto; background-color: $sample2;
+      >li{float: left; width: 14.5vw; height: 14.5vw; margin-right: 2.6vw; background-color: $sample;}
+      >li:nth-child(-n+5){margin-bottom: 2vw;}
+      >li:nth-child(4n){margin-right: 0;}
+      >li:nth-child(9){display: none;}
+    }
+  }// #snsBox
+}// #conBox
+
+}

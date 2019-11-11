@@ -1,99 +1,78 @@
 #wrap { width: 100%; height: 100%; background-color: #cfa; }
 
-#headBox { position: fixed; width: 100vw; height: 110px; padding: 25px 16vw; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
-
-#headBox > h1 { position: absolute; left: 17vw; width: 110px; height: 60px; margin-right: 237px; }
-
-#headBox > h1 > a { display: block; width: 100%; height: 100%; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; }
-
-#headBox > .big { position: absolute; right: 0; left: 0; margin: auto; width: 620px; height: 60px; padding: 15px 0; box-sizing: border-box; background-color: #faa; }
-
-#headBox > .big > ul { width: 100%; height: 100%; }
-
-#headBox > .big > ul > li { float: left; margin-right: 95px; }
-
-#headBox > .big > ul > li > a { display: block; width: 100%; height: 100%; font-size: 1.5625rem; color: #333; text-align: center; text-transform: capitalize; }
-
-#headBox > .big > ul > li:nth-child(1) { width: 130px; height: 100%; }
-
-#headBox > .big > ul > li:nth-child(2) { width: 70px; height: 100%; }
-
-#headBox > .big > ul > li:nth-child(3) { width: 60px; height: 100%; }
-
-#headBox > .big > ul > li:nth-child(4) { width: 75px; height: 100%; margin-right: 0; }
-
-#headBox > .fran { position: absolute; right: 17vw; width: 60px; height: 60px; margin-left: 237px; border-radius: 100%; background-color: #1b398f; }
-
-#headBox > .fran > a { display: block; width: 100%; height: 100%; text-align: center; padding-top: 14px; box-sizing: border-box; color: #fff; border-radius: 100%; }
-
-#footBox { width: 100%; height: 300px; padding: 30px 0 20px; box-sizing: border-box; background-color: #fff; }
-
-#footBox > h2 { width: 110px; height: 60px; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
-
-#footBox > h2 > a { display: block; width: 100%; height: 100%; }
-
-#footBox > p { width: 580px; height: 125px; margin: auto; padding: 20px 0; box-sizing: border-box; font-size: 1.25rem; text-align: center; line-height: 30px; }
-
-#footBox > .sns { width: 140px; height: 52px; padding-top: 10px; box-sizing: border-box; margin: auto; }
-
-#footBox > .sns > li { float: left; margin-right: 12px; }
-
-#footBox > .sns > li:nth-child(1) { width: 37px; height: 37px; background-color: #fa0; }
-
-#footBox > .sns > li:nth-child(2) { width: 36px; height: 38px; background-color: #f0a; }
-
-#footBox > .sns > li:nth-child(3) { width: 40px; height: 30px; margin-right: 0; background-color: #00a; }
-
-#viewBox { position: relative; width: 100vw; height: 100vh; }
-
-#viewBox > .scroll_bar { position: absolute; left: 0; right: 0; bottom: 160px; margin: auto; width: 600px; height: 10px; background-color: #7f7; }
-
-#viewBox > .scroll_bar > li { float: left; width: 200px; height: 100%; background-color: #c8c8c8; }
-
-#viewBox > .scroll_bar > li > a { display: block; width: 100%; height: 100%; }
-
-#viewBox > .scroll_bar > li > a.action { background-color: #fff; }
-
-#viewBox > .product { width: 400%; height: 100%; }
-
-#viewBox > .product > li { float: left; width: 25%; height: 100%; padding: 360px 17vw; box-sizing: border-box; }
-
-#viewBox > .side_bar { position: fixed; z-index: 500; top: 0; bottom: 0; right: 8.6vw; margin: auto; width: 40px; height: 300px; }
-
-#viewBox > .side_bar > li { width: 35px; height: 35px; border-radius: 35px; margin-bottom: 45px; background-color: #ccc; }
-
-#viewBox > .side_bar > li > a { position: relative; display: block; width: 100%; height: 100%; border-radius: 35px; }
-
-#viewBox > .side_bar > li > a > span { position: absolute; display: block; right: 50px; width: 0; height: 40px; border-radius: 10px; font-size: 1.25rem; color: #fff; text-transform: uppercase; font-weight: bold; text-align: center; line-height: 40px; background-color: #1b398f; overflow: hidden; transition: all 300ms ease; }
-
-#viewBox > .side_bar > li > a.action { background-color: #fff; box-shadow: 0 0 7px rgba(0, 0, 0, 0.5); }
-
-#viewBox > .side_bar > li > a.action > span { display: block; width: 150px; }
-
-#viewBox > .side_bar > li:last-child { margin-bottom: 0; }
-
-#conBox { width: 100vw; height: auto; }
-
-#conBox > article { width: 100vw; height: 100vh; padding: 20vh 17vw; box-sizing: border-box; }
-
-#conBox > article > .title { width: auto; height: auto; background-color: #0c9; margin-bottom: 70px; }
-
-#conBox > #brandBox { background-color: #fa0; }
-
-#conBox > #brandBox > ul { width: 65.4vw; height: 26vw; background-color: #0c9; }
-
-#conBox > #brandBox > ul > li { float: left; width: 21.8vw; height: 26vw; background-color: #faa; }
-
-#conBox > #menuBox { background-color: #faf; }
-
-#conBox > #menuBox > ul { width: 100%; height: 16.6vw; background-color: #faa; }
-
-#conBox > #snsBox { background-color: #fa0; }
-
-#conBox > #snsBox > ul { width: auto; height: auto; background-color: #0c9; }
-
-#conBox > #snsBox > ul > li { float: left; width: 14.5vw; height: 14.5vw; margin-right: 2.6vw; background-color: #faa; }
-
-#conBox > #snsBox > ul > li:nth-child(4) { margin-right: 0; }
-
-#conBox > #snsBox > ul > li:nth-child(8) { margin-right: 0; }
+@media screen and (min-width: 1281px) { #headBox { position: fixed; z-index: 500; width: 100vw; height: 110px; padding: 25px 16vw; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
+  #headBox > .list { position: absolute; width: 1110px; height: 110px; left: 0; right: 0; margin: auto; }
+  #headBox > .list > h1 { float: left; width: 110px; height: 60px; }
+  #headBox > .list > h1 > a { display: block; width: 100%; height: 100%; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; }
+  #headBox > .list > .big { float: left; width: 620px; height: 60px; margin: 0 150px; padding: 15px 0; box-sizing: border-box; }
+  #headBox > .list > .big > ul { width: 100%; height: 100%; }
+  #headBox > .list > .big > ul > li { float: left; width: 150px; height: auto; margin-right: 5px; }
+  #headBox > .list > .big > ul > li > dl { width: 100%; height: auto; }
+  #headBox > .list > .big > ul > li > dl > dt { width: 100%; height: 30px; }
+  #headBox > .list > .big > ul > li > dl > dt > a { display: block; width: 100%; height: 100%; text-align: center; color: #333; font-size: 1.5625rem; text-transform: capitalize; }
+  #headBox > .list > .big > ul > li > dl > dd { width: 100%; height: 120px; margin-top: 60px; background-color: #0c9; }
+  #headBox > .list > .big > ul > li > dl > dd > a { display: block; width: 100%; height: 50px; margin-top: 1px; background-color: #fa0; text-align: center; color: #333; font-size: 1rem; line-height: 50px; }
+  #headBox > .list > .big > ul > li > a { display: block; width: 100%; height: 100%; font-size: 1.5625rem; color: #333; text-align: center; text-transform: capitalize; }
+  #headBox > .list > .big > ul > li:nth-child(1) { width: 170px; height: 100%; }
+  #headBox > .list > .big > ul > li:nth-child(2) { width: 140px; height: 100%; }
+  #headBox > .list > .big > ul > li:nth-child(3) { width: 130px; height: 100%; }
+  #headBox > .list > .big > ul > li:nth-child(4) { width: 140px; height: 100%; margin-right: 0; }
+  #headBox > .list > .fran { float: left; width: 60px; height: 60px; border-radius: 100%; background-color: #1b398f; }
+  #headBox > .list > .fran > a { display: block; width: 100%; height: 100%; text-align: center; padding-top: 14px; box-sizing: border-box; color: #fff; border-radius: 100%; }
+  #headBox > .list > .small { display: none; }
+  #footBox { width: 100%; height: 300px; padding: 30px 0 20px; box-sizing: border-box; background-color: #fff; }
+  #footBox > h2 { width: 110px; height: 60px; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > h2 > a { display: block; width: 100%; height: 100%; }
+  #footBox > p { width: 580px; height: 125px; margin: auto; padding: 20px 0; box-sizing: border-box; font-size: 1.25rem; text-align: center; line-height: 30px; }
+  #footBox > .sns { width: 140px; height: 52px; padding-top: 10px; box-sizing: border-box; margin: auto; }
+  #footBox > .sns > li { float: left; margin-right: 12px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > .sns > li:nth-child(1) { width: 33px; height: 33px; background-image: url("../../img/instagram.png"); }
+  #footBox > .sns > li:nth-child(2) { width: 33px; height: 33px; background-image: url("../../img/facebook.png"); }
+  #footBox > .sns > li:nth-child(3) { width: 38px; height: 30px; margin-top: 1px; margin-right: 0; background-image: url("../../img/youtube.png"); }
+  #viewBox { position: relative; width: 100vw; height: 100%; }
+  #viewBox > .scroll_bar { position: absolute; left: 0; right: 0; bottom: 160px; margin: auto; width: 600px; height: 10px; background-color: #7f7; }
+  #viewBox > .scroll_bar > li { float: left; width: 200px; height: 100%; background-color: #c8c8c8; }
+  #viewBox > .scroll_bar > li > a { display: block; width: 100%; height: 100%; }
+  #viewBox > .scroll_bar > li > a.action { background-color: #fff; }
+  #viewBox > .product { width: 400%; height: 100%; }
+  #viewBox > .product > li { float: left; width: 25%; height: 100%; padding: 360px 17vw; box-sizing: border-box; }
+  #viewBox > .side_bar { position: fixed; z-index: 500; top: 0; bottom: 0; right: 8.6vw; margin: auto; width: 40px; height: 300px; }
+  #viewBox > .side_bar > li { width: 35px; height: 35px; border-radius: 35px; margin-bottom: 45px; background-color: #ccc; }
+  #viewBox > .side_bar > li > a { position: relative; display: block; width: 100%; height: 100%; border-radius: 35px; }
+  #viewBox > .side_bar > li > a > span { position: absolute; display: block; right: 50px; width: 0; height: 40px; border-radius: 10px; font-size: 1.25rem; color: #fff; text-transform: uppercase; font-weight: bold; text-align: center; line-height: 40px; background-color: #1b398f; overflow: hidden; transition: all 300ms ease; }
+  #viewBox > .side_bar > li > a.action { background-color: #fff; box-shadow: 0 0 7px rgba(0, 0, 0, 0.5); }
+  #viewBox > .side_bar > li > a.action > span { display: block; width: 150px; }
+  #viewBox > .side_bar > li:last-child { margin-bottom: 0; }
+  #conBox { width: 100vw; height: auto; }
+  #conBox > article { width: 100vw; height: 100vh; padding: 20vh 17vw; box-sizing: border-box; }
+  #conBox > article > .title { width: auto; height: auto; margin-bottom: 70px; }
+  #conBox > article > .title > p { font-size: 2.8125rem; color: #1b398f; font-weight: bold; text-transform: uppercase; }
+  #conBox > article > .title > span { font-size: 1.875rem; color: #1b398f; }
+  #conBox > #brandBox { background-color: #f7f7f7; }
+  #conBox > #brandBox > ul { width: 65.4vw; height: 26vw; background-color: #0c9; }
+  #conBox > #brandBox > ul > li { position: relative; float: left; width: 21.8vw; height: 26vw; background-color: #faa; }
+  #conBox > #brandBox > ul > li > a { display: block; width: 100%; height: 100%; }
+  #conBox > #brandBox > ul > li > a > .inner { position: absolute; width: 200px; height: 270px; top: 33%; left: 0; right: 0; margin: auto; }
+  #conBox > #brandBox > ul > li > a > .inner > .icon { width: 7.8vw; height: 7.8vw; border-radius: 100%; margin: auto; background-color: #fff; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #conBox > #brandBox > ul > li > a > .inner > .icon_01 { background-color: #1b398f; background-image: url("../../img/neck_w.png"); }
+  #conBox > #brandBox > ul > li > a > .inner > .icon_02 { background-color: #697F24; background-image: url("../../img/spoon_w.png"); }
+  #conBox > #brandBox > ul > li > a > .inner > .icon_03 { background-color: #8CB1C8; background-image: url("../../img/store_w.png"); }
+  #conBox > #brandBox > ul > li > a > .inner > dl { width: 100%; height: 100px; margin-top: 1.3rem; }
+  #conBox > #brandBox > ul > li > a > .inner > dl > dt { width: 100%; height: auto; margin-bottom: 10px; font-size: 1.5625rem; color: #fff; text-transform: uppercase; text-decoration: underline; text-align: center; }
+  #conBox > #brandBox > ul > li > a > .inner > dl > dd { font-size: 1.25rem; color: #fff; text-align: center; }
+  #conBox > #menuBox { background-color: #f7f7f7; }
+  #conBox > #menuBox > .menu_con { position: relative; left: 0; right: 0; margin: auto; width: 150%; height: 28.6vw; }
+  #conBox > #menuBox > .menu_con > .btn { position: absolute; z-index: 500; left: 0; right: 0; top: 30%; margin: auto; width: 40vw; height: 0; }
+  #conBox > #menuBox > .menu_con > .btn > button { width: 25px; height: 65px; background-size: contain; background-position: 50% 50%; background-repeat: no-repeat; background-color: transparent; }
+  #conBox > #menuBox > .menu_con > .btn > .next { float: right; background-image: url("../../img/arrow_next.png"); }
+  #conBox > #menuBox > .menu_con > .btn > .prev { float: left; background-image: url("../../img/arrow_prev.png"); }
+  #conBox > #menuBox > .menu_con > ul { position: absolute; width: 100%; height: 16.6vw; background-color: #faa; }
+  #conBox > #menuBox > .menu_con > ul > li { float: left; width: 19.5vw; height: 18.7vw; border: 1px solid #888; box-sizing: border-box; background-color: #fff; }
+  #conBox > #menuBox > .menu_con > .menu { position: absolute; bottom: 0; width: 9.8vw; height: 3.1vw; border-radius: 10px; border: 3px solid #1b398f; box-sizing: border-box; color: #1b398f; font-size: 1.3vw; text-align: center; background-color: transparent; }
+  #conBox > #menuBox > .menu_con > .menu:hover, #conBox > #menuBox > .menu_con > .menu:focus { color: #fff; background-color: #1b398f; }
+  #conBox > #snsBox { background-color: #fa0; }
+  #conBox > #snsBox > ul { width: auto; height: auto; background-color: #0c9; }
+  #conBox > #snsBox > ul > li { float: left; width: 14.5vw; height: 14.5vw; margin-right: 2.6vw; background-color: #faa; }
+  #conBox > #snsBox > ul > li:nth-child(-n+5) { margin-bottom: 2vw; }
+  #conBox > #snsBox > ul > li:nth-child(4n) { margin-right: 0; }
+  #conBox > #snsBox > ul > li:nth-child(9) { display: none; } }
