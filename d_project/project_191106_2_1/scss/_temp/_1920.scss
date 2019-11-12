@@ -1,0 +1,134 @@
+// _1920.scss
+
+@media screen and (min-width:1281px) {
+  
+@import"../_temp/_head_foot_01.scss";
+
+// viewBox ============================================
+#viewBox{position: relative; width: 100vw; height: 100%;
+  >.indicator{position: absolute; z-index: 100; left: 0; right: 0; bottom: 17vh; margin: auto; width: 600px; height: 10px;
+    >li{float: left; width: 200px; height: 100%; background-color: #c8c8c8;
+      >a{display: block; width: 100%; height: 100%; outline: none;}
+      >a.action{background-color: #fff; outline: none;}
+    }// li
+  }// .indicator
+  >.product{$count:3;
+      width: 100% * $count; height: 100%; background-color: #fa0;
+    >li{float: left; width: 100% / $count; height: 100%; padding: 360px 17vw; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat;
+    }// li
+    >.slide_01{background-size: 114.5vw 77.2vw;
+      >.text{width: 100%; height: 200px; font-size: 2.1875rem; text-transform: uppercase;
+        >em{width: 100%; height: 40px; font-style: inherit; color: $textem;}
+        >p{width: 100%; height: 120px; padding: 1rem 0; box-sizing: border-box; font-size: 5.3125rem; text-transform: capitalize; font-weight: bold; color: $main;}
+        >span{width: 100%; height: 40px; color: $text;}
+      }// .text
+    }// .slide_01
+    >.slide_02{background-color: $bg; background-position: 0 30%; background-size: 100vw 76.8vw;
+      >.text{width: 100%; height: 250px;
+        >p{width: 100%; height: 200px; color: $main; font-size: 5.3125rem; text-transform: uppercase; font-weight: bold;}
+        >span{width: 100%; height: 40px; padding-left: 10px; color: $text; font-size: 1.875rem;}
+      }// .text
+    }// slide_02
+    >.slide_03{background-color: #EBEEFF;
+      >.text{width: 100%; height: 200px;
+        >p{width: 100%; height: 100%; color: $main; font-size: 5.3125rem; font-weight: bold; text-align: center;
+          >span{color: $yellow;}
+        }// p
+      }// .text
+    }// slide_03
+  }// .product
+  >.side_bar{position: fixed; z-index: 500; top: 0; bottom: 0; right: 8.6vw; margin: auto; width: 40px; height: 300px;
+    >li{width: 35px; height: 35px; border-radius: 35px; margin-bottom: 45px; background-color: #ccc;
+      >a{position: relative; display: block; width: 100%; height: 100%; border-radius: 35px;
+        >span{position: absolute; display: block; right: 50px; width: 0; height: 40px; border-radius: 10px; font-size: 1.25rem; color: #fff; text-transform: uppercase; font-weight: bold; text-align: center;  line-height: 40px; background-color: $main; overflow: hidden; transition: all 300ms ease;}
+      }// a
+      >a.action{background-color: #fff; box-shadow: 0 0 7px rgba(0, 0, 0, 0.5); outline: none;
+        >span{display: block; width: 150px;}
+      }// a.action
+    }// li
+    >li:last-child{margin-bottom:0;}
+  }// .side_bar
+}// #viewBox
+
+// conBox ============================================
+#conBox{width: 100vw; height: auto;
+  >article{width: 100vw; height: 100vh; padding: 20vh 17vw; box-sizing: border-box;
+    >.title{width: auto; height: auto; margin-bottom: 70px;
+      >p{font-size: 2.8125rem; color: $main; font-weight: bold; text-transform: uppercase;}
+      >span{font-size: 1.875rem; color: $main;}
+    }// .title
+  }// article
+  >#brandBox{background-color: $bg;
+    >ul{width: 65.4vw; height: 26vw; background-color: $sample2;
+      >li{position: relative; float: left; width: 21.8vw; height: 26vw; background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;
+        >a{display: block; width: 100%; height: 100%;
+          >.inner{position: absolute; width: 200px; height: 270px; top: 33%; left: 0; right: 0; margin: auto;
+            >.icon{width: 7.8vw; height: 7.8vw; border-radius: 100%; margin: auto; background-color: #fff; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
+            >.icon_01{background-color: $main; background-image: url("../../img/neck_w.png");}
+            >.icon_02{background-color: #697F24; background-image: url("../../img/spoon_w.png");}
+            >.icon_03{background-color: #8CB1C8; background-image: url("../../img/store.png");}
+            >dl{display: none; width: 100%; height: 100px; margin-top: 1.3rem;
+              >dt{width: 100%; height: auto; margin-bottom: 10px; font-size: 1.5625rem; color: #fff; text-transform: uppercase; text-decoration: underline; text-align: center;}
+              >dd{font-size: 1.25rem; color: #fff; text-align: center;}
+            }// dl
+          }// .inner
+        }// a
+      }// li
+      >li:nth-child(1)>a.action{background-color: $main; outline: none; transition: all 500ms ease;
+         .icon_01{background-color: #A7CEF7; background-image: url("../../img/favicon.png");
+          transition: all 500ms ease;}// .icon_01
+         dl{display: block;}
+      }// li(1)>a.action
+      >li:nth-child(2)>a.action{background-color: #697F24; outline: none; transition: all 500ms ease;
+         .icon_02{background-color: #CADD90; background-image: url("../../img/spoon.png");
+          transition: all 500ms ease;}// .icon_02
+         dl{display: block;}
+      }// li(2)>a.action
+      >li:nth-child(3)>a.action{background-color: #8CB1C8; outline: none; transition: all 500ms ease;
+         .icon_03{background-color: #294B6F; background-image: url("../../img/store_w.png");
+          transition: all 500ms ease;}// .icon_03
+         dl{display: block;}
+      }// li(3)>a.action
+    }// ul
+  }// #brandBox
+  >#menuBox{position: relative; background-color: $bg;
+    >.menu_con{position: absolute; left: 0; right: 0; margin: auto; width: 150%; height: 28.6vw;
+      >.btn{position: absolute; z-index: 500; left: 29vw; top: 28%; margin: auto; width: 40vw; height: 0;
+        >button{width: 1.3vw; height: 3.3vw; background-size: contain; background-position: 50% 50%; background-repeat: no-repeat; background-color: transparent;
+        }// button
+        >.next{float: right; background-image: url("../../img/arrow_next.png");}
+        >.prev{float: left; background-image: url("../../img/arrow_prev.png");}
+      }// .btn
+      >.menu_slide{position: absolute; width: 1250px; height: 450px; left: 0;
+        >ul{position: absolute; width: 140vw; height: 16.6vw; left: -10%; right: 0; margin: auto;
+          >li{float: left; width: 19.2vw; height: 18.7vw; margin-right: 4vw; border: 1px solid #888; box-sizing: border-box; background-size: 45%; background-position: 50% 50%; background-repeat: no-repeat; 
+            >a{display: block; width: 100%; height: 100%; background-color: #fff; opacity: 0.7;}
+            >a.action{display: block; width: 100%; height: 100%; transform: scale(1.2); background-color: #eee; background-repeat: no-repeat; background-size: 55%; background-position: 50% 50%; opacity: 1;}
+            >a.action:hover,a.action:focus{background-color: $main;}
+          }// li
+        }// ul
+      }// .menu_slide  
+      >.menu{position: relative; z-index: 100; width: 135px; height: 40px; margin: 20.8vw 0 0 18.2vw; border-radius: 10px; border: 3px solid $main; box-sizing: border-box; color: $main; font-size: 1rem; text-align: center; background-color: transparent;}
+      >.menu:hover,menu:focus{color: #fff; background-color: $main;}
+    }// .menu_con  
+  }// #menuBox
+  >#snsBox{background-image: url("../../img/sns_box.jpg"); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;
+    >ul{width: auto; height: auto; background-color: $sample2;
+      >li{float: left; width: 14.5vw; height: 14.5vw; margin-right: 2.6vw; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
+        >a{display: block; width: 100%; height: 100%; padding: 6.5vw 1.5vw; box-sizing: border-box; 
+          >p{display: none;}
+        }// a
+        >a:hover,a:focus{background-image: url("../../img/insta_bg.jpg"); background-position: 50% 50%; background-size: cover;
+          >p{display: block; width: 100%; height: auto; text-align: center; font-weight: bold; font-size: 1.5vw; text-transform: uppercase; color: #fff;
+          >i{padding-left: 1rem;}
+          }// p}
+        }// a:hover
+      }// li
+      >li:nth-child(-n+5){margin-bottom: 2vw;}
+      >li:nth-child(4n){margin-right: 0;}
+      >li:nth-child(9){display: none;}
+    }
+  }// #snsBox
+}// #conBox
+
+}
