@@ -1,30 +1,36 @@
-#headBox{position: fixed; z-index: 500; width: 100vw; height: 110px; padding: 25px 16vw; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5);
+#headBox{position: fixed; z-index: 500; width: 100vw; height: 110px; padding: 0 16vw; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5);
   >.list{position: absolute; width: 1110px; height: 110px; left: 0; right: 0; margin: auto;
-    >h1{float: left; width: 110px; height: 60px;
+    >h1{float: left; width: 110px; height: 60px; margin-top: 25px;
       >a{display: block; width: 100%; height: 100%; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain;}
     }// h1
-    >.big{float: left; width: 620px; height: 60px; margin: 0 150px; padding: 15px 0; box-sizing: border-box;
-      >ul{width: 100%; height: 100%;
-        >li{float: left; width: 150px; height: auto; margin-right: 5px;
+    >.big{float: left; width: 620px; height: 110px; margin: 0 150px; box-sizing: border-box;
+      >ul{position: relative; width: 100vw; height: auto;
+        >li{float: left; height: auto;
           >dl{width: 100%; height: auto;
-            >dt{width: 100%; height: 30px;
-              >a{display: block; width: 100%; height: 100%; text-align: center; color: $textem; font-size: 1.5625rem; text-transform: capitalize;}
+            >dt{width: 100%; height: 110px; padding-top: 40px; box-sizing: border-box;
+              >a{display: block; width: 100%; height: 1.5rem; text-align: center; color: $textem; font-size: 1.25rem; text-transform: uppercase;}
+              >a.action{color: $main; font-weight: bold;}
             }// dt
-            >dd{width: 100%; height: 120px; margin-top: 60px; background-color: $sample2;
-              >a{display: block; width: 100%; height: 50px; margin-top: 1px; background-color: #fa0; text-align: center; color: $textem; font-size: 1rem; line-height: 50px;}
+            >dd{display: none; width: 100%; height: 150px; padding-top: 20px;
+              >a{display: block; width: 100%; height: 70px; margin-top: 1px; text-align: center; color: $textem; font-size: 1.2rem; line-height: 50px;}
+              >a:hover,dt:focus{color: $main;}
             }// dd
           }// dl
           >a{display: block; width: 100%; height: 100%; font-size: 1.5625rem; color: $textem; text-align: center; text-transform: capitalize;}
         }// li
-        >li:nth-child(1){width: 170px; height: 100%;}
-        >li:nth-child(2){width: 140px; height: 100%;}
-        >li:nth-child(3){width: 130px; height: 100%;}
-        >li:nth-child(4){width: 140px; height: 100%; margin-right: 0;}
+        >li:nth-child(1){width: 170px;}
+        >li:nth-child(2){width: 140px;}
+        >li:nth-child(3){width: 130px;}
+        >li:nth-child(4){width: 140px; margin-right: 0;}
+        >li:nth-child(5){margin-left: 150px;}
+        >.fran{float: left; width: 60px; height: 60px; margin-top: 25px; border-radius: 100%; background-color: $main;
+          >a{display: block; width: 100%; height: 100%; text-align: center; padding-top: 14px; box-sizing: border-box; font-size: 0.9375rem; font-weight: bold; color: #fff; border-radius: 100%;}
+        }// fran
       }// ul
+      ul.action{background-color: #fff;}
+      ul.action:before{content: " "; display: block; position: absolute; z-index: -2; top: 0; left: 50%; margin-left: -100vw; width: 100vw; height: 100%; background-color: #fff;}
+      ul:after{content: " "; display: block; width: 0; height: auto; clear: both;}
     }// big
-    >.fran{float: left; width: 60px; height: 60px; border-radius: 100%; background-color: $main;
-      >a{display: block; width: 100%; height: 100%; text-align: center; padding-top: 14px; box-sizing: border-box; color: #fff; border-radius: 100%;}
-    }// fran
     >.small{display: none;}
   }// .list
 }// #headBox

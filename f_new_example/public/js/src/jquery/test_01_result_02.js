@@ -130,7 +130,7 @@ btn.on('click', function(e){
     productLi.eq(i).siblings().fadeOut();
 })
 };
-// ZIndexSlide();
+ZIndexSlide();
 // ===============================================================
 // product.css({overflow:'hidden'});
 

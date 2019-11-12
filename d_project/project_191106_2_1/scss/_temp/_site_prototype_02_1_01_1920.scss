@@ -6,23 +6,43 @@
 @import"../_temp/_head_foot.scss";
 // viewBox ============================================
 #viewBox{position: relative; width: 100vw; height: 100%;
-  >.scroll_bar{position: absolute; left: 0; right: 0; bottom: 160px; margin: auto; width: 600px; height: 10px; background-color: $green;
+  >.indicator{position: absolute; z-index: 100; left: 0; right: 0; bottom: 160px; margin: auto; width: 600px; height: 10px;
     >li{float: left; width: 200px; height: 100%; background-color: #c8c8c8;
-      >a{display: block; width: 100%; height: 100%;}
-      >a.action{background-color: #fff;}
+      >a{display: block; width: 100%; height: 100%; outline: none;}
+      >a.action{background-color: #fff; outline: none;}
     }// li
-  }// .scroll_bar
-  >.product{$count:4;
-      width: 100% * $count; height: 100%;
+  }// .indicator
+  >.product{$count:3;
+      width: 100% * $count; height: 100%; background-color: #fa0;
     >li{float: left; width: 100% / $count; height: 100%; padding: 360px 17vw; box-sizing: border-box;
     }// li
+    >.slide_01{background-color: #faf;
+      >.text{width: 100%; height: 200px; font-size: 2.1875rem; text-transform: uppercase;
+        >em{width: 100%; height: 40px; font-style: inherit; color: $textem;}
+        >p{width: 100%; height: 120px; padding: 1rem 0; box-sizing: border-box; font-size: 5.3125rem; text-transform: capitalize; font-weight: bold; color: $main;}
+        >span{width: 100%; height: 40px; color: $text;}
+      }// .text
+    }// .slide_01
+    >.slide_02{background-color: #fa0;
+      >.text{width: 100%; height: 250px;
+        >p{width: 100%; height: 200px; color: $main; font-size: 5.3125rem; text-transform: uppercase; font-weight: bold;}
+        >span{width: 100%; height: 40px; padding-left: 10px; color: $text; font-size: 1.875rem;}
+      }// .text
+    }// slide_02
+    >.slide_03{background-color: #EBEEFF;
+      >.text{width: 100%; height: 200px;
+        >p{width: 100%; height: 100%; color: $main; font-size: 5.3125rem; font-weight: bold; text-align: center;
+          >span{color: $yellow;}
+        }// p
+      }// .text
+    }// slide_03
   }// .product
   >.side_bar{position: fixed; z-index: 500; top: 0; bottom: 0; right: 8.6vw; margin: auto; width: 40px; height: 300px;
     >li{width: 35px; height: 35px; border-radius: 35px; margin-bottom: 45px; background-color: #ccc;
       >a{position: relative; display: block; width: 100%; height: 100%; border-radius: 35px;
         >span{position: absolute; display: block; right: 50px; width: 0; height: 40px; border-radius: 10px; font-size: 1.25rem; color: #fff; text-transform: uppercase; font-weight: bold; text-align: center;  line-height: 40px; background-color: $main; overflow: hidden; transition: all 300ms ease;}
       }// a
-      >a.action{background-color: #fff; box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+      >a.action{background-color: #fff; box-shadow: 0 0 7px rgba(0, 0, 0, 0.5); outline: none;
         >span{display: block; width: 150px;}
       }// a.action
     }// li
@@ -46,14 +66,29 @@
             >.icon{width: 7.8vw; height: 7.8vw; border-radius: 100%; margin: auto; background-color: #fff; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
             >.icon_01{background-color: $main; background-image: url("../../img/neck_w.png");}
             >.icon_02{background-color: #697F24; background-image: url("../../img/spoon_w.png");}
-            >.icon_03{background-color: #8CB1C8; background-image: url("../../img/store_w.png");}
-            >dl{width: 100%; height: 100px; margin-top: 1.3rem;
+            >.icon_03{background-color: #8CB1C8; background-image: url("../../img/store.png");}
+            >dl{display: none; width: 100%; height: 100px; margin-top: 1.3rem;
               >dt{width: 100%; height: auto; margin-bottom: 10px; font-size: 1.5625rem; color: #fff; text-transform: uppercase; text-decoration: underline; text-align: center;}
               >dd{font-size: 1.25rem; color: #fff; text-align: center;}
             }// dl
           }// .inner
-        }
-      }
+        }// a
+      }// li
+      >li:nth-child(1)>a.action{background-color: $main; outline: none;
+         .icon_01{background-color: #A7CEF7; background-image: url("../../img/favicon.png");
+        }// .icon_01
+         dl{display: block;}
+      }// li(1)>a.action
+      >li:nth-child(2)>a.action{background-color: #697F24; outline: none;
+         .icon_02{background-color: #CADD90; background-image: url("../../img/spoon.png");
+        }// .icon_02
+         dl{display: block;}
+      }// li(2)>a.action
+      >li:nth-child(3)>a.action{background-color: #8CB1C8; outline: none;
+         .icon_03{background-color: #294B6F; background-image: url("../../img/store_w.png");
+        }// .icon_03
+         dl{display: block;}
+      }// li(3)>a.action
     }// ul
   }// #brandBox
   >#menuBox{background-color: $bg;
@@ -74,7 +109,7 @@
   }// #menuBox
   >#snsBox{background-color: #fa0;
     >ul{width: auto; height: auto; background-color: $sample2;
-      >li{float: left; width: 14.5vw; height: 14.5vw; margin-right: 2.6vw; background-color: $sample;}
+      >li{float: left; width: 14.5vw; height: 14.5vw; margin-right: 2.6vw; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;}
       >li:nth-child(-n+5){margin-bottom: 2vw;}
       >li:nth-child(4n){margin-right: 0;}
       >li:nth-child(9){display: none;}
