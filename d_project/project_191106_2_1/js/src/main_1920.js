@@ -18,8 +18,13 @@ gnbLi.on('mouseenter', function(){
 });
 gnbLi.find('a').on('focus', function(){
   $(this).addClass('action');
+  $(this).parent('dd').prevAll('dt').children('a').addClass('action')
   $(this).parent('dd').css({backgroundColor:"rgba(140, 177, 200, 0.1)"});
-})
+});
+gnbDdLink.on('blur', function(){
+  $(this).parent('dd').prevAll('dt').children('a').removeClass('action');
+  $(this).parent('dd').css({backgroundColor:"transparent"});
+});
 
 
 gnbLi.on('mouseleave', function(){
@@ -27,6 +32,7 @@ gnbLi.on('mouseleave', function(){
   gnbUl.removeClass('action');
   $(this).find('a').removeClass('action');
   $(this).find('dd').css({backgroundColor:"transparent"});
+  
 });
 gnbDtLink.on('focus', function(){
   gnbUl.addClass('action');
@@ -67,6 +73,7 @@ product.css({position:'relative', width:'100%'})
 proLi.css({position:'absolute', width:'100%'})
 proLi.eq(0).nextAll().hide();
 
+
 indiLink.eq(0).addClass('action');
 let i = 0;
 
@@ -79,8 +86,8 @@ indiLink.on('focus click', function(e){
   })
   proLi.eq(i).siblings().fadeOut();
 
-  indiLink.eq(i).addClass('action');
-  indiLink.eq(i).siblings().removeClass('action');
+  $(this).addClass('action');
+  indiLi.eq(i).siblings().children('a').removeClass('action');
   });
   // 자동슬라이드 =========================================================
   let go, timed=5000;
@@ -98,8 +105,8 @@ indiLink.on('focus click', function(e){
       })
       proLi.eq(i).siblings().fadeOut();
 
-      indiLink.eq(i).addClass('action');
-      // indiLink.eq(i).siblings('a').removeClass('action');
+      indiLi.eq(i).children('a').addClass('action');
+      indiLi.eq(i).siblings().children('a').removeClass('action');
     }, timed);
   };
   const slideStop = function(){
@@ -107,13 +114,6 @@ indiLink.on('focus click', function(e){
   };
 
   slideGo();
-  // 마우스 올리면 멈추기 ==================
-  product.on('mouseenter', function(){
-    slideStop();
-  });
-  product.on('mouseleave', function(){
-    slideGo();
-  });
   
 // brandBox -------------------------------------------
 const brandBox = $('#brandBox');
@@ -136,20 +136,58 @@ brandLink.on('mouseleave blur', function(){
 const menuBox = $('#menuBox');
 const menuSlide = menuBox.find('.menu_slide');
 const menuUl = menuSlide.children('ul');
-const menuLi = menuUl.children('li');
-const btn = $('button');
-
+let menuLi = menuUl.children('li');
+const menuLink = menuLi.children('a');
+const menuBtnWrap = menuBox.find('.arrow_btn');
+const menuBtn = menuBtnWrap.children('button');
 
 let mListLen = menuLi.length;
-
 // img넣기 ======
 for(let i=0; i<mListLen; i++){
   menuLi.eq(i).css({backgroundImage:'url("../img/' + (i+1) + '.png")'});
 };
 
-menuLi.eq(-1).clone().prependTo(menuUl);
+let menuLiw = menuLi.eq(0).outerWidth(true);
+menuLi.clone(true).appendTo(menuUl);
+menuUl.css({width: mListLen * 2 * menuLiw - (menuLiw - menuLi.eq(0).outerWidth()) + menuLiw});
+menuUl.css({left:'50%', transform:'translateX(-50%)'});
+
+
+const ActionGo = function(){ 
+  menuLi = menuUl.children('li');
+  let menuCenter = Math.floor(menuLi.length / 2);
+  menuLi.removeClass('action');
+  menuLi.eq(menuCenter).addClass('action');
+};
+ActionGo();
+
+
 
 // btn ========
+menuBtn.on('click', function(e){
+  e.preventDefault();
+  let next = $(this).hasClass('next');
+  if(next){
+    menuUl.animate({marginLeft: -menuLiw}, function(){
+      menuLi.eq(0).appendTo(menuUl);
+      menuUl.css({marginLeft:0});
+      ActionGo();
+    });
+  }else{
+    menuUl.animate({marginLeft: menuLiw}, function(){
+      menuLi.eq(-1).prependTo(menuUl);
+      menuUl.css({marginLeft:0});
+      ActionGo();
+    })
+  }
+});
+
+
+
+
+
+
+
 
 // snsBox -------------------------------------------
 const snsBox = $('#snsBox');
@@ -161,6 +199,10 @@ for(let i=0; i<snsLiLen; i++){
   snsLi.eq(i).css({backgroundImage:'url("../img/sns_0' + (i+1) + '.jpg")'})
 }
 // -------------------------------------------
+
+
+
+
 // -------------------------------------------
 
 

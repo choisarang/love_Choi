@@ -2,18 +2,57 @@
 
 @media screen and (min-width:1281px) {
   
-@import"../_temp/_head_foot_01.scss";
+
+// _head_foot_01.scss
+
+#headBox{position: fixed; z-index: 500; width: 100vw; height: 110px; padding: 0 16vw; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5);
+  >.list{position: absolute; width: 1280px; height: 110px; left: 0; right: 0; margin: auto;
+    >h1{float: left; width: 110px; height: 60px; margin-top: 25px;
+      >a{display: block; width: 100%; height: 100%; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain;}
+    }// h1
+    >.big{float: left; width: 620px; height: 110px; margin: 0 200px; box-sizing: border-box;
+      >ul{position: relative; width: 100vw; height: auto;
+        >li{float: left; height: auto;
+          >dl{width: 100%; height: auto;
+            >dt{width: 100%; height: 110px; padding-top: 40px; box-sizing: border-box;
+              >a{display: block; width: 100%; height: 1.5rem; text-align: center; color: $textem; font-size: 1.25rem; text-transform: uppercase;}
+              >a.action{color: $main; font-weight: bold;}
+            }// dt
+            >dd{display: none; width: 100%; height: 150px; padding-top: 20px;
+              >a{display: block; width: 100%; height: 70px; margin-top: 1px; text-align: center; color: $textem; font-size: 1.2rem; line-height: 50px;}
+              >a.action{color: $main;}
+            }// dd
+          }// dl
+          >a{display: block; width: 100%; height: 100%; font-size: 1.5625rem; color: $textem; text-align: center; text-transform: capitalize;}
+        }// li
+        >li:nth-child(1){width: 200px;}
+        >li:nth-child(2){width: 170px;}
+        >li:nth-child(3){width: 160px;}
+        >li:nth-child(4){width: 170px;}
+        >li:nth-child(5){margin-left: 180px;}
+        >.fran{float: left; width: 60px; height: 60px; margin-top: 25px; border-radius: 100%; background-color: $main;
+          >a{display: block; width: 100%; height: 100%; text-align: center; padding-top: 14px; box-sizing: border-box; font-size: 0.9375rem; font-weight: bold; color: #fff; border-radius: 100%;}
+        }// fran
+        >.fran:hover>a,>.fran:focus > a{color: $main; border: 2px solid $main; background-color: #fff; box-sizing: border-box;}
+      }// ul
+      ul.action{background-color: #fff;}
+      ul.action:before{content: " "; display: block; position: absolute; z-index: -2; top: 0; left: 50%; margin-left: -100vw; width: 100vw; height: 100%; background-color: #fff;}
+      ul:after{content: " "; display: block; width: 0; height: auto; clear: both;}
+    }// big
+    >.small{display: none;}
+  }// .list
+}// #headBox
 
 // viewBox ============================================
-#viewBox{position: relative; width: 100vw; height: 100%;
-  >.indicator{position: absolute; z-index: 100; left: 0; right: 0; bottom: 17vh; margin: auto; width: 600px; height: 10px;
+#viewBox{position: relative; width: 100%; height: 100%;
+  >.indicator{position: absolute; z-index: 100; left: 0; right: 0; bottom: 150px; margin: auto; width: 600px; height: 10px;
     >li{float: left; width: 200px; height: 100%; background-color: #c8c8c8;
       >a{display: block; width: 100%; height: 100%; outline: none;}
       >a.action{background-color: #fff; outline: none;}
     }// li
   }// .indicator
   >.product{$count:3;
-      width: 100% * $count; height: 100%; background-color: #fa0;
+      width: 100% * $count; height: 100%;
     >li{float: left; width: 100% / $count; height: 100%; padding: 360px 17vw; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat;
     }// li
     >.slide_01{background-size: 114.5vw 77.2vw;
@@ -38,8 +77,8 @@
     }// slide_03
   }// .product
   >.side_bar{position: fixed; z-index: 500; top: 0; bottom: 0; right: 8.6vw; margin: auto; width: 40px; height: 300px;
-    >li{width: 35px; height: 35px; border-radius: 35px; margin-bottom: 45px; background-color: #ccc;
-      >a{position: relative; display: block; width: 100%; height: 100%; border-radius: 35px;
+    >li{width: 35px; height: 35px; border-radius: 100%; margin-bottom: 45px; background-color: #ccc;
+      >a{position: relative; display: block; width: 100%; height: 100%; border-radius: 100%;
         >span{position: absolute; display: block; right: 50px; width: 0; height: 40px; border-radius: 10px; font-size: 1.25rem; color: #fff; text-transform: uppercase; font-weight: bold; text-align: center;  line-height: 40px; background-color: $main; overflow: hidden; transition: all 300ms ease;}
       }// a
       >a.action{background-color: #fff; box-shadow: 0 0 7px rgba(0, 0, 0, 0.5); outline: none;
@@ -51,24 +90,24 @@
 }// #viewBox
 
 // conBox ============================================
-#conBox{width: 100vw; height: auto;
-  >article{width: 100vw; height: 100vh; padding: 20vh 17vw; box-sizing: border-box;
-    >.title{width: auto; height: auto; margin-bottom: 70px;
+#conBox{width: 100%; height: auto;
+  >article{width: 100%; height: 100vh; padding: 100px 0; box-sizing: border-box;
+    >.title{width: 1260px; height: auto; margin: auto; margin-bottom: 100px;
       >p{font-size: 2.8125rem; color: $main; font-weight: bold; text-transform: uppercase;}
       >span{font-size: 1.875rem; color: $main;}
     }// .title
   }// article
   >#brandBox{background-color: $bg;
-    >ul{width: 65.4vw; height: 26vw; background-color: $sample2;
-      >li{position: relative; float: left; width: 21.8vw; height: 26vw; background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;
+    >ul{width: 1260px; height: 460px; margin: auto;
+      >li{position: relative; float: left; width: 420px; height: 460px; background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;
         >a{display: block; width: 100%; height: 100%;
-          >.inner{position: absolute; width: 200px; height: 270px; top: 33%; left: 0; right: 0; margin: auto;
-            >.icon{width: 7.8vw; height: 7.8vw; border-radius: 100%; margin: auto; background-color: #fff; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
+          >.inner{position: absolute; width: 250px; height: 270px; top: 40%; left: 0; right: 0; margin: auto;
+            >.icon{width: 120px; height: 120px; border-radius: 100%; margin: auto; background-color: #fff; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
             >.icon_01{background-color: $main; background-image: url("../../img/neck_w.png");}
             >.icon_02{background-color: #697F24; background-image: url("../../img/spoon_w.png");}
             >.icon_03{background-color: #8CB1C8; background-image: url("../../img/store.png");}
-            >dl{display: none; width: 100%; height: 100px; margin-top: 1.3rem;
-              >dt{width: 100%; height: auto; margin-bottom: 10px; font-size: 1.5625rem; color: #fff; text-transform: uppercase; text-decoration: underline; text-align: center;}
+            >dl{display: none; width: 100%; height: 100px; margin-top: 1.5rem;
+              >dt{width: 100%; height: auto; margin-bottom: 20px; font-size: 2rem; color: #fff; text-transform: uppercase; text-decoration: underline; text-align: center;}
               >dd{font-size: 1.25rem; color: #fff; text-align: center;}
             }// dl
           }// .inner
@@ -91,44 +130,72 @@
       }// li(3)>a.action
     }// ul
   }// #brandBox
-  >#menuBox{position: relative; background-color: $bg;
-    >.menu_con{position: absolute; left: 0; right: 0; margin: auto; width: 150%; height: 28.6vw;
-      >.btn{position: absolute; z-index: 500; left: 29vw; top: 28%; margin: auto; width: 40vw; height: 0;
-        >button{width: 1.3vw; height: 3.3vw; background-size: contain; background-position: 50% 50%; background-repeat: no-repeat; background-color: transparent;
+  >#menuBox{position: relative; background-color: $bg; overflow: hidden;
+    >.menu_slide{position: relative; width: 100%; height: 370px;
+      $liLen:5; $liWidth:320px; $marginR:80px;
+      >ul{position: absolute; left:50%; transform:translateX(-50%); width: ($liWidth + $marginR) * $liLen - $marginR; height: 370px; margin: auto;
+        >li{float: left; width: 320px; height: 370px; margin-right: 80px; border: 1px solid #ccc; box-sizing: border-box; background-size: 45%; background-position: 50% 50%; background-repeat: no-repeat; background-color: #fff; opacity: 0.5;
+          transition:all 300ms ease;
+          &:last-child{margin-right:0;}
+          >a{display: none; width: 100%; height: 100%;
+            >em{display: block; width: 90%; height: 50px; margin: auto; margin-top: 30px; padding-bottom: 10px;box-sizing: border-box; font-size: 1.5rem; font-style: inherit; color: #fff; font-weight: bold; text-align: center; border-bottom: 2px solid #fff;}
+            >p{width: 100%; height: 180px; margin-top: 20px; font-size: 1rem; color: #fff; line-height: 30px; text-align: center;}
+            >span{display: block; width: 100%; height: auto; margin-top: 20px; font-size: 1rem; font-weight: bold; color: #fff; text-align: center;}
+          }// a
+          &.action{opacity: 1; transform: scale(1.4); background-color: #eee;}
+          
+          &.action > a{display: block; opacity:0; width: 100%; height: 100%;  padding: 20px; box-sizing: border-box; background-color: #eee; background-repeat: no-repeat; background-size: 55%; background-position: 50% 50%;
+        transition:all 300ms ease; 
+          }// a.action
+          &.action>a:hover,&.action>a:focus{background-color: rgba($main,0.9); opacity: 1;
+          }// a:hover
+        }// li
+      }// ul
+      >.arrow_btn{position: absolute; z-index: 500; left: 0; right: 0; top: 40%; margin: auto; width: 680px; height: 0;
+        >button{width: 60px; height: 60px; background-size: contain; background-position: 50% 50%; background-repeat: no-repeat; background-color: transparent;
         }// button
-        >.next{float: right; background-image: url("../../img/arrow_next.png");}
-        >.prev{float: left; background-image: url("../../img/arrow_prev.png");}
-      }// .btn
-      >.menu_slide{position: absolute; width: 1250px; height: 450px; left: 0;
-        >ul{position: absolute; width: 140vw; height: 16.6vw; left: -10%; right: 0; margin: auto;
-          >li{float: left; width: 19.2vw; height: 18.7vw; margin-right: 4vw; border: 1px solid #888; box-sizing: border-box; background-size: 45%; background-position: 50% 50%; background-repeat: no-repeat; 
-            >a{display: block; width: 100%; height: 100%; background-color: #fff; opacity: 0.7;}
-            >a.action{display: block; width: 100%; height: 100%; transform: scale(1.2); background-color: #eee; background-repeat: no-repeat; background-size: 55%; background-position: 50% 50%; opacity: 1;}
-            >a.action:hover,a.action:focus{background-color: $main;}
-          }// li
-        }// ul
-      }// .menu_slide  
-      >.menu{position: relative; z-index: 100; width: 135px; height: 40px; margin: 20.8vw 0 0 18.2vw; border-radius: 10px; border: 3px solid $main; box-sizing: border-box; color: $main; font-size: 1rem; text-align: center; background-color: transparent;}
-      >.menu:hover,menu:focus{color: #fff; background-color: $main;}
-    }// .menu_con  
+        >.next{float: right; background-image: url("../../img/arrow_next.png");
+        &:hover,&:focus{background-image: url("../../img/arrow_next_c.png");}
+        }// .next
+        >.prev{float: left; background-image: url("../../img/arrow_prev.png");
+        &:hover,&:focus{background-image: url("../../img/arrow_prev_c.png");}
+        }// .prev
+      }// .arrow_btn
+    }// .menu_slide  
+    >.menu_btn{width: 1260px; height: 40px; margin: auto; margin-top: 40px;
+      >.menu{width: 135px; height: 40px; border-radius: 10px; border: 3px solid $main; box-sizing: border-box; color: $main; font-size: 1rem; text-align: center; background-color: transparent;}
+        >.menu:hover,.menu:focus{color: #fff; background-color: $main;}
+    }// .menu_btn
   }// #menuBox
   >#snsBox{background-image: url("../../img/sns_box.jpg"); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;
-    >ul{width: auto; height: auto; background-color: $sample2;
-      >li{float: left; width: 14.5vw; height: 14.5vw; margin-right: 2.6vw; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
-        >a{display: block; width: 100%; height: 100%; padding: 6.5vw 1.5vw; box-sizing: border-box; 
+    >.title{margin-bottom: 50px;}
+    >ul{width: 1230px; height: auto; margin: auto;
+      >li{float: left; width: 230px; height: 230px; margin-right: 20px; background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;
+        >a{display: block; width: 100%; height: 100%; padding: 110px 40px; box-sizing: border-box; 
           >p{display: none;}
         }// a
         >a:hover,a:focus{background-image: url("../../img/insta_bg.jpg"); background-position: 50% 50%; background-size: cover;
-          >p{display: block; width: 100%; height: auto; text-align: center; font-weight: bold; font-size: 1.5vw; text-transform: uppercase; color: #fff;
+          >p{display: block; width: 100%; height: auto; text-align: center; font-weight: bold; font-size: 1.3rem; text-transform: uppercase; color: #fff;
           >i{padding-left: 1rem;}
           }// p}
         }// a:hover
       }// li
-      >li:nth-child(-n+5){margin-bottom: 2vw;}
-      >li:nth-child(4n){margin-right: 0;}
-      >li:nth-child(9){display: none;}
+      >li:nth-child(-n+6){margin-bottom: 20px;}
+      >li:nth-child(5n){margin-right: 0;}
     }
   }// #snsBox
 }// #conBox
 
+#footBox{width: 100%; height: 300px; padding: 30px 0 20px; box-sizing: border-box; background-color: #fff;
+  >h2{width: 110px; height: 60px; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+    >a{display: block; width: 100%; height: 100%;}
+  }// h2
+  >p{width: 580px; height: 125px; margin: auto; padding: 20px 0; box-sizing: border-box; font-size: 1.25rem; text-align: center; line-height: 30px}
+  >.sns{width: 140px; height: 52px; padding-top: 10px; box-sizing: border-box; margin: auto;
+    >li{float: left; margin-right: 12px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
+    >li:nth-child(1){width: 33px; height: 33px; background-image: url("../../img/instagram.png");}
+    >li:nth-child(2){width: 33px; height: 33px; background-image: url("../../img/facebook.png");}
+    >li:nth-child(3){width: 38px; height: 30px; margin-top: 1px; margin-right: 0; background-image: url("../../img/youtube.png");}
+  }
+}// #footBox
 }
