@@ -10,10 +10,10 @@
   #headBox > .list > .big > ul > li > dl { width: 100%; height: auto; }
   #headBox > .list > .big > ul > li > dl > dt { width: 100%; height: 110px; padding-top: 40px; box-sizing: border-box; }
   #headBox > .list > .big > ul > li > dl > dt > a { display: block; width: 100%; height: 1.5rem; text-align: center; color: #333; font-size: 1.25rem; text-transform: uppercase; }
-  #headBox > .list > .big > ul > li > dl > dt > a.action { color: #1b398f; font-weight: bold; }
+  #headBox > .list > .big > ul > li > dl > dt > a.active { color: #1b398f; font-weight: bold; }
   #headBox > .list > .big > ul > li > dl > dd { display: none; width: 100%; height: 150px; padding-top: 20px; }
   #headBox > .list > .big > ul > li > dl > dd > a { display: block; width: 100%; height: 70px; margin-top: 1px; text-align: center; color: #333; font-size: 1.2rem; line-height: 50px; }
-  #headBox > .list > .big > ul > li > dl > dd > a.action { color: #1b398f; }
+  #headBox > .list > .big > ul > li > dl > dd > a.active { color: #1b398f; }
   #headBox > .list > .big > ul > li > a { display: block; width: 100%; height: 100%; font-size: 1.5625rem; color: #333; text-align: center; text-transform: capitalize; }
   #headBox > .list > .big > ul > li:nth-child(1) { width: 200px; }
   #headBox > .list > .big > ul > li:nth-child(2) { width: 170px; }
@@ -132,10 +132,10 @@
   #headBox > .list > .big > ul > li > dl { width: 100%; height: auto; }
   #headBox > .list > .big > ul > li > dl > dt { width: 100%; height: 110px; padding-top: 40px; box-sizing: border-box; }
   #headBox > .list > .big > ul > li > dl > dt > a { display: block; width: 100%; height: 1.5rem; text-align: center; color: #333; font-size: 1.25rem; text-transform: uppercase; }
-  #headBox > .list > .big > ul > li > dl > dt > a.action { color: #1b398f; font-weight: bold; }
+  #headBox > .list > .big > ul > li > dl > dt > a.active { color: #1b398f; font-weight: bold; }
   #headBox > .list > .big > ul > li > dl > dd { display: none; width: 100%; height: 150px; padding-top: 20px; }
   #headBox > .list > .big > ul > li > dl > dd > a { display: block; width: 100%; height: 70px; margin-top: 1px; text-align: center; color: #333; font-size: 1.2rem; line-height: 50px; }
-  #headBox > .list > .big > ul > li > dl > dd > a.action { color: #1b398f; }
+  #headBox > .list > .big > ul > li > dl > dd > a.active { color: #1b398f; }
   #headBox > .list > .big > ul > li > a { display: block; width: 100%; height: 100%; font-size: 1.5625rem; color: #333; text-align: center; text-transform: capitalize; }
   #headBox > .list > .big > ul > li:nth-child(1) { width: 170px; }
   #headBox > .list > .big > ul > li:nth-child(2) { width: 140px; }

@@ -16,11 +16,11 @@
           >dl{width: 100%; height: auto;
             >dt{width: 100%; height: 110px; padding-top: 40px; box-sizing: border-box;
               >a{display: block; width: 100%; height: 1.5rem; text-align: center; color: $textem; font-size: 1.25rem; text-transform: uppercase;}
-              >a.action{color: $main; font-weight: bold;}
+              >a.active{color: $main; font-weight: bold;}
             }// dt
             >dd{display: none; width: 100%; height: 150px; padding-top: 20px;
               >a{display: block; width: 100%; height: 70px; margin-top: 1px; text-align: center; color: $textem; font-size: 1.2rem; line-height: 50px;}
-              >a.action{color: $main;}
+              >a.active{color: $main;}
             }// dd
           }// dl
           >a{display: block; width: 100%; height: 100%; font-size: 1.5625rem; color: $textem; text-align: center; text-transform: capitalize;}
