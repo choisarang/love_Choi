@@ -124,7 +124,7 @@ indiLink.on('focus click', function(e){
     clearInterval(go)
   };
 
-  slideGo();
+  // slideGo();
   
 // brandBox -------------------------------------------
 const brandBox = $('#brandBox');
@@ -133,9 +133,10 @@ const brandLink = brandLi.children('a');
 
 let brandLen = brandLi.length;
 
-for(let i=0; i<brandLen; i++){
-  brandLi.eq(i).css({backgroundImage:'url("../img/brand_0' + (i+1) + '.jpg")'})
-};
+// for(let i=0; i<brandLen; i++){
+  // // brandLi.eq(i).css({backgroundImage:'url("../img/brand_0' + (i+1) + '.jpg")'})
+// };
+
 
 brandLink.on('mouseenter focus', function(){
   $(this).addClass('action');
