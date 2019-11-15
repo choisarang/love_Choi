@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ozya5k');
+  src:  url('fonts/icomoon.eot?ozya5k#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ozya5k') format('truetype'),
+    url('fonts/icomoon.woff?ozya5k') format('woff'),
+    url('fonts/icomoon.svg?ozya5k#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-navericon:before {
+  content: "\e900";
+}
