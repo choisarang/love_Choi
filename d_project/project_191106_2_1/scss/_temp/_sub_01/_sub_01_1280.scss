@@ -5,10 +5,63 @@
   @import "../_h_f/h_f_1280";
 
 
-  #viewBox{width: 100%; height: 100vw; background-color: #faf;}
-  #contentBox{width: 100%; height: 100vw; background-color: #fa0;}
+  #viewBox{width: 100%; height: 300px; background-image: url("../../../img/main_view_01.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 0 30%;
+    h2{width: 100%; height: auto; text-align: center; font-size: 35px; line-height: 400px; color: #fff; text-shadow: 3px 3px 3px rgba(51, 51, 51, 0.5);}
+  }
 
+  #contentBox{width: 100%; height: 4030px; padding: 200px 155px; box-sizing: border-box; background-color: $bg;
+    .conbox::after{content: " "; display: block; width: 100px; height: 100%; margin: auto; border-bottom: 2px solid #ccc; box-sizing: border-box;}
+    .greekBox{width: 100%; height: 725px;
+      >dl{width: 100%; height: 100%;
+        >dt{position: relative;z-index: 1; width: 100%; height: 50px; font-size: 1.875rem; font-weight: bold; color: $main;}
+        >dt::before{content: " "; display: block; position: absolute; z-index: 0; top: 40%; left: 0.5%; width: 170px; height: 30%; background-color: rgba(200, 200, 200, 0.5)}
+        >dd{width: 100%; height: auto; padding-top: 80px; box-sizing: border-box; line-height: 50px; font-size: 1.25rem; color: $text;
+          >span{color: $textem;}
+        }// dd
+      }// dl
+    }// .greekBox
+    .vsBox{width: 870px; height: 900px; margin: auto;
+      >li{float: left; width: 290px; height: 100%; margin-top: 100px;
+        >dl{width: 100%; height: 100%;
+          >dt{width: 150px; height: 150px; border-radius: 100%; background-color: #ccc; margin: auto;
+            >span{display: block; width: 100%; height: 100%; font-size: 1.5625rem; font-weight: bold; text-align: center; transform: translateY(35%); color: $textem;}
+          }// dt
+          >dd{width: 100%; height: 300px; margin-top: 100px; font-size: 1.2rem; line-height: 50px; text-align: center; color: $text;}
+        }// dl
+        >p{width: 100%; height: 150px; font-size: 2rem; font-weight: bold; text-align: center; transform: translateY(40%); color: $textem;}
+      }// li
+      >li:last-child > dl{
+        >dt{background-color: #B0D6FD;
+          >span{color: $main;}
+        }// dt
+        >dd{color: $textem;}
+      }// li:last-child
+    }// .vsBox
 
-
+    .iconBox{width: 100%; height: 1500px;
+      >li{width: 100%; height: 140px; margin-top: 100px; margin-bottom: 100px; background-color: transparent;
+        >dl{
+          >div{float: left; width: 100px; height: 100px; margin-right: 80px; margin-top: 20px; border-radius: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: 80%;}
+          >dt{width: 100%; height: 80px; font-size: 1.5625rem; font-weight: bold; color: $textem; line-height: 80px;}
+          >dd{width: 100%; height: 60px; font-size: 1.125rem; color: $text;}
+          >.icon_01{background-color: $main; background-image: url("../../../img/protein_w.png");}
+          >.icon_02{border: 2px solid #3B2A22; background-color: #fff; background-image: url("../../../img/probio.png");}
+          >.icon_03{border: 2px solid #DC6129; background-color: #fff; background-image: url("../../../img/vitamin_c.png");}
+          >.icon_04{background-color: #8D418C; background-image: url("../../../img/iodine_w.png"); background-size: 22%;}
+          >.icon_05{border: 2px solid $main; background-color: #fff; background-image: url("../../../img/calcium_b.png");}
+        }// dl  
+      }// li
+      >p{display: block; width: 100%; height: 30px; font-size: 1.125rem; color: $text;}
+    }// .iconBox
+    .careBox{width: 100%; height: 685px;
+      >dl{width: 100%; height: 100%;
+        >dt{position: relative;z-index: 1; width: 100%; height: 50px; font-size: 1.875rem; font-weight: bold; color: $main;}
+        >dt::before{content: " "; display: block; position: absolute; z-index: 0; top: 40%; left: 0.5%; width: 260px; height: 30%; background-color: rgba(200, 200, 200, 0.5)}
+        >dd{width: 100%; height: auto; padding-top: 80px; box-sizing: border-box; line-height: 50px; font-size: 1.25rem; color: $text;
+          >em{color: $textem; font-style: normal;}
+        }//dd
+      }// dl
+    }// .careBox
+  }// #contentBox
   
 }
