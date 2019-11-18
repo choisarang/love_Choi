@@ -13,16 +13,17 @@ form{width: 100%; height: auto;}
 
 .check > input{width: 0; height: 0; overflow: hidden; border: 0; position: absolute; z-index: -1;}
 .check.all_check i{position: absolute; top: 8px; left: 0; font-size: 1.6rem; color: #777;}
-.check i{font-size: 1.2rem; cursor: pointer; color: #aaa;}
+.check i{font-size: 1.2rem; cursor: pointer; color: #ccc;}
 
 /* 전체동의 체크시 =================================== */
 .all_check > input:focus + p i{color: #333;}
 .all_check > input:checked + p i{color: #08a600;}
+
 /* 각각동의 체크시 =================================== */
-.check input:checked + dl i,
-.check input:checked + p i{color: #08a600;}
 .check input:focus + dl i,
 .check input:focus + p i{color: #333;}
+.check input:checked + dl i,
+.check input:checked + p i{color: #08a600;}
 
 
 .check > p{font-size: 1rem; font-weight: bold; word-break: keep-all; letter-spacing: -0.1rem;}
