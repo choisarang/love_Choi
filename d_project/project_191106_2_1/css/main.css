@@ -27,6 +27,15 @@
   #headBox > .list > .big ul.action:before { content: " "; display: block; position: absolute; z-index: -2; top: 0; left: 50%; margin-left: -100vw; width: 100vw; height: 100%; background-color: #fff; }
   #headBox > .list > .big ul:after { content: " "; display: block; width: 0; height: auto; clear: both; }
   #headBox > .list > .small { display: none; }
+  #footBox { width: 100%; height: 330px; padding: 30px 0 20px; box-sizing: border-box; background-color: #fff; }
+  #footBox > .logo { width: 110px; height: 60px; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > p { width: 580px; height: 125px; margin: auto; padding: 20px 0; box-sizing: border-box; font-size: 1.25rem; text-align: center; line-height: 30px; }
+  #footBox > .sns { width: 140px; height: 52px; padding-top: 10px; box-sizing: border-box; margin: auto; }
+  #footBox > .sns > li { float: left; margin-right: 12px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > .sns > li:nth-child(1) { width: 33px; height: 33px; background-image: url("../../img/instagram.png"); }
+  #footBox > .sns > li:nth-child(2) { width: 33px; height: 33px; background-image: url("../../img/facebook.png"); }
+  #footBox > .sns > li:nth-child(3) { width: 38px; height: 30px; margin-top: 1px; margin-right: 0; background-image: url("../../img/youtube.png"); }
+  #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
   #viewBox { position: relative; width: 100%; height: 100%; }
   #viewBox > .indicator { position: absolute; z-index: 100; left: 0; right: 0; bottom: 150px; margin: auto; width: 600px; height: 10px; }
   #viewBox > .indicator > li { float: left; width: 200px; height: 100%; background-color: #c8c8c8; }
@@ -115,16 +124,7 @@
   #conBox > #snsBox > ul > li > a:hover > p, #conBox > #snsBox > ul > li a:focus > p { display: block; width: 100%; height: auto; text-align: center; font-weight: bold; font-size: 1.3rem; text-transform: uppercase; color: #fff; }
   #conBox > #snsBox > ul > li > a:hover > p > i, #conBox > #snsBox > ul > li a:focus > p > i { padding-left: 1rem; }
   #conBox > #snsBox > ul > li:nth-child(-n+6) { margin-bottom: 20px; }
-  #conBox > #snsBox > ul > li:nth-child(5n) { margin-right: 0; }
-  #footBox { width: 100%; height: 330px; padding: 30px 0 20px; box-sizing: border-box; background-color: #fff; }
-  #footBox > .logo { width: 110px; height: 60px; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
-  #footBox > p { width: 580px; height: 125px; margin: auto; padding: 20px 0; box-sizing: border-box; font-size: 1.25rem; text-align: center; line-height: 30px; }
-  #footBox > .sns { width: 140px; height: 52px; padding-top: 10px; box-sizing: border-box; margin: auto; }
-  #footBox > .sns > li { float: left; margin-right: 12px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
-  #footBox > .sns > li:nth-child(1) { width: 33px; height: 33px; background-image: url("../../img/instagram.png"); }
-  #footBox > .sns > li:nth-child(2) { width: 33px; height: 33px; background-image: url("../../img/facebook.png"); }
-  #footBox > .sns > li:nth-child(3) { width: 38px; height: 30px; margin-top: 1px; margin-right: 0; background-image: url("../../img/youtube.png"); }
-  #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; } }
+  #conBox > #snsBox > ul > li:nth-child(5n) { margin-right: 0; } }
 
 @media screen and (min-width: 971px) and (max-width: 1280px) { #headBox { position: fixed; z-index: 500; width: 100vw; height: 110px; padding: 0 16vw; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
   #headBox > .list { position: absolute; width: 970px; height: 110px; left: 0; right: 0; margin: auto; }
@@ -153,6 +153,15 @@
   #headBox > .list > .big ul.action:before { content: " "; display: block; position: absolute; z-index: -2; top: 0; left: 50%; margin-left: -100vw; width: 100vw; height: 100%; background-color: #fff; }
   #headBox > .list > .big ul:after { content: " "; display: block; width: 0; height: auto; clear: both; }
   #headBox > .list > .small { display: none; }
+  #footBox { width: 100%; height: 330px; padding: 30px 0 20px; box-sizing: border-box; background-color: #fff; }
+  #footBox > .logo { width: 110px; height: 60px; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > p { width: 580px; height: 125px; margin: auto; padding: 20px 0; box-sizing: border-box; font-size: 1.25rem; text-align: center; line-height: 30px; }
+  #footBox > .sns { width: 140px; height: 52px; padding-top: 10px; box-sizing: border-box; margin: auto; }
+  #footBox > .sns > li { float: left; margin-right: 12px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > .sns > li:nth-child(1) { width: 33px; height: 33px; background-image: url("../../img/instagram.png"); }
+  #footBox > .sns > li:nth-child(2) { width: 33px; height: 33px; background-image: url("../../img/facebook.png"); }
+  #footBox > .sns > li:nth-child(3) { width: 38px; height: 30px; margin-top: 1px; margin-right: 0; background-image: url("../../img/youtube.png"); }
+  #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
   #viewBox { position: relative; width: 100%; height: 100%; }
   #viewBox > .indicator { position: absolute; z-index: 100; left: 0; right: 0; bottom: 100px; margin: auto; width: 600px; height: 10px; }
   #viewBox > .indicator > li { float: left; width: 200px; height: 100%; background-color: #c8c8c8; }
@@ -243,16 +252,7 @@
   #conBox > #snsBox > ul > li:nth-child(-n+5) { margin-bottom: 20px; }
   #conBox > #snsBox > ul > li:nth-child(4n) { margin-right: 0; }
   #conBox > #snsBox > ul > li:nth-child(9) { display: none; }
-  #conBox > #snsBox > ul > li:nth-child(10) { display: none; }
-  #footBox { width: 100%; height: 330px; padding: 30px 0 20px; box-sizing: border-box; background-color: #fff; }
-  #footBox > .logo { width: 110px; height: 60px; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
-  #footBox > p { width: 580px; height: 125px; margin: auto; padding: 20px 0; box-sizing: border-box; font-size: 1.25rem; text-align: center; line-height: 30px; }
-  #footBox > .sns { width: 140px; height: 52px; padding-top: 10px; box-sizing: border-box; margin: auto; }
-  #footBox > .sns > li { float: left; margin-right: 12px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
-  #footBox > .sns > li:nth-child(1) { width: 33px; height: 33px; background-image: url("../../img/instagram.png"); }
-  #footBox > .sns > li:nth-child(2) { width: 33px; height: 33px; background-image: url("../../img/facebook.png"); }
-  #footBox > .sns > li:nth-child(3) { width: 38px; height: 30px; margin-top: 1px; margin-right: 0; background-image: url("../../img/youtube.png"); }
-  #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; } }
+  #conBox > #snsBox > ul > li:nth-child(10) { display: none; } }
 
 @media screen and (min-width: 769px) and (max-width: 970px) { #headBox { position: fixed; z-index: 500; width: 100vw; min-width: 375px; height: 100px; padding: 20px 30px; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
   #headBox > .list { width: 100%; height: 100%; }

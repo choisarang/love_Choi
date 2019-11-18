@@ -1,0 +1,24 @@
+// _sub_01_1920.scss
+
+@media screen and (min-width:1281px) {
+
+  @import "../_h_f/h_f_1920";
+
+  #viewBox{width: 100%; height: 400px; background-color: #caa;
+    h2{width: 100%; height: auto; text-align: center; font-size: 35px;}
+  }// #viewBox
+
+  #contentBox{width: 100%; height: 4030px; padding: 200px 330px; box-sizing: border-box; background-color: $bg;
+    .greek_area{width: 100%; height: 725px;
+      >dl{width: 100%; height: 100%;
+        >dt{width: 100%; height: 50px; font-size: 1.875rem; font-weight: bold; color: $main;}
+        >dt::after{content: " "; display: block; width: 170px; height: 20%; background-color: rgba(200, 200, 200, 0.5)}
+        >dd{width: 100%; height: auto; padding-top: 80px; box-sizing: border-box; line-height: 50px; font-size: 1.25rem;}
+      }
+    }// .greek_area
+    .vs_area{width: 100%; height: 1000px; background-color: $sample2;}
+    .icon_area{width: 100%; height: 1620px; background-color: $yellow;}
+    .care_area{width: 100%; height: 685px; background-color: #faf;}
+  }// #contentBox
+  
+}  

@@ -40,17 +40,17 @@ gnbDl.find('a').eq(-1).on('blur', function(){
 gnbDdLink.on('blur', function(){
   $(this).parent('dd').prevAll('dt').children('a').removeClass('active');
   $(this).parent('dd').css({backgroundColor:"transparent"})
-})
+});
 
 
 // gnbDd 효과
 gnbDd.children('a').on('mouseenter focus', function(){
-  $(this).addClass('active');
+  $(this).addClass('active');   
 });
 
-gnbDd.children('a').on('mouseleave blur', function(){
-  $(this).removeClass('active');
-});
+// gnbDd.children('a').on('mouseleave blur', function(){
+//   $(this).removeClass('active');
+// });
 
 
 
