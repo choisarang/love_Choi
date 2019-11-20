@@ -48,9 +48,33 @@ gnbDd.children('a').on('mouseenter focus', function(){
   $(this).addClass('active');   
 });
 
-// gnbDd.children('a').on('mouseleave blur', function(){
-//   $(this).removeClass('active');
-// });
+gnbDd.children('a').on('mouseleave blur', function(){
+  $(this).removeClass('active');
+});
+
+// headBox_small------------------------------------------
+const small = $('.small');
+const barLink = small.find('a');
+const barView = small.children('.bar_view');
+const ex = barView.children('.ex');
+
+barLink.on('click', function(){
+  barView.stop().fadeIn()
+});
+
+ex.on('click', function(){
+  barView.stop().fadeOut()
+});
+
+barLink.on('mouseenter focus', function(e){
+  e.preventDefault()
+  $(this).css({textDecoration:"underline",fontWeight:"bold"})
+})
+
+barLink.on('mouseleave blur' ,function(e){
+  e.preventDefault()
+  $(this).css({textDecoration:"none",fontWeight:"normal"})
+})
 
 
 

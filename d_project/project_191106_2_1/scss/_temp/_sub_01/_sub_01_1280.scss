@@ -9,15 +9,16 @@
     h2{width: 100%; height: auto; text-align: center; font-size: 35px; line-height: 400px; color: #fff; text-shadow: 3px 3px 3px rgba(51, 51, 51, 0.5);}
   }
 
-  #contentBox{width: 100%; height: 4030px; padding: 200px 155px; box-sizing: border-box; background-color: $bg;
+  #contentBox{width: 970px; height: 4030px; padding: 200px 50px; margin: auto; box-sizing: border-box; background-color: $bg;
     .conbox::after{content: " "; display: block; width: 100px; height: 100%; margin: auto; border-bottom: 2px solid #ccc; box-sizing: border-box;}
     .greekBox{width: 100%; height: 725px;
       >dl{width: 100%; height: 100%;
-        >dt{position: relative;z-index: 1; width: 100%; height: 50px; font-size: 1.875rem; font-weight: bold; color: $main;}
-        >dt::before{content: " "; display: block; position: absolute; z-index: 0; top: 40%; left: 0.5%; width: 170px; height: 30%; background-color: rgba(200, 200, 200, 0.5)}
+        >dt{position: relative; z-index: 1; width: 100%; height: 50px; font-size: 1.875rem; font-weight: bold; color: $main;}
+        >dt::before{content: " "; display: block; position: absolute; z-index: -1; top: 40%; left: 0.5%; width: 170px; height: 30%; background-color: rgba(200, 200, 200, 0.5)}
         >dd{width: 100%; height: auto; padding-top: 80px; box-sizing: border-box; line-height: 50px; font-size: 1.25rem; color: $text;
           >span{color: $textem;}
         }// dd
+        >p{display: block; width: 100%; height: auto; margin-top: 50px; line-height: 30px; font-size: 1.1rem; color: $text;}
       }// dl
     }// .greekBox
     .vsBox{width: 870px; height: 900px; margin: auto;
@@ -51,12 +52,12 @@
           >.icon_05{border: 2px solid $main; background-color: #fff; background-image: url("../../../img/calcium_b.png");}
         }// dl  
       }// li
-      >p{display: block; width: 100%; height: 30px; font-size: 1.125rem; color: $text;}
+      >p{display: block; width: 100%; height: 30px; font-size: 1.1rem; color: $text;}
     }// .iconBox
     .careBox{width: 100%; height: 685px;
       >dl{width: 100%; height: 100%;
-        >dt{position: relative;z-index: 1; width: 100%; height: 50px; font-size: 1.875rem; font-weight: bold; color: $main;}
-        >dt::before{content: " "; display: block; position: absolute; z-index: 0; top: 40%; left: 0.5%; width: 260px; height: 30%; background-color: rgba(200, 200, 200, 0.5)}
+        >dt{position: relative; z-index: 1; width: 100%; height: 50px; font-size: 1.875rem; font-weight: bold; color: $main;}
+        >dt::before{content: " "; display: block; position: absolute; z-index: -1; top: 40%; left: 0.5%; width: 260px; height: 30%; background-color: rgba(200, 200, 200, 0.5)}
         >dd{width: 100%; height: auto; padding-top: 80px; box-sizing: border-box; line-height: 50px; font-size: 1.25rem; color: $text;
           >em{color: $textem; font-style: normal;}
         }//dd
