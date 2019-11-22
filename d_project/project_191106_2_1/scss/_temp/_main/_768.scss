@@ -37,7 +37,17 @@
       }// .text
     }// slide_03
   }// .product
-  >.side_bar{display: none;}
+  >.side_bar{position: fixed; z-index: 400; top: 0; bottom: 0; right: 2vw; margin: auto; width: 40px; height: 300px;
+    >li{width: 30px; height: 30px; border-radius: 100%; margin-bottom: 40px; background-color: #ccc;
+      >a{position: relative; display: block; width: 100%; height: 100%; border-radius: 100%;
+        >span{position: absolute; display: block; right: 50px; width: 0; height: 35px; border-radius: 10px; font-size: 1.25rem; color: #fff; text-transform: uppercase; font-weight: bold; text-align: center;  line-height: 35px; background-color: $main; overflow: hidden; transition: all 300ms ease;}
+      }// a
+      >a.action{background-color: #fff; box-shadow: 0 0 7px rgba(0, 0, 0, 0.5); outline: none;
+        >span{display: block; width: 150px;}
+      }// a.action
+    }// li
+    >li:last-child{margin-bottom:0;}
+  }// .side_bar
 }// #viewBox
 
 // conBox ============================================
@@ -90,7 +100,7 @@
           }// a:hover
         }// li
       }// ul
-      >.arrow_btn{position: absolute; z-index: 500; left: 0; right: 0; top: 40%; margin: auto; width: 80vw; height: 0;
+      >.arrow_btn{position: absolute; z-index: 300; left: 0; right: 0; top: 40%; margin: auto; width: 500px; height: 0;
         >button{width: 60px; height: 60px; background-size: contain; background-position: 50% 50%; background-repeat: no-repeat; background-color: transparent;
         }// button
         >.next{float: right; background-image: url("../../img/arrow_next.png");
@@ -107,20 +117,20 @@
     }// .menu_btn
   }// #menuBox
   >#snsBox{background-image: url("../../img/sns_box.jpg"); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;
-    >ul{width: 95vw; height: auto; margin: auto;
-      >li{float: left; width: 30vw; height: 30vw; margin-right: 2.5vw; background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;
-        >a{display: block; width: 100%; height: 100%; padding: 13vw 2.6vw; box-sizing: border-box; 
+    >ul{width: 72.5vw; height: auto; margin: auto;
+      >li{float: left; width: 35vw; height: 35vw; margin-right: 2.5vw; background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;
+        >a{display: block; width: 100%; height: 100%; padding: 16vw 2.6vw; box-sizing: border-box; 
           >p{display: none;}
         }// a
         >a:hover,a:focus{background-image: url("../../img/insta_bg.jpg"); background-position: 50% 50%; background-size: cover;
-          >p{display: block; width: 100%; height: auto; text-align: center; font-weight: bold; font-size: 3.1vw; text-transform: uppercase; color: #fff;
+          >p{display: block; width: 100%; height: auto; text-align: center; font-weight: bold; font-size: 3.5vw; text-transform: uppercase; color: #fff;
           >i{padding-left: 2.2vw;}
           }// p}
         }// a:hover
       }// li
-      >li:nth-child(-n+6){margin-bottom: 20px;}
-      >li:nth-child(3n){margin-right: 0;}
-      >li:last-child{display: none;}
+      >li:nth-child(-n+2){margin-bottom: 20px;}
+      >li:nth-child(2n){margin-right: 0;}
+      >li:nth-child(n+5):nth-child(-n+10){display: none;}
     }
   }// #snsBox
 }// #conBox

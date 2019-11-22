@@ -38,12 +38,12 @@
         $(this).parent('dd').css({backgroundColor:"transparent"})
     });  
     
-    });
+  });
   
-  // gnbDl.find('a').eq(-1).on('blur', function(){
-  //   gnbDd.stop().slideUp();
-  //   gnbUl.removeClass('action');
-  // });
+  gnbDl.find('a').eq(-1).on('blur', function(){
+    gnbDd.stop().slideUp();
+    gnbUl.removeClass('action');
+  });
   
   // gnbDdLink.on('blur', function(){
   //   $(this).parent('dd').prevAll('dt').children('a').removeClass('active');

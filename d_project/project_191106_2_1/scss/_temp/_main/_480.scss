@@ -18,7 +18,7 @@
     >.slide_01{background-size: cover; background-position: 50% 50%;
       >.text{width: 100%; height: 200px; font-size: 1.875rem; text-transform: uppercase;
         >em{width: 100%; height: 40px; font-style: inherit; color: $textem;}
-        >p{width: 100%; height: 120px; padding: 1rem 0; box-sizing: border-box; font-size: 3.75rem; text-transform: capitalize; font-weight: bold; color: $main;}
+        >p{width: 100%; height: 100px; padding: 1rem 0; box-sizing: border-box; font-size: 3.2rem; text-transform: capitalize; font-weight: bold; color: $main;}
         >span{width: 100%; height: 40px; color: $text;}
       }// .text
     }// .slide_01
@@ -30,7 +30,7 @@
     }// slide_02
     >.slide_03{background-color: #EBEEFF;
       >.text{width: 100%; height: 200px;
-        >p{width: 100%; height: 100%; color: $main; font-size: 3.75rem; font-weight: bold;
+        >p{width: 100%; height: 100%; color: $main; font-size: 3.2rem; font-weight: bold;
           >span{color: $yellow;}
         }// p
       }// .text
@@ -41,13 +41,13 @@
 
 // conBox ============================================
 #conBox{width: 100%; min-width: 375px; height: auto;
-  >article{width: 100%; height: 100vh; padding: 120px 0; box-sizing: border-box;
+  >article{width: 100%; height: 100vh; padding: 100px 0; box-sizing: border-box;
     >.title{width: 100%; height: auto; margin: auto; margin-bottom: 70px; text-align: center;
       >p{font-size: 2.5rem; color: $main; font-weight: bold; text-transform: uppercase;}
       >span{font-size: 1.8rem; color: $main;}
     }// .title
   }// article
-  >#brandBox{background-color: $sample;
+  >#brandBox{background-color: $bg;
     >ul{width: 360px; height: 450px; margin: auto;
       >li{position: relative; float: left; width: 360px; height: 150px; background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;
         >a{display: block; width: 100%; height: 100%;
@@ -76,9 +76,9 @@
           transition:all 300ms ease;
           &:last-child{margin-right:0;}
           >a{display: none; width: 100%; height: 100%;
-            >em{display: block; width: 90%; height: 25px; margin: auto; margin-top: 5px; padding-bottom: 7px; box-sizing: border-box; font-size: 1.2rem; font-style: inherit; color: #fff; font-weight: bold; text-align: center; border-bottom: 2px solid #fff;}
-            >p{width: 100%; height: 130px; margin-top: 8px; font-size: 0.8rem; color: #fff; line-height: 23px; text-align: center;}
-            >span{display: block; width: 100%; height: 30px; margin-top: 14px; font-size: 0.8rem; font-weight: bold; color: #fff; text-align: center;}
+            >em{display: block; width: 90%; height: 25px; margin: auto; margin-top: 5px; padding-bottom: 7px; box-sizing: border-box; font-size: 1rem; font-style: inherit; color: #fff; font-weight: bold; text-align: center; border-bottom: 2px solid #fff;}
+            >p{width: 100%; height: 130px; margin-top: 5px; font-size: 0.7rem; color: #fff; line-height: 23px; text-align: center;}
+            >span{display: block; width: 100%; height: 30px; margin-top: 13px; font-size: 0.7rem; font-weight: bold; color: #fff; text-align: center;}
           }// a
           &.action{opacity: 1; transform: scale(1.4); background-color: #eee;}
           
@@ -100,7 +100,7 @@
         }// .prev
       }// .arrow_btn
     }// .menu_slide  
-    >.menu_btn{width: 130px; height: 40px; margin: auto;
+    >.menu_btn{width: 130px; height: 40px; margin: auto; margin-top: 100px;
       >.menu{width: 130px; height: 40px; border-radius: 10px; border: 3px solid $main; box-sizing: border-box; color: $main; font-size: 1rem; text-align: center; background-color: transparent;}
         >.menu:hover,.menu:focus{color: #fff; background-color: $main;}
     }// .menu_btn
@@ -112,7 +112,7 @@
           >p{display: none;}
         }// a
         >a:hover,a:focus{background-image: url("../../img/insta_bg.jpg"); background-position: 50% 50%; background-size: cover;
-          >p{display: block; width: 100%; height: auto; text-align: center; font-weight: bold; font-size: 1.1rem; text-transform: uppercase; color: #fff;
+          >p{display: block; width: 100%; height: auto; text-align: center; font-weight: bold; font-size: 1rem; text-transform: uppercase; color: #fff;
           >i{padding-left: 1rem;}
           }// p}
         }// a:hover

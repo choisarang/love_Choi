@@ -1,4 +1,5 @@
 (function($){
+$('html, body').stop().animate({scrollTop:0}, 500);
 const wrap = $('#wrap');
 
 // headBox -------------------------------------------
@@ -24,11 +25,19 @@ gnbDl.on('mouseleave', function(){
   $(this).children('dd').css({backgroundColor:"transparent"});
 });
 
-gnbDtLink.on('focus',function(){
+gnbDl.find('a').on('focus',function(){
   gnbUl.addClass('action');
   gnbDd.stop().slideDown();
   $(this).addClass('active');
-  $(this).parent('dt').siblings('dd').css({backgroundColor:"rgba(140, 177, 200, 0.1)"});
+  $(this).parents('dl').find('dd').css({backgroundColor:"rgba(140, 177, 200, 0.1)"});
+  
+      
+  $(this).closest('li').find('dd').find('a').eq(-1).on('blur', function(){
+  // console.log('part dd last');
+  $(this).parent('dd').prevAll('dt').children('a').removeClass('active');
+  $(this).parent('dd').css({backgroundColor:"transparent"})
+  });  
+      
 });
 
 
@@ -37,10 +46,10 @@ gnbDl.find('a').eq(-1).on('blur', function(){
   gnbUl.removeClass('action');
 });
 
-gnbDdLink.on('blur', function(){
-  $(this).parent('dd').prevAll('dt').children('a').removeClass('active');
-  $(this).parent('dd').css({backgroundColor:"transparent"})
-});
+// gnbDdLink.on('blur', function(){
+  // $(this).parent('dd').prevAll('dt').children('a').removeClass('active');
+  // $(this).parent('dd').css({backgroundColor:"transparent"})
+// });
 
 
 // gnbDd 효과
@@ -66,14 +75,33 @@ ex.on('click', function(){
   barView.stop().fadeOut()
 });
 
-barLink.on('mouseenter focus', function(e){
-  e.preventDefault()
-  $(this).css({textDecoration:"underline",fontWeight:"bold"})
-})
+//accodian menu ===================
+const barList = $('.bar_list');
+const barDl = barList.children('dl');
+const barDt = barDl.children('dt');
+const barDd = barDl.children('dd');
+const barDdLink = barDd.children('a')
 
-barLink.on('mouseleave blur' ,function(e){
-  e.preventDefault()
-  $(this).css({textDecoration:"none",fontWeight:"normal"})
+barDt.on('click', function(){
+  let dtC = $(this).hasClass('action');
+
+  if(dtC){
+    $(this).removeClass('action');
+    $(this).siblings('dd').slideUp();
+  }else{
+    $(this).addClass('action');
+    $(this).siblings('dd').stop().slideDown();
+  }
+});
+
+barDdLink.on('focus',function(){
+  $(this).parent('dd').siblings('dt').css({fontWeight:"bold"});
+  $(this).parent('dd').siblings('dt').find('i').css({color:"#1b398f"});
+});
+
+barDdLink.on('blur', function(){
+  $(this).parent('dd').siblings('dt').css({fontWeight:"normal"});
+  $(this).parent('dd').siblings('dt').find('i').css({color:"#777"});
 })
 
 
@@ -148,7 +176,7 @@ indiLink.on('focus click', function(e){
     clearInterval(go)
   };
 
-  // slideGo();
+  slideGo();
   
 // brandBox -------------------------------------------
 const brandBox = $('#brandBox');
@@ -219,12 +247,6 @@ menuBtn.on('click', function(e){
 });
 
 
-
-
-
-
-
-
 // snsBox -------------------------------------------
 const snsBox = $('#snsBox');
 const snsUl = snsBox.find('ul');
@@ -235,12 +257,59 @@ for(let i=0; i<snsLiLen; i++){
   snsLi.eq(i).css({backgroundImage:'url("../img/sns_0' + (i+1) + '.jpg")'})
 }
 // -------------------------------------------
+// 화면 스크롤 -------------------------------------------
+
+const scroll = $('.scroll');
+const scVal = [];
+for(let i=0; i<scroll.length; i++){
+  let j = scroll.eq(i).offset().top;
+  scVal.push(j);
+
+}
+// console.log(scVal);
+
+let rel = true;
+let wheeln = 0;
 
 
+$(window).on('mousewheel DOMMouseScroll', function(e){
+  let oe = e.originalEvent;
+  let oeDelta = oe.wheelDelta;
+  let delta = null;
+  if(!oeDelta){
+    delta = oe.detail * 40;
+  }else{
+    delta = oeDelta * -1;
+  }
+  console.log(delta)
 
+  if(delta>0){
+    wheeln++;
+    if(wheeln>=scVal.length){
+      wheeln = scVal.length-1
+    }
+  }else{
+    wheeln--;
+    if(wheeln<=0){
+      wheeln=0;
+    }
+  }
+
+  if(rel){
+    rel = false;
+    $('html, body').stop().animate({scrollTop:scVal[wheeln]+'px'}, 500, function(){
+      rel = true;
+    });
+  }
+});
+
+// sidebar 이동 -------------------------------------------
+sideLink.on('click', function(){
+  wheeln = $(this).parent().index();
+  $('html, body').stop().animate({scrollTop:scVal[wheeln]})
+})
 
 // -------------------------------------------
-
 
 
 })(jQuery);

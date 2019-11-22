@@ -2,15 +2,15 @@ html { background-color: #f7f7f7; }
 
 #wrap { width: 100%; height: 100%; background-color: #f7f7f7; }
 
-@media screen and (min-width: 1281px) { #headBox { position: fixed; z-index: 500; width: 100vw; height: 110px; padding: 0 16vw; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
-  #headBox > .list { position: absolute; width: 1280px; height: 110px; left: 0; right: 0; margin: auto; }
+@media screen and (min-width: 1281px) { #headBox { position: fixed; z-index: 500; width: 100vw; height: 100px; padding: 0 16vw; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
+  #headBox > .list { position: absolute; width: 1280px; height: 100px; left: 0; right: 0; margin: auto; }
   #headBox > .list > h1 { float: left; width: 110px; height: 60px; margin-top: 25px; }
   #headBox > .list > h1 > a { display: block; width: 100%; height: 100%; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; }
-  #headBox > .list > .big { float: left; width: 620px; height: 110px; margin: 0 200px; box-sizing: border-box; }
+  #headBox > .list > .big { float: left; width: 620px; height: 100px; margin: 0 200px; box-sizing: border-box; }
   #headBox > .list > .big > ul { position: relative; width: 100vw; height: auto; }
   #headBox > .list > .big > ul > li { float: left; height: auto; }
   #headBox > .list > .big > ul > li > dl { width: 100%; height: auto; }
-  #headBox > .list > .big > ul > li > dl > dt { width: 100%; height: 110px; padding-top: 40px; box-sizing: border-box; }
+  #headBox > .list > .big > ul > li > dl > dt { width: 100%; height: 100px; padding-top: 40px; box-sizing: border-box; }
   #headBox > .list > .big > ul > li > dl > dt > a { display: block; width: 100%; height: 1.5rem; text-align: center; color: #333; font-size: 1.25rem; text-transform: uppercase; }
   #headBox > .list > .big > ul > li > dl > dt > a.active { color: #1b398f; font-weight: bold; }
   #headBox > .list > .big > ul > li > dl > dd { display: none; width: 100%; height: 150px; padding-top: 20px; }
@@ -38,7 +38,7 @@ html { background-color: #f7f7f7; }
   #footBox > .sns > li:nth-child(2) { width: 33px; height: 33px; background-image: url("../../img/facebook.png"); }
   #footBox > .sns > li:nth-child(3) { width: 38px; height: 30px; margin-top: 1px; margin-right: 0; background-image: url("../../img/youtube.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
-  #viewBox { width: 100%; height: 400px; background-image: url("../../../img/main_view_01.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 0 30%; }
+  #viewBox { width: 100%; height: 400px; background-image: url("../../../img/main_view_01.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 0 30%; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: auto; text-align: center; font-size: 35px; line-height: 500px; color: #fff; text-shadow: 3px 3px 3px rgba(51, 51, 51, 0.5); }
   #contentBox { width: 1260px; /*height: 4030px;*/ height: auto; margin: auto; padding: 200px 0; box-sizing: border-box; background-color: #f7f7f7; }
   #contentBox .conbox { padding-bottom: 10rem; position: relative; }
@@ -79,15 +79,15 @@ html { background-color: #f7f7f7; }
   #contentBox .careBox > dl > dd { width: 100%; height: auto; padding-top: 80px; box-sizing: border-box; line-height: 50px; font-size: 1.25rem; color: #777; }
   #contentBox .careBox > dl > dd > em { color: #333; font-style: normal; } }
 
-@media screen and (max-width: 1280px) and (min-width: 971px) { #headBox { position: fixed; z-index: 500; width: 100vw; height: 110px; padding: 0 16vw; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
-  #headBox > .list { position: absolute; width: 970px; height: 110px; left: 0; right: 0; margin: auto; }
+@media screen and (max-width: 1280px) and (min-width: 971px) { #headBox { position: fixed; z-index: 500; width: 100vw; height: 100px; padding: 0 16vw; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
+  #headBox > .list { position: absolute; width: 970px; height: 100px; left: 0; right: 0; margin: auto; }
   #headBox > .list > h1 { float: left; width: 110px; height: 60px; margin-top: 25px; }
   #headBox > .list > h1 > a { display: block; width: 100%; height: 100%; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; }
-  #headBox > .list > .big { float: left; width: 620px; height: 110px; margin: 0 100px; box-sizing: border-box; }
+  #headBox > .list > .big { float: left; width: 620px; height: 100px; margin: 0 100px; box-sizing: border-box; }
   #headBox > .list > .big > ul { position: relative; width: 100vw; height: auto; }
   #headBox > .list > .big > ul > li { float: left; height: auto; }
   #headBox > .list > .big > ul > li > dl { width: 100%; height: auto; }
-  #headBox > .list > .big > ul > li > dl > dt { width: 100%; height: 110px; padding-top: 40px; box-sizing: border-box; }
+  #headBox > .list > .big > ul > li > dl > dt { width: 100%; height: 100px; padding-top: 40px; box-sizing: border-box; }
   #headBox > .list > .big > ul > li > dl > dt > a { display: block; width: 100%; height: 1.5rem; text-align: center; color: #333; font-size: 1.25rem; text-transform: uppercase; }
   #headBox > .list > .big > ul > li > dl > dt > a.active { color: #1b398f; font-weight: bold; }
   #headBox > .list > .big > ul > li > dl > dd { display: none; width: 100%; height: 150px; padding-top: 20px; }
@@ -163,16 +163,21 @@ html { background-color: #f7f7f7; }
   #headBox > .list > .small > .bar { width: 100%; height: 100%; text-align: center; }
   #headBox > .list > .small > .bar > a { display: block; width: 100%; height: 100%; background-color: transparent; }
   #headBox > .list > .small > .bar > a > i { font-size: 2.5rem; line-height: 50px; color: #1b398f; }
-  #headBox > .list > .small > .bar_view { position: fixed; top: 0; right: 0; width: 400px; height: 100%; background-color: #fff; }
+  #headBox > .list > .small > .bar_view { display: none; position: fixed; z-index: 500; top: 0; right: 0; width: 300px; height: 100%; background-color: #fff; }
   #headBox > .list > .small > .bar_view > .ex { position: absolute; top: 3%; right: 1.5%; width: 50px; height: 50px; text-align: center; }
   #headBox > .list > .small > .bar_view > .ex > a { display: block; width: 100%; height: 100%; }
   #headBox > .list > .small > .bar_view > .ex > a > i { font-size: 2.5rem; color: #1b398f; }
-  #headBox > .list > .small > .bar_view > .bar_list { width: 100%; height: auto; margin-top: 70px; }
+  #headBox > .list > .small > .bar_view > .bar_list { width: 100%; height: auto; margin-top: 100px; }
   #headBox > .list > .small > .bar_view > .bar_list > dl { width: 100%; height: auto; }
-  #headBox > .list > .small > .bar_view > .bar_list > dl > dt { width: 100%; height: 60px; padding-left: 20px; box-sizing: border-box; font-size: 1.2rem; text-transform: uppercase; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dt { position: relative; width: 100%; height: 60px; padding-left: 20px; box-sizing: border-box; font-size: 1.2rem; text-transform: uppercase; }
   #headBox > .list > .small > .bar_view > .bar_list > dl > dt > a { display: block; width: 100%; height: 100%; line-height: 60px; color: #1b398f; }
-  #headBox > .list > .small > .bar_view > .bar_list > dl > dd { display: none; width: 100%; height: 50px; padding-left: 20px; box-sizing: border-box; background-color: rgba(140, 177, 200, 0.1); }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dt > a > i { position: absolute; width: 13px; height: 13px; right: 30px; top: 0; bottom: 0; margin: auto; font-size: 0.8rem; line-height: 13px; text-align: center; color: #777; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dt.action i { transform-origin: center; transform: rotateZ(180deg); }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dt:hover, #headBox > .list > .small > .bar_view > .bar_list > dl dt a:focus { font-weight: bold; outline: none; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dt:hover i, #headBox > .list > .small > .bar_view > .bar_list > dl dt a:focus i { color: #1b398f; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dd { display: none; width: 100%; height: 50px; padding-left: 20px; box-sizing: border-box; font-size: 1rem; background-color: rgba(140, 177, 200, 0.1); }
   #headBox > .list > .small > .bar_view > .bar_list > dl > dd > a { display: block; width: 100%; height: 100%; line-height: 50px; color: #333; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dd a:hover, #headBox > .list > .small > .bar_view > .bar_list > dl dd a:focus { color: #1b398f; }
   #footBox { width: 100%; min-width: 375px; height: 330px; padding: 30px 0 20px; box-sizing: border-box; background-color: #fff; }
   #footBox > h2 { width: 110px; height: 60px; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
   #footBox > h2 > a { display: block; width: 100%; height: 100%; }
