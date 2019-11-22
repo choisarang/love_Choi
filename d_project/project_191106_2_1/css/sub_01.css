@@ -12,10 +12,10 @@ html { background-color: #f7f7f7; }
   #headBox > .list > .big > ul > li > dl { width: 100%; height: auto; }
   #headBox > .list > .big > ul > li > dl > dt { width: 100%; height: 100px; padding-top: 40px; box-sizing: border-box; }
   #headBox > .list > .big > ul > li > dl > dt > a { display: block; width: 100%; height: 1.5rem; text-align: center; color: #333; font-size: 1.25rem; text-transform: uppercase; }
-  #headBox > .list > .big > ul > li > dl > dt > a.active { color: #1b398f; font-weight: bold; }
+  #headBox > .list > .big > ul > li > dl > dt > a.active, #headBox > .list > .big > ul > li > dl > dt a.select { color: #1b398f; font-weight: bold; }
   #headBox > .list > .big > ul > li > dl > dd { display: none; width: 100%; height: 150px; padding-top: 20px; }
   #headBox > .list > .big > ul > li > dl > dd > a { display: block; width: 100%; height: 70px; margin-top: 1px; text-align: center; color: #333; font-size: 1.2rem; line-height: 50px; }
-  #headBox > .list > .big > ul > li > dl > dd > a.active { color: #1b398f; }
+  #headBox > .list > .big > ul > li > dl > dd > a.active, #headBox > .list > .big > ul > li > dl > dd a.select { color: #1b398f; }
   #headBox > .list > .big > ul > li > a { display: block; width: 100%; height: 100%; font-size: 1.5625rem; color: #333; text-align: center; text-transform: capitalize; }
   #headBox > .list > .big > ul > li:nth-child(1) { width: 200px; }
   #headBox > .list > .big > ul > li:nth-child(2) { width: 170px; }
@@ -38,7 +38,7 @@ html { background-color: #f7f7f7; }
   #footBox > .sns > li:nth-child(2) { width: 33px; height: 33px; background-image: url("../../img/facebook.png"); }
   #footBox > .sns > li:nth-child(3) { width: 38px; height: 30px; margin-top: 1px; margin-right: 0; background-image: url("../../img/youtube.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
-  #viewBox { width: 100%; height: 400px; background-image: url("../../../img/main_view_01.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 0 30%; background-attachment: fixed; }
+  #viewBox { width: 100%; height: 400px; background-image: url("../../../img/main_view_01.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: auto; text-align: center; font-size: 35px; line-height: 500px; color: #fff; text-shadow: 3px 3px 3px rgba(51, 51, 51, 0.5); }
   #contentBox { width: 1260px; /*height: 4030px;*/ height: auto; margin: auto; padding: 200px 0; box-sizing: border-box; background-color: #f7f7f7; }
   #contentBox .conbox { padding-bottom: 10rem; position: relative; }
@@ -115,20 +115,21 @@ html { background-color: #f7f7f7; }
   #footBox > .sns > li:nth-child(2) { width: 33px; height: 33px; background-image: url("../../img/facebook.png"); }
   #footBox > .sns > li:nth-child(3) { width: 38px; height: 30px; margin-top: 1px; margin-right: 0; background-image: url("../../img/youtube.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
-  #viewBox { width: 100%; height: 300px; background-image: url("../../../img/main_view_01.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 0 30%; }
+  #viewBox { width: 100%; height: 300px; background-image: url("../../../img/main_view_01.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: auto; text-align: center; font-size: 35px; line-height: 400px; color: #fff; text-shadow: 3px 3px 3px rgba(51, 51, 51, 0.5); }
   #contentBox { width: 970px; height: 4030px; padding: 200px 50px; margin: auto; box-sizing: border-box; background-color: #f7f7f7; }
-  #contentBox .conbox::after { content: " "; display: block; width: 100px; height: 100%; margin: auto; border-bottom: 2px solid #ccc; box-sizing: border-box; }
-  #contentBox .greekBox { width: 100%; height: 725px; }
-  #contentBox .greekBox > dl { width: 100%; height: 100%; }
+  #contentBox .conbox { position: relative; padding-bottom: 10rem; }
+  #contentBox .conbox::before { content: " "; display: block; position: absolute; z-index: 100; width: 100px; height: auto; margin: auto; border-bottom: 2px solid #ccc; box-sizing: border-box; bottom: 0; left: 50%; transform: translateX(-50%); }
+  #contentBox .greekBox { width: 100%; height: auto; }
+  #contentBox .greekBox > dl { width: 100%; height: auto; }
   #contentBox .greekBox > dl > dt { position: relative; z-index: 1; width: 100%; height: 50px; font-size: 1.875rem; font-weight: bold; color: #1b398f; }
   #contentBox .greekBox > dl > dt::before { content: " "; display: block; position: absolute; z-index: -1; top: 40%; left: 0.5%; width: 170px; height: 30%; background-color: rgba(200, 200, 200, 0.5); }
   #contentBox .greekBox > dl > dd { width: 100%; height: auto; padding-top: 80px; box-sizing: border-box; line-height: 50px; font-size: 1.25rem; color: #777; }
   #contentBox .greekBox > dl > dd > span { color: #333; }
   #contentBox .greekBox > dl > p { display: block; width: 100%; height: auto; margin-top: 50px; line-height: 30px; font-size: 1.1rem; color: #777; }
-  #contentBox .vsBox { width: 870px; height: 900px; margin: auto; }
-  #contentBox .vsBox > li { float: left; width: 290px; height: 100%; margin-top: 100px; }
-  #contentBox .vsBox > li > dl { width: 100%; height: 100%; }
+  #contentBox .vsBox { width: 870px; height: auto; margin: auto; }
+  #contentBox .vsBox > li { float: left; width: 290px; height: auto; margin-top: 10rem; }
+  #contentBox .vsBox > li > dl { width: 100%; height: auto; }
   #contentBox .vsBox > li > dl > dt { width: 150px; height: 150px; border-radius: 100%; background-color: #ccc; margin: auto; }
   #contentBox .vsBox > li > dl > dt > span { display: block; width: 100%; height: 100%; font-size: 1.5625rem; font-weight: bold; text-align: center; transform: translateY(35%); color: #333; }
   #contentBox .vsBox > li > dl > dd { width: 100%; height: 300px; margin-top: 100px; font-size: 1.2rem; line-height: 50px; text-align: center; color: #777; }
@@ -136,8 +137,9 @@ html { background-color: #f7f7f7; }
   #contentBox .vsBox > li:last-child > dl > dt { background-color: #B0D6FD; }
   #contentBox .vsBox > li:last-child > dl > dt > span { color: #1b398f; }
   #contentBox .vsBox > li:last-child > dl > dd { color: #333; }
+  #contentBox .vsBox::after { content: " "; display: block; width: 0; height: 0; clear: both; }
   #contentBox .iconBox { width: 100%; height: 1500px; }
-  #contentBox .iconBox > li { width: 100%; height: 140px; margin-top: 100px; margin-bottom: 100px; background-color: transparent; }
+  #contentBox .iconBox > li { width: 100%; height: 140px; margin-top: 10rem; margin-bottom: 100px; background-color: transparent; }
   #contentBox .iconBox > li > dl > div { float: left; width: 100px; height: 100px; margin-right: 80px; margin-top: 20px; border-radius: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: 80%; }
   #contentBox .iconBox > li > dl > dt { width: 100%; height: 80px; font-size: 1.5625rem; font-weight: bold; color: #333; line-height: 80px; }
   #contentBox .iconBox > li > dl > dd { width: 100%; height: 60px; font-size: 1.125rem; color: #777; }
@@ -147,8 +149,8 @@ html { background-color: #f7f7f7; }
   #contentBox .iconBox > li > dl > .icon_04 { background-color: #8D418C; background-image: url("../../../img/iodine_w.png"); background-size: 22%; }
   #contentBox .iconBox > li > dl > .icon_05 { border: 2px solid #1b398f; background-color: #fff; background-image: url("../../../img/calcium_b.png"); }
   #contentBox .iconBox > p { display: block; width: 100%; height: 30px; font-size: 1.1rem; color: #777; }
-  #contentBox .careBox { width: 100%; height: 685px; }
-  #contentBox .careBox > dl { width: 100%; height: 100%; }
+  #contentBox .careBox { width: 100%; height: auto; }
+  #contentBox .careBox > dl { width: 100%; height: auto; margin-top: 10rem; }
   #contentBox .careBox > dl > dt { position: relative; z-index: 1; width: 100%; height: 50px; font-size: 1.875rem; font-weight: bold; color: #1b398f; }
   #contentBox .careBox > dl > dt::before { content: " "; display: block; position: absolute; z-index: -1; top: 40%; left: 0.5%; width: 260px; height: 30%; background-color: rgba(200, 200, 200, 0.5); }
   #contentBox .careBox > dl > dd { width: 100%; height: auto; padding-top: 80px; box-sizing: border-box; line-height: 50px; font-size: 1.25rem; color: #777; }
@@ -166,7 +168,7 @@ html { background-color: #f7f7f7; }
   #headBox > .list > .small > .bar_view { display: none; position: fixed; z-index: 500; top: 0; right: 0; width: 300px; height: 100%; background-color: #fff; }
   #headBox > .list > .small > .bar_view > .ex { position: absolute; top: 3%; right: 1.5%; width: 50px; height: 50px; text-align: center; }
   #headBox > .list > .small > .bar_view > .ex > a { display: block; width: 100%; height: 100%; }
-  #headBox > .list > .small > .bar_view > .ex > a > i { font-size: 2.5rem; color: #1b398f; }
+  #headBox > .list > .small > .bar_view > .ex > a > i { font-size: 2rem; color: #1b398f; }
   #headBox > .list > .small > .bar_view > .bar_list { width: 100%; height: auto; margin-top: 100px; }
   #headBox > .list > .small > .bar_view > .bar_list > dl { width: 100%; height: auto; }
   #headBox > .list > .small > .bar_view > .bar_list > dl > dt { position: relative; width: 100%; height: 60px; padding-left: 20px; box-sizing: border-box; font-size: 1.2rem; text-transform: uppercase; }
@@ -188,20 +190,21 @@ html { background-color: #f7f7f7; }
   #footBox > .sns > li:nth-child(2) { width: 33px; height: 33px; background-image: url("../../img/facebook.png"); }
   #footBox > .sns > li:nth-child(3) { width: 38px; height: 30px; margin-top: 1px; margin-right: 0; background-image: url("../../img/youtube.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
-  #viewBox { width: 100%; height: 250px; background-image: url("../../../img/main_view_01.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 0 30%; }
+  #viewBox { width: 100%; height: 250px; background-image: url("../../../img/main_view_01.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: auto; text-align: center; font-size: 1.8rem; line-height: 330px; color: #fff; text-shadow: 3px 3px 3px rgba(51, 51, 51, 0.5); }
-  #contentBox { width: 100%; height: 4030px; padding: 200px 100px; margin: auto; box-sizing: border-box; background-color: #f7f7f7; }
-  #contentBox .conbox::after { content: " "; display: block; width: 100px; height: 100%; margin: auto; border-bottom: 2px solid #ccc; box-sizing: border-box; }
-  #contentBox .greekBox { width: 100%; height: 725px; }
-  #contentBox .greekBox > dl { width: 100%; height: 100%; }
-  #contentBox .greekBox > dl > dt { position: relative; z-index: 1; width: 100%; height: 50px; font-size: 1.875rem; font-weight: bold; color: #1b398f; }
-  #contentBox .greekBox > dl > dt::before { content: " "; display: block; position: absolute; z-index: -1; top: 40%; left: 0.5%; width: 170px; height: 30%; background-color: rgba(200, 200, 200, 0.5); }
+  #contentBox { width: 100%; height: auto; padding: 200px 100px; margin: auto; box-sizing: border-box; background-color: #f7f7f7; }
+  #contentBox .conbox { position: relative; padding-bottom: 10rem; }
+  #contentBox .conbox::before { content: " "; display: block; position: absolute; z-index: 100; width: 100px; height: auto; margin: auto; border-bottom: 2px solid #ccc; box-sizing: border-box; bottom: 0; left: 50%; transform: translateX(-50%); }
+  #contentBox .greekBox { width: 100%; height: auto; }
+  #contentBox .greekBox > dl { width: 100%; height: auto; }
+  #contentBox .greekBox > dl > dt { position: relative; z-index: 1; width: 100%; height: 50px; font-size: 1.875rem; text-align: center; font-weight: bold; color: #1b398f; }
+  #contentBox .greekBox > dl > dt::before { content: " "; display: block; position: absolute; z-index: -1; top: 40%; left: 50%; transform: translateX(-46%); width: 170px; height: 30%; background-color: rgba(200, 200, 200, 0.5); }
   #contentBox .greekBox > dl > dd { width: 100%; height: auto; padding-top: 80px; box-sizing: border-box; line-height: 50px; font-size: 1.25rem; color: #777; }
   #contentBox .greekBox > dl > dd > span { color: #333; }
   #contentBox .greekBox > dl > p { display: block; width: 100%; height: auto; margin-top: 50px; line-height: 30px; font-size: 1.1rem; color: #777; }
-  #contentBox .vsBox { width: 79.5vw; height: 900px; margin: auto; }
-  #contentBox .vsBox > li { float: left; width: 26.5vw; height: 100%; margin-top: 100px; }
-  #contentBox .vsBox > li > dl { width: 100%; height: 100%; }
+  #contentBox .vsBox { width: 79.5vw; height: auto; margin: auto; }
+  #contentBox .vsBox > li { float: left; width: 26.5vw; height: 100%; margin-top: 10rem; }
+  #contentBox .vsBox > li > dl { width: 100%; height: auto; }
   #contentBox .vsBox > li > dl > dt { width: 130px; height: 130px; border-radius: 100%; background-color: #ccc; margin: auto; }
   #contentBox .vsBox > li > dl > dt > span { display: block; width: 100%; height: 100%; font-size: 1.4rem; font-weight: bold; text-align: center; transform: translateY(35%); color: #333; }
   #contentBox .vsBox > li > dl > dd { width: 100%; height: 300px; margin-top: 100px; font-size: 1.2rem; line-height: 50px; text-align: center; color: #777; }
@@ -209,8 +212,9 @@ html { background-color: #f7f7f7; }
   #contentBox .vsBox > li:last-child > dl > dt { background-color: #B0D6FD; }
   #contentBox .vsBox > li:last-child > dl > dt > span { color: #1b398f; }
   #contentBox .vsBox > li:last-child > dl > dd { color: #333; }
-  #contentBox .iconBox { width: 100%; height: 1500px; }
-  #contentBox .iconBox > li { width: 100%; min-width: 610px; height: 140px; margin-top: 100px; margin-bottom: 100px; background-color: transparent; }
+  #contentBox .vsBox::after { content: " "; display: block; width: 0; height: 0; clear: both; }
+  #contentBox .iconBox { width: 100%; height: auto; }
+  #contentBox .iconBox > li { width: 100%; min-width: 610px; height: 140px; margin-top: 10rem; margin-bottom: 100px; background-color: transparent; }
   #contentBox .iconBox > li > dl > div { float: left; width: 100px; height: 100px; margin-right: 80px; margin-top: 20px; border-radius: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: 80%; }
   #contentBox .iconBox > li > dl > dt { width: 100%; height: 80px; font-size: 1.5625rem; font-weight: bold; color: #333; line-height: 80px; }
   #contentBox .iconBox > li > dl > dd { width: 100%; height: 60px; font-size: 1.125rem; color: #777; }
@@ -220,9 +224,164 @@ html { background-color: #f7f7f7; }
   #contentBox .iconBox > li > dl > .icon_04 { background-color: #8D418C; background-image: url("../../../img/iodine_w.png"); background-size: 22%; }
   #contentBox .iconBox > li > dl > .icon_05 { border: 2px solid #1b398f; background-color: #fff; background-image: url("../../../img/calcium_b.png"); }
   #contentBox .iconBox > p { display: block; width: 100%; min-width: 610px; height: 30px; font-size: 1.1rem; color: #777; }
-  #contentBox .careBox { width: 100%; height: 685px; }
-  #contentBox .careBox > dl { width: 100%; height: 100%; }
-  #contentBox .careBox > dl > dt { position: relative; z-index: 1; width: 100%; height: 50px; font-size: 1.875rem; font-weight: bold; color: #1b398f; }
-  #contentBox .careBox > dl > dt::before { content: " "; display: block; position: absolute; z-index: -1; top: 40%; left: 0.5%; width: 260px; height: 30%; background-color: rgba(200, 200, 200, 0.5); }
+  #contentBox .careBox { width: 100%; height: auto; }
+  #contentBox .careBox > dl { width: 100%; height: auto; margin-top: 10rem; }
+  #contentBox .careBox > dl > dt { position: relative; z-index: 1; width: 100%; height: 50px; font-size: 1.875rem; text-align: center; font-weight: bold; color: #1b398f; }
+  #contentBox .careBox > dl > dt::before { content: " "; display: block; position: absolute; z-index: -1; top: 40%; left: 50%; transform: translateX(-45%); width: 260px; height: 30%; background-color: rgba(200, 200, 200, 0.5); }
   #contentBox .careBox > dl > dd { width: 100%; min-width: 610px; height: auto; padding-top: 80px; box-sizing: border-box; line-height: 50px; font-size: 1.25rem; color: #777; }
+  #contentBox .careBox > dl > dd > em { color: #333; font-style: normal; } }
+
+@media screen and (max-width: 768px) and (min-width: 481px) { #headBox { position: fixed; z-index: 500; width: 100vw; min-width: 375px; height: 90px; padding: 20px 30px; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
+  #headBox > .list { width: 100%; height: 100%; }
+  #headBox > .list > h1 { float: left; width: 100px; height: 60px; }
+  #headBox > .list > h1 > a { display: block; width: 100%; height: 100%; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; }
+  #headBox > .list > .big { display: none; }
+  #headBox > .list > .small { float: right; width: 50px; height: 50px; }
+  #headBox > .list > .small > .bar { width: 100%; height: 100%; text-align: center; }
+  #headBox > .list > .small > .bar > a { display: block; width: 100%; height: 100%; background-color: transparent; }
+  #headBox > .list > .small > .bar > a > i { font-size: 2.5rem; line-height: 50px; color: #1b398f; }
+  #headBox > .list > .small > .bar_view { display: none; position: fixed; z-index: 500; top: 0; right: 0; width: 300px; height: 100%; background-color: #fff; }
+  #headBox > .list > .small > .bar_view > .ex { position: absolute; top: 3%; right: 1.5%; width: 50px; height: 50px; text-align: center; }
+  #headBox > .list > .small > .bar_view > .ex > a { display: block; width: 100%; height: 100%; }
+  #headBox > .list > .small > .bar_view > .ex > a > i { font-size: 2rem; color: #1b398f; }
+  #headBox > .list > .small > .bar_view > .bar_list { width: 100%; height: auto; margin-top: 100px; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl { width: 100%; height: auto; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dt { position: relative; width: 100%; height: 60px; padding-left: 20px; box-sizing: border-box; font-size: 1.2rem; text-transform: uppercase; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dt > a { display: block; width: 100%; height: 100%; line-height: 60px; color: #1b398f; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dt > a > i { position: absolute; width: 13px; height: 13px; right: 30px; top: 0; bottom: 0; margin: auto; font-size: 0.8rem; line-height: 13px; text-align: center; color: #777; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dt.action i { transform-origin: center; transform: rotateZ(180deg); }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dt:hover, #headBox > .list > .small > .bar_view > .bar_list > dl dt a:focus { font-weight: bold; outline: none; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dt:hover i, #headBox > .list > .small > .bar_view > .bar_list > dl dt a:focus i { color: #1b398f; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dd { display: none; width: 100%; height: 50px; padding-left: 20px; box-sizing: border-box; font-size: 1rem; background-color: rgba(140, 177, 200, 0.1); }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dd > a { display: block; width: 100%; height: 100%; line-height: 50px; color: #333; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dd a:hover, #headBox > .list > .small > .bar_view > .bar_list > dl dd a:focus { color: #1b398f; }
+  #headBox > .list > .small > .bar_view::before { content: " "; display: none; position: fixed; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); }
+  #footBox { width: 100%; min-width: 375px; height: 330px; padding: 30px 0 20px; box-sizing: border-box; background-color: #fff; }
+  #footBox > h2 { width: 110px; height: 60px; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > h2 > a { display: block; width: 100%; height: 100%; }
+  #footBox > p { width: 100%; height: 125px; margin: auto; padding: 20px 0; box-sizing: border-box; font-size: 1rem; text-align: center; line-height: 30px; }
+  #footBox > .sns { width: 140px; height: 52px; padding-top: 10px; box-sizing: border-box; margin: auto; }
+  #footBox > .sns > li { float: left; margin-right: 12px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > .sns > li:nth-child(1) { width: 33px; height: 33px; background-image: url("../../img/instagram.png"); }
+  #footBox > .sns > li:nth-child(2) { width: 33px; height: 33px; background-image: url("../../img/facebook.png"); }
+  #footBox > .sns > li:nth-child(3) { width: 38px; height: 30px; margin-top: 1px; margin-right: 0; background-image: url("../../img/youtube.png"); }
+  #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
+  #viewBox { width: 100%; height: 250px; background-image: url("../../../img/main_view_01.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
+  #viewBox h2 { width: 100%; height: auto; text-align: center; font-size: 1.8rem; line-height: 330px; color: #fff; text-shadow: 3px 3px 3px rgba(51, 51, 51, 0.5); }
+  #contentBox { width: 470px; height: auto; padding: 200px 0; margin: auto; box-sizing: border-box; background-color: #f7f7f7; }
+  #contentBox .conbox { position: relative; padding-bottom: 10rem; }
+  #contentBox .conbox::before { content: " "; display: block; position: absolute; z-index: 100; width: 100px; height: auto; margin: auto; border-bottom: 2px solid #ccc; box-sizing: border-box; bottom: 0; left: 50%; transform: translateX(-50%); }
+  #contentBox .greekBox { width: 100%; height: auto; }
+  #contentBox .greekBox > dl { width: 100%; height: auto; text-align: center; }
+  #contentBox .greekBox > dl > dt { position: relative; z-index: 1; width: 100%; height: 50px; font-size: 1.875rem; font-weight: bold; color: #1b398f; }
+  #contentBox .greekBox > dl > dt::before { content: " "; display: block; position: absolute; z-index: -1; top: 40%; left: 50%; transform: translateX(-46%); width: 170px; height: 30%; background-color: rgba(200, 200, 200, 0.5); }
+  #contentBox .greekBox > dl > dd { width: 450px; height: auto; padding-top: 80px; box-sizing: border-box; line-height: 50px; font-size: 1.25rem; color: #777; word-break: keep-all; }
+  #contentBox .greekBox > dl > dd > span { color: #333; }
+  #contentBox .greekBox > dl > p { display: block; width: 450px; height: auto; margin-top: 50px; line-height: 30px; font-size: 1.1rem; color: #777; }
+  #contentBox .vsBox { width: 79.5vw; height: auto; margin: auto; }
+  #contentBox .vsBox > li { float: left; width: 26.5vw; height: 100%; margin-top: 10rem; }
+  #contentBox .vsBox > li > dl { width: 100%; height: auto; }
+  #contentBox .vsBox > li > dl > dt { width: 130px; height: 130px; border-radius: 100%; background-color: #ccc; margin: auto; }
+  #contentBox .vsBox > li > dl > dt > span { display: block; width: 100%; height: 100%; font-size: 1.4rem; font-weight: bold; text-align: center; transform: translateY(35%); color: #333; }
+  #contentBox .vsBox > li > dl > dd { width: 100%; height: 300px; margin-top: 100px; font-size: 1.2rem; line-height: 50px; text-align: center; color: #777; }
+  #contentBox .vsBox > li > p { width: 100%; height: 150px; font-size: 2rem; font-weight: bold; text-align: center; transform: translateY(40%); color: #333; }
+  #contentBox .vsBox > li:last-child > dl > dt { background-color: #B0D6FD; }
+  #contentBox .vsBox > li:last-child > dl > dt > span { color: #1b398f; }
+  #contentBox .vsBox > li:last-child > dl > dd { color: #333; }
+  #contentBox .vsBox::after { content: " "; display: block; width: 0; height: 0; clear: both; }
+  #contentBox .iconBox { width: 100%; height: auto; }
+  #contentBox .iconBox > li { width: 100%; height: auto; margin-top: 10rem; margin-bottom: 10rem; background-color: transparent; }
+  #contentBox .iconBox > li > dl { width: 100%; height: auto; word-break: keep-all; text-align: center; }
+  #contentBox .iconBox > li > dl > div { width: 100px; height: 100px; margin: auto; margin-top: 20px; border-radius: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: 80%; }
+  #contentBox .iconBox > li > dl > dt { width: 100%; height: 80px; font-size: 1.5625rem; font-weight: bold; color: #333; line-height: 80px; }
+  #contentBox .iconBox > li > dl > dd { width: 450px; height: auto; margin: auto; font-size: 1.125rem; text-align: center; color: #777; }
+  #contentBox .iconBox > li > dl > .icon_01 { background-color: #1b398f; background-image: url("../../../img/protein_w.png"); }
+  #contentBox .iconBox > li > dl > .icon_02 { border: 2px solid #3B2A22; background-color: #fff; background-image: url("../../../img/probio.png"); }
+  #contentBox .iconBox > li > dl > .icon_03 { border: 2px solid #DC6129; background-color: #fff; background-image: url("../../../img/vitamin_c.png"); }
+  #contentBox .iconBox > li > dl > .icon_04 { background-color: #8D418C; background-image: url("../../../img/iodine_w.png"); background-size: 22%; }
+  #contentBox .iconBox > li > dl > .icon_05 { border: 2px solid #1b398f; background-color: #fff; background-image: url("../../../img/calcium_b.png"); }
+  #contentBox .iconBox > p { display: block; width: 450px; height: auto; margin: auto; margin-top: 10rem; font-size: 1.1rem; color: #777; }
+  #contentBox .careBox { width: 100%; height: auto; }
+  #contentBox .careBox > dl { width: 100%; height: auto; margin-top: 10rem; text-align: center; word-break: keep-all; }
+  #contentBox .careBox > dl > dt { position: relative; z-index: 1; width: 100%; height: 50px; font-size: 1.875rem; font-weight: bold; color: #1b398f; }
+  #contentBox .careBox > dl > dt::before { content: " "; display: block; position: absolute; z-index: -1; top: 40%; left: 50%; transform: translateX(-46%); width: 250px; height: 30%; background-color: rgba(200, 200, 200, 0.5); }
+  #contentBox .careBox > dl > dd { width: 450px; height: auto; padding-top: 80px; box-sizing: border-box; line-height: 50px; font-size: 1.25rem; color: #777; }
+  #contentBox .careBox > dl > dd > em { color: #333; font-style: normal; } }
+
+@media screen and (max-width: 480px) { #headBox { position: fixed; z-index: 500; width: 100vw; min-width: 375px; height: 90px; padding: 20px 30px; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
+  #headBox > .list { width: 100%; height: 100%; }
+  #headBox > .list > h1 { float: left; width: 100px; height: 60px; }
+  #headBox > .list > h1 > a { display: block; width: 100%; height: 100%; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; }
+  #headBox > .list > .big { display: none; }
+  #headBox > .list > .small { float: right; width: 50px; height: 50px; }
+  #headBox > .list > .small > .bar { width: 100%; height: 100%; text-align: center; }
+  #headBox > .list > .small > .bar > a { display: block; width: 100%; height: 100%; background-color: transparent; }
+  #headBox > .list > .small > .bar > a > i { font-size: 2.5rem; line-height: 50px; color: #1b398f; }
+  #headBox > .list > .small > .bar_view { display: none; position: fixed; z-index: 500; top: 0; right: 0; width: 300px; height: 100%; background-color: #fff; }
+  #headBox > .list > .small > .bar_view > .ex { position: absolute; top: 3%; right: 1.5%; width: 50px; height: 50px; text-align: center; }
+  #headBox > .list > .small > .bar_view > .ex > a { display: block; width: 100%; height: 100%; }
+  #headBox > .list > .small > .bar_view > .ex > a > i { font-size: 2rem; color: #1b398f; }
+  #headBox > .list > .small > .bar_view > .bar_list { width: 100%; height: auto; margin-top: 100px; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl { width: 100%; height: auto; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dt { position: relative; width: 100%; height: 60px; padding-left: 20px; box-sizing: border-box; font-size: 1.2rem; text-transform: uppercase; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dt > a { display: block; width: 100%; height: 100%; line-height: 60px; color: #1b398f; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dt > a > i { position: absolute; width: 13px; height: 13px; right: 30px; top: 0; bottom: 0; margin: auto; font-size: 0.8rem; line-height: 13px; text-align: center; color: #777; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dt.action i { transform-origin: center; transform: rotateZ(180deg); }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dt:hover, #headBox > .list > .small > .bar_view > .bar_list > dl dt a:focus { font-weight: bold; outline: none; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dt:hover i, #headBox > .list > .small > .bar_view > .bar_list > dl dt a:focus i { color: #1b398f; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dd { display: none; width: 100%; height: 50px; padding-left: 20px; box-sizing: border-box; font-size: 1rem; background-color: rgba(140, 177, 200, 0.1); }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dd > a { display: block; width: 100%; height: 100%; line-height: 50px; color: #333; }
+  #headBox > .list > .small > .bar_view > .bar_list > dl > dd a:hover, #headBox > .list > .small > .bar_view > .bar_list > dl dd a:focus { color: #1b398f; }
+  #headBox > .list > .small > .bar_view::before { content: " "; display: none; position: fixed; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); }
+  #footBox { width: 100%; min-width: 375px; height: 330px; padding: 30px 0 20px; box-sizing: border-box; background-color: #fff; }
+  #footBox > h2 { width: 110px; height: 60px; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > h2 > a { display: block; width: 100%; height: 100%; }
+  #footBox > p { width: 100%; height: 125px; margin: auto; padding: 20px 0; box-sizing: border-box; font-size: 1rem; text-align: center; line-height: 30px; }
+  #footBox > .sns { width: 140px; height: 52px; padding-top: 10px; box-sizing: border-box; margin: auto; }
+  #footBox > .sns > li { float: left; margin-right: 12px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > .sns > li:nth-child(1) { width: 33px; height: 33px; background-image: url("../../img/instagram.png"); }
+  #footBox > .sns > li:nth-child(2) { width: 33px; height: 33px; background-image: url("../../img/facebook.png"); }
+  #footBox > .sns > li:nth-child(3) { width: 38px; height: 30px; margin-top: 1px; margin-right: 0; background-image: url("../../img/youtube.png"); }
+  #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
+  #viewBox { width: 100%; height: 250px; background-image: url("../../../img/main_view_01.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
+  #viewBox h2 { width: 100%; height: auto; text-align: center; font-size: 1.5rem; line-height: 330px; color: #fff; text-shadow: 2px 2px 2px rgba(51, 51, 51, 0.5); }
+  #contentBox { width: 350px; height: auto; padding: 150px 0; margin: auto; box-sizing: border-box; background-color: #f7f7f7; }
+  #contentBox .conbox { position: relative; padding-bottom: 10rem; }
+  #contentBox .conbox::before { content: " "; display: block; position: absolute; z-index: 100; width: 100px; height: auto; margin: auto; border-bottom: 2px solid #ccc; box-sizing: border-box; bottom: 0; left: 50%; transform: translateX(-50%); }
+  #contentBox .greekBox { width: 100%; height: auto; }
+  #contentBox .greekBox > dl { width: 100%; height: auto; text-align: center; }
+  #contentBox .greekBox > dl > dt { position: relative; z-index: 1; width: 100%; height: 50px; font-size: 1.7rem; font-weight: bold; color: #1b398f; }
+  #contentBox .greekBox > dl > dt::before { content: " "; display: block; position: absolute; z-index: -1; top: 40%; left: 50%; transform: translateX(-45%); width: 150px; height: 30%; background-color: rgba(200, 200, 200, 0.5); }
+  #contentBox .greekBox > dl > dd { width: 100%; height: auto; padding-top: 80px; box-sizing: border-box; line-height: 50px; font-size: 1.25rem; color: #777; word-break: keep-all; }
+  #contentBox .greekBox > dl > dd > span { color: #333; }
+  #contentBox .greekBox > dl > p { display: block; width: 100%; height: auto; margin-top: 50px; line-height: 30px; font-size: 1.1rem; color: #777; }
+  #contentBox .vsBox { width: 100%; height: auto; margin: auto; }
+  #contentBox .vsBox > li { float: left; width: 40%; height: 100%; margin-top: 10rem; }
+  #contentBox .vsBox > li > dl { width: 100%; height: auto; }
+  #contentBox .vsBox > li > dl > dt { width: 100px; height: 100px; border-radius: 100%; background-color: #ccc; margin: auto; }
+  #contentBox .vsBox > li > dl > dt > span { display: block; width: 100%; height: 100%; font-size: 1.1rem; font-weight: bold; text-align: center; transform: translateY(33%); color: #333; }
+  #contentBox .vsBox > li > dl > dd { width: 100%; height: 300px; margin-top: 100px; font-size: 1rem; line-height: 50px; text-align: center; color: #777; }
+  #contentBox .vsBox > li > p { width: 100%; height: auto; margin-top: 1.5rem; font-size: 2rem; font-weight: bold; text-align: center; transform: translateY(40%); color: #333; }
+  #contentBox .vsBox > li:nth-child(2) { width: 20%; }
+  #contentBox .vsBox > li:last-child > dl > dt { background-color: #B0D6FD; }
+  #contentBox .vsBox > li:last-child > dl > dt > span { color: #1b398f; }
+  #contentBox .vsBox > li:last-child > dl > dd { color: #333; }
+  #contentBox .vsBox::after { content: " "; display: block; width: 0; height: 0; clear: both; }
+  #contentBox .iconBox { width: 350px; height: auto; margin: auto; }
+  #contentBox .iconBox > li { width: 100%; height: auto; margin-top: 10rem; margin-bottom: 10rem; background-color: transparent; }
+  #contentBox .iconBox > li > dl { width: 100%; height: auto; word-break: keep-all; text-align: center; }
+  #contentBox .iconBox > li > dl > div { width: 100px; height: 100px; margin: auto; margin-top: 20px; border-radius: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: 80%; }
+  #contentBox .iconBox > li > dl > dt { width: 100%; height: auto; font-size: 1.5625rem; font-weight: bold; color: #333; line-height: 40px; margin: 2rem 0; }
+  #contentBox .iconBox > li > dl > dd { width: 100%; height: auto; margin: auto; font-size: 1.125rem; text-align: center; color: #777; }
+  #contentBox .iconBox > li > dl > .icon_01 { background-color: #1b398f; background-image: url("../../../img/protein_w.png"); }
+  #contentBox .iconBox > li > dl > .icon_02 { border: 2px solid #3B2A22; background-color: #fff; background-image: url("../../../img/probio.png"); }
+  #contentBox .iconBox > li > dl > .icon_03 { border: 2px solid #DC6129; background-color: #fff; background-image: url("../../../img/vitamin_c.png"); }
+  #contentBox .iconBox > li > dl > .icon_04 { background-color: #8D418C; background-image: url("../../../img/iodine_w.png"); background-size: 22%; }
+  #contentBox .iconBox > li > dl > .icon_05 { border: 2px solid #1b398f; background-color: #fff; background-image: url("../../../img/calcium_b.png"); }
+  #contentBox .iconBox > p { display: block; width: 350px; height: auto; margin: auto; margin-top: 10rem; font-size: 1.1rem; color: #777; }
+  #contentBox .careBox { width: 100%; height: auto; }
+  #contentBox .careBox > dl { width: 100%; height: auto; margin-top: 10rem; text-align: center; word-break: keep-all; }
+  #contentBox .careBox > dl > dt { position: relative; z-index: 1; width: 100%; height: 50px; font-size: 1.7rem; font-weight: bold; color: #1b398f; }
+  #contentBox .careBox > dl > dt::before { content: " "; display: block; position: absolute; z-index: -1; top: 40%; left: 50%; transform: translateX(-46%); width: 220px; height: 30%; background-color: rgba(200, 200, 200, 0.5); }
+  #contentBox .careBox > dl > dd { width: 100%; height: auto; padding-top: 80px; box-sizing: border-box; line-height: 50px; font-size: 1.25rem; color: #777; }
   #contentBox .careBox > dl > dd > em { color: #333; font-style: normal; } }

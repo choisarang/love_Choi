@@ -64,6 +64,14 @@
     $(this).removeClass('active');
   });
 
+
+  // 해당페이지 선택효과 =====================================
+  gnbLi.eq(1).find('dt').children('a').addClass('select');
+  gnbLi.eq(1).find('dd').children('a').eq(0).addClass('select');
+  gnbLi.eq(1).find('dd').css({backgroundColor:"rgba(140, 177, 200, 0.1)"})
+
+  
+
   // headBox_small------------------------------------------
 const small = $('.small');
 const barLink = small.find('a');
@@ -78,13 +86,35 @@ ex.on('click', function(){
   barView.stop().fadeOut()
 });
 
-barLink.on('mouseenter focus', function(e){
-  e.preventDefault()
-  $(this).css({color:"$main",fontWeight:"bold"})
+
+//accodian menu ===================
+const barList = $('.bar_list');
+const barDl = barList.children('dl');
+const barDt = barDl.children('dt');
+const barDd = barDl.children('dd');
+const barDdLink = barDd.children('a')
+
+barDt.on('click', function(){
+  let dtC = $(this).hasClass('action');
+
+  if(dtC){
+    $(this).removeClass('action');
+    $(this).siblings('dd').slideUp();
+  }else{
+    $(this).addClass('action');
+    $(this).siblings('dd').stop().slideDown();
+  }
 });
 
-barLink.on('mouseleave blur' ,function(e){
-  e.preventDefault()
-  $(this).css({color:"$textem",fontWeight:"normal"})
+barDdLink.on('focus',function(){
+  $(this).parent('dd').siblings('dt').css({fontWeight:"bold"});
+  $(this).parent('dd').siblings('dt').find('i').css({color:"#1b398f"});
 });
+
+barDdLink.on('blur', function(){
+  $(this).parent('dd').siblings('dt').css({fontWeight:"normal"});
+  $(this).parent('dd').siblings('dt').find('i').css({color:"#777"});
+})
+
+
 })(jQuery);

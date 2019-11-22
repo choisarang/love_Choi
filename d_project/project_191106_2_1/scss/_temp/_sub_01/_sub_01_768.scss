@@ -1,25 +1,25 @@
-// _sub_01_970.scss
+// _sub_01_768.scss
 
-@media screen and (max-width:970px) and (min-width:769px) {
+@media screen and (max-width:768px) and (min-width:481px) {
 
-  @import "../_h_f/h_f_970";
+  @import "../_h_f/h_f_m";
 
 
   #viewBox{width: 100%; height: 250px; background-image: url("../../../img/main_view_01.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed;
     h2{width: 100%; height: auto; text-align: center; font-size: 1.8rem; line-height: 330px; color: #fff; text-shadow: 3px 3px 3px rgba(51, 51, 51, 0.5);}
   }
 
-  #contentBox{width: 100%; height: auto; padding: 200px 100px; margin: auto; box-sizing: border-box; background-color: $bg;
+  #contentBox{width: 470px; height: auto; padding: 200px 0; margin: auto; box-sizing: border-box; background-color: $bg;
     .conbox{position: relative; padding-bottom: 10rem;}
     .conbox::before{content: " "; display: block; position: absolute; z-index: 100; width: 100px; height: auto; margin: auto; border-bottom: 2px solid #ccc; box-sizing: border-box; bottom: 0; left: 50%; transform: translateX(-50%);}
     .greekBox{width: 100%; height: auto;
-      >dl{width: 100%; height: auto;
-        >dt{position: relative; z-index: 1; width: 100%; height: 50px; font-size: 1.875rem; text-align: center; font-weight: bold; color: $main;}
+      >dl{width: 100%; height: auto; text-align: center;
+        >dt{position: relative; z-index: 1; width: 100%; height: 50px; font-size: 1.875rem; font-weight: bold; color: $main;}
         >dt::before{content: " "; display: block; position: absolute; z-index: -1; top: 40%; left: 50%; transform: translateX(-46%); width: 170px; height: 30%; background-color: rgba(200, 200, 200, 0.5)}
-        >dd{width: 100%; height: auto; padding-top: 80px; box-sizing: border-box; line-height: 50px; font-size: 1.25rem; color: $text;
+        >dd{width: 450px; height: auto; padding-top: 80px; box-sizing: border-box; line-height: 50px; font-size: 1.25rem; color: $text; word-break: keep-all;
           >span{color: $textem;}
         }// dd
-        >p{display: block; width: 100%; height: auto; margin-top: 50px; line-height: 30px; font-size: 1.1rem; color: $text;}
+        >p{display: block; width: 450px; height: auto; margin-top: 50px; line-height: 30px; font-size: 1.1rem; color: $text;}
       }// dl
     }// .greekBox
     .vsBox{width: 79.5vw; height: auto; margin: auto;
@@ -42,11 +42,11 @@
     .vsBox::after{content: " "; display: block; width: 0; height: 0; clear: both;}
 
     .iconBox{width: 100%; height: auto;
-      >li{width: 100%; min-width: 610px; height: 140px; margin-top: 10rem; margin-bottom: 100px; background-color: transparent;
-        >dl{
-          >div{float: left; width: 100px; height: 100px; margin-right: 80px; margin-top: 20px; border-radius: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: 80%;}
+      >li{width: 100%; height: auto; margin-top: 10rem; margin-bottom: 10rem; background-color: transparent;
+        >dl{width: 100%; height: auto; word-break: keep-all; text-align: center;
+          >div{width: 100px; height: 100px; margin:auto; margin-top: 20px; border-radius: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: 80%;}
           >dt{width: 100%; height: 80px; font-size: 1.5625rem; font-weight: bold; color: $textem; line-height: 80px;}
-          >dd{width: 100%; height: 60px; font-size: 1.125rem; color: $text;}
+          >dd{width: 450px; height: auto; margin: auto; font-size: 1.125rem; text-align: center; color: $text;}
           >.icon_01{background-color: $main; background-image: url("../../../img/protein_w.png");}
           >.icon_02{border: 2px solid #3B2A22; background-color: #fff; background-image: url("../../../img/probio.png");}
           >.icon_03{border: 2px solid #DC6129; background-color: #fff; background-image: url("../../../img/vitamin_c.png");}
@@ -54,13 +54,13 @@
           >.icon_05{border: 2px solid $main; background-color: #fff; background-image: url("../../../img/calcium_b.png");}
         }// dl  
       }// li
-      >p{display: block; width: 100%; min-width: 610px; height: 30px; font-size: 1.1rem; color: $text;}
+      >p{display: block; width: 450px; height: auto; margin: auto; margin-top:10rem; font-size: 1.1rem; color: $text;}
     }// .iconBox
     .careBox{width: 100%; height: auto;
-      >dl{width: 100%; height: auto; margin-top: 10rem;
-        >dt{position: relative; z-index: 1; width: 100%; height: 50px; font-size: 1.875rem; text-align: center; font-weight: bold; color: $main;}
-        >dt::before{content: " "; display: block; position: absolute; z-index: -1; top: 40%; left: 50%; transform: translateX(-45%); width: 260px; height: 30%; background-color: rgba(200, 200, 200, 0.5)}
-        >dd{width: 100%; min-width: 610px; height: auto; padding-top: 80px; box-sizing: border-box; line-height: 50px; font-size: 1.25rem; color: $text;
+      >dl{width: 100%; height: auto; margin-top: 10rem; text-align: center; word-break: keep-all;
+        >dt{position: relative; z-index: 1; width: 100%; height: 50px; font-size: 1.875rem; font-weight: bold; color: $main;}
+        >dt::before{content: " "; display: block; position: absolute; z-index: -1; top: 40%; left: 50%; transform: translateX(-46%); width: 250px; height: 30%; background-color: rgba(200, 200, 200, 0.5)}
+        >dd{width: 450px; height: auto; padding-top: 80px; box-sizing: border-box; line-height: 50px; font-size: 1.25rem; color: $text;
           >em{color: $textem; font-style: normal;}
         }//dd
       }// dl

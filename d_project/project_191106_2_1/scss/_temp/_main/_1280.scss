@@ -6,7 +6,7 @@
 
 // viewBox ============================================
 #viewBox{position: relative; width: 100%; height: 100%;
-  >.indicator{position: absolute; z-index: 100; left: 0; right: 0; bottom: 0; top: 40vw; margin: auto; width: 600px; height: 10px;
+  >.indicator{position: absolute; z-index: 100; left: 0; right: 0; bottom: 0; top: 70%; margin: auto; width: 600px; height: 10px;
     >li{float: left; width: 200px; height: 100%; background-color: #c8c8c8;
       >a{display: block; width: 100%; height: 100%; outline: none;}
       >a.action{background-color: #fff; outline: none;}
@@ -14,16 +14,16 @@
   }// .indicator
   >.product{width: 100%; height: 100%;
     >li{float: left; width: 100%; height: 100%; padding: 250px 12.3vw; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat;
-      >.text{text-shadow: 2px 2px 1px rgba(255,255,255,0.5);}
+      >.text{position: relative; top: 50%; transform: translateY(-50%); text-shadow: 2px 2px 1px rgba(255,255,255,0.5);}
     }// li
-    >.slide_01{background-size: 114.5vw 77.2vw;
+    >.slide_01{background-size: cover;
       >.text{width: 100%; height: 200px; font-size: 2rem; text-transform: uppercase;
         >em{width: 100%; height: 40px; font-style: inherit; color: $textem;}
         >p{width: 100%; height: 120px; padding: 1rem 0; box-sizing: border-box; font-size: 5.3125rem; text-transform: capitalize; font-weight: bold; color: $main;}
         >span{width: 100%; height: 40px; color: $text;}
       }// .text
     }// .slide_01
-    >.slide_02{background-color: $bg; background-position: 0 30%; background-size: 100vw 76.8vw;
+    >.slide_02{background-color: $bg; background-position: 50% 50%; background-size: cover;
       >.text{width: 100%; height: 250px;
         >p{width: 100%; height: 200px; color: $main; font-size: 5.3125rem; text-transform: uppercase; font-weight: bold;}
         >span{display: block; width: 100px; height: 40px; padding-left: 10px; box-sizing: border-box; line-height: 40px; color: #fff; font-size: 1.875rem; text-shadow: none; background-color: $main;}
@@ -53,7 +53,7 @@
 // conBox ============================================
 #conBox{width: 100%; height: auto;
   >article{width: 100%; height: 100vh; padding: 80px 0; box-sizing: border-box;
-    >.title{width: 970px; height: auto; margin: auto; margin-bottom: 70px;
+    >.title{width: 950px; height: auto; margin: auto; margin-bottom: 70px;
       >p{font-size: 2.5rem; color: $main; font-weight: bold; text-transform: uppercase;}
       >span{font-size: 1.5rem; color: $main;}
     }// .title
@@ -127,7 +127,7 @@
         }// .prev
       }// .arrow_btn
     }// .menu_slide  
-    >.menu_btn{width: 970px; height: 40px; margin: auto;
+    >.menu_btn{width: 950px; height: 40px; margin: auto;
       >.menu{width: 130px; height: 40px; border-radius: 10px; border: 3px solid $main; box-sizing: border-box; color: $main; font-size: 1rem; text-align: center; background-color: transparent;}
         >.menu:hover,.menu:focus{color: #fff; background-color: $main;}
     }// .menu_btn

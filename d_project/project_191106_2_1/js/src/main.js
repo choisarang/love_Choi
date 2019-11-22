@@ -1,6 +1,60 @@
 (function($){
-$('html, body').stop().animate({scrollTop:0}, 500);
+
 const wrap = $('#wrap');
+// 각 디바이스별 크기 기준 설정
+let mobile=480, tablet=768, laptop=970, pc=1280, pcfull=1920;
+// 기본 디바이스 명칭설정
+const device = ['mobile', 'tablet', 'laptop', 'pc', 'pcfull'];
+
+let nowSize;
+let beforeW = $(window).outerWidth(true);//true쓰면 margin값까지 포함
+
+// 디바이스 크기 체크
+const DeviceSet = function(winW){
+  if(winW <= mobile){
+    nowSize = device[0];
+  }else if(winW > mobile && winW <= tablet){
+    nowSize = device[1];
+  }else if(winW > tablet && winW <= laptop){
+    nowSize = device[2];
+  }else if(winW > laptop && winW <= pc){
+    nowSize = device[3];
+  }else{
+    nowSize = device[4];
+  }
+  return nowSize;
+}
+let beforeDevice = DeviceSet(beforeW);
+console.log(nowSize);
+// DeviceDate(beforeDevice);
+
+// 파이어폭스인가 아닌가 판단 -------------------------------------
+let browser = navigator.userAgent.toLowerCase();
+if(browser.indexOf('firefox') !== -1){
+  nowb = 'firefox';
+}else{
+  nowb = 'other';
+}
+console.log(nowb);
+
+// 사이즈 변경시마다 새로고침 -------------------------------------------
+
+$(window).on('resize', function(){
+  let afterW = $(window).outerWidth(true);
+  let afterDecive = DeviceSet(afterW);
+
+    if(beforeDevice !== afterDecive){
+      if(nowb == 'firefox'){
+        window.location = window.location;
+      }else{
+        location.reload();
+      }
+    // location.reload();
+    window.location = window.location; //firefox가 안되서 강제 적용
+    }
+  });
+
+
 
 // headBox -------------------------------------------
 const headBox = wrap.children('#headBox');
@@ -60,6 +114,7 @@ gnbDd.children('a').on('mouseenter focus', function(){
 gnbDd.children('a').on('mouseleave blur', function(){
   $(this).removeClass('active');
 });
+
 
 // headBox_small------------------------------------------
 const small = $('.small');
@@ -176,7 +231,7 @@ indiLink.on('focus click', function(e){
     clearInterval(go)
   };
 
-  slideGo();
+  // slideGo();
   
 // brandBox -------------------------------------------
 const brandBox = $('#brandBox');
@@ -256,7 +311,6 @@ const snsLiLen = snsLi.length;
 for(let i=0; i<snsLiLen; i++){
   snsLi.eq(i).css({backgroundImage:'url("../img/sns_0' + (i+1) + '.jpg")'})
 }
-// -------------------------------------------
 // 화면 스크롤 -------------------------------------------
 
 const scroll = $('.scroll');
@@ -264,7 +318,7 @@ const scVal = [];
 for(let i=0; i<scroll.length; i++){
   let j = scroll.eq(i).offset().top;
   scVal.push(j);
-
+  
 }
 // console.log(scVal);
 
@@ -282,34 +336,36 @@ $(window).on('mousewheel DOMMouseScroll', function(e){
     delta = oeDelta * -1;
   }
   console.log(delta)
-
-  if(delta>0){
-    wheeln++;
-    if(wheeln>=scVal.length){
-      wheeln = scVal.length-1
-    }
-  }else{
-    wheeln--;
-    if(wheeln<=0){
-      wheeln=0;
-    }
-  }
-
   if(rel){
     rel = false;
-    $('html, body').stop().animate({scrollTop:scVal[wheeln]+'px'}, 500, function(){
-      rel = true;
-    });
-  }
-});
-
-// sidebar 이동 -------------------------------------------
+    
+    if(delta>0){
+      wheeln++;
+      if(wheeln>=scVal.length){
+        wheeln = scVal.length-1
+      }
+    }else{
+      wheeln--;
+      if(wheeln<=0){
+        wheeln=0;
+      }
+    }
+    
+    $('html, body').stop().animate({scrollTop:scVal[wheeln]+'px'}, 700, function(){
+      // setTimeout(function(){
+        rel = true;
+        // },1000);
+        
+      });
+    }
+  });
+  // -------------------------------------------
+  
+  // sidebar 이동 -------------------------------------------
 sideLink.on('click', function(){
   wheeln = $(this).parent().index();
   $('html, body').stop().animate({scrollTop:scVal[wheeln]})
 })
-
-// -------------------------------------------
 
 
 })(jQuery);
