@@ -6,44 +6,44 @@
 
 // viewBox ============================================
 #viewBox{position: relative; width: 100%; height: 100%;
-  >.indicator{position: absolute; z-index: 100; left: 0; right: 0; bottom: 150px; margin: auto; width: 600px; height: 10px;
-    >li{float: left; width: 200px; height: 100%; background-color: #c8c8c8;
+  >.indicator{position: absolute; z-index: 100; left: 0; right: 0; bottom: 9.375rem; margin: auto; width: 37.5rem; height: 0.625rem;
+    >li{float: left; width: 12.5rem; height: 100%; background-color: #c8c8c8;
       >a{display: block; width: 100%; height: 100%; outline: none;}
       >a.action{background-color: #fff; outline: none;}
     }// li
   }// .indicator
   >.product{width: 100%; height: 100%;
-    >li{float: left; width: 100%; height: 100%; padding: 360px 17vw; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat;
-      >.text{position: relative; top: 50%; transform: translateY(-50%); text-shadow: 2px 2px 1px rgba(255,255,255,0.5);}
+    >li{float: left; width: 100%; height: 100%; padding: 22.5rem 17vw; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat;
+      >.text{position: relative; top: 50%; transform: translateY(-50%); text-shadow: 0.125rem 0.125rem 0.0625rem rgba(255,255,255,0.5);}
     }// li
     >.slide_01{background-size: 114.5vw 77.2vw;
-      >.text{width: 100%; height: 200px; font-size: 2.1875rem; text-transform: uppercase;
-        >em{width: 100%; height: 40px; font-style: inherit; color: $textem;}
-        >p{width: 100%; height: 120px; padding: 1rem 0; box-sizing: border-box; font-size: 5.3125rem; text-transform: capitalize; font-weight: bold; color: $main;}
-        >span{width: 100%; height: 40px; color: $text;}
+      >.text{width: 100%; height: 12.5rem; font-size: 2.1875rem; text-transform: uppercase;
+        >em{width: 100%; height: 2.5rem; font-style: inherit; color: $textem;}
+        >p{width: 100%; height: 7.5rem; padding: 1rem 0; box-sizing: border-box; font-size: 5.3125rem; text-transform: capitalize; font-weight: bold; color: $main;}
+        >span{width: 100%; height: 2.5rem; color: $text;}
       }// .text
     }// .slide_01
     >.slide_02{background-color: $bg; background-position: 0 30%; background-size: 100vw 76.8vw;
-      >.text{width: 100%; height: 250px;
-        >p{width: 100%; height: 200px; color: $main; font-size: 5.3125rem; text-transform: uppercase; font-weight: bold;}
-        >span{display: block; width: 100px; height: 40px; line-height: 40px; text-align: center; margin-left: 10px; color: #fff; font-size: 1.875rem; background-color: $main; text-shadow: none;}
+      >.text{width: 100%; height: 15.625rem;
+        >p{width: 100%; height: 12.5rem; color: $main; font-size: 5.3125rem; text-transform: uppercase; font-weight: bold;}
+        >span{display: block; width: 6.25rem; height: 2.5rem; line-height: 2.5rem; text-align: center; margin-left: 0.625rem; color: #fff; font-size: 1.875rem; background-color: $main; text-shadow: none;}
       }// .text
     }// slide_02
     >.slide_03{background-color: #EBEEFF;
-      >.text{width: 100%; height: 200px;
+      >.text{width: 100%; height: 12.5rem;
         >p{width: 100%; height: 100%; color: $main; font-size: 5.3125rem; font-weight: bold; text-align: center;
           >span{color: $yellow;}
         }// p
       }// .text
     }// slide_03
   }// .product
-  >.side_bar{position: fixed; z-index: 400; top: 0; bottom: 0; right: 8.6vw; margin: auto; width: 40px; height: 300px;
-    >li{width: 35px; height: 35px; border-radius: 100%; margin-bottom: 45px; background-color: #ccc;
+  >.side_bar{position: fixed; z-index: 400; top: 0; bottom: 0; right: 8.6vw; margin: auto; width: 2.5rem; height: 18.75rem;
+    >li{width: 2.1875rem; height: 2.1875rem; border-radius: 100%; margin-bottom: 2.8125rem; background-color: #ccc;
       >a{position: relative; display: block; width: 100%; height: 100%; border-radius: 100%;
-        >span{position: absolute; display: block; right: 50px; width: 0; height: 40px; border-radius: 10px; font-size: 1.25rem; color: #fff; text-transform: uppercase; font-weight: bold; text-align: center;  line-height: 40px; background-color: $main; overflow: hidden; transition: all 300ms ease;}
+        >span{position: absolute; display: block; right: 3.125rem; width: 0; height: 2.5rem; border-radius: 0.625rem; font-size: 1.25rem; color: #fff; text-transform: uppercase; font-weight: bold; text-align: center;  line-height: 2.5rem; background-color: $main; overflow: hidden; transition: all 300ms ease;}
       }// a
-      >a.action{background-color: #fff; box-shadow: 0 0 7px rgba(0, 0, 0, 0.5); outline: none;
-        >span{display: block; width: 150px;}
+      >a.action{background-color: #fff; box-shadow: 0 0 0.4375rem rgba(0, 0, 0, 0.5); outline: none;
+        >span{display: block; width: 9.375rem;}
       }// a.action
     }// li
     >li:last-child{margin-bottom:0;}
@@ -52,23 +52,23 @@
 
 // conBox ============================================
 #conBox{width: 100%; height: auto;
-  >article{width: 100%; height: 100vh; padding: 100px 0; box-sizing: border-box;
-    >.title{width: 1260px; height: auto; margin: auto; margin-bottom: 100px;
+  >article{width: 100%; height: 100vh; padding: 6.25rem 0; box-sizing: border-box;
+    >.title{width: 78.75rem; height: auto; margin: auto; margin-bottom: 6.25rem;
       >p{font-size: 2.8125rem; color: $main; font-weight: bold; text-transform: uppercase;}
       >span{font-size: 1.875rem; color: $main;}
     }// .title
   }// article
   >#brandBox{background-color: $bg;
-    >ul{width: 1260px; height: 460px; margin: auto;
-      >li{position: relative; float: left; width: 420px; height: 460px; background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;
+    >ul{width: 78.75rem; height: 28.75rem; margin: auto;
+      >li{position: relative; float: left; width: 26.25rem; height: 28.75rem; background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;
         >a{display: block; width: 100%; height: 100%;
-          >.inner{position: absolute; width: 250px; height: 270px; top: 40%; left: 0; right: 0; margin: auto;
-            >.icon{width: 120px; height: 120px; border-radius: 100%; margin: auto; background-color: #fff; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
+          >.inner{position: absolute; width: 15.625rem; height: 16.875rem; top: 40%; left: 0; right: 0; margin: auto;
+            >.icon{width: 7.5rem; height: 7.5rem; border-radius: 100%; margin: auto; background-color: #fff; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
             >.icon_01{background-color: $main; background-image: url("../../img/neck_w.png");}
             >.icon_02{background-color: #697F24; background-image: url("../../img/spoon_w.png");}
             >.icon_03{background-color: #8CB1C8; background-image: url("../../img/store.png");}
-            >dl{display: none; width: 100%; height: 100px; margin-top: 1.5rem;
-              >dt{width: 100%; height: auto; margin-bottom: 20px; font-size: 2rem; color: #fff; text-transform: uppercase; text-decoration: underline; text-align: center;}
+            >dl{display: none; width: 100%; height: 6.25rem; margin-top: 1.5rem;
+              >dt{width: 100%; height: auto; margin-bottom: 1.25rem; font-size: 2rem; color: #fff; text-transform: uppercase; text-decoration: underline; text-align: center;}
               >dd{font-size: 1.25rem; color: #fff; text-align: center;}
             }// dl
           }// .inner
@@ -95,28 +95,28 @@
     }// ul
   }// #brandBox
   >#menuBox{position: relative; background-color: $bg; overflow: hidden;
-    >.menu_slide{position: relative; width: 100%; height: 370px;
-      $liLen:5; $liWidth:320px; $marginR:80px;
-      >ul{position: absolute; left:50%; transform:translateX(-50%); width: ($liWidth + $marginR) * $liLen - $marginR; height: 370px; margin: auto;
-        >li{float: left; width: 320px; height: 370px; margin-right: 80px; border: 1px solid #ccc; box-sizing: border-box; background-size: 45%; background-position: 50% 50%; background-repeat: no-repeat; background-color: #fff; opacity: 0.5;
+    >.menu_slide{position: relative; width: 100%; height: 23.125rem;
+      $liLen:5; $liWidth:20rem; $marginR:5rem;
+      >ul{position: absolute; left:50%; transform:translateX(-50%); width: ($liWidth + $marginR) * $liLen - $marginR; height: 23.125rem; margin: auto;
+        >li{float: left; width: 20rem; height: 23.125rem; margin-right: 5rem; border: 0.0625rem solid #ccc; box-sizing: border-box; background-size: 45%; background-position: 50% 50%; background-repeat: no-repeat; background-color: #fff; opacity: 0.5;
           transition:all 300ms ease;
           &:last-child{margin-right:0;}
           >a{display: none; width: 100%; height: 100%;
-            >em{display: block; width: 90%; height: 50px; margin: auto; margin-top: 30px; padding-bottom: 10px;box-sizing: border-box; font-size: 1.5rem; font-style: inherit; color: #fff; font-weight: bold; text-align: center; border-bottom: 2px solid #fff;}
-            >p{width: 100%; height: 180px; margin-top: 20px; font-size: 1rem; color: #fff; line-height: 30px; text-align: center;}
-            >span{display: block; width: 100%; height: auto; margin-top: 20px; font-size: 1rem; font-weight: bold; color: #fff; text-align: center;}
+            >em{display: block; width: 90%; height: 3.125rem; margin: auto; margin-top: 1.875rem; padding-bottom: 0.625rem;box-sizing: border-box; font-size: 1.5rem; font-style: inherit; color: #fff; font-weight: bold; text-align: center; border-bottom: 0.125rem solid #fff;}
+            >p{width: 100%; height: 11.25rem; margin-top: 1.25rem; font-size: 1rem; color: #fff; line-height: 1.875rem; text-align: center;}
+            >span{display: block; width: 100%; height: auto; margin-top: 1.25rem; font-size: 1rem; font-weight: bold; color: #fff; text-align: center;}
           }// a
           &.action{opacity: 1; transform: scale(1.4); background-color: #eee;}
           
-          &.action > a{display: block; opacity:0; width: 100%; height: 100%;  padding: 20px; box-sizing: border-box; background-color: #eee; background-repeat: no-repeat; background-size: 55%; background-position: 50% 50%;
+          &.action > a{display: block; opacity:0; width: 100%; height: 100%;  padding: 1.25rem; box-sizing: border-box; background-color: #eee; background-repeat: no-repeat; background-size: 55%; background-position: 50% 50%;
         transition:all 300ms ease; 
           }// a.action
           &.action>a:hover,&.action>a:focus{background-color: rgba($main,0.9); opacity: 1;
           }// a:hover
         }// li
       }// ul
-      >.arrow_btn{position: absolute; z-index: 300; left: 0; right: 0; top: 40%; margin: auto; width: 680px; height: 0;
-        >button{width: 60px; height: 60px; background-size: contain; background-position: 50% 50%; background-repeat: no-repeat; background-color: transparent;
+      >.arrow_btn{position: absolute; z-index: 300; left: 0; right: 0; top: 40%; margin: auto; width: 42.5rem; height: 0;
+        >button{width: 3.75rem; height: 3.75rem; background-size: contain; background-position: 50% 50%; background-repeat: no-repeat; background-color: transparent;
         }// button
         >.next{float: right; background-image: url("../../img/arrow_next.png");
         &:hover,&:focus{background-image: url("../../img/arrow_next_c.png");}
@@ -126,16 +126,16 @@
         }// .prev
       }// .arrow_btn
     }// .menu_slide  
-    >.menu_btn{width: 1260px; height: 40px; margin: auto; margin-top: 40px;
-      >.menu{width: 135px; height: 40px; border-radius: 10px; border: 3px solid $main; box-sizing: border-box; color: $main; font-size: 1rem; text-align: center; background-color: transparent;}
+    >.menu_btn{width: 78.75rem; height: 2.5rem; margin: auto; margin-top: 2.5rem;
+      >.menu{width: 8.4375rem; height: 2.5rem; border-radius: 0.625rem; border: 0.1875rem solid $main; box-sizing: border-box; color: $main; font-size: 1rem; text-align: center; background-color: transparent;}
         >.menu:hover,.menu:focus{color: #fff; background-color: $main;}
     }// .menu_btn
   }// #menuBox
   >#snsBox{background-image: url("../../img/sns_box.jpg"); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;
-    >.title{margin-bottom: 50px;}
-    >ul{width: 1230px; height: auto; margin: auto;
-      >li{float: left; width: 230px; height: 230px; margin-right: 20px; background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;
-        >a{display: block; width: 100%; height: 100%; padding: 110px 40px; box-sizing: border-box; 
+    >.title{margin-bottom: 3.125rem;}
+    >ul{width: 76.875rem; height: auto; margin: auto;
+      >li{float: left; width: 14.375rem; height: 14.375rem; margin-right: 1.25rem; background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;
+        >a{display: block; width: 100%; height: 100%; padding: 6.875rem 2.5rem; box-sizing: border-box; 
           >p{display: none;}
         }// a
         >a:hover,a:focus{background-image: url("../../img/insta_bg.jpg"); background-position: 50% 50%; background-size: cover;
@@ -144,7 +144,7 @@
           }// p}
         }// a:hover
       }// li
-      >li:nth-child(-n+6){margin-bottom: 20px;}
+      >li:nth-child(-n+6){margin-bottom: 1.25rem;}
       >li:nth-child(5n){margin-right: 0;}
     }
   }// #snsBox

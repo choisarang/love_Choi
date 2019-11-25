@@ -1,0 +1,43 @@
+// _sub_02_768.scss
+
+@media screen and (max-width:480px){
+
+  @import "../_h_f/h_f_m";
+
+
+
+  #viewBox{width: 100%; min-width: 21.875rem; height: 12.5rem; background-image: url("../../../img/brand_view.jpeg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed;
+    h2{width: 100%; height: 100%; text-align: center; font-size: 1.8rem; line-height: 18rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5);}
+  }
+
+  #contentBox{width: 21.875rem; min-width: 21.875rem; height:auto; margin: auto; padding: 12.5rem 0; box-sizing: border-box; word-break: keep-all; background-color: $bg;
+    .conbox{padding-bottom:10rem; position: relative;}
+    .conbox::before{content: " "; display: block; position:absolute; z-index: 100; width: 6.25rem; height:auto; margin:auto; border-bottom: 0.125rem solid #ccc; box-sizing: border-box; bottom:0; left:50%; transform:translateX(-50%);}
+    .brandBox{width: 100%; height: auto; text-align: center;
+      >dl{width: 100%; height: auto; text-transform: uppercase;
+        >dt{position: relative; z-index: 1; width: 100%; height: 3.125rem; font-size: 1.8rem; font-weight: bold; color: $main;}
+        >dt::before{content: " "; display: block; position: absolute; z-index: -1; top: 30%; left: 27%; width: 10.9375rem; height: 30%; background-color: rgba(200, 200, 200, 0.5)}
+        >dd{width: 100%; height: auto; padding-top: 5rem; box-sizing: border-box; line-height: 3.125rem; font-size: 1.25rem; color: $text;
+          >span{color: $textem;}
+        }// dd
+      }// dl
+    }// .brandBox
+    .iconBox{width: 100%; height: auto; margin-top: 10rem;
+      >li{width: 6.25rem; height: 6.25rem; margin: auto; margin-bottom: 10rem; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain;}
+      >li:nth-child(1){background-image: url("../../../img/nosugar.png");}
+      >li:nth-child(2){background-image: url("../../../img/nocolor.png");}
+      >li:nth-child(3){background-image: url("../../../img/noadd.png");}
+      >li:nth-child(4){background-image: url("../../../img/homemade.png");}
+      >li:nth-child(5){background-image: url("../../../img/today.png"); margin-bottom: 0;}
+    }// .iconBox
+    .iconBox::after{content: " "; display: block; width: 0; height: 0; clear: both;}
+    .textBox{width: 100%; height: auto; margin-top: 10rem; text-align: center; color: $main; font-size: 4rem; font-weight: bold;
+      >span{color: $yellow;}
+    }// .textBox
+    .top_btn{position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem;
+      >button:hover,>button:focus{background-color: $main; color: #fff;}
+      >button{ width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid $main; border-radius: 100%; font-size: 0.8rem; color: $main; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem;}
+    }// .top_btn
+  }// #contentBox
+
+}

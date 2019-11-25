@@ -1,0 +1,38 @@
+// sub_03_1920.scss
+
+@media screen and (min-width:1281px) {
+
+  @import "../_h_f/h_f_1920";
+
+  #viewBox{width: 100%; height: 25rem; background-image: url("../../../img/menu_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed;
+    h2{width: 100%; height: 100%; text-align: center; font-size: 2.1875rem; line-height: 31.25rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5);}
+  }
+
+  #contentBox{width: 100%; height:auto; margin: auto; margin-bottom: 10rem; background-color: $bg;
+    .menu_bar{width: 100%; height: 6.25rem; border: 0.0625rem solid $text; border-right: 0; border-left: 0;
+      >ul{width: 78.75rem; height: 100%; margin: auto;
+        >li{float: left; width: 20%; height: 100%; text-align: center; line-height: 6.25rem; 
+          >a{display: block; width: 70%; height: 100%; margin: auto; font-size: 1.4rem; text-transform: capitalize; color: $text;}
+          >a:action{color: $textem; font-weight: bold; text-decoration: underline;}
+        }// li
+      }// ul
+    }// .menu_bar
+    .menuBox{width: 78.75rem; height: auto; margin: auto; margin-top: 10rem;
+      >li{float: left; width: 18.75rem; height: 25rem; margin-right: 1.25rem; background-color: #eee; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; transition: all 300ms;
+        >.textBox{display: none; width: 100%; height: 100%; background-color: rgba($main, 0.8);
+          >em{display: block; width: 70%; height: 5rem; margin: auto; padding-top: 1.875rem; padding-bottom: 0.625rem; box-sizing: border-box; font-size: 1.7rem; font-style: inherit; color: #fff; font-weight: bold; text-align: center; border-bottom: 0.125rem solid #fff;}
+          >p{width: 100%; height: 11.25rem; margin-top: 2.5rem; font-size: 1.2rem; color: #fff; line-height: 1.875rem; text-align: center;}
+          >span{display: block; width: 100%; height: auto; margin-top: 2.5rem; font-size: 1.2rem; font-weight: bold; color: #fff; text-align: center;}
+        }// .textBox
+      }// li
+      >li:hover>.textBox,li:focus>.textBox{display: block;}// .textBox:hover
+      >li:nth-child(4n){margin-right: 0;}
+      >li:nth-child(-n+4){margin-bottom: 1.875rem;}
+    }// .menuBox
+    .menuBox:after{content: " "; display: block; width: 0; height: 0; clear: both;}
+    .top_btn{position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem;
+      >button{width: 100%; height: 100%; background-color: #fff; border: 0.125rem solid $main; border-radius: 100%; color: $main; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center;}
+      >button:hover,>button:focus{background-color: $main; color: #fff;}
+    }// .top_btn
+  }// #contentBox
+}

@@ -1,0 +1,13 @@
+// sub_02.scss
+
+@import "./_basic/var";
+
+html{background-color: $bg;}
+#wrap{width: 100%; height: 100%; background-color: $bg;}
+
+
+@import "./_temp/_sub_02/_sub_02_1920"; 
+@import "./_temp/_sub_02/_sub_02_1280";
+@import "./_temp/_sub_02/_sub_02_970";
+@import "./_temp/_sub_02/_sub_02_768";
+@import "./_temp/_sub_02/_sub_02_480";

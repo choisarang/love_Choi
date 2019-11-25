@@ -66,9 +66,9 @@
 
 
   // 해당페이지 선택효과 =====================================
-  gnbLi.eq(1).find('dt').children('a').addClass('select');
-  gnbLi.eq(1).find('dd').children('a').eq(0).addClass('select');
-  gnbLi.eq(1).find('dd').css({backgroundColor:"rgba(140, 177, 200, 0.1)"})
+  gnbLi.eq(0).find('dt').children('a').addClass('select');
+  gnbLi.eq(0).find('dd').children('a').eq(0).addClass('select');
+  gnbLi.eq(0).find('dd').css({backgroundColor:"rgba(140, 177, 200, 0.1)"})
 
   
 

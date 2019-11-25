@@ -119,15 +119,15 @@ gnbDd.children('a').on('mouseleave blur', function(){
 // headBox_small------------------------------------------
 const small = $('.small');
 const barLink = small.find('a');
-const barView = small.children('.bar_view');
-const ex = barView.children('.ex');
+const barBg = small.children('.bar_bg');
+const ex = barBg.find('.ex');
 
 barLink.on('click', function(){
-  barView.stop().fadeIn()
+  barBg.stop().fadeIn()
 });
 
 ex.on('click', function(){
-  barView.stop().fadeOut()
+  barBg.stop().fadeOut()
 });
 
 //accodian menu ===================

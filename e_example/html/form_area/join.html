@@ -55,14 +55,14 @@
                 <dt>
                   <label for="userEmail">
                     <i class="far fa-envelope"></i>
-                    <span class="hidden">이메일을 입력하세요</span>
+                    <span class="hidden">이메일</span>
                   </label>
                 </dt>
                 <dd>
-                  <input type="email" name="userEmail" id="userEmail" value="" placeholder="이메일을 입력하세요" required="required">
+                  <input type="email" name="userEmail" id="userEmail" value="" placeholder="이메일" required="required" />
                 </dd>
               </dl>
-              <span class="narr"></span>
+              <span class="narr">이메일을 입력하세요</span>
             </li>
             <li>
               <dl>
@@ -73,35 +73,35 @@
                   </label>
                 </dt>
                 <dd>
-                  <input type="password" name="userPw" id="userPw" value="" placeholder="비밀번호(영문 숫자 특수문자 2가지 이상 6~15자 이내)" required="required">
+                  <input type="password" name="userPw" id="userPw" value="" maxlength="15" placeholder="비밀번호(영문 숫자 특수문자 2가지 이상 6~15자 이내)" required="required" />
                 </dd>
               </dl>
-              <span class="narr"></span>
+              <span class="narr">비밀번호를 입력하세요</span>
             </li>
             <li>
               <dl>
                 <dt>
-                  <label for="userPw">
+                  <label for="userPwre">
                     <i class="fas fa-lock"></i>
                     <span class="hidden">비밀번호 확인</span>
                   </label>
                 </dt>
                 <dd>
-                  <input type="password" name="userPw" id="userPw" value="" placeholder="비밀번호 확인" required="required">
+                  <input type="password" name="userPwre" id="userPwre" value="" maxlength="15" placeholder="비밀번호 확인" required="required" />
                 </dd>
               </dl>
-              <span class="narr"></span>
+              <span class="narr">비밀번호가 일치하지 않습니다</span>
             </li>
             <li>
               <dl>
                 <dt>
-                  <label for="username">
+                  <label for="userName">
                     <i class="far fa-user"></i>
                     <span class="hidden">이름</span>
                   </label>
                 </dt>
                 <dd>
-                  <input type="text" name="username" id="username" value="" placeholder="이름" required="required">
+                  <input type="text" name="userName" id="userName" value="" placeholder="이름" required="required">
                 </dd>
               </dl>
               <span class="narr"></span>
@@ -154,6 +154,6 @@
   <!-- script -->
 <script src="../../js/base/jquery-3.4.1.min.js"></script>
 <script src="../../js/base/jquery-ui.min.js"></script>
-<script src="../../js/src/jquery/join.js"></script>
+<script src="../../js/src/jquery/form_area/join.js"></script>
 </body>
 </html>
