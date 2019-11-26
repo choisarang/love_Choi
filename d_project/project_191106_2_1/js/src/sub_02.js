@@ -117,4 +117,55 @@ barDdLink.on('blur', function(){
 })
 
 
+// landing -------------------------------------------------------------------
+
+const win = $(window);
+const brandBox = $('.brandBox');
+const brDt = brandBox.find('dt');
+const brDd = brandBox.find('dd');
+
+const iconBox = $('.iconBox');
+const iconLi = iconBox.children('li');
+
+let winH = win.outerHeight();
+
+// conBox 위치값 파악 ---------------------------------
+// brandBox
+let brandBox_offset = brandBox.offset().top;
+
+// // iconBox
+let iconBox_offset = iconBox.offset().top;
+let iconScroll1 = iconBox_offset - (500);
+let iconScroll2 = iconBox_offset - (300);
+let iconScroll3 = iconBox_offset - (100);
+
+win.on('scroll', function(){
+  let winScroll = win.scrollTop();
+
+// brandBox 나타나게 만들기 ----------------------------------------
+  if(winScroll > winH/5){
+    brDt.addClass('action');
+  }else{
+    brDt.removeClass('action');
+  }
+
+  if(winScroll > winH/4){
+    brDd.addClass('action');
+  }else{
+    brDd.removeClass('action');
+  }
+
+  // iconBox ----------------------------------------
+
+  if(winScroll > brandBox_offset){
+    iconLi.addClass('action');
+  }else{
+    iconLi.removeClass('action');
+  }
+
+
+  });
+
+
+
 })(jQuery);

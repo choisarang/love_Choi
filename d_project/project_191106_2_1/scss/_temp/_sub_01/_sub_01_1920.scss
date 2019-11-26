@@ -5,7 +5,7 @@
   @import "../_h_f/h_f_1920";
 
 
-  #viewBox{width: 100%; height: 25rem; background-image: url("../../../img/main_view_01.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed;
+  #viewBox{width: 100%; height: 25rem; background-image: url("../../../img/yogurt_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed;
     h2{width: 100%; height: 100%; text-align: center; font-size: 2.1875rem; line-height: 31.25rem; color: #fff; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5);}
   }
 
@@ -14,12 +14,15 @@
     .conbox::before{content: " "; display: block; position:absolute; z-index: 100; width: 6.25rem; height:auto; margin:auto; border-bottom: 0.125rem solid #ccc; box-sizing: border-box; bottom:0; left:50%; transform:translateX(-50%);}
     .greekBox{width: 100%; height:auto;
       >dl{width: 100%; height: auto; 
-        >dt{position: relative; z-index: 1; width: 100%; height: 3.125rem; font-size: 1.875rem; font-weight: bold; color: $main;}
+        >dt{opacity: 0; position: relative; z-index: 1; width: 100%; height: 3.125rem; font-size: 1.875rem; font-weight: bold; color: $main;}
+        >dt.action{opacity: 1; transform: translateY(-50px); transition: all 1000ms ease 150ms;}
         >dt::before{content: " "; display: block; position: absolute; z-index: -1; top: 35%; left: 0.5%; width: 10.625rem; height: 30%; background-color: rgba(200, 200, 200, 0.5)}
-        >dd{width: 100%; height: auto; padding-top: 5rem; box-sizing: border-box; line-height: 3.125rem; font-size: 1.25rem; color: $text;
+        >dd{opacity: 0; width: 100%; height: auto; padding-top: 5rem; box-sizing: border-box; line-height: 3.125rem; font-size: 1.25rem; color: $text;
           >span{color: $textem;}
         }// dd
-        >p{display: block; width: 100%; height: auto; margin-top: 3.125rem; line-height: 1.875rem; font-size: 1.1rem; color: $text;}
+        >dd.action{opacity: 1; transform: translateY(-50px); transition: all 1000ms ease 150ms;}
+        >p{opacity: 0; display: block; width: 100%; height: auto; margin-top: 3.125rem; line-height: 1.875rem; font-size: 1.1rem; color: $text;}
+        >p.action{opacity: 1; transform: translateY(-50px); transition: all 1000ms ease 150ms;}
       }// dl
     }// .greekBox
     .vsBox{width: 54.375rem; height: auto; margin: auto;
@@ -32,17 +35,22 @@
         }// dl
         >p{width: 100%; height: 9.375rem; font-size: 2rem; font-weight: bold; text-align: center; transform: translateY(40%); color: $textem;}
       }// li
-      >li:last-child > dl{
-        >dt{background-color: #B0D6FD;
-          >span{color: $main;}
-        }// dt
-        >dd{color: $textem;}
+      >li:first-child{opacity: 0; transform: translateX(-100%);}
+      >li:first-child.action{left:0; opacity: 1; transform: translateX(0); transition: all 1500ms ease;}
+      >li:last-child{opacity: 0; transform: translateX(100%);
+        > dl{
+          >dt{background-color: #B0D6FD;
+            >span{color: $main;}
+          }// dt
+          >dd{color: $textem;}
+        }// dl  
       }// li:last-child
+      >li:last-child.action{right:0; opacity: 1; transform: translateX(0); transition: all 1500ms ease;}
     }// .vsBox
     .vsBox::after{content: " "; display: block; width: 0; height: 0; clear: both;}
 
     .iconBox{width: 100%; height: 93.75rem;
-      >li{width: 100%; height: 8.75rem; margin-top: 10rem; margin-bottom: 6.25rem; background-color: transparent;
+      >li{opacity: 0; width: 100%; height: 8.75rem; margin-top: 10rem; margin-bottom: 6.25rem; background-color: transparent;
         >dl{
           >div{float: left; width: 6.25rem; height: 6.25rem; margin-right: 5rem; margin-top: 1.25rem; border-radius: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: 80%;}
           >dt{width: 100%; height: 5rem; font-size: 1.5625rem; font-weight: bold; color: $textem; line-height: 5rem;}
@@ -54,15 +62,19 @@
           >.icon_05{border: 0.125rem solid $main; background-color: #fff; background-image: url("../../../img/calcium_b.png");}
         }// dl  
       }// li
-      >p{display: block; width: 100%; height: 1.875rem; font-size: 1.1em; color: $text;}
+      >li.action{opacity: 1; transform: translateY(-50px); transition: all 1000ms ease 150ms;}
+      >p{opacity: 0; display: block; width: 100%; height: 1.875rem; font-size: 1.1em; color: $text;}
+      >p.action{opacity: 1; transform: translateY(-50px); transition: all 1000ms ease 150ms;}
     }// .iconBox
     .careBox{width: 100%; height: auto;
       >dl{width: 100%; height: auto; margin-top: 10rem;
-        >dt{position: relative; z-index: 1; width: 100%; height: 3.125rem; font-size: 1.875rem; font-weight: bold; color: $main;}
+        >dt{opacity: 0; position: relative; z-index: 1; width: 100%; height: 3.125rem; font-size: 1.875rem; font-weight: bold; color: $main;}
         >dt::before{content: " "; display: block; position: absolute; z-index: -1; top: 35%; left: 0.5%; width: 16.25rem; height: 30%; background-color: rgba(200, 200, 200, 0.5)}
-        >dd{width: 100%; height: auto; padding-top: 5rem; box-sizing: border-box; line-height: 3.125rem; font-size: 1.25rem; color: $text;
+        >dt.action{opacity: 1; transform: translateY(-50px); transition: all 1000ms ease 150ms;}
+        >dd{opacity: 0; width: 100%; height: auto; padding-top: 5rem; box-sizing: border-box; line-height: 3.125rem; font-size: 1.25rem; color: $text;
           >em{color: $textem; font-style: normal;}
         }//dd
+        >dd.action{opacity: 1; transform: translateY(-50px); transition: all 1000ms ease 150ms;}
       }// dl
     }// .careBox
     .top_btn{position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem;

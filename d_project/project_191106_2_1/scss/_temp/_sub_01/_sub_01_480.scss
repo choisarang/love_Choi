@@ -5,7 +5,7 @@
   @import "../_h_f/h_f_m";
 
 
-  #viewBox{width: 100%; height: 12.5rem; background-image: url("../../../img/main_view_01.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed;
+  #viewBox{width: 100%; min-width: 21.875rem; height: 12.5rem; background-image: url("../../../img/yogurt_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed;
     h2{width: 100%; height: 100%; text-align: center; font-size: 1.5rem; line-height: 18rem; color: #fff; text-shadow: 0.125rem 0.125rem 0.125rem rgba(51, 51, 51, 0.5);}
   }
 
@@ -14,12 +14,15 @@
     .conbox::before{content: " "; display: block; position: absolute; z-index: 100; width: 6.25rem; height: auto; margin: auto; border-bottom: 0.125rem solid #ccc; box-sizing: border-box; bottom: 0; left: 50%; transform: translateX(-50%);}
     .greekBox{width: 100%; height: auto;
       >dl{width: 100%; height: auto; text-align: center;
-        >dt{position: relative; z-index: 1; width: 100%; height: 3.125rem; font-size: 1.7rem; font-weight: bold; color: $main;}
+        >dt{opacity: 0; position: relative; z-index: 1; width: 100%; height: 3.125rem; font-size: 1.7rem; font-weight: bold; color: $main;}
         >dt::before{content: " "; display: block; position: absolute; z-index: -1; top: 30%; left: 49%; transform: translateX(-45%); width: 9.375rem; height: 30%; background-color: rgba(200, 200, 200, 0.5)}
-        >dd{width: 100%; height: auto; padding-top: 5rem; box-sizing: border-box; line-height: 3.125rem; font-size: 1.25rem; color: $text;
+        >dt.action{opacity: 1; transform: translateY(-50px); transition: all 1000ms ease 150ms;}
+        >dd{opacity: 0; width: 100%; height: auto; padding-top: 5rem; box-sizing: border-box; line-height: 3.125rem; font-size: 1.25rem; color: $text;
           >span{color: $textem;}
         }// dd
-        >p{display: block; width: 100%; height: auto; margin-top: 3.125rem; line-height: 1.875rem; font-size: 1.1rem; color: $text;}
+        >dd.action{opacity: 1; transform: translateY(-50px); transition: all 1000ms ease 150ms;}
+        >p{opacity: 0; display: block; width: 100%; height: auto; margin-top: 3.125rem; line-height: 1.875rem; font-size: 1.1rem; color: $text;}
+        >p.action{opacity: 1; transform: translateY(-50px); transition: all 1000ms ease 150ms;}
       }// dl
     }// .greekBox
     .vsBox{width: 100%; height: auto; margin: auto;
@@ -33,17 +36,22 @@
         >p{width: 100%; height: auto; margin-top: 1.5rem; font-size: 2rem; font-weight: bold; text-align: center; transform: translateY(40%); color: $textem;}
       }// li
       >li:nth-child(2){width: 20%;}
-      >li:last-child > dl{
-        >dt{background-color: #B0D6FD;
-          >span{color: $main;}
-        }// dt
-        >dd{color: $textem;}
+      >li:first-child{opacity: 0; transform: translateX(-100%);}
+      >li:first-child.action{left:0; opacity: 1; transform: translateX(0); transition: all 1500ms ease;}
+      >li:last-child{opacity: 0; transform: translateX(100%);
+        > dl{
+          >dt{background-color: #B0D6FD;
+            >span{color: $main;}
+          }// dt
+          >dd{color: $textem;}
+        } //dl
       }// li:last-child
+      >li:last-child.action{right:0; opacity: 1; transform: translateX(0); transition: all 1500ms ease;}
     }// .vsBox
     .vsBox::after{content: " "; display: block; width: 0; height: 0; clear: both;}
 
     .iconBox{width: 21.875rem; height: auto; margin: auto;
-      >li{width: 100%; height: auto; margin-top: 10rem; margin-bottom: 10rem; background-color: transparent;
+      >li{opacity: 0; width: 100%; height: auto; margin-top: 10rem; margin-bottom: 10rem; background-color: transparent;
         >dl{width: 100%; height: auto; word-break: keep-all; text-align: center;
           >div{width: 6.25rem; height: 6.25rem; margin:auto; margin-top: 1.25rem; border-radius: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: 80%;}
           >dt{width: 100%; height: auto; font-size: 1.5625rem; font-weight: bold; color: $textem; line-height: 2.5rem; margin: 2rem 0;}
@@ -55,15 +63,19 @@
           >.icon_05{border: 0.125rem solid $main; background-color: #fff; background-image: url("../../../img/calcium_b.png");}
         }// dl  
       }// li
-      >p{display: block; width: 21.875rem; height: auto; margin: auto; margin-top:10rem; font-size: 1.1rem; color: $text;}
+      >li.action{right:0; opacity: 1; transform: translateX(0); transition: all 1500ms ease;}
+      >p{opacity: 0; display: block; width: 21.875rem; height: auto; margin: auto; margin-top:10rem; font-size: 1.1rem; color: $text;}
+      >p.action{right:0; opacity: 1; transform: translateX(0); transition: all 1500ms ease;}
     }// .iconBox
     .careBox{width: 100%; height: auto;
       >dl{width: 100%; height: auto; margin-top: 10rem; text-align: center; word-break: keep-all;
-        >dt{position: relative; z-index: 1; width: 100%; height: 3.125rem; font-size: 1.7rem; font-weight: bold; color: $main;}
+        >dt{opacity: 0; position: relative; z-index: 1; width: 100%; height: 3.125rem; font-size: 1.7rem; font-weight: bold; color: $main;}
         >dt::before{content: " "; display: block; position: absolute; z-index: -1; top: 30%; left: 49%; transform: translateX(-46%); width: 13.75rem; height: 30%; background-color: rgba(200, 200, 200, 0.5)}
-        >dd{width: 100%; height: auto; padding-top: 5rem; box-sizing: border-box; line-height: 3.125rem; font-size: 1.25rem; color: $text;
+        >dt.action{right:0; opacity: 1; transform: translateX(0); transition: all 1500ms ease;}
+        >dd{opacity: 0; width: 100%; height: auto; padding-top: 5rem; box-sizing: border-box; line-height: 3.125rem; font-size: 1.25rem; color: $text;
           >em{color: $textem; font-style: normal;}
         }//dd
+        >dd.action{right:0; opacity: 1; transform: translateX(0); transition: all 1500ms ease;}
       }// dl
     }// .careBox
     .top_btn{position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem;

@@ -116,5 +116,120 @@ barDdLink.on('blur', function(){
   $(this).parent('dd').siblings('dt').find('i').css({color:"#777"});
 })
 
+// landing -------------------------------------------------------------------
+
+const win = $(window);
+const greekBox = $('.greekBox');
+const grDt = greekBox.find('dt');
+const grDd = greekBox.find('dd');
+const grP = greekBox.find('p');
+
+const vsBox = $('.vsBox');
+const vsLi = vsBox.children('li')
+
+const iconBox = $('.iconBox');
+const iconLi = iconBox.children('li');
+const iconP = iconBox.children('p')
+
+const careBox = $('.careBox');
+const careDt = careBox.find('dt');
+const careDd = careBox.find('dd');
+
+let winH = win.outerHeight();
+
+// conBox 위치값 파악 ---------------------------------
+// greekBox
+let greekBox_offset = greekBox.offset().top;
+// vsBox
+let vsBox_offset = vsBox.offset().top;
+// iconBox
+let iconBox_offset = iconBox.offset().top;
+let iconScroll1 = iconBox_offset - (500);
+let iconScroll2 = iconBox_offset - (300);
+let iconScroll3 = iconBox_offset - (100);
+let iconScroll4 = iconBox_offset + (200);
+let iconScroll5 = iconBox_offset + (400);
+// careBox
+let careScroll1 = iconBox_offset + (1000);
+let careScroll2 = iconBox_offset + (1300);
+
+win.on('scroll', function(){
+  let winScroll = win.scrollTop();
+
+// greekBox 나타나게 만들기 ----------------------------------------
+  if(winScroll > winH/5){
+    grDt.addClass('action');
+  }else{
+    grDt.removeClass('action');
+  }
+
+  if(winScroll > winH/4){
+    grDd.addClass('action');
+  }else{
+    grDd.removeClass('action');
+  }
+
+  if(winScroll > winH/3){
+    grP.addClass('action');
+  }else{
+    grP.removeClass('action');
+  }
+
+  // vsBox ----------------------------------------
+  
+  if(winScroll > greekBox_offset){
+    vsLi.addClass('action');
+  }else{
+    vsLi.removeClass('action');
+  }
+
+  // iconBox ----------------------------------------
+
+  if(winScroll > vsBox_offset){
+    iconLi.eq(0).addClass('action');
+  }else{
+    iconLi.eq(0).removeClass('action');
+  }
+  if(winScroll > iconScroll1){
+    iconLi.eq(1).addClass('action');
+  }else{
+    iconLi.eq(1).removeClass('action');
+  }
+  if(winScroll > iconScroll2){
+    iconLi.eq(2).addClass('action');
+  }else{
+    iconLi.eq(2).removeClass('action');
+  }
+  if(winScroll > iconScroll3){
+    iconLi.eq(3).addClass('action');
+  }else{
+    iconLi.eq(3).removeClass('action');
+  }
+  if(winScroll > iconScroll4){
+    iconLi.eq(4).addClass('action');
+  }else{
+    iconLi.eq(4).removeClass('action');
+  }
+  if(winScroll > iconScroll5){
+    iconP.addClass('action');
+  }else{
+    iconP.removeClass('action');
+  }
+
+  // careBox 나타나게 만들기 ----------------------------------------
+  if(winScroll > careScroll1){
+    careDt.addClass('action');
+  }else{
+    careDt.removeClass('action');
+  }
+
+  if(winScroll > careScroll2){
+    careDd.addClass('action');
+  }else{
+    careDd.removeClass('action');
+  }
+
+  });
+
 
 })(jQuery);

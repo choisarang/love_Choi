@@ -12,7 +12,7 @@
   #contentBox{width: 100%; height:auto; margin: auto; margin-bottom: 10rem; background-color: $bg;
     .menu_bar{width: 100%; height: 5.625rem; border: 0.0625rem solid $text; border-right: 0; border-left: 0;
       >ul{width: 29.375rem; height: 100%; margin: auto;
-        >li{float: left; width: 20%; height: 100%; text-align: center; line-height: 5.625rem; 
+        >li{float: left; width: 25%; height: 100%; text-align: center; line-height: 5.625rem; 
           >a{display: block; width: 70%; height: 100%; margin: auto; font-size: 1.2rem; text-transform: capitalize; color: $text;}
           >a.action{color: $textem; font-weight: bold; text-decoration: underline;}
         }// li

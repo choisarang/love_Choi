@@ -124,7 +124,8 @@
   #conBox > #snsBox > ul > li > a:hover > p, #conBox > #snsBox > ul > li a:focus > p { display: block; width: 100%; height: auto; text-align: center; font-weight: bold; font-size: 1.3rem; text-transform: uppercase; color: #fff; }
   #conBox > #snsBox > ul > li > a:hover > p > i, #conBox > #snsBox > ul > li a:focus > p > i { padding-left: 1rem; }
   #conBox > #snsBox > ul > li:nth-child(-n+6) { margin-bottom: 1.25rem; }
-  #conBox > #snsBox > ul > li:nth-child(5n) { margin-right: 0; } }
+  #conBox > #snsBox > ul > li:nth-child(5n) { margin-right: 0; }
+  #conBox .top_btn { display: none; } }
 
 @media screen and (min-width: 971px) and (max-width: 1280px) { #headBox { position: fixed; z-index: 500; width: 100vw; height: 6.25rem; padding: 0 16vw; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
   #headBox > .list { position: absolute; width: 60.625rem; height: 6.25rem; left: 0; right: 0; margin: auto; }
@@ -252,7 +253,8 @@
   #conBox > #snsBox > ul > li:nth-child(-n+5) { margin-bottom: 1.25rem; }
   #conBox > #snsBox > ul > li:nth-child(4n) { margin-right: 0; }
   #conBox > #snsBox > ul > li:nth-child(9) { display: none; }
-  #conBox > #snsBox > ul > li:nth-child(10) { display: none; } }
+  #conBox > #snsBox > ul > li:nth-child(10) { display: none; }
+  #conBox .top_btn { display: none; } }
 
 @media screen and (min-width: 769px) and (max-width: 970px) { #headBox { position: fixed; z-index: 500; width: 100vw; min-width: 23.4375rem; height: 5.625rem; padding: 1.25rem 1.875rem; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
   #headBox > .list { width: 100%; height: 100%; }
@@ -368,7 +370,8 @@
   #conBox > #snsBox > ul > li > a:hover > p > i, #conBox > #snsBox > ul > li a:focus > p > i { padding-left: 2vw; }
   #conBox > #snsBox > ul > li:nth-child(-n+6) { margin-bottom: 1.25rem; }
   #conBox > #snsBox > ul > li:nth-child(3n) { margin-right: 0; }
-  #conBox > #snsBox > ul > li:last-child { display: none; } }
+  #conBox > #snsBox > ul > li:last-child { display: none; }
+  #conBox .top_btn { display: none; } }
 
 @media screen and (min-width: 481px) and (max-width: 768px) { #headBox { position: fixed; z-index: 500; width: 100vw; min-width: 23.4375rem; height: 5.625rem; padding: 1.25rem 1.875rem; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
   #headBox > .list { width: 100%; height: 100%; }
@@ -427,13 +430,7 @@
   #viewBox > .product > .slide_03 > .text { width: 100%; height: 12.5rem; }
   #viewBox > .product > .slide_03 > .text > p { width: 100%; height: 100%; color: #1b398f; font-size: 3.75rem; font-weight: bold; }
   #viewBox > .product > .slide_03 > .text > p > span { color: #fa0; }
-  #viewBox > .side_bar { position: fixed; z-index: 400; top: 0; bottom: 0; right: 2vw; margin: auto; width: 2.5rem; height: 18.75rem; }
-  #viewBox > .side_bar > li { width: 1.875rem; height: 1.875rem; border-radius: 100%; margin-bottom: 2.5rem; background-color: #ccc; }
-  #viewBox > .side_bar > li > a { position: relative; display: block; width: 100%; height: 100%; border-radius: 100%; }
-  #viewBox > .side_bar > li > a > span { position: absolute; display: block; right: 3.125rem; width: 0; height: 2.1875rem; border-radius: 0.625rem; font-size: 1.25rem; color: #fff; text-transform: uppercase; font-weight: bold; text-align: center; line-height: 2.1875rem; background-color: #1b398f; overflow: hidden; transition: all 300ms ease; }
-  #viewBox > .side_bar > li > a.action { background-color: #fff; box-shadow: 0 0 0.4375rem rgba(0, 0, 0, 0.5); outline: none; }
-  #viewBox > .side_bar > li > a.action > span { display: block; width: 9.375rem; }
-  #viewBox > .side_bar > li:last-child { margin-bottom: 0; }
+  #viewBox > .side_bar { display: none; }
   #conBox { width: 100%; height: auto; }
   #conBox > article { width: 100%; height: 100vh; padding: 8.125rem 0; box-sizing: border-box; }
   #conBox > article > .title { width: 100%; height: auto; margin: auto; margin-bottom: 4.375rem; text-align: center; }
@@ -485,7 +482,10 @@
   #conBox > #snsBox > ul > li > a:hover > p > i, #conBox > #snsBox > ul > li a:focus > p > i { padding-left: 2.2vw; }
   #conBox > #snsBox > ul > li:nth-child(-n+2) { margin-bottom: 1.25rem; }
   #conBox > #snsBox > ul > li:nth-child(2n) { margin-right: 0; }
-  #conBox > #snsBox > ul > li:nth-child(n+5):nth-child(-n+10) { display: none; } }
+  #conBox > #snsBox > ul > li:nth-child(n+5):nth-child(-n+10) { display: none; }
+  #conBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem; }
+  #conBox .top_btn > button { width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; font-size: 0.8rem; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
+  #conBox .top_btn > button:hover, #conBox .top_btn > button:focus { background-color: #1b398f; color: #fff; } }
 
 @media screen and (max-width: 480px) { #headBox { position: fixed; z-index: 500; width: 100vw; min-width: 23.4375rem; height: 5.625rem; padding: 1.25rem 1.875rem; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
   #headBox > .list { width: 100%; height: 100%; }
@@ -596,4 +596,7 @@
   #conBox > #snsBox > ul > li > a:hover > p > i, #conBox > #snsBox > ul > li a:focus > p > i { padding-left: 1rem; }
   #conBox > #snsBox > ul > li:nth-child(-n+2) { margin-bottom: 1.25rem; }
   #conBox > #snsBox > ul > li:nth-child(2n) { margin-right: 0; }
-  #conBox > #snsBox > ul > li:nth-child(n+5):nth-child(-n+10) { display: none; } }
+  #conBox > #snsBox > ul > li:nth-child(n+5):nth-child(-n+10) { display: none; }
+  #conBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 3%; width: 2.5rem; height: 2.5rem; }
+  #conBox .top_btn > button { width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; font-size: 0.8rem; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
+  #conBox .top_btn > button:hover, #conBox .top_btn > button:focus { background-color: #1b398f; color: #fff; } }

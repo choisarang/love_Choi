@@ -41,21 +41,23 @@ html { background-color: #f7f7f7; }
   #viewBox { width: 100%; height: 25rem; background-image: url("../../../img/menu_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: 100%; text-align: center; font-size: 2.1875rem; line-height: 31.25rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5); }
   #contentBox { width: 100%; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; }
-  #contentBox .menu_bar { width: 100%; height: 6.25rem; border: 0.0625rem solid #777; border-right: 0; border-left: 0; }
-  #contentBox .menu_bar > ul { width: 78.75rem; height: 100%; margin: auto; }
-  #contentBox .menu_bar > ul > li { float: left; width: 20%; height: 100%; text-align: center; line-height: 6.25rem; }
-  #contentBox .menu_bar > ul > li > a { display: block; width: 70%; height: 100%; margin: auto; font-size: 1.4rem; text-transform: capitalize; color: #777; }
-  #contentBox .menu_bar > ul > li > a:action { color: #333; font-weight: bold; text-decoration: underline; }
-  #contentBox .menuBox { width: 78.75rem; height: auto; margin: auto; margin-top: 10rem; }
-  #contentBox .menuBox > li { float: left; width: 18.75rem; height: 25rem; margin-right: 1.25rem; background-color: #eee; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; transition: all 300ms; }
-  #contentBox .menuBox > li > .textBox { display: none; width: 100%; height: 100%; background-color: rgba(27, 57, 143, 0.8); }
-  #contentBox .menuBox > li > .textBox > em { display: block; width: 70%; height: 5rem; margin: auto; padding-top: 1.875rem; padding-bottom: 0.625rem; box-sizing: border-box; font-size: 1.7rem; font-style: inherit; color: #fff; font-weight: bold; text-align: center; border-bottom: 0.125rem solid #fff; }
-  #contentBox .menuBox > li > .textBox > p { width: 100%; height: 11.25rem; margin-top: 2.5rem; font-size: 1.2rem; color: #fff; line-height: 1.875rem; text-align: center; }
-  #contentBox .menuBox > li > .textBox > span { display: block; width: 100%; height: auto; margin-top: 2.5rem; font-size: 1.2rem; font-weight: bold; color: #fff; text-align: center; }
-  #contentBox .menuBox > li:hover > .textBox, #contentBox .menuBox li:focus > .textBox { display: block; }
-  #contentBox .menuBox > li:nth-child(4n) { margin-right: 0; }
-  #contentBox .menuBox > li:nth-child(-n+4) { margin-bottom: 1.875rem; }
-  #contentBox .menuBox:after { content: " "; display: block; width: 0; height: 0; clear: both; }
+  #contentBox > .menu_box { width: 100%; height: auto; }
+  #contentBox > .menu_box > .menu_bar { width: 100%; height: auto; border: 0.0625rem solid #777; border-right: 0; border-left: 0; }
+  #contentBox > .menu_box > .menu_bar > ul { width: 78.75rem; height: 6.25rem; }
+  #contentBox > .menu_box > .menu_bar > ul > li { float: left; width: 25%; height: 100%; text-align: center; line-height: 6.25rem; }
+  #contentBox > .menu_box > .menu_bar > ul > li > a { display: block; width: 70%; height: 100%; margin: auto; font-size: 1.4rem; text-transform: capitalize; color: #777; }
+  #contentBox > .menu_box > .menu_bar > ul > li > a.action { color: #333; font-weight: bold; text-decoration: underline; }
+  #contentBox > .menu_box > .list_box > ul { width: 78.75rem; height: auto; margin: auto; margin-top: 10rem; }
+  #contentBox > .menu_box > .list_box > ul > li { float: left; width: 18.75rem; height: 25rem; margin-right: 1.25rem; background-color: #eee; background-repeat: no-repeat; background-position: 50% 50%; background-size: 60%; transition: all 300ms; }
+  #contentBox > .menu_box > .list_box > ul > li > a { display: block; width: 100%; height: 100%; }
+  #contentBox > .menu_box > .list_box > ul > li > a > .textBox { display: none; width: 100%; height: 100%; background-color: rgba(27, 57, 143, 0.8); }
+  #contentBox > .menu_box > .list_box > ul > li > a > .textBox > em { display: block; width: 70%; height: 5rem; margin: auto; padding-top: 1.875rem; padding-bottom: 0.625rem; box-sizing: border-box; font-size: 1.7rem; font-style: inherit; color: #fff; font-weight: bold; text-align: center; border-bottom: 0.125rem solid #fff; }
+  #contentBox > .menu_box > .list_box > ul > li > a > .textBox > p { width: 100%; height: 11.25rem; margin-top: 2.5rem; font-size: 1.2rem; color: #fff; line-height: 1.875rem; text-align: center; }
+  #contentBox > .menu_box > .list_box > ul > li > a > .textBox > span { display: block; width: 100%; height: auto; margin-top: 2.5rem; font-size: 1.2rem; font-weight: bold; color: #fff; text-align: center; }
+  #contentBox > .menu_box > .list_box > ul > li > a:hover > .textBox, #contentBox > .menu_box > .list_box > ul > li a:focus > .textBox { display: block; }
+  #contentBox > .menu_box > .list_box > ul > li:nth-child(4n) { margin-right: 0; }
+  #contentBox > .menu_box > .list_box > ul > li:nth-child(-n+4) { margin-bottom: 1.875rem; }
+  #contentBox > .menu_box > .list_box > ul:after { content: " "; display: block; width: 0; height: 0; clear: both; }
   #contentBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem; }
   #contentBox .top_btn > button { width: 100%; height: 100%; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
   #contentBox .top_btn > button:hover, #contentBox .top_btn > button:focus { background-color: #1b398f; color: #fff; } }
@@ -101,7 +103,7 @@ html { background-color: #f7f7f7; }
   #contentBox { width: 100%; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; }
   #contentBox .menu_bar { width: 100%; height: 5.625rem; border: 0.0625rem solid #777; border-right: 0; border-left: 0; }
   #contentBox .menu_bar > ul { width: 59.375rem; height: 100%; margin: auto; }
-  #contentBox .menu_bar > ul > li { float: left; width: 20%; height: 100%; text-align: center; line-height: 5.625rem; }
+  #contentBox .menu_bar > ul > li { float: left; width: 25%; height: 100%; text-align: center; line-height: 5.625rem; }
   #contentBox .menu_bar > ul > li > a { display: block; width: 70%; height: 100%; margin: auto; font-size: 1.4rem; text-transform: capitalize; color: #777; }
   #contentBox .menu_bar > ul > li > a.action { color: #333; font-weight: bold; text-decoration: underline; }
   #contentBox .menuBox { width: 59.375rem; height: auto; margin: auto; margin-top: 10rem; }
@@ -158,7 +160,7 @@ html { background-color: #f7f7f7; }
   #contentBox { width: 100%; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; }
   #contentBox .menu_bar { width: 100%; height: 5.625rem; border: 0.0625rem solid #777; border-right: 0; border-left: 0; }
   #contentBox .menu_bar > ul { width: 46.875rem; height: 100%; margin: auto; }
-  #contentBox .menu_bar > ul > li { float: left; width: 20%; height: 100%; text-align: center; line-height: 5.625rem; }
+  #contentBox .menu_bar > ul > li { float: left; width: 25%; height: 100%; text-align: center; line-height: 5.625rem; }
   #contentBox .menu_bar > ul > li > a { display: block; width: 70%; height: 100%; margin: auto; font-size: 1.4rem; text-transform: capitalize; color: #777; }
   #contentBox .menu_bar > ul > li > a.action { color: #333; font-weight: bold; text-decoration: underline; }
   #contentBox .menuBox { width: 46.875rem; height: auto; margin: auto; margin-top: 10rem; }
@@ -216,7 +218,7 @@ html { background-color: #f7f7f7; }
   #contentBox { width: 100%; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; }
   #contentBox .menu_bar { width: 100%; height: 5.625rem; border: 0.0625rem solid #777; border-right: 0; border-left: 0; }
   #contentBox .menu_bar > ul { width: 29.375rem; height: 100%; margin: auto; }
-  #contentBox .menu_bar > ul > li { float: left; width: 20%; height: 100%; text-align: center; line-height: 5.625rem; }
+  #contentBox .menu_bar > ul > li { float: left; width: 25%; height: 100%; text-align: center; line-height: 5.625rem; }
   #contentBox .menu_bar > ul > li > a { display: block; width: 70%; height: 100%; margin: auto; font-size: 1.2rem; text-transform: capitalize; color: #777; }
   #contentBox .menu_bar > ul > li > a.action { color: #333; font-weight: bold; text-decoration: underline; }
   #contentBox .menuBox { width: 29.375rem; height: auto; margin: auto; margin-top: 10rem; }
@@ -271,10 +273,10 @@ html { background-color: #f7f7f7; }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
   #viewBox { width: 100%; min-width: 21.875rem; height: 12.5rem; background-image: url("../../../img/menu_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: 100%; text-align: center; font-size: 1.8rem; line-height: 18rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5); }
-  #contentBox { width: 100%; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; }
+  #contentBox { width: 100%; min-width: 21.875rem; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; }
   #contentBox .menu_bar { width: 100%; height: 5.625rem; border: 0.0625rem solid #777; border-right: 0; border-left: 0; }
   #contentBox .menu_bar > ul { width: 21.875rem; height: 100%; margin: auto; }
-  #contentBox .menu_bar > ul > li { float: left; width: 20%; height: 100%; text-align: center; line-height: 5.625rem; }
+  #contentBox .menu_bar > ul > li { float: left; width: 25%; height: 100%; text-align: center; line-height: 5.625rem; }
   #contentBox .menu_bar > ul > li > a { display: block; width: 70%; height: 100%; margin: auto; font-size: 1rem; text-transform: capitalize; color: #777; }
   #contentBox .menu_bar > ul > li > a.action { color: #333; font-weight: bold; text-decoration: underline; }
   #contentBox .menuBox { width: 21.875rem; height: auto; margin: auto; margin-top: 10rem; }

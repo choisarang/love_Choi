@@ -1,0 +1,65 @@
+/*reset and common css*/
+
+html,body{width:100%; height:100%; color:#222328;}
+*{margin:0; padding:0; border:0; outline:0;}
+ul,ol,li{list-style:none;}
+a{text-decoration:none;}
+header,article,section,nav,footer{display:block}
+/*main태그는 사용하지 말 것*/
+.hidden{display:block; width:0; height:0; position:absolute; z-index: -1; overflow:hidden;}
+.clearfix:after,.clearfix::after{content:" "; display:block; clear:both;}
+
+/*design*/
+
+#wrap {width:1200px; height:700px; margin:auto;}
+#headBox {width:100%; height:100px; background-color:#fa0; padding: 30px 0; padding-right: 50px; box-sizing: border-box;}
+h1{float:left; width:200px; height:40px; background-color:#acf;}
+
+/*gnb ========================================================*/
+#gnb{float: right; width: 800px; height: 30px; margin-top: 10px; background-color: #aff;}
+#gnb>ul{width:100%; height:auto; text-align: center; line-height: 30px;}
+#gnb>ul>li{float:left; width:200px; height:auto;}
+#gnb>ul>li>dl{width:100%; height:auto; background-color: #fff;}
+#gnb>ul>li>dl>dt{width:100%; height:30px; font-weight: bold;}
+#gnb>ul>li>dl>dd{width:100%; height:30px;}
+
+#gnb a{display: block; width:100%; height:100%; color:#222328;}
+#gnb a:hover,
+#gnb a:focus{background-color: #222328; color: #fff;}
+
+#gnb dd{display: none;}
+
+/*viewBox =====================================================*/
+#viewBox {width:100%; height:300px; overflow:hidden;}
+.slide_guide{position: relative; width:100%; height:300%;}
+.slide_01{width:100%; height:300px; background-color:#7fa}
+.slide_02{width:100%; height:300px; background-color:#afa}
+.slide_03{width:100%; height:300px; background-color:#77a}
+
+/*conBox ======================================================*/
+#conBox {width:100%; height:200px; background-color:#f0a;}
+#conBox>div{float: left; width:400px; height:100%;}
+
+.con_01>ul{width:100%; height:30px;}
+.con_01>ul>li{float:left; width:100px; height:100%; text-align: center; line-height: 30px; background-color: #fff;}
+.con_01 a{display: block; width:100%; height:100%; color:#222328;}
+.con_01>ul>li.action a{background-color: #222328; color:#fff;}
+
+
+.tab_area{width:100%; height:170px;}
+.tab_area>.news{width:100%; height:100%; background-color: #fa0;}
+.tab_area>.gallery{width:100%; height:100%; background-color: #a77; display: none;}
+
+.con_02{background-color: #f35;}
+
+.con_03{background-color: #ccc;}
+.con_btn{width:100%; height:100%;}
+.con_btn>a{display: block; width:100%; height:100%; text-align: center; line-height: 200px; font-size: 2rem;}
+.popup{display: none; position:fixed; z-index: 100; left:0; right:0; top:0; bottom:0; margin:auto; width:400px; height:300px; background-color: #fff; border-radius: 3px;}
+.popup>.close{width:50px; height:50px; background-color: #222328; color:#fff;}
+.popup_bg{display: none; position:fixed; z-index: 50; top:0; left:0; width:100%; height:100%; background-color:rgba(50, 50, 50, 0.7);}
+
+#footBox{width:100%; height:100px; background-color:#faa;}
+#footBox h2{float:left; width: 200px; height: 100%;}
+#footBox address{float:left; width: 800px; height: 100%; font-style: normal; text-align: center;}
+#footBox .sns{float:left; width:200px; height: 100%;}
