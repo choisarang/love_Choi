@@ -19,21 +19,21 @@
     >.slide_01{background-size: cover; background-position: 50% 50%;
       >.text{width: 100%; height: 12.5rem; font-size: 2.8125rem; text-transform: uppercase;
         >em{width: 100%; height: 2.5rem; font-style: inherit; color: $textem;}
-        >p{width: 100%; height: 7.5rem; padding: 1rem 0; box-sizing: border-box; font-size: 5.2rem; text-transform: capitalize; font-weight: bold; color: $main;}
+        >h3{width: 100%; height: 7.5rem; padding: 1rem 0; box-sizing: border-box; font-size: 5.2rem; text-transform: capitalize; font-weight: bold; color: $main;}
         >span{width: 100%; height: 2.5rem; color: $text;}
       }// .text
     }// .slide_01
-    >.slide_02{background-color: $bg; background-position: 100% 0; background-size: cover;
+    >.slide_02{background-color: $bg; background-position: 90% 80%; background-size: 250%;
       >.text{width: 100%; height: 13.125rem;
-        >p{width: 100%; height: 9.375rem; color: $main; font-size: 3.75rem; text-transform: uppercase; font-weight: bold;}
+        >h3{width: 100%; height: 9.375rem; color: $main; font-size: 3.75rem; text-transform: uppercase; font-weight: bold;}
         >span{display: block; width: 6.25rem; height: 2.5rem; margin: auto; line-height: 2.5rem; color: #fff; font-size: 1.875rem; background-color: $main; text-shadow: none;}
       }// .text
     }// slide_02
     >.slide_03{background-color: #EBEEFF;
       >.text{width: 100%; height: 12.5rem;
-        >p{width: 100%; height: 100%; color: $main; font-size: 3.75rem; font-weight: bold;
+        >h3{width: 100%; height: 100%; color: $main; font-size: 3.75rem; font-weight: bold;
           >span{color: $yellow;}
-        }// p
+        }// h3
       }// .text
     }// slide_03
   }// .product
@@ -124,7 +124,7 @@
     }
   }// #snsBox
   .top_btn{position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem;
-    >button{width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid $main; border-radius: 100%; font-size: 0.8rem; color: $main; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center;}
+    >button{display: none; width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid $main; border-radius: 100%; font-size: 0.8rem; color: $main; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center;}
     >button:hover,>button:focus{background-color: $main; color: #fff;}
   }// .top_btn
 }// #conBox

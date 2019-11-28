@@ -12,27 +12,27 @@
     }// li
   }// .indicator
   >.product{width: 100%; height: 100%;
-    >li{float: left; width: 100%; height: 100%; background-position: 0 0; background-repeat: no-repeat;
-      >.text{position: relative; top: 50%; transform: translateY(-50%); text-align: center; text-shadow: 0.125rem 0.125rem 0.0625rem rgba(255,255,255,0.5);}
+    >li{float: left; width: 100%; height: 100%; background-repeat: no-repeat;
+      >.text{position: relative; top: 50%; transform: translateY(-50%); text-shadow: 0.125rem 0.125rem 0.0625rem rgba(255,255,255,0.5);}
     }// li
     >.slide_01{background-size: cover; background-position: 50% 50%;
-      >.text{width: 100%; height: 12.5rem; font-size: 2.8125rem; text-transform: uppercase;
+      >.text{width: 100%; height: 12.5rem; font-size: 2.8125rem; text-transform: uppercase; text-align: center;
         >em{width: 100%; height: 2.5rem; font-style: inherit; color: $textem;}
-        >p{width: 100%; height: 7.5rem; padding: 1rem 0; box-sizing: border-box; font-size: 5.2rem; text-transform: capitalize; font-weight: bold; color: $main;}
+        >h3{width: 100%; height: 7.5rem; padding: 1rem 0; box-sizing: border-box; font-size: 5.2rem; text-transform: capitalize; font-weight: bold; color: $main;}
         >span{width: 100%; height: 2.5rem; color: $text;}
       }// .text
     }// .slide_01
-    >.slide_02{background-color: $bg; background-position: 100% 0; background-size: cover;
-      >.text{width: 100%; height: 13.125rem;
-        >p{width: 100%; height: 9.375rem; color: $main; font-size: 3.75rem; text-transform: uppercase; font-weight: bold;}
-        >span{display: block; width: 6.25rem; height: 2.5rem; margin: auto; line-height: 2.5rem; color: #fff; font-size: 1.875rem; background-color: $main; text-shadow: none;}
+    >.slide_02{background-color: $bg; background-position: 50% 50%; background-size: cover;
+      >.text{width: 100%; height: 13.125rem; padding: 0 14.8vw; box-sizing: border-box;
+        >h3{width: 100%; height: 9.375rem; color: $main; font-size: 3.75rem; text-transform: uppercase; font-weight: bold;}
+        >span{display: block; width: 6.25rem; height: 2.5rem; text-align: center; line-height: 2.5rem; color: #fff; font-size: 1.875rem; background-color: $main; text-shadow: none;}
       }// .text
     }// slide_02
-    >.slide_03{background-color: #EBEEFF;
-      >.text{width: 100%; height: 12.5rem;
-        >p{width: 100%; height: 100%; color: $main; font-size: 3.75rem; font-weight: bold;
+    >.slide_03{background-color: #EBEEFF; background-position: 0 0;
+      >.text{width: 100%; height: 12.5rem; text-align: center;
+        >h3{width: 100%; height: 100%; color: $main; font-size: 3.75rem; font-weight: bold;
           >span{color: $yellow;}
-        }// p
+        }// h3
       }// .text
     }// slide_03
   }// .product

@@ -47,16 +47,16 @@
   #viewBox > .product > .slide_01 { background-size: 114.5vw 77.2vw; }
   #viewBox > .product > .slide_01 > .text { width: 100%; height: 12.5rem; font-size: 2.1875rem; text-transform: uppercase; }
   #viewBox > .product > .slide_01 > .text > em { width: 100%; height: 2.5rem; font-style: inherit; color: #333; }
-  #viewBox > .product > .slide_01 > .text > p { width: 100%; height: 7.5rem; padding: 1rem 0; box-sizing: border-box; font-size: 5.3125rem; text-transform: capitalize; font-weight: bold; color: #1b398f; }
+  #viewBox > .product > .slide_01 > .text > h3 { width: 100%; height: 7.5rem; h3adding: 1rem 0; box-sizing: border-box; font-size: 5.3125rem; text-transform: capitalize; font-weight: bold; color: #1b398f; }
   #viewBox > .product > .slide_01 > .text > span { width: 100%; height: 2.5rem; color: #777; }
   #viewBox > .product > .slide_02 { background-color: #f7f7f7; background-position: 0 30%; background-size: 100vw 76.8vw; }
   #viewBox > .product > .slide_02 > .text { width: 100%; height: 15.625rem; }
-  #viewBox > .product > .slide_02 > .text > p { width: 100%; height: 12.5rem; color: #1b398f; font-size: 5.3125rem; text-transform: uppercase; font-weight: bold; }
+  #viewBox > .product > .slide_02 > .text > h3 { width: 100%; height: 12.5rem; color: #1b398f; font-size: 5.3125rem; text-transform: uppercase; font-weight: bold; }
   #viewBox > .product > .slide_02 > .text > span { display: block; width: 6.25rem; height: 2.5rem; line-height: 2.5rem; text-align: center; margin-left: 0.625rem; color: #fff; font-size: 1.875rem; background-color: #1b398f; text-shadow: none; }
   #viewBox > .product > .slide_03 { background-color: #EBEEFF; }
   #viewBox > .product > .slide_03 > .text { width: 100%; height: 12.5rem; }
-  #viewBox > .product > .slide_03 > .text > p { width: 100%; height: 100%; color: #1b398f; font-size: 5.3125rem; font-weight: bold; text-align: center; }
-  #viewBox > .product > .slide_03 > .text > p > span { color: #fa0; }
+  #viewBox > .product > .slide_03 > .text > h3 { width: 100%; height: 100%; color: #1b398f; font-size: 5.3125rem; font-weight: bold; text-align: center; }
+  #viewBox > .product > .slide_03 > .text > h3 > span { color: #fa0; }
   #viewBox > .side_bar { position: fixed; z-index: 400; top: 0; bottom: 0; right: 8.6vw; margin: auto; width: 2.5rem; height: 18.75rem; }
   #viewBox > .side_bar > li { width: 2.1875rem; height: 2.1875rem; border-radius: 100%; margin-bottom: 2.8125rem; background-color: #ccc; }
   #viewBox > .side_bar > li > a { position: relative; display: block; width: 100%; height: 100%; border-radius: 100%; }
@@ -137,10 +137,10 @@
   #headBox > .list > .big > ul > li > dl { width: 100%; height: auto; }
   #headBox > .list > .big > ul > li > dl > dt { width: 100%; height: 6.25rem; padding-top: 2.5rem; box-sizing: border-box; }
   #headBox > .list > .big > ul > li > dl > dt > a { display: block; width: 100%; height: 1.5rem; text-align: center; color: #333; font-size: 1.25rem; text-transform: uppercase; }
-  #headBox > .list > .big > ul > li > dl > dt > a.active { color: #1b398f; font-weight: bold; }
+  #headBox > .list > .big > ul > li > dl > dt > a.active, #headBox > .list > .big > ul > li > dl > dt a.select { color: #1b398f; font-weight: bold; }
   #headBox > .list > .big > ul > li > dl > dd { display: none; width: 100%; height: 9.375rem; padding-top: 1.25rem; }
   #headBox > .list > .big > ul > li > dl > dd > a { display: block; width: 100%; height: 4.375rem; margin-top: 0.0625rem; text-align: center; color: #333; font-size: 1.2rem; line-height: 3.125rem; }
-  #headBox > .list > .big > ul > li > dl > dd > a.active { color: #1b398f; }
+  #headBox > .list > .big > ul > li > dl > dd > a.active, #headBox > .list > .big > ul > li > dl > dd a.select { color: #1b398f; }
   #headBox > .list > .big > ul > li > a { display: block; width: 100%; height: 100%; font-size: 1.5625rem; color: #333; text-align: center; text-transform: capitalize; }
   #headBox > .list > .big > ul > li:nth-child(1) { width: 10.625rem; }
   #headBox > .list > .big > ul > li:nth-child(2) { width: 8.75rem; }
@@ -174,16 +174,16 @@
   #viewBox > .product > .slide_01 { background-size: cover; }
   #viewBox > .product > .slide_01 > .text { width: 100%; height: 12.5rem; font-size: 2rem; text-transform: uppercase; }
   #viewBox > .product > .slide_01 > .text > em { width: 100%; height: 2.5rem; font-style: inherit; color: #333; }
-  #viewBox > .product > .slide_01 > .text > p { width: 100%; height: 7.5rem; padding: 1rem 0; box-sizing: border-box; font-size: 5.3125rem; text-transform: capitalize; font-weight: bold; color: #1b398f; }
+  #viewBox > .product > .slide_01 > .text > h3 { width: 100%; height: 7.5rem; padding: 1rem 0; box-sizing: border-box; font-size: 5.3125rem; text-transform: capitalize; font-weight: bold; color: #1b398f; }
   #viewBox > .product > .slide_01 > .text > span { width: 100%; height: 2.5rem; color: #777; }
   #viewBox > .product > .slide_02 { background-color: #f7f7f7; background-position: 50% 50%; background-size: cover; }
   #viewBox > .product > .slide_02 > .text { width: 100%; height: 15.625rem; }
-  #viewBox > .product > .slide_02 > .text > p { width: 100%; height: 12.5rem; color: #1b398f; font-size: 5.3125rem; text-transform: uppercase; font-weight: bold; }
+  #viewBox > .product > .slide_02 > .text > h3 { width: 100%; height: 12.5rem; color: #1b398f; font-size: 5.3125rem; text-transform: uppercase; font-weight: bold; }
   #viewBox > .product > .slide_02 > .text > span { display: block; width: 6.25rem; height: 2.5rem; padding-left: 0.625rem; box-sizing: border-box; line-height: 2.5rem; color: #fff; font-size: 1.875rem; text-shadow: none; background-color: #1b398f; }
   #viewBox > .product > .slide_03 { background-color: #EBEEFF; }
   #viewBox > .product > .slide_03 > .text { width: 100%; height: 12.5rem; }
-  #viewBox > .product > .slide_03 > .text > p { width: 100%; height: 100%; color: #1b398f; font-size: 5.3125rem; font-weight: bold; text-align: center; }
-  #viewBox > .product > .slide_03 > .text > p > span { color: #fa0; }
+  #viewBox > .product > .slide_03 > .text > h3 { width: 100%; height: 100%; color: #1b398f; font-size: 5.3125rem; font-weight: bold; text-align: center; }
+  #viewBox > .product > .slide_03 > .text > h3 > span { color: #fa0; }
   #viewBox > .side_bar { position: fixed; z-index: 400; top: 0; bottom: 0; right: 5vw; margin: auto; width: 2.5rem; height: 18.75rem; }
   #viewBox > .side_bar > li { width: 1.875rem; height: 1.875rem; border-radius: 100%; margin-bottom: 2.5rem; background-color: #ccc; }
   #viewBox > .side_bar > li > a { position: relative; display: block; width: 100%; height: 100%; border-radius: 100%; }
@@ -197,7 +197,7 @@
   #conBox > article > .title > p { font-size: 2.5rem; color: #1b398f; font-weight: bold; text-transform: uppercase; }
   #conBox > article > .title > span { font-size: 1.5rem; color: #1b398f; }
   #conBox > #brandBox { background-color: #f7f7f7; }
-  #conBox > #brandBox > ul { width: 60.625rem; height: 23.125rem; margin: auto; }
+  #conBox > #brandBox > ul { width: 59.375rem; height: 23.125rem; margin: auto; }
   #conBox > #brandBox > ul > li { position: relative; float: left; width: 33.33333%; height: 23.125rem; background-position: 50% 50%; background-size: cover; background-repeat: no-repeat; }
   #conBox > #brandBox > ul > li > a { display: block; width: 100%; height: 100%; }
   #conBox > #brandBox > ul > li > a > .inner { position: absolute; width: 13.75rem; height: 15rem; top: 35%; left: 0; right: 0; margin: auto; }
@@ -297,21 +297,21 @@
   #viewBox > .indicator > li > a { display: block; width: 100%; height: 100%; outline: none; }
   #viewBox > .indicator > li > a.action { background-color: #fff; outline: none; }
   #viewBox > .product { width: 100%; height: 100%; }
-  #viewBox > .product > li { float: left; width: 100%; height: 100%; background-position: 0 0; background-repeat: no-repeat; }
-  #viewBox > .product > li > .text { position: relative; top: 50%; transform: translateY(-50%); text-align: center; text-shadow: 0.125rem 0.125rem 0.0625rem rgba(255, 255, 255, 0.5); }
+  #viewBox > .product > li { float: left; width: 100%; height: 100%; background-repeat: no-repeat; }
+  #viewBox > .product > li > .text { position: relative; top: 50%; transform: translateY(-50%); text-shadow: 0.125rem 0.125rem 0.0625rem rgba(255, 255, 255, 0.5); }
   #viewBox > .product > .slide_01 { background-size: cover; background-position: 50% 50%; }
-  #viewBox > .product > .slide_01 > .text { width: 100%; height: 12.5rem; font-size: 2.8125rem; text-transform: uppercase; }
+  #viewBox > .product > .slide_01 > .text { width: 100%; height: 12.5rem; font-size: 2.8125rem; text-transform: uppercase; text-align: center; }
   #viewBox > .product > .slide_01 > .text > em { width: 100%; height: 2.5rem; font-style: inherit; color: #333; }
-  #viewBox > .product > .slide_01 > .text > p { width: 100%; height: 7.5rem; padding: 1rem 0; box-sizing: border-box; font-size: 5.2rem; text-transform: capitalize; font-weight: bold; color: #1b398f; }
+  #viewBox > .product > .slide_01 > .text > h3 { width: 100%; height: 7.5rem; padding: 1rem 0; box-sizing: border-box; font-size: 5.2rem; text-transform: capitalize; font-weight: bold; color: #1b398f; }
   #viewBox > .product > .slide_01 > .text > span { width: 100%; height: 2.5rem; color: #777; }
-  #viewBox > .product > .slide_02 { background-color: #f7f7f7; background-position: 100% 0; background-size: cover; }
-  #viewBox > .product > .slide_02 > .text { width: 100%; height: 13.125rem; }
-  #viewBox > .product > .slide_02 > .text > p { width: 100%; height: 9.375rem; color: #1b398f; font-size: 3.75rem; text-transform: uppercase; font-weight: bold; }
-  #viewBox > .product > .slide_02 > .text > span { display: block; width: 6.25rem; height: 2.5rem; margin: auto; line-height: 2.5rem; color: #fff; font-size: 1.875rem; background-color: #1b398f; text-shadow: none; }
-  #viewBox > .product > .slide_03 { background-color: #EBEEFF; }
-  #viewBox > .product > .slide_03 > .text { width: 100%; height: 12.5rem; }
-  #viewBox > .product > .slide_03 > .text > p { width: 100%; height: 100%; color: #1b398f; font-size: 3.75rem; font-weight: bold; }
-  #viewBox > .product > .slide_03 > .text > p > span { color: #fa0; }
+  #viewBox > .product > .slide_02 { background-color: #f7f7f7; background-position: 50% 50%; background-size: cover; }
+  #viewBox > .product > .slide_02 > .text { width: 100%; height: 13.125rem; padding: 0 14.8vw; box-sizing: border-box; }
+  #viewBox > .product > .slide_02 > .text > h3 { width: 100%; height: 9.375rem; color: #1b398f; font-size: 3.75rem; text-transform: uppercase; font-weight: bold; }
+  #viewBox > .product > .slide_02 > .text > span { display: block; width: 6.25rem; height: 2.5rem; text-align: center; line-height: 2.5rem; color: #fff; font-size: 1.875rem; background-color: #1b398f; text-shadow: none; }
+  #viewBox > .product > .slide_03 { background-color: #EBEEFF; background-position: 0 0; }
+  #viewBox > .product > .slide_03 > .text { width: 100%; height: 12.5rem; text-align: center; }
+  #viewBox > .product > .slide_03 > .text > h3 { width: 100%; height: 100%; color: #1b398f; font-size: 3.75rem; font-weight: bold; }
+  #viewBox > .product > .slide_03 > .text > h3 > span { color: #fa0; }
   #viewBox > .side_bar { position: fixed; z-index: 400; top: 0; bottom: 0; right: 5vw; margin: auto; width: 2.5rem; height: 18.75rem; }
   #viewBox > .side_bar > li { width: 1.875rem; height: 1.875rem; border-radius: 100%; margin-bottom: 2.5rem; background-color: #ccc; }
   #viewBox > .side_bar > li > a { position: relative; display: block; width: 100%; height: 100%; border-radius: 100%; }
@@ -420,16 +420,16 @@
   #viewBox > .product > .slide_01 { background-size: cover; background-position: 50% 50%; }
   #viewBox > .product > .slide_01 > .text { width: 100%; height: 12.5rem; font-size: 2.8125rem; text-transform: uppercase; }
   #viewBox > .product > .slide_01 > .text > em { width: 100%; height: 2.5rem; font-style: inherit; color: #333; }
-  #viewBox > .product > .slide_01 > .text > p { width: 100%; height: 7.5rem; padding: 1rem 0; box-sizing: border-box; font-size: 5.2rem; text-transform: capitalize; font-weight: bold; color: #1b398f; }
+  #viewBox > .product > .slide_01 > .text > h3 { width: 100%; height: 7.5rem; padding: 1rem 0; box-sizing: border-box; font-size: 5.2rem; text-transform: capitalize; font-weight: bold; color: #1b398f; }
   #viewBox > .product > .slide_01 > .text > span { width: 100%; height: 2.5rem; color: #777; }
-  #viewBox > .product > .slide_02 { background-color: #f7f7f7; background-position: 100% 0; background-size: cover; }
+  #viewBox > .product > .slide_02 { background-color: #f7f7f7; background-position: 90% 80%; background-size: 250%; }
   #viewBox > .product > .slide_02 > .text { width: 100%; height: 13.125rem; }
-  #viewBox > .product > .slide_02 > .text > p { width: 100%; height: 9.375rem; color: #1b398f; font-size: 3.75rem; text-transform: uppercase; font-weight: bold; }
+  #viewBox > .product > .slide_02 > .text > h3 { width: 100%; height: 9.375rem; color: #1b398f; font-size: 3.75rem; text-transform: uppercase; font-weight: bold; }
   #viewBox > .product > .slide_02 > .text > span { display: block; width: 6.25rem; height: 2.5rem; margin: auto; line-height: 2.5rem; color: #fff; font-size: 1.875rem; background-color: #1b398f; text-shadow: none; }
   #viewBox > .product > .slide_03 { background-color: #EBEEFF; }
   #viewBox > .product > .slide_03 > .text { width: 100%; height: 12.5rem; }
-  #viewBox > .product > .slide_03 > .text > p { width: 100%; height: 100%; color: #1b398f; font-size: 3.75rem; font-weight: bold; }
-  #viewBox > .product > .slide_03 > .text > p > span { color: #fa0; }
+  #viewBox > .product > .slide_03 > .text > h3 { width: 100%; height: 100%; color: #1b398f; font-size: 3.75rem; font-weight: bold; }
+  #viewBox > .product > .slide_03 > .text > h3 > span { color: #fa0; }
   #viewBox > .side_bar { display: none; }
   #conBox { width: 100%; height: auto; }
   #conBox > article { width: 100%; height: 100vh; padding: 8.125rem 0; box-sizing: border-box; }
@@ -484,7 +484,7 @@
   #conBox > #snsBox > ul > li:nth-child(2n) { margin-right: 0; }
   #conBox > #snsBox > ul > li:nth-child(n+5):nth-child(-n+10) { display: none; }
   #conBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem; }
-  #conBox .top_btn > button { width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; font-size: 0.8rem; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
+  #conBox .top_btn > button { display: none; width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; font-size: 0.8rem; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
   #conBox .top_btn > button:hover, #conBox .top_btn > button:focus { background-color: #1b398f; color: #fff; } }
 
 @media screen and (max-width: 480px) { #headBox { position: fixed; z-index: 500; width: 100vw; min-width: 23.4375rem; height: 5.625rem; padding: 1.25rem 1.875rem; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
@@ -534,16 +534,16 @@
   #viewBox > .product > .slide_01 { background-size: cover; background-position: 50% 50%; }
   #viewBox > .product > .slide_01 > .text { width: 100%; height: 12.5rem; font-size: 1.875rem; text-transform: uppercase; }
   #viewBox > .product > .slide_01 > .text > em { width: 100%; height: 2.5rem; font-style: inherit; color: #333; }
-  #viewBox > .product > .slide_01 > .text > p { width: 100%; height: 6.25rem; padding: 1rem 0; box-sizing: border-box; font-size: 3.2rem; text-transform: capitalize; font-weight: bold; color: #1b398f; }
+  #viewBox > .product > .slide_01 > .text > h3 { width: 100%; height: 6.25rem; padding: 1rem 0; box-sizing: border-box; font-size: 3.2rem; text-transform: capitalize; font-weight: bold; color: #1b398f; }
   #viewBox > .product > .slide_01 > .text > span { width: 100%; height: 2.5rem; color: #777; }
   #viewBox > .product > .slide_02 { background-color: #f7f7f7; background-position: 100% 0; background-size: cover; }
   #viewBox > .product > .slide_02 > .text { width: 100%; height: 13.125rem; }
-  #viewBox > .product > .slide_02 > .text > p { width: 100%; height: 9.375rem; color: #1b398f; font-size: 3.75rem; text-transform: uppercase; font-weight: bold; }
+  #viewBox > .product > .slide_02 > .text > h3 { width: 100%; height: 9.375rem; color: #1b398f; font-size: 3.75rem; text-transform: uppercase; font-weight: bold; }
   #viewBox > .product > .slide_02 > .text > span { display: block; width: 6.25rem; height: 2.5rem; margin: auto; line-height: 2.5rem; color: #fff; font-size: 1.875rem; background-color: #1b398f; text-shadow: none; }
   #viewBox > .product > .slide_03 { background-color: #EBEEFF; }
   #viewBox > .product > .slide_03 > .text { width: 100%; height: 12.5rem; }
-  #viewBox > .product > .slide_03 > .text > p { width: 100%; height: 100%; color: #1b398f; font-size: 3.2rem; font-weight: bold; }
-  #viewBox > .product > .slide_03 > .text > p > span { color: #fa0; }
+  #viewBox > .product > .slide_03 > .text > h3 { width: 100%; height: 100%; color: #1b398f; font-size: 3.2rem; font-weight: bold; }
+  #viewBox > .product > .slide_03 > .text > h3 > span { color: #fa0; }
   #viewBox > .side_bar { display: none; }
   #conBox { width: 100%; min-width: 23.4375rem; height: auto; }
   #conBox > article { width: 100%; height: 100vh; padding: 6.25rem 0; box-sizing: border-box; }
@@ -598,5 +598,5 @@
   #conBox > #snsBox > ul > li:nth-child(2n) { margin-right: 0; }
   #conBox > #snsBox > ul > li:nth-child(n+5):nth-child(-n+10) { display: none; }
   #conBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 3%; width: 2.5rem; height: 2.5rem; }
-  #conBox .top_btn > button { width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; font-size: 0.8rem; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
+  #conBox .top_btn > button { display: none; width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; font-size: 0.8rem; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
   #conBox .top_btn > button:hover, #conBox .top_btn > button:focus { background-color: #1b398f; color: #fff; } }

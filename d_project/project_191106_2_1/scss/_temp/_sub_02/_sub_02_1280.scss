@@ -37,7 +37,7 @@
       >span{color: $yellow;}
     }// .textBox
     .top_btn{position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem;
-      >button{width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid $main; border-radius: 100%; font-size: 0.8rem; color: $main; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center;}
+      >button{display: none; width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid $main; border-radius: 100%; font-size: 0.8rem; color: $main; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center;}
       >button:hover,>button:focus{background-color: $main; color: #fff;}
     }// .top_btn
   }// #contentBox

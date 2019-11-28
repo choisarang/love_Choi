@@ -90,7 +90,7 @@ html { background-color: #f7f7f7; }
   #contentBox .careBox > dl > dd > em { color: #333; font-style: normal; }
   #contentBox .careBox > dl > dd.action { opacity: 1; transform: translateY(-50px); transition: all 1000ms ease 150ms; }
   #contentBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem; }
-  #contentBox .top_btn > button { width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; font-size: 0.8rem; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
+  #contentBox .top_btn > button { display: none; width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; font-size: 0.8rem; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
   #contentBox .top_btn > button:hover, #contentBox .top_btn > button:focus { background-color: #1b398f; color: #fff; } }
 
 @media screen and (max-width: 1280px) and (min-width: 971px) { #headBox { position: fixed; z-index: 500; width: 100vw; height: 6.25rem; padding: 0 16vw; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
@@ -103,10 +103,10 @@ html { background-color: #f7f7f7; }
   #headBox > .list > .big > ul > li > dl { width: 100%; height: auto; }
   #headBox > .list > .big > ul > li > dl > dt { width: 100%; height: 6.25rem; padding-top: 2.5rem; box-sizing: border-box; }
   #headBox > .list > .big > ul > li > dl > dt > a { display: block; width: 100%; height: 1.5rem; text-align: center; color: #333; font-size: 1.25rem; text-transform: uppercase; }
-  #headBox > .list > .big > ul > li > dl > dt > a.active { color: #1b398f; font-weight: bold; }
+  #headBox > .list > .big > ul > li > dl > dt > a.active, #headBox > .list > .big > ul > li > dl > dt a.select { color: #1b398f; font-weight: bold; }
   #headBox > .list > .big > ul > li > dl > dd { display: none; width: 100%; height: 9.375rem; padding-top: 1.25rem; }
   #headBox > .list > .big > ul > li > dl > dd > a { display: block; width: 100%; height: 4.375rem; margin-top: 0.0625rem; text-align: center; color: #333; font-size: 1.2rem; line-height: 3.125rem; }
-  #headBox > .list > .big > ul > li > dl > dd > a.active { color: #1b398f; }
+  #headBox > .list > .big > ul > li > dl > dd > a.active, #headBox > .list > .big > ul > li > dl > dd a.select { color: #1b398f; }
   #headBox > .list > .big > ul > li > a { display: block; width: 100%; height: 100%; font-size: 1.5625rem; color: #333; text-align: center; text-transform: capitalize; }
   #headBox > .list > .big > ul > li:nth-child(1) { width: 10.625rem; }
   #headBox > .list > .big > ul > li:nth-child(2) { width: 8.75rem; }
@@ -181,7 +181,7 @@ html { background-color: #f7f7f7; }
   #contentBox .careBox > dl > dd > em { color: #333; font-style: normal; }
   #contentBox .careBox > dl > dd.action { opacity: 1; transform: translateY(-50px); transition: all 1000ms ease 150ms; }
   #contentBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem; }
-  #contentBox .top_btn > button { width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; font-size: 0.8rem; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
+  #contentBox .top_btn > button { display: none; width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; font-size: 0.8rem; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
   #contentBox .top_btn > button:hover, #contentBox .top_btn > button:focus { background-color: #1b398f; color: #fff; } }
 
 @media screen and (max-width: 970px) and (min-width: 769px) { #headBox { position: fixed; z-index: 500; width: 100vw; min-width: 23.4375rem; height: 5.625rem; padding: 1.25rem 1.875rem; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
@@ -271,7 +271,7 @@ html { background-color: #f7f7f7; }
   #contentBox .careBox > dl > dd > em { color: #333; font-style: normal; }
   #contentBox .careBox > dl > dd.action { opacity: 1; transform: translateY(-50px); transition: all 1000ms ease 150ms; }
   #contentBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem; }
-  #contentBox .top_btn > button { width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; font-size: 0.8rem; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
+  #contentBox .top_btn > button { display: none; width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; font-size: 0.8rem; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
   #contentBox .top_btn > button:hover, #contentBox .top_btn > button:focus { background-color: #1b398f; color: #fff; } }
 
 @media screen and (max-width: 768px) and (min-width: 481px) { #headBox { position: fixed; z-index: 500; width: 100vw; min-width: 23.4375rem; height: 5.625rem; padding: 1.25rem 1.875rem; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
@@ -364,7 +364,7 @@ html { background-color: #f7f7f7; }
   #contentBox .careBox > dl > dd > em { color: #333; font-style: normal; }
   #contentBox .careBox > dl > dd.action { opacity: 1; transform: translateY(-50px); transition: all 1000ms ease 150ms; }
   #contentBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem; }
-  #contentBox .top_btn > button { width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; font-size: 0.8rem; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
+  #contentBox .top_btn > button { display: none; width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; font-size: 0.8rem; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
   #contentBox .top_btn > button:hover, #contentBox .top_btn > button:focus { background-color: #1b398f; color: #fff; } }
 
 @media screen and (max-width: 480px) { #headBox { position: fixed; z-index: 500; width: 100vw; min-width: 23.4375rem; height: 5.625rem; padding: 1.25rem 1.875rem; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5); }
@@ -457,5 +457,5 @@ html { background-color: #f7f7f7; }
   #contentBox .careBox > dl > dd > em { color: #333; font-style: normal; }
   #contentBox .careBox > dl > dd.action { right: 0; opacity: 1; transform: translateX(0); transition: all 1500ms ease; }
   #contentBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem; }
-  #contentBox .top_btn > button { width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; font-size: 0.8rem; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
+  #contentBox .top_btn > button { display: none; width: 100%; height: 100%; padding: 0; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; font-size: 0.8rem; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
   #contentBox .top_btn > button:hover, #contentBox .top_btn > button:focus { background-color: #1b398f; color: #fff; } }

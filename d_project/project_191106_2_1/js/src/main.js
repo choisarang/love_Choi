@@ -174,6 +174,7 @@ sideLink.on('mouseleave blur', function(){
   $(this).removeClass('action');
 });
 
+
 // viewBox -------------------------------------------
 const product = $('.product');
 const proLi = product.children('li');
@@ -231,7 +232,7 @@ indiLink.on('focus click', function(e){
     clearInterval(go)
   };
 
-  // slideGo();
+  slideGo();
   
 // brandBox -------------------------------------------
 const brandBox = $('#brandBox');
@@ -263,7 +264,7 @@ const menuBtn = menuBtnWrap.children('button');
 let mListLen = menuLi.length;
 // img넣기 ======
 for(let i=0; i<mListLen; i++){
-  menuLi.eq(i).css({backgroundImage:'url("../img/' + (i+1) + '.png")'});
+  menuLi.eq(i).css({backgroundImage:'url("../img/menu/' + (i+1) + '.png")'});
 };
 
 let menuLiw = menuLi.eq(0).outerWidth(true);
@@ -359,13 +360,28 @@ $(window).on('mousewheel DOMMouseScroll', function(e){
       });
     }
   });
-  // -------------------------------------------
   
   // sidebar 이동 -------------------------------------------
-sideLink.on('click', function(){
-  wheeln = $(this).parent().index();
-  $('html, body').stop().animate({scrollTop:scVal[wheeln]})
-})
+  sideLink.on('click', function(){
+    wheeln = $(this).parent().index();
+    $('html, body').stop().animate({scrollTop:scVal[wheeln]})
+  })
+  
+  // top 버튼 -------------------------------------------
+  const topBtn = $('.top_btn').children('button');
 
+  // 어느정도 위치했을 떄 보이기
+  $( window ).scroll( function() {
+    if ( $( this ).scrollTop() > 500 ) {
+      topBtn.show();
+    } else {
+      topBtn.hide();
+    }
+  } );
+
+  // 버튼 이동
+  topBtn.on('click', function(){
+    $('html').animate({scrollTop:0},500);
+  })
 
 })(jQuery);

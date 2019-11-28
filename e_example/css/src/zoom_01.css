@@ -1,0 +1,13 @@
+/* zoom_01.css */
+#wrap{width: 100%; min-width: 1200px; background-color: #dfdfdf;}
+  .thumnail{float: left; width: 50%; min-width: 500px; height: 800px; box-sizing: border-box; padding: 2rem;}
+    .big{position: relative; width: 100%; height: 400px; margin: auto;  margin-bottom: 1rem; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;}
+    .mouse_location{position: absolute; width: 120px; height: 120px; border: 5px solid #fff; border-radius: 100%; background-repeat: no-repeat; background-size:  1000%;}
+    .small{width: 100%; height: 100px; margin: auto;}
+    .small>li{float: left; width: 120px; height: 120px; margin-left: 1rem; background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;}
+    .small>li:nth-child(1){margin-left: 0; background-image: url("../../img/zoom/zoom_01.jpg");}
+    .small>li:nth-child(2){background-image: url("../../img/zoom/zoom_02.jpg");}
+    .small>li:nth-child(3){background-image: url("../../img/zoom/zoom_03.jpg");}
+    .small>li:nth-child(4){background-image: url("../../img/zoom/zoom_04.jpg");}
+    .small>li:hover, .small>li:focus{transform: scale(1.2);}
+  .view{float: right; width: 50%; min-width: 500px; height: 800px; background-color: #acf; background-size: 500% auto; background-repeat: no-repeat;}

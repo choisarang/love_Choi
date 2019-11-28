@@ -167,5 +167,22 @@ win.on('scroll', function(){
   });
 
 
+  // top 버튼 -------------------------------------------
+  const topBtn = $('.top_btn').children('button');
+
+  // 어느정도 위치했을 떄 보이기
+  $( window ).scroll( function() {
+    if ( $( this ).scrollTop() > 800 ) {
+      topBtn.show();
+    } else {
+      topBtn.hide();
+    }
+  } );
+
+  // 버튼 이동
+  topBtn.on('click', function(){
+    $('html').animate({scrollTop:0},500);
+  });
+
 
 })(jQuery);

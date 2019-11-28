@@ -19,21 +19,21 @@
     >.slide_01{background-size: 114.5vw 77.2vw;
       >.text{width: 100%; height: 12.5rem; font-size: 2.1875rem; text-transform: uppercase;
         >em{width: 100%; height: 2.5rem; font-style: inherit; color: $textem;}
-        >p{width: 100%; height: 7.5rem; padding: 1rem 0; box-sizing: border-box; font-size: 5.3125rem; text-transform: capitalize; font-weight: bold; color: $main;}
+        >h3{width: 100%; height: 7.5rem; h3adding: 1rem 0; box-sizing: border-box; font-size: 5.3125rem; text-transform: capitalize; font-weight: bold; color: $main;}
         >span{width: 100%; height: 2.5rem; color: $text;}
       }// .text
     }// .slide_01
     >.slide_02{background-color: $bg; background-position: 0 30%; background-size: 100vw 76.8vw;
       >.text{width: 100%; height: 15.625rem;
-        >p{width: 100%; height: 12.5rem; color: $main; font-size: 5.3125rem; text-transform: uppercase; font-weight: bold;}
+        >h3{width: 100%; height: 12.5rem; color: $main; font-size: 5.3125rem; text-transform: uppercase; font-weight: bold;}
         >span{display: block; width: 6.25rem; height: 2.5rem; line-height: 2.5rem; text-align: center; margin-left: 0.625rem; color: #fff; font-size: 1.875rem; background-color: $main; text-shadow: none;}
       }// .text
     }// slide_02
     >.slide_03{background-color: #EBEEFF;
       >.text{width: 100%; height: 12.5rem;
-        >p{width: 100%; height: 100%; color: $main; font-size: 5.3125rem; font-weight: bold; text-align: center;
+        >h3{width: 100%; height: 100%; color: $main; font-size: 5.3125rem; font-weight: bold; text-align: center;
           >span{color: $yellow;}
-        }// p
+        }// h3
       }// .text
     }// slide_03
   }// .product

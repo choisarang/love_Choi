@@ -19,21 +19,21 @@
     >.slide_01{background-size: cover;
       >.text{width: 100%; height: 12.5rem; font-size: 2rem; text-transform: uppercase;
         >em{width: 100%; height: 2.5rem; font-style: inherit; color: $textem;}
-        >p{width: 100%; height: 7.5rem; padding: 1rem 0; box-sizing: border-box; font-size: 5.3125rem; text-transform: capitalize; font-weight: bold; color: $main;}
+        >h3{width: 100%; height: 7.5rem; padding: 1rem 0; box-sizing: border-box; font-size: 5.3125rem; text-transform: capitalize; font-weight: bold; color: $main;}
         >span{width: 100%; height: 2.5rem; color: $text;}
       }// .text
     }// .slide_01
     >.slide_02{background-color: $bg; background-position: 50% 50%; background-size: cover;
       >.text{width: 100%; height: 15.625rem;
-        >p{width: 100%; height: 12.5rem; color: $main; font-size: 5.3125rem; text-transform: uppercase; font-weight: bold;}
+        >h3{width: 100%; height: 12.5rem; color: $main; font-size: 5.3125rem; text-transform: uppercase; font-weight: bold;}
         >span{display: block; width: 6.25rem; height: 2.5rem; padding-left: 0.625rem; box-sizing: border-box; line-height: 2.5rem; color: #fff; font-size: 1.875rem; text-shadow: none; background-color: $main;}
       }// .text
     }// slide_02
     >.slide_03{background-color: #EBEEFF;
       >.text{width: 100%; height: 12.5rem;
-        >p{width: 100%; height: 100%; color: $main; font-size: 5.3125rem; font-weight: bold; text-align: center;
+        >h3{width: 100%; height: 100%; color: $main; font-size: 5.3125rem; font-weight: bold; text-align: center;
           >span{color: $yellow;}
-        }// p
+        }// h3
       }// .text
     }// slide_03
   }// .product
@@ -60,7 +60,7 @@
   }// article
   >#brandBox{background-color: $bg;
     >ul{$count:3;
-      width: 60.625rem; height: 23.125rem; margin: auto;
+      width: 59.375rem; height: 23.125rem; margin: auto;
       >li{position: relative; float: left; width: 100% / $count; height: 23.125rem; background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;
         >a{display: block; width: 100%; height: 100%;
           >.inner{position: absolute; width: 13.75rem; height: 15rem; top: 35%; left: 0; right: 0; margin: auto;
