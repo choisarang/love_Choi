@@ -114,7 +114,7 @@
   barDdLink.on('blur', function(){
     $(this).parent('dd').siblings('dt').css({fontWeight:"normal"});
     $(this).parent('dd').siblings('dt').find('i').css({color:"#777"});
-  })
+  });
   
   
   // menu list--------------------------------------------------------------------------------------
@@ -222,8 +222,29 @@ const ToppingList = [{title:'블루베리',
            price:'50g당 700',
            bgimg:'jelly.png'}
           ];
+const DrinkList = [{title:'요거트 스무디',
+           content:'그릭요거트<br />설탕시럽<br />얼음',
+           price:'R 3,500 L 4,500',
+           bgimg:'pl_yogurt.png'},
+           {title:'딸기요거트 스무디',
+           content:'그릭요거트<br />딸기<br />설탕시럽<br />얼음',
+           price:'R 3,900 L 4,900',
+           bgimg:'st_yogurt.png'},
+           {title:'망고요거트 스무디',
+           content:'그릭요거트<br />망고<br />설탕시럽<br />얼음',
+           price:'R 3,900 L 4,900',
+           bgimg:'ma_yogurt.png'},
+           {title:'아이스 아메리카노',
+           content:'R 에스프레소 2샷<br />L 에스프레소 2샷',
+           price:'R 1,500 L 2,000',
+           bgimg:'americano.png'},
+           {title:'아이스 카페라떼',
+           content:'R 에스프레소 2샷<br />L 에스프레소 2샷<br />우유',
+           price:'R 2,500 L 3,000',
+           bgimg:'latte.png'},
+          ];
 
-const drinkArr = [bestList , yogurtList, ToppingList];
+const drinkArr = [bestList , yogurtList, ToppingList, DrinkList];
 
   const menuBox = $('.menu_box');
   const listBox = $('.list_box');
@@ -233,6 +254,7 @@ const drinkArr = [bestList , yogurtList, ToppingList];
   const menuBarLink = menuBarLi.children('a');
 
 
+  let i=0;
   const LiFun = function(arrVal){
 
     listBox.empty();
@@ -249,6 +271,8 @@ const drinkArr = [bestList , yogurtList, ToppingList];
       li_nth.find('p').append(arrVal[i].content);
       li_nth.find('span').append(arrVal[i].price);
     }
+    menuBarLi.eq(i).addClass('action');
+    menuBarLi.eq(i).siblings().removeClass('action');
   };
   LiFun(bestList);
   // LiFun(yogurtList);
@@ -259,12 +283,19 @@ const drinkArr = [bestList , yogurtList, ToppingList];
   menuBarLink.on('mouseleave', function(){
     $(this).removeClass('action')
   });
+
   menuBarLink.on('click', function(e){
     e.preventDefault();
     $(this).addClass('action')
-    let i = $(this).parent('li').index();
+    i = $(this).parent('li').index();
     LiFun(drinkArr[i]);
   });
+
+  const listLink = listBox.find('a');
+
+  listLink.on('click', function(e){
+    e.preventDefault();
+  })
 
 
   // top 버튼 -------------------------------------------

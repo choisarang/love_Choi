@@ -15,8 +15,9 @@
         >ul{width: 46.875rem; height: 6.25rem; margin: auto;
           >li{float: left; width: 25%; height: 100%; text-align: center; line-height: 6.25rem;  
             >a{display: block; width: 70%; height: 100%; margin: auto; font-size: 1.3rem; text-transform: capitalize; color:  $text;}
-            >a.action,a.select{color: $main; font-weight: bold; text-decoration: underline;}
+            >a.action{color: $main; font-weight: bold; text-decoration: underline;}
           }// li
+          >li.action > a{color: $main; font-weight: bold; text-decoration: underline;}
         }// ul  
       }// .menu_bar
       >.list_box{width: 46.875rem; height: auto; margin: auto; margin-top: 10rem; 

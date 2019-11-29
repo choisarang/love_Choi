@@ -1,0 +1,37 @@
+// sub_05_1280.scss
+
+@media screen and (max-width:1280px) and (min-width:971px) {
+
+  @import "../_h_f/h_f_1280";
+
+
+  #viewBox{width: 100%; height: 18.75rem; background-image: url("../../../img/store_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed;
+    h2{width: 100%; height: 100%; text-align: center; font-size: 2.1875rem; line-height: 25rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5);}
+  }
+
+  #contentBox{width: 59.375rem; height:auto; margin: auto; margin-bottom: 10rem; background-color: $bg; word-break: keep-all;
+    >.store_box{width: 100%; height: auto; margin-top: 10rem; 
+      >ul{width: 100%; height: auto;
+        >li{width: 100%; height: 240px; margin-bottom: 3rem;
+          >.img{float: left; width: 400px; height: 240px; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;}
+          >.img_01{background-image: url("../../../img/store/jamsil.jpeg");}
+          >.img_02{background-image: url("../../../img/store/borame.jpg");}
+          >.img_03{background-image: url("../../../img/store/jongro.jpg");}
+          >.img_04{background-image: url("../../../img/store/dongsuwon.jpg");}
+          >.img_05{background-image: url("../../../img/store/iksan.jpg");}
+          >dl{float: right; width: 400px; height: auto;
+            >dt{width: 100%; height: 50px; font-size: 2rem; color: $textem; font-weight: bold; border-bottom: 1px solid #ddd;
+              >span{float: left; display: block; width: 360px; height: 50px; line-height: 50px;}
+              >a{float: right; display: block; width: 40px; height: 40px; margin-top: 5px; background-image: url("../../../img/map.png"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;}
+            }// dt
+            >dd{width: 100%; height: auto; padding-top: 2rem; font-size: 1.2rem; line-height: 1.4;}
+          }// dl
+        }// li
+      }// ul
+    }// .store_box
+  .top_btn{position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem;
+    >button{display: none; width: 100%; height: 100%; background-color: #fff; border: 0.125rem solid $main; border-radius: 100%; color: $main; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center;}
+    >button:hover,>button:focus{background-color: $main; color: #fff;}
+  }// .top_btn
+}// #contentBox
+}

@@ -38,26 +38,19 @@ html { background-color: #f7f7f7; }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/facebook.png"); }
   #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/youtube.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
-  #viewBox { width: 100%; height: 25rem; background-image: url("../../../img/menu_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
+  #viewBox { width: 100%; height: 25rem; background-image: url("../../../img/notice_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: 100%; text-align: center; font-size: 2.1875rem; line-height: 31.25rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5); }
-  #contentBox { width: 100%; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; }
-  #contentBox > .menu_box { width: 100%; height: auto; }
-  #contentBox > .menu_box > .menu_bar { width: 100%; height: auto; border: 0.0625rem solid #777; border-right: 0; border-left: 0; }
-  #contentBox > .menu_box > .menu_bar > ul { width: 78.75rem; height: 6.25rem; margin: auto; }
-  #contentBox > .menu_box > .menu_bar > ul > li { float: left; width: 25%; height: 100%; text-align: center; line-height: 6.25rem; }
-  #contentBox > .menu_box > .menu_bar > ul > li > a { display: block; width: 70%; height: 100%; margin: auto; font-size: 1.4rem; text-transform: capitalize; color: #777; }
-  #contentBox > .menu_box > .menu_bar > ul > li > a.action { color: #1b398f; font-weight: bold; text-decoration: underline; }
-  #contentBox > .menu_box > .menu_bar > ul > li.action > a { color: #1b398f; font-weight: bold; text-decoration: underline; }
-  #contentBox > .menu_box > .list_box { width: 78.75rem; height: auto; margin: auto; margin-top: 10rem; }
-  #contentBox > .menu_box > .list_box > li { float: left; width: 18.75rem; height: 25rem; margin-right: 1.25rem; margin-bottom: 1.875rem; background-color: #eee; background-repeat: no-repeat; background-position: 50% 50%; background-size: 60%; transition: all 300ms; }
-  #contentBox > .menu_box > .list_box > li > a { display: block; width: 100%; height: 100%; }
-  #contentBox > .menu_box > .list_box > li > a > .textBox { display: none; width: 100%; height: 100%; background-color: rgba(27, 57, 143, 0.8); }
-  #contentBox > .menu_box > .list_box > li > a > .textBox > em { display: block; width: 70%; height: 5rem; margin: auto; padding-top: 1.875rem; padding-bottom: 0.625rem; box-sizing: border-box; font-size: 1.7rem; font-style: inherit; color: #fff; font-weight: bold; text-align: center; border-bottom: 0.125rem solid #fff; }
-  #contentBox > .menu_box > .list_box > li > a > .textBox > p { width: 100%; height: 11.25rem; margin-top: 1.5rem; font-size: 1.2rem; color: #fff; line-height: 1.875rem; text-align: center; }
-  #contentBox > .menu_box > .list_box > li > a > .textBox > span { display: block; width: 100%; height: auto; margin-top: 3rem; font-size: 1.2rem; font-weight: bold; color: #fff; text-align: center; }
-  #contentBox > .menu_box > .list_box > li > a:hover > .textBox, #contentBox > .menu_box > .list_box > li a:focus > .textBox { display: block; }
-  #contentBox > .menu_box > .list_box > li:nth-child(4n) { margin-right: 0; }
-  #contentBox > .menu_box > .list_box:after { content: " "; display: block; width: 0; height: 0; clear: both; }
+  #contentBox { width: 78.125rem; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; }
+  #contentBox > .notice_box { width: 100%; height: auto; }
+  #contentBox > .notice_box > .list_box { width: 100%; height: auto; margin-top: 10rem; }
+  #contentBox > .notice_box > .list_box > dl { width: 100%; height: auto; }
+  #contentBox > .notice_box > .list_box > dl > dt { width: 100%; height: 60px; padding: 0 2rem; box-sizing: border-box; line-height: 60px; border-top: 1px solid #ddd; font-size: 1.2rem; text-transform: uppercase; }
+  #contentBox > .notice_box > .list_box > dl > dt > a { display: block; width: 100%; height: 100%; color: #333; outline: none; }
+  #contentBox > .notice_box > .list_box > dl > dd { display: none; width: 100%; height: auto; padding: 3rem 2rem; box-sizing: border-box; border-top: 1px solid #ddd; font-size: 1rem; color: #777; line-height: 1.5; background-color: rgba(140, 177, 200, 0.1); }
+  #contentBox > .notice_box > .list_box > dl > dd > span { display: block; font-size: 0.9rem; padding-top: 3rem; box-sizing: border-box; }
+  #contentBox > .notice_box > .list_box > dl:last-of-type > dt { border-bottom: 1px solid #ddd; }
+  #contentBox > .notice_box > .list_box > dl:last-of-type > dd { border-bottom: 1px solid #ddd; }
+  #contentBox > .notice_box > .list_box:after { content: " "; display: block; width: 0; height: 0; clear: both; }
   #contentBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem; }
   #contentBox .top_btn > button { display: none; width: 100%; height: 100%; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
   #contentBox .top_btn > button:hover, #contentBox .top_btn > button:focus { background-color: #1b398f; color: #fff; } }
@@ -98,26 +91,19 @@ html { background-color: #f7f7f7; }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/facebook.png"); }
   #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/youtube.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
-  #viewBox { width: 100%; height: 18.75rem; background-image: url("../../../img/menu_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
+  #viewBox { width: 100%; height: 18.75rem; background-image: url("../../../img/notice_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: 100%; text-align: center; font-size: 2.1875rem; line-height: 25rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5); }
-  #contentBox { width: 100%; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; }
-  #contentBox > .menu_box { width: 100%; height: auto; }
-  #contentBox > .menu_box > .menu_bar { width: 100%; height: auto; border: 0.0625rem solid #777; border-right: 0; border-left: 0; }
-  #contentBox > .menu_box > .menu_bar > ul { width: 59.375rem; height: 6.25rem; margin: auto; }
-  #contentBox > .menu_box > .menu_bar > ul > li { float: left; width: 25%; height: 100%; text-align: center; line-height: 6.25rem; }
-  #contentBox > .menu_box > .menu_bar > ul > li > a { display: block; width: 70%; height: 100%; margin: auto; font-size: 1.4rem; text-transform: capitalize; color: #777; }
-  #contentBox > .menu_box > .menu_bar > ul > li > a.action { color: #1b398f; font-weight: bold; text-decoration: underline; }
-  #contentBox > .menu_box > .menu_bar > ul > li.action > a { color: #1b398f; font-weight: bold; text-decoration: underline; }
-  #contentBox > .menu_box > .list_box { width: 59.375rem; height: auto; margin: auto; margin-top: 10rem; }
-  #contentBox > .menu_box > .list_box > li { float: left; width: 18.75rem; height: 25rem; margin-right: 1.25rem; margin-bottom: 1.875rem; background-color: #eee; background-repeat: no-repeat; background-position: 50% 50%; background-size: 60%; transition: all 300ms; }
-  #contentBox > .menu_box > .list_box > li > a { display: block; width: 100%; height: 100%; }
-  #contentBox > .menu_box > .list_box > li > a > .textBox { display: none; width: 100%; height: 100%; background-color: rgba(27, 57, 143, 0.8); }
-  #contentBox > .menu_box > .list_box > li > a > .textBox > em { display: block; width: 70%; height: 4.6875rem; margin: auto; padding-top: 1.875rem; padding-bottom: 0.625rem; box-sizing: border-box; font-size: 1.7rem; font-style: inherit; color: #fff; font-weight: bold; text-align: center; border-bottom: 0.125rem solid #fff; }
-  #contentBox > .menu_box > .list_box > li > a > .textBox > p { width: 100%; height: 11.25rem; margin-top: 1.25rem; font-size: 1.2rem; color: #fff; line-height: 1.875rem; text-align: center; }
-  #contentBox > .menu_box > .list_box > li > a > .textBox > span { display: block; width: 100%; height: auto; margin-top: 4rem; font-size: 1.2rem; font-weight: bold; color: #fff; text-align: center; }
-  #contentBox > .menu_box > .list_box > li > a:hover > .textBox, #contentBox > .menu_box > .list_box > li a:focus > .textBox { display: block; }
-  #contentBox > .menu_box > .list_box > li:nth-child(3n) { margin-right: 0; }
-  #contentBox > .menu_box > .list_box:after { content: " "; display: block; width: 0; height: 0; clear: both; }
+  #contentBox { width: 59.375rem; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; }
+  #contentBox > .notice_box { width: 100%; height: auto; }
+  #contentBox > .notice_box > .list_box { width: 100%; height: auto; margin-top: 10rem; }
+  #contentBox > .notice_box > .list_box > dl { width: 100%; height: auto; }
+  #contentBox > .notice_box > .list_box > dl > dt { width: 100%; height: 3.75rem; padding: 0 2rem; box-sizing: border-box; line-height: 60px; border-top: 1px solid #ddd; font-size: 1.2rem; text-transform: uppercase; }
+  #contentBox > .notice_box > .list_box > dl > dt > a { display: block; width: 100%; height: 100%; color: #333; outline: none; }
+  #contentBox > .notice_box > .list_box > dl > dd { display: none; width: 100%; height: auto; padding: 3rem 2rem; box-sizing: border-box; border-top: 1px solid #ddd; font-size: 1rem; color: #777; line-height: 1.5; background-color: rgba(140, 177, 200, 0.1); }
+  #contentBox > .notice_box > .list_box > dl > dd > span { display: block; font-size: 0.9rem; padding-top: 3rem; box-sizing: border-box; }
+  #contentBox > .notice_box > .list_box > dl:last-of-type > dt { border-bottom: 1px solid #ddd; }
+  #contentBox > .notice_box > .list_box > dl:last-of-type > dd { border-bottom: 1px solid #ddd; }
+  #contentBox > .notice_box > .list_box:after { content: " "; display: block; width: 0; height: 0; clear: both; }
   #contentBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem; }
   #contentBox .top_btn > button { display: none; width: 100%; height: 100%; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
   #contentBox .top_btn > button:hover, #contentBox .top_btn > button:focus { background-color: #1b398f; color: #fff; } }
@@ -157,26 +143,19 @@ html { background-color: #f7f7f7; }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/facebook.png"); }
   #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/youtube.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
-  #viewBox { width: 100%; height: 15.625rem; background-image: url("../../../img/menu_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
+  #viewBox { width: 100%; height: 15.625rem; background-image: url("../../../img/notice_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: 100%; text-align: center; font-size: 1.8rem; line-height: 20.625rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5); }
-  #contentBox { width: 100%; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; }
-  #contentBox > .menu_box { width: 100%; height: auto; }
-  #contentBox > .menu_box > .menu_bar { width: 100%; height: auto; border: 0.0625rem solid #777; border-right: 0; border-left: 0; }
-  #contentBox > .menu_box > .menu_bar > ul { width: 46.875rem; height: 6.25rem; margin: auto; }
-  #contentBox > .menu_box > .menu_bar > ul > li { float: left; width: 25%; height: 100%; text-align: center; line-height: 6.25rem; }
-  #contentBox > .menu_box > .menu_bar > ul > li > a { display: block; width: 70%; height: 100%; margin: auto; font-size: 1.3rem; text-transform: capitalize; color: #777; }
-  #contentBox > .menu_box > .menu_bar > ul > li > a.action { color: #1b398f; font-weight: bold; text-decoration: underline; }
-  #contentBox > .menu_box > .menu_bar > ul > li.action > a { color: #1b398f; font-weight: bold; text-decoration: underline; }
-  #contentBox > .menu_box > .list_box { width: 46.875rem; height: auto; margin: auto; margin-top: 10rem; }
-  #contentBox > .menu_box > .list_box > li { float: left; width: 15rem; height: 20rem; margin-right: 0.9375rem; margin-bottom: 1.875rem; background-color: #eee; background-repeat: no-repeat; background-position: 50% 50%; background-size: 60%; transition: all 300ms; }
-  #contentBox > .menu_box > .list_box > li > a { display: block; width: 100%; height: 100%; }
-  #contentBox > .menu_box > .list_box > li > a > .textBox { display: none; width: 100%; height: 100%; background-color: rgba(27, 57, 143, 0.8); }
-  #contentBox > .menu_box > .list_box > li > a > .textBox > em { display: block; width: 70%; height: 3.5rem; margin: auto; padding-top: 1.5rem; padding-bottom: 0.8rem; box-sizing: border-box; font-size: 1.3rem; font-style: inherit; color: #fff; font-weight: bold; text-align: center; border-bottom: 0.125rem solid #fff; }
-  #contentBox > .menu_box > .list_box > li > a > .textBox > p { width: 100%; height: 11.25rem; margin-top: 0.6rem; font-size: 1rem; color: #fff; line-height: 1.875rem; text-align: center; }
-  #contentBox > .menu_box > .list_box > li > a > .textBox > span { display: block; width: 100%; height: auto; margin-top: 1.9rem; font-size: 1rem; font-weight: bold; color: #fff; text-align: center; }
-  #contentBox > .menu_box > .list_box > li > a:hover > .textBox, #contentBox > .menu_box > .list_box > li a:focus > .textBox { display: block; }
-  #contentBox > .menu_box > .list_box > li:nth-child(3n) { margin-right: 0; }
-  #contentBox > .menu_box > .list_box:after { content: " "; display: block; width: 0; height: 0; clear: both; }
+  #contentBox { width: 46.875rem; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; }
+  #contentBox > .notice_box { width: 100%; height: auto; }
+  #contentBox > .notice_box > .list_box { width: 100%; height: auto; margin-top: 10rem; }
+  #contentBox > .notice_box > .list_box > dl { width: 100%; height: auto; }
+  #contentBox > .notice_box > .list_box > dl > dt { width: 100%; height: 60px; padding: 0 2rem; box-sizing: border-box; line-height: 60px; border-top: 1px solid #ddd; font-size: 1.2rem; text-transform: uppercase; }
+  #contentBox > .notice_box > .list_box > dl > dt > a { display: block; width: 100%; height: 100%; color: #333; outline: none; }
+  #contentBox > .notice_box > .list_box > dl > dd { display: none; width: 100%; height: auto; padding: 3rem 2rem; box-sizing: border-box; border-top: 1px solid #ddd; font-size: 1rem; color: #777; line-height: 1.5; background-color: rgba(140, 177, 200, 0.1); }
+  #contentBox > .notice_box > .list_box > dl > dd > span { display: block; font-size: 0.9rem; padding-top: 3rem; box-sizing: border-box; }
+  #contentBox > .notice_box > .list_box > dl:last-of-type > dt { border-bottom: 1px solid #ddd; }
+  #contentBox > .notice_box > .list_box > dl:last-of-type > dd { border-bottom: 1px solid #ddd; }
+  #contentBox > .notice_box > .list_box:after { content: " "; display: block; width: 0; height: 0; clear: both; }
   #contentBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem; }
   #contentBox .top_btn > button { display: none; width: 100%; height: 100%; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
   #contentBox .top_btn > button:hover, #contentBox .top_btn > button:focus { background-color: #1b398f; color: #fff; } }
@@ -217,26 +196,19 @@ html { background-color: #f7f7f7; }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/facebook.png"); }
   #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/youtube.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
-  #viewBox { width: 100%; height: 15.625rem; background-image: url("../../../img/menu_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
+  #viewBox { width: 100%; height: 15.625rem; background-image: url("../../../img/notice_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: 100%; text-align: center; font-size: 1.8rem; line-height: 20.625rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5); }
-  #contentBox { width: 100%; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; }
-  #contentBox > .menu_box { width: 100%; height: auto; }
-  #contentBox > .menu_box > .menu_bar { width: 100%; height: auto; border: 0.0625rem solid #777; border-right: 0; border-left: 0; }
-  #contentBox > .menu_box > .menu_bar > ul { width: 29.375rem; height: 6.25rem; margin: auto; }
-  #contentBox > .menu_box > .menu_bar > ul > li { float: left; width: 25%; height: 100%; text-align: center; line-height: 6.25rem; }
-  #contentBox > .menu_box > .menu_bar > ul > li > a { display: block; width: 70%; height: 100%; margin: auto; font-size: 1.2rem; text-transform: capitalize; color: #777; }
-  #contentBox > .menu_box > .menu_bar > ul > li > a.action { color: #1b398f; font-weight: bold; text-decoration: underline; }
-  #contentBox > .menu_box > .menu_bar > ul > li.action > a { color: #1b398f; font-weight: bold; text-decoration: underline; }
-  #contentBox > .menu_box > .list_box { width: 29.375rem; height: auto; margin: auto; margin-top: 10rem; }
-  #contentBox > .menu_box > .list_box > li { float: left; width: 13.75rem; height: 18.75rem; margin-right: 0.9375rem; margin-bottom: 1.875rem; background-color: #eee; background-repeat: no-repeat; background-position: 50% 50%; background-size: 60%; transition: all 300ms; }
-  #contentBox > .menu_box > .list_box > li > a { display: block; width: 100%; height: 100%; }
-  #contentBox > .menu_box > .list_box > li > a > .textBox { display: none; width: 100%; height: 100%; background-color: rgba(27, 57, 143, 0.8); }
-  #contentBox > .menu_box > .list_box > li > a > .textBox > em { display: block; width: 70%; height: 3.5rem; margin: auto; padding-top: 1.5rem; padding-bottom: 0.625rem; box-sizing: border-box; font-size: 1.3rem; font-style: inherit; color: #fff; font-weight: bold; text-align: center; border-bottom: 0.125rem solid #fff; }
-  #contentBox > .menu_box > .list_box > li > a > .textBox > p { width: 100%; height: 10rem; margin-top: 0.6rem; font-size: 1rem; color: #fff; line-height: 1.625rem; text-align: center; }
-  #contentBox > .menu_box > .list_box > li > a > .textBox > span { display: block; width: 100%; height: auto; margin-top: 1.9rem; font-size: 1rem; font-weight: bold; color: #fff; text-align: center; }
-  #contentBox > .menu_box > .list_box > li > a:hover > .textBox, #contentBox > .menu_box > .list_box > li a:focus > .textBox { display: block; }
-  #contentBox > .menu_box > .list_box > li:nth-child(2n) { margin-right: 0; }
-  #contentBox > .menu_box > .list_box:after { content: " "; display: block; width: 0; height: 0; clear: both; }
+  #contentBox { width: 29.375rem; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; }
+  #contentBox > .notice_box { width: 100%; height: auto; }
+  #contentBox > .notice_box > .list_box { width: 100%; height: auto; margin-top: 10rem; }
+  #contentBox > .notice_box > .list_box > dl { width: 100%; height: auto; }
+  #contentBox > .notice_box > .list_box > dl > dt { width: 100%; height: 60px; padding: 0 2rem; box-sizing: border-box; line-height: 60px; border-top: 1px solid #ddd; font-size: 1.2rem; text-transform: uppercase; }
+  #contentBox > .notice_box > .list_box > dl > dt > a { display: block; width: 100%; height: 100%; color: #333; outline: none; }
+  #contentBox > .notice_box > .list_box > dl > dd { display: none; width: 100%; height: auto; padding: 3rem 2rem; box-sizing: border-box; border-top: 1px solid #ddd; font-size: 1rem; color: #777; line-height: 1.5; background-color: rgba(140, 177, 200, 0.1); }
+  #contentBox > .notice_box > .list_box > dl > dd > span { display: block; font-size: 0.9rem; padding-top: 3rem; box-sizing: border-box; }
+  #contentBox > .notice_box > .list_box > dl:last-of-type > dt { border-bottom: 1px solid #ddd; }
+  #contentBox > .notice_box > .list_box > dl:last-of-type > dd { border-bottom: 1px solid #ddd; }
+  #contentBox > .notice_box > .list_box:after { content: " "; display: block; width: 0; height: 0; clear: both; }
   #contentBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem; }
   #contentBox .top_btn > button { display: none; width: 100%; height: 100%; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
   #contentBox .top_btn > button:hover, #contentBox .top_btn > button:focus { background-color: #1b398f; color: #fff; } }
@@ -277,25 +249,19 @@ html { background-color: #f7f7f7; }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/facebook.png"); }
   #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/youtube.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
-  #viewBox { width: 100%; min-width: 21.875rem; height: 12.5rem; background-image: url("../../../img/menu_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
+  #viewBox { width: 100%; min-width: 21.875rem; height: 12.5rem; background-image: url("../../../img/notice_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: 100%; text-align: center; font-size: 1.8rem; line-height: 18rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5); }
-  #contentBox { width: 100%; min-width: 21.875rem; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; }
-  #contentBox > .menu_box { width: 100%; height: auto; }
-  #contentBox > .menu_box > .menu_bar { width: 100%; height: auto; border: 0.0625rem solid #777; border-right: 0; border-left: 0; }
-  #contentBox > .menu_box > .menu_bar > ul { width: 21.875rem; height: 6.25rem; margin: auto; }
-  #contentBox > .menu_box > .menu_bar > ul > li { float: left; width: 25%; height: 100%; text-align: center; line-height: 6.25rem; }
-  #contentBox > .menu_box > .menu_bar > ul > li > a { display: block; width: 70%; height: 100%; margin: auto; font-size: 1rem; text-transform: capitalize; color: #777; }
-  #contentBox > .menu_box > .menu_bar > ul > li > a.action { color: #1b398f; font-weight: bold; text-decoration: underline; }
-  #contentBox > .menu_box > .menu_bar > ul > li.action > a { color: #1b398f; font-weight: bold; text-decoration: underline; }
-  #contentBox > .menu_box > .list_box { width: 350px; height: auto; margin: auto; margin-top: 10rem; }
-  #contentBox > .menu_box > .list_box > li { width: 13.75rem; height: 18.3125rem; margin: auto; margin-bottom: 2.5rem; background-color: #eee; background-repeat: no-repeat; background-position: 50% 50%; background-size: 60%; transition: all 300ms; }
-  #contentBox > .menu_box > .list_box > li > a { display: block; width: 100%; height: 100%; }
-  #contentBox > .menu_box > .list_box > li > a > .textBox { display: none; width: 100%; height: 100%; background-color: rgba(27, 57, 143, 0.8); }
-  #contentBox > .menu_box > .list_box > li > a > .textBox > em { display: block; width: 70%; height: 3.5rem; margin: auto; padding-top: 1.5rem; padding-bottom: 0.8rem; box-sizing: border-box; font-size: 1.3rem; font-style: inherit; color: #fff; font-weight: bold; text-align: center; border-bottom: 0.125rem solid #fff; }
-  #contentBox > .menu_box > .list_box > li > a > .textBox > p { width: 100%; height: 10rem; margin-top: 0.6rem; font-size: 1rem; color: #fff; line-height: 1.6rem; text-align: center; }
-  #contentBox > .menu_box > .list_box > li > a > .textBox > span { display: block; width: 100%; height: auto; margin-top: 1.5rem; font-size: 1rem; font-weight: bold; color: #fff; text-align: center; }
-  #contentBox > .menu_box > .list_box > li > a:hover > .textBox, #contentBox > .menu_box > .list_box > li a:focus > .textBox { display: block; }
-  #contentBox > .menu_box > .list_box:after { content: " "; display: block; width: 0; height: 0; clear: both; }
+  #contentBox { width: 21.875rem; min-width: 21.875rem; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; }
+  #contentBox > .notice_box { width: 100%; height: auto; }
+  #contentBox > .notice_box > .list_box { width: 100%; height: auto; margin-top: 10rem; }
+  #contentBox > .notice_box > .list_box > dl { width: 100%; height: auto; }
+  #contentBox > .notice_box > .list_box > dl > dt { width: 100%; height: 60px; padding: 0 2rem; box-sizing: border-box; line-height: 60px; border-top: 1px solid #ddd; font-size: 1.1rem; text-transform: uppercase; }
+  #contentBox > .notice_box > .list_box > dl > dt > a { display: block; width: 100%; height: 100%; color: #333; outline: none; }
+  #contentBox > .notice_box > .list_box > dl > dd { display: none; width: 100%; height: auto; padding: 3rem 2rem; box-sizing: border-box; border-top: 1px solid #ddd; font-size: 1rem; color: #777; line-height: 1.5; background-color: rgba(140, 177, 200, 0.1); }
+  #contentBox > .notice_box > .list_box > dl > dd > span { display: block; font-size: 0.9rem; padding-top: 3rem; box-sizing: border-box; }
+  #contentBox > .notice_box > .list_box > dl:last-of-type > dt { border-bottom: 1px solid #ddd; }
+  #contentBox > .notice_box > .list_box > dl:last-of-type > dd { border-bottom: 1px solid #ddd; }
+  #contentBox > .notice_box > .list_box:after { content: " "; display: block; width: 0; height: 0; clear: both; }
   #contentBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem; }
   #contentBox .top_btn > button { display: none; width: 100%; height: 100%; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
   #contentBox .top_btn > button:hover, #contentBox .top_btn > button:focus { background-color: #1b398f; color: #fff; } }

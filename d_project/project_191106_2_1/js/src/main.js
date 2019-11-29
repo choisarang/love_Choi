@@ -211,7 +211,7 @@ indiLink.on('focus click', function(e){
   // 자동슬라이드 =========================================================
   let go, timed=5000;
   let indiLiLen = indiLi.length;
-  console.log(indiLiLen);
+  // console.log(indiLiLen);
   
   
   const slideGo = function(){
@@ -257,7 +257,7 @@ const menuBox = $('#menuBox');
 const menuSlide = menuBox.find('.menu_slide');
 const menuUl = menuSlide.children('ul');
 let menuLi = menuUl.children('li');
-const menuLink = menuLi.children('a');
+let menuLink = menuLi.find('a');
 const menuBtnWrap = menuBox.find('.arrow_btn');
 const menuBtn = menuBtnWrap.children('button');
 
@@ -272,15 +272,22 @@ menuLi.clone(true).appendTo(menuUl);
 menuUl.css({width: mListLen * 2 * menuLiw - (menuLiw - menuLi.eq(0).outerWidth()) + menuLiw});
 menuUl.css({left:'50%', transform:'translateX(-50%)'});
 
+// menuLink.css({display:'block',width:'50%',height:'50%', 'borderRadius':'100%', overflow:'hidden'});
+
 
 const ActionGo = function(){ 
   menuLi = menuUl.children('li');
+  menuLink = menuLi.find('a');
   let menuCenter = Math.floor(menuLi.length / 2);
   menuLi.removeClass('action');
   menuLi.eq(menuCenter).addClass('action');
 };
 ActionGo();
 
+
+menuLink.on('click', function(e){
+  e.preventDefault();
+});
 
 
 // btn ========
@@ -336,7 +343,7 @@ $(window).on('mousewheel DOMMouseScroll', function(e){
   }else{
     delta = oeDelta * -1;
   }
-  console.log(delta)
+  // console.log(delta)
   if(rel){
     rel = false;
     
