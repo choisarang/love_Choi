@@ -170,7 +170,7 @@ const sideLastLink = sideLink.eq(-1);
   }); 
 
 
-// .side_gnb_area 에서 키보드  esc 키를 누르면, 빠져 나가고, 이전의 위치로 돌아가라
+// .side_gnb_area 에서 키보드  esc 키를 누르면 빠져 나가고, 이전의 위치로 돌아가라
 // -> .side_gnb_area가 보이는 곳에서 수행
 
 })(jQuery);

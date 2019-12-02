@@ -157,7 +157,16 @@ barDdLink.on('focus',function(){
 barDdLink.on('blur', function(){
   $(this).parent('dd').siblings('dt').css({fontWeight:"normal"});
   $(this).parent('dd').siblings('dt').find('i').css({color:"#777"});
-})
+});
+
+// 포커스 벗어나지않게
+
+let lastDdLink = barDl.eq(-1).children('dd').eq(-1).children('a');
+
+lastDdLink.on('blur', function(){
+  ex.find('a').focus();
+});
+
 
 
 

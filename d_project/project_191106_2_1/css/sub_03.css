@@ -32,11 +32,12 @@ html { background-color: #f7f7f7; }
   #footBox { width: 100%; height: 20.625rem; padding: 1.875rem 0 1.25rem; box-sizing: border-box; background-color: #fff; }
   #footBox > .logo { width: 6.875rem; height: 3.75rem; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
   #footBox > p { width: 36.25rem; height: 7.8125rem; margin: auto; padding: 1.25rem 0; box-sizing: border-box; font-size: 1.25rem; text-align: center; line-height: 1.875rem; }
-  #footBox > .sns { width: 8.75rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
+  #footBox > .sns { width: 8rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
   #footBox > .sns > li { float: left; margin-right: 0.75rem; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > .sns > li > a { display: block; width: 100%; height: 100%; }
   #footBox > .sns > li:nth-child(1) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/instagram.png"); }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/facebook.png"); }
-  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/youtube.png"); }
+  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/naver.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
   #viewBox { width: 100%; height: 25rem; background-image: url("../../../img/menu_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: 100%; text-align: center; font-size: 2.1875rem; line-height: 31.25rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5); }
@@ -92,11 +93,12 @@ html { background-color: #f7f7f7; }
   #footBox { width: 100%; height: 20.625rem; padding: 1.875rem 0 1.25rem; box-sizing: border-box; background-color: #fff; }
   #footBox > .logo { width: 6.875rem; height: 3.75rem; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
   #footBox > p { width: 36.25rem; height: 7.8125rem; margin: auto; padding: 1.25rem 0; box-sizing: border-box; font-size: 1.25rem; text-align: center; line-height: 1.875rem; }
-  #footBox > .sns { width: 8.75rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
+  #footBox > .sns { width: 8rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
   #footBox > .sns > li { float: left; margin-right: 0.75rem; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > .sns > li > a { display: block; width: 100%; height: 100%; }
   #footBox > .sns > li:nth-child(1) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/instagram.png"); }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/facebook.png"); }
-  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/youtube.png"); }
+  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/naver.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
   #viewBox { width: 100%; height: 18.75rem; background-image: url("../../../img/menu_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: 100%; text-align: center; font-size: 2.1875rem; line-height: 25rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5); }
@@ -142,7 +144,7 @@ html { background-color: #f7f7f7; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt > a { display: block; width: 100%; height: 100%; line-height: 3.75rem; color: #1b398f; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt > a > i { position: absolute; width: 0.8125rem; height: 0.8125rem; right: 1.875rem; top: 0; bottom: 0; margin: auto; font-size: 0.8rem; line-height: 0.8125rem; text-align: center; color: #777; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt.action i { transform-origin: center; transform: rotateZ(180deg); }
-  #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt:hover, #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl dt a:focus { font-weight: bold; outline: none; }
+  #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt:hover, #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl dt a:focus { font-weight: bold; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt:hover i, #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl dt a:focus i { color: #1b398f; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dd { display: none; width: 100%; height: 3.125rem; padding-left: 1.25rem; box-sizing: border-box; font-size: 1rem; background-color: rgba(140, 177, 200, 0.1); }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dd > a { display: block; width: 100%; height: 100%; line-height: 3.125rem; color: #333; }
@@ -151,11 +153,12 @@ html { background-color: #f7f7f7; }
   #footBox > h2 { width: 6.875rem; height: 3.75rem; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
   #footBox > h2 > a { display: block; width: 100%; height: 100%; }
   #footBox > p { width: 100%; height: 7.8125rem; margin: auto; padding: 1.25rem 0; box-sizing: border-box; font-size: 1rem; text-align: center; line-height: 1.875rem; }
-  #footBox > .sns { width: 8.75rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
+  #footBox > .sns { width: 8rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
   #footBox > .sns > li { float: left; margin-right: 0.75rem; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > .sns > li > a { display: block; width: 100%; height: 100%; }
   #footBox > .sns > li:nth-child(1) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/instagram.png"); }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/facebook.png"); }
-  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/youtube.png"); }
+  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/naver.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
   #viewBox { width: 100%; height: 15.625rem; background-image: url("../../../img/menu_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: 100%; text-align: center; font-size: 1.8rem; line-height: 20.625rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5); }
@@ -201,7 +204,7 @@ html { background-color: #f7f7f7; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt > a { display: block; width: 100%; height: 100%; line-height: 3.75rem; color: #1b398f; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt > a > i { position: absolute; width: 0.8125rem; height: 0.8125rem; right: 1.875rem; top: 0; bottom: 0; margin: auto; font-size: 0.8rem; line-height: 0.8125rem; text-align: center; color: #777; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt.action i { transform-origin: center; transform: rotateZ(180deg); }
-  #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt:hover, #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl dt a:focus { font-weight: bold; outline: none; }
+  #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt:hover, #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl dt a:focus { font-weight: bold; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt:hover i, #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl dt a:focus i { color: #1b398f; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dd { display: none; width: 100%; height: 3.125rem; padding-left: 1.25rem; box-sizing: border-box; font-size: 1rem; background-color: rgba(140, 177, 200, 0.1); }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dd > a { display: block; width: 100%; height: 100%; line-height: 3.125rem; color: #333; }
@@ -211,11 +214,12 @@ html { background-color: #f7f7f7; }
   #footBox > h2 { width: 6.875rem; height: 3.75rem; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
   #footBox > h2 > a { display: block; width: 100%; height: 100%; }
   #footBox > p { width: 100%; height: 7.8125rem; margin: auto; padding: 1.25rem 0; box-sizing: border-box; font-size: 1rem; text-align: center; line-height: 1.875rem; }
-  #footBox > .sns { width: 8.75rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
+  #footBox > .sns { width: 8rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
   #footBox > .sns > li { float: left; margin-right: 0.75rem; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > .sns > li > a { display: block; width: 100%; height: 100%; }
   #footBox > .sns > li:nth-child(1) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/instagram.png"); }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/facebook.png"); }
-  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/youtube.png"); }
+  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/naver.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
   #viewBox { width: 100%; height: 15.625rem; background-image: url("../../../img/menu_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: 100%; text-align: center; font-size: 1.8rem; line-height: 20.625rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5); }
@@ -261,7 +265,7 @@ html { background-color: #f7f7f7; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt > a { display: block; width: 100%; height: 100%; line-height: 3.75rem; color: #1b398f; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt > a > i { position: absolute; width: 0.8125rem; height: 0.8125rem; right: 1.875rem; top: 0; bottom: 0; margin: auto; font-size: 0.8rem; line-height: 0.8125rem; text-align: center; color: #777; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt.action i { transform-origin: center; transform: rotateZ(180deg); }
-  #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt:hover, #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl dt a:focus { font-weight: bold; outline: none; }
+  #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt:hover, #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl dt a:focus { font-weight: bold; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt:hover i, #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl dt a:focus i { color: #1b398f; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dd { display: none; width: 100%; height: 3.125rem; padding-left: 1.25rem; box-sizing: border-box; font-size: 1rem; background-color: rgba(140, 177, 200, 0.1); }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dd > a { display: block; width: 100%; height: 100%; line-height: 3.125rem; color: #333; }
@@ -271,11 +275,12 @@ html { background-color: #f7f7f7; }
   #footBox > h2 { width: 6.875rem; height: 3.75rem; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
   #footBox > h2 > a { display: block; width: 100%; height: 100%; }
   #footBox > p { width: 100%; height: 7.8125rem; margin: auto; padding: 1.25rem 0; box-sizing: border-box; font-size: 1rem; text-align: center; line-height: 1.875rem; }
-  #footBox > .sns { width: 8.75rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
+  #footBox > .sns { width: 8rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
   #footBox > .sns > li { float: left; margin-right: 0.75rem; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > .sns > li > a { display: block; width: 100%; height: 100%; }
   #footBox > .sns > li:nth-child(1) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/instagram.png"); }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/facebook.png"); }
-  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/youtube.png"); }
+  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/naver.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
   #viewBox { width: 100%; min-width: 21.875rem; height: 12.5rem; background-image: url("../../../img/menu_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: 100%; text-align: center; font-size: 1.8rem; line-height: 18rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5); }

@@ -30,11 +30,12 @@
   #footBox { width: 100%; height: 20.625rem; padding: 1.875rem 0 1.25rem; box-sizing: border-box; background-color: #fff; }
   #footBox > .logo { width: 6.875rem; height: 3.75rem; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
   #footBox > p { width: 36.25rem; height: 7.8125rem; margin: auto; padding: 1.25rem 0; box-sizing: border-box; font-size: 1.25rem; text-align: center; line-height: 1.875rem; }
-  #footBox > .sns { width: 8.75rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
+  #footBox > .sns { width: 8rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
   #footBox > .sns > li { float: left; margin-right: 0.75rem; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > .sns > li > a { display: block; width: 100%; height: 100%; }
   #footBox > .sns > li:nth-child(1) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/instagram.png"); }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/facebook.png"); }
-  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/youtube.png"); }
+  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/naver.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
   #viewBox { position: relative; width: 100%; height: 100%; }
   #viewBox > .indicator { position: absolute; z-index: 100; left: 0; right: 0; bottom: 9.375rem; margin: auto; width: 37.5rem; height: 0.625rem; }
@@ -47,7 +48,7 @@
   #viewBox > .product > .slide_01 { background-size: 114.5vw 77.2vw; }
   #viewBox > .product > .slide_01 > .text { width: 100%; height: 12.5rem; font-size: 2.1875rem; text-transform: uppercase; }
   #viewBox > .product > .slide_01 > .text > em { width: 100%; height: 2.5rem; font-style: inherit; color: #333; }
-  #viewBox > .product > .slide_01 > .text > h3 { width: 100%; height: 7.5rem; h3adding: 1rem 0; box-sizing: border-box; font-size: 5.3125rem; text-transform: capitalize; font-weight: bold; color: #1b398f; }
+  #viewBox > .product > .slide_01 > .text > h3 { width: 100%; height: 7.5rem; padding: 1rem 0; box-sizing: border-box; font-size: 5.3125rem; text-transform: capitalize; font-weight: bold; color: #1b398f; }
   #viewBox > .product > .slide_01 > .text > span { width: 100%; height: 2.5rem; color: #777; }
   #viewBox > .product > .slide_02 { background-color: #f7f7f7; background-position: 0 30%; background-size: 100vw 76.8vw; }
   #viewBox > .product > .slide_02 > .text { width: 100%; height: 15.625rem; }
@@ -157,11 +158,12 @@
   #footBox { width: 100%; height: 20.625rem; padding: 1.875rem 0 1.25rem; box-sizing: border-box; background-color: #fff; }
   #footBox > .logo { width: 6.875rem; height: 3.75rem; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
   #footBox > p { width: 36.25rem; height: 7.8125rem; margin: auto; padding: 1.25rem 0; box-sizing: border-box; font-size: 1.25rem; text-align: center; line-height: 1.875rem; }
-  #footBox > .sns { width: 8.75rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
+  #footBox > .sns { width: 8rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
   #footBox > .sns > li { float: left; margin-right: 0.75rem; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > .sns > li > a { display: block; width: 100%; height: 100%; }
   #footBox > .sns > li:nth-child(1) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/instagram.png"); }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/facebook.png"); }
-  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/youtube.png"); }
+  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/naver.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
   #viewBox { position: relative; width: 100%; height: 100%; }
   #viewBox > .indicator { position: absolute; z-index: 100; left: 0; right: 0; bottom: 0; top: 70%; margin: auto; width: 37.5rem; height: 0.625rem; }
@@ -276,7 +278,7 @@
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt > a { display: block; width: 100%; height: 100%; line-height: 3.75rem; color: #1b398f; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt > a > i { position: absolute; width: 0.8125rem; height: 0.8125rem; right: 1.875rem; top: 0; bottom: 0; margin: auto; font-size: 0.8rem; line-height: 0.8125rem; text-align: center; color: #777; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt.action i { transform-origin: center; transform: rotateZ(180deg); }
-  #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt:hover, #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl dt a:focus { font-weight: bold; outline: none; }
+  #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt:hover, #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl dt a:focus { font-weight: bold; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt:hover i, #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl dt a:focus i { color: #1b398f; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dd { display: none; width: 100%; height: 3.125rem; padding-left: 1.25rem; box-sizing: border-box; font-size: 1rem; background-color: rgba(140, 177, 200, 0.1); }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dd > a { display: block; width: 100%; height: 100%; line-height: 3.125rem; color: #333; }
@@ -285,11 +287,12 @@
   #footBox > h2 { width: 6.875rem; height: 3.75rem; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
   #footBox > h2 > a { display: block; width: 100%; height: 100%; }
   #footBox > p { width: 100%; height: 7.8125rem; margin: auto; padding: 1.25rem 0; box-sizing: border-box; font-size: 1rem; text-align: center; line-height: 1.875rem; }
-  #footBox > .sns { width: 8.75rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
+  #footBox > .sns { width: 8rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
   #footBox > .sns > li { float: left; margin-right: 0.75rem; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > .sns > li > a { display: block; width: 100%; height: 100%; }
   #footBox > .sns > li:nth-child(1) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/instagram.png"); }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/facebook.png"); }
-  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/youtube.png"); }
+  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/naver.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
   #viewBox { position: relative; width: 100%; height: 100%; }
   #viewBox > .indicator { position: absolute; z-index: 100; left: 0; right: 0; bottom: 15%; margin: auto; width: 28.125rem; height: 0.625rem; }
@@ -393,7 +396,7 @@
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt > a { display: block; width: 100%; height: 100%; line-height: 3.75rem; color: #1b398f; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt > a > i { position: absolute; width: 0.8125rem; height: 0.8125rem; right: 1.875rem; top: 0; bottom: 0; margin: auto; font-size: 0.8rem; line-height: 0.8125rem; text-align: center; color: #777; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt.action i { transform-origin: center; transform: rotateZ(180deg); }
-  #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt:hover, #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl dt a:focus { font-weight: bold; outline: none; }
+  #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt:hover, #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl dt a:focus { font-weight: bold; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt:hover i, #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl dt a:focus i { color: #1b398f; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dd { display: none; width: 100%; height: 3.125rem; padding-left: 1.25rem; box-sizing: border-box; font-size: 1rem; background-color: rgba(140, 177, 200, 0.1); }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dd > a { display: block; width: 100%; height: 100%; line-height: 3.125rem; color: #333; }
@@ -403,11 +406,12 @@
   #footBox > h2 { width: 6.875rem; height: 3.75rem; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
   #footBox > h2 > a { display: block; width: 100%; height: 100%; }
   #footBox > p { width: 100%; height: 7.8125rem; margin: auto; padding: 1.25rem 0; box-sizing: border-box; font-size: 1rem; text-align: center; line-height: 1.875rem; }
-  #footBox > .sns { width: 8.75rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
+  #footBox > .sns { width: 8rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
   #footBox > .sns > li { float: left; margin-right: 0.75rem; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > .sns > li > a { display: block; width: 100%; height: 100%; }
   #footBox > .sns > li:nth-child(1) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/instagram.png"); }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/facebook.png"); }
-  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/youtube.png"); }
+  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/naver.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
   #viewBox { position: relative; width: 100%; height: 100%; }
   #viewBox > .indicator { position: absolute; z-index: 100; left: 0; right: 0; bottom: 20%; margin: auto; width: 28.125rem; height: 0.625rem; }
@@ -507,7 +511,7 @@
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt > a { display: block; width: 100%; height: 100%; line-height: 3.75rem; color: #1b398f; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt > a > i { position: absolute; width: 0.8125rem; height: 0.8125rem; right: 1.875rem; top: 0; bottom: 0; margin: auto; font-size: 0.8rem; line-height: 0.8125rem; text-align: center; color: #777; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt.action i { transform-origin: center; transform: rotateZ(180deg); }
-  #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt:hover, #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl dt a:focus { font-weight: bold; outline: none; }
+  #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt:hover, #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl dt a:focus { font-weight: bold; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dt:hover i, #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl dt a:focus i { color: #1b398f; }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dd { display: none; width: 100%; height: 3.125rem; padding-left: 1.25rem; box-sizing: border-box; font-size: 1rem; background-color: rgba(140, 177, 200, 0.1); }
   #headBox > .list > .small > .bar_bg > .bar_view > .bar_list > dl > dd > a { display: block; width: 100%; height: 100%; line-height: 3.125rem; color: #333; }
@@ -517,11 +521,12 @@
   #footBox > h2 { width: 6.875rem; height: 3.75rem; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
   #footBox > h2 > a { display: block; width: 100%; height: 100%; }
   #footBox > p { width: 100%; height: 7.8125rem; margin: auto; padding: 1.25rem 0; box-sizing: border-box; font-size: 1rem; text-align: center; line-height: 1.875rem; }
-  #footBox > .sns { width: 8.75rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
+  #footBox > .sns { width: 8rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto; }
   #footBox > .sns > li { float: left; margin-right: 0.75rem; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+  #footBox > .sns > li > a { display: block; width: 100%; height: 100%; }
   #footBox > .sns > li:nth-child(1) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/instagram.png"); }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/facebook.png"); }
-  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/youtube.png"); }
+  #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/naver.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
   #viewBox { position: relative; width: 100%; min-width: 23.4375rem; height: 100%; }
   #viewBox > .indicator { position: absolute; z-index: 100; left: 0; right: 0; bottom: 20%; margin: auto; width: 18.75rem; height: 0.625rem; }
