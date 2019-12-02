@@ -284,18 +284,23 @@ const drinkArr = [bestList , yogurtList, ToppingList, DrinkList];
     $(this).removeClass('action')
   });
 
+  const linkDefault = function(){
+    let listLink = listBox.find('a');
+    listLink.on('click', function(e){
+      e.preventDefault();
+    });
+  };
+  linkDefault();
+  
   menuBarLink.on('click', function(e){
     e.preventDefault();
     $(this).addClass('action')
     i = $(this).parent('li').index();
     LiFun(drinkArr[i]);
+    linkDefault();
   });
 
-  const listLink = listBox.find('a');
-
-  listLink.on('click', function(e){
-    e.preventDefault();
-  })
+  
 
 
   // top 버튼 -------------------------------------------
