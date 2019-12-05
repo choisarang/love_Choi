@@ -1,0 +1,51 @@
+/*common*/
+html,body{width: 100%; height: 100%; background-color: #eee;}
+*{padding: 0; margin: 0; border: 0; outline: 0;}
+ol,ul,li,dl,dt,dd{list-style: none;}
+a{text-decoration:none;}
+header,article,section,footer{display: block;}
+
+
+#wrap{width:1200px; height: 700px; margin: auto; background-color: #faf;}
+#headBox{width: 100%; height: 100px;}
+h1{float: left; width: 200px; height: 100%; background-color: #f33;}
+h1>a{display: block; width: 100%; height: 100%;}
+.gnb{float: left; position: relative; z-index: 100; width:1000px; height: 100%; background-color: #fff;}
+#headBox ul{position: absolute; top: 20px; right: 20px; width:700px; height: auto;}
+#headBox li{float: left; width: 25%; height: auto;}
+#headBox dl{width: 100%; height: auto;}
+#headBox dt{width: 100%; height: 60px; border: 1px solid #333; border-left: 0; box-sizing: border-box;}
+#headBox li:first-child dt{border-left: 1px solid #333;}
+#headBox dt>a{display: block; width: 100%; height: 100%; background-color: #fff; color:#333;}
+#headBox dd{display: none; width:100%; height: 40px; border-left: 1px solid #333; border-right: 1px solid #333; box-sizing:border-box;}
+#headBox dd:last-child{border-bottom: 1px solid #333; box-sizing:border-box;}
+#headBox dd>a{display: block; width: 100%; height: 100%; background-color: #fff; color:#333;}
+#headBox dt>a:hover,#headBox dt>a:focus{background-color: #333; color:#fff;}
+#headBox dd>a:hover,#headBox dd>a:focus{background-color: #333; color:#fff;}
+
+#viewBox{position: relative; width:100%; height: 300px; background-color: #af9; overflow: hidden;}
+#viewBox ul{position: absolute; width: 400%; height: 100%;}
+#viewBox li{float: left; width: 25%; height: 100%; background-color: #fa0;}
+#viewBox li>a{display: block; width: 100%; height: 100%;}
+
+#conBox{width: 100%; height: 200px;}
+.notice{float:left; width:400px; height: 100%; background-color: #ff0;}
+	.tab{width:200px; height: 20px;}
+	.tab>ul{width: 100%; height: 100%;}
+	.tab>ul>li{float: left; width:40%; height: 100%; margin-right: 10px; background-color: #fff;}
+	.tab li>a{display: block; width:100%; height: 100%; color:#333}
+.tab li>a.action{color:#fff; background-color: #333;}
+	.tab_con{position: relative; width:100%; height:180px; background-color: #efa;}
+		.noti{position:absolute; z-index: 1; width:100%; height:100%; background-color:#faf;}
+		.gall{position:absolute; width:100%; height:100%; background-color:#fa0;}
+.banner{float:left; width:400px; height:100%; background-color:#aaf;}
+.banner>a{display: block; width:100%; height: 100%;}
+.link{float:left; width:400px; height:100%; background-color:#f99;}
+.link>a{display: block; width:100%; height: 100%;}
+.popup{position: fixed; z-index: 500; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); display: none; font-size: 25rem;}
+.popup>button{position: absolute; top: 50px; left: 0; right: 0; margin: auto; width: 50px; height: 50px; background-color: #faf; cursor: pointer;}
+#footBox{width:100%; height: 100px; background-color: #fff;}
+h2
+a
+.menu
+.copy

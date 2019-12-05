@@ -1,0 +1,62 @@
+/*reset*/
+html,body{width: 100%; height: 100%;}
+*{padding: 0; margin: 0; border: 0; outline: 0; list-style: none; text-decoration: none;}
+a,button{cursor: pointer;}
+
+
+#wrap{width: 100%; height: 700px; margin: auto; background-color: #eee;}
+/*headBox ==================*/
+#headBox{width: 100%; height: 100px; background-color: #fa0;}
+.h_inner{width: 1200px; height: 100%; margin: auto;}
+
+h1{float: left; width:200px; height: 40px; margin-top: 30px; background-color: #aaf;}
+
+#gnb{float: right; width: 400px; height: 50px; margin-top: 30px; margin-right: 20px; background-color: #fff;}
+
+#gnb>ul{position: relative; z-index: 100; width: 100%; height: auto;}
+
+#gnb>ul:before,#gnb>ul::before{position: absolute; z-index: -1; content: " "; display: block; width: 100%; height: 0; background-color: #fff; transition:height 500ms ease;}
+#gnb>ul.action:before,#gnb>ul.action:before{height: 172px;}
+
+#gnb li{float: left; width: 100px; height: auto;}
+#gnb dl{width: 100%; height: auto;}
+#gnb dt{width: 100%; height: 50px; border: 1px solid #333; background-color: #fff;}
+#gnb dt>a{display: block; width: 100%; height: 100%; color:#333;}
+#gnb dd{display: none; width: 100%; height: 30px; background-color: #fff;}
+#gnb dd>a{display: block; width: 100%; height: 100%; color: #333;}
+
+#gnb dl a:hover,#gnb dl a:focus{background-color: #333; color: #fff;}
+
+/*viewBox ==================*/
+#viewBox{width:1200px; height:300px; margin: auto; background-color:#fa0; overflow: hidden;}
+#viewBox>ul{position:relative; width: 400%; height: 100%;}
+#viewBox li{float: left; width: 25%; height: 100%;}
+
+/*conBox ==================*/
+#conBox{width:1200px; height:200px; margin: auto; background-color:#af0;}
+
+.notice{float: left; width:400px; height: 100%;}
+.tab{width: 200px; height: 20px;}
+.noti_tab{float: left; width: 100px; height: 100%; background-color: #fff;}
+.noti_tab>a{display: block; width: 100%; height: 100%; color:#333;}
+.gall_tab{float: left; width: 100px; height: 100%; background-color: #fff;}
+.gall_tab>a{display: block; width: 100%; height: 100%; color: #333;}
+.click>a{background-color: #333; color: #fff;}
+
+.content{position: relative; width: 100%; height: 180px;}
+.noti_con{position: absolute; z-index: 1; width: 100%; height: 100%; background-color: #0076be;}
+.noti_con>a{display: block; width: 100%; height: 100%;}
+.popup_bg{position: fixed; z-index: 500; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);}
+.popup{position: absolute; z-index: 600; width: 500px; height: 300px; top: 0; bottom: 0; left: 0; right: 0; margin: auto; background-color: #fff;}
+.popup>button{position: absolute; bottom: 10px; right: 10px; width: 50px; height: 20px; background-color: #fff; border: 1px solid #333;}
+
+.gall_con{position: absolute; z-index: 0; width: 100%; height: 100%; background-color: #e66b27;}
+
+.banner{float: left; width: 400px; height: 100%;}
+
+.go{float: left; width: 400px; height: 100%;}
+
+
+
+/*footBox ==================*/
+#footBox{width:100%; height:100px;}

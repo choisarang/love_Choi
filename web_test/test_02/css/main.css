@@ -7,14 +7,14 @@ header,article,section,nav,footer{display:block}
 /*layout*/
 #wrap{width: 1200px; height: 700px; margin:auto; overflow:hidden;}
 
-#headBox{position: relative; z-index: 100; width: 100%; height: 100px; background-color: #fff;}
+#headBox{position: relative; z-index: 50; width: 100%; height: auto; background-color: #fff;}
 #headBox:before{display: block; content: " "; position: absolute; z-index: -1; left: 50%; margin-left: -100vw; width:300%; height: 100%; background-color: #333;}
 #headBox:after{display: block; content: " "; width: 0; height: auto; clear: both;}
 
-h1{float:left; width:200px; height:100%; background-color:#fff;}
+h1{position: absolute; z-index: 100; width:200px; height:100px; background-color:#fff;}
 h1>a{display: block; width: 100%; height: 100%; color:#3cb149; background-image: url("../img/gcass_logo_s.png"); background-repeat: no-repeat; background-position: 50%	50%; background-size: contain;}
 h1>a>span{display: block; width:0; height: 0; overflow: hidden;}
-.list{float: left; width: 1000px; height: 100%; padding-top: 40px; box-sizing: border-box;}
+.list{float: left; width: 1000px; height: 100%; padding-top: 40px; box-sizing: border-box; background-color: #fff;}
 .list>h2{display: block; width:0; height: 0; overflow: hidden;}
 .list>ul{width: 600px; height: auto; margin-left: 350px;}
 
