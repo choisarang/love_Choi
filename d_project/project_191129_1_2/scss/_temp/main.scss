@@ -58,6 +58,28 @@
         >span{display: block; width: 100%; text-align: right; color: $text; line-height: 1.1; font-size: 1.1rem;}
       }// .text  
     }// .slide_01
+    >.slide_02{background-image: url("../../img/view_02.png");}// .slide_02
+    >.slide_03{position: relative; background-image: url("../../img/view_03.png");
+      >.text{position: absolute; top: 15%; left: 0; right: 0; margin: auto; width: 550px; height: 550px; border: 10px solid #fff;
+        >h3{width: 100%; height: 210px; padding-top: 100px; box-sizing: border-box; text-align: center; font-size: 5rem; text-transform: capitalize; color: #fff;}
+        >p{display: block; width: 100%; height: 20px; margin-bottom: 100px; text-align: center; font-size: 1.5rem; color: #fff; font-style: italic;}
+        >span{display: block; width: 100%; height: auto; padding-left: 50px; margin-top: 100px; box-sizing: border-box; text-align: left; color: $main; font-weight: bold; line-height: 1.1; font-size: 1.5rem;}
+      }// .text  
+      >.side_text{position: absolute; top: 10%; right: 20%; width: 100px; height: 100px; border-radius: 100%; background-color: $main;
+        >span{display: block; width: auto; height: 100px; padding-top: 14px; box-sizing: border-box; color: #fff; font-size: 1rem; text-transform: capitalize; font-weight: bold; text-align: center; line-height: 1.1;
+          >em{font-size: 2.5rem; font-style: normal;}
+        } //span
+      }
+    }// .slide_03
+    >.slide_04{background-image: url("../../img/view_04.jpg");
+      >.text{width: 1000px; height: 100%; margin: auto; padding: 200px 30px;
+        >em{display: block; width: 100%; height: auto; font-size: 1.2rem; font-style: normal; color: $textem; font-weight: bold;}
+        >h3{width: 100%; height: 200px; font-size: 5rem; text-transform: uppercase; color: $textem;
+          >p{color: #f30;}
+        }//h3
+        >span{display: block; width: 100%; margin-top: 250px; color: $textem; font-size: 1.6rem; text-transform: uppercase; font-weight: bold;}
+      }// .text  
+    }// .slide_04
   }// .product
   >.side_bar{position: fixed; top: 50%; transform: translateY(-50%); right: 5%; width: 30px; height: 140px;
     >li{width: 30px; height: 30px; margin-bottom: 25px;
@@ -72,6 +94,7 @@
 // #conBox ===================================================================================
 #conBox{width: 100%; height: auto; margin: auto; background-color: #fff;
     h2{width: 100%; height: auto; margin-bottom: 100px; font-size: 3rem; text-align: center; text-transform: uppercase;}
+
   #newBox{width: 100%; height: auto; padding-top: 100px; box-sizing: border-box;
     >.new_bg{position: relative; width: 1000px; height: 880px; margin: auto;
       >h2{position: absolute; z-index: 25; width: 50%; padding-top:30px; text-align: center; margin-bottom: 40px;}
@@ -79,12 +102,18 @@
       >h3{width: 50%; height: auto; padding-top: 8rem; box-sizing: border-box; text-align: center; font-size: 1.1rem; text-transform: capitalize; color: $text; font-weight: normal;
         >em{font-size: 2rem; font-style: normal; color: $textem; font-weight: bold;}
       }// h3
-      >div{background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;}
-      >.img_01{position: absolute; z-index: 10; top: 25%; left: 25%; transform: translateX(-50%); width: 300px; height: 350px;  background-color: #faf; background-image: url("../../img/mellow/mellow_01.jpg");}
+      >.img{background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;}
+      >.img_01{position: absolute; z-index: 10; top: 25%; left: 9%; width: 300px; height: 350px; background-image: url("../../img/mellow/mellow_01.jpg");}
       >.img_02{position: absolute; z-index: 10; top: 0; right: 0; width: 510px; height: 510px; background-image: url("../../img/mellow/mellow_02.jpg");}
       >.img_03{position: absolute; z-index: 10; bottom: 0; left: 0; width: 320px; height: 280px; background-image: url("../../img/mellow/mellow_03.jpg");}
       >.img_04{position: absolute; z-index: 10; bottom: 0; right: 0; width: 560px; height: 300px; background-image: url("../../img/mellow/mellow_04.jpg");}
       >.img_bg{position: absolute; z-index: 1; bottom: 0; left: 0; width: 550px; height: 430px; background-color: #dfdfdf;}
+      >.img>a{display: block; width: 100%; height: 100%;}
+      >.img:hover,.img:focus{transform-origin: 50% 50%; transform: scale(1.1); transition: all 400ms ease;}
+      >.img_01:hover,.img_01:focus{background-image:url("../../img/mellow/mellow_01.png");}
+      >.img_02:hover,.img_02:focus{background-image:url("../../img/mellow/mellow_02.png");}
+      >.img_03:hover,.img_03:focus{background-image:url("../../img/mellow/mellow_03.png");}
+      >.img_04:hover,.img_04:focus{background-image:url("../../img/mellow/mellow_04.png");}
     }// .new_bg
   }// #newBox
   #bestBox{width: 100%; height: auto;

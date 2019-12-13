@@ -190,21 +190,19 @@ const proLi = product.children('li');
 const indicator = $('.indicator');
 const indiLi = indicator.children('li');
 const indiLink = indiLi.children('a');
-
 let viewLen = proLi.length;
 
 for(let i=0; i<viewLen-1; i++){
   proLi.eq(i).css({backgroundImage:'url("../img/main_view_0' + (i+1) + '.jpg")'})
 };
 
-product.css({position:'relative', width:'100%'})
-proLi.css({position:'absolute', width:'100%'})
+product.css({position:'relative', width:'100%'});
+proLi.css({position:'absolute', width:'100%'});
 proLi.eq(0).nextAll().hide();
 
-
 indiLink.eq(0).addClass('action');
-let i = 0;
 
+let i = 0;
 indiLink.on('focus click', function(e){
   e.preventDefault();
   i = $(this).parent().index();
@@ -216,12 +214,10 @@ indiLink.on('focus click', function(e){
 
   $(this).addClass('action');
   indiLi.eq(i).siblings().children('a').removeClass('action');
-  });
-  // 자동슬라이드 =========================================================
+});
+// 자동슬라이드 =========================================================
   let go, timed=5000;
   let indiLiLen = indiLi.length;
-  // console.log(indiLiLen);
-  
   
   const slideGo = function(){
     go = setInterval(function(){
@@ -250,17 +246,14 @@ const brandLink = brandLi.children('a');
 
 let brandLen = brandLi.length;
 
-// for(let i=0; i<brandLen; i++){
-  // // brandLi.eq(i).css({backgroundImage:'url("../img/brand_0' + (i+1) + '.jpg")'})
-// };
-
 
 brandLink.on('mouseenter focus', function(){
   $(this).addClass('action');
 });
 brandLink.on('mouseleave blur', function(){
   $(this).removeClass('action');
-})
+});
+
 // menuBox -------------------------------------------
 const menuBox = $('#menuBox');
 const menuSlide = menuBox.find('.menu_slide');
@@ -280,9 +273,6 @@ let menuLiw = menuLi.eq(0).outerWidth(true);
 menuLi.clone(true).appendTo(menuUl);
 menuUl.css({width: mListLen * 2 * menuLiw - (menuLiw - menuLi.eq(0).outerWidth()) + menuLiw});
 menuUl.css({left:'50%', transform:'translateX(-50%)'});
-
-// menuLink.css({display:'block',width:'50%',height:'50%', 'borderRadius':'100%', overflow:'hidden'});
-
 
 const ActionGo = function(){ 
   menuLi = menuUl.children('li');
@@ -327,7 +317,37 @@ const snsLiLen = snsLi.length;
 
 for(let i=0; i<snsLiLen; i++){
   snsLi.eq(i).css({backgroundImage:'url("../img/sns_0' + (i+1) + '.jpg")'})
-}
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 화면 스크롤 -------------------------------------------
 
 const scroll = $('.scroll');
@@ -337,7 +357,6 @@ for(let i=0; i<scroll.length; i++){
   scVal.push(j);
   
 }
-// console.log(scVal);
 
 let rel = true;
 let wheeln = 0;

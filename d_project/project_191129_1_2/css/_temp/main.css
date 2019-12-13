@@ -72,6 +72,36 @@
 
 #viewBox > .product > .slide_01 > .text > span { display: block; width: 100%; text-align: right; color: #777; line-height: 1.1; font-size: 1.1rem; }
 
+#viewBox > .product > .slide_02 { background-image: url("../../img/view_02.png"); }
+
+#viewBox > .product > .slide_03 { position: relative; background-image: url("../../img/view_03.png"); }
+
+#viewBox > .product > .slide_03 > .text { position: absolute; top: 15%; left: 0; right: 0; margin: auto; width: 550px; height: 550px; border: 10px solid #fff; }
+
+#viewBox > .product > .slide_03 > .text > h3 { width: 100%; height: 210px; padding-top: 100px; box-sizing: border-box; text-align: center; font-size: 5rem; text-transform: capitalize; color: #fff; }
+
+#viewBox > .product > .slide_03 > .text > p { display: block; width: 100%; height: 20px; margin-bottom: 100px; text-align: center; font-size: 1.5rem; color: #fff; font-style: italic; }
+
+#viewBox > .product > .slide_03 > .text > span { display: block; width: 100%; height: auto; padding-left: 50px; margin-top: 100px; box-sizing: border-box; text-align: left; color: #f3cf1d; font-weight: bold; line-height: 1.1; font-size: 1.5rem; }
+
+#viewBox > .product > .slide_03 > .side_text { position: absolute; top: 10%; right: 20%; width: 100px; height: 100px; border-radius: 100%; background-color: #f3cf1d; }
+
+#viewBox > .product > .slide_03 > .side_text > span { display: block; width: auto; height: 100px; padding-top: 14px; box-sizing: border-box; color: #fff; font-size: 1rem; text-transform: capitalize; font-weight: bold; text-align: center; line-height: 1.1; }
+
+#viewBox > .product > .slide_03 > .side_text > span > em { font-size: 2.5rem; font-style: normal; }
+
+#viewBox > .product > .slide_04 { background-image: url("../../img/view_04.jpg"); }
+
+#viewBox > .product > .slide_04 > .text { width: 1000px; height: 100%; margin: auto; padding: 200px 30px; }
+
+#viewBox > .product > .slide_04 > .text > em { display: block; width: 100%; height: auto; font-size: 1.2rem; font-style: normal; color: #333; font-weight: bold; }
+
+#viewBox > .product > .slide_04 > .text > h3 { width: 100%; height: 200px; font-size: 5rem; text-transform: uppercase; color: #333; }
+
+#viewBox > .product > .slide_04 > .text > h3 > p { color: #f30; }
+
+#viewBox > .product > .slide_04 > .text > span { display: block; width: 100%; margin-top: 250px; color: #333; font-size: 1.6rem; text-transform: uppercase; font-weight: bold; }
+
 #viewBox > .side_bar { position: fixed; top: 50%; transform: translateY(-50%); right: 5%; width: 30px; height: 140px; }
 
 #viewBox > .side_bar > li { width: 30px; height: 30px; margin-bottom: 25px; }
@@ -100,9 +130,9 @@
 
 #conBox #newBox > .new_bg > h3 > em { font-size: 2rem; font-style: normal; color: #333; font-weight: bold; }
 
-#conBox #newBox > .new_bg > div { background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; }
+#conBox #newBox > .new_bg > .img { background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; }
 
-#conBox #newBox > .new_bg > .img_01 { position: absolute; z-index: 10; top: 25%; left: 25%; transform: translateX(-50%); width: 300px; height: 350px; background-color: #faf; background-image: url("../../img/mellow/mellow_01.jpg"); }
+#conBox #newBox > .new_bg > .img_01 { position: absolute; z-index: 10; top: 25%; left: 9%; width: 300px; height: 350px; background-image: url("../../img/mellow/mellow_01.jpg"); }
 
 #conBox #newBox > .new_bg > .img_02 { position: absolute; z-index: 10; top: 0; right: 0; width: 510px; height: 510px; background-image: url("../../img/mellow/mellow_02.jpg"); }
 
@@ -111,6 +141,18 @@
 #conBox #newBox > .new_bg > .img_04 { position: absolute; z-index: 10; bottom: 0; right: 0; width: 560px; height: 300px; background-image: url("../../img/mellow/mellow_04.jpg"); }
 
 #conBox #newBox > .new_bg > .img_bg { position: absolute; z-index: 1; bottom: 0; left: 0; width: 550px; height: 430px; background-color: #dfdfdf; }
+
+#conBox #newBox > .new_bg > .img > a { display: block; width: 100%; height: 100%; }
+
+#conBox #newBox > .new_bg > .img:hover, #conBox #newBox > .new_bg .img:focus { transform-origin: 50% 50%; transform: scale(1.1); transition: all 400ms ease; }
+
+#conBox #newBox > .new_bg > .img_01:hover, #conBox #newBox > .new_bg .img_01:focus { background-image: url("../../img/mellow/mellow_01.png"); }
+
+#conBox #newBox > .new_bg > .img_02:hover, #conBox #newBox > .new_bg .img_02:focus { background-image: url("../../img/mellow/mellow_02.png"); }
+
+#conBox #newBox > .new_bg > .img_03:hover, #conBox #newBox > .new_bg .img_03:focus { background-image: url("../../img/mellow/mellow_03.png"); }
+
+#conBox #newBox > .new_bg > .img_04:hover, #conBox #newBox > .new_bg .img_04:focus { background-image: url("../../img/mellow/mellow_04.png"); }
 
 #conBox #bestBox { width: 100%; height: auto; }
 

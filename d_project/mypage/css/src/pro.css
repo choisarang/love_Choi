@@ -1,0 +1,30 @@
+/* pro.css */
+
+html,body{background-color: #fcfcfc;}
+#wrap{width: 100%; height: 100%;}
+#wrap a{outline: none;}
+
+/* headBox ====================================================================== */
+#headBox{position: fixed; width: 100%; min-height: 100px; height: auto; background-color: rgba(255,255,255,0.7); border-bottom: 1px solid #f2eedd;}
+h1{float: left; width: 20vw; height: 50px; margin-top: 25px; margin-left: 50px;}
+h1>a{display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../../img/logo.png");}
+
+#gnb{float: left; width: 70vw; height: 100%; margin: auto;}
+#gnb>ul{width: 100%; height: auto;}
+#gnb li{float: left; width: 100px; height: 100%; margin-left: 12vw;}
+#gnb li>dl{width: 100%; height: auto;}
+#gnb dt{width: 100%; height: 100px;}
+#gnb dt>a{display: block; width: 100%; height: 100%; font-size: 20px; line-height: 100px; text-align: center; text-transform: capitalize; color: #555;}
+#gnb dd{display: none; width: 100%; height: 80px;}
+#gnb dd>a{display: block; width: 100%; height: 100%; font-size: 18px; line-height: 80px; text-align: center; text-transform: capitalize; color: #555;}
+#gnb a.active{font-weight: bold;}
+
+#headBox.action{background-color: rgba(242, 238, 221, 0.7);}
+
+
+/* mainBox ====================================================================== */
+#mainBox{width: 1280px; height: 200%; margin: auto; padding-top: 300px;}
+h2{width: 100px; height: auto; margin-left: 60px; margin-bottom: 2rem; font-size: 2rem; text-transform: capitalize; color: #333;}
+#mainBox>div{width: 80%; height: 50%; margin: auto; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;}
+.img_01{background-image: url("../../img/resume_01.png");}
+.img_02{background-image: url("../../img/resume_02.png");}
