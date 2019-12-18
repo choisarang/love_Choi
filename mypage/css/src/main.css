@@ -73,7 +73,7 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 .yogurt .img_area{position: absolute; top: 0; left: 0; z-index: 10; width: 485px; height: 265px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../../img/menu_view.jpg");}
 .yogurt .img_bg{position: absolute; bottom: 0; right: 0; width: 485px; height: 265px; background-color: #f2eedd;}
 
-.yogurt .textBox{float: right; width: 40%; height: 200px; margin-top: 80px;}
+.yogurt .textBox{float: right; width: 40%; height: 200px; margin-top: 50px;}
 .yogurt dl{width: 100%; height: 100%;}
 .yogurt .textBox dt{width: auto; height: auto; margin-bottom: 30px; font-size: 35px; text-transform: uppercase; font-weight: bold; color: #555;}
 .yogurt .textBox dt>span{color: #d3c3b8;}
@@ -84,10 +84,13 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 .yogurt .web_btn>a{display: block; width: 100%; height: 100%; color: #d3c3b8; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: capitalize;}
 .yogurt .web_btn>a:hover,.web_btn>a:focus{background-color: #d3c3b8; color: #fff;}
 
-.yogurt .port_btn{float: left; width: 100px; height: 30px; border-radius: 3px; border: 2px solid #d3c3b8;}
+.yogurt .port_btn{float: left; width: 100px; height: 30px; margin-right: 50px; border-radius: 3px; border: 2px solid #d3c3b8;}
 .yogurt .port_btn>a{display: block; width: 100%; height: 100%; color: #d3c3b8; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: capitalize;}
 .yogurt .port_btn>a:hover,.port_btn>a:focus{background-color: #d3c3b8; color: #fff;}
 
+.yogurt .pdf_btn{float: left; width: 180px; height: 30px; margin-top: 20px; border-radius: 3px; background-color: #d3c3b8; border: 2px solid #d3c3b8;}
+.yogurt .pdf_btn>a{display: block; width: 100%; height: 100%; color: #fff; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: uppercase;}
+.yogurt .pdf_btn>a:hover,.pdf_btn>a:focus{background-color: #fff; color: #d3c3b8;}
 
 /* yogurtman popup ========================================================= */
 .y_popup_bg{display: none; position: fixed; z-index: 500; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.3);}
@@ -153,7 +156,7 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 .casamia .img_area{position: absolute; top: 0; left: 0; z-index: 10; width: 485px; height: 265px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../../img/mellow_03.jpg");}
 .casamia .img_bg{position: absolute; bottom: 0; right: 0; width: 485px; height: 265px; background-color: #f2eedd;}
 
-.casamia .textBox{float: right; width: 40%; height: 200px; margin-top: 80px;}
+.casamia .textBox{float: right; width: 40%; height: 200px; margin-top: 50px;}
 .casamia dl{width: 100%; height: 100%;}
 .casamia .textBox dt{width: auto; height: auto; margin-bottom: 30px; font-size: 35px; text-transform: uppercase; font-weight: bold; color: #555;}
 .casamia .textBox dt>span{color: #d3c3b8;}
@@ -167,6 +170,11 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 .casamia .port_btn{float: left; width: 100px; height: 30px; border-radius: 3px; border: 2px solid #d3c3b8;}
 .casamia .port_btn>a{display: block; width: 100%; height: 100%; color: #d3c3b8; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: capitalize;}
 .casamia .port_btn>a:hover,.port_btn>a:focus{background-color: #d3c3b8; color: #fff;}
+
+.casamia .pdf_btn{float: left; width: 180px; height: 30px; margin-top: 20px; border-radius: 3px; background-color: #d3c3b8; border: 2px solid #d3c3b8;}
+.casamia .pdf_btn>a{display: block; width: 100%; height: 100%; color: #fff; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: uppercase;}
+.casamia .pdf_btn>a:hover,.pdf_btn>a:focus{background-color: #fff; color: #d3c3b8;}
+
 
 
 /* casamia popup ========================================================= */
