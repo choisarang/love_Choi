@@ -39,22 +39,22 @@ html { background-color: #f7f7f7; }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../img/facebook.png"); }
   #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../img/naver.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
-  #viewBox { width: 100%; height: 25rem; background-image: url("../../../img/store_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
+  #viewBox { width: 100%; height: 25rem; background-image: url("../img/store_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: 100%; text-align: center; font-size: 2.1875rem; line-height: 31.25rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5); }
   #contentBox { width: 78.125rem; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; word-break: keep-all; }
   #contentBox > .store_box { width: 100%; height: auto; margin-top: 10rem; }
   #contentBox > .store_box > ul { width: 100%; height: auto; }
   #contentBox > .store_box > ul > li { width: 100%; height: 18.75rem; margin-bottom: 3rem; }
   #contentBox > .store_box > ul > li > .img { float: left; width: 31.25rem; height: 18.75rem; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-  #contentBox > .store_box > ul > li > .img_01 { background-image: url("../../../img/store/jamsil.jpeg"); }
-  #contentBox > .store_box > ul > li > .img_02 { background-image: url("../../../img/store/borame.jpg"); }
-  #contentBox > .store_box > ul > li > .img_03 { background-image: url("../../../img/store/jongro.jpg"); }
-  #contentBox > .store_box > ul > li > .img_04 { background-image: url("../../../img/store/dongsuwon.jpg"); }
-  #contentBox > .store_box > ul > li > .img_05 { background-image: url("../../../img/store/iksan.jpg"); }
+  #contentBox > .store_box > ul > li > .img_01 { background-image: url("../img/store/jamsil.jpeg"); }
+  #contentBox > .store_box > ul > li > .img_02 { background-image: url("../img/store/borame.jpg"); }
+  #contentBox > .store_box > ul > li > .img_03 { background-image: url("../img/store/jongro.jpg"); }
+  #contentBox > .store_box > ul > li > .img_04 { background-image: url("../img/store/dongsuwon.jpg"); }
+  #contentBox > .store_box > ul > li > .img_05 { background-image: url("../img/store/iksan.jpg"); }
   #contentBox > .store_box > ul > li > dl { float: right; width: 500px; height: auto; }
   #contentBox > .store_box > ul > li > dl > dt { width: 100%; height: 50px; font-size: 2rem; color: #333; font-weight: bold; border-bottom: 1px solid #ddd; }
   #contentBox > .store_box > ul > li > dl > dt > span { float: left; display: block; width: 460px; height: 50px; line-height: 50px; }
-  #contentBox > .store_box > ul > li > dl > dt > a { float: right; display: block; width: 40px; height: 40px; background-image: url("../../../img/map.png"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
+  #contentBox > .store_box > ul > li > dl > dt > a { float: right; display: block; width: 40px; height: 40px; background-image: url("../img/map.png"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
   #contentBox > .store_box > ul > li > dl > dd { width: 100%; height: auto; padding-top: 2rem; font-size: 1.2rem; line-height: 1.4; }
   #contentBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem; }
   #contentBox .top_btn > button { display: none; width: 100%; height: 100%; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
@@ -97,22 +97,22 @@ html { background-color: #f7f7f7; }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../img/facebook.png"); }
   #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../img/naver.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
-  #viewBox { width: 100%; height: 18.75rem; background-image: url("../../../img/store_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
+  #viewBox { width: 100%; height: 18.75rem; background-image: url("../img/store_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: 100%; text-align: center; font-size: 2.1875rem; line-height: 25rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5); }
   #contentBox { width: 59.375rem; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; word-break: keep-all; }
   #contentBox > .store_box { width: 100%; height: auto; margin-top: 10rem; }
   #contentBox > .store_box > ul { width: 100%; height: auto; }
   #contentBox > .store_box > ul > li { width: 100%; height: 240px; margin-bottom: 3rem; }
   #contentBox > .store_box > ul > li > .img { float: left; width: 400px; height: 240px; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-  #contentBox > .store_box > ul > li > .img_01 { background-image: url("../../../img/store/jamsil.jpeg"); }
-  #contentBox > .store_box > ul > li > .img_02 { background-image: url("../../../img/store/borame.jpg"); }
-  #contentBox > .store_box > ul > li > .img_03 { background-image: url("../../../img/store/jongro.jpg"); }
-  #contentBox > .store_box > ul > li > .img_04 { background-image: url("../../../img/store/dongsuwon.jpg"); }
-  #contentBox > .store_box > ul > li > .img_05 { background-image: url("../../../img/store/iksan.jpg"); }
+  #contentBox > .store_box > ul > li > .img_01 { background-image: url("../img/store/jamsil.jpeg"); }
+  #contentBox > .store_box > ul > li > .img_02 { background-image: url("../img/store/borame.jpg"); }
+  #contentBox > .store_box > ul > li > .img_03 { background-image: url("../img/store/jongro.jpg"); }
+  #contentBox > .store_box > ul > li > .img_04 { background-image: url("../img/store/dongsuwon.jpg"); }
+  #contentBox > .store_box > ul > li > .img_05 { background-image: url("../img/store/iksan.jpg"); }
   #contentBox > .store_box > ul > li > dl { float: right; width: 400px; height: auto; }
   #contentBox > .store_box > ul > li > dl > dt { width: 100%; height: 50px; font-size: 2rem; color: #333; font-weight: bold; border-bottom: 1px solid #ddd; }
   #contentBox > .store_box > ul > li > dl > dt > span { float: left; display: block; width: 360px; height: 50px; line-height: 50px; }
-  #contentBox > .store_box > ul > li > dl > dt > a { float: right; display: block; width: 40px; height: 40px; margin-top: 5px; background-image: url("../../../img/map.png"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
+  #contentBox > .store_box > ul > li > dl > dt > a { float: right; display: block; width: 40px; height: 40px; margin-top: 5px; background-image: url("../img/map.png"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
   #contentBox > .store_box > ul > li > dl > dd { width: 100%; height: auto; padding-top: 2rem; font-size: 1.2rem; line-height: 1.4; }
   #contentBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem; }
   #contentBox .top_btn > button { display: none; width: 100%; height: 100%; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
@@ -154,22 +154,22 @@ html { background-color: #f7f7f7; }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../img/facebook.png"); }
   #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../img/naver.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
-  #viewBox { width: 100%; height: 15.625rem; background-image: url("../../../img/notice_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
+  #viewBox { width: 100%; height: 15.625rem; background-image: url("../img/notice_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: 100%; text-align: center; font-size: 1.8rem; line-height: 20.625rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5); }
   #contentBox { width: 46.875rem; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; word-break: keep-all; }
   #contentBox > .store_box { width: 100%; height: auto; margin-top: 10rem; }
   #contentBox > .store_box > ul { width: 100%; height: auto; }
   #contentBox > .store_box > ul > li { width: 100%; height: 200px; margin-bottom: 3rem; }
   #contentBox > .store_box > ul > li > .img { float: left; width: 330px; height: 200px; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-  #contentBox > .store_box > ul > li > .img_01 { background-image: url("../../../img/store/jamsil.jpeg"); }
-  #contentBox > .store_box > ul > li > .img_02 { background-image: url("../../../img/store/borame.jpg"); }
-  #contentBox > .store_box > ul > li > .img_03 { background-image: url("../../../img/store/jongro.jpg"); }
-  #contentBox > .store_box > ul > li > .img_04 { background-image: url("../../../img/store/dongsuwon.jpg"); }
-  #contentBox > .store_box > ul > li > .img_05 { background-image: url("../../../img/store/iksan.jpg"); }
+  #contentBox > .store_box > ul > li > .img_01 { background-image: url("../img/store/jamsil.jpeg"); }
+  #contentBox > .store_box > ul > li > .img_02 { background-image: url("../img/store/borame.jpg"); }
+  #contentBox > .store_box > ul > li > .img_03 { background-image: url("../img/store/jongro.jpg"); }
+  #contentBox > .store_box > ul > li > .img_04 { background-image: url("../img/store/dongsuwon.jpg"); }
+  #contentBox > .store_box > ul > li > .img_05 { background-image: url("../img/store/iksan.jpg"); }
   #contentBox > .store_box > ul > li > dl { float: right; width: 300px; height: auto; }
   #contentBox > .store_box > ul > li > dl > dt { width: 100%; height: 50px; font-size: 1.7rem; color: #333; font-weight: bold; border-bottom: 1px solid #ddd; }
   #contentBox > .store_box > ul > li > dl > dt > span { float: left; display: block; width: 265px; height: 50px; line-height: 50px; }
-  #contentBox > .store_box > ul > li > dl > dt > a { float: right; display: block; width: 35px; height: 35px; margin-top: 5px; background-image: url("../../../img/map.png"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
+  #contentBox > .store_box > ul > li > dl > dt > a { float: right; display: block; width: 35px; height: 35px; margin-top: 5px; background-image: url("../img/map.png"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
   #contentBox > .store_box > ul > li > dl > dd { width: 100%; height: auto; padding-top: 2rem; font-size: 1.1rem; line-height: 1.4; }
   #contentBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem; }
   #contentBox .top_btn > button { display: none; width: 100%; height: 100%; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
@@ -212,22 +212,22 @@ html { background-color: #f7f7f7; }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../img/facebook.png"); }
   #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../img/naver.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
-  #viewBox { width: 100%; height: 15.625rem; background-image: url("../../../img/notice_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
+  #viewBox { width: 100%; height: 15.625rem; background-image: url("../img/notice_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: 100%; text-align: center; font-size: 1.8rem; line-height: 20.625rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5); }
   #contentBox { width: 29.375rem; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; word-break: keep-all; }
   #contentBox > .store_box { width: 100%; height: auto; margin-top: 10rem; }
   #contentBox > .store_box > ul { width: 100%; height: auto; }
   #contentBox > .store_box > ul > li { width: 100%; height: auto; margin-bottom: 3rem; }
   #contentBox > .store_box > ul > li > .img { width: 330px; height: 200px; margin: auto; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-  #contentBox > .store_box > ul > li > .img_01 { background-image: url("../../../img/store/jamsil.jpeg"); }
-  #contentBox > .store_box > ul > li > .img_02 { background-image: url("../../../img/store/borame.jpg"); }
-  #contentBox > .store_box > ul > li > .img_03 { background-image: url("../../../img/store/jongro.jpg"); }
-  #contentBox > .store_box > ul > li > .img_04 { background-image: url("../../../img/store/dongsuwon.jpg"); }
-  #contentBox > .store_box > ul > li > .img_05 { background-image: url("../../../img/store/iksan.jpg"); }
+  #contentBox > .store_box > ul > li > .img_01 { background-image: url("../img/store/jamsil.jpeg"); }
+  #contentBox > .store_box > ul > li > .img_02 { background-image: url("../img/store/borame.jpg"); }
+  #contentBox > .store_box > ul > li > .img_03 { background-image: url("../img/store/jongro.jpg"); }
+  #contentBox > .store_box > ul > li > .img_04 { background-image: url("../img/store/dongsuwon.jpg"); }
+  #contentBox > .store_box > ul > li > .img_05 { background-image: url("../img/store/iksan.jpg"); }
   #contentBox > .store_box > ul > li > dl { width: 300px; height: auto; margin: auto; margin-top: 3rem; }
   #contentBox > .store_box > ul > li > dl > dt { width: 100%; height: 50px; font-size: 1.7rem; color: #333; font-weight: bold; border-bottom: 1px solid #ddd; }
   #contentBox > .store_box > ul > li > dl > dt > span { float: left; display: block; width: 265px; height: 50px; line-height: 50px; }
-  #contentBox > .store_box > ul > li > dl > dt > a { float: right; display: block; width: 35px; height: 35px; margin-top: 5px; background-image: url("../../../img/map.png"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
+  #contentBox > .store_box > ul > li > dl > dt > a { float: right; display: block; width: 35px; height: 35px; margin-top: 5px; background-image: url("../img/map.png"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
   #contentBox > .store_box > ul > li > dl > dd { width: 100%; height: auto; padding-top: 2rem; font-size: 1.1rem; line-height: 1.4; }
   #contentBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem; }
   #contentBox .top_btn > button { display: none; width: 100%; height: 100%; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }
@@ -270,22 +270,22 @@ html { background-color: #f7f7f7; }
   #footBox > .sns > li:nth-child(2) { width: 2.0625rem; height: 2.0625rem; background-image: url("../img/facebook.png"); }
   #footBox > .sns > li:nth-child(3) { width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../img/naver.png"); }
   #footBox > span { display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center; }
-  #viewBox { width: 100%; min-width: 21.875rem; height: 12.5rem; background-image: url("../../../img/notice_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
+  #viewBox { width: 100%; min-width: 21.875rem; height: 12.5rem; background-image: url("../img/notice_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed; }
   #viewBox h2 { width: 100%; height: 100%; text-align: center; font-size: 1.8rem; line-height: 18rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5); }
   #contentBox { width: 21.875rem; min-width: 21.875rem; height: auto; margin: auto; margin-bottom: 10rem; background-color: #f7f7f7; word-break: keep-all; }
   #contentBox > .store_box { width: 100%; height: auto; margin-top: 10rem; }
   #contentBox > .store_box > ul { width: 100%; height: auto; }
   #contentBox > .store_box > ul > li { width: 100%; height: auto; margin-bottom: 3rem; }
   #contentBox > .store_box > ul > li > .img { width: 330px; height: 200px; margin: auto; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-  #contentBox > .store_box > ul > li > .img_01 { background-image: url("../../../img/store/jamsil.jpeg"); }
-  #contentBox > .store_box > ul > li > .img_02 { background-image: url("../../../img/store/borame.jpg"); }
-  #contentBox > .store_box > ul > li > .img_03 { background-image: url("../../../img/store/jongro.jpg"); }
-  #contentBox > .store_box > ul > li > .img_04 { background-image: url("../../../img/store/dongsuwon.jpg"); }
-  #contentBox > .store_box > ul > li > .img_05 { background-image: url("../../../img/store/iksan.jpg"); }
+  #contentBox > .store_box > ul > li > .img_01 { background-image: url("../img/store/jamsil.jpeg"); }
+  #contentBox > .store_box > ul > li > .img_02 { background-image: url("../img/store/borame.jpg"); }
+  #contentBox > .store_box > ul > li > .img_03 { background-image: url("../img/store/jongro.jpg"); }
+  #contentBox > .store_box > ul > li > .img_04 { background-image: url("../img/store/dongsuwon.jpg"); }
+  #contentBox > .store_box > ul > li > .img_05 { background-image: url("../img/store/iksan.jpg"); }
   #contentBox > .store_box > ul > li > dl { width: 300px; height: auto; margin: auto; margin-top: 3rem; }
   #contentBox > .store_box > ul > li > dl > dt { width: 100%; height: 50px; font-size: 1.7rem; color: #333; font-weight: bold; border-bottom: 1px solid #ddd; }
   #contentBox > .store_box > ul > li > dl > dt > span { float: left; display: block; width: 265px; height: 50px; line-height: 50px; }
-  #contentBox > .store_box > ul > li > dl > dt > a { float: right; display: block; width: 35px; height: 35px; margin-top: 5px; background-image: url("../../../img/map.png"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
+  #contentBox > .store_box > ul > li > dl > dt > a { float: right; display: block; width: 35px; height: 35px; margin-top: 5px; background-image: url("../img/map.png"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
   #contentBox > .store_box > ul > li > dl > dd { width: 100%; height: auto; padding-top: 2rem; font-size: 1.1rem; line-height: 1.4; }
   #contentBox .top_btn { position: fixed; z-index: 300; bottom: 10%; right: 5%; width: 2.5rem; height: 2.5rem; }
   #contentBox .top_btn > button { display: none; width: 100%; height: 100%; background-color: #fff; border: 0.125rem solid #1b398f; border-radius: 100%; color: #1b398f; font-weight: bold; text-transform: uppercase; line-height: 2.3125rem; text-align: center; }

@@ -4,7 +4,7 @@
 
   @import "../_h_f/h_f_970";
 
-  #viewBox{width: 100%; height: 15.625rem; background-image: url("../../../img/brand_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed;
+  #viewBox{width: 100%; height: 15.625rem; background-image: url("../img/brand_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed;
     h2{width: 100%; height: 100%; text-align: center; font-size: 1.8rem; line-height: 20.625rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5);}
   }
 
@@ -24,11 +24,11 @@
     }// .brandBox
     .iconBox{width: 100%; height: auto; margin-top: 10rem;
       >li{opacity: 0; width: 7.5rem; height: 7.5rem; margin: auto; margin-bottom: 10rem; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain;}
-      >li:nth-child(1){background-image: url("../../../img/nosugar.png"); transition: all 1000ms ease 150ms;}
-      >li:nth-child(2){background-image: url("../../../img/nocolor.png"); transition: all 2000ms ease 150ms;}
-      >li:nth-child(3){background-image: url("../../../img/noadd.png"); transition: all 3000ms ease 150ms;}
-      >li:nth-child(4){background-image: url("../../../img/homemade.png"); transition: all 4000ms ease 150ms;}
-      >li:nth-child(5){background-image: url("../../../img/today.png"); margin-bottom: 0; transition: all 5000ms ease 150ms;}
+      >li:nth-child(1){background-image: url("../img/nosugar.png"); transition: all 1000ms ease 150ms;}
+      >li:nth-child(2){background-image: url("../img/nocolor.png"); transition: all 2000ms ease 150ms;}
+      >li:nth-child(3){background-image: url("../img/noadd.png"); transition: all 3000ms ease 150ms;}
+      >li:nth-child(4){background-image: url("../img/homemade.png"); transition: all 4000ms ease 150ms;}
+      >li:nth-child(5){background-image: url("../img/today.png"); margin-bottom: 0; transition: all 5000ms ease 150ms;}
       >li.action{opacity: 1; transform: translateY(-50px);}
     }// .iconBox
     .iconBox::after{content: " "; display: block; width: 0; height: 0; clear: both;}

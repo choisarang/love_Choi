@@ -5,7 +5,7 @@
   @import "../_h_f/h_f_m";
 
 
-  #viewBox{width: 100%; height: 15.625rem; background-image: url("../../../img/notice_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed;
+  #viewBox{width: 100%; height: 15.625rem; background-image: url("../img/notice_view.jpg"); background-repeat: no-repeat; background-size: 100%; background-position: 0 0; background-attachment: fixed;
     h2{width: 100%; height: 100%; text-align: center; font-size: 1.8rem; line-height: 20.625rem; color: #fff; text-transform: uppercase; text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(51, 51, 51, 0.5);}
   }
   #contentBox{width: 29.375rem; height:auto; margin: auto; margin-bottom: 10rem; background-color: $bg; word-break: keep-all;
@@ -13,15 +13,15 @@
       >ul{width: 100%; height: auto;
         >li{width: 100%; height: auto; margin-bottom: 3rem;
           >.img{width: 330px; height: 200px; margin: auto; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;}
-          >.img_01{background-image: url("../../../img/store/jamsil.jpeg");}
-          >.img_02{background-image: url("../../../img/store/borame.jpg");}
-          >.img_03{background-image: url("../../../img/store/jongro.jpg");}
-          >.img_04{background-image: url("../../../img/store/dongsuwon.jpg");}
-          >.img_05{background-image: url("../../../img/store/iksan.jpg");}
+          >.img_01{background-image: url("../img/store/jamsil.jpeg");}
+          >.img_02{background-image: url("../img/store/borame.jpg");}
+          >.img_03{background-image: url("../img/store/jongro.jpg");}
+          >.img_04{background-image: url("../img/store/dongsuwon.jpg");}
+          >.img_05{background-image: url("../img/store/iksan.jpg");}
           >dl{width: 300px; height: auto; margin: auto; margin-top: 3rem;
             >dt{width: 100%; height: 50px; font-size: 1.7rem; color: $textem; font-weight: bold; border-bottom: 1px solid #ddd;
               >span{float: left; display: block; width: 265px; height: 50px; line-height: 50px;}
-              >a{float: right; display: block; width: 35px; height: 35px; margin-top: 5px; background-image: url("../../../img/map.png"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;}
+              >a{float: right; display: block; width: 35px; height: 35px; margin-top: 5px; background-image: url("../img/map.png"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;}
             }// dt
             >dd{width: 100%; height: auto; padding-top: 2rem; font-size: 1.1rem; line-height: 1.4;}
           }// dl
