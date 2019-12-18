@@ -3,7 +3,7 @@
 #headBox{position: fixed; z-index: 500; width: 100vw; height: 6.25rem; padding: 0 16vw; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5);
   >.list{position: absolute; width: 80rem; height: 6.25rem; left: 0; right: 0; margin: auto;
     >h1{float: left; width: 6.875rem; height: 3.75rem; margin-top: 1.5625rem;
-      >a{display: block; width: 100%; height: 100%; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain;}
+      >a{display: block; width: 100%; height: 100%; background-image: url("../img/logo_01.png"); background-repeat: no-repeat; background-size: contain;}
     }// h1
     >.big{float: left; width: 38.75rem; height: 6.25rem; margin: 0 12.5rem; box-sizing: border-box;
       >ul{position: relative; width: 100vw; height: auto;
@@ -40,15 +40,15 @@
 
 
 #footBox{width: 100%; height: 20.625rem; padding: 1.875rem 0 1.25rem; box-sizing: border-box; background-color: #fff;
-  >.logo{width: 6.875rem; height: 3.75rem; margin: auto; background-image: url("../../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
+  >.logo{width: 6.875rem; height: 3.75rem; margin: auto; background-image: url("../img/logo_01.png"); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
   >p{width: 36.25rem; height: 7.8125rem; margin: auto; padding: 1.25rem 0; box-sizing: border-box; font-size: 1.25rem; text-align: center; line-height: 1.875rem}
   >.sns{width: 8rem; height: 3.25rem; padding-top: 0.625rem; box-sizing: border-box; margin: auto;
     >li{float: left; margin-right: 0.75rem; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
       >a{display: block; width: 100%; height: 100%;}
     }
-    >li:nth-child(1){width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/instagram.png");}
-    >li:nth-child(2){width: 2.0625rem; height: 2.0625rem; background-image: url("../../img/facebook.png");}
-    >li:nth-child(3){width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../../img/naver.png");}
+    >li:nth-child(1){width: 2.0625rem; height: 2.0625rem; background-image: url("../img/instagram.png");}
+    >li:nth-child(2){width: 2.0625rem; height: 2.0625rem; background-image: url("../img/facebook.png");}
+    >li:nth-child(3){width: 2.375rem; height: 1.875rem; margin-top: 0.0625rem; margin-right: 0; background-image: url("../img/naver.png");}
   }// .sns
   >span{display: block; width: 100%; height: auto; font-size: 0.75rem; text-align: center;}
 }// #footBox

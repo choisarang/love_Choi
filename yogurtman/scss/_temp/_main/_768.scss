@@ -54,9 +54,9 @@
         >a{display: block; width: 100%; height: 100%;
           >.inner{position: relative; width: 100%; height: 5rem; top: 50%; transform: translateY(-50%); left: 0; right: 0; margin: auto;
             >.icon{position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; width: 14.3vw; height: 14.3vw; border-radius: 100%; margin: auto; background-color: #fff; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
-            >.icon_01{background-color: #A7CEF7; background-image: url("../../img/favicon.png");}
-            >.icon_02{background-color: #CADD90; background-image: url("../../img/spoon.png");}
-            >.icon_03{background-color: #294B6F; background-image: url("../../img/store_w.png");}
+            >.icon_01{background-color: #A7CEF7; background-image: url("../img/favicon.png");}
+            >.icon_02{background-color: #CADD90; background-image: url("../img/spoon.png");}
+            >.icon_03{background-color: #294B6F; background-image: url("../img/store_w.png");}
             >dl{width: 100%; height: 100%;
               >dt{position: relative; float: left; top: 50%; transform:translateY(-50%); width: 40%; height: auto; font-size: 4vw; color: #fff; text-transform: uppercase; text-decoration: underline; text-align: center;}
               >dd{position: relative; float: right; top: 50%; transform:translateY(-50%); width: 40%; height: auto; font-size: 3.2vw; color: #fff; text-align: center;}
@@ -64,9 +64,9 @@
           }// .inner
         }// a
       }// li
-      >li:nth-child(1){background-image: url("../../img/brand_s_01.jpg");}
-      >li:nth-child(2){background-image: url("../../img/brand_s_02.jpg");}
-      >li:nth-child(3){background-image: url("../../img/brand_s_03.jpg");}
+      >li:nth-child(1){background-image: url("../img/brand_s_01.jpg");}
+      >li:nth-child(2){background-image: url("../img/brand_s_02.jpg");}
+      >li:nth-child(3){background-image: url("../img/brand_s_03.jpg");}
     }// ul
   }// #brandBox
   >#menuBox{position: relative; background-color: $bg; overflow: hidden;
@@ -93,11 +93,11 @@
       >.arrow_btn{position: absolute; z-index: 300; left: 0; right: 0; top: 40%; margin: auto; width: 31.25rem; height: 0;
         >button{width: 3.75rem; height: 3.75rem; background-size: contain; background-position: 50% 50%; background-repeat: no-repeat; background-color: transparent;
         }// button
-        >.next{float: right; background-image: url("../../img/arrow_next.png");
-        &:hover,&:focus{background-image: url("../../img/arrow_next_c.png");}
+        >.next{float: right; background-image: url("../img/arrow_next.png");
+        &:hover,&:focus{background-image: url("../img/arrow_next_c.png");}
         }// .next
-        >.prev{float: left; background-image: url("../../img/arrow_prev.png");
-        &:hover,&:focus{background-image: url("../../img/arrow_prev_c.png");}
+        >.prev{float: left; background-image: url("../img/arrow_prev.png");
+        &:hover,&:focus{background-image: url("../img/arrow_prev_c.png");}
         }// .prev
       }// .arrow_btn
     }// .menu_slide  
@@ -106,13 +106,13 @@
         >.menu:hover,.menu:focus{color: #fff; background-color: $main;}
     }// .menu_btn
   }// #menuBox
-  >#snsBox{background-image: url("../../img/sns_box.jpg"); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;
+  >#snsBox{background-image: url("../img/sns_box.jpg"); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;
     >ul{width: 72.5vw; height: auto; margin: auto;
       >li{float: left; width: 35vw; height: 35vw; margin-right: 2.5vw; background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;
         >a{display: block; width: 100%; height: 100%; padding: 16vw 2.6vw; box-sizing: border-box; 
           >p{display: none;}
         }// a
-        >a:hover,a:focus{background-image: url("../../img/insta_bg.jpg"); background-position: 50% 50%; background-size: cover;
+        >a:hover,a:focus{background-image: url("../img/insta_bg.jpg"); background-position: 50% 50%; background-size: cover;
           >p{display: block; width: 100%; height: auto; text-align: center; font-weight: bold; font-size: 3.5vw; text-transform: uppercase; color: #fff;
           >i{padding-left: 2.2vw;}
           }// p}
