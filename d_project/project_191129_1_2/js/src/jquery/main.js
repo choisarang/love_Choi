@@ -79,15 +79,52 @@
     clearInterval(go) //setInterval을 취소
   };
 
-  // slideGo();
+  slideGo();
 
-  // 마우스 올리면 멈추기 ---------------------------------
-  viewBox.on('mouseenter', function(){
-    slideStop();
-  });
-  viewBox.on('mouseleave', function(){
-    slideGo();
-  });
+  // // 마우스 올리면 멈추기 ---------------------------------
+  // viewBox.on('mouseenter', function(){
+  //   slideStop();
+  // });
+  // viewBox.on('mouseleave', function(){
+  //   slideGo();
+  // });
+
+// bestBox =============================================================================
+  //li 생성, 이미지넣기
+  bestUrl = "../img/"
+  best = ['best_01','best_02','best_03']
+  const bestUl = $('.pic_area');
+  
+  for(let i=0; i<best.length; i++){
+    bestUl.append('<li></li>');
+    let bestLi = bestUl.children('li');
+    bestLi.eq(i).css({backgroundImage:"url("+bestUrl + best[i] + ".png)"});
+  };
+  
+  // best slide
+  const bestBtn = $('.best_indi')
+  const bestLi = bestUl.children('li');
+  const bestLiLen = bestLi.length;
+  
+  
+
+  bestBtn.on('click', function(e){
+    e.preventDefault();
+    let btnL = $(this).hasClass('next');
+    if(btnL){//next
+      i++;
+      if(i > bestLiLen){i = 0;}
+    }else{//prev
+      i--;
+      if(i < 0){i = bestLiLen}
+    }
+      bestLi.eq(i).css({'zIndex':100});
+      bestLi.eq(i).fadeIn(function(){
+        bestLi.css({zIndex:0});
+      });
+      bestLi.eq(i).siblings().fadeOut();
+  })
+  
 
 
 
