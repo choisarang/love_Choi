@@ -205,11 +205,11 @@
     //   e.preventDefault();
     // });
 
-    // pdf 다운로드
-    const pdfLink = $('.pdf_btn');
-    pdfLink.on('click',function(e){
-      e.preventDefault();
-    });
+    // // pdf 다운로드
+    // const pdfLink = $('.pdf_btn');
+    // pdfLink.on('click',function(e){
+    //   e.preventDefault();
+    // });
 
     
 
