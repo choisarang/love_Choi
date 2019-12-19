@@ -143,7 +143,7 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 .y_popup_bg .favicon_img{width: 100%; height: 110px; background-position: 50% 50%; background-size: contain; background-repeat: no-repeat; background-image: url("../../img/y_favicon.png");}
 /* ui ------------------------------- */
 .y_popup_bg .ui{width: 100%; height: auto; margin-top: 200px;}
-.y_popup_bg .ui_img{width: 100%; height: 500px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/yogurtman_web_img.jpg");}
+.y_popup_bg .ui_img{width: 100%; height: 800px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/yogurtman_web_img.png");}
 /* scroll arrow ------------------------------- */
 .y_popup_bg .scroll{position: absolute; bottom: 2%; right: 1%; width: 30px; height: 50px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; background-image: url("../../img/arrow.png"); animation: mouseMv 700ms linear alternate infinite;}
 @keyframes mouseMv {      0% {bottom: 30px;}    100%{bottom:20px; }   }
@@ -236,7 +236,7 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 @keyframes mouseMv {      0% {bottom: 30px;}    100%{bottom:20px; }   }
 
 /* likeBox ------------------------------------------------ */
-#likeBox{width: 100%; height: 1000px; padding-bottom: 200px;}
+#likeBox{width: 100%; height: auto; padding-bottom: 200px;}
 #likeBox>ul{width: 100%; height: 100%;}
 #likeBox li{float: left; width: 210px; height: 210px; margin-right: 50px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; transition: all 400ms ease; opacity: 0.7;}
 #likeBox li:nth-child(4n){margin-right: 0;}
@@ -248,3 +248,10 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 .like_popup{position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; padding: 50px; box-sizing: border-box;  width: 60%; height: 80%; background-color: #fff;}
 .like_popup>button{position: absolute; top: 2%; right: 1%; width: 20px; height: 20px; background-color: #fff; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/ex.png");}
 .like_pic{width: 100%; height: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;}
+
+
+/* footer ============================================================================ */
+#footBox{width: 100%; height: 300px; padding-top: 100px; box-sizing: border-box; background-color: #f2eedd;}
+#footBox>span{display: block; width: 100%; height: 20%; text-align: center; font-size: 1.3rem; font-weight: bold; color: #555;}
+#footBox>em{display: block; width: 100%; height: 50%; text-align: center; line-height: 2; font-size: 1rem; color: #777; font-style: normal;}
+#footBox>p{width: 100%; height: 30%; text-align: center; font-size: 1rem; color: #777; font-weight: bold; text-transform: uppercase;}

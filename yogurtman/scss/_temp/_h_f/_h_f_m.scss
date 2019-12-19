@@ -1,6 +1,6 @@
 // _h_f_m.scss
 
-#headBox{position: fixed; z-index: 500; width: 100vw; min-width: 23.4375rem; height: 5.625rem; padding: 1.25rem 1.875rem; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5);
+#headBox{position: fixed; z-index: 500; width: 100%; min-width: 23.4375rem; height: 5.625rem; padding: 1.25rem 1.875rem; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.5);
   >.list{width: 100%; height: 100%;
     >h1{float: left; width: 6.25rem; height: 3.75rem;
       >a{display: block; width: 100%; height: 100%; background-image: url("../img/logo_01.png"); background-repeat: no-repeat; background-size: contain;}
