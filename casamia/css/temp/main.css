@@ -74,21 +74,21 @@
 
 #viewBox > .product > .slide_02 { background-image: url("../../img/view_02.png"); }
 
-#viewBox > .product > .slide_03 { position: relative; background-image: url("../../img/view_03.png"); }
+#viewBox > .product > .slide_03 { position: relative; background-color: #b00; }
 
-#viewBox > .product > .slide_03 > .text { position: absolute; top: 15%; left: 0; right: 0; margin: auto; width: 550px; height: 550px; border: 10px solid #fff; }
+#viewBox > .product > .slide_03 > .text { position: absolute; top: 15%; left: 0; right: 0; margin: auto; width: 450px; height: 550px; border: 5px solid #fff; }
 
-#viewBox > .product > .slide_03 > .text > h3 { width: 100%; height: 210px; padding-top: 100px; box-sizing: border-box; text-align: center; font-size: 5rem; text-transform: capitalize; color: #fff; }
+#viewBox > .product > .slide_03 > .text > h3 { position: absolute; z-index: 10; top: 0; bottom: 0; left: 50%; transform: translateX(-50%); margin: auto; width: 800px; height: 210px; text-align: center; line-height: 210px; font-size: 5rem; text-transform: capitalize; color: #fff; background-color: #b00; }
 
-#viewBox > .product > .slide_03 > .text > p { display: block; width: 100%; height: 20px; margin-bottom: 100px; text-align: center; font-size: 1.5rem; color: #fff; font-style: italic; }
+#viewBox > .product > .slide_03 > .text > p { display: block; width: 100%; height: 40px; margin-top: 50px; margin-bottom: 350px; text-align: center; font-size: 1.5rem; color: #fff; text-transform: capitalize; font-weight: bold; }
 
-#viewBox > .product > .slide_03 > .text > span { display: block; width: 100%; height: auto; padding-left: 50px; margin-top: 100px; box-sizing: border-box; text-align: left; color: #f3cf1d; font-weight: bold; line-height: 1.1; font-size: 1.5rem; }
+#viewBox > .product > .slide_03 > .text > span { display: block; width: 100%; height: auto; margin-bottom: 50px; box-sizing: border-box; text-align: left; color: #fff; font-weight: bold; line-height: 1.1; font-size: 1.5rem; text-align: center; }
 
-#viewBox > .product > .slide_03 > .side_text { position: absolute; top: 10%; right: 20%; width: 100px; height: 100px; border-radius: 100%; background-color: #f3cf1d; }
+#viewBox > .product > .slide_03 > .side_text { position: absolute; top: 0; right: 10%; padding-top: 130px; box-sizing: border-box; width: 60px; height: 70px; background-color: #c8b273; }
 
-#viewBox > .product > .slide_03 > .side_text > span { display: block; width: auto; height: 100px; padding-top: 14px; box-sizing: border-box; color: #fff; font-size: 1rem; text-transform: capitalize; font-weight: bold; text-align: center; line-height: 1.1; }
+#viewBox > .product > .slide_03 > .side_text > span { display: block; width: auto; height: 100px; padding-top: 14px; box-sizing: border-box; color: #c8b273; font-size: 1rem; text-transform: capitalize; font-weight: bold; text-align: center; line-height: 1.3; }
 
-#viewBox > .product > .slide_03 > .side_text > span > em { font-size: 2.5rem; font-style: normal; }
+#viewBox > .product > .slide_03 > .side_text > span > em { font-size: 2rem; font-style: normal; }
 
 #viewBox > .product > .slide_04 { background-image: url("../../img/view_04.jpg"); }
 
@@ -102,7 +102,7 @@
 
 #viewBox > .product > .slide_04 > .text > span { display: block; width: 100%; margin-top: 250px; color: #333; font-size: 1.6rem; text-transform: uppercase; font-weight: bold; }
 
-#viewBox > .side_bar { position: fixed; top: 50%; transform: translateY(-50%); right: 5%; width: 30px; height: 140px; }
+#viewBox > .side_bar { position: fixed; z-index: 1000; top: 50%; transform: translateY(-50%); right: 5%; width: 30px; height: 140px; }
 
 #viewBox > .side_bar > li { width: 30px; height: 30px; margin-bottom: 25px; }
 
@@ -156,45 +156,41 @@
 
 #conBox #bestBox { width: 100%; height: auto; }
 
-#conBox #bestBox > .best_bg { position: relative; width: 1000px; padding: 100px 0; box-sizing: border-box; height: auto; margin: auto; }
+#conBox #bestBox > .best_bg { position: relative; width: 1000px; height: auto; padding: 100px 0; box-sizing: border-box; margin: auto; }
 
 #conBox #bestBox > .best_bg > h2 { position: relative; z-index: 10; }
 
-#conBox #bestBox > .best_bg > .best_area { position: relative; z-index: 10; width: 100%; height: 470px; }
+#conBox #bestBox > .best_bg > .best_area { position: relative; width: 100%; height: 470px; }
 
-#conBox #bestBox > .best_bg > .best_area > .pic_area { position: relative; float: left; width: 50%; height: 100%; }
+#conBox #bestBox > .best_bg > .best_area > li { position: absolute; z-index: 100; width: 100%; height: 100%; }
 
-#conBox #bestBox > .best_bg > .best_area > .pic_area > li { position: absolute; width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+#conBox #bestBox > .best_bg > .best_area > li > .img_box { float: left; width: 50%; height: 100%; }
 
-#conBox #bestBox > .best_bg > .best_area > .pic_area > li:first-child { z-index: 100; }
+#conBox #bestBox > .best_bg > .best_area > li > .text_box { position: relative; float: left; width: 50%; height: 100%; background-color: #f3cf1d; }
 
-#conBox #bestBox > .best_bg > .best_area > .pic_area > .circle { width: 380px; height: 380px; border-radius: 100%; }
+#conBox #bestBox > .best_bg > .best_area > li > .text_box > .text_area { position: absolute; z-index: 11; bottom: 8%; left: 8%; width: 285px; height: 140px; border: 1px solid #fff; background-color: inherit; }
 
-#conBox #bestBox > .best_bg > .best_area > .text_area { position: relative; float: left; width: 50%; height: 100%; background-color: #f3cf1d; }
+#conBox #bestBox > .best_bg > .best_area > li > .text_box > .text_area > .text_inner { position: absolute; z-index: 12; width: 275px; height: 130px; left: 0; right: 0; top: 0; bottom: 0; margin: auto; padding-left: 0.7rem; box-sizing: border-box; background-color: #fff; }
 
-#conBox #bestBox > .best_bg > .best_area > .text_area > .text_box_b { position: absolute; z-index: 11; bottom: 8%; left: 8%; width: 285px; height: 140px; border: 1px solid #fff; background-color: inherit; }
+#conBox #bestBox > .best_bg > .best_area > li > .text_box > .text_area > .text_inner > span { display: block; width: auto; height: auto; padding-top: 20px; box-sizing: border-box; color: #777; text-transform: capitalize; font-size: 1rem; }
 
-#conBox #bestBox > .best_bg > .best_area > .text_area > .text_box_b > .text_box { position: absolute; z-index: 12; width: 275px; height: 130px; left: 0; right: 0; top: 0; bottom: 0; margin: auto; padding-left: 0.7rem; box-sizing: border-box; background-color: #fff; }
+#conBox #bestBox > .best_bg > .best_area > li > .text_box > .text_area > .text_inner > span > em { font-style: normal; text-transform: uppercase; font-size: 1.3rem; }
 
-#conBox #bestBox > .best_bg > .best_area > .text_area > .text_box_b > .text_box > span { display: block; width: auto; height: auto; padding-top: 20px; box-sizing: border-box; color: #777; text-transform: capitalize; font-size: 1rem; }
+#conBox #bestBox > .best_bg > .best_area > li > .text_box > .text_area > .text_inner > h3 { display: block; width: auto; height: auto; padding-top: 0.5rem; box-sizing: border-box; color: #333; font-size: 1.5rem; }
 
-#conBox #bestBox > .best_bg > .best_area > .text_area > .text_box_b > .text_box > span > em { font-style: normal; text-transform: uppercase; font-size: 1.3rem; }
+#conBox #bestBox > .best_bg > .best_area > li > .text_box > .text_area > .text_inner > h3 > em { font-style: normal; text-transform: uppercase; font-size: 2.2rem; }
 
-#conBox #bestBox > .best_bg > .best_area > .text_area > .text_box_b > .text_box > h3 { display: block; width: auto; height: auto; padding-top: 0.5rem; box-sizing: border-box; color: #333; text-transform: capitalize; font-size: 1.7rem; }
+#conBox #bestBox > .best_bg > .best_indi { position: absolute; z-index: 150; bottom: 18%; right: 3%; width: 85px; height: 15px; background-color: inherit; }
 
-#conBox #bestBox > .best_bg > .best_area > .text_area > .text_box_b > .text_box > h3 > em { font-style: normal; text-transform: uppercase; font-size: 2.2rem; }
+#conBox #bestBox > .best_bg > .best_indi > button { width: 15px; height: 100%; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; background-color: inherit; }
 
-#conBox #bestBox > .best_bg > .best_area > .text_area > .best_indi { position: absolute; z-index: 2; bottom: 8%; right: 8%; width: 85px; height: 15px; background-color: inherit; }
+#conBox #bestBox > .best_bg > .best_indi > .prev { float: left; background-image: url("../../img/prev.png"); }
 
-#conBox #bestBox > .best_bg > .best_area > .text_area > .best_indi > button { width: 15px; height: 100%; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; background-color: inherit; }
+#conBox #bestBox > .best_bg > .best_indi > .center { float: right; width: 15px; height: 13px; margin: 1px 20px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; background-image: url("../../img/center.png"); }
 
-#conBox #bestBox > .best_bg > .best_area > .text_area > .best_indi > .prev { float: left; background-image: url("../../img/prev.png"); }
+#conBox #bestBox > .best_bg > .best_indi > .next { float: right; background-image: url("../../img/next.png"); }
 
-#conBox #bestBox > .best_bg > .best_area > .text_area > .best_indi > .center { float: right; width: 15px; height: 13px; margin: 1px 20px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; background-image: url("../../img/center.png"); }
-
-#conBox #bestBox > .best_bg > .best_area > .text_area > .best_indi > .next { float: right; background-image: url("../../img/next.png"); }
-
-#conBox #bestBox > .best_bg > .best_line { position: absolute; z-index: 0; top: 0; left: 0; width: 550px; height: 100%; }
+#conBox #bestBox > .best_bg > .best_line { position: absolute; top: 0; left: 0; width: 550px; height: 100%; }
 
 #conBox #bestBox > .best_bg > .best_line > li { float: left; width: 110px; height: 100%; border-left: 1px solid #efefef; box-sizing: border-box; }
 
@@ -258,14 +254,20 @@
 
 #footBox > .logo_area > ul:first-child { float: left; }
 
-#footBox > .logo_area > ul:first-child > li { float: left; width: 120px; height: 25px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../../img/logo.png"); }
+#footBox > .logo_area > ul:first-child > li { float: left; width: 120px; height: 25px; }
 
-#footBox > .logo_area > ul:first-child > li:last-child { float: left; width: 65px; margin-left: 2rem; background-image: url("../../img/clab_logo.gif"); }
+#footBox > .logo_area > ul:first-child > li > a { display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../../img/logo.png"); }
+
+#footBox > .logo_area > ul:first-child > li:last-child { width: 65px; margin-left: 2rem; }
+
+#footBox > .logo_area > ul:first-child > li:last-child > a { background-image: url("../../img/clab_logo.gif"); }
 
 #footBox > .logo_area > ul:last-child { float: right; }
 
-#footBox > .logo_area > ul:last-child > li { float: left; width: 25px; height: 25px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../../img/insta.png"); margin-right: 0.6rem; }
+#footBox > .logo_area > ul:last-child > li { float: left; width: 25px; height: 25px; margin-right: 0.6rem; }
 
-#footBox > .logo_area > ul:last-child > li:nth-child(2) { background-image: url("../../img/facebook.png"); }
+#footBox > .logo_area > ul:last-child > li > a { display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../../img/insta.png"); }
 
-#footBox > .logo_area > ul:last-child > li:nth-child(3) { background-image: url("../../img/youtube.png"); margin-right: 0; }
+#footBox > .logo_area > ul:last-child > li:nth-child(2) > a { background-image: url("../../img/facebook.png"); }
+
+#footBox > .logo_area > ul:last-child > li:nth-child(3) > a { background-image: url("../../img/youtube.png"); margin-right: 0; }
