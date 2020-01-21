@@ -1,5 +1,3 @@
-#wrap { width: 100%; height: 100%; background-color: #FFFFF8; }
-
 #headBox { position: fixed; z-index: 500; width: 100%; height: 100px; padding: 2.1875rem 2rem; box-sizing: border-box; background-color: #fff; }
 
 #headBox > h1 { float: left; width: 130px; height: 30px; }
@@ -14,7 +12,7 @@
 
 #headBox > .menu > .bar_bg { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(100, 100, 100, 0.5); }
 
-#headBox > .menu > .bar_bg > .bar_view { position: absolute; top: 0; right: 0; width: 400px; height: 100%; background-color: rgba(255, 255, 255, 0.95); }
+#headBox > .menu > .bar_bg > .bar_view { position: absolute; z-index: 1000; top: 0; right: 0; width: 400px; height: 100%; background-color: rgba(255, 255, 255, 0.95); }
 
 #headBox > .menu > .bar_bg > .bar_view > .ex { position: absolute; top: 4%; right: 8%; width: 25px; height: 25px; }
 
@@ -24,7 +22,7 @@
 
 #headBox > .menu > .bar_bg > .bar_view > .bar_list > dl { width: 100%; height: auto; }
 
-#headBox > .menu > .bar_bg > .bar_view > .bar_list > dl > dt { width: 100%; height: 50px; line-height: 50px; font-size: 1.3rem; }
+#headBox > .menu > .bar_bg > .bar_view > .bar_list > dl > dt { width: 100%; height: 50px; line-height: 50px; font-size: 1.3rem; text-transform: capitalize; }
 
 #headBox > .menu > .bar_bg > .bar_view > .bar_list > dl > dt > a { display: block; width: 100%; height: 100%; color: #777; }
 
@@ -43,6 +41,54 @@
 #headBox > .menu > .bar_bg > .bar_view > .bar_list > ul > li > a { display: block; width: 100%; height: 100%; color: #333; font-size: 1.2rem; text-transform: uppercase; }
 
 #headBox > .menu > .bar_bg > .bar_view > .bar_list > ul > li:last-child { margin-right: 0; }
+
+#footBox { width: 100%; height: auto; }
+
+#footBox > .info_area { width: 100%; height: 240px; padding: 2rem 7rem; box-sizing: border-box; background-color: #fff; }
+
+#footBox > .info_area > li:first-child { float: left; width: auto; height: auto; }
+
+#footBox > .info_area > li:first-child > dl { width: 100%; height: 100%; }
+
+#footBox > .info_area > li:first-child > dl > dt { width: 220px; height: 20px; padding: 0.8rem 0; margin-bottom: 0.8rem; border-bottom: 1px solid #999; font-size: 1.1rem; color: #333; }
+
+#footBox > .info_area > li:first-child > dl > dd { font-size: 0.8rem; width: auto; height: auto; line-height: 1.8; color: #777; }
+
+#footBox > .info_area > li:last-child { float: right; width: auto; height: auto; }
+
+#footBox > .info_area > li:last-child > dl { width: 100%; height: 100%; }
+
+#footBox > .info_area > li:last-child > dl > dt { width: 700px; height: 20px; padding: 0.8rem 0; margin-bottom: 0.8rem; border-bottom: 1px solid #999; font-size: 1rem; }
+
+#footBox > .info_area > li:last-child > dl > dt > a { display: block; float: left; width: auto; height: 100%; margin-right: 10px; font-size: 0.9rem; color: #333; }
+
+#footBox > .info_area > li:last-child > dl > dd { float: left; font-size: 0.8rem; width: auto; height: auto; line-height: 1.8; color: #777; }
+
+#footBox > .info_area > li:last-child > dl > dd:last-child { float: right; }
+
+#footBox > .logo_area { width: 100%; height: 90px; padding: 2rem 7rem; box-sizing: border-box; background-color: #efefef; }
+
+#footBox > .logo_area > ul:first-child { float: left; }
+
+#footBox > .logo_area > ul:first-child > li { float: left; width: 120px; height: 25px; }
+
+#footBox > .logo_area > ul:first-child > li > a { display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../../img/logo.png"); }
+
+#footBox > .logo_area > ul:first-child > li:last-child { width: 65px; margin-left: 2rem; }
+
+#footBox > .logo_area > ul:first-child > li:last-child > a { background-image: url("../../img/clab_logo.gif"); }
+
+#footBox > .logo_area > ul:last-child { float: right; }
+
+#footBox > .logo_area > ul:last-child > li { float: left; width: 25px; height: 25px; margin-right: 0.6rem; }
+
+#footBox > .logo_area > ul:last-child > li > a { display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../../img/insta.png"); }
+
+#footBox > .logo_area > ul:last-child > li:nth-child(2) > a { background-image: url("../../img/facebook.png"); }
+
+#footBox > .logo_area > ul:last-child > li:nth-child(3) > a { background-image: url("../../img/youtube.png"); margin-right: 0; }
+
+#wrap { width: 100%; height: auto; background-color: #FFFFF3; }
 
 #viewBox { position: relative; width: 100%; height: 100%; padding-top: 100px; box-sizing: border-box; overflow: hidden; }
 
@@ -102,7 +148,7 @@
 
 #viewBox > .product > .slide_04 > .text > span { display: block; width: 100%; margin-top: 250px; color: #333; font-size: 1.6rem; text-transform: uppercase; font-weight: bold; }
 
-#viewBox > .side_bar { position: fixed; z-index: 1000; top: 50%; transform: translateY(-50%); right: 5%; width: 30px; height: 140px; }
+#viewBox > .side_bar { position: fixed; z-index: 100; top: 50%; transform: translateY(-50%); right: 5%; width: 30px; height: 140px; }
 
 #viewBox > .side_bar > li { width: 30px; height: 30px; margin-bottom: 25px; }
 
@@ -114,7 +160,7 @@
 
 #viewBox > .side_bar > li:nth-child(3) > a { background-image: url("../../img/chatting.png"); }
 
-#conBox { width: 100%; height: auto; margin: auto; background-color: #fff; }
+#conBox { width: 100%; height: auto; margin: auto; background-color: #FFFFF3; }
 
 #conBox h2 { width: 100%; height: auto; margin-bottom: 100px; font-size: 3rem; text-align: center; text-transform: uppercase; }
 
@@ -225,49 +271,3 @@
 #conBox #eventBox > .event_bg > .event_area > ul:last-child { margin-right: 0; }
 
 #conBox #eventBox > .event_bg > .event_area::after { content: " "; display: block; width: 0; height: 0; clear: both; }
-
-#footBox { width: 100%; height: auto; }
-
-#footBox > .info_area { width: 100%; height: 240px; padding: 2rem 7rem; box-sizing: border-box; background-color: #fff; }
-
-#footBox > .info_area > li:first-child { float: left; width: auto; height: auto; }
-
-#footBox > .info_area > li:first-child > dl { width: 100%; height: 100%; }
-
-#footBox > .info_area > li:first-child > dl > dt { width: 220px; height: 20px; padding: 0.8rem 0; margin-bottom: 0.8rem; border-bottom: 1px solid #999; font-size: 1.1rem; color: #333; }
-
-#footBox > .info_area > li:first-child > dl > dd { font-size: 0.8rem; width: auto; height: auto; line-height: 1.8; color: #777; }
-
-#footBox > .info_area > li:last-child { float: right; width: auto; height: auto; }
-
-#footBox > .info_area > li:last-child > dl { width: 100%; height: 100%; }
-
-#footBox > .info_area > li:last-child > dl > dt { width: 700px; height: 20px; padding: 0.8rem 0; margin-bottom: 0.8rem; border-bottom: 1px solid #999; font-size: 1rem; }
-
-#footBox > .info_area > li:last-child > dl > dt > a { display: block; float: left; width: auto; height: 100%; margin-right: 10px; font-size: 0.9rem; color: #333; }
-
-#footBox > .info_area > li:last-child > dl > dd { float: left; font-size: 0.8rem; width: auto; height: auto; line-height: 1.8; color: #777; }
-
-#footBox > .info_area > li:last-child > dl > dd:last-child { float: right; }
-
-#footBox > .logo_area { width: 100%; height: 90px; padding: 2rem 7rem; box-sizing: border-box; background-color: #efefef; }
-
-#footBox > .logo_area > ul:first-child { float: left; }
-
-#footBox > .logo_area > ul:first-child > li { float: left; width: 120px; height: 25px; }
-
-#footBox > .logo_area > ul:first-child > li > a { display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../../img/logo.png"); }
-
-#footBox > .logo_area > ul:first-child > li:last-child { width: 65px; margin-left: 2rem; }
-
-#footBox > .logo_area > ul:first-child > li:last-child > a { background-image: url("../../img/clab_logo.gif"); }
-
-#footBox > .logo_area > ul:last-child { float: right; }
-
-#footBox > .logo_area > ul:last-child > li { float: left; width: 25px; height: 25px; margin-right: 0.6rem; }
-
-#footBox > .logo_area > ul:last-child > li > a { display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../../img/insta.png"); }
-
-#footBox > .logo_area > ul:last-child > li:nth-child(2) > a { background-image: url("../../img/facebook.png"); }
-
-#footBox > .logo_area > ul:last-child > li:nth-child(3) > a { background-image: url("../../img/youtube.png"); margin-right: 0; }

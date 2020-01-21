@@ -1,0 +1,18 @@
+
+@import "../_basic/var";
+@import "../_base/h_f.scss";
+
+#wrap{width: 100%; height: auto; background-color: $bg;}// #wrap
+
+// #conBox ===================================================================================
+#conBox{width: 1000px; height: auto; margin: auto; padding-top: 200px; background-color: transparent;
+  >h2{width: 300px; height: 60px; margin-bottom: 80px; border-bottom: 3px solid $main; font-size: 2.5rem; text-transform: uppercase; color: $textem;}
+  >h3{width: 100%; height: auto; margin-bottom: 40px; font-size: 1.7rem; text-transform: capitalize; color: $text;}
+  >ul{width: 100%; height: auto; margin-bottom: 50px;
+    >li{float: left; width: 300px; height: 300px; margin-right: 50px; background-position: 50% 50%; background-size: contain; background-repeat: no-repeat;}
+    >li:nth-child(1){background-image: url("../../img/brand_01.jpg");}
+    >li:nth-child(2){background-image: url("../../img/brand_02.jpg");}
+    >li:nth-child(3){background-image: url("../../img/brand_03.jpg"); margin-right: 0;}
+  }//ul
+  >.textBox{width: 100%; height: auto; margin-bottom: 200px; font-size: 1rem; color: $text; word-break: keep-all; line-height: 2;}
+}//#conBox
