@@ -1,4 +1,13 @@
 (function($){
+  // headBox ======================================
+  const headBox = $('#headBox');
+  
+  headBox.on('mouseenter', function(){
+    $(this).css({backgroundColor:"#fff"});
+  });
+  headBox.on('mouseleave', function(){
+    $(this).css({backgroundColor:"rgba(255,255,255,0.5"})
+  });
   // header sidebar ==================================
   // 보이게 ---------------------------------
   const barLink = $('.bar').children('a');
@@ -83,7 +92,7 @@
     clearInterval(go) //setInterval을 취소
   };
 
-  slideGo();
+  // slideGo();
 
   // // 마우스 올리면 멈추기 ---------------------------------
   // viewBox.on('mouseenter', function(){

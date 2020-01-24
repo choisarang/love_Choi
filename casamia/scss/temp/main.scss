@@ -2,10 +2,10 @@
 @import "../_basic/var";
 @import "../_base/h_f.scss";
 
-#wrap{width: 100%; height: auto; background-color: $bg;}// #wrap
+#wrap{width: 100%; height: 100%; background-color: $bg;
 
 // #viewBox ===================================================================================
-#viewBox{position: relative; width: 100%; height: 100%; padding-top: 100px; box-sizing: border-box; overflow: hidden;
+#viewBox{position: relative; width: 100%; height: 100%; box-sizing: border-box; overflow: hidden;
   >.indicator{position: absolute; z-index: 100; width: 1000px; height: 20px; left: 0; right: 0; bottom: 5%; margin: auto;
     >ul{float: right; 
       >li{float: left; width: 20px; height: 20px; margin-right: 15px; border-radius: 100%; background-color: #999;
@@ -26,24 +26,24 @@
     }// .slide_01
     >.slide_02{background-image: url("../../img/view_02.png");}// .slide_02
     >.slide_03{position: relative; background-color: #b00;
-      >.text{position: absolute; top: 15%; left: 0; right: 0; margin: auto; width: 450px; height: 550px; border: 5px solid #fff;
+      >.text{position: absolute; top: 20%; left: 0; right: 0; margin: auto; width: 450px; height: 550px; border: 5px solid #fff;
         >h3{position: absolute; z-index: 10; top: 0; bottom: 0; left: 50%; transform: translateX(-50%); margin: auto; width: 800px; height: 210px; text-align: center; line-height: 210px; font-size: 5rem; text-transform: capitalize; color: #fff; background-color: #b00;}
         >p{display: block; width: 100%; height: 40px; margin-top: 50px; margin-bottom: 350px; text-align: center; font-size: 1.5rem; color: #fff; text-transform: capitalize; font-weight: bold;}
         >span{display: block; width: 100%; height: auto; margin-bottom: 50px; box-sizing: border-box; text-align: left; color: #fff; font-weight: bold; line-height: 1.1; font-size: 1.5rem; text-align: center;}
       }// .text  
-      >.side_text{position: absolute; top: 0; right: 10%; padding-top: 130px; box-sizing: border-box; width: 60px; height: 70px; background-color: #c8b273;
-        >span{display: block; width: auto; height: 100px; padding-top: 14px; box-sizing: border-box; color: #c8b273; font-size: 1rem; text-transform: capitalize; font-weight: bold; text-align: center; line-height: 1.3;
+      >.side_text{position: absolute; top: 0; right: 10%; padding-top: 130px; box-sizing: border-box; width: 60px; height: 150px; background-color: #c8b273;
+        >span{display: block; width: auto; height: 100px; padding-top: 30px; box-sizing: border-box; color: #c8b273; font-size: 1rem; text-transform: capitalize; font-weight: bold; text-align: center; line-height: 1.3;
           >em{font-size: 2rem; font-style: normal;}
         } //span
       }
     }// .slide_03
     >.slide_04{background-image: url("../../img/view_04.jpg");
-      >.text{width: 1000px; height: 100%; margin: auto; padding: 200px 30px;
+      >.text{width: 1000px; height: 100%; margin: auto; padding: 300px 30px;
         >em{display: block; width: 100%; height: auto; font-size: 1.2rem; font-style: normal; color: $textem; font-weight: bold;}
-        >h3{width: 100%; height: 200px; font-size: 5rem; text-transform: uppercase; color: $textem;
+        >h3{width: 100%; height: 200px; margin-top: 50px; font-size: 5rem; text-transform: uppercase; color: $textem;
           >p{color: #f30;}
         }//h3
-        >span{display: block; width: 100%; margin-top: 250px; color: $textem; font-size: 1.6rem; text-transform: uppercase; font-weight: bold;}
+        >span{display: block; width: 100%; margin-top: 120px; color: $textem; font-size: 1.6rem; text-transform: uppercase; font-weight: bold;}
       }// .text  
     }// .slide_04
   }// .product
@@ -137,3 +137,4 @@
   }// .event_bg
   }// #eventBox
 }// #conBox
+}// #wrap
