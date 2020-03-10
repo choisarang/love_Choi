@@ -1,6 +1,17 @@
 // sub_02.js
 (function($){
 
+  // header 색 바꾸기
+
+
+  // 윈도우 높이값 체크
+  const winS = $(window).scrollTop();
+  console.log(winS);
+  
+
+
+  
+
   // 메뉴 바
   const gnb = $('.gnb');
   const gnbBg = gnb.children('.gnb_bg');
@@ -91,5 +102,6 @@
     menuUl.fadeIn();
   });
   
+
   })(jQuery);
   

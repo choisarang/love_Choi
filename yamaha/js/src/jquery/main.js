@@ -1,5 +1,6 @@
 // main.js
 (function($){
+
   // 메뉴 바
   const gnb = $('.gnb');
   const gnbBg = gnb.children('.gnb_bg');
