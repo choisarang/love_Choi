@@ -1,0 +1,119 @@
+// sub_02.scss
+
+
+@import "./_basic/var";
+
+#wrap{width: 100%; height: auto; background-color: $bg;
+@media screen and (min-width:1281px) {
+
+@import "./_temp/h_f_1920.scss";
+
+#headBox{background-color: rgba(0,0,0,0.5);}
+
+#viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
+#conBox{width: 1000px; height: auto; margin: auto; background-color: $bg;
+  >.menu{width: 100%; height: 200px; margin: auto; margin-bottom: 200px; border-bottom: 1px solid #eee; text-align: center; 
+    >h2{width: 100%; height: 150px;
+      >a{display: block; width: 100%; height: 100%; line-height: 200px; color: $text; font-size: 1.5rem;}
+    }//h2
+    >ul{display: none; width: 630px; height: 50px; margin: auto;
+      >li{float: left; width: auto; height: 100%; margin-right: 20px;
+        >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
+      }//li
+      >li:hover{color: $main; font-weight: bold;}
+    }//ul
+  }//.menu
+  >ul{width: 100%; height: auto; padding-bottom: 200px;
+    >li{width: 100%; height: 300px; margin: auto; margin-top: 100px; overflow: hidden;
+      >.img{width: 100%; height: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;
+        >a{width: 100%; height: 100%; background-color: transparent;
+          >h4{display: none; width: 100%; height: 100%; line-height: 300px; text-align: center; font-size: 2rem; color: #fff; text-shadow: 2px 2px 3px #000;}
+        }//a
+      }//img
+    }//li
+    >li>.img:hover{transform: scale(1.1); transition: transform 500ms ease; opacity: 0.7;}
+    >li:nth-child(1)>.img{background-image: url("../img/piano.jpg");}
+    >li:nth-child(2)>.img{background-image: url("../img/piano02.jpg");}
+    >li:nth-child(3)>.img{background-image: url("../img/piano03.jpg");}
+  }//ul
+}//conBox
+
+}//1920
+
+@media screen and (max-width:1280px) and (min-width:769px) {
+
+@import "./_temp/h_f_1280.scss";
+
+#headBox{background-color: rgba(0,0,0,0.5);}
+
+#viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
+#conBox{width: 100%; height: auto; background-color: $bg;
+  >h2{width: 80%; height: 150px; margin: auto; border-bottom: 1px solid #eee; text-align: center; line-height: 150px; color: $text; font-size: 1.5rem;}
+  >ul{width: 100%; height: auto; padding-bottom: 100px;
+    >li{width: 80%; height: 300px; margin: auto; margin-top: 100px; overflow: hidden;
+      >.img{width: 100%; height: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;
+        >a{width: 100%; height: 100%; background-color: transparent;
+          >h4{display: none; width: 100%; height: 100%; line-height: 300px; text-align: center; font-size: 2rem; color: #fff; text-shadow: 2px 2px 3px #000;}
+        }//a
+      }//img
+    }//li
+    >li>.img:hover{transform: scale(1.1); transition: transform 500ms ease; opacity: 0.7;}
+    >li:nth-child(1)>.img{background-image: url("../img/piano.jpg");}
+    >li:nth-child(2)>.img{background-image: url("../img/piano02.jpg");}
+    >li:nth-child(3)>.img{background-image: url("../img/piano03.jpg");}
+  }//ul
+}//conBox
+
+}//1280
+
+@media screen and (max-width:768px) and (min-width:481px) {
+  
+@import "./_temp/h_f_m.scss";
+
+#headBox{background-color: rgba(0,0,0,0.5);}
+
+#viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
+#conBox{width: 100%; height: auto; background-color: $bg;
+  >h2{width: 80%; height: 150px; margin: auto; border-bottom: 1px solid #eee; text-align: center; line-height: 150px; color: $text; font-size: 1.5rem;}
+  >ul{width: 100%; height: auto; padding-bottom: 100px;
+    >li{width: 80%; height: 200px; margin: auto; margin-top: 100px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; opacity: 0.7;
+      >.img{
+        >a{width: 100%; height: 100%; background-color: transparent;
+          >h4{width: 100%; height: 100%; line-height: 200px; text-align: center; font-size: 2rem; color: #fff; text-shadow: 2px  2px 3px #000;}
+        }//a
+      }//.img
+    }//li
+    >li:nth-child(1){background-image: url("../img/piano.jpg");}
+    >li:nth-child(2){background-image: url("../img/piano02.jpg");}
+    >li:nth-child(3){background-image: url("../img/piano03.jpg");}
+  }//ul
+}//conBox
+
+}//768
+
+@media screen and (max-width:480px) {
+  
+@import "./_temp/h_f_m.scss";
+
+#headBox{background-color: rgba(0,0,0,0.5);}
+
+#viewBox{width: 100%; min-width: 350px; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
+#conBox{width: 100%; min-width: 350px; height: auto; background-color: $bg;
+  >h2{width: 80%; height: 150px; margin: auto; border-bottom: 1px solid #eee; text-align: center; line-height: 150px; color: $text; font-size: 1.5rem;}
+  >ul{width: 100%; height: auto; padding-bottom: 100px;
+    >li{width: 80%; height: 200px; margin: auto; margin-top: 100px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; opacity: 0.7;
+      >.img{
+        >a{width: 100%; height: 100%; background-color: transparent;
+          >h4{width: 100%; height: 100%; line-height: 200px; text-align: center; font-size: 2rem; color: #fff; text-shadow: 2px  2px 3px #000;}
+        }//a
+      }//.img
+    }//li
+    >li:nth-child(1){background-image: url("../img/piano.jpg");}
+    >li:nth-child(2){background-image: url("../img/piano02.jpg");}
+    >li:nth-child(3){background-image: url("../img/piano03.jpg");}
+  }//ul
+}//conBox
+
+}//480
+
+}//#wrap

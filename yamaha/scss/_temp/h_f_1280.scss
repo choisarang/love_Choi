@@ -1,0 +1,65 @@
+#headBox{position: fixed; z-index: 500; width: 100%; height: 60px; padding: 10px 30px; box-sizing: border-box;
+  >h1{float: left; width: 150px; height: 40px;
+    >a{display: block; width: 100%; height: 100%; background-position: 50% 50%; background-size: contain; background-repeat: no-repeat; background-image: url("../img/logo_w.png");}
+  }//h1
+  >aside{float: right; width: 200px; height: 40px;
+    >.sound{float: left; width: 120px; height: 100%; margin-right: 30px;
+      >input{display: block; width: 80%; height: 80%; margin-top: 5px; padding-left: 0; line-height: 30px; font-size: 13px; font-weight: bold; text-align: center; text-transform: capitalize; color: #fff; background-color: transparent; border: 1px solid #fff; border-radius: 30px;}
+      >.off{display: none;}
+    }//.sound
+    >.gnb{float: right; width: 50px; height: 100%; padding: 7px; box-sizing: border-box;
+      >a{display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/bar.png");}
+      >.gnb_bg{display: none; position: fixed; z-index: 1000; top: 0; bottom: 0; left: 0; right: 0; margin: auto; width: 100%; height: 100%; background-color: rgba(250,250,250,0.95);
+        >.ex{width: 30px; height: 30px; margin: auto; padding: 100px 0 70px 0;
+          >a{display: block; width: 100%; height: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/ex.png");}
+          >a:hover{background-image: url("../img/ex_c.png");}
+        }//ex
+        >.menu_bg{width: 750px; height: 500px; margin: auto;
+          >dl{float: left; width: 150px; height: auto; margin-right: 35px;
+            >dt{width: 100%; height: 50px; margin-bottom: 50px;
+              >a{position: relative; display: block; width: 100%; height: 100%; font-size: 25px; color: $textem; font-weight: bold; text-align: center; line-height: 50px;}
+              >a:after,
+              >a::after{content: " "; display: block; position: absolute; z-index: 500; bottom: -1; right: 0; left: 0; width: 0; height: 0; border-bottom: 4px solid $main; transition: width 300ms ease;}
+              >a.action:after,
+              >a.action::after{width: 100%;}
+            }//dt
+            >dd{width: 100%; height: 50px;
+              >a{display: block; width: 100%; height: 100%; font-size: 18px; color: $text; text-align: center; line-height: 50px;}
+              >a:hover,a:focus{color: $main; font-weight: bold;}
+            }//dd
+          }//dl
+        }//.menu_bg
+      }//.gnb_bg
+    }//.gnb
+  }//aside
+}//#headBox
+#footBox{width: 100%; height: 400px; padding: 50px 0px; box-sizing: border-box; background-color: #fff;
+  >.snsBox{width: 750px; height: auto; margin: auto; 
+    >li{float: left; width: auto; height: 40px; padding: 20px; margin-right: 20px;
+      >a{display: block; width: 100%; height: 100%;
+        .logo{float: left; width: 40px; height: 35px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain;}
+        .name{float: left; width: auto; height: 100%; margin-left: 10px; font-weight: bold; font-size: 16px; color: $text; line-height: 35px; text-transform: capitalize;}
+      }//a
+    }//li
+    >.you{
+      .logo{background-image: url("../img/youtube.png");}
+    }//.you
+    >.face{
+      .logo{background-image: url("../img/facebook.png");}
+    }//.face
+    >.naver{
+      .logo{background-image: url("../img/naver.png");}
+    }//.naver
+  }//.snsBox
+  >.infoBox{width: 100%; height: auto;
+    >.global{width: 150px; height: 20px; margin: auto; margin-top: 50px;
+      >a{float: left; display: block; width: 50px; height: auto; margin-right: 10px; font-size: 15px; color: #777;}
+      >p{float: left; width: 75px; height: auto; font-size: 15px; color: $textem; font-weight: bold;}
+    }//.global
+    >.info{width: 300px; height: 20px; margin: auto; margin-top: 20px; color: $text;
+      >a{float: left; display: block; width: auto; height: 100%; margin-right: 40px; font-size: 15px;}
+      >a:last-of-type{margin-right: 0;}
+    }//.info
+    >.my{width: 500px; height: 50px; margin: auto; margin-top: 60px; text-align: center; color: $text; font-size: 12px;}
+  }//.infoBox
+}//#footBox

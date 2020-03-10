@@ -56,6 +56,7 @@ productLi = productUl.find('li');
 let productH = product.outerHeight(); //padding, margin 값을 못가져와서 p를 가져오려면 innerHeight, m을 가져오려면 outerHeight
 let productLen = productLi.length;
 
+
 productUl.css({width:'100%', height: 100 * productLen + '%', transform:`translateY(${-productH}px)`, position:'relative', left:0, top:0});
 productLi.css({width:'100%', height: productH});
 

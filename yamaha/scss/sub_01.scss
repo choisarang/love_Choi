@@ -1,0 +1,113 @@
+// sub_01.scss
+
+
+@import "./_basic/var";
+
+#wrap{width: 100%; height: auto; background-color: $bg;
+@media screen and (min-width:1281px) {
+
+
+@import "./_temp/h_f_1920.scss";
+#headBox{background-color: rgba(0,0,0,0.5);}
+
+#viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
+#conBox{width: 1000px; height: auto; margin: auto; margin-bottom: 200px; background-color: $bg;
+  >.menu{width: 100%; height: 200px; margin: auto; margin-bottom: 200px; border-bottom: 1px solid #eee; text-align: center; 
+    >h2{width: 100%; height: 150px;
+      >a{display: block; width: 100%; height: 100%; line-height: 200px; color: $text; font-size: 1.5rem;}
+    }//h2
+    >ul{display: none; width: 560px; height: 50px; margin: auto;
+      >li{float: left; width: auto; height: 100%; margin-right: 20px;
+        >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
+      }//li
+      >li:hover{color: $main; font-weight: bold;}
+    }//ul
+    }//.menu
+  >dl{position: relative; width: 100%; height: auto; border: 1px solid #ddd; margin-top: 200px; padding: 50px 30px; box-sizing: border-box;
+    >dt{position: absolute; top: -60px; left: 0; right: 0; margin: auto; width: 120px; height: 120px; border-radius: 100%; background-color: #ddd; font-size: 1.7rem; font-weight: bold; line-height: 120px; color: $main; text-align: center;}
+    >dd{width: 100%; height: auto; margin-top: 50px; text-align: center; box-sizing: border-box; text-transform: uppercase; line-height: 1.7; font-size: 1rem; word-break: keep-all; color: $text;
+      >em{font-style: normal; font-weight: bold; font-size: 1.2rem; color: $textem;}
+      >span{color: $main; font-weight: bold;}
+    }//dd
+  }//dl
+  >dl:nth-of-type(1){background-color: #eee; padding: 50px 100px;
+    >dt{top: 30px; left: 0; right: 0; width: 110px; height: 80px; margin: auto; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo_mark.png");}
+    >dd{margin-top: 80px;}
+  }//dl:nth-of-type(1)
+}//#conBox
+}//1920
+
+@media screen and (max-width:1280px) and (min-width:769px) {
+
+@import "./_temp/h_f_1280.scss";
+#headBox{background-color: rgba(0,0,0,0.5);}
+
+#viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
+#conBox{width: 80%; height: auto; margin: auto; margin-bottom: 200px; background-color: $bg;
+  >h2{width: 100%; height: 150px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; line-height: 150px; color: $text; font-size: 1.5rem;}
+  >dl{position: relative; width: 100%; height: auto; border: 1px solid #ddd; margin-top: 200px; padding: 50px 30px; box-sizing: border-box;
+    >dt{position: absolute; top: -60px; left: 0; right: 0; margin: auto; width: 120px; height: 120px; border-radius: 100%; background-color: #ddd; font-size: 1.7rem; font-weight: bold; line-height: 120px; color: $main; text-align: center;}
+    >dd{width: 100%; height: auto; margin-top: 50px; text-align: center; box-sizing: border-box; text-transform: uppercase; line-height: 1.7; font-size: 1rem; word-break: keep-all; color: $text;
+      >em{font-style: normal; font-weight: bold; font-size: 1.2rem; color: $textem;}
+      >span{color: $main; font-weight: bold;}
+    }//dd
+  }//dl
+  >dl:nth-of-type(1){background-color: #eee; padding: 50px 100px;
+    >dt{top: 30px; left: 0; right: 0; width: 110px; height: 80px; margin: auto; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo_mark.png");}
+    >dd{margin-top: 80px;}
+  }//dl:nth-of-type(1)
+}//#conBox
+
+// >dl{width: 100%; height: auto; border: 1px solid #ddd; margin-top: 200px; padding: 50px 30px; box-sizing: border-box;
+//   >dt{width: 110px; height: auto; margin: auto; padding-bottom: 10px; font-size: 2rem; font-weight: bold; color: $main; border-bottom: 3px solid $main; text-align: center;}
+
+}//1280
+
+@media screen and (max-width:768px) and (min-width:481px) {
+  
+@import "./_temp/h_f_m.scss";
+#headBox{background-color: rgba(0,0,0,0.5);}
+#viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
+#conBox{width: 80%; height: auto; margin: auto; margin-bottom: 200px; background-color: $bg;
+  >h2{width: 100%; height: 150px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; line-height: 150px; color: $text; font-size: 1.5rem;}
+  >dl{position: relative; width: 100%; height: auto; border: 1px solid #ddd; margin-top: 200px; padding: 50px 30px; box-sizing: border-box;
+    >dt{position: absolute; top: -60px; left: 0; right: 0; margin: auto; width: 120px; height: 120px; border-radius: 100%; background-color: #ddd; font-size: 1.7rem; font-weight: bold; line-height: 120px; color: $main; text-align: center;}
+    >dd{width: 100%; height: auto; margin-top: 50px; text-align: center; box-sizing: border-box; text-transform: uppercase; line-height: 1.7; font-size: 1rem; word-break: keep-all; color: $text;
+      >em{font-style: normal; font-weight: bold; font-size: 1.2rem; color: $textem;}
+      >span{color: $main; font-weight: bold;}
+    }//dd
+  }//dl
+  >dl:nth-of-type(1){background-color: #eee; padding: 50px;
+    >dt{top: 35px; left: 0; right: 0; width: 110px; height: 70px; margin: auto; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo_mark.png");}
+    >dd{margin-top: 80px;}
+  }//dl:nth-of-type(1)
+}//#conBox
+
+
+}//768
+
+@media screen and (max-width:480px) {
+  
+@import "./_temp/h_f_m.scss";
+#headBox{background-color: rgba(0,0,0,0.5);}
+
+#viewBox{width: 100%; min-width: 350px; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
+#conBox{width: 80%; min-width: 350px; height: auto; margin: auto; margin-bottom: 200px; background-color: $bg;
+  >h2{width: 100%; height: 150px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; line-height: 150px; color: $text; font-size: 1.5rem;}
+    >dl{position: relative; width: 100%; height: auto; border: 1px solid #ddd; margin-top: 200px; padding: 50px 30px; box-sizing: border-box;
+      >dt{position: absolute; top: -60px; left: 0; right: 0; margin: auto; width: 120px; height: 120px; border-radius: 100%; background-color: #ddd; font-size: 1.7rem; font-weight: bold; line-height: 120px; color: $main; text-align: center;}
+      >dd{width: 100%; height: auto; margin-top: 50px; text-align: center; box-sizing: border-box; text-transform: uppercase; line-height: 1.7; font-size: 1rem; word-break: keep-all; color: $text;
+        >em{font-style: normal; font-weight: bold; font-size: 1.2rem; color: $textem;}
+        >span{color: $main; font-weight: bold;}
+      }//dd
+    }//dl
+    >dl:nth-of-type(1){background-color: #eee; padding: 50px 100px;
+      >dt{top: 35px; left: 0; right: 0; width: 110px; height: 70px; margin: auto; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo_mark.png");}
+      >dd{margin-top: 80px;}
+    }//dl:nth-of-type(1)
+}//#conBox
+
+
+}//480
+
+}//#wrap

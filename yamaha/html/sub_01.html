@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- sub_01.html -->
+<html lang="ko-KR">
+
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="웹페이지 실습에 따른 목차 구성">
+  <meta name="keyword" content="html, css, js, web, design">
+  <meta name="author" content="최사랑">
+  <meta name="generator" content="illustrator, photoshop, sublimetext, vscode">
+
+  <link rel="stylesheet" href="../fonts/Nanum/stylesheet.css">
+  <link rel="stylesheet" href="../fonts/fontawesome/css/all.css">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/sub_01.css">
+
+  <!--[if IE]>
+       <script src="./ie/html5shiv/dist/html5shiv.min.js"></script>
+       <script src="./ie/PIE/PIE.js"></script>
+       <script src="./ie/respond/dest/respond.min.js"></script>
+  <![endif]-->
+
+
+  <link rel="shortcut icon" type="lmage/png" href="../favicon.png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+
+
+  <script type="text/javascript">
+
+    // Audio 객체생성 ①
+    // var audio = new Audio('./lucky.mp3');
+
+    // Audio 객체생성 ②
+    var audio = new Audio();
+    audio.src = "../music/A_Foggy_Day.MP3";
+  </script>
+
+
+  <title>YAMAHA 음악교실</title>
+</head>
+
+<body>
+<noscript>
+    <p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다.<br />
+    자바스크립트의 기능을 활성화 해주세요.</p>
+    <p><a target="_blank" href="http://enable-jabascript.com/ko/">자바스크립트 
+활성화 처리하기</a></p>
+  </noscript>
+
+  <!-- layout -->
+  <div id="wrap">
+    <header id="headBox">
+      <h1><span class="hidden">yamaha mainpage</span><a href="./main.html"></a></h1>
+      <aside>
+        <div class="sound">
+          <input type="button" class="on" onClick="audio.play();" value="sound on"/>
+          <input type="button" class="off" onClick="audio.pause();" value="sound off"/>
+        </div>
+        <div class="gnb">
+          <a href="#"></a>
+          <div class="gnb_bg">
+            <div class="ex"><a href="#"></a></div>
+            <div class="menu_bg">
+              <dl>
+                <dt><a href="./sub_01.html">음악교실</a></dt>
+                <dd><a href="./sub_01.html">음악교실소개</a></dd>
+                <dd><a href="#">센터소개</a></dd>
+                <dd><a href="#">무료체험교실</a></dd>
+                <dd><a href="#">야마하소년소녀합창단</a></dd>
+                <dd><a href="#">공지사항</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="./sub_02.html">제품소개</a></dt>
+                <dd><a href="./sub_02.html">피아노</a></dd>
+                <dd><a href="#">키보드</a></dd>
+                <dd><a href="#">드럼</a></dd>
+                <dd><a href="#">기타</a></dd>
+                <dd><a href="#">금관악기 / 목관악기</a></dd>
+                <dd><a href="#">현악기</a></dd>
+                <dd><a href="#">타악기</a></dd>
+                <dd><a href="#">오디오 / 음향</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="./sub_03.html">이달의 뮤지션</a></dt>
+                <dd><a href="./sub_03.html">이달의 뮤지션</a></dd>
+                <dd><a href="#">뮤지션</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="#">고객서비스</a></dt>
+                <dd><a href="#">뉴스 / 이벤트</a></dd>
+                <dd><a href="#">매장안내</a></dd>
+                <dd><a href="#">서비스 / 제품지원</a></dd>
+                <dd><a href="#">다운로드</a></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </header>
+    <section id="viewBox"></section>
+    <main id="conBox">
+      <div class="menu">
+        <h2><a href="#">음악교실 소개</a></h2>
+        <ul>
+          <li><a href="#">음악교실소개</a></li>
+          <li><a href="#">센터소개</a></li>
+          <li><a href="#">무료체험교실</a></li>
+          <li><a href="#">야마하소년소녀합창단</a></li>
+          <li><a href="#">공지사항</a></li>
+        </ul>
+      </div>
+      <dl class="clearfix">
+        <dt></dt>
+        <dd><em>yamaha</em>는 <span>세계 최대 악기 종합 메이커로서, 악기를 제조, 판매하고 음악을 보급하는 글로벌 다국적 기업</span>입니다.<br /> yamaha그룹이 탄생한지는 이미 1세기를 훨씬 넘어 전통과 명품브랜드로서 세계인의 뜨거운 가슴 속에 자리잡아 이제는 감동을 함께 만들어 가고 있습니다.</dd>
+      </dl>
+      <dl class="clearfix">
+        <dt>사명감</dt>
+        <dd>yamaha는 단순히 악기를 제조하여 판매하는 회사라기 보다는, 음악을 통하여 사람과 사람을 하나로 이어주고, 나아가 인류의 삶을 보다 윤택하고 풍부하게 가꾸어 가겠다는 사명감을 갖고 'yamaha music school'을 운영하고 있습니다.</dd>
+      </dl>
+      <dl class="clearfix">
+        <dt>철학</dt>
+        <dd>사람은 누구나 태어날 때 부터 음악적인 감각을 가지고 태어나며 교육을 통해 이러한 음악적인 감각을 개발하고 양성할 수 있습니다. 인간의 지적 능력, 창의성 발달을 전제로 한 전인교육을 목표로 하여 음악을 연주하고 스스로 음악을 만드는 능력(창조성)을 발달시키고, 더 나아가 스스로 만든 곡을 직접 느끼면서 그것에 대한 즐거움을 다른 사람들과 공유할 수 있도록 하는 것, 바로 이것이 yamaha music school이 추구하는 교육의 기본 컨셉이며 철학입니다.</dd>
+      </dl>
+      <dl class="clearfix">
+        <dt>목표</dt>
+        <dd>yamaha music school은 1954년 일본에서 시작하여 전 세계적으로 이미 500만 명이 넘는 졸업생을 배출하였으며, 2015년 1월 현재 전세계 40여개국 6, 000여곳 센터에서 약 60만명의 학생이 교육을 받고 있습니다.<br />특히, yamaha music education system은 야마하만의 전통적이고 독자적인  교육시스템으로 지적 능력 발달과 신체적 발달이 매우 민감하게 이루어지는 만 2세 이상 유아들을 대상으로 하여 음악을 통하여 자신을 표현하고 협동심과 독립심 그리고 창의력을 기르는 등 어린이들의 잠재력과 재능을 이끌어 내는 것을 교육의 가장 큰 목표로 하고 있습니다.<br />또한, 어느 곳에서나 동등한 음악교육상의 높은 표준을 제공하여 어린이는 물론, 학부모, 음악교사, 일반 성인에 이르기까지 그리고 초심자나 취미로 음악을 즐기는 사람부터 음악을 전공하려는 사람들에 이르기까지 모든 음악인에게 만족을 줄 수 있는 음악교실을 운영하는 것을 목표로 하고 있습니다.</dd>
+      </dl>
+    </main>
+
+    <footer id="footBox">
+      <ul class="snsBox clearfix">
+        <li class="you">
+          <a href="https://www.youtube.com/channel/UCKL8FqxI07jpXsJ0PA09kOw">
+            <div class="logo"></div>
+            <div class="name">yamaha korea</div>
+          </a>
+        </li>
+        <li class="face">
+          <a href="https://www.facebook.com/YamahaMusicKorea">
+            <div class="logo"></div>
+            <div class="name">yamaha music korea</div>
+          </a>
+        </li>
+        <li class="naver">
+          <a href="https://kr.yamaha.com/ko/support/social_media/">
+            <div class="logo"></div>
+            <div class="name">yamaha music korea</div>
+          </a>
+        </li>
+      </ul>
+      <ul class="infoBox clearfix">
+        <li class="global"><a href="https://www.yamaha.com">글로벌</a><p>대한민국</p></li>
+        <li class="info">
+          <a href="#">문의처</a>
+          <a href="#">이용약관</a>
+          <a href="#">개인정보취급방침</a>
+        </li>
+        <li class="my">본 페이지는 학습용으로 제작되었으며,<br />
+          사용된 이미지 및 내용은 상업적 용도로 사용하지 않습니다.</li>
+      </ul>
+    </footer>
+  </div>
+  <!-- script -->
+<script src="../js/base/jquery-3.4.1.min.js"></script>
+<script src="../js/base/jquery-ui.min.js"></script>
+<script src="../js/src/jquery/sub_01.js"></script>
+</body>
+</html>

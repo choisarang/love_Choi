@@ -1,0 +1,132 @@
+// sub_01.scss
+
+
+@import "./_basic/var";
+
+#wrap{width: 100%; height: auto; background-color: $bg;
+@media screen and (min-width:1281px) {
+  @import "./_temp/h_f_1920.scss";
+  #headBox{background-color: rgba(0,0,0,0.5);}
+  #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}//viewBox
+  #conBox{width: 1000px; height: auto; margin: auto; padding-bottom: 200px; background-color: $bg;
+    >.menu{width: 100%; height: 200px; margin: auto; margin-bottom: 200px; border-bottom: 1px solid #eee; text-align: center; 
+      >h2{width: 100%; height: 150px;
+        >a{display: block; width: 100%; height: 100%; line-height: 200px; color: $text; font-size: 1.5rem;}
+      }//h2
+      >ul{display: none; width: 180px; height: 50px; margin: auto;
+        >li{float: left; width: auto; height: 100%; margin-right: 20px;
+          >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
+        }//li
+        >li:hover{color: $main; font-weight: bold;}
+      }//ul
+    }//.menu
+    >.textBox{float: left; width: 40%; height: auto; margin-bottom: 200px;
+      >h3{font-size: 3rem; font-weight: bold; text-transform: uppercase; color: $textem;}
+      >p{margin-top: 40px; font-size: 1rem; color: $text; line-height: 2; font-weight: bold; text-transform: capitalize;
+        >a{display: block; margin-top: 1rem; color: #33f; text-transform: none;}
+        >a:hover{color: #f05;}
+        >em{font-style: normal; font-size: 1.2rem; color: $textem;}
+      }//p
+    }//.textBox
+    >.imgBox{float: right; width: 50%; height: 400px; margin-bottom: 300px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/jeffhamilton.jpg");} 
+    >.trio{width: 100%; height: 600px; margin-top: 200px;
+      >.img{width: 100%; height: 400px; background-position: 0 0; background-repeat: no-repeat; background-size: cover;background-image: url("../img/jeffhamilton_01.jpg");}
+      >.text{width: 100%; height: auto; margin-bottom: 50px;
+        >p{margin-top: 50px; font-size: 1rem; color: $text; line-height: 1.8; font-weight: bold; text-transform: capitalize;
+          >em{font-style: normal; font-size: 1.2rem; color: $textem;}
+        }//p
+      }//.text
+    }//.trio
+  }//#conBox
+}//1920
+
+@media screen and (max-width:1280px) and (min-width:769px) {
+
+  @import "./_temp/h_f_1280.scss";
+  #headBox{background-color: rgba(0,0,0,0.5);}
+  #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}//viewBox
+  #conBox{width: 80%; height: auto; margin: auto; padding-bottom: 100px; background-color: $bg;
+    >h2{width: 100%; height: 150px; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; line-height: 150px; color: $text; font-size: 1.5rem;}
+    >.textBox{width: 100%; height: auto; margin: auto; margin-bottom: 100px; text-align: center;
+      >h3{font-size: 3rem; font-weight: bold; text-transform: uppercase; color: $textem;}
+      >p{margin-top: 50px; font-size: 1rem; color: $text; line-height: 1.8; font-weight: bold; text-transform: capitalize;
+        >a{color: #33f; text-transform: none;}
+        >a:hover{color: #f05;}
+        >em{font-style: normal; font-size: 1.2rem; color: $textem;}
+      }//p
+    }//.textBox
+    >.imgBox{width: 100%; height: 400px; margin: auto; margin-bottom: 200px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/jeffhamilton.jpg");} 
+    >p{width: 592px; height: 333px; margin: auto;
+      >iframe{width: 100%; height: 100%;}
+    }//p
+    >.trio{width: 80%; height: auto; margin: auto; margin-top: 200px;
+      >.img{width: 100%; height: 400px; background-position: 0 0; background-repeat: no-repeat; background-size: contain;background-image: url("../img/jeffhamilton_01.jpg");}
+      >.text{width: 100%; height: auto; margin-bottom: 50px;
+        >p{margin-top: 50px; font-size: 1rem; color: $text; line-height: 1.8; text-align: center; font-weight: bold; text-transform: capitalize;
+          >em{font-style: normal; font-size: 1.2rem; color: $textem;}
+        }//p
+      }//.text
+    }//.trio
+  }//#conBox
+}//1280
+
+@media screen and (max-width:768px) and (min-width:481px) {
+  
+@import "./_temp/h_f_m.scss";
+#headBox{background-color: rgba(0,0,0,0.5);}
+#viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}//viewBox
+#conBox{width: 80%; height: auto; margin: auto; padding-bottom: 100px; background-color: $bg;
+  >h2{width: 100%; height: 150px; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; line-height: 150px; color: $text; font-size: 1.5rem;}
+  >.textBox{width: 100%; height: auto; margin: auto; margin-bottom: 100px; text-align: center; word-break: keep-all;
+    >h3{font-size: 3rem; font-weight: bold; text-transform: uppercase; color: $textem;}
+    >p{margin-top: 50px; font-size: 1rem; color: $text; line-height: 1.8; font-weight: bold; text-transform: capitalize;
+      >a{color: #33f; text-transform: none;}
+      >a:hover{color: #f05;}
+      >em{font-style: normal; font-size: 1.2rem; color: $textem;}
+    }//p
+  }//.textBox
+  >.imgBox{width: 80%; height: 350px; margin: auto; margin-bottom: 200px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/jeffhamilton.jpg");} 
+  >p{width: 368px; height: 207px; margin: auto;
+    >iframe{width: 100%; height: 100%;}
+  }//p
+  >.trio{width: 80%; height: auto; margin: auto; margin-top: 200px;
+    >.img{width: 100%; height: 250px; background-position: 0 0; background-repeat: no-repeat; background-size: contain;background-image: url("../img/jeffhamilton_01.jpg");}
+    >.text{width: 100%; height: auto; margin-bottom: 50px;
+      >p{margin-top: 50px; font-size: 1rem; color: $text; text-align: center; line-height: 1.8; font-weight: bold; text-transform: capitalize;
+        >em{font-style: normal; font-size: 1.2rem; color: $textem;}
+      }//p
+    }//.text
+  }//.trio
+}//#conBox
+}//768
+
+@media screen and (max-width:480px) {
+  
+@import "./_temp/h_f_m.scss";
+#headBox{background-color: rgba(0,0,0,0.5);}
+#viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}//viewBox
+#conBox{width: 80%; min-width: 350px; height: auto; margin: auto; padding-bottom: 100px; background-color: $bg;
+  >h2{width: 100%; height: 150px; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; line-height: 150px; color: $text; font-size: 1.5rem;}
+  >.textBox{width: 100%; height: auto; margin: auto; margin-bottom: 100px; text-align: center; word-break: keep-all;
+    >h3{font-size: 3rem; font-weight: bold; text-transform: uppercase; color: $textem;}
+    >p{margin-top: 50px; font-size: 1rem; color: $text; line-height: 1.8; font-weight: bold; text-transform: capitalize;
+      >a{color: #33f; text-transform: none;}
+      >a:hover{color: #f05;}
+      >em{font-style: normal; font-size: 1.2rem; color: $textem;}
+    }//p
+  }//.textBox
+  >.imgBox{width: 100%; height: 400px; margin: auto; margin-bottom: 200px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/jeffhamilton.jpg");} 
+  >p{width: 336px; height: 189px; margin: auto;
+    >iframe{width: 100%; height: 100%;}
+  }
+  >.trio{width: 80%; height: auto; margin: auto; margin-top: 200px;
+    >.img{width: 100%; height: 200px; background-position: 0 0; background-repeat: no-repeat; background-size: contain;background-image: url("../img/jeffhamilton_01.jpg");}
+    >.text{width: 100%; height: auto; margin-bottom: 50px;
+      >p{margin-top: 50px; font-size: 1rem; color: $text; text-align: center; line-height: 1.8; font-weight: bold; text-transform: capitalize;
+        >em{font-style: normal; font-size: 1.2rem; color: $textem;}
+      }//p
+    }//.text
+  }//.trio
+}//#conBox
+}//480  
+}//#wrap

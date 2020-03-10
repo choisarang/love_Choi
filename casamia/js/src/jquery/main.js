@@ -92,7 +92,7 @@
     clearInterval(go) //setInterval을 취소
   };
 
-  // slideGo();
+  slideGo();
 
   // // 마우스 올리면 멈추기 ---------------------------------
   // viewBox.on('mouseenter', function(){
@@ -165,5 +165,6 @@ const bestLiLen = bestLi.length;
       bestLi.eq(i).siblings().fadeOut();
   });
 
+  
 
 })(jQuery);

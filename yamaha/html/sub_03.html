@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- sub_03.html -->
+<html lang="ko-KR">
+
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="웹페이지 실습에 따른 목차 구성">
+  <meta name="keyword" content="html, css, js, web, design">
+  <meta name="author" content="최사랑">
+  <meta name="generator" content="illustrator, photoshop, sublimetext, vscode">
+
+  <link rel="stylesheet" href="../fonts/Nanum/stylesheet.css">
+  <link rel="stylesheet" href="../fonts/fontawesome/css/all.css">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/sub_03.css">
+
+  <!--[if IE]>
+       <script src="./ie/html5shiv/dist/html5shiv.min.js"></script>
+       <script src="./ie/PIE/PIE.js"></script>
+       <script src="./ie/respond/dest/respond.min.js"></script>
+  <![endif]-->
+
+
+  <link rel="shortcut icon" type="lmage/png" href="../favicon.png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+
+
+  <script type="text/javascript">
+
+    // Audio 객체생성 ①
+    // var audio = new Audio('./lucky.mp3');
+
+    // Audio 객체생성 ②
+    var audio = new Audio();
+    audio.src = "../music/A_Foggy_Day.MP3";
+  </script>
+
+
+  <title>YAMAHA 이달의 뮤지션</title>
+</head>
+
+<body>
+<noscript>
+    <p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다.<br />
+    자바스크립트의 기능을 활성화 해주세요.</p>
+    <p><a target="_blank" href="http://enable-jabascript.com/ko/">자바스크립트 
+활성화 처리하기</a></p>
+  </noscript>
+
+  <!-- layout -->
+  <div id="wrap">
+    <header id="headBox">
+      <h1><span class="hidden">yamaha mainpage</span><a href="./main.html"></a></h1>
+      <aside>
+        <div class="sound">
+          <input type="button" class="on" onClick="audio.play();" value="sound on"/>
+          <input type="button" class="off" onClick="audio.pause();" value="sound off"/>
+        </div>
+        <div class="gnb">
+          <a href="#"></a>
+          <div class="gnb_bg">
+            <div class="ex"><a href="#"></a></div>
+            <div class="menu_bg">
+              <dl>
+                <dt><a href="./sub_01.html">음악교실</a></dt>
+                <dd><a href="./sub_01.html">음악교실소개</a></dd>
+                <dd><a href="#">센터소개</a></dd>
+                <dd><a href="#">무료체험교실</a></dd>
+                <dd><a href="#">야마하소년소녀합창단</a></dd>
+                <dd><a href="#">공지사항</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="./sub_02.html">제품소개</a></dt>
+                <dd><a href="./sub_02.html">피아노</a></dd>
+                <dd><a href="#">키보드</a></dd>
+                <dd><a href="#">드럼</a></dd>
+                <dd><a href="#">기타</a></dd>
+                <dd><a href="#">금관악기 / 목관악기</a></dd>
+                <dd><a href="#">현악기</a></dd>
+                <dd><a href="#">타악기</a></dd>
+                <dd><a href="#">오디오 / 음향</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="./sub_03.html">이달의 뮤지션</a></dt>
+                <dd><a href="./sub_03.html">이달의 뮤지션</a></dd>
+                <dd><a href="#">뮤지션</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="#">고객서비스</a></dt>
+                <dd><a href="#">뉴스 / 이벤트</a></dd>
+                <dd><a href="#">매장안내</a></dd>
+                <dd><a href="#">서비스 / 제품지원</a></dd>
+                <dd><a href="#">다운로드</a></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </header>
+    <section id="viewBox"></section>
+    <main id="conBox">
+      <div class="menu">
+        <h2><a href="#">이달의 뮤지션</a></h2>
+        <ul>
+          <li><a href="#">이달의 뮤지션</a></li>
+          <li><a href="#">뮤지션</a></li>
+        </ul>
+      </div>
+      <div class="textBox">
+        <h3>jeff hamilton</h3>
+        <p>1953.08.04<br />미국 재즈 드러머<br />1975년 The Monty Alexander Trio 데뷔<br />indiana university jacobs school of music 졸업<br /><br />영화<br />Sports Beyond Extreme: Vol 1<br />Modern Drummer: Festival Weekend 1998<br /><a href="http://www.hamiltonjazz.com">www.hamiltonjazz.com</a><br /></p>
+      </div>
+      <div class="imgBox"></div>
+      <p align="middle"><iframe width="1000" height="562" src="https://www.youtube.com/embed/BUaBJ_uNmRA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+      <ul class="trio">
+        <li class="text">
+          <p><em>David Badham</em><br />"This is one of the best modern big band problems I've ever heard...This is undoubtedly because of Jeff Hamilton, the best driver and most technologically accomplished drummer."<br />
+          </li>
+          <li class="img"></li>
+      </ul>
+    </main>
+    <footer id="footBox">
+      <ul class="snsBox clearfix">
+        <li class="you">
+          <a href="https://www.youtube.com/channel/UCKL8FqxI07jpXsJ0PA09kOw">
+            <div class="logo"></div>
+            <div class="name">yamaha korea</div>
+          </a>
+        </li>
+        <li class="face">
+          <a href="https://www.facebook.com/YamahaMusicKorea">
+            <div class="logo"></div>
+            <div class="name">yamaha music korea</div>
+          </a>
+        </li>
+        <li class="naver">
+          <a href="https://kr.yamaha.com/ko/support/social_media/">
+            <div class="logo"></div>
+            <div class="name">yamaha music korea</div>
+          </a>
+        </li>
+      </ul>
+      <ul class="infoBox clearfix">
+        <li class="global"><a href="https://www.yamaha.com">글로벌</a><p>대한민국</p></li>
+        <li class="info">
+          <a href="#">문의처</a>
+          <a href="#">이용약관</a>
+          <a href="#">개인정보취급방침</a>
+        </li>
+        <li class="my">본 페이지는 학습용으로 제작되었으며,<br />
+          사용된 이미지 및 내용은 상업적 용도로 사용하지 않습니다.</li>
+      </ul>
+    </footer>
+  </div>
+  <!-- script -->
+<script src="../js/base/jquery-3.4.1.min.js"></script>
+<script src="../js/base/jquery-ui.min.js"></script>
+<script src="../js/src/jquery/sub_03.js"></script>
+</body>
+</html>

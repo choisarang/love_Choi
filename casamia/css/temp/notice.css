@@ -44,27 +44,15 @@
 
 #footBox { width: 100%; height: auto; }
 
-#footBox > .info_area { width: 100%; height: 240px; padding: 2rem 7rem; box-sizing: border-box; background-color: #fff; }
+#footBox > .info_area { width: 900px; height: 240px; padding: 2rem 7rem; box-sizing: border-box; background-color: #fff; }
 
-#footBox > .info_area > li:first-child { float: left; width: auto; height: auto; }
+#footBox > .info_area > dt { width: 100%; height: 20px; padding: 0.8rem 0; margin-bottom: 0.8rem; border-bottom: 1px solid #999; font-size: 1rem; }
 
-#footBox > .info_area > li:first-child > dl { width: 100%; height: 100%; }
+#footBox > .info_area > dt > a { display: block; float: left; width: auto; height: 100%; margin-right: 10px; font-size: 0.9rem; color: #333; }
 
-#footBox > .info_area > li:first-child > dl > dt { width: 220px; height: 20px; padding: 0.8rem 0; margin-bottom: 0.8rem; border-bottom: 1px solid #999; font-size: 1.1rem; color: #333; }
+#footBox > .info_area > dd { float: left; font-size: 0.8rem; width: auto; height: auto; line-height: 1.8; color: #777; }
 
-#footBox > .info_area > li:first-child > dl > dd { font-size: 0.8rem; width: auto; height: auto; line-height: 1.8; color: #777; }
-
-#footBox > .info_area > li:last-child { float: right; width: auto; height: auto; }
-
-#footBox > .info_area > li:last-child > dl { width: 100%; height: 100%; }
-
-#footBox > .info_area > li:last-child > dl > dt { width: 700px; height: 20px; padding: 0.8rem 0; margin-bottom: 0.8rem; border-bottom: 1px solid #999; font-size: 1rem; }
-
-#footBox > .info_area > li:last-child > dl > dt > a { display: block; float: left; width: auto; height: 100%; margin-right: 10px; font-size: 0.9rem; color: #333; }
-
-#footBox > .info_area > li:last-child > dl > dd { float: left; font-size: 0.8rem; width: auto; height: auto; line-height: 1.8; color: #777; }
-
-#footBox > .info_area > li:last-child > dl > dd:last-child { float: right; }
+#footBox > .info_area > dd:last-child { float: right; }
 
 #footBox > .logo_area { width: 100%; height: 90px; padding: 2rem 7rem; box-sizing: border-box; background-color: #efefef; }
 
@@ -88,7 +76,7 @@
 
 #footBox > .logo_area > ul:last-child > li:nth-child(3) > a { background-image: url("../../img/youtube.png"); margin-right: 0; }
 
-#wrap { width: 100%; height: auto; background-color: #FFFFF3; }
+#wrap { width: 100%; height: auto; background-color: #FFFFF7; }
 
 #conBox { width: 1000px; height: auto; margin: auto; }
 

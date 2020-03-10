@@ -1,0 +1,202 @@
+// main.scss
+
+@import "./_basic/var";
+
+#wrap{width: 100%; height: 100%; background-color: $bg;
+@media screen and (min-width:1281px) {
+
+
+@import "./_temp/h_f_1920.scss";
+
+#viewBox{position: relative; width: 100%; height: 100%; overflow: hidden;
+  >.indi{position: absolute; z-index: 500; width: 0; height: 100%; top: 0; bottom: 0; left: 48.5%; margin: auto; background-color: transparent;
+    >button{position: absolute; width: 50px; height: 50px; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;}
+    >.next{bottom: 5%; background-image: url("../img/bottom.png");}
+    >.prev{top: 5%; background-image: url("../img/top.png");}
+  }//.indi
+  >ul{position: relative; $count : 4; width: 100%; height: 100% * $count;
+    >li{position: relative; width: 100%; height: 100% / $count; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;}
+    >.slide_01{background-image: url("../img/slide_01.jpg");
+      >.textBox{position: absolute; width: 330px; height: 160px; top: 15%; left: 0; right: 0; margin: auto;
+        >.text{width: 100%; height: 80px; margin-bottom: 40px; font-size: 30px; text-align: center; color: #fff; line-height: 1.5;}
+        >button{display: block; position: relative; z-index: 1; width: 100px; height: 35px; margin-left: 110px; border: 1px solid #fff; background-color: transparent; font-size: 15px; color: #fff; border-radius: 3px;}
+        >button:after{content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms;}
+        >button:hover,>button:focus{color:#e6a783; font-weight: bold;}
+        >button:hover:after,>button:hover::after,
+        >button:focus:after,>button:focus::after{height: 100%; background-color: #fff;}
+      }//.textBox
+    }//.slide_01
+    >.slide_02{background-image: url("../img/slide_02.jpg");
+      >.textBox_02{position: absolute; width: 500px; height: 160px; top: 20%; right: 10%; margin: auto;
+        >.text{width: 100%; height: auto; margin-bottom: 20px; font-size: 22px; text-align: right; color: #fff; line-height: 1.5;
+          >p{font-weight: bold; margin-top: 10px; font-size: 50px; text-transform: uppercase;}
+        }//.text
+        >button{display: block; position: relative; z-index: 1; width: 100px; height: 35px; margin-left: 400px; border: 1px solid #fff; background-color: transparent; font-size: 15px; color: #fff; border-radius: 3px;}
+        >button:after{content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms;}
+        >button:hover,>button:focus{color:#333; font-weight: bold;}
+        >button:hover:after,>button:hover::after,
+        >button:focus:after,>button:focus::after{height: 100%; background-color: #fff;}
+      }//.textBox
+    }//>.slide_02
+    >.slide_03{background-image: url("../img/jaclynclark.jpg"); background-position: 50% 50%;
+      >.textBox_03{position: absolute; width: 400px; height: 160px; top: 0; bottom: 0; right: 0; left: 0; margin: auto;
+        >.text{width: 100%; height: 80px; margin-bottom: 40px; font-size: 22px; text-align: center; color: #fff;
+          >p{font-weight: bold; margin-top: 10px; font-size: 50px; text-transform: capitalize;}
+      }//.text
+        >button{display: block; position: relative; z-index: 1; width: 100px; height: 35px; margin-left: 150px; border: 1px solid #fff; background-color: transparent; font-size: 15px; color: #fff; border-radius: 3px;}
+        >button:after{content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms;}
+        >button:hover,>button:focus{color:#55637d; font-weight: bold;}
+        >button:hover:after,>button:hover::after,
+        >button:focus:after,>button:focus::after{height: 100%; background-color: #fff;}
+      }//.textBox
+    }//>.slide_03
+  }//ul
+}//#viewBox
+}//1920
+
+@media screen and (max-width:1280px) and (min-width:769px) {
+
+@import "./_temp/h_f_1280.scss";
+
+#viewBox{position: relative; width: 100%; height: 100%; overflow: hidden;
+  >.indi{position: absolute; z-index: 500; width: 0; height: 100%; top: 0; bottom: 0; left: 48.5%; margin: auto; background-color: transparent;
+    >button{position: absolute; width: 40px; height: 40px; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;}
+    >.next{bottom: 5%; background-image: url("../img/bottom.png");}
+    >.prev{top: 5%; background-image: url("../img/top.png");}
+  }//.indi
+  >ul{position: relative; $count : 4; width: 100%; height: 100% * $count;
+    >li{position: relative; width: 100%; height: 100% / $count; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;}
+    >.slide_01{background-image: url("../img/slide_01.jpg");
+      >.textBox{position: absolute; width: 330px; height: 160px; top: 15%; left: 0; right: 0; margin: auto;
+        >.text{width: 100%; height: 80px; margin-bottom: 20px; font-size: 25px; text-align: center; color: #fff; line-height: 1.5;}
+        >button{display: block; position: relative; z-index: 1; width: 90px; height: 30px; margin-left: 120px; border: 1px solid #fff; background-color: transparent; font-size: 14px; color: #fff; border-radius: 3px;}
+        >button:after{content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms;}
+        >button:hover,>button:focus{color:#e6a783; font-weight: bold;}
+        >button:hover:after,>button:hover::after,
+        >button:focus:after,>button:focus::after{height: 100%; background-color: #fff;}
+      }//.textBox
+    }//.slide_01
+    >.slide_02{background-image: url("../img/slide_02.jpg");
+      >.textBox_02{position: absolute; width: 500px; height: 160px; top: 20%; right: 10%; margin: auto;
+        >.text{width: 100%; height: auto; margin-bottom: 20px; font-size: 20px; text-align: right; color: #fff; line-height: 1.5;
+          >p{font-weight: bold; margin-top: 10px; font-size: 45px; text-transform: uppercase;}
+        }//.text
+        >button{display: block; position: relative; z-index: 1; width: 90px; height: 30px; margin-left: 410px; border: 1px solid #fff; background-color: transparent; font-size: 14px; color: #fff; border-radius: 3px;}
+        >button:after{content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms;}
+        >button:hover,>button:focus{color:#333; font-weight: bold;}
+        >button:hover:after,>button:hover::after,
+        >button:focus:after,>button:focus::after{height: 100%; background-color: #fff;}
+      }//.textBox
+    }//>.slide_02
+    >.slide_03{background-image: url("../img/jaclynclark.jpg"); background-position: 50% 50%;
+      >.textBox_03{position: absolute; width: 330px; height: 160px; top: 0; bottom: 0; right: 0; left: 0; margin: auto;
+        >.text{width: 100%; height: 80px; margin-bottom: 35px; font-size: 20px; text-align: center; color: #fff;
+          >p{font-weight: bold; margin-top: 10px; font-size: 45px; text-transform: capitalize;}
+      }//.text
+        >button{display: block; position: relative; z-index: 1; width: 90px; height: 30px; margin-left: 120px; border: 1px solid #fff; background-color: transparent; font-size: 14px; color: #fff; border-radius: 3px;}
+        >button:after{content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms;}
+        >button:hover,>button:focus{color:#55637d; font-weight: bold;}
+        >button:hover:after,>button:hover::after,
+        >button:focus:after,>button:focus::after{height: 100%; background-color: #fff;}
+      }//.textBox
+    }//>.slide_03
+  }//ul
+}//#viewBox
+}//1280
+
+
+@media screen and (max-width:768px) and (min-width:481px) {
+
+  @import "./_temp/h_f_m.scss";
+  
+  #viewBox{position: relative; width: 100%; min-width: 350px; height: 100%; overflow: hidden;
+    >.indi{position: absolute; z-index: 500; width: 0; height: 100%; top: 0; bottom: 0; left: 48.5%; margin: auto; background-color: transparent;
+      >button{position: absolute; width: 40px; height: 40px; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;}
+      >.next{bottom: 5%; background-image: url("../img/bottom.png");}
+      >.prev{top: 5%; background-image: url("../img/top.png");}
+    }//.indi
+    >ul{position: relative; $count : 4; width: 100%; height: 100% * $count;
+      >li{position: relative; width: 100%; height: 100% / $count; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;}
+      >.slide_01{background-image: url("../img/slide_01.jpg");
+        >.textBox{position: absolute; width: 330px; height: 120px; top: 20%; left: 0; right: 0; margin: auto;
+          >.text{width: 100%; height: 60px; margin-bottom: 30px; font-size: 25px; text-align: center; color: #fff; line-height: 1.5;}
+          >button{display: block; position: relative; z-index: 1; width: 90px; height: 30px; padding: 0; margin-left: 120px; border: 1px solid #fff; background-color: transparent; font-size: 14px; color: #fff; border-radius: 3px;}
+          >button:after{content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms;}
+          >button:focus{color:#e6a783; font-weight: bold;}
+          >button:focus:after{height: 100%; background-color: #fff;}
+        }//.textBox
+      }//.slide_01
+      >.slide_02{background-image: url("../img/slide_02.jpg");
+        >.textBox_02{position: absolute; width: 500px; height: 160px; top: 30%; right: 5%; margin: auto;
+          >.text{width: 100%; height: auto; margin-bottom: 20px; font-size: 20px; text-align: right; color: #fff; line-height: 1.5;
+            >p{font-weight: bold; margin-top: 10px; font-size: 45px; text-transform: uppercase;}
+          }//.text
+          >button{float: right; display: block; position: relative; z-index: 1; width: 90px; height: 30px; padding: 0; border: 1px solid #fff; background-color: transparent; font-size: 14px; color: #fff; border-radius: 3px;}
+          >button:after{content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms;}
+          >button:focus{color:#000; font-weight: bold;}
+          >button:focus:after{height: 100%; background-color: #fff;}
+        }//.textBox
+      }//>.slide_02
+      >.slide_03{background-image: url("../img/jaclynclark.jpg"); background-position: 50% 50%;
+        >.textBox_03{position: absolute; width: 330px; height: 160px; top: 0; bottom: 0; right: 0; left: 0; margin: auto;
+          >.text{width: 100%; height: 80px; margin-bottom: 35px; font-size: 20px; text-align: center; color: #fff;
+            >p{font-weight: bold; margin-top: 10px; font-size: 45px; text-transform: capitalize;}
+          }//.text
+          >button{display: block; position: relative; z-index: 1; width: 90px; height: 30px; padding: 0; margin-left: 120px;  border: 1px solid #fff; background-color: transparent; font-size: 14px; color: #fff; border-radius: 3px;}
+          >button:after{content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms;}
+          >button:focus{color:#55637d; font-weight: bold;}
+          >button:focus:after{height: 100%; background-color: #fff;}
+        }//.textBox
+      }//>.slide_03
+    }//ul
+  }//#viewBox
+}//768
+
+@media screen and (max-width:481px) {
+  
+@import "./_temp/h_f_m.scss";
+
+#viewBox{position: relative; width: 100%; min-width: 350px; height: 100%; overflow: hidden;
+  >.indi{position: absolute; z-index: 500; width: 0; height: 95%; top: 0; bottom: 0; left: 45%; margin: auto; background-color: transparent;
+    >button{position: absolute; width: 40px; height: 40px; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;}
+    >.next{bottom: 8%; background-image: url("../img/bottom.png");}
+    >.prev{top: 8%; background-image: url("../img/top.png");}
+  }//.indi
+  >ul{position: relative; $count : 4; width: 100%; height: 100% * $count;
+    >li{position: relative; width: 100%; height: 100% / $count; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;}
+    >.slide_01{background-image: url("../img/slide_01.jpg");
+      >.textBox{position: absolute; width: 330px; height: 100px; top: 20%; left: 0; right: 0; margin: auto;
+        >.text{width: 100%; height: 60px; margin-bottom: 10px; font-size: 22px; text-align: center; color: #fff;}
+        >button{display: block; position: relative; z-index: 1; width: 90px; height: 30px; padding: 0; margin-left: 120px; border: 1px solid #fff; background-color: transparent; font-size: 14px; color: #fff; border-radius: 3px;}
+          >button:after{content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms;}
+          >button:focus{color:#e6a783; font-weight: bold;}
+          >button:focus:after{height: 100%; background-color: #fff;}
+      }//.textBox
+    }//.slide_01
+    >.slide_02{background-image: url("../img/slide_02.jpg");
+      >.textBox_02{position: absolute; width: 500px; height: 160px; top: 30%; right: 5%; margin: auto;
+        >.text{width: 100%; height: auto; margin-bottom: 20px; font-size: 18px; text-align: right; color: #fff;
+          >p{font-weight: bold; margin-top: 10px; font-size: 30px; text-transform: uppercase;}
+        }//.text
+        >button{float: right; display: block; position: relative; z-index: 1; width: 90px; height: 30px; padding: 0; border: 1px solid #fff; background-color: transparent; font-size: 14px; color: #fff; border-radius: 3px;}
+        >button:after{content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms;}
+        >button:focus{color:#000; font-weight: bold;}
+        >button:focus:after{height: 100%; background-color: #fff;}
+      }//.textBox
+    }//>.slide_02
+    >.slide_03{background-image: url("../img/jaclynclark.jpg"); background-position: 50% 50%;
+      >.textBox_03{position: absolute; width: 330px; height: 160px; top: 0; bottom: 0; right: 0; left: 0; margin: auto;
+        >.text{width: 100%; height: 80px; margin-bottom: 35px; font-size: 20px; text-align: center; color: #fff;
+          >p{font-weight: bold; margin-top: 10px; font-size: 45px; text-transform: capitalize;}
+      }//.text
+      >button{display: block; position: relative; z-index: 1; width: 90px; height: 30px; padding: 0; margin-left: 120px; border: 1px solid #fff; background-color: transparent; font-size: 14px; color: #fff; border-radius: 3px;}
+      >button:after{content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms;}
+      >button:focus{color:#55637d; font-weight: bold;}
+      >button:focus:after{height: 100%; background-color: #fff;}
+      }//.textBox
+    }//>.slide_03
+  }//ul
+}//#viewBox
+}//480
+
+}//#wrap
