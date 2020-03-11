@@ -232,6 +232,6 @@
   #wrap #conBox > dl > dd { width: 100%; height: auto; margin-top: 50px; text-align: center; box-sizing: border-box; text-transform: uppercase; line-height: 1.7; font-size: 1rem; word-break: keep-all; color: #555; }
   #wrap #conBox > dl > dd > em { font-style: normal; font-weight: bold; font-size: 1.2rem; color: #333; }
   #wrap #conBox > dl > dd > span { color: #4b1e78; font-weight: bold; }
-  #wrap #conBox > dl:nth-of-type(1) { background-color: #eee; padding: 50px 100px; }
+  #wrap #conBox > dl:nth-of-type(1) { background-color: #eee; }
   #wrap #conBox > dl:nth-of-type(1) > dt { top: 35px; left: 0; right: 0; width: 110px; height: 70px; margin: auto; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo_mark.png"); }
   #wrap #conBox > dl:nth-of-type(1) > dd { margin-top: 80px; } }
