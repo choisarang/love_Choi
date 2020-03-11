@@ -16,12 +16,16 @@
     >h2{width: 100%; height: 150px;
       >a{display: block; width: 100%; height: 100%; line-height: 200px; color: $text; font-size: 1.5rem;}
     }//h2
-    >ul{display: none; width: 630px; height: 50px; margin: auto;
-      >li{float: left; width: auto; height: 100%; margin-right: 20px;
-        >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
-      }//li
-      >li:hover{color: $main; font-weight: bold;}
-    }//ul
+    >.list{width: 100%; height: 50px; overflow: hidden;
+      >.list_inner{width: 100%; height: 150%; overflow-x:scroll;
+      >ul{width: 630px; height: 100%; margin: auto;
+        >li{float: left; width: auto; height: 100%; margin-right: 20px;
+          >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
+        }//li
+        >li:hover>a{color: $main; font-weight: bold;}
+      }//ul
+      }//.list_inner
+    }//.list
   }//.menu
   >ul{width: 100%; height: auto; padding-bottom: 200px;
     >li{width: 100%; height: 300px; margin: auto; margin-top: 100px; overflow: hidden;
@@ -48,7 +52,21 @@
 
 #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
 #conBox{width: 100%; height: auto; background-color: $bg;
-  >h2{width: 80%; height: 150px; margin: auto; border-bottom: 1px solid #eee; text-align: center; line-height: 150px; color: $text; font-size: 1.5rem;}
+  >.menu{width: 100%; height: 200px; margin: auto; margin-bottom: 200px; border-bottom: 1px solid #eee; text-align: center; 
+    >h2{width: 100%; height: 150px;
+      >a{display: block; width: 100%; height: 100%; line-height: 200px; color: $text; font-size: 1.5rem;}
+    }//h2
+    >.list{width: 100%; height: 50px; overflow: hidden;
+      >.list_inner{width: 100%; height: 150%; overflow-x:scroll;
+      >ul{width: 630px; height: 100%; margin: auto;
+        >li{float: left; width: auto; height: 100%; margin-right: 20px;
+          >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
+        }//li
+        >li:hover>a{color: $main; font-weight: bold;}
+      }//ul
+      }//.list_inner
+    }//.list
+  }//.menu
   >ul{width: 100%; height: auto; padding-bottom: 100px;
     >li{width: 80%; height: 300px; margin: auto; margin-top: 100px; overflow: hidden;
       >.img{width: 100%; height: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;
@@ -74,7 +92,21 @@
 
 #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
 #conBox{width: 100%; height: auto; background-color: $bg;
-  >h2{width: 80%; height: 150px; margin: auto; border-bottom: 1px solid #eee; text-align: center; line-height: 150px; color: $text; font-size: 1.5rem;}
+  >.menu{width: 90%; height: 200px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; 
+    >h2{width: 100%; height: 150px;
+      >a{display: block; width: 100%; height: 100%; line-height: 200px; color: $text; font-size: 1.5rem;}
+    }//h2
+    >.list{width: 100%; height: 50px; overflow: hidden;
+      >.list_inner{width: 100%; height: 150%; overflow-x:scroll;
+      >ul{width: 550px; height: 100%; margin: auto;
+        >li{float: left; width: auto; height: 100%; margin-right: 10px;
+          >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
+        }//li
+        >li:hover>a{color: $main; font-weight: bold;}
+      }//ul
+      }//.list_inner
+    }//.list
+  }//.menu
   >ul{width: 100%; height: auto; padding-bottom: 100px;
     >li{width: 80%; height: 200px; margin: auto; margin-top: 100px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; opacity: 0.7;
       >.img{
@@ -99,7 +131,21 @@
 
 #viewBox{width: 100%; min-width: 350px; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
 #conBox{width: 100%; min-width: 350px; height: auto; background-color: $bg;
-  >h2{width: 80%; height: 150px; margin: auto; border-bottom: 1px solid #eee; text-align: center; line-height: 150px; color: $text; font-size: 1.5rem;}
+  >.menu{width: 90%; height: 200px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; 
+    >h2{width: 100%; height: 150px;
+      >a{display: block; width: 100%; height: 100%; line-height: 200px; color: $text; font-size: 1.5rem;}
+    }//h2
+    >.list{width: 100%; height: 50px; overflow: hidden;
+      >.list_inner{width: 100%; height: 150%; overflow-x:scroll;
+      >ul{width: 550px; height: 100%; margin: auto;
+        >li{float: left; width: auto; height: 100%; margin-right: 10px;
+          >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
+        }//li
+        >li:hover>a{color: $main; font-weight: bold;}
+      }//ul
+      }//.list_inner
+    }//.list
+  }//.menu
   >ul{width: 100%; height: auto; padding-bottom: 100px;
     >li{width: 80%; height: 200px; margin: auto; margin-top: 100px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; opacity: 0.7;
       >.img{

@@ -13,12 +13,16 @@
       >h2{width: 100%; height: 150px;
         >a{display: block; width: 100%; height: 100%; line-height: 200px; color: $text; font-size: 1.5rem;}
       }//h2
-      >ul{display: none; width: 180px; height: 50px; margin: auto;
-        >li{float: left; width: auto; height: 100%; margin-right: 20px;
-          >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
-        }//li
-        >li:hover{color: $main; font-weight: bold;}
-      }//ul
+      >.list{width: 100%; height: 50px; overflow: hidden;
+        >.list_inner{width: 100%; height: 150%; overflow-x:scroll;
+        >ul{width: 180px; height: 100%; margin: auto;
+          >li{float: left; width: auto; height: 100%; margin-right: 20px;
+            >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
+          }//li
+          >li:hover>a{color: $main; font-weight: bold;}
+        }//ul
+        }//.list_inner
+      }//.list
     }//.menu
     >.textBox{float: left; width: 40%; height: auto; margin-bottom: 200px;
       >h3{font-size: 3rem; font-weight: bold; text-transform: uppercase; color: $textem;}
@@ -46,7 +50,21 @@
   #headBox{background-color: rgba(0,0,0,0.5);}
   #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}//viewBox
   #conBox{width: 80%; height: auto; margin: auto; padding-bottom: 100px; background-color: $bg;
-    >h2{width: 100%; height: 150px; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; line-height: 150px; color: $text; font-size: 1.5rem;}
+    >.menu{width: 100%; height: 200px; margin: auto; margin-bottom: 200px; border-bottom: 1px solid #eee; text-align: center; 
+      >h2{width: 100%; height: 150px;
+        >a{display: block; width: 100%; height: 100%; line-height: 200px; color: $text; font-size: 1.5rem;}
+      }//h2
+      >.list{width: 100%; height: 50px; overflow: hidden;
+        >.list_inner{width: 100%; height: 150%; overflow-x:scroll;
+        >ul{width: 180px; height: 100%; margin: auto;
+          >li{float: left; width: auto; height: 100%; margin-right: 20px;
+            >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
+          }//li
+          >li:hover>a{color: $main; font-weight: bold;}
+        }//ul
+        }//.list_inner
+      }//.list
+    }//.menu
     >.textBox{width: 100%; height: auto; margin: auto; margin-bottom: 100px; text-align: center;
       >h3{font-size: 3rem; font-weight: bold; text-transform: uppercase; color: $textem;}
       >p{margin-top: 50px; font-size: 1rem; color: $text; line-height: 1.8; font-weight: bold; text-transform: capitalize;
@@ -76,7 +94,21 @@
 #headBox{background-color: rgba(0,0,0,0.5);}
 #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}//viewBox
 #conBox{width: 80%; height: auto; margin: auto; padding-bottom: 100px; background-color: $bg;
-  >h2{width: 100%; height: 150px; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; line-height: 150px; color: $text; font-size: 1.5rem;}
+  >.menu{width: 90%; height: 200px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; 
+    >h2{width: 100%; height: 150px;
+      >a{display: block; width: 100%; height: 100%; line-height: 200px; color: $text; font-size: 1.5rem;}
+    }//h2
+    >.list{width: 100%; height: 50px; overflow: hidden;
+      >.list_inner{width: 100%; height: 150%; overflow-x:scroll;
+      >ul{width: 160px; height: 100%; margin: auto;
+        >li{float: left; width: auto; height: 100%; margin-right: 10px;
+          >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
+        }//li
+        >li:hover>a{color: $main; font-weight: bold;}
+      }//ul
+      }//.list_inner
+    }//.list
+  }//.menu
   >.textBox{width: 100%; height: auto; margin: auto; margin-bottom: 100px; text-align: center; word-break: keep-all;
     >h3{font-size: 3rem; font-weight: bold; text-transform: uppercase; color: $textem;}
     >p{margin-top: 50px; font-size: 1rem; color: $text; line-height: 1.8; font-weight: bold; text-transform: capitalize;
@@ -106,7 +138,21 @@
 #headBox{background-color: rgba(0,0,0,0.5);}
 #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}//viewBox
 #conBox{width: 80%; min-width: 350px; height: auto; margin: auto; padding-bottom: 100px; background-color: $bg;
-  >h2{width: 100%; height: 150px; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; line-height: 150px; color: $text; font-size: 1.5rem;}
+  >.menu{width: 90%; height: 200px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; 
+    >h2{width: 100%; height: 150px;
+      >a{display: block; width: 100%; height: 100%; line-height: 200px; color: $text; font-size: 1.5rem;}
+    }//h2
+    >.list{width: 100%; height: 50px; overflow: hidden;
+      >.list_inner{width: 100%; height: 150%; overflow-x:scroll;
+      >ul{width: 160px; height: 100%; margin: auto;
+        >li{float: left; width: auto; height: 100%; margin-right: 10px;
+          >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
+        }//li
+        >li:hover>a{color: $main; font-weight: bold;}
+      }//ul
+      }//.list_inner
+    }//.list
+  }//.menu
   >.textBox{width: 100%; height: auto; margin: auto; margin-bottom: 100px; text-align: center; word-break: keep-all;
     >h3{font-size: 3rem; font-weight: bold; text-transform: uppercase; color: $textem;}
     >p{margin-top: 50px; font-size: 1rem; color: $text; line-height: 1.8; font-weight: bold; text-transform: capitalize;

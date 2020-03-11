@@ -78,19 +78,5 @@
     }
   });
 
-
-  // h2 기능
-  const conBox = $('#conBox');
-  const menuBox = conBox.children('.menu');
-  const h2Link = menuBox.children('h2').children('a');
-  const menuUl = menuBox.children('ul');
-  const menuLi = menuBox.children('li');
-  
-  h2Link.on('mouseenter', function(e){
-    menuUl.fadeIn();
-  });
-
-  
-  
   })(jQuery);
   
