@@ -3,7 +3,17 @@
 
   // header 색 바꾸기
 
-
+  $(window).scroll(function() {
+    let scroll = $(window).scrollTop();
+    console.log(scroll);
+    if (scroll >= 250) {
+      $('.color').fadeIn();
+      $("#headBox").addClass('color');
+    } else {
+      //console.log('a');
+      $("#headBox").removeClass('color');
+    }
+  });
   
 
   // 메뉴 바

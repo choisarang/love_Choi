@@ -8,7 +8,7 @@
 
 @import "./_temp/h_f_1920.scss";
 
-#headBox{background-color: rgba(0,0,0,0.5);}
+#headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
 
 #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
 #conBox{width: 1000px; height: auto; margin: auto; background-color: $bg;
@@ -48,7 +48,7 @@
 
 @import "./_temp/h_f_1280.scss";
 
-#headBox{background-color: rgba(0,0,0,0.5);}
+#headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
 
 #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
 #conBox{width: 100%; height: auto; background-color: $bg;
@@ -88,7 +88,7 @@
   
 @import "./_temp/h_f_m.scss";
 
-#headBox{background-color: rgba(0,0,0,0.5);}
+#headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
 
 #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
 #conBox{width: 100%; height: auto; background-color: $bg;
@@ -127,7 +127,7 @@
   
 @import "./_temp/h_f_m.scss";
 
-#headBox{background-color: rgba(0,0,0,0.5);}
+#headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
 
 #viewBox{width: 100%; min-width: 350px; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
 #conBox{width: 100%; min-width: 350px; height: auto; background-color: $bg;

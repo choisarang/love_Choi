@@ -39,7 +39,7 @@
   #wrap #footBox > .infoBox > .info > a { float: left; display: block; width: auto; height: 100%; margin-right: 40px; font-size: 15px; }
   #wrap #footBox > .infoBox > .info > a:last-of-type { margin-right: 0; }
   #wrap #footBox > .infoBox > .my { width: 500px; height: 50px; margin: auto; margin-top: 60px; text-align: center; color: #555; font-size: 12px; }
-  #wrap #headBox { background-color: rgba(0, 0, 0, 0.5); }
+  #wrap #headBox.color { display: none; background-color: rgba(0, 0, 0, 0.5); }
   #wrap #viewBox { width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg"); }
   #wrap #conBox { width: 1000px; height: auto; margin: auto; padding-bottom: 200px; background-color: #f7f7f7; }
   #wrap #conBox > .menu { width: 100%; height: 200px; margin: auto; margin-bottom: 200px; border-bottom: 1px solid #eee; text-align: center; }
@@ -103,7 +103,7 @@
   #wrap #footBox > .infoBox > .info > a { float: left; display: block; width: auto; height: 100%; margin-right: 40px; font-size: 15px; }
   #wrap #footBox > .infoBox > .info > a:last-of-type { margin-right: 0; }
   #wrap #footBox > .infoBox > .my { width: 500px; height: 50px; margin: auto; margin-top: 60px; text-align: center; color: #555; font-size: 12px; }
-  #wrap #headBox { background-color: rgba(0, 0, 0, 0.5); }
+  #wrap #headBox.color { display: none; background-color: rgba(0, 0, 0, 0.5); }
   #wrap #viewBox { width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg"); }
   #wrap #conBox { width: 80%; height: auto; margin: auto; padding-bottom: 100px; background-color: #f7f7f7; }
   #wrap #conBox > .menu { width: 100%; height: 200px; margin: auto; margin-bottom: 200px; border-bottom: 1px solid #eee; text-align: center; }
@@ -167,7 +167,7 @@
   #wrap #footBox > .infoBox > .info > a { float: left; display: block; width: auto; height: 100%; margin-right: 5px; font-size: 13px; }
   #wrap #footBox > .infoBox > .info > a:last-of-type { margin-right: 0; }
   #wrap #footBox > .infoBox > .my { width: 100%; height: 50px; margin: auto; margin-top: 40px; text-align: center; color: #555; font-size: 12px; }
-  #wrap #headBox { background-color: rgba(0, 0, 0, 0.5); }
+  #wrap #headBox.color { display: none; background-color: rgba(0, 0, 0, 0.5); }
   #wrap #viewBox { width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg"); }
   #wrap #conBox { width: 80%; height: auto; margin: auto; padding-bottom: 100px; background-color: #f7f7f7; }
   #wrap #conBox > .menu { width: 90%; height: 200px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; }
@@ -231,7 +231,7 @@
   #wrap #footBox > .infoBox > .info > a { float: left; display: block; width: auto; height: 100%; margin-right: 5px; font-size: 13px; }
   #wrap #footBox > .infoBox > .info > a:last-of-type { margin-right: 0; }
   #wrap #footBox > .infoBox > .my { width: 100%; height: 50px; margin: auto; margin-top: 40px; text-align: center; color: #555; font-size: 12px; }
-  #wrap #headBox { background-color: rgba(0, 0, 0, 0.5); }
+  #wrap #headBox.color { display: none; background-color: rgba(0, 0, 0, 0.5); }
   #wrap #viewBox { width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg"); }
   #wrap #conBox { width: 80%; min-width: 350px; height: auto; margin: auto; padding-bottom: 100px; background-color: #f7f7f7; }
   #wrap #conBox > .menu { width: 90%; height: 200px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; }

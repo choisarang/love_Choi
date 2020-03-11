@@ -6,7 +6,8 @@
 #wrap{width: 100%; height: auto; background-color: $bg;
 @media screen and (min-width:1281px) {
   @import "./_temp/h_f_1920.scss";
-  #headBox{background-color: rgba(0,0,0,0.5);}
+  #headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
+  
   #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}//viewBox
   #conBox{width: 1000px; height: auto; margin: auto; padding-bottom: 200px; background-color: $bg;
     >.menu{width: 100%; height: 200px; margin: auto; margin-bottom: 200px; border-bottom: 1px solid #eee; text-align: center; 
@@ -47,7 +48,8 @@
 @media screen and (max-width:1280px) and (min-width:769px) {
 
   @import "./_temp/h_f_1280.scss";
-  #headBox{background-color: rgba(0,0,0,0.5);}
+  #headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
+  
   #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}//viewBox
   #conBox{width: 80%; height: auto; margin: auto; padding-bottom: 100px; background-color: $bg;
     >.menu{width: 100%; height: 200px; margin: auto; margin-bottom: 200px; border-bottom: 1px solid #eee; text-align: center; 
@@ -91,7 +93,8 @@
 @media screen and (max-width:768px) and (min-width:481px) {
   
 @import "./_temp/h_f_m.scss";
-#headBox{background-color: rgba(0,0,0,0.5);}
+#headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
+
 #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}//viewBox
 #conBox{width: 80%; height: auto; margin: auto; padding-bottom: 100px; background-color: $bg;
   >.menu{width: 90%; height: 200px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; 
@@ -135,7 +138,8 @@
 @media screen and (max-width:480px) {
   
 @import "./_temp/h_f_m.scss";
-#headBox{background-color: rgba(0,0,0,0.5);}
+#headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
+
 #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}//viewBox
 #conBox{width: 80%; min-width: 350px; height: auto; margin: auto; padding-bottom: 100px; background-color: $bg;
   >.menu{width: 90%; height: 200px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; 
