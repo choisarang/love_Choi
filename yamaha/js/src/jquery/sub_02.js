@@ -99,7 +99,7 @@ const conLi = conBox.find('li');
 
 conLi.on('click',function(e){
   e.preventDefault();
-})
+});
 
 
 // li 글씨

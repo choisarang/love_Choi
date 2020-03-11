@@ -10,35 +10,49 @@
 @import "./_temp/h_f_1920.scss";
 #headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
 
-#viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
-#conBox{width: 1000px; height: auto; margin: auto; margin-bottom: 200px; background-color: $bg;
-  >.menu{width: 100%; height: 200px; margin: auto; margin-bottom: 200px; border-bottom: 1px solid #eee; text-align: center; 
-    >h2{width: 100%; height: 130px;
-      >a{display: block; width: 100%; height: 100%; line-height: 170px; color: $text; font-size: 1.5rem;}
-    }//h2
-    >.list{width: 100%; height: 50px; overflow: hidden;
-      >.list_inner{width: 100%; height: 150%; overflow-x:scroll;
-      >ul{width: 560px; height: 100%; margin: auto;
-        >li{float: left; width: auto; height: 100%; margin-right: 20px;
-          >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
-        }//li
-        >li:hover>a{color: $main; font-weight: bold;}
-      }//ul
-      }//.list_inner
-    }//.list
-  }//.menu
-  >dl{position: relative; width: 100%; height: auto; border: 1px solid #ddd; margin-top: 200px; padding: 50px 30px; box-sizing: border-box;
-    >dt{position: absolute; top: -60px; left: 0; right: 0; margin: auto; width: 120px; height: 120px; border-radius: 100%; background-color: #ddd; font-size: 1.7rem; font-weight: bold; line-height: 120px; color: $main; text-align: center;}
-    >dd{width: 100%; height: auto; margin-top: 50px; text-align: center; box-sizing: border-box; text-transform: uppercase; line-height: 1.7; font-size: 1rem; word-break: keep-all; color: $text;
-      >em{font-style: normal; font-weight: bold; font-size: 1.2rem; color: $textem;}
-      >span{color: $main; font-weight: bold;}
-    }//dd
-  }//dl
-  >dl:nth-of-type(1){background-color: #eee; padding: 50px 100px;
-    >dt{top: 30px; left: 0; right: 0; width: 110px; height: 80px; margin: auto; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo_mark.png");}
-    >dd{margin-top: 80px;}
-  }//dl:nth-of-type(1)
+#conBox{width: 100%; height: auto; padding: 55% 100px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_01.jpg");
+  >dl{width: 100%; height: auto; box-sizing: border-box;
+    >dt{float: left; width: 20%; height: 30px; margin-top: 100px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/logo_t.png");}
+    >.line{float: left; position: relative; width: 15%; height: 5px; margin-top: 115px; margin-right: 5%;}
+    >.line:after,
+    >.line::after{content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -1; width: 0; height: 0; border-bottom: 1px solid #fff; transition: width 700ms ease;}
+    >.line.action:after,
+    >.line.action::after{width: 100%;}
+    >.text{display: none; float: left; width: 60%; height: 300px; color: #aaa; font-weight: bold; font-size: 1.5rem; line-height: 2.5; text-transform: uppercase;
+      >span{color: #fff;}
+    }//li
+  }//ul
 }//#conBox
+
+// #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
+// #conBox{width: 1000px; height: auto; margin: auto; margin-bottom: 200px; background-color: $bg;
+//   >.menu{width: 100%; height: 200px; margin: auto; margin-bottom: 200px; border-bottom: 1px solid #eee; text-align: center; 
+//     >h2{width: 100%; height: 130px;
+//       >a{display: block; width: 100%; height: 100%; line-height: 170px; color: $text; font-size: 1.5rem;}
+//     }//h2
+//     >.list{width: 100%; height: 50px; overflow: hidden;
+//       >.list_inner{width: 100%; height: 150%; overflow-x:scroll;
+//       >ul{width: 560px; height: 100%; margin: auto;
+//         >li{float: left; width: auto; height: 100%; margin-right: 20px;
+//           >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
+//         }//li
+//         >li:hover>a{color: $main; font-weight: bold;}
+//       }//ul
+//       }//.list_inner
+//     }//.list
+//   }//.menu
+//   >dl{position: relative; width: 100%; height: auto; border: 1px solid #ddd; margin-top: 200px; padding: 50px 30px; box-sizing: border-box;
+//     >dt{position: absolute; top: -60px; left: 0; right: 0; margin: auto; width: 120px; height: 120px; border-radius: 100%; background-color: #ddd; font-size: 1.7rem; font-weight: bold; line-height: 120px; color: $main; text-align: center;}
+//     >dd{width: 100%; height: auto; margin-top: 50px; text-align: center; box-sizing: border-box; text-transform: uppercase; line-height: 1.7; font-size: 1rem; word-break: keep-all; color: $text;
+//       >em{font-style: normal; font-weight: bold; font-size: 1.2rem; color: $textem;}
+//       >span{color: $main; font-weight: bold;}
+//     }//dd
+//   }//dl
+//   >dl:nth-of-type(1){background-color: #eee; padding: 50px 100px;
+//     >dt{top: 30px; left: 0; right: 0; width: 110px; height: 80px; margin: auto; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo_mark.png");}
+//     >dd{margin-top: 80px;}
+//   }//dl:nth-of-type(1)
+// }//#conBox
 }//1920
 
 @media screen and (max-width:1280px) and (min-width:769px) {

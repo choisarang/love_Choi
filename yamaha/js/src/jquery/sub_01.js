@@ -95,5 +95,19 @@
   });
 
 
+
+  // conBox 선 효과
+  const conBox = $('#conBox');
+  const dl = conBox.children('dl');
+  const line = dl.children('.line');
+  const text = dl.children('.text');
+
+  dl.on('mouseenter', function(){
+    line.addClass('action');
+    text.fadeIn(2500);
+  });
+
+
+
   })(jQuery);
   

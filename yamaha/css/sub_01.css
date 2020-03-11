@@ -40,25 +40,14 @@
   #wrap #footBox > .infoBox > .info > a:last-of-type { margin-right: 0; }
   #wrap #footBox > .infoBox > .my { width: 500px; height: 50px; margin: auto; margin-top: 60px; text-align: center; color: #555; font-size: 12px; }
   #wrap #headBox.color { display: none; background-color: rgba(0, 0, 0, 0.5); }
-  #wrap #viewBox { width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg"); }
-  #wrap #conBox { width: 1000px; height: auto; margin: auto; margin-bottom: 200px; background-color: #f7f7f7; }
-  #wrap #conBox > .menu { width: 100%; height: 200px; margin: auto; margin-bottom: 200px; border-bottom: 1px solid #eee; text-align: center; }
-  #wrap #conBox > .menu > h2 { width: 100%; height: 130px; }
-  #wrap #conBox > .menu > h2 > a { display: block; width: 100%; height: 100%; line-height: 170px; color: #555; font-size: 1.5rem; }
-  #wrap #conBox > .menu > .list { width: 100%; height: 50px; overflow: hidden; }
-  #wrap #conBox > .menu > .list > .list_inner { width: 100%; height: 150%; overflow-x: scroll; }
-  #wrap #conBox > .menu > .list > .list_inner > ul { width: 560px; height: 100%; margin: auto; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li { float: left; width: auto; height: 100%; margin-right: 20px; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li > a { display: block; width: 100%; height: 100%; font-size: 1rem; color: #555; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li:hover > a { color: #4b1e78; font-weight: bold; }
-  #wrap #conBox > dl { position: relative; width: 100%; height: auto; border: 1px solid #ddd; margin-top: 200px; padding: 50px 30px; box-sizing: border-box; }
-  #wrap #conBox > dl > dt { position: absolute; top: -60px; left: 0; right: 0; margin: auto; width: 120px; height: 120px; border-radius: 100%; background-color: #ddd; font-size: 1.7rem; font-weight: bold; line-height: 120px; color: #4b1e78; text-align: center; }
-  #wrap #conBox > dl > dd { width: 100%; height: auto; margin-top: 50px; text-align: center; box-sizing: border-box; text-transform: uppercase; line-height: 1.7; font-size: 1rem; word-break: keep-all; color: #555; }
-  #wrap #conBox > dl > dd > em { font-style: normal; font-weight: bold; font-size: 1.2rem; color: #333; }
-  #wrap #conBox > dl > dd > span { color: #4b1e78; font-weight: bold; }
-  #wrap #conBox > dl:nth-of-type(1) { background-color: #eee; padding: 50px 100px; }
-  #wrap #conBox > dl:nth-of-type(1) > dt { top: 30px; left: 0; right: 0; width: 110px; height: 80px; margin: auto; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo_mark.png"); }
-  #wrap #conBox > dl:nth-of-type(1) > dd { margin-top: 80px; } }
+  #wrap #conBox { width: 100%; height: auto; padding: 55% 100px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_01.jpg"); }
+  #wrap #conBox > dl { width: 100%; height: auto; box-sizing: border-box; }
+  #wrap #conBox > dl > dt { float: left; width: 20%; height: 30px; margin-top: 100px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/logo_t.png"); }
+  #wrap #conBox > dl > .line { float: left; position: relative; width: 15%; height: 5px; margin-top: 115px; margin-right: 5%; }
+  #wrap #conBox > dl > .line:after, #wrap #conBox > dl > .line::after { content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -1; width: 0; height: 0; border-bottom: 1px solid #fff; transition: width 700ms ease; }
+  #wrap #conBox > dl > .line.action:after, #wrap #conBox > dl > .line.action::after { width: 100%; }
+  #wrap #conBox > dl > .text { display: none; float: left; width: 60%; height: 300px; color: #aaa; font-weight: bold; font-size: 1.5rem; line-height: 2.5; text-transform: uppercase; }
+  #wrap #conBox > dl > .text > span { color: #fff; } }
 
 @media screen and (max-width: 1280px) and (min-width: 769px) { #wrap #headBox { position: fixed; z-index: 500; width: 100%; height: 60px; padding: 10px 30px; box-sizing: border-box; }
   #wrap #headBox > h1 { float: left; width: 150px; height: 40px; }
