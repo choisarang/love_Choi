@@ -10,18 +10,33 @@
 @import "./_temp/h_f_1920.scss";
 #headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
 
-#conBox{width: 100%; height: auto; padding: 55% 100px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_01.jpg");
-  >dl{width: 100%; height: auto; box-sizing: border-box;
+#conBox{width: 100%; height: auto; padding: 1000px 0 500px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_01.jpg");
+  >.one{width: 1200px; height: auto; margin: auto;
     >dt{float: left; width: 20%; height: 30px; margin-top: 100px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/logo_t.png");}
-    >.line{float: left; position: relative; width: 15%; height: 5px; margin-top: 115px; margin-right: 5%;}
+    >.line{float: left; position: relative; width: 20%; height: 5px; margin-top: 115px; margin-right: 5%;}
     >.line:after,
     >.line::after{content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -1; width: 0; height: 0; border-bottom: 1px solid #fff; transition: width 700ms ease;}
     >.line.action:after,
     >.line.action::after{width: 100%;}
-    >.text{display: none; float: left; width: 60%; height: 300px; color: #aaa; font-weight: bold; font-size: 1.5rem; line-height: 2.5; text-transform: uppercase;
-      >span{color: #fff;}
+    >.text{display: none; float: left; width: 55%; height: 300px; padding-top: 90px; box-sizing: border-box; color: #aaa; font-size: 1.2rem; line-height: 2.5; text-transform: uppercase;
+      >span{color: #fff; font-weight: bold;}
     }//li
-  }//ul
+  }//.one
+  >.two{width: 1200px; height: auto; margin: auto; margin-top: 200px;
+    >li{display: none; float: left; width: 300px; height: 300px; margin-right: 150px; border-radius: 100%; border: 1px solid #fff; box-sizing: border-box; font-size: 1.5rem; line-height: 300px; text-align: center; color: #fff;}//dt
+    >li:last-of-type{margin-right: 0;}
+  }//.two
+  >.three{width: 1200px; height: auto; margin: auto; margin-top: 300px;
+    >li{width: 100%; height: auto; margin-top: 150px; font-size: 1.2rem; color: #aaa; word-break: keep-all; line-height: 2.5; text-transform: capitalize;
+      >span{color: #fff; font-weight: bold;}
+    }//li
+    >li:nth-child(1){opacity: 0; transform: translateX(-20%);}
+    >li:nth-child(1).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
+    >li:nth-child(2){opacity: 0; transform: translateX(-20%);}
+    >li:nth-child(2).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
+    >li:nth-child(3){opacity: 0; transform: translateX(-20%);}
+    >li:nth-child(3).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
+  }//>.two
 }//#conBox
 
 // #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}

@@ -2,18 +2,6 @@
 (function($){
 
   // header 색 바꾸기
-
-  $(window).scroll(function() {
-    let scroll = $(window).scrollTop();
-    console.log(scroll);
-    if (scroll >= 250) {
-      $('.color').fadeIn();
-      $("#headBox").addClass('color');
-    } else {
-      //console.log('a');
-      $("#headBox").removeClass('color');
-    }
-  });
   
 
   // 메뉴 바
@@ -98,14 +86,37 @@
 
   // conBox 선 효과
   const conBox = $('#conBox');
-  const dl = conBox.children('dl');
-  const line = dl.children('.line');
-  const text = dl.children('.text');
+  const one = conBox.children('.one');
+  const line = one.children('.line');
+  const text = one.children('.text');
+  const two = conBox.children('.two');
+  const two01 = two.children('.two_01');
+  const two02 = two.children('.two_02');
+  const two03 = two.children('.two_03');
+  const three = conBox.children('.three');
+  const three01 = three.children('.three_01');
+  const three02 = three.children('.three_02');
+  const three03 = three.children('.three_03');
 
-  dl.on('mouseenter', function(){
-    line.addClass('action');
-    text.fadeIn(2500);
+  $(window).scroll(function() {
+    let scroll = $(window).scrollTop();
+    if (scroll >= 500) {
+      line.addClass('action');
+      text.fadeIn(3500);
+    } if(scroll >= 750) {
+      two01.fadeIn(2500);
+      two02.fadeIn(3500);
+      two03.fadeIn(4500);
+    } if(scroll >= 1500) {
+      three01.addClass('action');
+    } if(scroll >= 1700){
+      three02.addClass('action');
+    } if(scroll >= 2000){
+      three03.addClass('action');
+    }
   });
+
+
 
 
 

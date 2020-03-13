@@ -40,14 +40,26 @@
   #wrap #footBox > .infoBox > .info > a:last-of-type { margin-right: 0; }
   #wrap #footBox > .infoBox > .my { width: 500px; height: 50px; margin: auto; margin-top: 60px; text-align: center; color: #555; font-size: 12px; }
   #wrap #headBox.color { display: none; background-color: rgba(0, 0, 0, 0.5); }
-  #wrap #conBox { width: 100%; height: auto; padding: 55% 100px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_01.jpg"); }
-  #wrap #conBox > dl { width: 100%; height: auto; box-sizing: border-box; }
-  #wrap #conBox > dl > dt { float: left; width: 20%; height: 30px; margin-top: 100px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/logo_t.png"); }
-  #wrap #conBox > dl > .line { float: left; position: relative; width: 15%; height: 5px; margin-top: 115px; margin-right: 5%; }
-  #wrap #conBox > dl > .line:after, #wrap #conBox > dl > .line::after { content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -1; width: 0; height: 0; border-bottom: 1px solid #fff; transition: width 700ms ease; }
-  #wrap #conBox > dl > .line.action:after, #wrap #conBox > dl > .line.action::after { width: 100%; }
-  #wrap #conBox > dl > .text { display: none; float: left; width: 60%; height: 300px; color: #aaa; font-weight: bold; font-size: 1.5rem; line-height: 2.5; text-transform: uppercase; }
-  #wrap #conBox > dl > .text > span { color: #fff; } }
+  #wrap #conBox { width: 100%; height: auto; padding: 1000px 0 500px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_01.jpg"); }
+  #wrap #conBox > .one { width: 1200px; height: auto; margin: auto; }
+  #wrap #conBox > .one > dt { float: left; width: 20%; height: 30px; margin-top: 100px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/logo_t.png"); }
+  #wrap #conBox > .one > .line { float: left; position: relative; width: 20%; height: 5px; margin-top: 115px; margin-right: 5%; }
+  #wrap #conBox > .one > .line:after, #wrap #conBox > .one > .line::after { content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -1; width: 0; height: 0; border-bottom: 1px solid #fff; transition: width 700ms ease; }
+  #wrap #conBox > .one > .line.action:after, #wrap #conBox > .one > .line.action::after { width: 100%; }
+  #wrap #conBox > .one > .text { display: none; float: left; width: 55%; height: 300px; padding-top: 90px; box-sizing: border-box; color: #aaa; font-size: 1.2rem; line-height: 2.5; text-transform: uppercase; }
+  #wrap #conBox > .one > .text > span { color: #fff; font-weight: bold; }
+  #wrap #conBox > .two { width: 1200px; height: auto; margin: auto; margin-top: 200px; }
+  #wrap #conBox > .two > li { display: none; float: left; width: 300px; height: 300px; margin-right: 150px; border-radius: 100%; border: 1px solid #fff; box-sizing: border-box; font-size: 1.5rem; line-height: 300px; text-align: center; color: #fff; }
+  #wrap #conBox > .two > li:last-of-type { margin-right: 0; }
+  #wrap #conBox > .three { width: 1200px; height: auto; margin: auto; margin-top: 300px; }
+  #wrap #conBox > .three > li { width: 100%; height: auto; margin-top: 150px; font-size: 1.2rem; color: #aaa; word-break: keep-all; line-height: 2.5; text-transform: capitalize; }
+  #wrap #conBox > .three > li > span { color: #fff; font-weight: bold; }
+  #wrap #conBox > .three > li:nth-child(1) { opacity: 0; transform: translateX(-20%); }
+  #wrap #conBox > .three > li:nth-child(1).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
+  #wrap #conBox > .three > li:nth-child(2) { opacity: 0; transform: translateX(-20%); }
+  #wrap #conBox > .three > li:nth-child(2).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
+  #wrap #conBox > .three > li:nth-child(3) { opacity: 0; transform: translateX(-20%); }
+  #wrap #conBox > .three > li:nth-child(3).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; } }
 
 @media screen and (max-width: 1280px) and (min-width: 769px) { #wrap #headBox { position: fixed; z-index: 500; width: 100%; height: 60px; padding: 10px 30px; box-sizing: border-box; }
   #wrap #headBox > h1 { float: left; width: 150px; height: 40px; }
