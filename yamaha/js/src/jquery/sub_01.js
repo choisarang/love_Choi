@@ -1,9 +1,6 @@
 // sub_02.js
 (function($){
 
-  // header 색 바꾸기
-  
-
   // 메뉴 바
   const gnb = $('.gnb');
   const gnbBg = gnb.children('.gnb_bg');
@@ -98,20 +95,26 @@
   const three02 = three.children('.three_02');
   const three03 = three.children('.three_03');
 
+
+
+  let one_offset = one.offset().top;
+  let two_offset = two.offset().top;
+
+
   $(window).scroll(function() {
     let scroll = $(window).scrollTop();
     if (scroll >= 500) {
       line.addClass('action');
       text.fadeIn(3500);
-    } if(scroll >= 750) {
-      two01.fadeIn(2500);
-      two02.fadeIn(3500);
-      two03.fadeIn(4500);
-    } if(scroll >= 1500) {
+    } if(scroll > one_offset - (200)) {
+      two01.fadeIn(3000);
+      two02.fadeIn(4000);
+      two03.fadeIn(5000);
+    } if(scroll > two_offset - (100)) {
       three01.addClass('action');
-    } if(scroll >= 1700){
+    } if(scroll > two_offset + (300)) {
       three02.addClass('action');
-    } if(scroll >= 2000){
+    } if(scroll > two_offset + (700)) {
       three03.addClass('action');
     }
   });

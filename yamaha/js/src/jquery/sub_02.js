@@ -1,20 +1,6 @@
 // sub_02.js
 (function($){
 
-  // header 색 바꾸기
-
-  $(window).scroll(function() {
-    let scroll = $(window).scrollTop();
-    console.log(scroll);
-    if (scroll >= 250) {
-      $('.color').fadeIn();
-      $("#headBox").addClass('color');
-    } else {
-      //console.log('a');
-      $("#headBox").removeClass('color');
-    }
-  });
-
   
 // 메뉴 바
 const gnb = $('.gnb');
@@ -92,9 +78,45 @@ soundBtn.on('click', function(e){
   }
 });
 
+const conBox = $('#conBox');
+const conH2 = conBox.children('h2');
+const conH3 = conBox.children('h3');
+const conP = conBox.children('p');
+const oneDl = conBox.children('.one');
+const oneDt = oneDl.children('dt');
+const oneDd = oneDl.children('dd');
+const twoDl = conBox.children('.two');
+const twoDt = twoDl.children('dt');
+const twoDd = twoDl.children('dd');
+
+let conH2_offset = conH2.offset().top;
+let conP_offset = conP.offset().top;
+let oneDl_offset = oneDl.offset().top;
+let oneDt_offset = oneDt.offset().top;
+let twoDl_offset = twoDl.offset().top;
+let twoDt_offset = twoDt.offset().top;
+
+$(window).scroll(function() {
+  let scroll = $(window).scrollTop();
+  if (scroll > conH2_offset - (200)) {
+    conH3.fadeIn(3000);
+  }if (scroll > conH2_offset) {
+    conP.fadeIn(3000);
+  }if (scroll > oneDl_offset) {
+    oneDt.addClass('action');
+  }if (scroll > oneDt_offset + (400)) {
+    oneDd.addClass('action');
+  }if (scroll > twoDl_offset) {
+    twoDt.addClass('action');
+  }if (scroll > twoDt_offset + (400)) {
+    twoDd.addClass('action');
+  }
+});
+
+
+
 
 // li 이미지 클릭시 이동 X
-const conBox = $('#conBox');
 const conLi = conBox.find('li');
 
 conLi.on('click',function(e){
@@ -109,6 +131,7 @@ conLi.on('mouseenter', function(){
 conLi.on('mouseleave', function(){
   $(this).find('h4').hide();
 });
+
 
 
 })(jQuery);

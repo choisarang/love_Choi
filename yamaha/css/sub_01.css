@@ -54,11 +54,11 @@
   #wrap #conBox > .three { width: 1200px; height: auto; margin: auto; margin-top: 300px; }
   #wrap #conBox > .three > li { width: 100%; height: auto; margin-top: 150px; font-size: 1.2rem; color: #aaa; word-break: keep-all; line-height: 2.5; text-transform: capitalize; }
   #wrap #conBox > .three > li > span { color: #fff; font-weight: bold; }
-  #wrap #conBox > .three > li:nth-child(1) { opacity: 0; transform: translateX(-20%); }
+  #wrap #conBox > .three > li:nth-child(1) { opacity: 0; transform: translateX(-10%); }
   #wrap #conBox > .three > li:nth-child(1).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
-  #wrap #conBox > .three > li:nth-child(2) { opacity: 0; transform: translateX(-20%); }
+  #wrap #conBox > .three > li:nth-child(2) { opacity: 0; transform: translateX(-10%); }
   #wrap #conBox > .three > li:nth-child(2).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
-  #wrap #conBox > .three > li:nth-child(3) { opacity: 0; transform: translateX(-20%); }
+  #wrap #conBox > .three > li:nth-child(3) { opacity: 0; transform: translateX(-10%); }
   #wrap #conBox > .three > li:nth-child(3).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; } }
 
 @media screen and (max-width: 1280px) and (min-width: 769px) { #wrap #headBox { position: fixed; z-index: 500; width: 100%; height: 60px; padding: 10px 30px; box-sizing: border-box; }
@@ -102,24 +102,26 @@
   #wrap #footBox > .infoBox > .my { width: 500px; height: 50px; margin: auto; margin-top: 60px; text-align: center; color: #555; font-size: 12px; }
   #wrap #headBox.color { display: none; background-color: rgba(0, 0, 0, 0.5); }
   #wrap #viewBox { width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg"); }
-  #wrap #conBox { width: 80%; height: auto; margin: auto; margin-bottom: 200px; background-color: #f7f7f7; }
-  #wrap #conBox > .menu { width: 100%; height: 200px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; }
-  #wrap #conBox > .menu > h2 { width: 100%; height: 130px; }
-  #wrap #conBox > .menu > h2 > a { display: block; width: 100%; height: 100%; line-height: 170px; color: #555; font-size: 1.5rem; }
-  #wrap #conBox > .menu > .list { width: 100%; height: 50px; overflow: hidden; }
-  #wrap #conBox > .menu > .list > .list_inner { width: 100%; height: 150%; overflow-x: scroll; }
-  #wrap #conBox > .menu > .list > .list_inner > ul { width: 560px; height: 100%; margin: auto; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li { float: left; width: auto; height: 100%; margin-right: 20px; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li > a { display: block; width: 100%; height: 100%; font-size: 1rem; color: #555; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li:hover > a { color: #4b1e78; font-weight: bold; }
-  #wrap #conBox > dl { position: relative; width: 100%; height: auto; border: 1px solid #ddd; margin-top: 200px; padding: 50px 30px; box-sizing: border-box; }
-  #wrap #conBox > dl > dt { position: absolute; top: -60px; left: 0; right: 0; margin: auto; width: 120px; height: 120px; border-radius: 100%; background-color: #ddd; font-size: 1.7rem; font-weight: bold; line-height: 120px; color: #4b1e78; text-align: center; }
-  #wrap #conBox > dl > dd { width: 100%; height: auto; margin-top: 50px; text-align: center; box-sizing: border-box; text-transform: uppercase; line-height: 1.7; font-size: 1rem; word-break: keep-all; color: #555; }
-  #wrap #conBox > dl > dd > em { font-style: normal; font-weight: bold; font-size: 1.2rem; color: #333; }
-  #wrap #conBox > dl > dd > span { color: #4b1e78; font-weight: bold; }
-  #wrap #conBox > dl:nth-of-type(1) { background-color: #eee; padding: 50px 100px; }
-  #wrap #conBox > dl:nth-of-type(1) > dt { top: 30px; left: 0; right: 0; width: 110px; height: 80px; margin: auto; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo_mark.png"); }
-  #wrap #conBox > dl:nth-of-type(1) > dd { margin-top: 80px; } }
+  #wrap #conBox { width: 100%; height: auto; padding: 800px 0 500px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_01.jpg"); }
+  #wrap #conBox > .one { width: 80%; height: auto; margin: auto; }
+  #wrap #conBox > .one > dt { float: left; width: 20%; height: 30px; margin-top: 100px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/logo_t.png"); }
+  #wrap #conBox > .one > .line { float: left; position: relative; width: 20%; height: 5px; margin-top: 115px; margin-right: 5%; }
+  #wrap #conBox > .one > .line:after, #wrap #conBox > .one > .line::after { content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -1; width: 0; height: 0; border-bottom: 1px solid #fff; transition: width 700ms ease; }
+  #wrap #conBox > .one > .line.action:after, #wrap #conBox > .one > .line.action::after { width: 100%; }
+  #wrap #conBox > .one > .text { display: none; float: left; width: 55%; height: 300px; padding-top: 90px; box-sizing: border-box; color: #aaa; font-size: 1.1rem; line-height: 2.5; text-transform: uppercase; }
+  #wrap #conBox > .one > .text > span { color: #fff; font-weight: bold; }
+  #wrap #conBox > .two { width: 760px; height: auto; margin: auto; margin-top: 200px; }
+  #wrap #conBox > .two > li { display: none; float: left; width: 210px; height: 210px; margin-right: 65px; border-radius: 100%; border: 1px solid #fff; box-sizing: border-box; font-size: 1.2rem; line-height: 210px; text-align: center; color: #fff; }
+  #wrap #conBox > .two > li:last-of-type { margin-right: 0; }
+  #wrap #conBox > .three { width: 80%; height: auto; margin: auto; margin-top: 300px; }
+  #wrap #conBox > .three > li { width: 100%; height: auto; margin-top: 150px; font-size: 1.2rem; color: #aaa; word-break: keep-all; line-height: 2.5; text-transform: capitalize; }
+  #wrap #conBox > .three > li > span { color: #fff; font-weight: bold; }
+  #wrap #conBox > .three > li:nth-child(1) { opacity: 0; transform: translateX(-10%); }
+  #wrap #conBox > .three > li:nth-child(1).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
+  #wrap #conBox > .three > li:nth-child(2) { opacity: 0; transform: translateX(-10%); }
+  #wrap #conBox > .three > li:nth-child(2).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
+  #wrap #conBox > .three > li:nth-child(3) { opacity: 0; transform: translateX(-10%); }
+  #wrap #conBox > .three > li:nth-child(3).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; } }
 
 @media screen and (max-width: 768px) and (min-width: 481px) { #wrap #headBox { position: fixed; z-index: 500; width: 100%; min-width: 350px; height: 65px; padding: 20px; box-sizing: border-box; }
   #wrap #headBox > h1 { float: left; width: 100px; height: 25px; }
@@ -160,24 +162,26 @@
   #wrap #footBox > .infoBox > .my { width: 100%; height: 50px; margin: auto; margin-top: 40px; text-align: center; color: #555; font-size: 12px; }
   #wrap #headBox.color { display: none; background-color: rgba(0, 0, 0, 0.5); }
   #wrap #viewBox { width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg"); }
-  #wrap #conBox { width: 80%; height: auto; margin: auto; margin-bottom: 200px; background-color: #f7f7f7; }
-  #wrap #conBox > .menu { width: 90%; height: 200px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; }
-  #wrap #conBox > .menu > h2 { width: 100%; height: 130px; }
-  #wrap #conBox > .menu > h2 > a { display: block; width: 100%; height: 100%; line-height: 170px; color: #555; font-size: 1.5rem; }
-  #wrap #conBox > .menu > .list { width: 100%; height: 50px; overflow: hidden; }
-  #wrap #conBox > .menu > .list > .list_inner { width: 100%; height: 150%; overflow-x: scroll; }
-  #wrap #conBox > .menu > .list > .list_inner > ul { width: 550px; height: 100%; margin: auto; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li { float: left; width: auto; height: 100%; margin-right: 10px; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li > a { display: block; width: 100%; height: 100%; font-size: 1rem; color: #555; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li:hover > a { color: #4b1e78; font-weight: bold; }
-  #wrap #conBox > dl { position: relative; width: 100%; height: auto; border: 1px solid #ddd; margin-top: 200px; padding: 50px 30px; box-sizing: border-box; }
-  #wrap #conBox > dl > dt { position: absolute; top: -60px; left: 0; right: 0; margin: auto; width: 120px; height: 120px; border-radius: 100%; background-color: #ddd; font-size: 1.7rem; font-weight: bold; line-height: 120px; color: #4b1e78; text-align: center; }
-  #wrap #conBox > dl > dd { width: 100%; height: auto; margin-top: 50px; text-align: center; box-sizing: border-box; text-transform: uppercase; line-height: 1.7; font-size: 1rem; word-break: keep-all; color: #555; }
-  #wrap #conBox > dl > dd > em { font-style: normal; font-weight: bold; font-size: 1.2rem; color: #333; }
-  #wrap #conBox > dl > dd > span { color: #4b1e78; font-weight: bold; }
-  #wrap #conBox > dl:nth-of-type(1) { background-color: #eee; padding: 50px; }
-  #wrap #conBox > dl:nth-of-type(1) > dt { top: 35px; left: 0; right: 0; width: 110px; height: 70px; margin: auto; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo_mark.png"); }
-  #wrap #conBox > dl:nth-of-type(1) > dd { margin-top: 80px; } }
+  #wrap #conBox { width: 100%; height: auto; padding: 800px 0 500px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_01.jpg"); }
+  #wrap #conBox > .one { width: 80%; height: auto; margin: auto; }
+  #wrap #conBox > .one > dt { width: 120px; height: 30px; margin: auto; margin-top: 100px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/logo_t.png"); }
+  #wrap #conBox > .one > .line { position: relative; width: 2%; height: 150px; margin: auto; margin-top: 100px; }
+  #wrap #conBox > .one > .line:after, #wrap #conBox > .one > .line::after { content: " "; display: block; position: absolute; z-index: 500; right: -1; top: 0; bottom: 0; width: 0; height: 0; border-right: 1px solid #fff; transition: height 700ms ease; }
+  #wrap #conBox > .one > .line.action:after, #wrap #conBox > .one > .line.action::after { height: 100%; }
+  #wrap #conBox > .one > .text { display: none; width: 100%; height: auto; padding-top: 90px; box-sizing: border-box; color: #aaa; font-size: 1.1rem; line-height: 2.5; text-transform: uppercase; text-align: center; word-break: keep-all; }
+  #wrap #conBox > .one > .text > span { color: #fff; font-weight: bold; }
+  #wrap #conBox > .two { width: 80%; height: auto; margin: auto; margin-top: 200px; }
+  #wrap #conBox > .two > li { display: none; width: 210px; height: 210px; margin: auto; margin-bottom: 50px; border-radius: 100%; border: 1px solid #fff; box-sizing: border-box; font-size: 1.2rem; line-height: 210px; text-align: center; color: #fff; }
+  #wrap #conBox > .two > li:last-of-type { margin-bottom: 0; }
+  #wrap #conBox > .three { width: 80%; height: auto; margin: auto; margin-top: 200px; }
+  #wrap #conBox > .three > li { width: 100%; height: auto; margin-top: 100px; font-size: 1.2rem; color: #aaa; word-break: keep-all; line-height: 2.5; text-transform: capitalize; text-align: center; }
+  #wrap #conBox > .three > li > span { color: #fff; font-weight: bold; }
+  #wrap #conBox > .three > li:nth-child(1) { opacity: 0; transform: translateX(-10%); }
+  #wrap #conBox > .three > li:nth-child(1).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
+  #wrap #conBox > .three > li:nth-child(2) { opacity: 0; transform: translateX(-10%); }
+  #wrap #conBox > .three > li:nth-child(2).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
+  #wrap #conBox > .three > li:nth-child(3) { opacity: 0; transform: translateX(-10%); }
+  #wrap #conBox > .three > li:nth-child(3).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; } }
 
 @media screen and (max-width: 480px) { #wrap #headBox { position: fixed; z-index: 500; width: 100%; min-width: 350px; height: 65px; padding: 20px; box-sizing: border-box; }
   #wrap #headBox > h1 { float: left; width: 100px; height: 25px; }
@@ -218,21 +222,23 @@
   #wrap #footBox > .infoBox > .my { width: 100%; height: 50px; margin: auto; margin-top: 40px; text-align: center; color: #555; font-size: 12px; }
   #wrap #headBox.color { display: none; background-color: rgba(0, 0, 0, 0.5); }
   #wrap #viewBox { width: 100%; min-width: 350px; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg"); }
-  #wrap #conBox { width: 80%; min-width: 350px; height: auto; margin: auto; margin-bottom: 200px; background-color: #f7f7f7; }
-  #wrap #conBox > .menu { width: 90%; height: 200px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; }
-  #wrap #conBox > .menu > h2 { width: 100%; height: 130px; }
-  #wrap #conBox > .menu > h2 > a { display: block; width: 100%; height: 100%; line-height: 170px; color: #555; font-size: 1.5rem; }
-  #wrap #conBox > .menu > .list { width: 100%; height: 50px; overflow: hidden; }
-  #wrap #conBox > .menu > .list > .list_inner { width: 100%; height: 150%; overflow-x: scroll; }
-  #wrap #conBox > .menu > .list > .list_inner > ul { width: 550px; height: 100%; margin: auto; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li { float: left; width: auto; height: 100%; margin-right: 10px; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li > a { display: block; width: 100%; height: 100%; font-size: 1rem; color: #555; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li:hover > a { color: #4b1e78; font-weight: bold; }
-  #wrap #conBox > dl { position: relative; width: 100%; height: auto; border: 1px solid #ddd; margin-top: 200px; padding: 50px 30px; box-sizing: border-box; }
-  #wrap #conBox > dl > dt { position: absolute; top: -60px; left: 0; right: 0; margin: auto; width: 120px; height: 120px; border-radius: 100%; background-color: #ddd; font-size: 1.7rem; font-weight: bold; line-height: 120px; color: #4b1e78; text-align: center; }
-  #wrap #conBox > dl > dd { width: 100%; height: auto; margin-top: 50px; text-align: center; box-sizing: border-box; text-transform: uppercase; line-height: 1.7; font-size: 1rem; word-break: keep-all; color: #555; }
-  #wrap #conBox > dl > dd > em { font-style: normal; font-weight: bold; font-size: 1.2rem; color: #333; }
-  #wrap #conBox > dl > dd > span { color: #4b1e78; font-weight: bold; }
-  #wrap #conBox > dl:nth-of-type(1) { background-color: #eee; }
-  #wrap #conBox > dl:nth-of-type(1) > dt { top: 35px; left: 0; right: 0; width: 110px; height: 70px; margin: auto; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo_mark.png"); }
-  #wrap #conBox > dl:nth-of-type(1) > dd { margin-top: 80px; } }
+  #wrap #conBox { width: 100%; height: auto; padding: 800px 0 500px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_01.jpg"); }
+  #wrap #conBox > .one { width: 80%; height: auto; margin: auto; }
+  #wrap #conBox > .one > dt { width: 120px; height: 30px; margin: auto; margin-top: 100px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/logo_t.png"); }
+  #wrap #conBox > .one > .line { position: relative; width: 2%; height: 150px; margin: auto; margin-top: 100px; }
+  #wrap #conBox > .one > .line:after, #wrap #conBox > .one > .line::after { content: " "; display: block; position: absolute; z-index: 500; right: -1; top: 0; bottom: 0; width: 0; height: 0; border-right: 1px solid #fff; transition: height 700ms ease; }
+  #wrap #conBox > .one > .line.action:after, #wrap #conBox > .one > .line.action::after { height: 100%; }
+  #wrap #conBox > .one > .text { display: none; width: 100%; height: 300px; padding-top: 90px; box-sizing: border-box; color: #aaa; font-size: 1.1rem; line-height: 2.5; text-transform: uppercase; text-align: center; word-break: keep-all; }
+  #wrap #conBox > .one > .text > span { color: #fff; font-weight: bold; }
+  #wrap #conBox > .two { width: 80%; height: auto; margin: auto; margin-top: 200px; }
+  #wrap #conBox > .two > li { display: none; width: 210px; height: 210px; margin: auto; margin-bottom: 50px; border-radius: 100%; border: 1px solid #fff; box-sizing: border-box; font-size: 1.2rem; line-height: 210px; text-align: center; color: #fff; }
+  #wrap #conBox > .two > li:last-of-type { margin-bottom: 0; }
+  #wrap #conBox > .three { width: 80%; height: auto; margin: auto; margin-top: 200px; }
+  #wrap #conBox > .three > li { width: 100%; height: auto; margin-top: 80px; font-size: 1.2rem; color: #aaa; word-break: keep-all; line-height: 2.5; text-transform: capitalize; text-align: center; }
+  #wrap #conBox > .three > li > span { color: #fff; font-weight: bold; }
+  #wrap #conBox > .three > li:nth-child(1) { opacity: 0; transform: translateX(-10%); }
+  #wrap #conBox > .three > li:nth-child(1).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
+  #wrap #conBox > .three > li:nth-child(2) { opacity: 0; transform: translateX(-10%); }
+  #wrap #conBox > .three > li:nth-child(2).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
+  #wrap #conBox > .three > li:nth-child(3) { opacity: 0; transform: translateX(-10%); }
+  #wrap #conBox > .three > li:nth-child(3).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; } }

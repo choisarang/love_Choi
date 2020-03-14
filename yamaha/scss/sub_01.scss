@@ -30,11 +30,11 @@
     >li{width: 100%; height: auto; margin-top: 150px; font-size: 1.2rem; color: #aaa; word-break: keep-all; line-height: 2.5; text-transform: capitalize;
       >span{color: #fff; font-weight: bold;}
     }//li
-    >li:nth-child(1){opacity: 0; transform: translateX(-20%);}
+    >li:nth-child(1){opacity: 0; transform: translateX(-10%);}
     >li:nth-child(1).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
-    >li:nth-child(2){opacity: 0; transform: translateX(-20%);}
+    >li:nth-child(2){opacity: 0; transform: translateX(-10%);}
     >li:nth-child(2).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
-    >li:nth-child(3){opacity: 0; transform: translateX(-20%);}
+    >li:nth-child(3){opacity: 0; transform: translateX(-10%);}
     >li:nth-child(3).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
   }//>.two
 }//#conBox
@@ -76,33 +76,33 @@
 #headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
 
 #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
-#conBox{width: 80%; height: auto; margin: auto; margin-bottom: 200px; background-color: $bg;
-  >.menu{width: 100%; height: 200px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; 
-    >h2{width: 100%; height: 130px;
-      >a{display: block; width: 100%; height: 100%; line-height: 170px; color: $text; font-size: 1.5rem;}
-    }//h2
-    >.list{width: 100%; height: 50px; overflow: hidden;
-      >.list_inner{width: 100%; height: 150%; overflow-x:scroll;
-      >ul{width: 560px; height: 100%; margin: auto;
-        >li{float: left; width: auto; height: 100%; margin-right: 20px;
-          >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
-        }//li
-        >li:hover>a{color: $main; font-weight: bold;}
-      }//ul
-      }//.list_inner
-    }//.list
-  }//.menu
-  >dl{position: relative; width: 100%; height: auto; border: 1px solid #ddd; margin-top: 200px; padding: 50px 30px; box-sizing: border-box;
-    >dt{position: absolute; top: -60px; left: 0; right: 0; margin: auto; width: 120px; height: 120px; border-radius: 100%; background-color: #ddd; font-size: 1.7rem; font-weight: bold; line-height: 120px; color: $main; text-align: center;}
-    >dd{width: 100%; height: auto; margin-top: 50px; text-align: center; box-sizing: border-box; text-transform: uppercase; line-height: 1.7; font-size: 1rem; word-break: keep-all; color: $text;
-      >em{font-style: normal; font-weight: bold; font-size: 1.2rem; color: $textem;}
-      >span{color: $main; font-weight: bold;}
-    }//dd
-  }//dl
-  >dl:nth-of-type(1){background-color: #eee; padding: 50px 100px;
-    >dt{top: 30px; left: 0; right: 0; width: 110px; height: 80px; margin: auto; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo_mark.png");}
-    >dd{margin-top: 80px;}
-  }//dl:nth-of-type(1)
+#conBox{width: 100%; height: auto; padding: 800px 0 500px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_01.jpg");
+  >.one{width: 80%; height: auto; margin: auto;
+    >dt{float: left; width: 20%; height: 30px; margin-top: 100px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/logo_t.png");}
+    >.line{float: left; position: relative; width: 20%; height: 5px; margin-top: 115px; margin-right: 5%;}
+    >.line:after,
+    >.line::after{content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -1; width: 0; height: 0; border-bottom: 1px solid #fff; transition: width 700ms ease;}
+    >.line.action:after,
+    >.line.action::after{width: 100%;}
+    >.text{display: none; float: left; width: 55%; height: 300px; padding-top: 90px; box-sizing: border-box; color: #aaa; font-size: 1.1rem; line-height: 2.5; text-transform: uppercase;
+      >span{color: #fff; font-weight: bold;}
+    }//li
+  }//.one
+  >.two{width: 760px; height: auto; margin: auto; margin-top: 200px;
+    >li{display: none; float: left; width: 210px; height: 210px; margin-right: 65px; border-radius: 100%; border: 1px solid #fff; box-sizing: border-box; font-size: 1.2rem; line-height: 210px; text-align: center; color: #fff;}//dt
+    >li:last-of-type{margin-right: 0;}
+  }//.two
+  >.three{width: 80%; height: auto; margin: auto; margin-top: 300px;
+    >li{width: 100%; height: auto; margin-top: 150px; font-size: 1.2rem; color: #aaa; word-break: keep-all; line-height: 2.5; text-transform: capitalize;
+      >span{color: #fff; font-weight: bold;}
+    }//li
+    >li:nth-child(1){opacity: 0; transform: translateX(-10%);}
+    >li:nth-child(1).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
+    >li:nth-child(2){opacity: 0; transform: translateX(-10%);}
+    >li:nth-child(2).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
+    >li:nth-child(3){opacity: 0; transform: translateX(-10%);}
+    >li:nth-child(3).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
+  }//>.two
 }//#conBox
 
 // >dl{width: 100%; height: auto; border: 1px solid #ddd; margin-top: 200px; padding: 50px 30px; box-sizing: border-box;
@@ -116,33 +116,33 @@
 #headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
 
 #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
-#conBox{width: 80%; height: auto; margin: auto; margin-bottom: 200px; background-color: $bg;
-  >.menu{width: 90%; height: 200px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; 
-    >h2{width: 100%; height: 130px;
-      >a{display: block; width: 100%; height: 100%; line-height: 170px; color: $text; font-size: 1.5rem;}
-    }//h2
-    >.list{width: 100%; height: 50px; overflow: hidden;
-      >.list_inner{width: 100%; height: 150%; overflow-x:scroll;
-      >ul{width: 550px; height: 100%; margin: auto;
-        >li{float: left; width: auto; height: 100%; margin-right: 10px;
-          >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
-        }//li
-        >li:hover>a{color: $main; font-weight: bold;}
-      }//ul
-      }//.list_inner
-    }//.list
-  }//.menu
-  >dl{position: relative; width: 100%; height: auto; border: 1px solid #ddd; margin-top: 200px; padding: 50px 30px; box-sizing: border-box;
-    >dt{position: absolute; top: -60px; left: 0; right: 0; margin: auto; width: 120px; height: 120px; border-radius: 100%; background-color: #ddd; font-size: 1.7rem; font-weight: bold; line-height: 120px; color: $main; text-align: center;}
-    >dd{width: 100%; height: auto; margin-top: 50px; text-align: center; box-sizing: border-box; text-transform: uppercase; line-height: 1.7; font-size: 1rem; word-break: keep-all; color: $text;
-      >em{font-style: normal; font-weight: bold; font-size: 1.2rem; color: $textem;}
-      >span{color: $main; font-weight: bold;}
-    }//dd
-  }//dl
-  >dl:nth-of-type(1){background-color: #eee; padding: 50px;
-    >dt{top: 35px; left: 0; right: 0; width: 110px; height: 70px; margin: auto; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo_mark.png");}
-    >dd{margin-top: 80px;}
-  }//dl:nth-of-type(1)
+#conBox{width: 100%; height: auto; padding: 800px 0 500px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_01.jpg");
+  >.one{width: 80%; height: auto; margin: auto;
+    >dt{width: 120px; height: 30px; margin: auto; margin-top: 100px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/logo_t.png");}
+    >.line{position: relative; width: 2%; height: 150px; margin: auto; margin-top: 100px;}
+    >.line:after,
+    >.line::after{content: " "; display: block; position: absolute; z-index: 500; right: -1; top:0; bottom: 0; width: 0; height: 0; border-right: 1px solid #fff; transition: height 700ms ease;}
+    >.line.action:after,
+    >.line.action::after{height: 100%;}
+    >.text{display: none; width: 100%; height: auto; padding-top: 90px; box-sizing: border-box; color: #aaa; font-size: 1.1rem; line-height: 2.5; text-transform: uppercase; text-align: center; word-break: keep-all;
+      >span{color: #fff; font-weight: bold;}
+    }//li
+  }//.one
+  >.two{width: 80%; height: auto; margin: auto; margin-top: 200px;
+    >li{display: none; width: 210px; height: 210px; margin: auto; margin-bottom: 50px; border-radius: 100%; border: 1px solid #fff; box-sizing: border-box; font-size: 1.2rem; line-height: 210px; text-align: center; color: #fff;}//dt
+    >li:last-of-type{margin-bottom: 0;}
+  }//.two
+  >.three{width: 80%; height: auto; margin: auto; margin-top: 200px;
+    >li{width: 100%; height: auto; margin-top: 100px; font-size: 1.2rem; color: #aaa; word-break: keep-all; line-height: 2.5; text-transform: capitalize; text-align: center;
+      >span{color: #fff; font-weight: bold;}
+    }//li
+    >li:nth-child(1){opacity: 0; transform: translateX(-10%);}
+    >li:nth-child(1).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
+    >li:nth-child(2){opacity: 0; transform: translateX(-10%);}
+    >li:nth-child(2).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
+    >li:nth-child(3){opacity: 0; transform: translateX(-10%);}
+    >li:nth-child(3).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
+  }//>.two
 }//#conBox
 
 
@@ -154,33 +154,33 @@
 #headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
 
 #viewBox{width: 100%; min-width: 350px; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
-#conBox{width: 80%; min-width: 350px; height: auto; margin: auto; margin-bottom: 200px; background-color: $bg;
-  >.menu{width: 90%; height: 200px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; 
-    >h2{width: 100%; height: 130px;
-      >a{display: block; width: 100%; height: 100%; line-height: 170px; color: $text; font-size: 1.5rem;}
-    }//h2
-    >.list{width: 100%; height: 50px; overflow: hidden;
-      >.list_inner{width: 100%; height: 150%; overflow-x:scroll;
-      >ul{width: 550px; height: 100%; margin: auto;
-        >li{float: left; width: auto; height: 100%; margin-right: 10px;
-          >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
-        }//li
-        >li:hover>a{color: $main; font-weight: bold;}
-      }//ul
-      }//.list_inner
-    }//.list
-  }//.menu
-    >dl{position: relative; width: 100%; height: auto; border: 1px solid #ddd; margin-top: 200px; padding: 50px 30px; box-sizing: border-box;
-      >dt{position: absolute; top: -60px; left: 0; right: 0; margin: auto; width: 120px; height: 120px; border-radius: 100%; background-color: #ddd; font-size: 1.7rem; font-weight: bold; line-height: 120px; color: $main; text-align: center;}
-      >dd{width: 100%; height: auto; margin-top: 50px; text-align: center; box-sizing: border-box; text-transform: uppercase; line-height: 1.7; font-size: 1rem; word-break: keep-all; color: $text;
-        >em{font-style: normal; font-weight: bold; font-size: 1.2rem; color: $textem;}
-        >span{color: $main; font-weight: bold;}
-      }//dd
-    }//dl
-    >dl:nth-of-type(1){background-color: #eee;
-      >dt{top: 35px; left: 0; right: 0; width: 110px; height: 70px; margin: auto; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo_mark.png");}
-      >dd{margin-top: 80px;}
-    }//dl:nth-of-type(1)
+#conBox{width: 100%; height: auto; padding: 800px 0 500px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_01.jpg");
+  >.one{width: 80%; height: auto; margin: auto;
+    >dt{width: 120px; height: 30px; margin: auto; margin-top: 100px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/logo_t.png");}
+    >.line{position: relative; width: 2%; height: 150px; margin: auto; margin-top: 100px;}
+    >.line:after,
+    >.line::after{content: " "; display: block; position: absolute; z-index: 500; right: -1; top:0; bottom: 0; width: 0; height: 0; border-right: 1px solid #fff; transition: height 700ms ease;}
+    >.line.action:after,
+    >.line.action::after{height: 100%;}
+    >.text{display: none; width: 100%; height: 300px; padding-top: 90px; box-sizing: border-box; color: #aaa; font-size: 1.1rem; line-height: 2.5; text-transform: uppercase; text-align: center; word-break: keep-all;
+      >span{color: #fff; font-weight: bold;}
+    }//li
+  }//.one
+  >.two{width: 80%; height: auto; margin: auto; margin-top: 200px;
+    >li{display: none; width: 210px; height: 210px; margin: auto; margin-bottom: 50px; border-radius: 100%; border: 1px solid #fff; box-sizing: border-box; font-size: 1.2rem; line-height: 210px; text-align: center; color: #fff;}//dt
+    >li:last-of-type{margin-bottom: 0;}
+  }//.two
+  >.three{width: 80%; height: auto; margin: auto; margin-top: 200px;
+    >li{width: 100%; height: auto; margin-top: 80px; font-size: 1.2rem; color: #aaa; word-break: keep-all; line-height: 2.5; text-transform: capitalize; text-align: center;
+      >span{color: #fff; font-weight: bold;}
+    }//li
+    >li:nth-child(1){opacity: 0; transform: translateX(-10%);}
+    >li:nth-child(1).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
+    >li:nth-child(2){opacity: 0; transform: translateX(-10%);}
+    >li:nth-child(2).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
+    >li:nth-child(3){opacity: 0; transform: translateX(-10%);}
+    >li:nth-child(3).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
+  }//>.two
 }//#conBox
 
 
