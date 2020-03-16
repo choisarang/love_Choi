@@ -77,23 +77,69 @@
 
 
   // mainBox -----------------------------------------------------------------------
+  const mainBox = $('#mainBox');
+
+  // proflie 1개씩 나오기
+
+  const proflie = mainBox.find('.proflie');
+  const proPic = proflie.children('.pro_pic');
+  const proText = proflie.children('.pro_text');
+
+  let mainBox_offset = mainBox.offset().top;
+
   
+proflie.on('mouseenter', function(){
+  $(this).addClass('action');
+  proText.fadeIn(4000);
+});
+
+  // $(window).scroll(function(){
+  //   let scroll = $(window).scrollTop();
+  //   if(scroll <= mainBox_offset + (4000)){
+  //     // proP01.fadeIn(500);
+  //     // proP02.fadeIn(600);
+  //     // proP03.fadeIn(700);
+  //     // proP04.fadeIn(800);
+  //     // proP05.fadeIn(900);
+  //     // proP06.fadeIn(1000);
+  //     // proP07.fadeIn(1100);
+  //   }
+  // })
+
   // // 클릭하면 펼쳐지게
 
-  // const proTitle = proBox.find('h3');
+  const info = $('.info');
+  const infoH3 = info.find('h3');
+  const h3Link = infoH3.children('a');
+  const proImg = $('.pro_img');
+  const imgH3 = proImg.find('h3');
 
-  // proTitle.on('click', function(e){
-  //   e.preventDefault();
 
-  // let has = $(this).hasClass('action');
-  //   if(has){
-  //     $(this).siblings('dl').stop().slideUp();
-  //     $(this).removeClass('action');
-  //   }else{
-  //     $(this).siblings('dl').stop().slideDown();
-  //     $(this).addClass('action');
-  //   }
-  // });
+  infoH3.on('click', function(e){
+    e.preventDefault();
+
+  let has = $(this).hasClass('action');
+    if(has){
+      $(this).siblings('dl').stop().slideUp(500);
+      $(this).removeClass('action');
+    }else{
+      $(this).siblings('dl').stop().slideDown(800);
+      $(this).addClass('action');
+    }
+  });
+
+  imgH3.on('click', function(e){
+    e.preventDefault();
+
+  let has = $(this).hasClass('action');
+    if(has){
+      $(this).siblings('div').fadeOut(500);
+      $(this).removeClass('action');
+    }else{
+      $(this).siblings('div').fadeIn(800);
+      $(this).addClass('action');
+    }
+  });
 
     // portBox ==========================================================
 
@@ -133,6 +179,41 @@
       }
      });
 
+
+    // yamaha --------------------------------
+    const yamaha = $('.yamaha')
+    const hPortLink = yamaha.find('.port_btn').children('a')
+    const hPopupBg = $('.h_popup_bg');
+    const hEx = $('button');
+  
+    hPortLink.on('click', function(e){
+      e.preventDefault();
+      hPopupBg.fadeIn();
+    });
+    
+    hEx.on('click', function(){
+      hPopupBg.fadeOut();
+    });
+    
+    //  scroll 사라지기
+    const hPort = hPopupBg.find('.port_area');
+    const hScroll = hPopupBg.find('.scroll');
+    const hPortUl = hPort.children('ul');
+  
+    let hPortScroll = hPort.scrollTop();
+    let hPortUlH = hPortUl.outerHeight();
+  
+    
+    hPort.on('scroll',function(){
+      hPortScroll = hPort.scrollTop();
+      hPortUlH = hPortUl.outerHeight();
+  
+      if(hPortScroll>hPortUlH/1.1){
+        hScroll.fadeOut();
+      }else{
+        hScroll.fadeIn();
+      }
+     });
 
     // casamia --------------------------------
     const casamia = $('.casamia')

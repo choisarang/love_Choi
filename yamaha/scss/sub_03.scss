@@ -6,7 +6,6 @@
 #wrap{width: 100%; height: auto; background-color: $bg;
 @media screen and (min-width:1281px) {
   @import "./_temp/h_f_1920.scss";
-  #headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
   
   #conBox{position: relative; width: 100%; height: auto; padding: 1100px 0 500px; box-sizing: border-box; background-position: 50% 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_03.jpg");
     >.ment{display: none; width: 95%; height: auto; margin: auto; word-break: keep-all;
