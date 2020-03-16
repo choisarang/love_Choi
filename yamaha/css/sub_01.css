@@ -51,7 +51,7 @@
   #wrap #conBox > .two > li { display: none; float: left; width: 300px; height: 300px; margin-right: 150px; border-radius: 100%; border: 1px solid #fff; box-sizing: border-box; font-size: 1.5rem; line-height: 300px; text-align: center; color: #fff; }
   #wrap #conBox > .two > li:last-of-type { margin-right: 0; }
   #wrap #conBox > .three { width: 1200px; height: auto; margin: auto; margin-top: 300px; }
-  #wrap #conBox > .three > li { width: 100%; height: auto; margin-top: 150px; font-size: 1.2rem; color: #aaa; word-break: keep-all; line-height: 2.5; text-transform: capitalize; }
+  #wrap #conBox > .three > li { width: 100%; height: auto; margin-top: 150px; font-size: 1.2rem; color: #aaa; word-break: keep-all; line-height: 2.5; text-transform: uppercase; }
   #wrap #conBox > .three > li > span { color: #fff; font-weight: bold; }
   #wrap #conBox > .three > li:nth-child(1) { opacity: 0; transform: translateX(-10%); }
   #wrap #conBox > .three > li:nth-child(1).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
@@ -115,7 +115,7 @@
   #wrap #conBox > .two > li { display: none; float: left; width: 210px; height: 210px; margin-right: 65px; border-radius: 100%; border: 1px solid #fff; box-sizing: border-box; font-size: 1.2rem; line-height: 210px; text-align: center; color: #fff; }
   #wrap #conBox > .two > li:last-of-type { margin-right: 0; }
   #wrap #conBox > .three { width: 80%; height: auto; margin: auto; margin-top: 300px; }
-  #wrap #conBox > .three > li { width: 100%; height: auto; margin-top: 150px; font-size: 1.2rem; color: #aaa; word-break: keep-all; line-height: 2.5; text-transform: capitalize; }
+  #wrap #conBox > .three > li { width: 100%; height: auto; margin-top: 150px; font-size: 1.2rem; color: #aaa; word-break: keep-all; line-height: 2.5; text-transform: uppercase; }
   #wrap #conBox > .three > li > span { color: #fff; font-weight: bold; }
   #wrap #conBox > .three > li:nth-child(1) { opacity: 0; transform: translateX(-10%); }
   #wrap #conBox > .three > li:nth-child(1).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
@@ -177,7 +177,7 @@
   #wrap #conBox > .two > li { display: none; width: 210px; height: 210px; margin: auto; margin-bottom: 50px; border-radius: 100%; border: 1px solid #fff; box-sizing: border-box; font-size: 1.2rem; line-height: 210px; text-align: center; color: #fff; }
   #wrap #conBox > .two > li:last-of-type { margin-bottom: 0; }
   #wrap #conBox > .three { width: 80%; height: auto; margin: auto; margin-top: 200px; }
-  #wrap #conBox > .three > li { width: 100%; height: auto; margin-top: 100px; font-size: 1.2rem; color: #aaa; word-break: keep-all; line-height: 2.5; text-transform: capitalize; text-align: center; }
+  #wrap #conBox > .three > li { width: 100%; height: auto; margin-top: 100px; font-size: 1.2rem; color: #aaa; word-break: keep-all; line-height: 2.5; text-transform: uppercase; text-align: center; }
   #wrap #conBox > .three > li > span { color: #fff; font-weight: bold; }
   #wrap #conBox > .three > li:nth-child(1) { opacity: 0; transform: translateX(-10%); }
   #wrap #conBox > .three > li:nth-child(1).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
@@ -240,7 +240,7 @@
   #wrap #conBox > .two > li { display: none; width: 210px; height: 210px; margin: auto; margin-bottom: 50px; border-radius: 100%; border: 1px solid #fff; box-sizing: border-box; font-size: 1.2rem; line-height: 210px; text-align: center; color: #fff; }
   #wrap #conBox > .two > li:last-of-type { margin-bottom: 0; }
   #wrap #conBox > .three { width: 80%; height: auto; margin: auto; margin-top: 200px; }
-  #wrap #conBox > .three > li { width: 100%; height: auto; margin-top: 80px; font-size: 1.2rem; color: #aaa; word-break: keep-all; line-height: 2.5; text-transform: capitalize; text-align: center; }
+  #wrap #conBox > .three > li { width: 100%; height: auto; margin-top: 80px; font-size: 1.2rem; color: #aaa; word-break: keep-all; line-height: 2.5; text-transform: uppercase; text-align: center; }
   #wrap #conBox > .three > li > span { color: #fff; font-weight: bold; }
   #wrap #conBox > .three > li:nth-child(1) { opacity: 0; transform: translateX(-10%); }
   #wrap #conBox > .three > li:nth-child(1).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
