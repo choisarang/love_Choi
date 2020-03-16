@@ -17,11 +17,11 @@
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl { float: left; width: 200px; height: auto; margin-right: 50px; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt { width: 100%; height: 50px; margin-bottom: 50px; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a { position: relative; display: block; width: 100%; height: 100%; font-size: 25px; color: #333; font-weight: bold; text-align: center; line-height: 50px; }
-  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a::after { content: " "; display: block; position: absolute; z-index: 500; bottom: -1; right: 0; left: 0; width: 0; height: 0; border-bottom: 4px solid #4b1e78; transition: width 300ms ease; }
+  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a::after { content: " "; display: block; position: absolute; z-index: 500; bottom: -1; right: 0; left: 0; width: 0; height: 0; border-bottom: 4px solid #333; transition: width 300ms ease; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a.action:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a.action::after { width: 100%; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd { width: 100%; height: 50px; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd > a { display: block; width: 100%; height: 100%; font-size: 18px; color: #555; text-align: center; line-height: 50px; }
-  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd > a:hover, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd a:focus { color: #4b1e78; font-weight: bold; }
+  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd > a:hover, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd a:focus { color: #333; font-weight: bold; }
   #wrap #footBox { width: 100%; height: 400px; padding: 50px; box-sizing: border-box; background-color: #fff; }
   #wrap #footBox > .snsBox { width: 750px; height: auto; margin: auto; }
   #wrap #footBox > .snsBox > li { float: left; width: auto; height: 40px; padding: 20px; margin-right: 20px; }
@@ -40,29 +40,24 @@
   #wrap #footBox > .infoBox > .info > a:last-of-type { margin-right: 0; }
   #wrap #footBox > .infoBox > .my { width: 500px; height: 50px; margin: auto; margin-top: 60px; text-align: center; color: #555; font-size: 12px; }
   #wrap #headBox.color { display: none; background-color: rgba(0, 0, 0, 0.5); }
-  #wrap #viewBox { width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg"); }
-  #wrap #conBox { width: 1000px; height: auto; margin: auto; padding-bottom: 200px; background-color: #f7f7f7; }
-  #wrap #conBox > .menu { width: 100%; height: 200px; margin: auto; margin-bottom: 200px; border-bottom: 1px solid #eee; text-align: center; }
-  #wrap #conBox > .menu > h2 { width: 100%; height: 130px; }
-  #wrap #conBox > .menu > h2 > a { display: block; width: 100%; height: 100%; line-height: 170px; color: #555; font-size: 1.5rem; }
-  #wrap #conBox > .menu > .list { width: 100%; height: 50px; overflow: hidden; }
-  #wrap #conBox > .menu > .list > .list_inner { width: 100%; height: 150%; overflow-x: scroll; }
-  #wrap #conBox > .menu > .list > .list_inner > ul { width: 180px; height: 100%; margin: auto; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li { float: left; width: auto; height: 100%; margin-right: 20px; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li > a { display: block; width: 100%; height: 100%; font-size: 1rem; color: #555; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li:hover > a { color: #4b1e78; font-weight: bold; }
-  #wrap #conBox > .textBox { float: left; width: 40%; height: auto; margin-bottom: 200px; }
-  #wrap #conBox > .textBox > h3 { font-size: 3rem; font-weight: bold; text-transform: uppercase; color: #333; }
-  #wrap #conBox > .textBox > p { margin-top: 40px; font-size: 1rem; color: #555; line-height: 2; font-weight: bold; text-transform: capitalize; }
-  #wrap #conBox > .textBox > p > a { display: block; margin-top: 1rem; color: #33f; text-transform: none; }
+  #wrap #conBox { position: relative; width: 100%; height: auto; padding: 1100px 0 500px; box-sizing: border-box; background-position: 50% 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_03.jpg"); }
+  #wrap #conBox > .ment { display: none; width: 95%; height: auto; margin: auto; word-break: keep-all; }
+  #wrap #conBox > .ment > p { width: 100%; height: auto; font-size: 2rem; color: #fff; text-align: center; text-transform: capitalize; font-weight: bold; line-height: 1.3; }
+  #wrap #conBox > .ment > p > em { font-size: 1.2rem; font-weight: normal; }
+  #wrap #conBox > .ment > span { display: block; width: 100%; height: auto; margin-top: 50px; font-size: 1.2rem; color: #fff; text-align: center; line-height: 1.3; }
+  #wrap #conBox > .ment > span > em { font-size: 1rem; font-weight: normal; }
+  #wrap #conBox > h2 { display: none; width: 95%; height: auto; margin-top: 500px; font-size: 4rem; text-align: center; font-weight: bold; text-transform: uppercase; color: #fff; }
+  #wrap #conBox > .imgBox { display: none; width: 95%; height: 500px; margin: auto; margin-top: 200px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/jeffhamilton.jpg"); }
+  #wrap #conBox > .textBox { width: 95%; height: auto; margin-top: 200px; font-size: 1.2rem; text-align: center; text-transform: capitalize; color: #fff; line-height: 1.5; word-break: keep-all; }
+  #wrap #conBox > .textBox > p { opacity: 0; transform: translateY(10%); }
+  #wrap #conBox > .textBox > p > a { display: block; margin-top: 20px; color: #33f; }
   #wrap #conBox > .textBox > p > a:hover { color: #f05; }
-  #wrap #conBox > .textBox > p > em { font-style: normal; font-size: 1.2rem; color: #333; }
-  #wrap #conBox > .imgBox { float: right; width: 50%; height: 400px; margin-bottom: 300px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/jeffhamilton.jpg"); }
-  #wrap #conBox > .trio { width: 100%; height: 600px; margin-top: 200px; }
-  #wrap #conBox > .trio > .img { width: 100%; height: 400px; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/jeffhamilton_01.jpg"); }
-  #wrap #conBox > .trio > .text { width: 100%; height: auto; margin-bottom: 50px; }
-  #wrap #conBox > .trio > .text > p { margin-top: 50px; font-size: 1rem; color: #555; line-height: 1.8; font-weight: bold; text-transform: capitalize; }
-  #wrap #conBox > .trio > .text > p > em { font-style: normal; font-size: 1.2rem; color: #333; } }
+  #wrap #conBox > .textBox > p.action { opacity: 1; transform: translateY(0); transition: all 2000ms ease; }
+  #wrap #conBox > p { display: none; width: 1000px; height: 562px; margin: auto; margin-top: 200px; }
+  #wrap #conBox > p > iframe { width: 100%; height: 100%; }
+  #wrap #conBox > button { display: none; position: relative; float: right; width: 55%; height: 50px; margin-top: 300px; line-height: 50px; text-align: left; background-color: transparent; font-size: 1.3rem; font-weight: bold; }
+  #wrap #conBox > button:after, #wrap #conBox > button::after { content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -3; width: 0; height: 0; border-bottom: 3px solid #fff; transition: width 700ms ease; }
+  #wrap #conBox > button.action:after, #wrap #conBox > button.action::after { width: 100%; } }
 
 @media screen and (max-width: 1280px) and (min-width: 769px) { #wrap #headBox { position: fixed; z-index: 500; width: 100%; height: 60px; padding: 10px 30px; box-sizing: border-box; }
   #wrap #headBox > h1 { float: left; width: 150px; height: 40px; }
@@ -81,11 +76,11 @@
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl { float: left; width: 170px; height: auto; margin-right: 15px; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt { width: 100%; height: 50px; margin-bottom: 50px; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a { position: relative; display: block; width: 100%; height: 100%; font-size: 25px; color: #333; font-weight: bold; text-align: center; line-height: 50px; }
-  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a::after { content: " "; display: block; position: absolute; z-index: 500; bottom: -1; right: 0; left: 0; width: 0; height: 0; border-bottom: 4px solid #4b1e78; transition: width 300ms ease; }
+  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a::after { content: " "; display: block; position: absolute; z-index: 500; bottom: -1; right: 0; left: 0; width: 0; height: 0; border-bottom: 4px solid #333; transition: width 300ms ease; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a.action:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a.action::after { width: 100%; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd { width: 100%; height: 50px; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd > a { display: block; width: 100%; height: 100%; font-size: 18px; color: #555; text-align: center; line-height: 50px; }
-  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd > a:hover, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd a:focus { color: #4b1e78; font-weight: bold; }
+  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd > a:hover, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd a:focus { color: #333; font-weight: bold; }
   #wrap #footBox { width: 100%; height: 400px; padding: 50px 0px; box-sizing: border-box; background-color: #fff; }
   #wrap #footBox > .snsBox { width: 750px; height: auto; margin: auto; }
   #wrap #footBox > .snsBox > li { float: left; width: auto; height: 40px; padding: 20px; margin-right: 20px; }
@@ -103,32 +98,24 @@
   #wrap #footBox > .infoBox > .info > a { float: left; display: block; width: auto; height: 100%; margin-right: 40px; font-size: 15px; }
   #wrap #footBox > .infoBox > .info > a:last-of-type { margin-right: 0; }
   #wrap #footBox > .infoBox > .my { width: 500px; height: 50px; margin: auto; margin-top: 60px; text-align: center; color: #555; font-size: 12px; }
-  #wrap #headBox.color { display: none; background-color: rgba(0, 0, 0, 0.5); }
-  #wrap #viewBox { width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg"); }
-  #wrap #conBox { width: 80%; height: auto; margin: auto; padding-bottom: 100px; background-color: #f7f7f7; }
-  #wrap #conBox > .menu { width: 100%; height: 200px; margin: auto; margin-bottom: 200px; border-bottom: 1px solid #eee; text-align: center; }
-  #wrap #conBox > .menu > h2 { width: 100%; height: 130px; }
-  #wrap #conBox > .menu > h2 > a { display: block; width: 100%; height: 100%; line-height: 170px; color: #555; font-size: 1.5rem; }
-  #wrap #conBox > .menu > .list { width: 100%; height: 50px; overflow: hidden; }
-  #wrap #conBox > .menu > .list > .list_inner { width: 100%; height: 150%; overflow-x: scroll; }
-  #wrap #conBox > .menu > .list > .list_inner > ul { width: 180px; height: 100%; margin: auto; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li { float: left; width: auto; height: 100%; margin-right: 20px; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li > a { display: block; width: 100%; height: 100%; font-size: 1rem; color: #555; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li:hover > a { color: #4b1e78; font-weight: bold; }
-  #wrap #conBox > .textBox { width: 100%; height: auto; margin: auto; margin-bottom: 100px; text-align: center; }
-  #wrap #conBox > .textBox > h3 { font-size: 3rem; font-weight: bold; text-transform: uppercase; color: #333; }
-  #wrap #conBox > .textBox > p { margin-top: 50px; font-size: 1rem; color: #555; line-height: 1.8; font-weight: bold; text-transform: capitalize; }
-  #wrap #conBox > .textBox > p > a { color: #33f; text-transform: none; }
+  #wrap #conBox { position: relative; width: 100%; height: auto; padding: 900px 0 500px; box-sizing: border-box; background-position: 50% 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_03.jpg"); }
+  #wrap #conBox > .ment { display: none; width: 95%; height: auto; margin: auto; word-break: keep-all; }
+  #wrap #conBox > .ment > p { width: 100%; height: auto; font-size: 2rem; color: #fff; text-align: center; text-transform: capitalize; font-weight: bold; line-height: 1.3; }
+  #wrap #conBox > .ment > p > em { font-size: 1.2rem; font-weight: normal; }
+  #wrap #conBox > .ment > span { display: block; width: 100%; height: auto; margin-top: 50px; font-size: 1.2rem; color: #fff; text-align: center; line-height: 1.3; }
+  #wrap #conBox > .ment > span > em { font-size: 1rem; font-weight: normal; }
+  #wrap #conBox > h2 { display: none; width: 95%; height: auto; margin-top: 500px; font-size: 4rem; text-align: center; font-weight: bold; text-transform: uppercase; color: #fff; }
+  #wrap #conBox > .imgBox { display: none; width: 95%; height: 500px; margin: auto; margin-top: 200px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/jeffhamilton.jpg"); }
+  #wrap #conBox > .textBox { width: 95%; height: auto; margin-top: 200px; font-size: 1.2rem; text-align: center; text-transform: capitalize; color: #fff; line-height: 1.5; word-break: keep-all; }
+  #wrap #conBox > .textBox > p { opacity: 0; transform: translateY(10%); }
+  #wrap #conBox > .textBox > p > a { display: block; margin-top: 20px; color: #33f; }
   #wrap #conBox > .textBox > p > a:hover { color: #f05; }
-  #wrap #conBox > .textBox > p > em { font-style: normal; font-size: 1.2rem; color: #333; }
-  #wrap #conBox > .imgBox { width: 100%; height: 400px; margin: auto; margin-bottom: 200px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/jeffhamilton.jpg"); }
-  #wrap #conBox > p { width: 592px; height: 333px; margin: auto; }
+  #wrap #conBox > .textBox > p.action { opacity: 1; transform: translateY(0); transition: all 2000ms ease; }
+  #wrap #conBox > p { display: none; width: 765px; height: 430px; margin: auto; margin-top: 200px; }
   #wrap #conBox > p > iframe { width: 100%; height: 100%; }
-  #wrap #conBox > .trio { width: 80%; height: auto; margin: auto; margin-top: 200px; }
-  #wrap #conBox > .trio > .img { width: 100%; height: 400px; background-position: 0 0; background-repeat: no-repeat; background-size: contain; background-image: url("../img/jeffhamilton_01.jpg"); }
-  #wrap #conBox > .trio > .text { width: 100%; height: auto; margin-bottom: 50px; }
-  #wrap #conBox > .trio > .text > p { margin-top: 50px; font-size: 1rem; color: #555; line-height: 1.8; text-align: center; font-weight: bold; text-transform: capitalize; }
-  #wrap #conBox > .trio > .text > p > em { font-style: normal; font-size: 1.2rem; color: #333; } }
+  #wrap #conBox > button { display: none; position: relative; float: right; width: 60%; height: 50px; margin-top: 300px; line-height: 50px; text-align: left; background-color: transparent; font-size: 1.3rem; font-weight: bold; }
+  #wrap #conBox > button:after, #wrap #conBox > button::after { content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -3; width: 0; height: 0; border-bottom: 3px solid #fff; transition: width 700ms ease; }
+  #wrap #conBox > button.action:after, #wrap #conBox > button.action::after { width: 100%; } }
 
 @media screen and (max-width: 768px) and (min-width: 481px) { #wrap #headBox { position: fixed; z-index: 500; width: 100%; min-width: 350px; height: 65px; padding: 20px; box-sizing: border-box; }
   #wrap #headBox > h1 { float: left; width: 100px; height: 25px; }
@@ -147,7 +134,7 @@
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl { width: 200px; height: auto; margin: auto; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt { width: 100%; height: 50px; margin-bottom: 50px; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a { position: relative; display: block; width: 100%; height: 100%; font-size: 25px; color: #333; font-weight: bold; text-align: center; line-height: 50px; }
-  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a::after { content: " "; display: block; position: absolute; z-index: 500; bottom: -1; right: 0; left: 0; width: 0; height: 0; border-bottom: 4px solid #4b1e78; transition: width 300ms ease; }
+  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a::after { content: " "; display: block; position: absolute; z-index: 500; bottom: -1; right: 0; left: 0; width: 0; height: 0; border-bottom: 4px solid #333; transition: width 300ms ease; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a.action:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a.action::after { width: 100%; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd { display: none; }
   #wrap #footBox { width: 100%; min-width: 350px; height: auto; padding: 50px; box-sizing: border-box; background-color: #fff; }
@@ -167,32 +154,24 @@
   #wrap #footBox > .infoBox > .info > a { float: left; display: block; width: auto; height: 100%; margin-right: 5px; font-size: 13px; }
   #wrap #footBox > .infoBox > .info > a:last-of-type { margin-right: 0; }
   #wrap #footBox > .infoBox > .my { width: 100%; height: 50px; margin: auto; margin-top: 40px; text-align: center; color: #555; font-size: 12px; }
-  #wrap #headBox.color { display: none; background-color: rgba(0, 0, 0, 0.5); }
-  #wrap #viewBox { width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg"); }
-  #wrap #conBox { width: 80%; height: auto; margin: auto; padding-bottom: 100px; background-color: #f7f7f7; }
-  #wrap #conBox > .menu { width: 90%; height: 200px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; }
-  #wrap #conBox > .menu > h2 { width: 100%; height: 130px; }
-  #wrap #conBox > .menu > h2 > a { display: block; width: 100%; height: 100%; line-height: 170px; color: #555; font-size: 1.5rem; }
-  #wrap #conBox > .menu > .list { width: 100%; height: 50px; overflow: hidden; }
-  #wrap #conBox > .menu > .list > .list_inner { width: 100%; height: 150%; overflow-x: scroll; }
-  #wrap #conBox > .menu > .list > .list_inner > ul { width: 160px; height: 100%; margin: auto; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li { float: left; width: auto; height: 100%; margin-right: 10px; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li > a { display: block; width: 100%; height: 100%; font-size: 1rem; color: #555; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li:hover > a { color: #4b1e78; font-weight: bold; }
-  #wrap #conBox > .textBox { width: 100%; height: auto; margin: auto; margin-bottom: 100px; text-align: center; word-break: keep-all; }
-  #wrap #conBox > .textBox > h3 { font-size: 3rem; font-weight: bold; text-transform: uppercase; color: #333; }
-  #wrap #conBox > .textBox > p { margin-top: 50px; font-size: 1rem; color: #555; line-height: 1.8; font-weight: bold; text-transform: capitalize; }
-  #wrap #conBox > .textBox > p > a { color: #33f; text-transform: none; }
+  #wrap #conBox { position: relative; width: 100%; height: auto; padding: 900px 0 500px; box-sizing: border-box; background-position: 50% 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_03.jpg"); }
+  #wrap #conBox > .ment { display: none; width: 95%; height: auto; margin: auto; word-break: keep-all; }
+  #wrap #conBox > .ment > p { width: 100%; height: auto; font-size: 2rem; color: #fff; text-align: center; text-transform: capitalize; font-weight: bold; line-height: 1.3; }
+  #wrap #conBox > .ment > p > em { font-size: 1.2rem; font-weight: normal; }
+  #wrap #conBox > .ment > span { display: block; width: 100%; height: auto; margin-top: 50px; font-size: 1.2rem; color: #fff; text-align: center; line-height: 1.3; }
+  #wrap #conBox > .ment > span > em { font-size: 1rem; font-weight: normal; }
+  #wrap #conBox > h2 { display: none; width: 95%; height: auto; margin-top: 500px; font-size: 4rem; text-align: center; font-weight: bold; text-transform: uppercase; color: #fff; }
+  #wrap #conBox > .imgBox { display: none; width: 95%; height: 500px; margin: auto; margin-top: 200px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/jeffhamilton.jpg"); }
+  #wrap #conBox > .textBox { width: 95%; height: auto; margin-top: 200px; font-size: 1.2rem; text-align: center; text-transform: capitalize; color: #fff; line-height: 1.5; word-break: keep-all; }
+  #wrap #conBox > .textBox > p { opacity: 0; transform: translateY(10%); }
+  #wrap #conBox > .textBox > p > a { display: block; margin-top: 20px; color: #33f; }
   #wrap #conBox > .textBox > p > a:hover { color: #f05; }
-  #wrap #conBox > .textBox > p > em { font-style: normal; font-size: 1.2rem; color: #333; }
-  #wrap #conBox > .imgBox { width: 80%; height: 350px; margin: auto; margin-bottom: 200px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/jeffhamilton.jpg"); }
-  #wrap #conBox > p { width: 368px; height: 207px; margin: auto; }
+  #wrap #conBox > .textBox > p.action { opacity: 1; transform: translateY(0); transition: all 2000ms ease; }
+  #wrap #conBox > p { display: none; width: 368px; height: 207px; margin: auto; margin-top: 200px; }
   #wrap #conBox > p > iframe { width: 100%; height: 100%; }
-  #wrap #conBox > .trio { width: 80%; height: auto; margin: auto; margin-top: 200px; }
-  #wrap #conBox > .trio > .img { width: 100%; height: 250px; background-position: 0 0; background-repeat: no-repeat; background-size: contain; background-image: url("../img/jeffhamilton_01.jpg"); }
-  #wrap #conBox > .trio > .text { width: 100%; height: auto; margin-bottom: 50px; }
-  #wrap #conBox > .trio > .text > p { margin-top: 50px; font-size: 1rem; color: #555; text-align: center; line-height: 1.8; font-weight: bold; text-transform: capitalize; }
-  #wrap #conBox > .trio > .text > p > em { font-style: normal; font-size: 1.2rem; color: #333; } }
+  #wrap #conBox > button { display: none; position: relative; float: right; width: 65%; height: 50px; margin-top: 300px; line-height: 50px; text-align: left; background-color: transparent; font-size: 1.3rem; font-weight: bold; }
+  #wrap #conBox > button:after, #wrap #conBox > button::after { content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -3; width: 0; height: 0; border-bottom: 3px solid #fff; transition: width 700ms ease; }
+  #wrap #conBox > button.action:after, #wrap #conBox > button.action::after { width: 100%; } }
 
 @media screen and (max-width: 480px) { #wrap #headBox { position: fixed; z-index: 500; width: 100%; min-width: 350px; height: 65px; padding: 20px; box-sizing: border-box; }
   #wrap #headBox > h1 { float: left; width: 100px; height: 25px; }
@@ -211,7 +190,7 @@
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl { width: 200px; height: auto; margin: auto; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt { width: 100%; height: 50px; margin-bottom: 50px; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a { position: relative; display: block; width: 100%; height: 100%; font-size: 25px; color: #333; font-weight: bold; text-align: center; line-height: 50px; }
-  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a::after { content: " "; display: block; position: absolute; z-index: 500; bottom: -1; right: 0; left: 0; width: 0; height: 0; border-bottom: 4px solid #4b1e78; transition: width 300ms ease; }
+  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a::after { content: " "; display: block; position: absolute; z-index: 500; bottom: -1; right: 0; left: 0; width: 0; height: 0; border-bottom: 4px solid #333; transition: width 300ms ease; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a.action:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a.action::after { width: 100%; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd { display: none; }
   #wrap #footBox { width: 100%; min-width: 350px; height: auto; padding: 50px; box-sizing: border-box; background-color: #fff; }
@@ -231,29 +210,21 @@
   #wrap #footBox > .infoBox > .info > a { float: left; display: block; width: auto; height: 100%; margin-right: 5px; font-size: 13px; }
   #wrap #footBox > .infoBox > .info > a:last-of-type { margin-right: 0; }
   #wrap #footBox > .infoBox > .my { width: 100%; height: 50px; margin: auto; margin-top: 40px; text-align: center; color: #555; font-size: 12px; }
-  #wrap #headBox.color { display: none; background-color: rgba(0, 0, 0, 0.5); }
-  #wrap #viewBox { width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg"); }
-  #wrap #conBox { width: 80%; min-width: 350px; height: auto; margin: auto; padding-bottom: 100px; background-color: #f7f7f7; }
-  #wrap #conBox > .menu { width: 90%; height: 200px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; }
-  #wrap #conBox > .menu > h2 { width: 100%; height: 130px; }
-  #wrap #conBox > .menu > h2 > a { display: block; width: 100%; height: 100%; line-height: 170px; color: #555; font-size: 1.5rem; }
-  #wrap #conBox > .menu > .list { width: 100%; height: 50px; overflow: hidden; }
-  #wrap #conBox > .menu > .list > .list_inner { width: 100%; height: 150%; overflow-x: scroll; }
-  #wrap #conBox > .menu > .list > .list_inner > ul { width: 160px; height: 100%; margin: auto; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li { float: left; width: auto; height: 100%; margin-right: 10px; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li > a { display: block; width: 100%; height: 100%; font-size: 1rem; color: #555; }
-  #wrap #conBox > .menu > .list > .list_inner > ul > li:hover > a { color: #4b1e78; font-weight: bold; }
-  #wrap #conBox > .textBox { width: 100%; height: auto; margin: auto; margin-bottom: 100px; text-align: center; word-break: keep-all; }
-  #wrap #conBox > .textBox > h3 { font-size: 3rem; font-weight: bold; text-transform: uppercase; color: #333; }
-  #wrap #conBox > .textBox > p { margin-top: 50px; font-size: 1rem; color: #555; line-height: 1.8; font-weight: bold; text-transform: capitalize; }
-  #wrap #conBox > .textBox > p > a { color: #33f; text-transform: none; }
+  #wrap #conBox { position: relative; width: 100%; min-width: 350px; height: auto; padding: 900px 0 500px; box-sizing: border-box; background-position: 50% 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_03.jpg"); }
+  #wrap #conBox > .ment { display: none; width: 95%; height: auto; margin: auto; word-break: keep-all; }
+  #wrap #conBox > .ment > p { width: 100%; height: auto; font-size: 2rem; color: #fff; text-align: center; text-transform: capitalize; font-weight: bold; line-height: 1.3; }
+  #wrap #conBox > .ment > p > em { font-size: 1.2rem; font-weight: normal; }
+  #wrap #conBox > .ment > span { display: block; width: 100%; height: auto; margin-top: 50px; font-size: 1.2rem; color: #fff; text-align: center; line-height: 1.3; }
+  #wrap #conBox > .ment > span > em { font-size: 1rem; font-weight: normal; }
+  #wrap #conBox > h2 { display: none; width: 95%; height: auto; margin-top: 500px; font-size: 4rem; text-align: center; font-weight: bold; text-transform: uppercase; color: #fff; }
+  #wrap #conBox > .imgBox { display: none; width: 95%; height: 500px; margin: auto; margin-top: 200px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/jeffhamilton.jpg"); }
+  #wrap #conBox > .textBox { width: 95%; height: auto; margin-top: 200px; font-size: 1.2rem; text-align: center; text-transform: capitalize; color: #fff; line-height: 1.5; word-break: keep-all; }
+  #wrap #conBox > .textBox > p { opacity: 0; transform: translateY(10%); }
+  #wrap #conBox > .textBox > p > a { display: block; margin-top: 20px; color: #33f; }
   #wrap #conBox > .textBox > p > a:hover { color: #f05; }
-  #wrap #conBox > .textBox > p > em { font-style: normal; font-size: 1.2rem; color: #333; }
-  #wrap #conBox > .imgBox { width: 100%; height: 400px; margin: auto; margin-bottom: 200px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/jeffhamilton.jpg"); }
-  #wrap #conBox > p { width: 336px; height: 189px; margin: auto; }
+  #wrap #conBox > .textBox > p.action { opacity: 1; transform: translateY(0); transition: all 2000ms ease; }
+  #wrap #conBox > p { display: none; width: 336px; height: 189px; margin: auto; margin-top: 200px; }
   #wrap #conBox > p > iframe { width: 100%; height: 100%; }
-  #wrap #conBox > .trio { width: 80%; height: auto; margin: auto; margin-top: 200px; }
-  #wrap #conBox > .trio > .img { width: 100%; height: 200px; background-position: 0 0; background-repeat: no-repeat; background-size: contain; background-image: url("../img/jeffhamilton_01.jpg"); }
-  #wrap #conBox > .trio > .text { width: 100%; height: auto; margin-bottom: 50px; }
-  #wrap #conBox > .trio > .text > p { margin-top: 50px; font-size: 1rem; color: #555; text-align: center; line-height: 1.8; font-weight: bold; text-transform: capitalize; }
-  #wrap #conBox > .trio > .text > p > em { font-style: normal; font-size: 1.2rem; color: #333; } }
+  #wrap #conBox > button { display: none; position: relative; float: right; width: 75%; height: 50px; margin-top: 300px; line-height: 50px; text-align: left; background-color: transparent; font-size: 1.3rem; font-weight: bold; }
+  #wrap #conBox > button:after, #wrap #conBox > button::after { content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -3; width: 0; height: 0; border-bottom: 3px solid #fff; transition: width 700ms ease; }
+  #wrap #conBox > button.action:after, #wrap #conBox > button.action::after { width: 100%; } }

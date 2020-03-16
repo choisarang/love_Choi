@@ -17,11 +17,11 @@
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl { float: left; width: 200px; height: auto; margin-right: 50px; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt { width: 100%; height: 50px; margin-bottom: 50px; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a { position: relative; display: block; width: 100%; height: 100%; font-size: 25px; color: #333; font-weight: bold; text-align: center; line-height: 50px; }
-  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a::after { content: " "; display: block; position: absolute; z-index: 500; bottom: -1; right: 0; left: 0; width: 0; height: 0; border-bottom: 4px solid #4b1e78; transition: width 300ms ease; }
+  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a::after { content: " "; display: block; position: absolute; z-index: 500; bottom: -1; right: 0; left: 0; width: 0; height: 0; border-bottom: 4px solid #333; transition: width 300ms ease; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a.action:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a.action::after { width: 100%; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd { width: 100%; height: 50px; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd > a { display: block; width: 100%; height: 100%; font-size: 18px; color: #555; text-align: center; line-height: 50px; }
-  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd > a:hover, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd a:focus { color: #4b1e78; font-weight: bold; }
+  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd > a:hover, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd a:focus { color: #333; font-weight: bold; }
   #wrap #footBox { width: 100%; height: 400px; padding: 50px; box-sizing: border-box; background-color: #fff; }
   #wrap #footBox > .snsBox { width: 750px; height: auto; margin: auto; }
   #wrap #footBox > .snsBox > li { float: left; width: auto; height: 40px; padding: 20px; margin-right: 20px; }
@@ -39,7 +39,6 @@
   #wrap #footBox > .infoBox > .info > a { float: left; display: block; width: auto; height: 100%; margin-right: 40px; font-size: 15px; }
   #wrap #footBox > .infoBox > .info > a:last-of-type { margin-right: 0; }
   #wrap #footBox > .infoBox > .my { width: 500px; height: 50px; margin: auto; margin-top: 60px; text-align: center; color: #555; font-size: 12px; }
-  #wrap #headBox.color { display: none; background-color: rgba(0, 0, 0, 0.5); }
   #wrap #conBox { width: 100%; height: auto; padding: 1000px 0 500px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_01.jpg"); }
   #wrap #conBox > .one { width: 1200px; height: auto; margin: auto; }
   #wrap #conBox > .one > dt { float: left; width: 20%; height: 30px; margin-top: 100px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/logo_t.png"); }
@@ -59,7 +58,10 @@
   #wrap #conBox > .three > li:nth-child(2) { opacity: 0; transform: translateX(-10%); }
   #wrap #conBox > .three > li:nth-child(2).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
   #wrap #conBox > .three > li:nth-child(3) { opacity: 0; transform: translateX(-10%); }
-  #wrap #conBox > .three > li:nth-child(3).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; } }
+  #wrap #conBox > .three > li:nth-child(3).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
+  #wrap #conBox > button { display: none; position: relative; float: right; width: 57%; height: 50px; margin-top: 300px; line-height: 50px; text-align: left; background-color: transparent; font-size: 1.3rem; font-weight: bold; }
+  #wrap #conBox > button:after, #wrap #conBox > button::after { content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -3; width: 0; height: 0; border-bottom: 3px solid #fff; transition: width 700ms ease; }
+  #wrap #conBox > button.action:after, #wrap #conBox > button.action::after { width: 100%; } }
 
 @media screen and (max-width: 1280px) and (min-width: 769px) { #wrap #headBox { position: fixed; z-index: 500; width: 100%; height: 60px; padding: 10px 30px; box-sizing: border-box; }
   #wrap #headBox > h1 { float: left; width: 150px; height: 40px; }
@@ -78,11 +80,11 @@
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl { float: left; width: 170px; height: auto; margin-right: 15px; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt { width: 100%; height: 50px; margin-bottom: 50px; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a { position: relative; display: block; width: 100%; height: 100%; font-size: 25px; color: #333; font-weight: bold; text-align: center; line-height: 50px; }
-  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a::after { content: " "; display: block; position: absolute; z-index: 500; bottom: -1; right: 0; left: 0; width: 0; height: 0; border-bottom: 4px solid #4b1e78; transition: width 300ms ease; }
+  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a::after { content: " "; display: block; position: absolute; z-index: 500; bottom: -1; right: 0; left: 0; width: 0; height: 0; border-bottom: 4px solid #333; transition: width 300ms ease; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a.action:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a.action::after { width: 100%; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd { width: 100%; height: 50px; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd > a { display: block; width: 100%; height: 100%; font-size: 18px; color: #555; text-align: center; line-height: 50px; }
-  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd > a:hover, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd a:focus { color: #4b1e78; font-weight: bold; }
+  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd > a:hover, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd a:focus { color: #333; font-weight: bold; }
   #wrap #footBox { width: 100%; height: 400px; padding: 50px 0px; box-sizing: border-box; background-color: #fff; }
   #wrap #footBox > .snsBox { width: 750px; height: auto; margin: auto; }
   #wrap #footBox > .snsBox > li { float: left; width: auto; height: 40px; padding: 20px; margin-right: 20px; }
@@ -100,7 +102,6 @@
   #wrap #footBox > .infoBox > .info > a { float: left; display: block; width: auto; height: 100%; margin-right: 40px; font-size: 15px; }
   #wrap #footBox > .infoBox > .info > a:last-of-type { margin-right: 0; }
   #wrap #footBox > .infoBox > .my { width: 500px; height: 50px; margin: auto; margin-top: 60px; text-align: center; color: #555; font-size: 12px; }
-  #wrap #headBox.color { display: none; background-color: rgba(0, 0, 0, 0.5); }
   #wrap #viewBox { width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg"); }
   #wrap #conBox { width: 100%; height: auto; padding: 800px 0 500px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_01.jpg"); }
   #wrap #conBox > .one { width: 80%; height: auto; margin: auto; }
@@ -121,7 +122,10 @@
   #wrap #conBox > .three > li:nth-child(2) { opacity: 0; transform: translateX(-10%); }
   #wrap #conBox > .three > li:nth-child(2).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
   #wrap #conBox > .three > li:nth-child(3) { opacity: 0; transform: translateX(-10%); }
-  #wrap #conBox > .three > li:nth-child(3).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; } }
+  #wrap #conBox > .three > li:nth-child(3).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
+  #wrap #conBox > button { display: none; position: relative; float: right; width: 60%; height: 50px; margin-top: 300px; line-height: 50px; text-align: left; background-color: transparent; font-size: 1.3rem; font-weight: bold; }
+  #wrap #conBox > button:after, #wrap #conBox > button::after { content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -3; width: 0; height: 0; border-bottom: 3px solid #fff; transition: width 700ms ease; }
+  #wrap #conBox > button.action:after, #wrap #conBox > button.action::after { width: 100%; } }
 
 @media screen and (max-width: 768px) and (min-width: 481px) { #wrap #headBox { position: fixed; z-index: 500; width: 100%; min-width: 350px; height: 65px; padding: 20px; box-sizing: border-box; }
   #wrap #headBox > h1 { float: left; width: 100px; height: 25px; }
@@ -140,7 +144,7 @@
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl { width: 200px; height: auto; margin: auto; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt { width: 100%; height: 50px; margin-bottom: 50px; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a { position: relative; display: block; width: 100%; height: 100%; font-size: 25px; color: #333; font-weight: bold; text-align: center; line-height: 50px; }
-  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a::after { content: " "; display: block; position: absolute; z-index: 500; bottom: -1; right: 0; left: 0; width: 0; height: 0; border-bottom: 4px solid #4b1e78; transition: width 300ms ease; }
+  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a::after { content: " "; display: block; position: absolute; z-index: 500; bottom: -1; right: 0; left: 0; width: 0; height: 0; border-bottom: 4px solid #333; transition: width 300ms ease; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a.action:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a.action::after { width: 100%; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd { display: none; }
   #wrap #footBox { width: 100%; min-width: 350px; height: auto; padding: 50px; box-sizing: border-box; background-color: #fff; }
@@ -160,7 +164,6 @@
   #wrap #footBox > .infoBox > .info > a { float: left; display: block; width: auto; height: 100%; margin-right: 5px; font-size: 13px; }
   #wrap #footBox > .infoBox > .info > a:last-of-type { margin-right: 0; }
   #wrap #footBox > .infoBox > .my { width: 100%; height: 50px; margin: auto; margin-top: 40px; text-align: center; color: #555; font-size: 12px; }
-  #wrap #headBox.color { display: none; background-color: rgba(0, 0, 0, 0.5); }
   #wrap #viewBox { width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg"); }
   #wrap #conBox { width: 100%; height: auto; padding: 800px 0 500px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_01.jpg"); }
   #wrap #conBox > .one { width: 80%; height: auto; margin: auto; }
@@ -181,7 +184,10 @@
   #wrap #conBox > .three > li:nth-child(2) { opacity: 0; transform: translateX(-10%); }
   #wrap #conBox > .three > li:nth-child(2).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
   #wrap #conBox > .three > li:nth-child(3) { opacity: 0; transform: translateX(-10%); }
-  #wrap #conBox > .three > li:nth-child(3).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; } }
+  #wrap #conBox > .three > li:nth-child(3).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
+  #wrap #conBox > button { display: none; position: relative; float: right; width: 65%; height: 50px; margin-top: 300px; line-height: 50px; text-align: left; background-color: transparent; font-size: 1.3rem; font-weight: bold; }
+  #wrap #conBox > button:after, #wrap #conBox > button::after { content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -3; width: 0; height: 0; border-bottom: 3px solid #fff; transition: width 700ms ease; }
+  #wrap #conBox > button.action:after, #wrap #conBox > button.action::after { width: 100%; } }
 
 @media screen and (max-width: 480px) { #wrap #headBox { position: fixed; z-index: 500; width: 100%; min-width: 350px; height: 65px; padding: 20px; box-sizing: border-box; }
   #wrap #headBox > h1 { float: left; width: 100px; height: 25px; }
@@ -200,7 +206,7 @@
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl { width: 200px; height: auto; margin: auto; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt { width: 100%; height: 50px; margin-bottom: 50px; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a { position: relative; display: block; width: 100%; height: 100%; font-size: 25px; color: #333; font-weight: bold; text-align: center; line-height: 50px; }
-  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a::after { content: " "; display: block; position: absolute; z-index: 500; bottom: -1; right: 0; left: 0; width: 0; height: 0; border-bottom: 4px solid #4b1e78; transition: width 300ms ease; }
+  #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a::after { content: " "; display: block; position: absolute; z-index: 500; bottom: -1; right: 0; left: 0; width: 0; height: 0; border-bottom: 4px solid #333; transition: width 300ms ease; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a.action:after, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dt > a.action::after { width: 100%; }
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd { display: none; }
   #wrap #footBox { width: 100%; min-width: 350px; height: auto; padding: 50px; box-sizing: border-box; background-color: #fff; }
@@ -241,4 +247,7 @@
   #wrap #conBox > .three > li:nth-child(2) { opacity: 0; transform: translateX(-10%); }
   #wrap #conBox > .three > li:nth-child(2).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
   #wrap #conBox > .three > li:nth-child(3) { opacity: 0; transform: translateX(-10%); }
-  #wrap #conBox > .three > li:nth-child(3).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; } }
+  #wrap #conBox > .three > li:nth-child(3).action { opacity: 1; transform: translateX(0); transition: all 2000ms ease; }
+  #wrap #conBox > button { display: none; position: relative; float: right; width: 70%; height: 50px; margin-top: 300px; line-height: 50px; text-align: left; background-color: transparent; font-size: 1.3rem; font-weight: bold; }
+  #wrap #conBox > button:after, #wrap #conBox > button::after { content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -3; width: 0; height: 0; border-bottom: 3px solid #fff; transition: width 700ms ease; }
+  #wrap #conBox > button.action:after, #wrap #conBox > button.action::after { width: 100%; } }

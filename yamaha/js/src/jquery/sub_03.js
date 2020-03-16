@@ -1,20 +1,6 @@
 // sub_03.js
 (function($){
 
-  // header 색 바꾸기
-
-  $(window).scroll(function() {
-    let scroll = $(window).scrollTop();
-    console.log(scroll);
-    if (scroll >= 250) {
-      $('.color').fadeIn();
-      $("#headBox").addClass('color');
-    } else {
-      //console.log('a');
-      $("#headBox").removeClass('color');
-    }
-  });
-
   
   // 메뉴 바
   const gnb = $('.gnb');
@@ -91,6 +77,44 @@
       $(this).css({display:'none'});
       on.css({display:'block'});
     }
+  });
+
+
+  const conBox = $('#conBox');
+  const ment = conBox.children('.ment');
+  const h2 = conBox.children('h2');
+  const imgBox = conBox.children('.imgBox');
+  const textBox = conBox.children('.textBox');
+  const textP = textBox.children('p');
+  const video = conBox.children('p');
+  const btn = conBox.children('button');
+
+  let ment_offset = ment.offset().top;
+  let h2_offset = h2.offset().top;
+  let imgBox_offset = imgBox.offset().top;
+  let textBox_offset = textBox.offset().top;
+
+
+  $(window).scroll(function(){
+    let scroll = $(window).scrollTop();
+    if (scroll >= 400) {
+      ment.fadeIn(3000);
+    }if (scroll > ment_offset + (1000)) {
+      h2.fadeIn(3000);
+    }if (scroll > ment_offset + (1500)) {
+      imgBox.fadeIn(3000);
+    }if (scroll > ment_offset + (2000)) {
+      textP.addClass('action')
+    }if (scroll > ment_offset + (2500)) {
+      video.fadeIn(3000);
+    }if (scroll > ment_offset + (3200)) {
+      btn.fadeIn(3000);
+    }
+  })
+
+  // 마지막 버튼 
+  btn.on('mouseenter', function(){
+    $(this).addClass('action');
   });
 
   })(jQuery);

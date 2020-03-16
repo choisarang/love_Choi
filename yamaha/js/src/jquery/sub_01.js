@@ -94,11 +94,13 @@
   const three01 = three.children('.three_01');
   const three02 = three.children('.three_02');
   const three03 = three.children('.three_03');
+  const btn = conBox.children('button');
 
 
 
   let one_offset = one.offset().top;
   let two_offset = two.offset().top;
+  let three_offset = three.offset().top;
 
 
   $(window).scroll(function() {
@@ -116,11 +118,18 @@
       three02.addClass('action');
     } if(scroll > two_offset + (700)) {
       three03.addClass('action');
+    }if (scroll > three_offset + (1000)) {
+      btn.fadeIn(3000);
     }
   });
 
 
+  // 마지막 버튼 
 
+
+  btn.on('mouseenter', function(){
+    $(this).addClass('action');
+  });
 
 
   })(jQuery);

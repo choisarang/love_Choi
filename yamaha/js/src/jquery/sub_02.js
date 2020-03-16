@@ -88,6 +88,7 @@ const oneDd = oneDl.children('dd');
 const twoDl = conBox.children('.two');
 const twoDt = twoDl.children('dt');
 const twoDd = twoDl.children('dd');
+const btn = conBox.children('button');
 
 let conH2_offset = conH2.offset().top;
 let conP_offset = conP.offset().top;
@@ -95,6 +96,7 @@ let oneDl_offset = oneDl.offset().top;
 let oneDt_offset = oneDt.offset().top;
 let twoDl_offset = twoDl.offset().top;
 let twoDt_offset = twoDt.offset().top;
+let twoDd_offset = twoDd.offset().top;
 
 $(window).scroll(function() {
   let scroll = $(window).scrollTop();
@@ -110,6 +112,8 @@ $(window).scroll(function() {
     twoDt.addClass('action');
   }if (scroll > twoDt_offset + (400)) {
     twoDd.addClass('action');
+  }if (scroll > twoDd_offset + (1800)) {
+    btn.fadeIn(3000);
   }
 });
 
@@ -133,5 +137,10 @@ conLi.on('mouseleave', function(){
 });
 
 
+// 마지막 버튼 
+
+btn.on('mouseenter', function(){
+  $(this).addClass('action');
+});
 
 })(jQuery);

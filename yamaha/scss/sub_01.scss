@@ -8,7 +8,6 @@
 
 
 @import "./_temp/h_f_1920.scss";
-#headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
 
 #conBox{width: 100%; height: auto; padding: 1000px 0 500px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_01.jpg");
   >.one{width: 1200px; height: auto; margin: auto;
@@ -36,44 +35,19 @@
     >li:nth-child(2).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
     >li:nth-child(3){opacity: 0; transform: translateX(-10%);}
     >li:nth-child(3).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
-  }//>.two
+  }//>.three
+  >button{display: none; position: relative; float: right; width: 57%; height: 50px; margin-top: 300px; line-height: 50px; text-align: left; background-color: transparent; font-size: 1.3rem; font-weight: bold;}
+  >button:after,
+  >button::after{content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -3; width: 0; height: 0; border-bottom: 3px solid #fff; transition: width 700ms ease;}
+  >button.action:after,
+  >button.action::after{width: 100%;}
 }//#conBox
-
-// #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
-// #conBox{width: 1000px; height: auto; margin: auto; margin-bottom: 200px; background-color: $bg;
-//   >.menu{width: 100%; height: 200px; margin: auto; margin-bottom: 200px; border-bottom: 1px solid #eee; text-align: center; 
-//     >h2{width: 100%; height: 130px;
-//       >a{display: block; width: 100%; height: 100%; line-height: 170px; color: $text; font-size: 1.5rem;}
-//     }//h2
-//     >.list{width: 100%; height: 50px; overflow: hidden;
-//       >.list_inner{width: 100%; height: 150%; overflow-x:scroll;
-//       >ul{width: 560px; height: 100%; margin: auto;
-//         >li{float: left; width: auto; height: 100%; margin-right: 20px;
-//           >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
-//         }//li
-//         >li:hover>a{color: $main; font-weight: bold;}
-//       }//ul
-//       }//.list_inner
-//     }//.list
-//   }//.menu
-//   >dl{position: relative; width: 100%; height: auto; border: 1px solid #ddd; margin-top: 200px; padding: 50px 30px; box-sizing: border-box;
-//     >dt{position: absolute; top: -60px; left: 0; right: 0; margin: auto; width: 120px; height: 120px; border-radius: 100%; background-color: #ddd; font-size: 1.7rem; font-weight: bold; line-height: 120px; color: $main; text-align: center;}
-//     >dd{width: 100%; height: auto; margin-top: 50px; text-align: center; box-sizing: border-box; text-transform: uppercase; line-height: 1.7; font-size: 1rem; word-break: keep-all; color: $text;
-//       >em{font-style: normal; font-weight: bold; font-size: 1.2rem; color: $textem;}
-//       >span{color: $main; font-weight: bold;}
-//     }//dd
-//   }//dl
-//   >dl:nth-of-type(1){background-color: #eee; padding: 50px 100px;
-//     >dt{top: 30px; left: 0; right: 0; width: 110px; height: 80px; margin: auto; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo_mark.png");}
-//     >dd{margin-top: 80px;}
-//   }//dl:nth-of-type(1)
-// }//#conBox
 }//1920
+
 
 @media screen and (max-width:1280px) and (min-width:769px) {
 
 @import "./_temp/h_f_1280.scss";
-#headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
 
 #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
 #conBox{width: 100%; height: auto; padding: 800px 0 500px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_01.jpg");
@@ -103,17 +77,17 @@
     >li:nth-child(3){opacity: 0; transform: translateX(-10%);}
     >li:nth-child(3).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
   }//>.two
+  >button{display: none; position: relative; float: right; width: 60%; height: 50px; margin-top: 300px; line-height: 50px; text-align: left; background-color: transparent; font-size: 1.3rem; font-weight: bold;}
+  >button:after,
+  >button::after{content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -3; width: 0; height: 0; border-bottom: 3px solid #fff; transition: width 700ms ease;}
+  >button.action:after,
+  >button.action::after{width: 100%;}
 }//#conBox
-
-// >dl{width: 100%; height: auto; border: 1px solid #ddd; margin-top: 200px; padding: 50px 30px; box-sizing: border-box;
-//   >dt{width: 110px; height: auto; margin: auto; padding-bottom: 10px; font-size: 2rem; font-weight: bold; color: $main; border-bottom: 3px solid $main; text-align: center;}
-
 }//1280
 
 @media screen and (max-width:768px) and (min-width:481px) {
   
 @import "./_temp/h_f_m.scss";
-#headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
 
 #viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
 #conBox{width: 100%; height: auto; padding: 800px 0 500px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_01.jpg");
@@ -143,9 +117,12 @@
     >li:nth-child(3){opacity: 0; transform: translateX(-10%);}
     >li:nth-child(3).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
   }//>.two
+  >button{display: none; position: relative; float: right; width: 65%; height: 50px; margin-top: 300px; line-height: 50px; text-align: left; background-color: transparent; font-size: 1.3rem; font-weight: bold;}
+  >button:after,
+  >button::after{content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -3; width: 0; height: 0; border-bottom: 3px solid #fff; transition: width 700ms ease;}
+  >button.action:after,
+  >button.action::after{width: 100%;}
 }//#conBox
-
-
 }//768
 
 @media screen and (max-width:480px) {
@@ -181,9 +158,12 @@
     >li:nth-child(3){opacity: 0; transform: translateX(-10%);}
     >li:nth-child(3).action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
   }//>.two
+  >button{display: none; position: relative; float: right; width: 70%; height: 50px; margin-top: 300px; line-height: 50px; text-align: left; background-color: transparent; font-size: 1.3rem; font-weight: bold;}
+  >button:after,
+  >button::after{content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -3; width: 0; height: 0; border-bottom: 3px solid #fff; transition: width 700ms ease;}
+  >button.action:after,
+  >button.action::after{width: 100%;}
 }//#conBox
-
-
 }//480
 
 }//#wrap

@@ -8,21 +8,20 @@
 
 @import "./_temp/h_f_1920.scss";
 
-#headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
-
 #conBox{position: relative; width: 100%; height: auto; padding: 1000px 0 500px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_02.jpg");
   >h2{width: 100%; height: auto; font-size: 5rem; color: #fff; text-transform: uppercase; font-weight: bold; text-align: center;} 
-  >h3{width: 100%; height: auto; margin-top: 200px; font-size: 2rem; color: #fff; font-weight: bold; text-align: center;}
-  >p{width: 95%; height: auto; margin-top: 50px; font-size: 1rem; color: #fff; text-align: center; text-transform: capitalize;}
-  >dl{width: 80%; height: auto; margin: auto; margin-top: 400px;
-    >dt{float: left; width: 600px; height: 400px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/grand_01.jpg"); transform: translateX(-10%); opacity: 0;}
-    >dt.action{opacity: 1; transform: translateX(0);}
-    >dd{float: left; width: 70%; height: auto; margin-top: 150px; color: #fff; font-size: 1rem; word-break: keep-all; text-align: left; line-height: 1.5; text-transform: capitalize;
-      >h4{margin-bottom: 60px; font-size: 2rem; font-weight: bold; font-style: normal; }
-    }//dd
+  >h3{display: none; width: 100%; height: auto; margin-top: 200px; font-size: 2rem; color: #fff; font-weight: bold; text-align: center; word-break: keep-all; line-height: 1.5;}
+  >p{display: none; width: 100%; height: auto; margin-top: 50px; font-size: 1.2rem; color: #fff; text-align: center; text-transform: capitalize; word-break: keep-all; line-height: 1.5;}
+  >dl{width: 80%; height: auto; margin: auto; margin-top: 300px;
+    >dt{float: left; width: 600px; height: 400px; margin-right: 400px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/grand_01.jpg"); transform: translateX(-10%); opacity: 0;}
+    >dt.action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
+    >dd{float: left; width: 600px; height: auto; margin-top: 150px; color: #fff; font-size: 1rem; word-break: keep-all; text-align: left; line-height: 1.5; text-transform: capitalize; transform: translateY(+10%); opacity: 0;
+      >h4{width: auto; height: 60px; margin-bottom: 60px; font-size: 2rem; font-weight: bold; font-style: normal; border-bottom: 4px solid #fff;}
+    }//dd 
+    >dd.action{opacity: 1; transform: translateY(0); transition: all 2000ms ease;}
   }//dl
   >.two{margin-top: 200px;
-    >dt{float: right; background-image: url("../img/grand_02.jpg");}
+    >dt{float: right; width: 400px; height: 500px; margin-right: 0;  margin-left: 400px; background-image: url("../img/grand_02.jpg"); transform: translateX(+10%);}
     >dd{float: right; text-align: right;}
   }
   >ul{width: 100%; height: auto; margin: auto; margin-top: 400px;
@@ -39,6 +38,11 @@
     >li:nth-of-type(2)>.img{background-image: url("../img/piano02.jpg");}
     >li:nth-of-type(3)>.img{background-image: url("../img/piano03.jpg");}
   }//ul
+  >button{display: none; position: relative; float: right; width: 55%; height: 50px; margin-top: 300px; line-height: 50px; text-align: left; background-color: transparent; font-size: 1.3rem; font-weight: bold;}
+  >button:after,
+  >button::after{content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -3; width: 0; height: 0; border-bottom: 3px solid #fff; transition: width 700ms ease;}
+  >button.action:after,
+  >button.action::after{width: 100%;}
 }//conBox
 
 }//1920
@@ -47,28 +51,25 @@
 
 @import "./_temp/h_f_1280.scss";
 
-#headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
-
-#viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
-#conBox{position: relative; width: 100%; height: auto; padding: 1000px 0 500px; box-sizing: border-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_02.jpg");
+#conBox{position: relative; width: 100%; height: auto; padding: 1000px 0 500px; box-sizing: border-box; background-position: 50% 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_02.jpg");
   >h2{width: 100%; height: auto; font-size: 5rem; color: #fff; text-transform: uppercase; font-weight: bold; text-align: center;} 
-  >h3{display: none; width: 100%; height: auto; margin-top: 200px; font-size: 2rem; color: #fff; font-weight: bold; text-align: center;}
-  >p{display: none; width: 95%; height: auto; margin-top: 50px; font-size: 1rem; color: #fff; text-align: center; text-transform: capitalize;}
+  >h3{display: none; width: 100%; height: auto; margin-top: 200px; font-size: 2rem; color: #fff; font-weight: bold; text-align: center; word-break: keep-all; line-height: 1.5;}
+  >p{display: none; width: 100%; height: auto; margin-top: 50px; font-size: 1.2rem; color: #fff; text-align: center; text-transform: capitalize; word-break: keep-all; line-height: 1.5;}
   >dl{width: 80%; height: auto; margin: auto; margin-top: 300px;
-    >dt{float: left; width: 600px; height: 400px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/grand_01.jpg"); transform: translateX(-10%); opacity: 0;}
+    >dt{float: left; width: 500px; height: 450px; margin-right: 400px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/grand_01.jpg"); transform: translateX(-10%); opacity: 0;}
     >dt.action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
-    >dd{float: left; width: 70%; height: auto; margin-top: 150px; color: #fff; font-size: 1rem; word-break: keep-all; text-align: left; line-height: 1.5; text-transform: capitalize; transform: translateY(+10%); opacity: 0;
+    >dd{float: left; width: 500px; height: auto; margin-top: 150px; color: #fff; font-size: 1rem; word-break: keep-all; text-align: left; line-height: 1.5; text-transform: capitalize; transform: translateY(+10%); opacity: 0;
       >h4{width: auto; height: 60px; margin-bottom: 60px; font-size: 2rem; font-weight: bold; font-style: normal; border-bottom: 4px solid #fff;}
     }//dd 
     >dd.action{opacity: 1; transform: translateY(0); transition: all 2000ms ease;}
   }//dl
   >.two{margin-top: 200px;
-    >dt{float: right; background-image: url("../img/grand_02.jpg"); transform: translateX(+10%);}
+    >dt{float: right; width: 350px; height: 450px; margin-right: 0;  margin-left: 400px; background-image: url("../img/grand_02.jpg"); transform: translateX(+10%);}
     >dd{float: right; text-align: right;}
   }
   >ul{width: 100%; height: auto; margin: auto; margin-top: 400px;
     >h3{width: 100%; height: auto; font-size: 3rem; margin-bottom: 200px; text-transform: uppercase; font-weight: bold; text-align: center; color: #fff;}
-    >li{width: 1000px; height: 300px; margin: auto; margin-top: 100px; overflow: hidden;
+    >li{width: 80%; height: 300px; margin: auto; margin-top: 100px; overflow: hidden;
       >.img{width: 100%; height: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;
         >a{width: 100%; height: 100%; background-color: transparent;
           >h4{display: none; width: 100%; height: 100%; line-height: 300px; text-align: center; font-size: 2rem; color: #fff; text-shadow: 2px 2px 3px #000;}
@@ -80,6 +81,11 @@
     >li:nth-of-type(2)>.img{background-image: url("../img/piano02.jpg");}
     >li:nth-of-type(3)>.img{background-image: url("../img/piano03.jpg");}
   }//ul
+  >button{display: none; position: relative; float: right; width: 60%; height: 50px; margin-top: 300px; line-height: 50px; text-align: left; background-color: transparent; font-size: 1.3rem; font-weight: bold;}
+  >button:after,
+  >button::after{content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -3; width: 0; height: 0; border-bottom: 3px solid #fff; transition: width 700ms ease;}
+  >button.action:after,
+  >button.action::after{width: 100%;}
 }//conBox
 
 }//1280
@@ -88,37 +94,41 @@
   
 @import "./_temp/h_f_m.scss";
 
-#headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
 
-#viewBox{width: 100%; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
-#conBox{width: 100%; height: auto; background-color: $bg;
-  >.menu{width: 90%; height: 200px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; 
-    >h2{width: 100%; height: 130px;
-      >a{display: block; width: 100%; height: 100%; line-height: 170px; color: $text; font-size: 1.5rem;}
-    }//h2
-    >.list{width: 100%; height: 50px; overflow: hidden;
-      >.list_inner{width: 100%; height: 150%; overflow-x:scroll;
-      >ul{width: 550px; height: 100%; margin: auto;
-        >li{float: left; width: auto; height: 100%; margin-right: 10px;
-          >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
-        }//li
-        >li:hover>a{color: $main; font-weight: bold;}
-      }//ul
-      }//.list_inner
-    }//.list
-  }//.menu
-  >ul{width: 100%; height: auto; padding-bottom: 100px;
-    >li{width: 80%; height: 200px; margin: auto; margin-top: 100px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; opacity: 0.7;
-      >.img{
+#conBox{position: relative; width: 100%; height: auto; padding: 1000px 0 500px; box-sizing: border-box; background-position: 50% 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_02.jpg");
+  >h2{width: 100%; height: auto; font-size: 5rem; color: #fff; text-transform: uppercase; font-weight: bold; text-align: center;} 
+  >h3{display: none; width: 100%; height: auto; margin-top: 200px; font-size: 2rem; color: #fff; font-weight: bold; text-align: center; word-break: keep-all; line-height: 1.5;}
+  >p{display: none; width: 100%; height: auto; margin-top: 50px; font-size: 1.2rem; color: #fff; text-align: center; text-transform: capitalize; word-break: keep-all; line-height: 1.5;}
+  >dl{width: 80%; height: auto; margin: auto; margin-top: 300px;
+    >dt{float: left; width: 350px; height: 300px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/grand_01.jpg"); transform: translateX(-10%); opacity: 0;}
+    >dt.action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
+    >dd{float: left; width: 400px; height: auto; margin-top: 150px; color: #fff; font-size: 1rem; word-break: keep-all; text-align: left; line-height: 1.5; text-transform: capitalize; transform: translateY(+10%); opacity: 0;
+      >h4{width: auto; height: 50px; margin-bottom: 60px; font-size: 1.6rem; font-weight: bold; font-style: normal; border-bottom: 4px solid #fff;}
+    }//dd 
+    >dd.action{opacity: 1; transform: translateY(0); transition: all 2000ms ease;}
+  }//dl
+  >.two{margin-top: 200px;
+    >dt{float: right; width: 250px; height: 350px; margin-right: 0;  margin-left: 400px; background-image: url("../img/grand_02.jpg"); transform: translateX(+10%);}
+    >dd{float: right; text-align: right;}
+  }
+  >ul{width: 100%; height: auto; margin: auto; margin-top: 400px;
+    >h3{width: 100%; height: auto; font-size: 3rem; margin-bottom: 200px; text-transform: uppercase; font-weight: bold; text-align: center; color: #fff;}
+    >li{width: 80%; height: 200px; margin: auto; margin-top: 100px; overflow: hidden;
+      >.img{width: 100%; height: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; opacity: 0.7;
         >a{width: 100%; height: 100%; background-color: transparent;
-          >h4{width: 100%; height: 100%; line-height: 200px; text-align: center; font-size: 2rem; color: #fff; text-shadow: 2px  2px 3px #000;}
+          >h4{width: 100%; height: 100%; line-height: 200px; text-align: center; font-size: 2rem; color: #fff; text-shadow: 2px 2px 3px #000;}
         }//a
-      }//.img
+      }//img
     }//li
-    >li:nth-child(1){background-image: url("../img/piano.jpg");}
-    >li:nth-child(2){background-image: url("../img/piano02.jpg");}
-    >li:nth-child(3){background-image: url("../img/piano03.jpg");}
+    >li:nth-of-type(1)>.img{background-image: url("../img/piano.jpg");}
+    >li:nth-of-type(2)>.img{background-image: url("../img/piano02.jpg");}
+    >li:nth-of-type(3)>.img{background-image: url("../img/piano03.jpg");}
   }//ul
+  >button{display: none; position: relative; float: right; width: 60%; height: 50px; margin-top: 300px; line-height: 50px; text-align: left; background-color: transparent; font-size: 1.3rem; font-weight: bold;}
+  >button:after,
+  >button::after{content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -3; width: 0; height: 0; border-bottom: 3px solid #fff; transition: width 700ms ease;}
+  >button.action:after,
+  >button.action::after{width: 100%;}
 }//conBox
 
 }//768
@@ -127,37 +137,40 @@
   
 @import "./_temp/h_f_m.scss";
 
-#headBox.color{display: none; background-color: rgba(0,0,0,0.5);}
-
-#viewBox{width: 100%; min-width: 350px; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view.jpg");}
-#conBox{width: 100%; min-width: 350px; height: auto; background-color: $bg;
-  >.menu{width: 90%; height: 200px; margin: auto; margin-bottom: 100px; border-bottom: 1px solid #eee; text-align: center; 
-    >h2{width: 100%; height: 130px;
-      >a{display: block; width: 100%; height: 100%; line-height: 170px; color: $text; font-size: 1.5rem;}
-    }//h2
-    >.list{width: 100%; height: 50px; overflow: hidden;
-      >.list_inner{width: 100%; height: 150%; overflow-x:scroll;
-      >ul{width: 550px; height: 100%; margin: auto;
-        >li{float: left; width: auto; height: 100%; margin-right: 10px;
-          >a{display: block; width: 100%; height: 100%; font-size: 1rem; color: $text;}
-        }//li
-        >li:hover>a{color: $main; font-weight: bold;}
-      }//ul
-      }//.list_inner
-    }//.list
-  }//.menu
-  >ul{width: 100%; height: auto; padding-bottom: 100px;
-    >li{width: 80%; height: 200px; margin: auto; margin-top: 100px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; opacity: 0.7;
-      >.img{
+#conBox{position: relative; width: 100%; min-width: 350px; height: auto; padding: 1000px 0 500px; box-sizing: border-box; background-position: 50% 0; background-repeat: no-repeat; background-size: cover; background-image: url("../img/sub_view_02.jpg");
+  >h2{width: 100%; height: auto; font-size: 5rem; color: #fff; text-transform: uppercase; font-weight: bold; text-align: center;} 
+  >h3{display: none; width: 100%; height: auto; margin-top: 200px; font-size: 2rem; color: #fff; font-weight: bold; text-align: center; word-break: keep-all; line-height: 1.5;}
+  >p{display: none; width: 100%; height: auto; margin-top: 50px; font-size: 1.2rem; color: #fff; text-align: center; text-transform: capitalize; word-break: keep-all; line-height: 1.5;}
+  >dl{width: 80%; height: auto; margin: auto; margin-top: 300px;
+    >dt{float: left; width: 280px; height: 300px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../img/grand_01.jpg"); transform: translateX(-10%); opacity: 0;}
+    >dt.action{opacity: 1; transform: translateX(0); transition: all 2000ms ease;}
+    >dd{float: left; width: 275px; height: auto; margin-top: 150px; color: #fff; font-size: 1rem; word-break: keep-all; text-align: left; line-height: 1.5; text-transform: capitalize; transform: translateY(+10%); opacity: 0;
+      >h4{width: auto; height: 90px; margin-bottom: 60px; font-size: 1.6rem; font-weight: bold; font-style: normal; border-bottom: 4px solid #fff;}
+    }//dd 
+    >dd.action{opacity: 1; transform: translateY(0); transition: all 2000ms ease;}
+  }//dl
+  >.two{margin-top: 200px;
+    >dt{float: right; width: 250px; height: 300px; margin-right: 0;  margin-left: 400px; background-image: url("../img/grand_02.jpg"); transform: translateX(+10%);}
+    >dd{float: right; text-align: right;}
+  }
+  >ul{width: 100%; height: auto; margin: auto; margin-top: 400px;
+    >h3{width: 100%; height: auto; font-size: 3rem; margin-bottom: 200px; text-transform: uppercase; font-weight: bold; text-align: center; color: #fff;}
+    >li{width: 80%; height: 200px; margin: auto; margin-top: 100px; overflow: hidden;
+      >.img{width: 100%; height: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; opacity: 0.7;
         >a{width: 100%; height: 100%; background-color: transparent;
-          >h4{width: 100%; height: 100%; line-height: 200px; text-align: center; font-size: 2rem; color: #fff; text-shadow: 2px  2px 3px #000;}
+          >h4{width: 100%; height: 100%; line-height: 200px; text-align: center; font-size: 2rem; color: #fff; text-shadow: 2px 2px 3px #000;}
         }//a
-      }//.img
+      }//img
     }//li
-    >li:nth-child(1){background-image: url("../img/piano.jpg");}
-    >li:nth-child(2){background-image: url("../img/piano02.jpg");}
-    >li:nth-child(3){background-image: url("../img/piano03.jpg");}
+    >li:nth-of-type(1)>.img{background-image: url("../img/piano.jpg");}
+    >li:nth-of-type(2)>.img{background-image: url("../img/piano02.jpg");}
+    >li:nth-of-type(3)>.img{background-image: url("../img/piano03.jpg");}
   }//ul
+  >button{display: none; position: relative; float: right; width: 70%; height: 50px; margin-top: 300px; line-height: 50px; text-align: left; background-color: transparent; font-size: 1.3rem; font-weight: bold;}
+  >button:after,
+  >button::after{content: " "; display: block; position: absolute; z-index: 500; left: 0; right: 0; bottom: -3; width: 0; height: 0; border-bottom: 3px solid #fff; transition: width 700ms ease;}
+  >button.action:after,
+  >button.action::after{width: 100%;}
 }//conBox
 
 }//480
