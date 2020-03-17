@@ -7,16 +7,15 @@ html, body{background-color: #fcfcfc; font-family: 'NanumGothic';}
 #wrap{width: 100%; height: 100%;}
 #wrap a{outline: none;}
 
-@media screen and (min-width:971px) {
+@media screen and (min-width:970px) {
 /* headBox ====================================================================== */
-#headBox{position: fixed; z-index: 300; width: 100%; min-height: 100px; height: auto; background-color: rgba(255,255,255,0.7);}
-h1{float: left; width: 20vw; height: 50px; margin-top: 25px; margin-left: 50px;}
-h1>a{display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../../img/logo.png");}
+#headBox{position: fixed; z-index: 300; width: 100%; height: 100px; background-color: rgba(255,255,255,0.7);}
 
-#gnb{float: left; width: 70vw; height: 100%; margin: auto;}
+#gnb{width: 700px; height: 100%; margin: auto;}
 #gnb>ul{width: 100%; height: auto;}
-#gnb li{float: left; width: 100px; height: 100px; margin-left: 10vw;}
+#gnb li{float: left; width: 30%; height: 100px; margin-left: 5%;}
 #gnb li>a{display: block; width: 100%; height: 100%; font-size: 20px; line-height: 100px; text-align: center; text-transform: capitalize; color: #555;}
+#gnb li:first-child{margin-left: 0;}
 
 #gnb a.active{font-weight: bold;}
 
@@ -29,8 +28,8 @@ h1>a{display: block; width: 100%; height: 100%; background-repeat: no-repeat; ba
 .view_inner>p{display: none; position: absolute; top: 55%; width: 100%; height: auto; font-size: 1rem; text-align: center; color: #777; text-transform: capitalize;}
 
 /* mainBox ====================================================================== */
-#mainBox{width: 100%; height: auto; margin: auto; box-sizing: border-box;}
-h2{width: 100%; height: 50px; font-size: 2rem; text-transform: capitalize; color: #555; padding-top: 200px; margin-bottom: 200px; border-bottom: 1px solid #777;}
+#mainBox{width: 100%; height: auto; margin: auto;}
+h2{width: 98%; height: 50px; padding-left: 2%; font-size: 2rem; text-transform: capitalize; color: #555; padding-top: 200px; margin-bottom: 200px; border-bottom: 1px solid #777;}
 h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;}
 
 /* proBox ------------------------------------------------ */
@@ -338,8 +337,12 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 #likeBox li{float: left; width: 260px; height: 260px; margin-right: 60px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; transition: all 400ms ease; opacity: 0.7;}
 #likeBox li:nth-child(3n){margin-right: 0;}
 #likeBox li:nth-child(-n+9){margin-bottom: 50px;}
+#likeBox li:nth-child(n+7){display: none;}
 #likeBox li>a{display: block; width: 100%; height: 100%;}
 #likeBox li:hover,#likeBox li:focus{opacity: 1;}
+#likeBox>button{display: block; width: 100px; height: 40px; margin: auto; margin-top: 100px; border-radius: 5px; border: 2px solid #aaa; color:#aaa; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; background-color: transparent;}
+
+
 
 .like_pop{display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);}
 .like_popup{position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; padding: 50px; box-sizing: border-box;  width: 60%; height: 80%; background-color: #fff;}
@@ -353,10 +356,359 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 #footBox>em{display: block; width: 100%; height: 50%; text-align: center; line-height: 2; font-size: 1rem; color: #777; font-style: normal;}
 #footBox>p{width: 100%; height: 30%; text-align: center; font-size: 1rem; color: #777; font-weight: bold; text-transform: uppercase;}
 
-
-
 } 
 
-@media screen and (max-width:970px) {
+
+
+
+
+@media screen and (max-width:969px) {
+
+  /* headBox ====================================================================== */
+#headBox{position: fixed; z-index: 300; width: 100%; min-width: 350px; height: 100px; background-color: rgba(255,255,255,0.7);}
+
+#gnb{width: 100%; height: 100%;}
+#gnb>ul{width: 100%; max-width: 700px; height: auto; margin: auto;}
+#gnb li{float: left; width: 30%; height: 100px; margin-left: 5%;}
+#gnb li>a{display: block; width: 100%; height: 100%; font-size: 20px; line-height: 100px; text-align: center; text-transform: capitalize; color: #555;}
+#gnb li:first-child{margin-left: 0;}
+
+#gnb a.active{font-weight: bold;}
+
+#headBox.action{background-color: #fff;}
+
+/* viewBox ====================================================================== */
+#viewBox{width: 100%; min-width: 350px; height: 100%; padding-top: 100px; font-size: 2rem;}
+.view_inner{position: relative; width: 100%; height: 100%; margin: auto; background-color: #f2eedd;}
+.view_inner>span{display: none; position: absolute; top: 40%; width: 100%; height: auto; text-align: center; font-size: 3.8rem; font-weight: bold; color: #555; text-transform: uppercase;}
+.view_inner>p{display: none; position: absolute; top: 55%; width: 100%; height: auto; font-size: 1rem; text-align: center; color: #777; text-transform: capitalize;}
+
+/* mainBox ====================================================================== */
+#mainBox{width: 100%; min-width: 350px; height: auto; margin: auto;}
+h2{width: 98%; height: 50px; padding-left: 2%; font-size: 2rem; text-transform: capitalize; color: #555; padding-top: 200px; margin-bottom: 200px; border-bottom: 1px solid #777;}
+h3{font-size: 1.5rem; text-align: center; font-weight: bold; text-transform: uppercase; color: #555;}
+
+/* proBox ------------------------------------------------ */
+#proBox{width: 95%; height: auto; margin: auto;}
+
+
+.proflie{width: 100%; height: 500px; margin: auto;}
+.proflie.action{}
+
+
+.pro_pic{float: left; width: 100%; height: 100%;}
+
+.pic{position: relative; width: 300px; height: 300px; margin: auto; border-radius: 100%; background-color: #f2eedd;}
+.mouse{position: absolute; top: 50%; right: 30px; margin: auto; z-index: 10; width: 30px; height: 30px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/mouse.png"); animation: mouseMv 700ms linear alternate infinite;}
+@keyframes mouseMv {      0% {bottom: 30px;}    100%{bottom:20px; }   }
+
+.name{width: 100%; height: 150px; font-size: 3rem; font-weight: bold; text-transform: capitalize; text-align: center; line-height: 3; color: #555;}
+
+.pro_text{display: none; float: right; width: 100%; height: 100%; font-size: 1rem; color: #777; line-height: 3.5; text-align: center;}
+.pro_text>span{font-weight: bold;}
+
+.info{width: 100%; height: auto; padding-top: 100px; margin-bottom: 100px;}
+.info h3>a{display: block;}
+.info h3>a:hover,
+.info h3>a:focus{color: #d3c3b8;}
+.education{width: 100%; height: auto; margin: auto; padding-bottom: 50px;}
+.work_experience{width: 100%; height: auto; margin: auto; padding-bottom: 50px;}
+.certificate{width: 100%; height: auto; margin: auto; padding-bottom: 50px;}
+.info dl{display: none; width: 100%; height: auto; text-align: center;}
+.info dt{width: 100%; height: auto; padding-top: 50px; font-size: 1rem; font-weight: normal; color: #555;}
+.info dd{width: 100%; height: auto; padding-top: 5px; font-size: 1rem; font-weight: normal; color: #777;}
+
+
+.pro_img{width: 100%; height: auto;}
+.pro_img h3{width: 100%; height: 100px;}
+.pro_img h3>a{display: block;}
+.pro_img h3>a:hover,
+.pro_img h3>a:focus{color: #d3c3b8;}
+.mbti{width: 100%; height: auto; margin-right: 20%; margin-bottom: 100px;}
+.mbti_img{display: none; width: 80%; height: 300px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/mbti.png");}
+
+.character{width: 100%; height: auto; margin-bottom: 100px;}
+.character_img{display: none; width: 80%; height: 300px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/character.png");}
+
+.skills{width: 100%; height: auto; margin-bottom: 100px;}
+.skills_img{display: none; width: 80%; height: 400px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/skills.png");}
+
+
+/* portBox ------------------------------------------------ */
+#portBox{width: 95%; min-width: 350px; height: auto; margin: auto;}
+.imgBox{position: relative; top: 0; width: 350px; height: 230px; margin: auto;}
+.img_area{position: absolute; top: 0; left: 0; z-index: 10; width: 320px; height: 200px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;}
+.img_bg{position: absolute; bottom: 0; right: 0; width: 320px; height: 200px; background-color: #f2eedd;}
+
+.textBox{width: 300px; height: 200px; margin: auto; margin-top: 50px; text-align: center;}
+
+.textBox dt{width: auto; height: auto; margin-bottom: 30px; font-size: 35px; text-transform: uppercase; font-weight: bold; color: #555;}
+.textBox dt>span{color: #d3c3b8;}
+.textBox dd{width: 240px; height: auto; margin: auto; font-size: 15px; color: #777; text-transform: capitalize;}
+.textBox dd>span{font-size: 13px;} 
+
+.web_btn{float: left; width: 100px; height: 30px; margin-right: 30px; border-radius: 3px; border: 2px solid #d3c3b8;}
+.web_btn>a{display: block; width: 100%; height: 100%; color: #d3c3b8; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: capitalize;}
+.web_btn>a:hover,.web_btn>a:focus{background-color: #d3c3b8; color: #fff;}
+
+.port_btn{float: left; width: 100px; height: 30px; border-radius: 3px; border: 2px solid #d3c3b8;}
+.port_btn>a{display: block; width: 100%; height: 100%; color: #d3c3b8; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: capitalize;}
+.port_btn>a:hover,.port_btn>a:focus{background-color: #d3c3b8; color: #fff;}
+
+.pdf_btn{float: left; width: 180px; height: 30px; margin-left: 30px; margin-top: 20px; border-radius: 3px; background-color: #d3c3b8; border: 2px solid #d3c3b8;}
+.pdf_btn>a{display: block; width: 100%; height: 100%; color: #fff; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: uppercase;}
+.pdf_btn>a:hover,.pdf_btn>a:focus{background-color: #fff; color: #d3c3b8;}
+
+/* yogurt --------------------------------------------------------------------------- */
+.yogurt{width:100%; height: 500px; margin: auto;}
+.yogurt .img_area{background-image: url("../../img/menu_view.jpg");}
+
+.yogurt dl{width: 100%; height: 100%;}
+
+
+/* yogurtman popup ========================================================= */
+.y_popup_bg{display: none; position: fixed; z-index: 500; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.3);}
+.y_popup_bg .popup{position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; width: 90%; height: 90%; padding: 50px 20px; box-sizing: border-box; background-color: #fff; overflow: hidden;} 
+
+.y_popup_bg button{position: absolute; top: 2%; right: 1%; width: 20px; height: 20px; background-color: #fff; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/ex.png");}
+
+.y_popup_bg .port_area{width: 100%; height: 100%; overflow: hidden; overflow-y: scroll; padding-right: 100rem; background-color: #fff;}
+.y_popup_bg .port_area>ul{width: 100%; height: 100%; padding: 100px 30px; box-sizing: border-box;}
+/* yogurtman popup 내용 ========================================================= */
+/* title ------------------------------- */
+.y_popup_bg .title{width: 100%; height: auto;}
+.y_popup_bg .title>.logo{float: left; width: 40%; height: 100px; margin-top: 50px; margin-left: 6%; margin-right: 14%; background-position: 50% 50%; background-size: contain; background-repeat: no-repeat; background-image: url("../../img/y_logo.jpg");}
+.y_popup_bg .title>span{float: left; width: 40%; height: auto; color: #777; font-size: 1rem; line-height: 1.8;}
+.y_popup_bg .title>span>p{padding-top:20px; font-size: 0.8rem;}
+/* color ------------------------------- */
+.y_popup_bg .color{width: 100%; height: auto; margin-top: 200px;}
+.y_popup_bg .color>dl{width: 100%; height: 100px;}
+.y_popup_bg .color dt{width: 100%; height: 50px; font-size: 2rem; color: #555; text-transform: uppercase;}
+.y_popup_bg .color dd{width: 100%; height: 50px; font-size: 1rem; color: #777;}
+
+.y_popup_bg .main_color{float: left; width: 20%; height: 120px; margin-top: 50px;}
+.y_popup_bg .main_color>h4{width: 100%; height: 20px; font-size: 0.8rem; color: #777; text-transform: uppercase;}
+.y_popup_bg .main_color>.colorBox{width: 80px; height: 80px; background-color: #1b398f; box-shadow: 1px 1px 3px #777;}
+.y_popup_bg .main_color>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
+
+.y_popup_bg .sub_color_01{float: left; width: 10%; height: 120px; margin-top: 50px;}
+.y_popup_bg .sub_color_01>h4{width: 100%; height: 20px; font-size: 0.8rem; color: #777; text-transform: uppercase;}
+.y_popup_bg .sub_color_01>.colorBox{width: 80px; height: 80px; background-color: #AED7FA; box-shadow: 1px 1px 3px #777;}
+.y_popup_bg .sub_color_01>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
+
+.y_popup_bg .sub_color_02{float: left; width: 10%; height: 120px; margin-top: 50px;}
+.y_popup_bg .sub_color_02>.colorBox{width: 80px; height: 80px; margin-top: 20px; background-color: #333333; box-shadow: 1px 1px 3px #777;}
+.y_popup_bg .sub_color_02>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
+
+.y_popup_bg .sub_color_03{float: left; width: 10%; height: 120px; margin-top: 50px;}
+.y_popup_bg .sub_color_03>.colorBox{width: 80px; height: 80px; margin-top: 20px; background-color: #777777; box-shadow: 1px 1px 3px #777;}
+.y_popup_bg .sub_color_03>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
+
+.y_popup_bg .sub_color_04{float: left; width: 10%; height: 120px; margin-top: 50px;}
+.y_popup_bg .sub_color_04>.colorBox{width: 80px; height: 80px; margin-top: 20px; background-color: #F7F7F7; box-shadow: 1px 1px 3px #777;}
+.y_popup_bg .sub_color_04>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
+/* logo ------------------------------- */
+.y_popup_bg .favicon{width: 100%; height: auto; margin-top: 200px;}
+.y_popup_bg .logo_area{float: left; width: 30%; height: 150px; margin-right: 10%;}
+.y_popup_bg .logo_area>h4{width: 100%; height: 40px; font-size: 1.5rem; font-weight: normal; color: #555; text-transform: uppercase;}
+.y_popup_bg .logo_img{width: 100%; height: 100px; background-position: 50% 50%; background-size: contain; background-repeat: no-repeat; background-image: url("../../img/y_logo.jpg");}
+.y_popup_bg .favicon_area{float: left; width: 30%; height: 150px;}
+.y_popup_bg .favicon_area>h4{width: 100%; height: 40px; font-size: 1.5rem; font-weight: normal; color: #555; text-transform: uppercase;}
+.y_popup_bg .favicon_img{width: 100%; height: 110px; background-position: 50% 50%; background-size: contain; background-repeat: no-repeat; background-image: url("../../img/y_favicon.png");}
+/* ui ------------------------------- */
+.y_popup_bg .ui{width: 100%; height: auto; margin-top: 200px;}
+.y_popup_bg .ui_img{width: 100%; height: 800px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/yogurtman_web_img_rgb.png");}
+/* scroll arrow ------------------------------- */
+.y_popup_bg .scroll{position: absolute; bottom: 2%; right: 1%; width: 30px; height: 50px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; background-image: url("../../img/arrow.png"); animation: mouseMv 700ms linear alternate infinite;}
+@keyframes mouseMv {      0% {bottom: 30px;}    100%{bottom:20px; }   }
+
+
+/* yamaha ---------------------------------------------------------------------------- */
+.yamaha{width: 100%; height: 500px; margin: auto; margin-top: 100px;}
+.yamaha .img_area{background-image: url("../../img/piano02.jpg");}
+
+.yamaha dl{width: 100%; height: 100%;}
+
+/* yamaha popup ========================================================= */
+.h_popup_bg{display: none; position: fixed; z-index: 500; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.3);}
+.h_popup_bg .popup{position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; width: 90%; height: 90%; padding: 50px 20px; box-sizing: border-box; background-color: #fff; overflow: hidden;} 
+
+.h_popup_bg button{position: absolute; top: 2%; right: 1%; width: 20px; height: 20px; background-color: #fff; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/ex.png");}
+
+.h_popup_bg .port_area{width: 100%; height: 100%; overflow: hidden; overflow-y: scroll; padding-right: 100rem; background-color: #fff;}
+.h_popup_bg .port_area>ul{width: 100%; height: 100%; padding: 100px 30px; box-sizing: border-box;}
+/* yamaha popup 내용 ========================================================= */
+/* title ------------------------------- */
+.h_popup_bg .title{width: 100%; height: auto;}
+.h_popup_bg .title>.logo{float: left; width: 40%; height: 100px; margin-top: 50px; margin-left: 6%; margin-right: 14%; background-position: 50% 50%; background-size: 90%; background-repeat: no-repeat; background-image: url("../../img/h_logo_w.png"); background-color: #333;}
+.h_popup_bg .title>span{float: left; width: 40%; height: auto; color: #777; font-size: 1rem; line-height: 1.8;}
+.h_popup_bg .title>span>p{padding-top:20px; font-size: 0.8rem;}
+/* color ------------------------------- */
+.h_popup_bg .color{width: 100%; height: auto; margin-top: 200px; text-transform: uppercase;}
+.h_popup_bg .color>dl{width: 100%; height: 100px;}
+.h_popup_bg .color dt{width: 100%; height: 50px; font-size: 2rem; color: #555; text-transform: uppercase;}
+.h_popup_bg .color dd{width: 100%; height: 50px; font-size: 1rem; color: #777;}
+
+.h_popup_bg .main_color{float: left; width: 20%; height: 120px; margin-top: 50px;}
+.h_popup_bg .main_color>h4{width: 100%; height: 20px; font-size: 0.8rem; color: #777; text-transform: uppercase;}
+.h_popup_bg .main_color>.colorBox{width: 80px; height: 80px; background-color: #333; box-shadow: 1px 1px 3px #777;}
+.h_popup_bg .main_color>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
+
+.h_popup_bg .sub_color_01{float: left; width: 10%; height: 120px; margin-top: 50px;}
+.h_popup_bg .sub_color_01>h4{width: 100%; height: 20px; font-size: 0.8rem; color: #777; text-transform: uppercase;}
+.h_popup_bg .sub_color_01>.colorBox{width: 80px; height: 80px; background-color: #fff; box-shadow: 1px 1px 3px #777;}
+.h_popup_bg .sub_color_01>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
+
+.h_popup_bg .sub_color_02{float: left; width: 10%; height: 120px; margin-top: 50px;}
+.h_popup_bg .sub_color_02>.colorBox{width: 80px; height: 80px; margin-top: 20px; background-color: #333333; box-shadow: 1px 1px 3px #777;}
+.h_popup_bg .sub_color_02>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
+
+.h_popup_bg .sub_color_03{float: left; width: 10%; height: 120px; margin-top: 50px;}
+.h_popup_bg .sub_color_03>.colorBox{width: 80px; height: 80px; margin-top: 20px; background-color: #777777; box-shadow: 1px 1px 3px #777;}
+.h_popup_bg .sub_color_03>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
+
+.h_popup_bg .sub_color_04{float: left; width: 10%; height: 120px; margin-top: 50px;}
+.h_popup_bg .sub_color_04>.colorBox{width: 80px; height: 80px; margin-top: 20px; background-color: #F7F7F7; box-shadow: 1px 1px 3px #777;}
+.h_popup_bg .sub_color_04>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
+/* logo ------------------------------- */
+.h_popup_bg .favicon{width: 100%; height: auto; margin-top: 200px;}
+.h_popup_bg .logo_area{float: left; width: 30%; height: 150px; margin-right: 10%;}
+.h_popup_bg .logo_area>h4{width: 100%; height: 40px; font-size: 1.5rem; font-weight: normal; color: #555; text-transform: uppercase;}
+.h_popup_bg .logo_img{width: 100%; height: 100px; background-position: 50% 50%; background-size: 90%; background-repeat: no-repeat; background-image: url("../../img/h_logo_w.png"); background-color: #333;}
+.h_popup_bg .favicon_area{float: left; width: 30%; height: 150px;}
+.h_popup_bg .favicon_area>h4{width: 100%; height: 40px; font-size: 1.5rem; font-weight: normal; color: #555; text-transform: uppercase;}
+.h_popup_bg .favicon_img{width: 100%; height: 110px; background-position: 50% 50%; background-size: contain; background-repeat: no-repeat; background-image: url("../../img/h_favicon.png");}
+/* ui ------------------------------- */
+.h_popup_bg .ui{width: 100%; height: auto; margin-top: 200px;}
+.h_popup_bg .ui_img{width: 100%; height: 800px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/yamaha_web_img.png");}
+/* scroll arrow ------------------------------- */
+.h_popup_bg .scroll{position: absolute; bottom: 2%; right: 1%; width: 30px; height: 50px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; background-image: url("../../img/arrow.png"); animation: mouseMv 700ms linear alternate infinite;}
+@keyframes mouseMv {      0% {bottom: 30px;}    100%{bottom:20px; }   }
+
+
+
+/* casamia --------------------------------------------------------------------------- */
+.casamia{width: 100%; height: 500px; margin: auto; margin-top: 100px;}
+.casamia .img_area{background-image: url("../../img/mellow_03.jpg");}
+
+.casamia dl{width: 100%; height: 100%;}
+
+/* casamia popup ========================================================= */
+.c_popup_bg{display: none; position: fixed; z-index: 500; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.3);}
+.c_popup_bg .popup{position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; width: 90%; height: 90%; padding: 50px 20px; box-sizing: border-box; background-color: #fff; overflow: hidden;} 
+
+.c_popup_bg button{position: absolute; top: 2%; right: 1%; width: 20px; height: 20px; background-color: #fff; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/ex.png");}
+
+.c_popup_bg .port_area{width: 100%; height: 100%; overflow: hidden; overflow-y: scroll; padding-right: 100rem; background-color: #fff;}
+.c_popup_bg .port_area>ul{width: 100%; height: 100%; padding: 100px 30px; box-sizing: border-box;}
+/* casamia popup 내용 ========================================================= */
+/* title ------------------------------- */
+.c_popup_bg .title{width: 100%; height: auto;}
+.c_popup_bg .title>.logo{float: left; width: 40%; height: 30px; margin-top: 80px; margin-left: 6%; margin-right: 14%; background-position: 50% 50%; background-size: contain; background-repeat: no-repeat; background-image: url("../../img/c_logo.png");}
+.c_popup_bg .title>span{float: left; width: 40%; height: auto; color: #777; font-size: 1rem; line-height: 1.8;}
+.c_popup_bg .title>span>p{padding-top:20px; font-size: 0.8rem;}
+/* color ------------------------------- */
+.c_popup_bg .color{width: 100%; height: auto; margin-top: 200px;}
+.c_popup_bg .color>dl{width: 100%; height: 100px;}
+.c_popup_bg .color dt{width: 100%; height: 50px; font-size: 2rem; color: #555; text-transform: uppercase;}
+.c_popup_bg .color dd{width: 100%; height: 50px; font-size: 1rem; color: #777;}
+
+.c_popup_bg .main_color{float: left; width: 20%; height: 120px; margin-top: 50px;}
+.c_popup_bg .main_color>h4{width: 100%; height: 20px; font-size: 0.8rem; color: #777; text-transform: uppercase;}
+.c_popup_bg .main_color>.colorBox{width: 80px; height: 80px; background-color: #1b398f; box-shadow: 1px 1px 3px #777;}
+.c_popup_bg .main_color>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
+
+.c_popup_bg .sub_color_01{float: left; width: 10%; height: 120px; margin-top: 50px;}
+.c_popup_bg .sub_color_01>h4{width: 100%; height: 20px; font-size: 0.8rem; color: #777; text-transform: uppercase;}
+.c_popup_bg .sub_color_01>.colorBox{width: 80px; height: 80px; background-color: #AED7FA; box-shadow: 1px 1px 3px #777;}
+.c_popup_bg .sub_color_01>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
+
+.c_popup_bg .sub_color_02{float: left; width: 10%; height: 120px; margin-top: 50px;}
+.c_popup_bg .sub_color_02>.colorBox{width: 80px; height: 80px; margin-top: 20px; background-color: #333333; box-shadow: 1px 1px 3px #777;}
+.c_popup_bg .sub_color_02>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
+
+.c_popup_bg .sub_color_03{float: left; width: 10%; height: 120px; margin-top: 50px;}
+.c_popup_bg .sub_color_03>.colorBox{width: 80px; height: 80px; margin-top: 20px; background-color: #777777; box-shadow: 1px 1px 3px #777;}
+.c_popup_bg .sub_color_03>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
+
+.c_popup_bg .sub_color_04{float: left; width: 10%; height: 120px; margin-top: 50px;}
+.c_popup_bg .sub_color_04>.colorBox{width: 80px; height: 80px; margin-top: 20px; background-color: #F7F7F7; box-shadow: 1px 1px 3px #777;}
+.c_popup_bg .sub_color_04>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
+
+
+.c_popup_bg .favicon{width: 100%; height: auto; margin-top: 200px;}
+.c_popup_bg .logo_area{float: left; width: 30%; height: 150px; margin-right: 10%;}
+.c_popup_bg .logo_area>h4{width: 100%; height: 40px; font-size: 1.5rem; font-weight: normal; color: #555; text-transform: uppercase;}
+.c_popup_bg .logo_img{width: 100%; height: 30px; margin-top: 60px; background-position: 50% 50%; background-size: contain; background-repeat: no-repeat; background-image: url("../../img/c_logo.png");}
+.c_popup_bg .favicon_area{float: left; width: 30%; height: 150px;}
+.c_popup_bg .favicon_area>h4{width: 100%; height: 40px; font-size: 1.5rem; font-weight: normal; color: #555; text-transform: uppercase;}
+.c_popup_bg .favicon_img{width: 100%; height: 60px; margin-top: 30px; background-position: 50% 50%; background-size: contain; background-repeat: no-repeat; background-image: url("../../img/c_favicon.png");}
+
+.c_popup_bg .ui{width: 100%; height: auto; margin-top: 200px;}
+.c_popup_bg .ui_img{width: 100%; height: 500px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/yogurtman_web_img_rgb.png");}
+
+
+.c_popup_bg .scroll{position: absolute; bottom: 2%; right: 1%; width: 30px; height: 50px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; background-image: url("../../img/arrow.png"); animation: mouseMv 700ms linear alternate infinite;}
+@keyframes mouseMv {      0% {bottom: 30px;}    100%{bottom:20px; }   }
+
+/* likeBox ------------------------------------------------ */
+#likeBox{width: 95%; min-width: 350px; height: auto; margin: auto; padding-bottom: 200px;}
+#likeBox>ul{width: 710px; height: auto; margin: auto;}
+#likeBox li{float: left; width: 200px; height: 200px; margin-right: 30px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; transition: all 400ms ease; opacity: 0.7;}
+#likeBox li:nth-child(3n){margin-right: 0;}
+#likeBox li:nth-child(-n+9){margin-bottom: 50px;}
+#likeBox li:nth-child(n+7){display: none;}
+#likeBox li>a{display: block; width: 100%; height: 100%;}
+#likeBox li:hover,#likeBox li:focus{opacity: 1;}
+#likeBox>button{display: block; width: 100px; height: 40px; margin: auto; margin-top: 100px; border-radius: 5px; border: 2px solid #aaa; color:#aaa; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; background-color: transparent;}
+
+.like_pop{display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);}
+.like_popup{position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; padding: 50px; box-sizing: border-box;  width: 60%; height: 80%; background-color: #fff;}
+.like_popup>button{position: absolute; top: 2%; right: 1%; width: 20px; height: 20px; background-color: #fff; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/ex.png");}
+.like_pic{width: 100%; height: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;}
+
+
+/* footer ============================================================================ */
+#footBox{width: 100%; min-width: 350px; height: 300px; padding-top: 100px; box-sizing: border-box; background-color: #f2eedd;}
+#footBox>span{display: block; width: 100%; height: 20%; text-align: center; font-size: 1.3rem; font-weight: bold; color: #555;}
+#footBox>em{display: block; width: 100%; height: 50%; text-align: center; line-height: 2; font-size: 1rem; color: #777; font-style: normal;}
+#footBox>p{width: 100%; height: 30%; text-align: center; font-size: 1rem; color: #777; font-weight: bold; text-transform: uppercase;}
+
+
+}
+
+@media screen and (max-width:700px) and (min-width:450px){
+  /* likeBox ------------------------------------------------ */
+#likeBox{width: 95%; min-width: 350px; height: auto; margin: auto; padding-bottom: 200px;}
+#likeBox>ul{width: 400px; height: auto; margin: auto;}
+#likeBox li{float: left; width: 190px; height: 190px; margin-right: 20px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; transition: all 400ms ease; opacity: 0.7;}
+#likeBox li:nth-child(2n){margin-right: 0;}
+#likeBox li:nth-child(3){margin-right: 20px;}
+#likeBox li:nth-child(9){margin-right: 20px;}
+#likeBox li:nth-child(-n+9){margin-bottom: 20px;}
+#likeBox li:nth-child(n+7){display: none;}
+#likeBox li>a{display: block; width: 100%; height: 100%;}
+#likeBox li:hover,#likeBox li:focus{opacity: 1;}
+#likeBox>button{display: block; width: 100px; height: 40px; margin: auto; margin-top: 100px; border-radius: 5px; border: 2px solid #aaa; color:#aaa; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; background-color: transparent;}
+}
+
+@media screen and (max-width:449px){
+
+  /* viewBox ====================================================================== */
+#viewBox{width: 100%; min-width: 350px; height: 100%; padding-top: 100px; font-size: 2rem;}
+.view_inner{position: relative; width: 100%; height: 100%; margin: auto; background-color: #f2eedd;}
+.view_inner>span{display: none; position: absolute; top: 40%; width: 100%; height: auto; text-align: center; font-size: 3.8rem; font-weight: bold; color: #555; text-transform: uppercase;}
+.view_inner>p{display: none; position: absolute; top: 65%; width: 100%; height: auto; font-size: 1rem; text-align: center; color: #777; text-transform: capitalize;}
+
+
+/* likeBox ------------------------------------------------ */
+#likeBox{width: 95%; min-width: 350px; height: auto; margin: auto; padding-bottom: 200px;}
+#likeBox>ul{width: 250px; height: auto; margin: auto;}
+#likeBox li{width: 250px; height: 250px; margin-bottom: 30px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; transition: all 400ms ease; opacity: 0.7;}
+#likeBox li:nth-child(1n){margin-right: 0;}
+#likeBox li:nth-child(n+7){display: none;}
+#likeBox li>a{display: block; width: 100%; height: 100%;}
+#likeBox li:hover,#likeBox li:focus{opacity: 1;}
+#likeBox>button{display: block; width: 100px; height: 40px; margin: auto; margin-top: 100px; border-radius: 5px; border: 2px solid #aaa; color:#aaa; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; background-color: transparent;}
 
 }

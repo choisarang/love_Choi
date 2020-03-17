@@ -70,16 +70,22 @@
     const viewSpan = viewInner.children('span');
     const viewP = viewInner.children('p');
 
+    $(window).scroll(function(){
+      let scroll = $(window).scrollTop();
+      if (scroll){
+        viewSpan.fadeIn(4000);
+        viewP.fadeIn(6000);
+      }
+    })
     viewInner.on('mouseenter', function(){
-      viewSpan.fadeIn(2500);
-      viewP.fadeIn(5000);
+      
     });
 
 
   // mainBox -----------------------------------------------------------------------
   const mainBox = $('#mainBox');
 
-  // proflie 1개씩 나오기
+  // proflie 나오게
 
   const proflie = mainBox.find('.proflie');
   const proPic = proflie.children('.pro_pic');
@@ -268,6 +274,15 @@ proflie.on('mouseenter', function(){
       });
 
     };
+
+
+    // btn 누르면 보이기
+    const likeBtn = likeBox.children('button');
+
+    likeBtn.on('click', function(){
+      likeUl.children('li').fadeIn();
+      $(this).fadeOut();
+    })
 
     // website 이동
     // const webLink = $('.web_btn');
