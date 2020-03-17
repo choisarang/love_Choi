@@ -83,6 +83,7 @@
 
   const proflie = mainBox.find('.proflie');
   const proPic = proflie.children('.pro_pic');
+  const mouse = proPic.find('.mouse');
   const proText = proflie.children('.pro_text');
 
   let mainBox_offset = mainBox.offset().top;
@@ -91,20 +92,8 @@
 proflie.on('mouseenter', function(){
   $(this).addClass('action');
   proText.fadeIn(4000);
+  mouse.fadeOut();
 });
-
-  // $(window).scroll(function(){
-  //   let scroll = $(window).scrollTop();
-  //   if(scroll <= mainBox_offset + (4000)){
-  //     // proP01.fadeIn(500);
-  //     // proP02.fadeIn(600);
-  //     // proP03.fadeIn(700);
-  //     // proP04.fadeIn(800);
-  //     // proP05.fadeIn(900);
-  //     // proP06.fadeIn(1000);
-  //     // proP07.fadeIn(1100);
-  //   }
-  // })
 
   // // 클릭하면 펼쳐지게
 

@@ -1,9 +1,13 @@
 /* main.css */
 
+
+
+
 html, body{background-color: #fcfcfc; font-family: 'NanumGothic';}
 #wrap{width: 100%; height: 100%;}
 #wrap a{outline: none;}
 
+@media screen and (min-width:971px) {
 /* headBox ====================================================================== */
 #headBox{position: fixed; z-index: 300; width: 100%; min-height: 100px; height: auto; background-color: rgba(255,255,255,0.7);}
 h1{float: left; width: 20vw; height: 50px; margin-top: 25px; margin-left: 50px;}
@@ -11,7 +15,7 @@ h1>a{display: block; width: 100%; height: 100%; background-repeat: no-repeat; ba
 
 #gnb{float: left; width: 70vw; height: 100%; margin: auto;}
 #gnb>ul{width: 100%; height: auto;}
-#gnb li{float: left; width: 100px; height: 100px; margin-left: 12vw;}
+#gnb li{float: left; width: 100px; height: 100px; margin-left: 10vw;}
 #gnb li>a{display: block; width: 100%; height: 100%; font-size: 20px; line-height: 100px; text-align: center; text-transform: capitalize; color: #555;}
 
 #gnb a.active{font-weight: bold;}
@@ -25,23 +29,27 @@ h1>a{display: block; width: 100%; height: 100%; background-repeat: no-repeat; ba
 .view_inner>p{display: none; position: absolute; top: 55%; width: 100%; height: auto; font-size: 1rem; text-align: center; color: #777; text-transform: capitalize;}
 
 /* mainBox ====================================================================== */
-#mainBox{width: 1000px; height: auto; margin: auto; box-sizing: border-box;}
+#mainBox{width: 100%; height: auto; margin: auto; box-sizing: border-box;}
 h2{width: 100%; height: 50px; font-size: 2rem; text-transform: capitalize; color: #555; padding-top: 200px; margin-bottom: 200px; border-bottom: 1px solid #777;}
 h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;}
 
 /* proBox ------------------------------------------------ */
-#proBox{width: 100%; height: auto;}
+#proBox{width: 95%; height: auto; margin: auto;}
 
 
 .proflie{width: 300px; height: 500px; margin: auto; transform: translateX(0);}
-.proflie.action{width: 100%; transform: translateX(5%); transition: all 1500ms ease;}
+.proflie.action{width: 900px; transform: translateX(5%); transition: all 1500ms ease;}
 
 
 .pro_pic{float: left; width: 300px; height: 100%;}
-.pic{width: 100%; height: 300px; border-radius: 100%; background-color: #f2eedd;}
+
+.pic{position: relative; width: 100%; height: 300px; border-radius: 100%; background-color: #f2eedd;}
+.mouse{position: absolute; top: 50%; right: 30px; margin: auto; z-index: 10; width: 30px; height: 30px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/mouse.png"); animation: mouseMv 700ms linear alternate infinite;}
+@keyframes mouseMv {      0% {bottom: 30px;}    100%{bottom:20px; }   }
+
 .name{width: 100%; height: 150px; font-size: 3rem; font-weight: bold; text-transform: capitalize; text-align: center; line-height: 3; color: #555;}
 
-.pro_text{display: none; float: right; width: 500px; height: 100%; font-size: 1rem; color: #777; line-height: 3.5; text-align: center;}
+.pro_text{display: none; float: right; width: 400px; height: 100%; font-size: 1rem; color: #777; line-height: 3.5; text-align: center;}
 .pro_text>span{font-weight: bold;}
 
 .info{width: 100%; height: auto; padding-top: 100px; margin-bottom: 100px;}
@@ -61,26 +69,28 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 .pro_img h3>a{display: block;}
 .pro_img h3>a:hover,
 .pro_img h3>a:focus{color: #d3c3b8;}
-.mbti{float: left; width: 45%; height: auto; margin-right: 20%; margin-bottom: 100px;}
-.mbti_img{display: none; width: 100%; height: 300px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/mbti.png");}
+.mbti{width: 100%; height: auto; margin-right: 20%; margin-bottom: 100px;}
+.mbti_img{display: none; width: 80%; height: 300px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/mbti.png");}
 
-.character{float: left; width: 30%; height: auto;}
-.character_img{display: none; width: 100%; height: 300px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/character.png");}
+.character{width: 100%; height: auto; margin-bottom: 100px;}
+.character_img{display: none; width: 80%; height: 300px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/character.png");}
 
-.skills{float: left; width: 80%; height: auto;}
-.skills_img{display: none; width: 100%; height: 400px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/skills.png");}
+.skills{width: 100%; height: auto; margin-bottom: 100px;}
+.skills_img{display: none; width: 80%; height: 400px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/skills.png");}
 
 
 /* portBox ------------------------------------------------ */
-#portBox{width: 100%; height: auto; margin: auto;}
+#portBox{width: 95%; height: auto; margin: auto;}
+.imgBox{float: left; position: relative; top: 0; width: 430px; height: 280px;}
+.img_area{position: absolute; top: 0; left: 0; z-index: 10; width: 400px; height: 250px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;}
+.img_bg{position: absolute; bottom: 0; right: 0; width: 400px; height: 250px; background-color: #f2eedd;}
+
+.textBox{float: right; width: 300px; height: 200px; margin-top: 50px;}
 
 /* yogurt --------------------------------------------------------------------------- */
-.yogurt{width: 100%; height: 500px;}
-.yogurt .imgBox{float: left; position: relative; top: 0; width: 520px; height: 300px;}
-.yogurt .img_area{position: absolute; top: 0; left: 0; z-index: 10; width: 485px; height: 265px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../../img/menu_view.jpg");}
-.yogurt .img_bg{position: absolute; bottom: 0; right: 0; width: 485px; height: 265px; background-color: #f2eedd;}
+.yogurt{width:900px; height: 500px; margin: auto;}
+.yogurt .img_area{background-image: url("../../img/menu_view.jpg");}
 
-.yogurt .textBox{float: right; width: 40%; height: 200px; margin-top: 50px;}
 .yogurt dl{width: 100%; height: 100%;}
 .yogurt .textBox dt{width: auto; height: auto; margin-bottom: 30px; font-size: 35px; text-transform: uppercase; font-weight: bold; color: #555;}
 .yogurt .textBox dt>span{color: #d3c3b8;}
@@ -157,12 +167,12 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 
 
 /* yamaha ---------------------------------------------------------------------------- */
-.yamaha{width: 100%; height: 500px;}
-.yamaha .imgBox{float: left; position: relative; top: 0; width: 520px; height: 300px;}
-.yamaha .img_area{position: absolute; top: 0; left: 0; z-index: 10; width: 485px; height: 265px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../../img/piano02.jpg");}
-.yamaha .img_bg{position: absolute; bottom: 0; right: 0; width: 485px; height: 265px; background-color: #f2eedd;}
+.yamaha{width: 900px; height: 500px; margin: auto;}
+/* .yamaha .imgBox{float: left; position: relative; top: 0; width: 520px; height: 300px;} */
+.yamaha .img_area{background-image: url("../../img/piano02.jpg");}
 
-.yamaha .textBox{float: right; width: 40%; height: 200px; margin-top: 50px;}
+
+/* .yamaha .textBox{float: right; width: 40%; height: 200px; margin-top: 50px;} */
 .yamaha dl{width: 100%; height: 100%;}
 .yamaha .textBox dt{width: auto; height: auto; margin-bottom: 30px; font-size: 35px; text-transform: uppercase; font-weight: bold; color: #555;}
 .yamaha .textBox dt>span{color: #d3c3b8;}
@@ -241,12 +251,9 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 
 
 /* casamia --------------------------------------------------------------------------- */
-.casamia{width: 100%; height: 500px;}
-.casamia .imgBox{float: left; position: relative; top: 0; width: 520px; height: 300px;}
-.casamia .img_area{position: absolute; top: 0; left: 0; z-index: 10; width: 485px; height: 265px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; background-image: url("../../img/mellow_03.jpg");}
-.casamia .img_bg{position: absolute; bottom: 0; right: 0; width: 485px; height: 265px; background-color: #f2eedd;}
+.casamia{width: 900px; height: 500px; margin: auto;}
+.casamia .img_area{background-image: url("../../img/mellow_03.jpg");}
 
-.casamia .textBox{float: right; width: 40%; height: 200px; margin-top: 50px;}
 .casamia dl{width: 100%; height: 100%;}
 .casamia .textBox dt{width: auto; height: auto; margin-bottom: 30px; font-size: 35px; text-transform: uppercase; font-weight: bold; color: #555;}
 .casamia .textBox dt>span{color: #d3c3b8;}
@@ -257,7 +264,7 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 .casamia .web_btn>a{display: block; width: 100%; height: 100%; color: #d3c3b8; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: capitalize;}
 .casamia .web_btn>a:hover,.web_btn>a:focus{background-color: #d3c3b8; color: #fff;}
 
-.casamia .port_btn{float: left; width: 100px; height: 30px; border-radius: 3px; border: 2px solid #d3c3b8;}
+.casamia .port_btn{float: left; width: 100px; height: 30px; margin-right: 50px; border-radius: 3px; border: 2px solid #d3c3b8;}
 .casamia .port_btn>a{display: block; width: 100%; height: 100%; color: #d3c3b8; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: capitalize;}
 .casamia .port_btn>a:hover,.port_btn>a:focus{background-color: #d3c3b8; color: #fff;}
 
@@ -326,11 +333,11 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 @keyframes mouseMv {      0% {bottom: 30px;}    100%{bottom:20px; }   }
 
 /* likeBox ------------------------------------------------ */
-#likeBox{width: 100%; height: auto; padding-bottom: 200px;}
-#likeBox>ul{width: 100%; height: 100%;}
-#likeBox li{float: left; width: 210px; height: 210px; margin-right: 50px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; transition: all 400ms ease; opacity: 0.7;}
-#likeBox li:nth-child(4n){margin-right: 0;}
-#likeBox li:nth-child(-n+8){margin-bottom: 50px;}
+#likeBox{width: 95%; height: auto; margin: auto; padding-bottom: 200px;}
+#likeBox>ul{width: 900px; height: auto; margin: auto;}
+#likeBox li{float: left; width: 260px; height: 260px; margin-right: 60px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; transition: all 400ms ease; opacity: 0.7;}
+#likeBox li:nth-child(3n){margin-right: 0;}
+#likeBox li:nth-child(-n+9){margin-bottom: 50px;}
 #likeBox li>a{display: block; width: 100%; height: 100%;}
 #likeBox li:hover,#likeBox li:focus{opacity: 1;}
 
@@ -345,3 +352,11 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 #footBox>span{display: block; width: 100%; height: 20%; text-align: center; font-size: 1.3rem; font-weight: bold; color: #555;}
 #footBox>em{display: block; width: 100%; height: 50%; text-align: center; line-height: 2; font-size: 1rem; color: #777; font-style: normal;}
 #footBox>p{width: 100%; height: 30%; text-align: center; font-size: 1rem; color: #777; font-weight: bold; text-transform: uppercase;}
+
+
+
+} 
+
+@media screen and (max-width:970px) {
+
+}
