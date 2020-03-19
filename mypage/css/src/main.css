@@ -86,27 +86,29 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 
 .textBox{float: right; width: 300px; height: 200px; margin-top: 50px;}
 
+.textBox dt{width: auto; height: auto; margin-bottom: 30px; font-size: 35px; text-transform: uppercase; font-weight: bold; color: #555;}
+.textBox dt>span{color: #d3c3b8;}
+.textBox dd{width: auto; height: auto; font-size: 15px; color: #777; text-transform: capitalize;}
+.textBox dd>span{font-size: 13px;} 
+
+.web_btn{float: left; width: 100px; height: 30px; margin-right: 30px; border-radius: 3px; border: 2px solid #d3c3b8;}
+.web_btn>a{display: block; width: 100%; height: 100%; color: #d3c3b8; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: capitalize;}
+.web_btn>a:hover,.web_btn>a:focus{background-color: #d3c3b8; color: #fff;}
+
+.port_btn{float: left; width: 100px; height: 30px; margin-right: 50px; border-radius: 3px; border: 2px solid #d3c3b8;}
+.port_btn>a{display: block; width: 100%; height: 100%; color: #d3c3b8; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: capitalize;}
+.port_btn>a:hover,.port_btn>a:focus{background-color: #d3c3b8; color: #fff;}
+
+.pdf_btn{float: left; width: 210px; height: 30px; margin-top: 20px; border-radius: 3px; background-color: #d3c3b8; border: 2px solid #d3c3b8;}
+.pdf_btn>a{display: block; width: 100%; height: 100%; color: #fff; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: capitalize;}
+.pdf_btn>a:hover,.pdf_btn>a:focus{background-color: #fff; color: #d3c3b8;}
+
 /* yogurt --------------------------------------------------------------------------- */
 .yogurt{width:900px; height: 500px; margin: auto;}
 .yogurt .img_area{background-image: url("../../img/menu_view.jpg");}
 
 .yogurt dl{width: 100%; height: 100%;}
-.yogurt .textBox dt{width: auto; height: auto; margin-bottom: 30px; font-size: 35px; text-transform: uppercase; font-weight: bold; color: #555;}
-.yogurt .textBox dt>span{color: #d3c3b8;}
-.yogurt .textBox dd{width: auto; height: auto; font-size: 15px; color: #777; text-transform: capitalize;}
-.yogurt .textBox dd>span{font-size: 13px;} 
 
-.yogurt .web_btn{float: left; width: 100px; height: 30px; margin-right: 30px; border-radius: 3px; border: 2px solid #d3c3b8;}
-.yogurt .web_btn>a{display: block; width: 100%; height: 100%; color: #d3c3b8; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: capitalize;}
-.yogurt .web_btn>a:hover,.web_btn>a:focus{background-color: #d3c3b8; color: #fff;}
-
-.yogurt .port_btn{float: left; width: 100px; height: 30px; margin-right: 50px; border-radius: 3px; border: 2px solid #d3c3b8;}
-.yogurt .port_btn>a{display: block; width: 100%; height: 100%; color: #d3c3b8; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: capitalize;}
-.yogurt .port_btn>a:hover,.port_btn>a:focus{background-color: #d3c3b8; color: #fff;}
-
-.yogurt .pdf_btn{float: left; width: 180px; height: 30px; margin-top: 20px; border-radius: 3px; background-color: #d3c3b8; border: 2px solid #d3c3b8;}
-.yogurt .pdf_btn>a{display: block; width: 100%; height: 100%; color: #fff; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: uppercase;}
-.yogurt .pdf_btn>a:hover,.pdf_btn>a:focus{background-color: #fff; color: #d3c3b8;}
 
 /* yogurtman popup ========================================================= */
 .y_popup_bg{display: none; position: fixed; z-index: 500; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.3);}
@@ -173,23 +175,6 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 
 /* .yamaha .textBox{float: right; width: 40%; height: 200px; margin-top: 50px;} */
 .yamaha dl{width: 100%; height: 100%;}
-.yamaha .textBox dt{width: auto; height: auto; margin-bottom: 30px; font-size: 35px; text-transform: uppercase; font-weight: bold; color: #555;}
-.yamaha .textBox dt>span{color: #d3c3b8;}
-.yamaha .textBox dd{width: auto; height: auto; font-size: 15px; color: #777; text-transform: capitalize;}
-.yamaha .textBox dd>span{font-size: 13px;} 
-
-.yamaha .web_btn{float: left; width: 100px; height: 30px; margin-right: 30px; border-radius: 3px; border: 2px solid #d3c3b8;}
-.yamaha .web_btn>a{display: block; width: 100%; height: 100%; color: #d3c3b8; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: capitalize;}
-.yamaha .web_btn>a:hover,.web_btn>a:focus{background-color: #d3c3b8; color: #fff;}
-
-.yamaha .port_btn{float: left; width: 100px; height: 30px; margin-right: 50px; border-radius: 3px; border: 2px solid #d3c3b8;}
-.yamaha .port_btn>a{display: block; width: 100%; height: 100%; color: #d3c3b8; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: capitalize;}
-.yamaha .port_btn>a:hover,.port_btn>a:focus{background-color: #d3c3b8; color: #fff;}
-
-.yamaha .pdf_btn{float: left; width: 180px; height: 30px; margin-top: 20px; border-radius: 3px; background-color: #d3c3b8; border: 2px solid #d3c3b8;}
-.yamaha .pdf_btn>a{display: block; width: 100%; height: 100%; color: #fff; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: uppercase;}
-.yamaha .pdf_btn>a:hover,.pdf_btn>a:focus{background-color: #fff; color: #d3c3b8;}
-
 
 /* yamaha popup ========================================================= */
 .h_popup_bg{display: none; position: fixed; z-index: 500; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.3);}
@@ -254,24 +239,6 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 .casamia .img_area{background-image: url("../../img/mellow_03.jpg");}
 
 .casamia dl{width: 100%; height: 100%;}
-.casamia .textBox dt{width: auto; height: auto; margin-bottom: 30px; font-size: 35px; text-transform: uppercase; font-weight: bold; color: #555;}
-.casamia .textBox dt>span{color: #d3c3b8;}
-.casamia .textBox dd{width: auto; height: auto; font-size: 15px; color: #777; text-transform: capitalize;}
-.casamia .textBox dd>span{font-size: 13px;} 
-
-.casamia .web_btn{float: left; width: 100px; height: 30px; margin-right: 30px; border-radius: 3px; border: 2px solid #d3c3b8;}
-.casamia .web_btn>a{display: block; width: 100%; height: 100%; color: #d3c3b8; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: capitalize;}
-.casamia .web_btn>a:hover,.web_btn>a:focus{background-color: #d3c3b8; color: #fff;}
-
-.casamia .port_btn{float: left; width: 100px; height: 30px; margin-right: 50px; border-radius: 3px; border: 2px solid #d3c3b8;}
-.casamia .port_btn>a{display: block; width: 100%; height: 100%; color: #d3c3b8; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: capitalize;}
-.casamia .port_btn>a:hover,.port_btn>a:focus{background-color: #d3c3b8; color: #fff;}
-
-.casamia .pdf_btn{float: left; width: 180px; height: 30px; margin-top: 20px; border-radius: 3px; background-color: #d3c3b8; border: 2px solid #d3c3b8;}
-.casamia .pdf_btn>a{display: block; width: 100%; height: 100%; color: #fff; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: uppercase;}
-.casamia .pdf_btn>a:hover,.pdf_btn>a:focus{background-color: #fff; color: #d3c3b8;}
-
-
 
 /* casamia popup ========================================================= */
 .c_popup_bg{display: none; position: fixed; z-index: 500; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.3);}
@@ -295,25 +262,22 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 
 .c_popup_bg .main_color{float: left; width: 20%; height: 120px; margin-top: 50px;}
 .c_popup_bg .main_color>h4{width: 100%; height: 20px; font-size: 0.8rem; color: #777; text-transform: uppercase;}
-.c_popup_bg .main_color>.colorBox{width: 80px; height: 80px; background-color: #1b398f; box-shadow: 1px 1px 3px #777;}
+.c_popup_bg .main_color>.colorBox{width: 80px; height: 80px; background-color: #f3cf1d; box-shadow: 1px 1px 3px #777;}
 .c_popup_bg .main_color>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
 
 .c_popup_bg .sub_color_01{float: left; width: 10%; height: 120px; margin-top: 50px;}
 .c_popup_bg .sub_color_01>h4{width: 100%; height: 20px; font-size: 0.8rem; color: #777; text-transform: uppercase;}
-.c_popup_bg .sub_color_01>.colorBox{width: 80px; height: 80px; background-color: #AED7FA; box-shadow: 1px 1px 3px #777;}
+.c_popup_bg .sub_color_01>.colorBox{width: 80px; height: 80px; background-color: #999999; box-shadow: 1px 1px 3px #777;}
 .c_popup_bg .sub_color_01>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
 
 .c_popup_bg .sub_color_02{float: left; width: 10%; height: 120px; margin-top: 50px;}
-.c_popup_bg .sub_color_02>.colorBox{width: 80px; height: 80px; margin-top: 20px; background-color: #333333; box-shadow: 1px 1px 3px #777;}
+.c_popup_bg .sub_color_02>.colorBox{width: 80px; height: 80px; margin-top: 20px; background-color: #efefef; box-shadow: 1px 1px 3px #777;}
 .c_popup_bg .sub_color_02>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
 
 .c_popup_bg .sub_color_03{float: left; width: 10%; height: 120px; margin-top: 50px;}
-.c_popup_bg .sub_color_03>.colorBox{width: 80px; height: 80px; margin-top: 20px; background-color: #777777; box-shadow: 1px 1px 3px #777;}
+.c_popup_bg .sub_color_03>.colorBox{width: 80px; height: 80px; margin-top: 20px; background-color: #ffffff; box-shadow: 1px 1px 3px #777;}
 .c_popup_bg .sub_color_03>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
 
-.c_popup_bg .sub_color_04{float: left; width: 10%; height: 120px; margin-top: 50px;}
-.c_popup_bg .sub_color_04>.colorBox{width: 80px; height: 80px; margin-top: 20px; background-color: #F7F7F7; box-shadow: 1px 1px 3px #777;}
-.c_popup_bg .sub_color_04>span{width: 100%; height: 20px; font-size: 0.7rem; color: #777;}
 
 
 .c_popup_bg .favicon{width: 100%; height: auto; margin-top: 200px;}
@@ -325,7 +289,7 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 .c_popup_bg .favicon_img{width: 100%; height: 60px; margin-top: 30px; background-position: 50% 50%; background-size: contain; background-repeat: no-repeat; background-image: url("../../img/c_favicon.png");}
 
 .c_popup_bg .ui{width: 100%; height: auto; margin-top: 200px;}
-.c_popup_bg .ui_img{width: 100%; height: 500px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/yogurtman_web_img_rgb.png");}
+.c_popup_bg .ui_img{width: 100%; height: 500px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/casamia.png");}
 
 
 .c_popup_bg .scroll{position: absolute; bottom: 2%; right: 1%; width: 30px; height: 50px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; background-image: url("../../img/arrow.png"); animation: mouseMv 700ms linear alternate infinite;}
@@ -340,8 +304,9 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 #likeBox li:nth-child(n+7){display: none;}
 #likeBox li>a{display: block; width: 100%; height: 100%;}
 #likeBox li:hover,#likeBox li:focus{opacity: 1;}
-#likeBox>button{display: block; width: 100px; height: 40px; margin: auto; margin-top: 100px; border-radius: 5px; border: 2px solid #aaa; color:#aaa; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; background-color: transparent;}
-
+#likeBox>button{display: block; width: 100px; height: 40px; margin: auto; margin-top: 100px; border-radius: 5px; border: 2px solid #d3c3b8; color:#d3c3b8; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; background-color: transparent;}
+#likeBox>button:hover,
+#likeBox>button:focus{background-color: #d3c3b8; color: #fff;}
 
 
 .like_pop{display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);}
@@ -455,8 +420,8 @@ h3{font-size: 1.5rem; text-align: center; font-weight: bold; text-transform: upp
 .port_btn>a{display: block; width: 100%; height: 100%; color: #d3c3b8; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: capitalize;}
 .port_btn>a:hover,.port_btn>a:focus{background-color: #d3c3b8; color: #fff;}
 
-.pdf_btn{float: left; width: 180px; height: 30px; margin-left: 30px; margin-top: 20px; border-radius: 3px; background-color: #d3c3b8; border: 2px solid #d3c3b8;}
-.pdf_btn>a{display: block; width: 100%; height: 100%; color: #fff; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: uppercase;}
+.pdf_btn{float: left; width: 210px; height: 30px; margin-left: 15px; margin-top: 20px; border-radius: 3px; background-color: #d3c3b8; border: 2px solid #d3c3b8;}
+.pdf_btn>a{display: block; width: 100%; height: 100%; color: #fff; text-align: center; font-size: 1rem; line-height: 2; font-weight: bold; text-transform: capitalize;}
 .pdf_btn>a:hover,.pdf_btn>a:focus{background-color: #fff; color: #d3c3b8;}
 
 /* yogurt --------------------------------------------------------------------------- */
@@ -645,7 +610,7 @@ h3{font-size: 1.5rem; text-align: center; font-weight: bold; text-transform: upp
 .c_popup_bg .favicon_img{width: 100%; height: 60px; margin-top: 30px; background-position: 50% 50%; background-size: contain; background-repeat: no-repeat; background-image: url("../../img/c_favicon.png");}
 
 .c_popup_bg .ui{width: 100%; height: auto; margin-top: 200px;}
-.c_popup_bg .ui_img{width: 100%; height: 500px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/yogurtman_web_img_rgb.png");}
+.c_popup_bg .ui_img{width: 100%; height: 500px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/casamia.png");}
 
 
 .c_popup_bg .scroll{position: absolute; bottom: 2%; right: 1%; width: 30px; height: 50px; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; background-image: url("../../img/arrow.png"); animation: mouseMv 700ms linear alternate infinite;}
@@ -659,8 +624,9 @@ h3{font-size: 1.5rem; text-align: center; font-weight: bold; text-transform: upp
 #likeBox li:nth-child(-n+9){margin-bottom: 50px;}
 #likeBox li:nth-child(n+7){display: none;}
 #likeBox li>a{display: block; width: 100%; height: 100%;}
-#likeBox>button{display: block; width: 100px; height: 40px; margin: auto; margin-top: 100px; border-radius: 5px; border: 2px solid #aaa; color:#aaa; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; background-color: transparent;}
-
+#likeBox>button{display: block; width: 100px; height: 40px; margin: auto; margin-top: 100px; border-radius: 5px; border: 2px solid #d3c3b8; color:#d3c3b8; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; background-color: transparent;}
+#likeBox>button:hover,
+#likeBox>button:focus{background-color: #d3c3b8; color: #fff;}
 .like_pop{display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);}
 .like_popup{position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; padding: 30px; box-sizing: border-box;  width: 60%; height: 60%; background-color: #fff;}
 .like_popup>button{position: absolute; top: 2%; right: 1%; width: 20px; height: 20px; background-color: #fff; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/ex.png");}
@@ -688,12 +654,11 @@ h3{font-size: 1.5rem; text-align: center; font-weight: bold; text-transform: upp
 #likeBox li:nth-child(n+7){display: none;}
 #likeBox li>a{display: block; width: 100%; height: 100%;}
 #likeBox li:hover,#likeBox li:focus{opacity: 1;}
-#likeBox>button{display: block; width: 100px; height: 40px; margin: auto; margin-top: 100px; border-radius: 5px; border: 2px solid #aaa; color:#aaa; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; background-color: transparent;}
-}
-
-
+#likeBox>button{display: block; width: 100px; height: 40px; margin: auto; margin-top: 100px; border-radius: 5px; border: 2px solid #d3c3b8; color:#d3c3b8; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; background-color: transparent;}
+#likeBox>button:hover,
+#likeBox>button:focus{background-color: #d3c3b8; color: #fff;}
 .like_popup{position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; padding: 30px; box-sizing: border-box;  width: 80%; height: 50%; background-color: #fff;}
-
+}
 
 @media screen and (max-width:449px){
 
@@ -712,8 +677,9 @@ h3{font-size: 1.5rem; text-align: center; font-weight: bold; text-transform: upp
 #likeBox li:nth-child(n+7){display: none;}
 #likeBox li>a{display: block; width: 100%; height: 100%;}
 #likeBox li:hover,#likeBox li:focus{opacity: 1;}
-#likeBox>button{display: block; width: 100px; height: 40px; margin: auto; margin-top: 100px; border-radius: 5px; border: 2px solid #aaa; color:#aaa; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; background-color: transparent;}
-
+#likeBox>button{display: block; width: 100px; height: 40px; margin: auto; margin-top: 100px; border-radius: 5px; border: 2px solid #d3c3b8; color:#d3c3b8; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; background-color: transparent;}
+#likeBox>button:hover,
+#likeBox>button:focus{background-color: #d3c3b8; color: #fff;}
 
 .like_popup{position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; min-width: 350px; padding: 30px; box-sizing: border-box;  width: 80%; height: 40%; background-color: #fff;}
 }
