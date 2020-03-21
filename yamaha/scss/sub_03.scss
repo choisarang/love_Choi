@@ -3,7 +3,7 @@
 
 @import "./_basic/var";
 
-#wrap{width: 100%; height: auto; background-color: $bg;
+#wrap{width: 100%; height: auto;
 @media screen and (min-width:1281px) {
   @import "./_temp/h_f_1920.scss";
   

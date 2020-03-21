@@ -90,7 +90,7 @@
   #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd > a:hover, #wrap #headBox > aside > .gnb > .gnb_bg > .menu_bg > dl > dd a:focus { color: #333; font-weight: bold; }
   #wrap #footBox { width: 100%; height: 400px; padding: 50px 0px; box-sizing: border-box; background-color: #fff; }
   #wrap #footBox > .snsBox { width: 750px; height: auto; margin: auto; }
-  #wrap #footBox > .snsBox > li { float: left; width: auto; height: 40px; padding: 20px; margin-right: 20px; }
+  #wrap #footBox > .snsBox > li { float: left; width: auto; height: 40px; padding: 20px; margin-right: 15px; }
   #wrap #footBox > .snsBox > li > a { display: block; width: 100%; height: 100%; }
   #wrap #footBox > .snsBox > li > a .logo { float: left; width: 40px; height: 35px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; }
   #wrap #footBox > .snsBox > li > a .name { float: left; width: auto; height: 100%; margin-left: 10px; font-weight: bold; font-size: 16px; color: #555; line-height: 35px; text-transform: capitalize; }

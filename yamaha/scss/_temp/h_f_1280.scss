@@ -35,7 +35,7 @@
 }//#headBox
 #footBox{width: 100%; height: 400px; padding: 50px 0px; box-sizing: border-box; background-color: #fff;
   >.snsBox{width: 750px; height: auto; margin: auto; 
-    >li{float: left; width: auto; height: 40px; padding: 20px; margin-right: 20px;
+    >li{float: left; width: auto; height: 40px; padding: 20px; margin-right: 15px;
       >a{display: block; width: 100%; height: 100%;
         .logo{float: left; width: 40px; height: 35px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain;}
         .name{float: left; width: auto; height: 100%; margin-left: 10px; font-weight: bold; font-size: 16px; color: $text; line-height: 35px; text-transform: capitalize;}
