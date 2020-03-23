@@ -81,7 +81,7 @@
 
 
 
-  // conBox 선 효과
+  // conBox 효과
   const conBox = $('#conBox');
   const one = conBox.children('.one');
   const line = one.children('.line');
