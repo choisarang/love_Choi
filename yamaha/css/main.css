@@ -50,7 +50,7 @@
   #wrap #viewBox > ul > .slide_01 > .textBox { position: absolute; width: 330px; height: 160px; top: 15%; left: 0; right: 0; margin: auto; }
   #wrap #viewBox > ul > .slide_01 > .textBox > .text { width: 100%; height: 80px; margin-bottom: 40px; font-size: 30px; text-align: center; color: #fff; line-height: 1.5; }
   #wrap #viewBox > ul > .slide_01 > .textBox > button { display: block; position: relative; z-index: 1; width: 100px; height: 35px; margin-left: 110px; border: 1px solid #fff; background-color: transparent; font-size: 15px; color: #fff; border-radius: 3px; }
-  #wrap #viewBox > ul > .slide_01 > .textBox > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms; }
+  #wrap #viewBox > ul > .slide_01 > .textBox > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: transparent; transition: all 300ms; }
   #wrap #viewBox > ul > .slide_01 > .textBox > button:hover, #wrap #viewBox > ul > .slide_01 > .textBox > button:focus { color: #e6a783; font-weight: bold; }
   #wrap #viewBox > ul > .slide_01 > .textBox > button:hover:after, #wrap #viewBox > ul > .slide_01 > .textBox > button:hover::after, #wrap #viewBox > ul > .slide_01 > .textBox > button:focus:after, #wrap #viewBox > ul > .slide_01 > .textBox > button:focus::after { height: 100%; background-color: #fff; }
   #wrap #viewBox > ul > .slide_02 { background-image: url("../img/slide_02.jpg"); }
@@ -58,7 +58,7 @@
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > .text { width: 100%; height: auto; margin-bottom: 20px; font-size: 22px; text-align: right; color: #fff; line-height: 1.5; }
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > .text > p { font-weight: bold; margin-top: 10px; font-size: 50px; text-transform: uppercase; }
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > button { display: block; position: relative; z-index: 1; width: 100px; height: 35px; margin-left: 400px; border: 1px solid #fff; background-color: transparent; font-size: 15px; color: #fff; border-radius: 3px; }
-  #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms; }
+  #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: transparent; transition: all 300ms; }
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:hover, #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:focus { color: #333; font-weight: bold; }
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:hover:after, #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:hover::after, #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:focus:after, #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:focus::after { height: 100%; background-color: #fff; }
   #wrap #viewBox > ul > .slide_03 { background-image: url("../img/jaclynclark.jpg"); background-position: 50% 50%; }
@@ -66,7 +66,7 @@
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > .text { width: 100%; height: 80px; margin-bottom: 40px; font-size: 22px; text-align: center; color: #fff; }
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > .text > p { font-weight: bold; margin-top: 10px; font-size: 50px; text-transform: capitalize; }
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > button { display: block; position: relative; z-index: 1; width: 100px; height: 35px; margin-left: 150px; border: 1px solid #fff; background-color: transparent; font-size: 15px; color: #fff; border-radius: 3px; }
-  #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms; }
+  #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: transparent; transition: all 300ms; }
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:hover, #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:focus { color: #55637d; font-weight: bold; }
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:hover:after, #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:hover::after, #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:focus:after, #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:focus::after { height: 100%; background-color: #fff; } }
 
@@ -120,7 +120,7 @@
   #wrap #viewBox > ul > .slide_01 > .textBox { position: absolute; width: 330px; height: 160px; top: 15%; left: 0; right: 0; margin: auto; }
   #wrap #viewBox > ul > .slide_01 > .textBox > .text { width: 100%; height: 80px; margin-bottom: 20px; font-size: 25px; text-align: center; color: #fff; line-height: 1.5; }
   #wrap #viewBox > ul > .slide_01 > .textBox > button { display: block; position: relative; z-index: 1; width: 90px; height: 30px; margin-left: 120px; border: 1px solid #fff; background-color: transparent; font-size: 14px; color: #fff; border-radius: 3px; }
-  #wrap #viewBox > ul > .slide_01 > .textBox > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms; }
+  #wrap #viewBox > ul > .slide_01 > .textBox > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: transparent; transition: all 300ms; }
   #wrap #viewBox > ul > .slide_01 > .textBox > button:hover, #wrap #viewBox > ul > .slide_01 > .textBox > button:focus { color: #e6a783; font-weight: bold; }
   #wrap #viewBox > ul > .slide_01 > .textBox > button:hover:after, #wrap #viewBox > ul > .slide_01 > .textBox > button:hover::after, #wrap #viewBox > ul > .slide_01 > .textBox > button:focus:after, #wrap #viewBox > ul > .slide_01 > .textBox > button:focus::after { height: 100%; background-color: #fff; }
   #wrap #viewBox > ul > .slide_02 { background-image: url("../img/slide_02.jpg"); }
@@ -128,7 +128,7 @@
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > .text { width: 100%; height: auto; margin-bottom: 20px; font-size: 20px; text-align: right; color: #fff; line-height: 1.5; }
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > .text > p { font-weight: bold; margin-top: 10px; font-size: 45px; text-transform: uppercase; }
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > button { display: block; position: relative; z-index: 1; width: 90px; height: 30px; margin-left: 410px; border: 1px solid #fff; background-color: transparent; font-size: 14px; color: #fff; border-radius: 3px; }
-  #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms; }
+  #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: transparent; transition: all 300ms; }
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:hover, #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:focus { color: #333; font-weight: bold; }
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:hover:after, #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:hover::after, #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:focus:after, #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:focus::after { height: 100%; background-color: #fff; }
   #wrap #viewBox > ul > .slide_03 { background-image: url("../img/jaclynclark.jpg"); background-position: 50% 50%; }
@@ -136,7 +136,7 @@
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > .text { width: 100%; height: 80px; margin-bottom: 35px; font-size: 20px; text-align: center; color: #fff; }
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > .text > p { font-weight: bold; margin-top: 10px; font-size: 45px; text-transform: capitalize; }
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > button { display: block; position: relative; z-index: 1; width: 90px; height: 30px; margin-left: 120px; border: 1px solid #fff; background-color: transparent; font-size: 14px; color: #fff; border-radius: 3px; }
-  #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms; }
+  #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: transparent; transition: all 300ms; }
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:hover, #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:focus { color: #55637d; font-weight: bold; }
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:hover:after, #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:hover::after, #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:focus:after, #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:focus::after { height: 100%; background-color: #fff; } }
 
@@ -188,7 +188,7 @@
   #wrap #viewBox > ul > .slide_01 > .textBox { position: absolute; width: 330px; height: 120px; top: 20%; left: 0; right: 0; margin: auto; }
   #wrap #viewBox > ul > .slide_01 > .textBox > .text { width: 100%; height: 60px; margin-bottom: 30px; font-size: 25px; text-align: center; color: #fff; line-height: 1.5; }
   #wrap #viewBox > ul > .slide_01 > .textBox > button { display: block; position: relative; z-index: 1; width: 90px; height: 30px; padding: 0; margin-left: 120px; border: 1px solid #fff; background-color: transparent; font-size: 14px; color: #fff; border-radius: 3px; }
-  #wrap #viewBox > ul > .slide_01 > .textBox > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms; }
+  #wrap #viewBox > ul > .slide_01 > .textBox > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: transparent; transition: all 300ms; }
   #wrap #viewBox > ul > .slide_01 > .textBox > button:focus { color: #e6a783; font-weight: bold; }
   #wrap #viewBox > ul > .slide_01 > .textBox > button:focus:after { height: 100%; background-color: #fff; }
   #wrap #viewBox > ul > .slide_02 { background-image: url("../img/slide_02.jpg"); }
@@ -196,7 +196,7 @@
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > .text { width: 100%; height: auto; margin-bottom: 20px; font-size: 20px; text-align: right; color: #fff; line-height: 1.5; }
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > .text > p { font-weight: bold; margin-top: 10px; font-size: 45px; text-transform: uppercase; }
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > button { float: right; display: block; position: relative; z-index: 1; width: 90px; height: 30px; padding: 0; border: 1px solid #fff; background-color: transparent; font-size: 14px; color: #fff; border-radius: 3px; }
-  #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms; }
+  #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: transparent; transition: all 300ms; }
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:focus { color: #000; font-weight: bold; }
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:focus:after { height: 100%; background-color: #fff; }
   #wrap #viewBox > ul > .slide_03 { background-image: url("../img/jaclynclark.jpg"); background-position: 50% 50%; }
@@ -204,7 +204,7 @@
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > .text { width: 100%; height: 80px; margin-bottom: 35px; font-size: 20px; text-align: center; color: #fff; }
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > .text > p { font-weight: bold; margin-top: 10px; font-size: 45px; text-transform: capitalize; }
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > button { display: block; position: relative; z-index: 1; width: 90px; height: 30px; padding: 0; margin-left: 120px; border: 1px solid #fff; background-color: transparent; font-size: 14px; color: #fff; border-radius: 3px; }
-  #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms; }
+  #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: transparent; transition: all 300ms; }
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:focus { color: #55637d; font-weight: bold; }
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:focus:after { height: 100%; background-color: #fff; } }
 
@@ -256,7 +256,7 @@
   #wrap #viewBox > ul > .slide_01 > .textBox { position: absolute; width: 330px; height: 100px; top: 20%; left: 0; right: 0; margin: auto; }
   #wrap #viewBox > ul > .slide_01 > .textBox > .text { width: 100%; height: 60px; margin-bottom: 10px; font-size: 22px; text-align: center; color: #fff; }
   #wrap #viewBox > ul > .slide_01 > .textBox > button { display: block; position: relative; z-index: 1; width: 90px; height: 30px; padding: 0; margin-left: 120px; border: 1px solid #fff; background-color: transparent; font-size: 14px; color: #fff; border-radius: 3px; }
-  #wrap #viewBox > ul > .slide_01 > .textBox > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms; }
+  #wrap #viewBox > ul > .slide_01 > .textBox > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: transparent; transition: all 300ms; }
   #wrap #viewBox > ul > .slide_01 > .textBox > button:focus { color: #e6a783; font-weight: bold; }
   #wrap #viewBox > ul > .slide_01 > .textBox > button:focus:after { height: 100%; background-color: #fff; }
   #wrap #viewBox > ul > .slide_02 { background-image: url("../img/slide_02.jpg"); }
@@ -264,7 +264,7 @@
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > .text { width: 100%; height: auto; margin-bottom: 20px; font-size: 18px; text-align: right; color: #fff; }
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > .text > p { font-weight: bold; margin-top: 10px; font-size: 30px; text-transform: uppercase; }
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > button { float: right; display: block; position: relative; z-index: 1; width: 90px; height: 30px; padding: 0; border: 1px solid #fff; background-color: transparent; font-size: 14px; color: #fff; border-radius: 3px; }
-  #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms; }
+  #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: transparent; transition: all 300ms; }
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:focus { color: #000; font-weight: bold; }
   #wrap #viewBox > ul > .slide_02 > .textBox_02 > button:focus:after { height: 100%; background-color: #fff; }
   #wrap #viewBox > ul > .slide_03 { background-image: url("../img/jaclynclark.jpg"); background-position: 50% 50%; }
@@ -272,6 +272,6 @@
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > .text { width: 100%; height: 80px; margin-bottom: 35px; font-size: 20px; text-align: center; color: #fff; }
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > .text > p { font-weight: bold; margin-top: 10px; font-size: 45px; text-transform: capitalize; }
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > button { display: block; position: relative; z-index: 1; width: 90px; height: 30px; padding: 0; margin-left: 120px; border: 1px solid #fff; background-color: transparent; font-size: 14px; color: #fff; border-radius: 3px; }
-  #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: none; transition: all 300ms; }
+  #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:after { content: " "; position: absolute; z-index: -1; top: 0; left: 0; display: block; width: 100%; height: 0; background-color: transparent; transition: all 300ms; }
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:focus { color: #55637d; font-weight: bold; }
   #wrap #viewBox > ul > .slide_03 > .textBox_03 > button:focus:after { height: 100%; background-color: #fff; } }
