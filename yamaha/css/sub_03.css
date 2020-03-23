@@ -27,7 +27,7 @@
   #wrap #footBox > .snsBox > li { float: left; width: auto; height: 40px; padding: 20px; margin-right: 20px; }
   #wrap #footBox > .snsBox > li > a { display: block; width: 100%; height: 100%; }
   #wrap #footBox > .snsBox > li > a .logo { float: left; width: 40px; height: 35px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; }
-  #wrap #footBox > .snsBox > li > a .name { float: left; width: auto; height: 100%; margin-left: 10px; font-weight: bold; font-size: 16px; color: #555; line-height: 35px; text-transform: capitalize; }
+  #wrap #footBox > .snsBox > li > a .name { float: left; width: auto; height: 100%; margin-left: 10px; font-size: 16px; color: #555; line-height: 35px; text-transform: capitalize; }
   #wrap #footBox > .snsBox > .you .logo { background-image: url("../img/youtube.png"); }
   #wrap #footBox > .snsBox > .face .logo { background-image: url("../img/facebook.png"); }
   #wrap #footBox > .snsBox > .naver .logo { background-image: url("../img/naver.png"); }
@@ -85,7 +85,7 @@
   #wrap #footBox > .snsBox > li { float: left; width: auto; height: 40px; padding: 20px; margin-right: 15px; }
   #wrap #footBox > .snsBox > li > a { display: block; width: 100%; height: 100%; }
   #wrap #footBox > .snsBox > li > a .logo { float: left; width: 40px; height: 35px; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; }
-  #wrap #footBox > .snsBox > li > a .name { float: left; width: auto; height: 100%; margin-left: 10px; font-weight: bold; font-size: 16px; color: #555; line-height: 35px; text-transform: capitalize; }
+  #wrap #footBox > .snsBox > li > a .name { float: left; width: auto; height: 100%; margin-left: 10px; font-size: 16px; color: #555; line-height: 35px; text-transform: capitalize; }
   #wrap #footBox > .snsBox > .you .logo { background-image: url("../img/youtube.png"); }
   #wrap #footBox > .snsBox > .face .logo { background-image: url("../img/facebook.png"); }
   #wrap #footBox > .snsBox > .naver .logo { background-image: url("../img/naver.png"); }

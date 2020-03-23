@@ -58,25 +58,59 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 .education{float:left; width: 40%; height: auto; padding-bottom: 50px;}
 .work_experience{float:left; width: 40%; height: auto; padding-bottom: 50px;}
 .certificate{float:left; width: 20%; height: auto; padding-bottom: 50px;}
-.info dl{display: none; width: 100%; height: auto;}
+.info dl{width: 100%; height: auto;}
 .info dt{width: 100%; height: auto; padding-top: 50px; font-size: 1rem; font-weight: normal; color: #555;}
 .info dd{width: 100%; height: auto; padding-top: 5px; font-size: 1rem; font-weight: normal; color: #777;}
 
 
-.pro_img{width: 100%; height: auto;}
-.pro_img h3{width: 100%; height: 100px;}
-.pro_img h3>a{display: block;}
-.pro_img h3>a:hover,
-.pro_img h3>a:focus{color: #d3c3b8;}
+.pro_grape{width: 100%; height: auto;}
+.pro_grape h3{width: 100%; height: 100px;}
+.pro_grape h3>a{display: block;}
+.pro_grape h3>a:hover,
+.pro_grape h3>a:focus{color: #d3c3b8;}
 .mbti{width: 100%; height: auto; margin-right: 20%; margin-bottom: 100px;}
-.mbti_img{display: none; width: 80%; height: 300px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/mbti.png");}
+.mbti_graph{width: 80%; height: 430px; margin: auto; margin-top: 50px;}
+.mbti_graph>h4{width:50px; height: 30px; margin: auto; font-size: 1.2rem; color: #777;}
+.mbti_graph dl{width: 100%; height: 70px; margin-top: 10px; color:#777;}
+.mbti_graph dl>h5{width: 100%; height: 20px; font-size: 0.9rem; text-align: center; font-weight: normal;}
+.mbti_graph dl>dt{float:left; width: 80px; height: 50px; text-align: center; font-size: 1rem;}
+.mbti_graph dl>dt>p{font-size: 1.2rem;}
+.mbti_graph dl>dd{float:left; position: relative; width: 580px; height: 30px; margin-left: 10px; background-color: #f2eedd;}
+.mbti_graph dl>dd:after,
+.mbti_graph dl>dd::after{content: " "; display: block; position: absolute; top: 0; left: 0; right: 0; left: 0; width: 0; height: 100%; transition: width 2000ms ease; background-color: #fff;}
+.mbti_graph .one.action>dd:after{width: 65%; background-color: #d3c3b8;}
+.mbti_graph .two.action>dd:after{width: 53%; background-color: #d3c3b8;}
+.mbti_graph .three.action>dd:after{width: 71%; background-color: #d3c3b8;}
+.mbti_graph .four.action>dd:after{width: 82%; background-color: #d3c3b8;}
+.mbti_graph .five.action>dd:after{width: 90%; background-color: #d3c3b8;}
+
 
 .character{width: 100%; height: auto; margin-bottom: 100px;}
-.character_img{display: none; width: 80%; height: 300px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/character.png");}
+.character_graph{width: 80%; height: 300px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/character.png");}
+/* .character_graph{width: 100%; height: 350px;}
+.character_graph>ul{position: relative; width: 350px; height: 100%; margin: auto; margin-top: 50px;}
+
+.character_graph li:nth-child(1){position: absolute; top: 0; left: 0; width: 0px; height: 0px; border-top: 150px solid transparent; border-right: 175px solid #f2eedd;}
+.character_graph li:nth-child(2){position: absolute; top: 0; right: 0;width: 0px; height: 0px; border-top: 150px solid transparent; border-left: 175px solid #f2eedd;}
+.character_graph li:nth-child(3){position: absolute; bottom: 0; left: 0; width: 0px; height: 0px; border-bottom: 200px solid transparent; border-right: 75px solid #f2eedd;} 
+.character_graph li:nth-child(4){position: absolute; bottom: 0; right: 0; left:0; margin: auto; width: 200px; height: 60%; background-color: #f2eedd;}
+.character_graph li:nth-child(5){position: absolute; bottom: 0; right: 0; width: 0px; height: 0px; border-bottom: 200px solid transparent; border-left: 75px solid #f2eedd;}
+
+.character_graph li:nth-child(1):after{position: absolute; z-index: 100; content:" "; display: block; top:0; left:0; border-top: 250px solid transparent; border-right: 75px solid #d3c3b8;}
+
+
+.character_graph li>h4{position: absolute; z-index: 100; width: 80px; height: 30px; font-size: 0.8rem; color: #777; text-align: center;}
+.character_graph li>h4>p{font-size: 1rem;}
+
+.character_graph li:nth-child(1)>h4{top: -190px; left:135px;}
+.character_graph li:nth-child(2)>h4{top: -15px; left:-10px;}
+.character_graph li:nth-child(3)>h4{top: -12px; left:-70px;}
+.character_graph li:nth-child(4)>h4{bottom: -40px; left:-50px;}
+.character_graph li:nth-child(5)>h4{bottom: -240px; left:-100px;} */
+
 
 .skills{width: 100%; height: auto; margin-bottom: 100px;}
-.skills_img{display: none; width: 80%; height: 400px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/skills.png");}
-
+.skills_graph{width: 80%; height: 400px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/skills.png");}
 
 /* portBox ------------------------------------------------ */
 #portBox{width: 95%; height: auto; margin: auto;}
@@ -358,8 +392,6 @@ h3{font-size: 1.5rem; text-align: center; font-weight: bold; text-transform: upp
 
 
 .proflie{width: 100%; height: 500px; margin: auto;}
-.proflie.action{}
-
 
 .pro_pic{float: left; width: 100%; height: 100%;}
 
@@ -384,19 +416,19 @@ h3{font-size: 1.5rem; text-align: center; font-weight: bold; text-transform: upp
 .info dd{width: 100%; height: auto; padding-top: 5px; font-size: 1rem; font-weight: normal; color: #777;}
 
 
-.pro_img{width: 100%; height: auto;}
-.pro_img h3{width: 100%; height: 100px;}
-.pro_img h3>a{display: block;}
-.pro_img h3>a:hover,
-.pro_img h3>a:focus{color: #d3c3b8;}
+.pro_graph{width: 100%; height: auto;}
+.pro_graph h3{width: 100%; height: 100px;}
+.pro_graph h3>a{display: block;}
+.pro_graph h3>a:hover,
+.pro_graph h3>a:focus{color: #d3c3b8;}
 .mbti{width: 100%; height: auto; margin-right: 20%; margin-bottom: 100px;}
-.mbti_img{display: none; width: 80%; height: 300px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/mbti.png");}
+.mbti_graph{display: none; width: 80%; height: 300px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/mbti.png");}
 
 .character{width: 100%; height: auto; margin-bottom: 100px;}
-.character_img{display: none; width: 80%; height: 300px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/character.png");}
+.character_graph{display: none; width: 80%; height: 300px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/character.png");}
 
 .skills{width: 100%; height: auto; margin-bottom: 100px;}
-.skills_img{display: none; width: 80%; height: 400px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/skills.png");}
+.skills_graph{display: none; width: 80%; height: 400px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/skills.png");}
 
 
 /* portBox ------------------------------------------------ */

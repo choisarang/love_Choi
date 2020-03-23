@@ -103,38 +103,56 @@ proflie.on('mouseenter', function(){
 
   // // 클릭하면 펼쳐지게
 
-  const info = $('.info');
-  const infoH3 = info.find('h3');
-  const h3Link = infoH3.children('a');
-  const proImg = $('.pro_img');
-  const imgH3 = proImg.find('h3');
+  const mbti = $('.mbti')
+  const mbtiH3 = mbti.children('h3');
+  const mbtiGraph = mbti.children('.mbti_graph');
+  const mbtiOne = mbtiGraph.children('.one');
+  const mbtiTwo = mbtiGraph.children('.two');
+  const mbtiThree = mbtiGraph.children('.three');
+  const mbtiFour = mbtiGraph.children('.four');
+  const mbtiFive = mbtiGraph.children('.five');
 
 
-  infoH3.on('click', function(e){
-    e.preventDefault();
+  let mbtiH3_offset = mbtiH3.offset().top;
 
-  let has = $(this).hasClass('action');
-    if(has){
-      $(this).siblings('dl').stop().slideUp(500);
-      $(this).removeClass('action');
-    }else{
-      $(this).siblings('dl').stop().slideDown(800);
-      $(this).addClass('action');
+
+  $(window).scroll(function() {
+    let scroll = $(window).scrollTop();
+    if (scroll >= mbtiH3_offset - (200)) {
+      mbtiOne.addClass('action');
+      mbtiTwo.addClass('action');
+      mbtiThree.addClass('action');
+      mbtiFour.addClass('action');
+      mbtiFive.addClass('action');
     }
   });
 
-  imgH3.on('click', function(e){
-    e.preventDefault();
 
-  let has = $(this).hasClass('action');
-    if(has){
-      $(this).siblings('div').fadeOut(500);
-      $(this).removeClass('action');
-    }else{
-      $(this).siblings('div').fadeIn(800);
-      $(this).addClass('action');
-    }
-  });
+  // infoH3.on('click', function(e){
+  //   e.preventDefault();
+
+  // let has = $(this).hasClass('action');
+  //   if(has){
+  //     $(this).siblings('dl').stop().slideUp(500);
+  //     $(this).removeClass('action');
+  //   }else{
+  //     $(this).siblings('dl').stop().slideDown(800);
+  //     $(this).addClass('action');
+  //   }
+  // });
+
+  // imgH3.on('click', function(e){
+  //   e.preventDefault();
+
+  // let has = $(this).hasClass('action');
+  //   if(has){
+  //     $(this).siblings('div').fadeOut(500);
+  //     $(this).removeClass('action');
+  //   }else{
+  //     $(this).siblings('div').fadeIn(800);
+  //     $(this).addClass('action');
+  //   }
+  // });
 
     // portBox ==========================================================
 
