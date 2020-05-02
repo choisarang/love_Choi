@@ -85,11 +85,15 @@ h3{font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #555;
 .mbti_graph .five.action>dd:after{width: 90%; background-color: #d3c3b8;}
 
 
-.character{width: 100%; height: auto; margin-bottom: 100px;}
-.character_graph{width: 80%; height: 300px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/character.png");}
-
 .skills{width: 100%; height: auto; margin-bottom: 100px;}
-.skills_graph{width: 80%; height: 400px; margin: auto; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; background-image: url("../../img/skills.png");}
+.skills_graph{width: 80%; height: auto; margin: auto; margin-top: 100px;}
+
+.skills_graph>li { position: relative; display:inline-block; margin-bottom: 100px; margin-right: 50px; width: 130px; height: 130px; border-radius: 50%; transition: 0.3s;
+}
+.skills_graph>li>span{ background: #fcfcfc; display : block; position: absolute; top:50%; left:50%; width:100px; height:100px; border-radius: 50%; text-align:center; line-height: 100px; font-size:1.5rem; transform: translate(-50%, -50%);
+}
+.skills_graph>li>p{display: block; margin-top: 150px; width: 100%; height: auto; font-size: 1rem; text-transform: capitalize; text-align: center;}
+
 
 /* portBox ------------------------------------------------ */
 #portBox{width: 95%; height: auto; margin: auto;}

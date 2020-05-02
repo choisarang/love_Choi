@@ -103,7 +103,7 @@ proflie.on('mouseenter', function(){
 
   // // 클릭하면 펼쳐지게
 
-  const mbti = $('.mbti')
+  const mbti = $('.mbti');
   const mbtiH3 = mbti.children('h3');
   const mbtiGraph = mbti.children('.mbti_graph');
   const mbtiOne = mbtiGraph.children('.one');
@@ -112,8 +112,12 @@ proflie.on('mouseenter', function(){
   const mbtiFour = mbtiGraph.children('.four');
   const mbtiFive = mbtiGraph.children('.five');
 
+  // const character = $('.character');
+  // const characterGraphTop = character.find('.character_graph_top')
+
 
   let mbtiH3_offset = mbtiH3.offset().top;
+  // let character_offset = character.offset().top;
 
 
   $(window).scroll(function() {
@@ -124,8 +128,67 @@ proflie.on('mouseenter', function(){
       mbtiThree.addClass('action');
       mbtiFour.addClass('action');
       mbtiFive.addClass('action');
+    // }if (scroll >= character_offset - (100)) {
+    //   characterGraphTop.addClass('action');
     }
   });
+  
+
+  // skills 그래프
+
+  const skills = $('.skills');
+  let skills_offset = skills.offset().top;
+
+  // $(window).scroll(function() {
+  //   let scroll = $(window).scrollTop();
+  //   if (scroll >= skills_offset - (100)) {
+  // }
+  // });
+  $(window).ready(function(){
+    draw(76, '.illustrator', '#d3c3b8');
+    draw(66, '.photoshop', '#d3c3b8');
+    draw(51, '.indesign','#d3c3b8');
+    draw(76, '.invision','#d3c3b8');
+    draw(91, '.html','#d3c3b8');
+    draw(76, '.css','#d3c3b8');
+    draw(66, '.scss','#d3c3b8');
+    draw(66, '.jquery','#d3c3b8');
+    draw(51, '.git','#d3c3b8');
+
+  });
+  
+  function draw(max, classname, colorname){
+     let i=1;
+      let func1 = setInterval(function(){
+        if(i<max){
+            color1(i,classname,colorname);
+            i++;
+        } else{
+          clearInterval(func1);
+        }
+      },10);
+  }
+  function color1(i, classname,colorname){
+     $(classname).css({
+          "background":"conic-gradient("+colorname+" 0% "+i+"%, #f2eedd "+i+"% 100%)"
+     });
+  }
+  
+  
+  // function replay(){
+  //  draw(76, '.illustrator', '#d3c3b8');
+  //  draw(66, '.photoshop', '#d3c3b8');
+  //  draw(51, '.indesign','#d3c3b8');
+  //  draw(76, '.invision','#d3c3b8');
+  //  draw(91, '.html','#d3c3b8');
+  //  draw(76, '.css','#d3c3b8');
+  //  draw(66, '.scss','#d3c3b8');
+  //  draw(66, '.jquery','#d3c3b8');
+  //  draw(51, '.git','#d3c3b8');ß
+  // }
+
+
+
 
 
   // infoH3.on('click', function(e){
@@ -314,6 +377,8 @@ proflie.on('mouseenter', function(){
     //   e.preventDefault();
     // });
 
-    
+
+
+
 
 })(jQuery);
