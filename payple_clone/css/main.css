@@ -1,0 +1,51 @@
+#wrap { width: 100%; height: 100%; background-color: #aff; }
+
+#wrap #headBox { width: 100%; height: 6rem; background-color: #aaf; }
+
+#wrap #headBox h1 { float: left; width: 120px; height: 30px; background-color: #aaa; }
+
+#wrap #headBox nav { float: left; width: 1092px; height: 50px; background-color: #a11; }
+
+#wrap #viewBox { width: 100%; height: 650px; background-color: #ffa; }
+
+#wrap #viewBox .view_inner { width: 1280px; height: 100%; margin: auto; background-color: #fa0; }
+
+#wrap #viewBox .view_inner .textBox { float: left; width: 600px; height: 100%; background-color: #2a3; }
+
+#wrap #viewBox .view_inner .imgBox { position: relative; float: right; width: 640px; height: 500px; background-color: #2a3; }
+
+#wrap #viewBox .view_inner .imgBox .web_img { position: absolute; left: 0; top: 0; bottom: 0; margin: auto; width: 500px; height: 400px; background-color: #912; }
+
+#wrap #viewBox .view_inner .imgBox .mob_img { position: absolute; right: 0; top: 0; width: 250px; height: 500px; background-color: #aaa; }
+
+#wrap #conBox { width: 100%; height: auto; }
+
+#wrap #conBox h2 { width: 100%; height: 100px; background-color: #aaf; }
+
+#wrap #conBox h3 { width: 100%; height: 100px; background-color: #af0; }
+
+#wrap #conBox #introBox { width: 1280px; height: 650px; background-color: #a15; }
+
+#wrap #conBox #introBox .introCon { width: 100%; height: 500px; margin: auto; margin-top: 50px; background-color: #aaa; }
+
+#wrap #conBox #payBox { width: 1280px; height: 650px; background-color: #21a; }
+
+#wrap #conBox #payBox .payCon { width: 100%; margin: auto; }
+
+#wrap #conBox #fintechBox { width: 1280px; height: 650px; background-color: #635; }
+
+#wrap #conBox #fintechBox .fintechCon { width: 100%; margin: auto; }
+
+#wrap #conBox #partnerBox { width: 1280px; height: 650px; background-color: #aa5; }
+
+#wrap #conBox #partnerBox .partnerCon { width: 100%; margin: auto; }
+
+#wrap #conBox #upBox { width: 1280px; height: 650px; background-color: #aa5; }
+
+#wrap #conBox #upBox .upCon { width: 100%; margin: auto; }
+
+#wrap #conBox #newsBox { width: 1280px; height: 650px; background-color: #aa5; }
+
+#wrap #conBox #newsBox .newsCon { width: 100%; margin: auto; }
+
+#wrap #footBox { width: 100%; height: 200px; background-color: #333; }

@@ -1,0 +1,49 @@
+#wrap{width: 100%; height: 100%; background-color: #aff;
+#headBox{width: 100%; height: 6rem; background-color: #aaf;
+h1{float: left; width: 120px; height: 30px; background-color: #aaa;}//h1
+nav{float: left; width: 1092px; height: 50px; background-color: #a11;
+  .gnb{
+    li{}//li
+  }//.gnb
+  .side{
+    li{}//li
+  }//.side
+}//nav
+}//#headBox
+#viewBox{width: 100%; height: 650px; background-color: #ffa;
+  .view_inner{width: 1280px; height: 100%; margin: auto; background-color: #fa0;
+    .textBox{float: left; width: 600px; height: 100%; background-color: #2a3;
+      h3{}
+      span{}
+    }//.textBox
+    .imgBox{position: relative; float: right; width: 640px; height: 500px; background-color: #2a3;
+      .web_img{position: absolute; left: 0; top: 0; bottom: 0; margin: auto; width: 500px; height: 400px; background-color: #912;}//.web_img
+      .mob_img{position: absolute; right: 0; top: 0; width: 250px; height: 500px; background-color: #aaa;}//.mob_img
+    }//.imgBox
+  }//.view_inner
+}//#viewBox
+#conBox{width: 100%; height: auto;
+  h2{width: 100%; height: 100px; background-color: #aaf;}
+  h3{width: 100%; height: 100px; background-color: #af0;}
+  #introBox{width:1280px; height: 650px; background-color: #a15;
+    .introCon{width: 100%; height: 500px; margin: auto; margin-top: 50px; background-color: #aaa;}
+  }//#introBox
+  #payBox{width: 1280px; height: 650px; background-color: #21a;
+    .payCon{width: 100%; margin: auto;}
+  }//#payBox
+  #fintechBox{width:1280px; height: 650px; background-color: #635;
+    .fintechCon{width: 100%; margin: auto;}
+  }//#fintechBox
+  #partnerBox{width:1280px; height: 650px; background-color: #aa5;
+    .partnerCon{width: 100%; margin: auto;}
+  }//#partnerBox
+  #upBox{width:1280px; height: 650px; background-color: #aa5;
+    .upCon{width: 100%; margin: auto;}
+  }//#upBox
+  #newsBox{width:1280px; height: 650px; background-color: #aa5;
+    .newsCon{width: 100%; margin: auto;}
+  }//#newsBox
+}//#conBox
+#footBox{width: 100%; height: 200px; background-color: #333;}//#footBox
+
+}//#wrap
