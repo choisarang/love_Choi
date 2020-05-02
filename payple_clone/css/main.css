@@ -1,6 +1,6 @@
 #wrap { width: 100%; height: 100%; background-color: #fff; }
 
-#wrap #headBox { width: 100%; height: 6rem; background-color: transparent; }
+#wrap #headBox { position: fixed; z-index: 1000; width: 100%; height: 6rem; background-color: transparent; }
 
 #wrap #headBox nav { width: 1280px; height: 100%; margin: auto; background-color: transparent; }
 
@@ -18,13 +18,13 @@
 
 #wrap #headBox nav .side li a { display: block; width: 100%; height: 100%; font-size: 1.1rem; color: #333; line-height: 6rem; font-weight: bold; }
 
-#wrap #viewBox { width: 100%; height: 650px; background-color: transparent; }
+#wrap #viewBox { width: 100%; height: 650px; padding: 100px 0; background-color: transparent; }
 
 #wrap #viewBox .view_inner { width: 1280px; height: 100%; margin: auto; background-color: transparent; }
 
 #wrap #viewBox .view_inner .textBox { float: left; width: 610px; height: 100%; background-color: transparent; }
 
-#wrap #viewBox .view_inner .textBox h3 { width: 100%; height: auto; margin-top: 130px; font-size: 3.2rem; font-weight: normal; line-height: 1.5; font-weight: 300; }
+#wrap #viewBox .view_inner .textBox h3 { width: 100%; height: auto; margin-top: 150px; font-size: 3.2rem; font-weight: normal; line-height: 1.5; font-weight: 300; }
 
 #wrap #viewBox .view_inner .textBox h3 em { font-size: 3.6rem; font-style: normal; font-weight: normal; }
 
@@ -38,31 +38,29 @@
 
 #wrap #conBox { width: 100%; height: auto; }
 
-#wrap #conBox h2 { width: 1280px; height: 100px; margin: auto; font-size: 3rem; text-align: center; line-height: 100px; background-color: #aaf; }
+#wrap #conBox article { width: 1280px; height: auto; margin: auto; padding: 100px 0; }
 
-#wrap #conBox h3 { width: 1280px; height: 80px; margin: auto; font-size: 1.3rem; text-align: center; font-weight: normal; line-height: 80px; background-color: #af0; }
+#wrap #conBox h2 { width: auto; height: 3rem; margin: auto; }
 
-#wrap #conBox #introBox { width: 1280px; height: auto; margin: auto; background-color: #a15; }
+#wrap #conBox h2 .logo { float: left; width: 150px; height: 50px; margin: 0 20px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/logo.png"); }
 
-#wrap #conBox #introBox .introCon { width: 100%; height: 500px; margin-top: 50px; background-color: #aaa; }
+#wrap #conBox h2 p { float: left; font-size: 2.8rem; text-align: center; font-weight: 300; }
 
-#wrap #conBox #payBox { width: 1280px; height: auto; margin: auto; background-color: #21a; }
+#wrap #conBox h3 { width: 1280px; height: 80px; margin-top: 50px; font-size: 1.3rem; text-align: center; font-weight: 300; line-height: 2; }
+
+#wrap #conBox #introBox .introCon { width: 100%; height: 500px; margin-top: 50px; }
+
+#wrap #conBox #introBox .introCon ul { width: 100%; height: 100%; margin-top: 150px; }
+
+#wrap #conBox #introBox .introCon ul li { float: left; width: 280px; height: 290px; margin: 10px; background-color: #aaa; }
 
 #wrap #conBox #payBox .payCon { width: 100%; height: 750px; margin-top: 50px; background-color: #aaa; }
 
-#wrap #conBox #fintechBox { width: 1280px; height: auto; margin: auto; background-color: #635; }
-
 #wrap #conBox #fintechBox .fintechCon { width: 100%; height: 650px; margin-top: 50px; background-color: #aaa; }
-
-#wrap #conBox #partnerBox { width: 1280px; height: auto; margin: auto; background-color: #aa5; }
 
 #wrap #conBox #partnerBox .partnerCon { width: 100%; height: 360px; margin-top: 50px; background-color: #aaa; }
 
-#wrap #conBox #upBox { width: 1280px; height: auto; margin: auto; background-color: #aa5; }
-
 #wrap #conBox #upBox .upCon { width: 100%; height: 1100p; margin-top: 50px; background-color: #aaa; }
-
-#wrap #conBox #newsBox { width: 1280px; height: auto; margin: auto; background-color: #aa5; }
 
 #wrap #conBox #newsBox .newsCon { width: 100%; height: 1300p; margin-top: 50px; background-color: #aaa; }
 
