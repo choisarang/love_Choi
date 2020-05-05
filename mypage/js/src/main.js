@@ -138,12 +138,17 @@ proflie.on('mouseenter', function(){
 
   const skills = $('.skills');
   let skills_offset = skills.offset().top;
+  let isSubmit = true;
+  $(window).scroll(function() {
+    let scroll = $(window).scrollTop();
+    if (scroll >= skills_offset - (100) && isSubmit == true) {
+      skill();
+  }
+  });
 
-  // $(window).scroll(function() {
-  //   let scroll = $(window).scrollTop();
-  //   if (scroll >= skills_offset - (100)) {
-  // }
-  // });
+  function skill (){
+
+  
   $(window).ready(function(){
     draw(76, '.illustrator', '#d3c3b8');
     draw(66, '.photoshop', '#d3c3b8');
@@ -173,8 +178,10 @@ proflie.on('mouseenter', function(){
           "background":"conic-gradient("+colorname+" 0% "+i+"%, #f2eedd "+i+"% 100%)"
      });
   }
+  isSubmit = false;
   
   
+}
   // function replay(){
   //  draw(76, '.illustrator', '#d3c3b8');
   //  draw(66, '.photoshop', '#d3c3b8');
